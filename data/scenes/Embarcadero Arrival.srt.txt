@@ -1,9 +1,45 @@
+regions {
+  name: "Camera"
+  position {
+    x: -36
+    y: -101
+    width: 145
+    height: 175
+  }
+  enabledAtStart: true
+  is_camera_region: true
+  idRef {
+    id: "52181efb3662364c0f006e16"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -18
+    x: -96
     y: 0
-    z: -18
+    z: 14
   }
   orientation: ORIENTATION_S
   idRef {
