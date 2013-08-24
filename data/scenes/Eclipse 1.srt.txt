@@ -1,49 +1,13 @@
-regions {
-  name: "Camera"
-  position {
-    x: -102
-    y: -101
-    width: 153
-    height: 175
-  }
-  enabledAtStart: true
-  is_camera_region: true
-  idRef {
-    id: "52181efb3662364c0f006e16"
-  }
-  directional_light_dir {
-    x: -0.5
-    y: -1
-    z: -0.75
-  }
-  directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
-    a: 1
-  }
-  ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
-    a: 1
-  }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
-  loop_combat_music: true
-  loop_default_music: false
-}
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -96
+    x: -44
     y: 0
-    z: 14
+    z: 77
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_N
   idRef {
-    id: "5215819f36623628010019a9"
+    id: "521926a8366236e81c004b04"
   }
   lod: 0
   character_instance {
@@ -60,14 +24,14 @@ worldMapLocation {
     y: 0
   }
 }
-mapName: "Embarcadero Arrival"
+mapName: "Eclipse 1"
 parentStory: ""
-scene_title: "Embarcadero"
+scene_title: "New Scene"
 scene_subtitle: ""
 scene_synopsis: ""
 scene_image: ""
 scene_continue_button_skip: false
-scene_restore_runner_health: true
+scene_restore_runner_health: false
 directional_light_dir {
   x: -0.5
   y: -1
@@ -125,7 +89,7 @@ scene_hiring_prerequisites {
 }
 hiring_slot_count: 0
 hiring_minimum_karma: 0
-hiring_maximum_karma: 0
+hiring_maximum_karma: 25
 roster_overrides {
 }
 use_hiring_cost_warning: true
