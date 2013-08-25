@@ -1,15 +1,15 @@
 regions {
   name: "Camera"
   position {
-    x: -27
-    y: -69
-    width: 78
-    height: 83
+    x: -4
+    y: -64
+    width: 121
+    height: 49
   }
   enabledAtStart: true
   is_camera_region: true
   idRef {
-    id: "521a43e73662360001000909"
+    id: "521a455a366236000100090d"
   }
   directional_light_dir {
     x: -0.5
@@ -37,13 +37,13 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 9
+    x: 45
     y: 0
-    z: -12
+    z: -10
   }
   orientation: ORIENTATION_N
   idRef {
-    id: "521a3b7e3662360001000765"
+    id: "521a64d93662367c1d006ed8"
   }
   lod: 0
   character_instance {
