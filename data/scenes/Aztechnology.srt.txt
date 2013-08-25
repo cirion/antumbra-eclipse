@@ -1,22 +1,3 @@
-characters {
-  name: "system_spawner_playerSpawner"
-  gridPoint {
-    x: -44
-    y: 0
-    z: 77
-  }
-  orientation: ORIENTATION_N
-  idRef {
-    id: "521926a8366236e81c004b04"
-  }
-  lod: 0
-  character_instance {
-    team_id: "Shadowrunners"
-    char_name: "New Actor"
-    enabled_at_start: true
-    pc_spawn_number: 0
-  }
-}
 worldMapLocation {
   filename: ""
   location {
@@ -24,14 +5,14 @@ worldMapLocation {
     y: 0
   }
 }
-mapName: "Eclipse 1"
+mapName: "Aztechnology"
 parentStory: ""
-scene_title: "Eclipse"
+scene_title: "Aztechnology Office"
 scene_subtitle: ""
 scene_synopsis: ""
 scene_image: ""
 scene_continue_button_skip: false
-scene_restore_runner_health: true
+scene_restore_runner_health: false
 directional_light_dir {
   x: -0.5
   y: -1
