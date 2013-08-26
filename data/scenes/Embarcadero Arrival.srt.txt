@@ -37,9 +37,9 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -96
+    x: 42
     y: 0
-    z: 14
+    z: 5
   }
   orientation: ORIENTATION_S
   idRef {
