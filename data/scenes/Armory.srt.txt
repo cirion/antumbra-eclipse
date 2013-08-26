@@ -1,3 +1,77 @@
+regions {
+  name: "Camera"
+  position {
+    x: -14
+    y: -13
+    width: 15
+    height: 19
+  }
+  enabledAtStart: true
+  is_camera_region: true
+  idRef {
+    id: "521a99ec3662367c1d0079a8"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -87
+    y: 0
+    z: -57
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "521a998c3662367c1d0079a7"
+  }
+  lod: 0
+  character_instance {
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 0
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -88
+    y: 0
+    z: -94
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "521aa9e33662367c1d007c09"
+  }
+  lod: 0
+  character_instance {
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 0
+  }
+}
 worldMapLocation {
   filename: ""
   location {
