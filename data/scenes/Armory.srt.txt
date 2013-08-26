@@ -37,28 +37,9 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -87
+    x: -91
     y: 0
-    z: -57
-  }
-  orientation: ORIENTATION_N
-  idRef {
-    id: "521a998c3662367c1d0079a7"
-  }
-  lod: 0
-  character_instance {
-    team_id: "Shadowrunners"
-    char_name: "New Actor"
-    enabled_at_start: true
-    pc_spawn_number: 0
-  }
-}
-characters {
-  name: "system_spawner_playerSpawner"
-  gridPoint {
-    x: -88
-    y: 0
-    z: -94
+    z: -118
   }
   orientation: ORIENTATION_N
   idRef {
