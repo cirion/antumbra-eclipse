@@ -1,4 +1,8 @@
 id: "Megacorps battle for supremacy in San Francisco "
+startScene: "Embarcadero Arrival"
+allowCharacterImport: true
+allowImportedEquipment: true
+allowCharacterGen: true
 character_roster {
   roster_entries {
     reference_id: "lvl1_dwarf_rigger"

@@ -1,0 +1,223 @@
+idRef {
+  id: "521bfe0d3662362419001bac"
+}
+ui_name: "A2_S1_Carver"
+nodes {
+  idRef {
+    id: "521bfe173662362419001bb2"
+  }
+  index: 0
+  text: "Greetings, $(l.name). I\342\200\231m glad that you made it. Am I correct in thinking that you came here to San Francisco in order to work?"
+  branches {
+    responseText: "Why, you offering?"
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Yes."
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "{{GM}}Remain silent.{{/GM}}"
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfe363662362419001bb7"
+  }
+  index: 1
+  text: "I apologize for our lack of contact in Seattle lately, but with the Antumbra site secure, we\342\200\231ve needed to focus our resources on maintaining a presence in CalFree. I\342\200\231ve been on the ground here for a while organizing our defenses, and was just alerted that you might be available to join the effort."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfe423662362419001bba"
+  }
+  index: 2
+  text: "Our organization is experiencing extreme harassment, even danger, from a potent military-industrial complex here in the city. The Japanese megacorporations, in cooperation with their military lapdogs, have driven most of their competition underground. They are no longer content with that, and seek to wipe them from the city entirely. I have reason to believe that an actual assault on our one remaining building is imminent."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+}
+nodes {
+  idRef {
+    id: "521bfe473662362419001bbd"
+  }
+  index: 3
+  text: "Once you get a chance to arm yourself, I need you to head over to the Pyramid and shore up our defenses. They need every hand they can get."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+}
+nodes {
+  idRef {
+    id: "521bfe4f3662362419001bc0"
+  }
+  index: 4
+  text: "Do you have any questions?"
+  branches {
+    responseText: "Why me?"
+    nextNodeIndex: 5
+  }
+  branches {
+    responseText: "Why is it so quiet here?"
+    nextNodeIndex: 7
+  }
+  branches {
+    responseText: "Who is threatening you?"
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "No."
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "{{GM}}Shake your head.{{/GM}}"
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfe6b3662362419001bd4"
+  }
+  index: 5
+  text: "To be honest, I\342\200\231ve been grabbing every runner I can get my hands on. You\342\200\231ve done good work in Seattle, so I hope you\342\200\231ll fare better than the others have. Some have been bought off by Mitsuhama. Others have been arrested by Saito. The remainder have disappeared entirely, though I imagine their corpses will show up eventually."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfe7a3662362419001be0"
+  }
+  index: 6
+  text: "I\342\200\231ll be frank: it doesn\342\200\231t look too good. But, you have a reputation as someone who can get tough jobs done. We\342\200\231ll need that today."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "521bfe8d3662362419001be4"
+  }
+  index: 7
+  text: "That sound you hear is the sound of oppression. Ever since Corporal Saito landed with his Japanese Imperial Marines, the local citizenry has been too cowed to spend much time outdoors. You do get some people wandering around during the day, but at night, everyone stays home to avoid the patrols. Particularly the metahumans. There\342\200\231s no love lost between them and Saito\342\200\231s forces."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfea03662362419001be8"
+  }
+  index: 8
+  text: "Some days it feels like everyone has it out for us. There\342\200\231s constant business competition with Renraku, Mitsuhama, Shiawase, and Fuchi. It isn\342\200\231t the price-cutting kind of competition either, though: they\342\200\231re very brazen with their corporate espionage, and lately they\342\200\231ve been sending their own runners on countless \342\200\234extractions\342\200\235 against our top assets."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfea73662362419001beb"
+  }
+  index: 9
+  text: "The particular threat in San Francisco, though, is the collaboration of Corporal Saito with the megacorps. Unofficially, he\342\200\231s just here to keep the peace. However, any time that a Fuchi runner is captured, they\342\200\231re always released for lack of evidence; any time they get their hands on a metahuman or an Aztechnology runner, that person gets sent away permanently."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "521bfec03662362419001bef"
+  }
+  index: 10
+  text: "Good."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfed23662362419001bf2"
+  }
+  index: 11
+  text: "I\342\200\231ve got a little surprise for you. Do you know Kali? The disgraced Seattleite who built Antumbra? Well, she\342\200\231s here in the city. She\342\200\231s trying to scrape together a second life, far from the hordes of angry lenders.\n\nWe uncovered some juicy blackmail material when we took over the Antumbra site, and have convinced her to open up her new site for you. She isn\342\200\231t happy about it, but it will keep you safe from Saito\342\200\231s goons."
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+}
+nodes {
+  idRef {
+    id: "521bfedd3662362419001bf5"
+  }
+  index: 12
+  text: "Now, let\'s get going."
+  actions {
+    ops {
+      functionName: "Order Actor to Move To (Region)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521bfb3f3662362419001add"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "521c02f63662360c11001ad6"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

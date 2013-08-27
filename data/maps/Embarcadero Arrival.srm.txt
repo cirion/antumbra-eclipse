@@ -1097,19 +1097,6 @@ props {
   lod: 0
 }
 props {
-  name: "docks_floor_6x6panel01"
-  gridPoint {
-    x: -27
-    y: 0
-    z: -32
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5215728e36623628010018c6"
-  }
-  lod: 0
-}
-props {
   name: "docks_floor_3x3panel"
   gridPoint {
     x: -30
@@ -4789,19 +4776,6 @@ props {
 props {
   name: "docks_floor_6x6panel01"
   gridPoint {
-    x: 33
-    y: 0
-    z: -32
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521806003662364c0f0067bd"
-  }
-  lod: 0
-}
-props {
-  name: "docks_floor_6x6panel01"
-  gridPoint {
     x: 18
     y: 0
     z: -26
@@ -7639,19 +7613,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "52180b193662364c0f0068a4"
-  }
-  lod: 0
-}
-props {
-  name: "docks_floor_6x6panel01"
-  gridPoint {
-    x: -57
-    y: 0
-    z: -8
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "52180b193662364c0f0068a5"
   }
   lod: 0
 }
@@ -68967,19 +68928,6 @@ props {
   lod: 0
 }
 props {
-  name: "barrens_building_03edge12"
-  gridPoint {
-    x: -28
-    y: 10
-    z: 63
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521acc753662367c1d008187"
-  }
-  lod: 0
-}
-props {
   name: "barrens_building_03roofFront01"
   gridPoint {
     x: -2
@@ -69080,19 +69028,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "521acc753662367c1d00818f"
-  }
-  lod: 0
-}
-props {
-  name: "barrens_building_03edge12"
-  gridPoint {
-    x: -28
-    y: 10
-    z: 66
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521acc753662367c1d008190"
   }
   lod: 0
 }
@@ -69201,19 +69136,6 @@ props {
   lod: 0
 }
 props {
-  name: "barrens_building_03edge12"
-  gridPoint {
-    x: -28
-    y: 10
-    z: 69
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521acc753662367c1d008199"
-  }
-  lod: 0
-}
-props {
   name: "barrens_building_03base13"
   gridPoint {
     x: 0
@@ -69301,19 +69223,6 @@ props {
   orientation: ORIENTATION_W
   idRef {
     id: "521acc753662367c1d0081a0"
-  }
-  lod: 0
-}
-props {
-  name: "barrens_building_03edge12"
-  gridPoint {
-    x: -28
-    y: 10
-    z: 72
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521acc753662367c1d0081a1"
   }
   lod: 0
 }
@@ -77317,16 +77226,6 @@ props {
   lod: 0
 }
 props {
-  name: "secretLab_wall_4x4fill"
-  gridPoint {
-    x: -34
-    y: 0
-    z: 73
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "barrens_building_03edge05"
   gridPoint {
     x: 0
@@ -77713,6 +77612,162 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "521ae2ab366236401b0059a6"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_ground_twoLaneEnd"
+  gridPoint {
+    x: 33
+    y: 0
+    z: -29
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_floor_3x3panel15"
+  gridPoint {
+    x: 33
+    y: 0
+    z: -32
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "521bf9b13662362419001ad5"
+  }
+  lod: 0
+}
+props {
+  name: "docks_floor_3x3panel"
+  gridPoint {
+    x: 36
+    y: 0
+    z: -32
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "521bf9b33662362419001ad6"
+  }
+  lod: 0
+}
+props {
+  name: "docks_vehicle_rowboat"
+  gridPoint {
+    x: 10
+    y: 0
+    z: -19
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_floor_3x3panel"
+  gridPoint {
+    x: -27
+    y: 0
+    z: -32
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "521bff153662362419001c50"
+  }
+  lod: 0
+}
+props {
+  name: "docks_floor_3x3panel"
+  gridPoint {
+    x: -24
+    y: 0
+    z: -32
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "521bff173662362419001c51"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_ground_twoLaneEnd"
+  gridPoint {
+    x: -27
+    y: 0
+    z: -29
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521bff1c3662362419001c52"
+  }
+  lod: 0
+}
+props {
+  name: "custom_vehicles_taxi"
+  gridPoint {
+    x: -26
+    y: 0
+    z: -27
+  }
+  orientation: ORIENTATION_W
+  displayName: "Taxi"
+  idRef {
+    id: "521c03733662360c11001ad9"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    transitionPoint {
+      scene_name: "Eclipse 1"
+      confirmation_text: "Are you ready to travel to Eclipse?"
+    }
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_taxiKiosk"
+  gridPoint {
+    x: -29
+    y: 0
+    z: -27
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_ground_twoLaneEnd"
+  gridPoint {
+    x: -54
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "521c03fd3662360c11001b7e"
+  }
+  lod: 0
+}
+props {
+  name: "docks_floor_3x3panel"
+  gridPoint {
+    x: -57
+    y: 0
+    z: -5
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "521c04013662360c11001b7f"
+  }
+  lod: 0
+}
+props {
+  name: "docks_floor_3x3panel"
+  gridPoint {
+    x: -57
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521c04063662360c11001b80"
   }
   lod: 0
 }

@@ -1,0 +1,122 @@
+idRef {
+  id: "521bfc123662362419001ade"
+}
+ui_name: "A2_S1_Cirion"
+nodes {
+  idRef {
+    id: "521bfc393662362419001ae4"
+  }
+  index: 0
+  text: "Hello there!\n\nI couldn\342\200\231t help but noticing that you seem to have imported a character without finishing the original Antumbra mission."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfc443662362419001ae7"
+  }
+  index: 1
+  text: "Just so you know, the content of this mission is tuned for either a new character, or an imported character from the first Antumbra. You\342\200\231re free to play it how you like, of course, but it probably won\342\200\231t be as much fun if you continue with this character."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+}
+nodes {
+  idRef {
+    id: "521bfc4b3662362419001aea"
+  }
+  index: 2
+  text: "So, what do you say? Do you want to try again with another character?"
+  branches {
+    responseText: "Sure!"
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "Slag off and die, frag-face! Let me play my game!"
+    nextNodeIndex: 5
+  }
+}
+nodes {
+  idRef {
+    id: "521bfc5d3662362419001aee"
+  }
+  index: 3
+  text: "Great! Have fun!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+}
+nodes {
+  idRef {
+    id: "521bfc903662362419001af6"
+  }
+  index: 4
+  text: ""
+  actions {
+    ops {
+      functionName: "End Story With Epilogue"
+      args {
+        string_value: ""
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "521bfc683662362419001af0"
+  }
+  index: 5
+  text: "Yes, $(l.sir)!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfc743662362419001af3"
+  }
+  index: 6
+  text: ""
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521bf9c23662362419001ad7"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

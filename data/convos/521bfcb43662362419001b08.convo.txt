@@ -1,0 +1,296 @@
+idRef {
+  id: "521bfcb43662362419001b08"
+}
+ui_name: "A2_S1_Kali"
+nodes {
+  idRef {
+    id: "521bfcbc3662362419001b0e"
+  }
+  index: 0
+  text: "Hi, $(l.name)! Welcome to Baghdad by the Bay!"
+  branches {
+    responseText: "I didn\342\200\231t expect to find you here."
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Good to see you, too."
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "{{GM}}Remain silent.{{/GM}}"
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfcda3662362419001b13"
+  }
+  index: 1
+  text: "Our mutual friends noticed you passing the Golden Gate, and thought that you\342\200\231d be perfect for a little job coming up. I presume that you are here to work, right?\n\nMy... business associates have been very supportive of Antumbra Enterprises, and recently decided to extend our brand into CalFree. They\342\200\231ve secured a great new building that\342\200\231s already transforming the social scene in this town."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfce63662362419001b16"
+  }
+  index: 2
+  text: "Of course, they\342\200\231re businesspeople, and look to us to handle certain issues that the rest of their corporation isn\342\200\231t suited for. Mostly that involves rehabilitating certain figures in the media, but we also help them locate SINless agents for dirtier work.\n\nAztechnology is big in the rest of the world, but they\342\200\231re a very small force here. They\342\200\231re not even technically allowed to exist. They\342\200\231re seeking to skirt the law by hiding behind a shell company. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+}
+nodes {
+  idRef {
+    id: "521bfcf23662362419001b19"
+  }
+  index: 3
+  text: "We know it, and they know that we know it, but we can\342\200\231t take any direct action against them without risking reprisal in other territories. That\342\200\231s where you come in. We need you to infiltrate the Pyramid and find detailed data describing their illegal operations here in CalFree.\n\nAnd, frankly, the more of their operation you manage to violently disrupt, the happier you\342\200\231ll make the folks upstairs."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+}
+nodes {
+  idRef {
+    id: "521bfcfa3662362419001b1c"
+  }
+  index: 4
+  text: "Now! Do you have any questions?"
+  branches {
+    responseText: "What are you doing here?"
+    nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "521bfd843662362419001b3e"
+    }
+  }
+  branches {
+    responseText: "What is Eclipse?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "HeardOfEclipse"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 6
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "521c04893662360c11001baa"
+    }
+  }
+  branches {
+    responseText: "Why is it so quiet here?"
+    nextNodeIndex: 7
+    onlyOnce: true
+    idRef {
+      id: "521bfdaa3662362419001b52"
+    }
+  }
+  branches {
+    responseText: "How is business?"
+    nextNodeIndex: 9
+    onlyOnce: true
+    idRef {
+      id: "521c09b53662360c11001c00"
+    }
+  }
+  branches {
+    responseText: "That\342\200\231s it."
+    nextNodeIndex: 11
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "{{GM}}Shake your head.{{/GM}}"
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfd803662362419001b3d"
+  }
+  index: 5
+  text: "I can manage most of Antumbra Enterprises from anywhere. Still, I like to be on site when a new location is getting off the ground. I\342\200\231m introducing Eclipse to the local movers and shakers, and fine-tuning the entertainment to match the... particular tastes of this city."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "HeardOfEclipse"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "521bfda33662362419001b51"
+  }
+  index: 6
+  text: "Oh, have you not heard about it in Seattle yet? It\342\200\231s our newest vision for a full Antumbra Experience. It has the great music, live shows, and fine dining of our original club, but it adds everything else today\342\200\231s elite need in their lifestyle. The hottest gadgets, cosmetic cybernetic upgrades, personal protection, customized information services, and paid companionship are finally all available in one convenient, indulgent location."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfdac3662362419001b54"
+  }
+  index: 7
+  text: "Ever since the Imperial Japanese marines landed, the street scene has grown far less lively. Metahumans know that they aren\342\200\231t wanted, so they tend to keep their heads down in quieter neighborhoods. Most of the humans are busy working for the Japanese megacorps down in the financial district. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfdb83662362419001b57"
+  }
+  index: 8
+  text: "It\342\200\231s been a bit of a challenge when opening Eclipse. Saito\342\200\231s troops aren\342\200\231t too happy with undocumented movements, which puts a damper on nightlife. Fortunately, the salarymen who do make it out have lots of money to spend."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfdc13662362419001b59"
+  }
+  index: 9
+  text: "Booming! Ever since that site of power was discovered under my first club, Antumbra Enterprises has been growing in ways I never would have expected. I used to just run a tiny simsense division in a vast megacorp; now, I\342\200\231m in charge of a large portfolio that includes not just entertainment, but some fun corporate espionage as well."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfdc83662362419001b5c"
+  }
+  index: 10
+  text: "I sometimes miss the old days - just me and a microphone, up on the stage, belting my heart out. Still, I\342\200\231m having a much bigger impact on the world now than I ever could through my music alone."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521bfd693662362419001b38"
+  }
+  index: 11
+  text: "Great! Hop in and let\342\200\231s take you to Eclipse."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Order Actor to Move To (Region)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521bfb3c3662362419001adc"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "521c02f63662360c11001ad6"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}
