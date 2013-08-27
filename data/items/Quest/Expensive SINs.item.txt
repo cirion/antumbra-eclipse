@@ -1,0 +1,8 @@
+id: "Expensive SINs"
+type: ItemType_QuestItem
+uirep {
+  name: "Two Fake SINs"
+  description: "Amelia lifted these SINs from corpses. They will withstand most scrutiny."
+}
+credentials: 0
+sorting_group: "Quest"

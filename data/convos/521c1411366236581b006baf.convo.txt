@@ -1,0 +1,449 @@
+idRef {
+  id: "521c1411366236581b006baf"
+}
+ui_name: "A2S02-Johnson"
+nodes {
+  idRef {
+    id: "521c141d366236581b006bb5"
+  }
+  index: 0
+  text: "Welcome, $(l.name). $(scene.employer) has told me all about you.\n\nThe scene of the action today is the old Aztechnology Pyramid. It has officially been acquired by Pyramid Operations, but it\342\200\231s an open secret that they\342\200\231re still answering to the honchos in Tenochtitlan."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToDunner"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "521c1453366236581b006bb9"
+  }
+  index: 1
+  text: "Here\342\200\231s some nuyen I\342\200\231ve been authorized to disburse. Before we can head to the pyramid, you\342\200\231ll need to take care of a couple of things.\n\nFirst of all, you\342\200\231ll need a system identification number that\342\200\231s recognized here in CalFree. Since the city came under martial law, Colonel Saito\342\200\231s troops have been checking all SINs, and hauling away anyone who doesn\342\200\231t seem to belong. Eclipse is probably the best place in the city to buy a fake SIN."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+}
+nodes {
+  idRef {
+    id: "521c1508366236581b006bbc"
+  }
+  index: 2
+  text: "After that, you\342\200\231ll want to equip yourself for the job. There are many vendors here on the first floor that can supply you with any weapons, spells, or machinery you need. I also recommend hiring another runner to join you. Shadowrunners tend to congregate on the top floor of Eclipse.\n\nIt might be worth conducting some reconnaissance as well, but don\342\200\231t take too long. The situation at the Pyramid isn\342\200\231t going to get any better."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521c1513366236581b006bbf"
+  }
+  index: 3
+  text: "Any questions?"
+  branches {
+    responseText: "What exactly will I be doing in the Pyramid?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "KaliAlly"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    actions {
+      ops {
+        functionName: "Set Variable (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "TalkedToDunner"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "521c23ef366236581b006d96"
+    }
+  }
+  branches {
+    responseText: "What exactly will I be doing in the Pyramid?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "KaliAlly"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    actions {
+      ops {
+        functionName: "Set Variable (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "TalkedToDunner"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 5
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "521c1649366236581b006c10"
+    }
+  }
+  branches {
+    responseText: "What should I expect in the Pyramid?"
+    nextNodeIndex: 6
+    onlyOnce: true
+    idRef {
+      id: "521c16ba366236581b006c2c"
+    }
+  }
+  branches {
+    responseText: "How is Eclipse doing?"
+    nextNodeIndex: 7
+    onlyOnce: true
+    idRef {
+      id: "521c16dc366236581b006c33"
+    }
+  }
+  branches {
+    responseText: "What runner should I hire?"
+    nextNodeIndex: 8
+    onlyOnce: true
+    idRef {
+      id: "521c210e366236581b006c8f"
+    }
+  }
+  branches {
+    responseText: "{{CC}}Fake SINs{{/CC}} I\342\200\231m ready to go."
+    conditions {
+      ops {
+        functionName: "OR"
+        args {
+          call_value {
+            functionName: "Evaluate If Actor Has Item"
+            args {
+              call_value {
+                functionName: "Specific Actor"
+                args {
+                  call_value {
+                    functionName: "Get Map Item (Player)"
+                    args {
+                      int_value: 0
+                    }
+                  }
+                }
+                args {
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "HasOrHasNot"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Map Item (Item)"
+                args {
+                  string_value: "Cheap SINs"
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Evaluate If Actor Has Item"
+            args {
+              call_value {
+                functionName: "Specific Actor"
+                args {
+                  call_value {
+                    functionName: "Get Map Item (Player)"
+                    args {
+                      int_value: 0
+                    }
+                  }
+                }
+                args {
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "HasOrHasNot"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Map Item (Item)"
+                args {
+                  string_value: "Expensive SINs"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "Not for now."
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "{{GM}}Leave.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521c163c366236581b006c03"
+  }
+  index: 4
+  text: "Your objective is to extract data that thoroughly documents the relationship between Aztechnology and Pyramid Operations. You\342\200\231ll probably need to reach the top floor to obtain it; that\342\200\231s where the most sensitive data is typically kept. It might be in the possession of Morgan Tooms, the director of Pyramid Operations.\n\nI\342\200\231m authorized to inform you that my employer will look fondly upon a scene of great carnage. In other words, you may seek to maximize casualties."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521c164b366236581b006c12"
+  }
+  index: 5
+  text: "The last I heard, a team of runners had started an assault on the Pyramid. Morgan Tooms, the director of operations in this city, has barricaded himself on the top floor with his remaining guards. You\342\200\231ll need to fight your way to the top and rescue him."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521c16b8366236581b006c2b"
+  }
+  index: 6
+  text: "As with many megacorp buildings, security will grow tighter the higher you ascend. The ground floor will probably just have a few patrolling guards. As you go higher, you\342\200\231ll encounter more security measures like maglocked doors, computer-assisted turret systems, and even mages."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521c16cc366236581b006c30"
+  }
+  index: 7
+  text: "From the looks of it, quite well. San Franciscans haven\342\200\231t had access to entertainment like this in several years. Management must have bribed Saito quite handsomely to avoid the harassment that other clubs have encountered."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521c16e6366236581b006c35"
+  }
+  index: 8
+  text: "I can\342\200\231t say. You\342\200\231ll probably want someone to complement your strengths and weaknesses. Mages and Samurai often go together well, for example.\n\nIf you aren\342\200\231t a skilled decker, it might be smart to find someone who is. Corp buildings often have local Matrix nodes that can be hacked to bypass certain aspects of security. It isn\342\200\231t mandatory, though. Sometimes brute force is more effective than a soft touch."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521c1724366236581b006c3b"
+  }
+  index: 9
+  text: "All right, I\'ll bring the car around. Meet you outside."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521c17f8366236581b006c62"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521c1210366236581b006b94"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

@@ -1,0 +1,8 @@
+id: "Cheap SINs"
+type: ItemType_QuestItem
+uirep {
+  name: "Two Fake SINs"
+  description: "Hailey created these false identities for your use. They should pass cursory inspections."
+}
+credentials: 0
+sorting_group: "Quest"

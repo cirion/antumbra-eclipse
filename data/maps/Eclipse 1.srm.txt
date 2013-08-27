@@ -3614,6 +3614,15 @@ props {
     z: -4
   }
   orientation: ORIENTATION_N
+  displayName: "Stairs First Floor"
+  idRef {
+    id: "521c112e366236581b006b90"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Warp
+  }
   lod: 0
 }
 props {
@@ -4803,6 +4812,17 @@ props {
     z: -24
   }
   orientation: ORIENTATION_S
+  idRef {
+    id: "521c17f8366236581b006c62"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    transitionPoint {
+      scene_name: "Aztechnology"
+      confirmation_text: "Are you ready to travel to the Aztechnology Pyramid?"
+    }
+  }
   lod: 0
 }
 props {
@@ -7110,8 +7130,14 @@ props {
     z: 76
   }
   orientation: ORIENTATION_N
+  displayName: "Stairs Second Floor"
   idRef {
     id: "521936cf36623658080049a7"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Warp
   }
   lod: 0
 }
@@ -18758,6 +18784,45 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "521942d43662365808004d26"
+  }
+  lod: 0
+}
+props {
+  name: "office_floor_marbleTile04"
+  gridPoint {
+    x: -49
+    y: 0
+    z: 67
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521c10d8366236581b006b8c"
+  }
+  lod: 0
+}
+props {
+  name: "office_floor_marbleTile04"
+  gridPoint {
+    x: -57
+    y: 0
+    z: 67
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521c10dd366236581b006b8d"
+  }
+  lod: 0
+}
+props {
+  name: "office_floor_marbleTile04"
+  gridPoint {
+    x: -65
+    y: 0
+    z: 67
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521c10e3366236581b006b8e"
   }
   lod: 0
 }
