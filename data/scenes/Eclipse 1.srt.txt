@@ -1,5 +1,5 @@
 triggers {
-  name: "Go Up Stairs"
+  name: "Go Up Stairs Start"
   events {
     ops {
       functionName: "On Item Interaction"
@@ -14,6 +14,144 @@ triggers {
     }
   }
   conditions {
+  }
+  actions {
+    ops {
+      functionName: "Fade Camera Out"
+      args {
+        float_value: 1
+      }
+      args {
+        float_value: 0.5
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "GoingUpStairs"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "BeenUpStairs"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "521c114c366236581b006b92"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Go Up Stairs Finish"
+  events {
+    ops {
+      functionName: "On Camera Fade Out"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "GoingUpStairs"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "BeenUpStairs"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -70,12 +208,29 @@ triggers {
       }
     }
     ops {
-      functionName: "Teleport Camera To Actor"
+      functionName: "Clear Camera Points of Interest"
+    }
+    ops {
+      functionName: "Fade Camera In"
+      args {
+        float_value: 1
+      }
+      args {
+        float_value: 0.5
+      }
+    }
+    ops {
+      functionName: "Teleport Camera To Point"
       args {
         call_value {
-          functionName: "Get Map Item (Player)"
+          functionName: "Center of Region"
           args {
-            int_value: 0
+            call_value {
+              functionName: "Get Map Item (Region)"
+              args {
+                string_value: "521c10d1366236581b006b8b"
+              }
+            }
           }
         }
       }
@@ -83,14 +238,14 @@ triggers {
   }
   isActive: true
   idRef {
-    id: "521c114c366236581b006b92"
+    id: "521d4e4c366236c00d0001ec"
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
-  name: "Go Down Stairs"
+  name: "Go Down Stairs Start"
   events {
     ops {
       functionName: "On Item Interaction"
@@ -107,6 +262,147 @@ triggers {
   conditions {
   }
   actions {
+    ops {
+      functionName: "Fade Camera Out"
+      args {
+        float_value: 1
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "BeenUpStairs"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "GoingUpStairs"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "521d4ffa366236c00d0001ed"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Go Down Stairs Finish"
+  events {
+    ops {
+      functionName: "On Camera Fade Out"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "BeenUpStairs"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "GoingUpStairs"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Clear Camera Points of Interest"
+    }
     ops {
       functionName: "Teleport Actor"
       args {
@@ -171,6 +467,15 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Fade Camera In"
+      args {
+        float_value: 1
+      }
+      args {
+        float_value: 0.5
+      }
+    }
   }
   isActive: true
   idRef {
@@ -178,7 +483,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Remove Carver"
@@ -189,7 +494,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Region)"
           args {
-            string_value: "521c1097366236581b006b8a"
+            string_value: "521d5266366236c00d00026a"
           }
         }
       }
@@ -226,29 +531,31 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Kill Actor"
+      functionName: "Play Animation"
       args {
         call_value {
-          functionName: "Specific Actor"
+          functionName: "Get Map Item (Actor)"
           args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
+            string_value: "521c1210366236581b006b94"
           }
         }
       }
       args {
+        string_value: "interact"
+      }
+    }
+    ops {
+      functionName: "Send Event After Delay"
+      args {
         call_value {
-          functionName: "Get Preset Value (int)"
+          functionName: "Get Map Item (Event)"
           args {
-            string_value: "DeathMethod"
-          }
-          args {
-            int_value: 3
+            string_value: "Kill Carver"
           }
         }
+      }
+      args {
+        float_value: 2
       }
     }
   }
@@ -327,44 +634,6 @@ triggers {
           }
           args {
             int_value: 3
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Start Conversation Between Actors"
-      args {
-        call_value {
-          functionName: "Get Map Item (Conversation)"
-          args {
-            string_value: "521c1411366236581b006baf"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Player)"
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Actor)"
-          args {
-            string_value: "521c1806366236581b006c63"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
           }
         }
       }
@@ -489,6 +758,255 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Start Chat Carver"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Dependent Story Variable (bool)"
+          args {
+            call_value {
+              functionName: "Get Previous Story Variable (bool)"
+              args {
+                string_value: "51f7429764343188990041a8"
+              }
+              args {
+                string_value: "A1_Bool_SidedWithKali"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "bool"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521c1210366236581b006b95"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Start Conversation Between Actors"
+      args {
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "521d4b3736623684180001ec"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "521c1210366236581b006b94"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "521d53f7366236c00d00028b"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Start Johnson Chat"
+  events {
+    ops {
+      functionName: "Get Map Item (Event)"
+      args {
+        string_value: "Start Johnson Chat"
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Start Conversation Between Actors"
+      args {
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "521c1411366236581b006baf"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "521c1806366236581b006c63"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "521d4b8136623684180001fd"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Carver Exits"
+  events {
+    ops {
+      functionName: "Get Map Item (Event)"
+      args {
+        string_value: "Kill Carver"
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521c1210366236581b006b94"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "521d4ffc366236c00d0001ee"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "First Floor Stairs"
   position {
@@ -561,12 +1079,48 @@ regions {
   loop_combat_music: true
   loop_default_music: false
 }
+regions {
+  name: "Exit Outside"
+  position {
+    x: 1
+    y: -23
+    width: 2
+    height: 2
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "521d5266366236c00d00026a"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 2
+    x: 4
     y: 0
-    z: -22
+    z: -21
   }
   orientation: ORIENTATION_E
   idRef {
@@ -595,9 +1149,7 @@ characters {
   interactionRoot {
     isEnabled: true
     interactionRadius: 1
-    conversationPoint {
-      conversationID: "521bfe0d3662362419001bac"
-      turnToFace: true
+    dummyInteraciton {
     }
   }
   lod: 0
@@ -627,7 +1179,7 @@ characters {
       archetypeName: "Non-Combatant"
     }
     team_id: "Civilians"
-    char_name: "Mr. Johnson"
+    char_name: "Carver Wells"
     pc_spawn_number: -1
     portrait {
       filename: "backer_humanmale_levieranburks"
@@ -650,9 +1202,7 @@ characters {
   interactionRoot {
     isEnabled: true
     interactionRadius: 1
-    conversationPoint {
-      conversationID: "521bfcb43662362419001b08"
-      turnToFace: true
+    dummyInteraciton {
     }
   }
   lod: 0
@@ -708,6 +1258,14 @@ characters {
   displayName: "Ike Dunner"
   idRef {
     id: "521c1806366236581b006c63"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "521c1411366236581b006baf"
+      turnToFace: true
+    }
   }
   lod: 0
   character_instance {
@@ -778,6 +1336,24 @@ variables {
     typeName: "bool"
   }
 }
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "GoingUpStairs"
+    typeName: "bool"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "BeenUpStairs"
+    typeName: "bool"
+  }
+}
+mapEvents: "Start Johnson Chat"
+mapEvents: "Kill Carver"
 worldMapLocation {
   filename: ""
   location {

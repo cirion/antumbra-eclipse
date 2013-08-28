@@ -1,29 +1,27 @@
 idRef {
-  id: "521c130c366236581b006b9e"
+  id: "521d4b3736623684180001ec"
 }
-ui_name: "A2S02-Kali"
+ui_name: "A2S02-CarverWells"
 nodes {
   idRef {
-    id: "521c132a366236581b006ba4"
+    id: "521d4b4336623684180001f2"
   }
   index: 0
-  text: "Welcome to Eclipse! I hope you\342\200\231ll take the time to walk around and check it out. I\342\200\231m very proud of it.\n\nOh, let me introduce you to Mr. Johnson. I\342\200\231m afraid that my duties will keep me from spending more time with you, but Mr. Johnson has everything you need to know about your new gig. Ta!"
+  text: "Here we are. Kali caused quite a scene the last time I appeared here, so I\342\200\231d better leave before she spots me again.\n\nI suppose I might as well introduce myself properly: the name is Carver Wells. My days as a Mr. Johnson are over now that I oversee security operations in this city. Allow me to introduce you to the new Mr. Johnson. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521d529f366236c00d000277"
+  }
+  index: 1
+  text: "You may consider him my eyes and ears. Report to him as you would report to me. Cross him and you will feel my wrath. Never forget: however difficult a spot we may be in here, outside of CalFree Aztechnology\342\200\231s reach is practically limitless."
   nodeType: ConversationNodeType_Simple
   actions {
-    ops {
-      functionName: "Enable/Disable Manual Turn Mode"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
     ops {
       functionName: "Set Actor In Passive Mode"
       args {
@@ -33,7 +31,7 @@ nodes {
             call_value {
               functionName: "Get Map Item (Actor)"
               args {
-                string_value: "521c1210366236581b006b95"
+                string_value: "521c1210366236581b006b94"
               }
             }
           }
@@ -62,7 +60,7 @@ nodes {
             call_value {
               functionName: "Get Map Item (Actor)"
               args {
-                string_value: "521c1210366236581b006b95"
+                string_value: "521c1210366236581b006b94"
               }
             }
           }
@@ -83,60 +81,12 @@ nodes {
       }
     }
     ops {
-      functionName: "Order Actor to Move To (Region)"
+      functionName: "Send Event"
       args {
         call_value {
-          functionName: "Specific Actor"
+          functionName: "Get Map Item (Event)"
           args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "521c1210366236581b006b95"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Region)"
-          args {
-            string_value: "521c1097366236581b006b8a"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Set Variable (bool)"
-      args {
-        call_value {
-          functionName: "Get Variable (bool)"
-          args {
-            string_value: "KaliAlly"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "bool"
-          }
-          args {
-            int_value: 1
+            string_value: "Start Johnson Chat"
           }
         }
       }
@@ -152,22 +102,62 @@ nodes {
         }
       }
       args {
-        string_value: "Kali"
+        string_value: "Carver"
+      }
+    }
+    ops {
+      functionName: "Order Actor to Move To (Region)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521c1210366236581b006b94"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "521d5266366236c00d00026a"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 7
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Manual Turn Mode"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
       }
     }
     ops {
       functionName: "End Current Actor Turn"
-    }
-    ops {
-      functionName: "Send Event"
-      args {
-        call_value {
-          functionName: "Get Map Item (Event)"
-          args {
-            string_value: "Start Johnson Chat"
-          }
-        }
-      }
     }
   }
 }
