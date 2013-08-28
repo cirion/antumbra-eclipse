@@ -1,0 +1,447 @@
+idRef {
+  id: "521d829e366236a415000125"
+}
+ui_name: "A2S02-Amelia"
+nodes {
+  idRef {
+    id: "521d82c6366236a41500012c"
+  }
+  index: 0
+  text: "Welcome to Amelia\342\200\231s Emporium! This is your number-one stop for mostly-legitimate goods!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToAmelia"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "521d82cf366236a41500012f"
+  }
+  index: 1
+  text: "What quality item would you like today?"
+  branches {
+    responseText: "{{GM}}View her inventory.{{/GM}}"
+    actions {
+      ops {
+        functionName: "Open Store Screen From Actor"
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "521d609c366236f012002d14"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "Where do you get your supply from?"
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "521d84a4366236a41500015f"
+    }
+  }
+  branches {
+    responseText: "Do you have any other locations?"
+    nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "521d84a1366236a41500015e"
+    }
+  }
+  branches {
+    responseText: "Do you know where I could find a fake SIN?"
+    conditions {
+      ops {
+        functionName: "OR"
+        args {
+          call_value {
+            functionName: "Evaluate If Actor Has Item"
+            args {
+              call_value {
+                functionName: "Specific Actor"
+                args {
+                  call_value {
+                    functionName: "Get Map Item (Player)"
+                    args {
+                      int_value: 0
+                    }
+                  }
+                }
+                args {
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "HasOrHasNot"
+                }
+                args {
+                  int_value: 0
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Map Item (Item)"
+                args {
+                  string_value: "Cheap SINs"
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Evaluate If Actor Has Item"
+            args {
+              call_value {
+                functionName: "Specific Actor"
+                args {
+                  call_value {
+                    functionName: "Get Map Item (Player)"
+                    args {
+                      int_value: 0
+                    }
+                  }
+                }
+                args {
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "HasOrHasNot"
+                }
+                args {
+                  int_value: 0
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Map Item (Item)"
+                args {
+                  string_value: "Expensive SINs"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 5
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "{{GM}}Leave.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521d8354366236a41500013c"
+  }
+  index: 2
+  text: "A most excellent question! Most retail outlets in our fair city are dependent upon the consortium of Japanese megacorps for supply. That means tight controls over the more exotic goods, and dealing with rampant price-fixing.\n\nPersonally, I\342\200\231m a firm believer in a free market. Free of borders, of tariffs, of safety regulations. Live free and kill, that\342\200\231s my motto!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521d837d366236a415000140"
+  }
+  index: 3
+  text: "So, to answer your query: I connect with like-minded wholesalers from all over. We\342\200\231ve got boats coming in a Pillar Point, at Tomales Bay, even Baker Beach sometimes. We cut out the taxes, and pass the savings on to you!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "521d8393366236a415000150"
+  }
+  index: 4
+  text: "Not just yet, I\342\200\231m afraid. I\342\200\231ve been able to operate under Saito\342\200\231s radar so far, and expanding my customer base too recklessly could earn me a visit from the marines.\n\nStill, I pride myself in offering quality goods at a reasonable price. A better class of customer means more to me than a second storefront would."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521d83b1366236a415000154"
+  }
+  index: 5
+  text: "Yes. I even know where you could find a good one: right here."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521d83b9366236a415000157"
+  }
+  index: 6
+  text: "Any bedroom decker can slap together a fake, Matrix-only identity. That will help if you\342\200\231re dealing with a bored checkpoint guard, but when you have actual corporate security scrutinizing your records, you\342\200\231ll need the real thing.\n\nI\342\200\231ve gotten really good at supplying my smugglers with everything they need to evade discovery. That includes a SIN appropriated from a real, actual Californian. It will hold up to any scrutiny short of biometric verification."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521d83c1366236a41500015a"
+  }
+  index: 7
+  text: "You\342\200\231ll have to pay for it, though: \302\245500 for a pair. What do you say?"
+  branches {
+    responseText: "{{CC}}\302\245500{{/CC}} Let\342\200\231s do it."
+    conditions {
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 500
+        }
+      }
+    }
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "Too expensive."
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "No."
+    nextNodeIndex: 10
+  }
+}
+nodes {
+  idRef {
+    id: "521d84ab366236a415000161"
+  }
+  index: 8
+  text: "An excellent choice! You won\342\200\231t regret it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Remove Nuyen"
+      args {
+        int_value: 500
+      }
+    }
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Expensive SINs"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "521d8502366236a4150001ae"
+  }
+  index: 9
+  text: "Worth more than your life, huh? Whatever you say."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521d84f8366236a4150001aa"
+  }
+  index: 10
+  text: "Shame. Well, I have a fresh pair ready if you change your mind."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521d82e1366236a415000133"
+  }
+  index: 11
+  text: "A customer returns!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToAmelia"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToAmelia"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 11
+}
