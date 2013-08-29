@@ -158,16 +158,36 @@ triggers {
       functionName: "Teleport Actor"
       args {
         call_value {
-          functionName: "Specific Actor"
+          functionName: "All Actors on Team"
           args {
             call_value {
-              functionName: "Get Map Item (Player)"
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
               args {
                 int_value: 0
               }
             }
           }
           args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
           }
         }
       }
@@ -231,6 +251,59 @@ triggers {
                 string_value: "521c10d1366236581b006b8b"
               }
             }
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Teleport Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 1
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Center of Region"
+          args {
+            call_value {
+              functionName: "Get Map Item (Region)"
+              args {
+                string_value: "521c10d1366236581b006b8b"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeleportMethod"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -404,19 +477,59 @@ triggers {
       functionName: "Clear Camera Points of Interest"
     }
     ops {
+      functionName: "Teleport Camera To Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Fade Camera In"
+      args {
+        float_value: 1
+      }
+      args {
+        float_value: 0.5
+      }
+    }
+    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
-          functionName: "Specific Actor"
+          functionName: "All Actors on Team"
           args {
             call_value {
-              functionName: "Get Map Item (Player)"
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
               args {
                 int_value: 0
               }
             }
           }
           args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
           }
         }
       }
@@ -454,26 +567,6 @@ triggers {
             int_value: 0
           }
         }
-      }
-    }
-    ops {
-      functionName: "Teleport Camera To Actor"
-      args {
-        call_value {
-          functionName: "Get Map Item (Player)"
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Fade Camera In"
-      args {
-        float_value: 1
-      }
-      args {
-        float_value: 0.5
       }
     }
   }
@@ -1029,69 +1122,36 @@ triggers {
       functionName: "Teleport Actor"
       args {
         call_value {
-          functionName: "Specific Actor"
+          functionName: "All Actors on Team"
           args {
             call_value {
-              functionName: "Get Map Item (Player)"
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
               args {
                 int_value: 0
               }
             }
           }
           args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Center of Region"
-          args {
             call_value {
-              functionName: "Get Map Item (Region)"
+              functionName: "Get Preset Value (int)"
               args {
-                string_value: "521d6289366236f012002d1c"
+                string_value: "AllOrAny"
               }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 5
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TeleportMethod"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Teleport Actor"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Player)"
               args {
-                int_value: 1
+                int_value: 0
               }
             }
           }
           args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
           }
         }
       }
@@ -1176,69 +1236,36 @@ triggers {
       functionName: "Teleport Actor"
       args {
         call_value {
-          functionName: "Specific Actor"
+          functionName: "All Actors on Team"
           args {
             call_value {
-              functionName: "Get Map Item (Player)"
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
               args {
                 int_value: 0
               }
             }
           }
           args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Center of Region"
-          args {
             call_value {
-              functionName: "Get Map Item (Region)"
+              functionName: "Get Preset Value (int)"
               args {
-                string_value: "521d62a6366236f012002d1d"
+                string_value: "AllOrAny"
               }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 5
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TeleportMethod"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Teleport Actor"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Player)"
               args {
-                int_value: 1
+                int_value: 0
               }
             }
           }
           args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
           }
         }
       }
@@ -1300,6 +1327,590 @@ triggers {
   elseActions {
   }
   is_oneshot: false
+}
+triggers {
+  name: "Use Terminal"
+  events {
+    ops {
+      functionName: "On Item Interaction"
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521ea517366236941a0001b8"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Start Conversation Between Actors"
+      args {
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "521ead10366236941a0002fb"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "521ebfd4366236941a0006b0"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "521ec00f366236941a0006b1"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Dalmin Joins Team"
+  events {
+    ops {
+      functionName: "On Conversation Complete"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_HiredDalmin_Part1"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "No Condition"
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521d69df366236f012002d29"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521d69df366236f012002d29"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521d69df366236f012002d29"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Control"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521d69df366236f012002d29"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PlayerOrAI"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "521ed220366236941a000c6b"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Hailey Joins Team"
+  events {
+    ops {
+      functionName: "On Conversation Complete"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_HiredHailey_Part1"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521d63f1366236f012002d25"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521d63f1366236f012002d25"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521d63f1366236f012002d25"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Control"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521d63f1366236f012002d25"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PlayerOrAI"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "521ed2ad366236941a000c6c"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Orion Joins Team"
+  events {
+    ops {
+      functionName: "On Conversation Complete"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_HiredOrion_Part1"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521d65c4366236f012002d26"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521d65c4366236f012002d26"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521d65c4366236f012002d26"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Control"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521d65c4366236f012002d26"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PlayerOrAI"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "521ed2b0366236941a000c6d"
+  }
+  elseActions {
+  }
+  is_oneshot: true
 }
 regions {
   name: "First Floor Stairs"
@@ -1589,7 +2200,7 @@ characters {
         morale: 24
         awareness: 24
         protect_tether_range: 5
-        move_speed: 6
+        move_speed: 42
       }
       skills {
       }
@@ -1690,6 +2301,14 @@ characters {
   idRef {
     id: "521d6096366236f012002d13"
   }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "521e6531643431a9f264f5f0"
+      turnToFace: true
+    }
+  }
   lod: 0
   character_instance {
     prefab_name: "Gangers/ElfMaleGangerDreads"
@@ -1718,8 +2337,9 @@ characters {
       }
       specializations {
       }
+      archetypeName: "Non-Combatant"
     }
-    team_id: "Shadowrunners"
+    team_id: "Civilians"
     char_name: "Necalli Yaotl"
     pc_spawn_number: -1
     portrait {
@@ -1739,6 +2359,14 @@ characters {
   displayName: "Amelia"
   idRef {
     id: "521d609c366236f012002d14"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "521d829e366236a415000125"
+      turnToFace: true
+    }
   }
   lod: 0
   character_instance {
@@ -1769,8 +2397,9 @@ characters {
       }
       specializations {
       }
+      archetypeName: "Non-Combatant"
     }
-    team_id: "Shadowrunners"
+    team_id: "Civilians"
     char_name: "Amelia"
     pc_spawn_number: -1
     portrait {
@@ -1790,6 +2419,14 @@ characters {
   displayName: "The Dave"
   idRef {
     id: "521d60a3366236f012002d15"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "521e6645643431a9f264f66f"
+      turnToFace: true
+    }
   }
   lod: 0
   character_instance {
@@ -1813,10 +2450,29 @@ characters {
         protect_tether_range: 5
         move_speed: 6
       }
+      skills {
+      }
+      specializations {
+      }
       archetypeName: "Non-Combatant"
     }
     equipment {
       prefab_name: "RiggerTrenchcoat"
+    }
+    equipment {
+      prefab_name: "Vision Magnification Eyes"
+    }
+    equipment {
+      prefab_name: "Obvious Cyberleg"
+    }
+    equipment {
+      prefab_name: "Datajack"
+    }
+    equipment {
+      prefab_name: "Dermal Plating Mk 1"
+    }
+    equipment {
+      prefab_name: "Obvious Cyberarm"
     }
     team_id: "Civilians"
     char_name: "The Dave"
@@ -1831,7 +2487,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -124
+    x: -126
     y: 0
     z: 199
   }
@@ -1840,45 +2496,105 @@ characters {
   idRef {
     id: "521d63f1366236f012002d25"
   }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "521e68c3643431a9f264f6fc"
+      turnToFace: true
+    }
+  }
   lod: 0
   character_instance {
     prefab_name: "Core/HumanFemale"
-    character_sheet_id: "BaseCivilian"
+    character_sheet_id: "Lvl2_Human_Decker"
     character_mod {
       stats {
         body: 0
-        quickness: 0
-        strength: 0
-        charisma: 0
+        quickness: -2
+        strength: -3
+        charisma: -1
         intelligence: 0
-        willpower: 0
-        essence: 0
+        willpower: -1
+        essence: -3
+        magic: -3
         hp: 0
         ap: 0
-        morale: 24
+        armor: 2
+        force: 0
+        morale: 0
         discipline: 0
-        awareness: 24
+        awareness: 0
         perception: 0
         authority: 0
-        protect_tether_range: 5
-        move_speed: 6
+        protect_tether_range: 0
+        move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 1
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 3
+        biotech: 0
+        dodge: 1
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 2
       }
+      archetypeName: "Guard - Protect"
+      attitude: AttitudeAggressive
     }
     equipment {
       prefab_name: "DeckerFab"
     }
-    team_id: "Shadowrunners"
+    equipment {
+      prefab_name: "DroneRepairKit_med"
+    }
+    equipment {
+      prefab_name: "DroneRepairKit_med"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "DroneAttackC_Doberman"
+    }
+    equipment {
+      prefab_name: "SMG 1 Uzi III (Smartlink)"
+    }
+    equipment {
+      prefab_name: "DroneSupportC_Smoker"
+    }
+    team_id: "Gangers"
     char_name: "Hailey"
     pc_spawn_number: -1
+    cyberware_eyes: "Vision Magnification Eyes"
+    cyberware_jack: "Datajack"
     portrait {
       filename: "backer_humanfemale_grahamwilliams_tsilonsiereht"
     }
     portrait_code_override: "s6h1c11"
-    karma: 6
+    karma: 61
   }
 }
 characters {
@@ -1886,12 +2602,20 @@ characters {
   gridPoint {
     x: -122
     y: 0
-    z: 172
+    z: 171
   }
   orientation: ORIENTATION_E
   displayName: "Orion"
   idRef {
     id: "521d65c4366236f012002d26"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "521e8b586434315d02b50e23"
+      turnToFace: true
+    }
   }
   lod: 0
   character_instance {
@@ -1899,52 +2623,80 @@ characters {
     character_sheet_id: "BaseCivilian"
     character_mod {
       stats {
-        body: 0
-        quickness: 0
-        strength: 0
-        charisma: 0
-        intelligence: 0
-        willpower: 0
+        body: 4
+        quickness: 3
+        strength: 1
+        charisma: 1
+        intelligence: 1
+        willpower: 1
         essence: 0
         hp: 0
         ap: 0
+        armor: 4
         morale: 24
         discipline: 0
         awareness: 24
         perception: 0
         authority: 0
         protect_tether_range: 5
-        move_speed: 6
+        move_speed: 0
       }
       skills {
+        ranged_combat: 3
+        close_combat: 2
+        throwing_weapons: 2
+        dodge: 3
+        etiquette_gang: 0
+        etiquette_academic: 1
       }
       specializations {
+        rifle: 3
       }
     }
     equipment {
       prefab_name: "AdeptStreetMonk"
     }
-    team_id: "Shadowrunners"
-    char_name: "Orions"
+    equipment {
+      prefab_name: "AR 1 Semopal vz88v"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "Grenade 1 (Frag)"
+    }
+    equipment {
+      prefab_name: "Grenade 1 (Flash)"
+    }
+    team_id: "Gangers"
+    char_name: "Orion"
     pc_spawn_number: -1
     portrait {
       filename: "pc_orkmale_01c_soldier"
     }
     portrait_code_override: "s7h5c4b8"
-    karma: 6
+    karma: 61
   }
 }
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -113
+    x: -112
     y: 0
-    z: 182
+    z: 186
   }
   orientation: ORIENTATION_N
   displayName: "Dalmin"
   idRef {
     id: "521d69df366236f012002d29"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "521e7d5e64343108ffb50f6d"
+      turnToFace: true
+    }
   }
   lod: 0
   character_instance {
@@ -1952,15 +2704,16 @@ characters {
     character_sheet_id: "BaseCivilian"
     character_mod {
       stats {
-        body: 0
+        body: 3
         quickness: 0
-        strength: 0
-        charisma: 0
-        intelligence: 0
-        willpower: 0
+        strength: 1
+        charisma: 3
+        intelligence: 1
+        willpower: 3
         essence: 0
         hp: 0
         ap: 0
+        armor: 2
         morale: 24
         discipline: 0
         awareness: 24
@@ -1970,21 +2723,50 @@ characters {
         move_speed: 6
       }
       skills {
+        spellcasting: 3
+        conjuring: 3
+        spirit_summoning: 3
+        dodge: 1
       }
       specializations {
+        spirit_control: 3
       }
     }
     equipment {
       prefab_name: "ShamanTotemCoat"
     }
-    team_id: "Shadowrunners"
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "Air Barrier 3"
+    }
+    equipment {
+      prefab_name: "Bound Fire Spirit 2"
+    }
+    equipment {
+      prefab_name: "Bound Earth Spirit 2"
+    }
+    equipment {
+      prefab_name: "Spell Haste 1"
+    }
+    equipment {
+      prefab_name: "Spell Heal 1"
+    }
+    equipment {
+      prefab_name: "Spell Powerbolt 1"
+    }
+    equipment {
+      prefab_name: "TotemCoyote"
+    }
+    team_id: "Gangers"
     char_name: "Dalmin"
     pc_spawn_number: -1
     portrait {
       filename: "pc_dwarfmale_03c_eastasian"
     }
     portrait_code_override: "s5h5c4b8"
-    karma: 6
+    karma: 62
   }
 }
 characters {
@@ -2003,7 +2785,7 @@ characters {
     isEnabled: false
     interactionRadius: 1
     conversationPoint {
-      conversationID: ""
+      conversationID: "521eac73366236941a0002e8"
       turnToFace: true
     }
   }
@@ -2034,11 +2816,12 @@ characters {
       }
       specializations {
       }
+      archetypeName: "Non-Combatant"
     }
     equipment {
       prefab_name: "DeckerStreet"
     }
-    team_id: "Shadowrunners"
+    team_id: "Gangers"
     char_name: "Clubber"
     pc_spawn_number: -1
     portrait {
@@ -2061,7 +2844,7 @@ characters {
     id: "521ea5ed366236941a0001b9"
   }
   interactionRoot {
-    isEnabled: true
+    isEnabled: false
     interactionRadius: 1
     conversationPoint {
       conversationID: "521ea730366236941a0001ba"
@@ -2095,17 +2878,71 @@ characters {
       }
       specializations {
       }
+      archetypeName: "Non-Combatant"
     }
     equipment {
       prefab_name: "RiggerGolden"
     }
-    team_id: "Shadowrunners"
+    team_id: "Gangers"
     char_name: "Voire"
     pc_spawn_number: -1
     portrait {
       filename: "pc_elfmale_05_platpunk"
     }
     portrait_code_override: "s6h5c2"
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -144
+    y: 0
+    z: 170
+  }
+  orientation: ORIENTATION_S
+  displayName: "Information Terminal"
+  idRef {
+    id: "521ebfd4366236941a0006b0"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/SpiritESPShield"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Information Terminal"
+    pc_spawn_number: -1
+    ai_ignores: false
+    uninjurable: true
+    unkillable: true
+    portrait {
+      filename: "generic_drone_hover"
+    }
     karma: 6
   }
 }
@@ -2249,13 +3086,13 @@ allow_drawn_weapons: false
 team_affiliations {
   team_name: "Shadowrunners"
   affiliation: 0
-  affiliation: 1
+  affiliation: 0
   affiliation: 1
   affiliation: 0
 }
 team_affiliations {
   team_name: "Gangers"
-  affiliation: 1
+  affiliation: 0
   affiliation: 0
   affiliation: 1
   affiliation: 0
@@ -2276,8 +3113,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

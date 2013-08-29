@@ -9,7 +9,7 @@ nodes {
   index: 0
   text: "Please enter your query."
   branches {
-    responseText: "Research Tarne"
+    responseText: "Research Tarne."
     nextNodeIndex: 1
   }
   branches {
@@ -132,7 +132,7 @@ nodes {
         }
       }
       args {
-        int_value: 6
+        int_value: 5
       }
     }
     ops {

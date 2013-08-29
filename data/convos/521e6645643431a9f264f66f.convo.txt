@@ -7,12 +7,36 @@ nodes {
     id: "521e6680643431a9f264f676"
   }
   index: 0
-  text: "Hey, $(l.guy)! I don\342\200\231t think we\342\200\231ve met yet.\n\n{{GM}}The man facing you blinks blearily, then straightens himself and thrusts out a hand in welcome.{{/GM}}\n\nI\342\200\231m The Dave. Old-school decker, rock-climbing enthusiast, and amateur thrumming musician. Mostly I enjoy trying new stuff and making people happy."
+  text: "Hey, $(l.guy)! I don\342\200\231t think we\342\200\231ve met yet.\n\n{{GM}}The troll facing you blinks blearily, then straightens himself and thrusts out a gnarled hand in welcome.{{/GM}}\n\nI\342\200\231m The Dave. Old-school decker, rock-climbing enthusiast, and amateur thrumming musician. Mostly I enjoy trying new stuff and making people happy."
   branches {
     responseText: ""
     nextNodeIndex: 1
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToTheDave"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -48,7 +72,21 @@ nodes {
   }
   branches {
     responseText: "Do you have any cyberwear available?"
-    nextNodeIndex: -1
+    actions {
+      ops {
+        functionName: "Open Cyberware Screen From Actor"
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "521d60a3366236f012002d15"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 1
+    auxiliaryLink: true
   }
   branches {
     responseText: "What do you think of Eclipse?"
@@ -99,7 +137,7 @@ nodes {
               string_value: "Comparison Ops"
             }
             args {
-              int_value: 3
+              int_value: 2
             }
           }
         }
@@ -110,6 +148,10 @@ nodes {
     }
     nextNodeIndex: 6
     hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Goodbye."
+    nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -141,19 +183,20 @@ nodes {
     id: "521e66d6643431a9f264f690"
   }
   index: 4
-  text: "Anyways. I find or buy stuff like that, then repair anything that needs fixing, then sell it to shadowrunners who need high-quality gear with no sale record."
+  text: "Anyways. I find or buy stuff like that, then repair anything that needs fixing, then sell it to shadowrunners who need high-quality gear with no questions asked."
   branches {
     responseText: ""
     nextNodeIndex: 1
     auxiliaryLink: true
   }
+  nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
     id: "521e671d643431a9f264f6a4"
   }
   index: 5
-  text: "It\342\200\231s a pretty happenin\342\200\231 place, $(l.man)! I remember the store that used to be at the site. It was a real dive. Cheap rent, but nobody would ever come.\n\nWhen Kali swept into town, she snapped up this property first thing, and has thrown her heart and soul into turning it into something gorgeous. It\342\200\231s like she feels she has something to prove."
+  text: "It\342\200\231s a pretty happenin\342\200\231 place, for sure! I remember the store that used to be here. It was a real dive. Cheap rent, but nobody would ever come.\n\nWhen Kali swept into town, she snapped up this property first thing, and has thrown her heart and soul into turning it into something gorgeous. It\342\200\231s like she feels she has something to prove."
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -217,6 +260,22 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "TarneQuestStage"
+          }
+        }
+      }
+      args {
+        int_value: 4
+      }
+    }
+  }
 }
 nodes {
   idRef {

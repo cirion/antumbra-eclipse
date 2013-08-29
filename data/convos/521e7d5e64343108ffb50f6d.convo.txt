@@ -10,85 +10,6 @@ nodes {
   text: "Well, well, well! Hello, $(l.name)! I didn\342\200\231t expect to see you down here!"
   branches {
     responseText: ""
-    conditions {
-      ops {
-        functionName: "Get Dependent Story Variable (bool)"
-        args {
-          call_value {
-            functionName: "Get Previous Story Variable (bool)"
-            args {
-              string_value: "51f7429764343188990041a8"
-            }
-            args {
-              string_value: "DalminJoined"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "bool"
-            }
-            args {
-              int_value: 0
-            }
-          }
-        }
-      }
-      ops {
-        functionName: "Comparison (bool)"
-        args {
-          call_value {
-            functionName: "Get Dependent Story Variable (bool)"
-            args {
-              call_value {
-                functionName: "Get Previous Story Variable (bool)"
-                args {
-                  string_value: "51f7429764343188990041a8"
-                }
-                args {
-                  string_value: "A1_Bool_DalminDied"
-                }
-              }
-            }
-            args {
-              call_value {
-                functionName: "Get Preset Value (int)"
-                args {
-                  string_value: "bool"
-                }
-                args {
-                  int_value: 0
-                }
-              }
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "IsOrIsNot"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "bool"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-      }
-    }
     nextNodeIndex: 1
   }
   nodeType: ConversationNodeType_Simple
@@ -208,7 +129,7 @@ nodes {
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
-      id: "521e7f166434315d02b50c3c"
+      id: "521ec0fc366236941a00075b"
     }
   }
   branches {
@@ -348,7 +269,7 @@ nodes {
     }
   }
   branches {
-    responseText: "{{CC}}Fake SINs{{/CC}} Interested in a run?"
+    responseText: "{{CC}}Spare fake SIN{{/CC}} Interested in a run?"
     conditions {
       ops {
         functionName: "OR"
@@ -431,6 +352,39 @@ nodes {
           }
         }
       }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "HiredSomeone"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
     }
     nextNodeIndex: 7
   }
@@ -462,7 +416,7 @@ nodes {
     id: "521e7f306434315d02b50c48"
   }
   index: 3
-  text: "It\342\200\231s pretty great! Maybe a little less uncomfortable than Antumbra, but certainly more impressive, don\342\200\231t you think?\n\nIt\342\200\231s interesting to see Kali combine work and pleasure so brazenly. How many places are there where you can pick up a prostitute, install a cyberarm, and hire an incredibly handsome and talented shaman, all without leaving the building? By my count there are five such places, but this is the only one outside of Tokyo."
+  text: "It\342\200\231s pretty great! Maybe a little less comfortable than Antumbra, but certainly more impressive, don\342\200\231t you think?\n\nIt\342\200\231s interesting to see Kali combine work and pleasure so brazenly. How many places are there where you can pick up a prostitute, install a cyberarm, and hire an incredibly handsome and talented shaman, all without leaving the building? By my count there are five such places, but this is the only one outside of Tokyo."
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -489,6 +443,11 @@ nodes {
   }
   index: 5
   text: "You may be pleased to hear that, since I left Seattle, I\342\200\231ve been hard at work improving my talents. In fact, I have recently added healing to my repertoire!\n\nMy clients have noticed a marked increase in my effectiveness. Of course, they have to pay for the privilege. A dwarf has to eat, right? And, personally, I\342\200\231ve developed quite a taste for kaiseki."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
@@ -552,72 +511,6 @@ nodes {
       functionName: "Remove Nuyen"
       args {
         int_value: 750
-      }
-    }
-    ops {
-      functionName: "Change Actor Team"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "521d69df366236f012002d29"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Change Actor Control"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "521d69df366236f012002d29"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "PlayerOrAI"
-          }
-          args {
-            int_value: 0
-          }
-        }
       }
     }
     ops {

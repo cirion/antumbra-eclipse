@@ -41,7 +41,7 @@ nodes {
     nextNodeIndex: 4
     onlyOnce: true
     idRef {
-      id: "521e8c376434315d02b50e4c"
+      id: "521ec23d366236941a000853"
     }
   }
   branches {
@@ -130,7 +130,7 @@ nodes {
     }
   }
   branches {
-    responseText: "{{CC}}Fake SINs{{/CC}} I\342\200\231d like to hire you."
+    responseText: "{{CC}}Spare fake SIN{{/CC}} I\342\200\231d like to hire you."
     conditions {
       ops {
         functionName: "OR"
@@ -213,6 +213,39 @@ nodes {
           }
         }
       }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "HiredSomeone"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
     }
     nextNodeIndex: 6
   }
@@ -231,7 +264,7 @@ nodes {
     id: "521e8bd76434315d02b50e3f"
   }
   index: 2
-  text: "{{GM}}A shadow of a smile flickers across his face.{{/GM}} It is a journal. Do $(l.race_plural) not have those where you\342\200\231re from?\n\nSince you ask, though, I\342\200\231m organizing some thoughts on the long-term social impacts of goblinization. I find it helps me to work with ideas on paper before discussing them with the world at large."
+  text: "{{GM}}A shadow of a smile flickers across his face.{{/GM}} \n\nIt is a journal. Do $(l.race_plural) not have those where you\342\200\231re from?\n\nSince you ask, though, I\342\200\231m organizing some thoughts on the long-term social impacts of goblinization. I find it helps me to work with ideas on paper before discussing them with the world at large."
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -540,72 +573,6 @@ nodes {
           }
           args {
             int_value: 1
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Change Actor Team"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "521d65c4366236f012002d26"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Change Actor Control"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "521d65c4366236f012002d26"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "PlayerOrAI"
-          }
-          args {
-            int_value: 0
           }
         }
       }

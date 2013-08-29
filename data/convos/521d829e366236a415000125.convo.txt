@@ -45,6 +45,22 @@ nodes {
   index: 1
   text: "What quality item would you like today?"
   branches {
+    responseText: "Where do you get your supply from?"
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "521d84a4366236a41500015f"
+    }
+  }
+  branches {
+    responseText: "Do you have any other locations?"
+    nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "521d84a1366236a41500015e"
+    }
+  }
+  branches {
     responseText: "{{GM}}View her inventory.{{/GM}}"
     actions {
       ops {
@@ -62,26 +78,10 @@ nodes {
     nextNodeIndex: -1
   }
   branches {
-    responseText: "Where do you get your supply from?"
-    nextNodeIndex: 2
-    onlyOnce: true
-    idRef {
-      id: "521d84a4366236a41500015f"
-    }
-  }
-  branches {
-    responseText: "Do you have any other locations?"
-    nextNodeIndex: 4
-    onlyOnce: true
-    idRef {
-      id: "521d84a1366236a41500015e"
-    }
-  }
-  branches {
     responseText: "Do you know where I could find a fake SIN?"
     conditions {
       ops {
-        functionName: "OR"
+        functionName: "AND"
         args {
           call_value {
             functionName: "Evaluate If Actor Has Item"
@@ -200,7 +200,7 @@ nodes {
     id: "521d8393366236a415000150"
   }
   index: 4
-  text: "Not just yet, I\342\200\231m afraid. I\342\200\231ve been able to operate under Saito\342\200\231s radar so far, and expanding my customer base too recklessly could earn me a visit from the marines.\n\nStill, I pride myself in offering quality goods at a reasonable price. A better class of customer means more to me than a second storefront would."
+  text: "Not just yet, I\342\200\231m afraid. I\342\200\231ve been able to operate under Saito\342\200\231s radar so far, and expanding my customer base too recklessly could earn me a visit from his marines.\n\nStill, I pride myself in offering quality goods at a reasonable price. A better class of customer means more to me than a second storefront would."
   branches {
     responseText: ""
     nextNodeIndex: 1

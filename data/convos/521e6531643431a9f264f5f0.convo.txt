@@ -13,6 +13,30 @@ nodes {
     nextNodeIndex: 1
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToNecalli"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -20,6 +44,22 @@ nodes {
   }
   index: 1
   text: "Welcome to Necalli Yaotl\342\200\231s House of Magic. What would you like today?"
+  branches {
+    responseText: "What does your name mean?"
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "521ebb88366236941a0004c0"
+    }
+  }
+  branches {
+    responseText: "How is magic treated in this city?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "521ebb8e366236941a0004c1"
+    }
+  }
   branches {
     responseText: "Show me your inventory."
     actions {
@@ -39,14 +79,6 @@ nodes {
     auxiliaryLink: true
   }
   branches {
-    responseText: "What does your name mean?"
-    nextNodeIndex: 2
-  }
-  branches {
-    responseText: "How is magic treated in this city?"
-    nextNodeIndex: 3
-  }
-  branches {
     responseText: "{{GM}}Leave.{{/GM}}"
     nextNodeIndex: -1
   }
@@ -57,7 +89,7 @@ nodes {
     id: "521e65a9643431a9f264f607"
   }
   index: 2
-  text: "Ah, yes. It\342\200\231s a fairly common name in Aztlan, but less so here. It roughly translates as \342\200\234Warrior,\342\200\235 which seems fitting. I pride myself on being a survivor.\n\nI\342\200\231m proud of my name, but it\342\200\231s a bit of a handicap these days. It identifies me as a likely collaborator with Aztechnology, and that megacorp is in a difficult position these days."
+  text: "Ah, yes. It\342\200\231s a fairly common name in Aztlan, but less so here. It roughly translates as \342\200\234Warrior,\342\200\235 which seems fitting. I pride myself on being a survivor.\n\nI\342\200\231m proud of my name, but it\342\200\231s been a slight handicap recently. It identifies me as a likely collaborator with Aztechnology, and that megacorp is in a difficult position these days."
   branches {
     responseText: ""
     nextNodeIndex: 1

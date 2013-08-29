@@ -1,6 +1,6 @@
-minX: -144
+minX: -145
 minZ: -46
-numX: 162
+numX: 163
 numZ: 252
 props {
   name: "diveBar_floor_wood02"
@@ -6553,9 +6553,9 @@ props {
 props {
   name: "office_wall_windowEnd01"
   gridPoint {
-    x: -80
+    x: -74
     y: 0
-    z: 86
+    z: 123
   }
   orientation: ORIENTATION_E
   idRef {
@@ -6566,9 +6566,9 @@ props {
 props {
   name: "office_wall_windowEnd01"
   gridPoint {
-    x: -80
+    x: -74
     y: 0
-    z: 78
+    z: 115
   }
   orientation: ORIENTATION_W
   idRef {
@@ -6579,9 +6579,9 @@ props {
 props {
   name: "office_wall_windowEdge02"
   gridPoint {
-    x: -80
+    x: -74
     y: 0
-    z: 82
+    z: 119
   }
   orientation: ORIENTATION_E
   idRef {
@@ -6592,9 +6592,9 @@ props {
 props {
   name: "office_wall_door02Back"
   gridPoint {
-    x: -80
+    x: -72
     y: 0
-    z: 88
+    z: 110
   }
   orientation: ORIENTATION_E
   lod: 0
@@ -6602,9 +6602,9 @@ props {
 props {
   name: "office_wall_door01Front"
   gridPoint {
-    x: -80
+    x: -72
     y: 0
-    z: 90
+    z: 112
   }
   orientation: ORIENTATION_E
   lod: 0
@@ -6631,9 +6631,9 @@ props {
 props {
   name: "office_wall_windowEnd01"
   gridPoint {
-    x: -80
+    x: -74
     y: 0
-    z: 100
+    z: 137
   }
   orientation: ORIENTATION_E
   idRef {
@@ -6644,9 +6644,9 @@ props {
 props {
   name: "office_wall_windowEdge02"
   gridPoint {
-    x: -80
+    x: -74
     y: 0
-    z: 94
+    z: 131
   }
   orientation: ORIENTATION_E
   idRef {
@@ -6657,9 +6657,9 @@ props {
 props {
   name: "office_wall_windowEnd01"
   gridPoint {
-    x: -80
+    x: -74
     y: 0
-    z: 92
+    z: 129
   }
   orientation: ORIENTATION_W
   idRef {
@@ -6670,9 +6670,9 @@ props {
 props {
   name: "office_wall_windowEdge02"
   gridPoint {
-    x: -80
+    x: -74
     y: 0
-    z: 84
+    z: 121
   }
   orientation: ORIENTATION_E
   idRef {
@@ -6683,9 +6683,9 @@ props {
 props {
   name: "office_wall_windowEdge02"
   gridPoint {
-    x: -80
+    x: -74
     y: 0
-    z: 96
+    z: 133
   }
   orientation: ORIENTATION_E
   idRef {
@@ -6696,9 +6696,9 @@ props {
 props {
   name: "office_wall_windowEdge02"
   gridPoint {
-    x: -80
+    x: -74
     y: 0
-    z: 98
+    z: 135
   }
   orientation: ORIENTATION_E
   idRef {
@@ -7427,9 +7427,9 @@ props {
 props {
   name: "office_wall_windowEdge02"
   gridPoint {
-    x: -80
+    x: -74
     y: 0
-    z: 80
+    z: 117
   }
   orientation: ORIENTATION_E
   idRef {
@@ -8247,19 +8247,6 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "5219389f3662365808004a00"
-  }
-  lod: 0
-}
-props {
-  name: "telestrianEstate_floor_marbleTile01"
-  gridPoint {
-    x: -66
-    y: 0
-    z: 64
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "5219389f3662365808004a01"
   }
   lod: 0
 }
@@ -14849,9 +14836,9 @@ props {
 props {
   name: "diveBar_misc_balconyTileWalkable"
   gridPoint {
-    x: -108
+    x: -145
     y: 0
-    z: 160
+    z: 169
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -18873,9 +18860,9 @@ props {
 props {
   name: "office_wall_windowEnd01"
   gridPoint {
-    x: -80
+    x: -74
     y: 0
-    z: 102
+    z: 139
   }
   orientation: ORIENTATION_E
   idRef {
@@ -18935,9 +18922,205 @@ props {
     id: "521ea517366236941a0001b8"
   }
   interactionRoot {
-    isEnabled: true
+    isEnabled: false
     interactionRadius: 1
     interactionIcon: InteractionIcon_Generic
   }
+  lod: 0
+}
+props {
+  name: "diveBar_misc_balconyTileWalkable"
+  gridPoint {
+    x: -145
+    y: 0
+    z: 171
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ec75a366236941a000ac1"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_misc_balconyTileWalkable"
+  gridPoint {
+    x: -143
+    y: 0
+    z: 171
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ec75b366236941a000ac2"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_misc_balconyTileWalkable"
+  gridPoint {
+    x: -143
+    y: 0
+    z: 169
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ec75d366236941a000ac3"
+  }
+  lod: 0
+}
+props {
+  name: "hive_wall_02WindowMid"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 80
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "hive_wall_02windowEnd01"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 78
+  }
+  orientation: ORIENTATION_N
+  lod: 0
+}
+props {
+  name: "hive_wall_02windowEnd01"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 102
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ec946366236941a000ae8"
+  }
+  lod: 0
+}
+props {
+  name: "hive_wall_02WindowMid"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 82
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ec94a366236941a000ae9"
+  }
+  lod: 0
+}
+props {
+  name: "hive_wall_02WindowMid"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 84
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ec94b366236941a000aea"
+  }
+  lod: 0
+}
+props {
+  name: "hive_wall_02WindowMid"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 86
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ec94d366236941a000aeb"
+  }
+  lod: 0
+}
+props {
+  name: "hive_wall_02WindowMid"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 92
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ec94e366236941a000aec"
+  }
+  lod: 0
+}
+props {
+  name: "hive_wall_02WindowMid"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 94
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ec94f366236941a000aed"
+  }
+  lod: 0
+}
+props {
+  name: "hive_wall_02WindowMid"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 96
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ec950366236941a000aee"
+  }
+  lod: 0
+}
+props {
+  name: "hive_wall_02WindowMid"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 98
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ec951366236941a000aef"
+  }
+  lod: 0
+}
+props {
+  name: "hive_wall_02WindowMid"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 100
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ec952366236941a000af0"
+  }
+  lod: 0
+}
+props {
+  name: "hive_wall_02doorFront01"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 89
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "hive_wall_02doorBack01"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 88
+  }
+  orientation: ORIENTATION_S
   lod: 0
 }
