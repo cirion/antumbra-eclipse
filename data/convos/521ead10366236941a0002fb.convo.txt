@@ -1,0 +1,165 @@
+idRef {
+  id: "521ead10366236941a0002fb"
+}
+ui_name: "A2S02-Terminal"
+nodes {
+  idRef {
+    id: "521ead19366236941a000301"
+  }
+  index: 0
+  text: "Please enter your query."
+  branches {
+    responseText: "Research Tarne"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "Research Norton\342\200\231s Army."
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "TarneQuestStage"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 3
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Research Atta."
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "TarneQuestStage"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 4
+        }
+      }
+    }
+    nextNodeIndex: 3
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "{{GM}}Log off.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521ead58366236941a000306"
+  }
+  index: 1
+  text: "No records found."
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521ead6a366236941a000308"
+  }
+  index: 2
+  text: "No exact matches found. \nPartial match found: Imperial Army of Norton.\nStatus: Unknown.\nObjectives: Unknown.\nHeadquarters: Unknown, presumed to be located somewhere in the greater San Francisco Bay Area."
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521eadd4366236941a00030b"
+  }
+  index: 3
+  text: "Wanted by San Francisco military authorities for suspected sedition.\n\nCurrent whereabouts unknown. Presumed to be in hiding."
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "TarneQuestStage"
+          }
+        }
+      }
+      args {
+        int_value: 6
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521ea517366236941a0001b8"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

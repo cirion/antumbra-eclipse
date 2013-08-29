@@ -1,0 +1,344 @@
+idRef {
+  id: "521ea730366236941a0001ba"
+}
+ui_name: "A2S02-Voire"
+nodes {
+  idRef {
+    id: "521ea760366236941a0001c0"
+  }
+  index: 0
+  text: "{{GM}}The elf shoves his hands deep into his pockets and stares at the floor, seemingly willing you to go away. When it\342\200\231s clear that you won\342\200\231t, he sighs loudly and looks at you.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521ea768366236941a0001c3"
+  }
+  index: 1
+  text: "Can I help you with something?"
+  branches {
+    responseText: "Are you Voire?"
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "521ea77e366236941a0001d0"
+    }
+  }
+  branches {
+    responseText: "What are you doing here?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "521ea7ac366236941a0001db"
+    }
+  }
+  branches {
+    responseText: "Do you know Hailey?"
+    nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "521ea7a9366236941a0001da"
+    }
+  }
+  branches {
+    responseText: "I\342\200\231m trying to find someone named Tarne."
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "{{GM}}Leave.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521ea77b366236941a0001cf"
+  }
+  index: 2
+  text: "If you\342\200\231re asking that, you must already know the answer."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521ea78e366236941a0001d4"
+  }
+  index: 3
+  text: "{{GM}}He laughs bitterly.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521ea796366236941a0001d7"
+  }
+  index: 4
+  text: "Are you asking me to leave? Do you think that a street elf like me doesn\342\200\231t have any place among the moneyed elite? Well, you\342\200\231d be right. I don\342\200\231t belong here, and I wouldn\342\200\231t want to.\n\nI\342\200\231m here because this is one of the only public places in the city that isn\342\200\231t crawling with marines. We aren\342\200\231t safe any more on our own streets, so we meet here when we need to make plans without worrying about the police busting us."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "521ea7ae366236941a0001dd"
+  }
+  index: 5
+  text: "{{GM}}For the first time, Voire looks interested in the conversation.{{/GM}}\n\nYeah, I know her. She\342\200\231s pretty good for a human. Too interested in talk and not interested enough in action, but her heart\342\200\231s in the right place."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521ea7d6366236941a0001e2"
+  }
+  index: 6
+  text: "Yeah? And what makes you think I\342\200\231d know anything about that?"
+  branches {
+    responseText: "{{CC}}Street{{/CC}} If he\342\200\231s on the run, he needs help."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 18
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 7
+  }
+  branches {
+    responseText: "{{CC}}Gang{{/CC}} You look like someone who knows people who might know."
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "{{CC}}\302\24550{{/CC}} Some nuyen might jog your memory."
+    conditions {
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 50
+        }
+      }
+    }
+    nextNodeIndex: 10
+  }
+  branches {
+    responseText: "Hailey could really use a friend now, Voire."
+    conditions {
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 4
+            }
+          }
+        }
+        args {
+          int_value: 50
+        }
+      }
+    }
+    nextNodeIndex: 12
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Never mind."
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521ea80c366236941a0001e9"
+  }
+  index: 7
+  text: "\342\200\246 You\342\200\231re right. I know what it\342\200\231s like to feel like everyone in this city is against you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521eab6a366236941a000251"
+  }
+  index: 8
+  text: "Last I heard, Tarne connected with some other metahumans from Eclipse. They called themselves \342\200\234Norton\342\200\231s Army\342\200\235 or something silly like that. That\342\200\231s all I know. You\342\200\231ll need to look into them to see what Tarne is currently doing, if anything."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "TarneQuestStage"
+          }
+        }
+      }
+      args {
+        int_value: 3
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521ea5ed366236941a0001b9"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "521eab55366236941a00024e"
+  }
+  index: 9
+  text: "Heh, that\342\200\231s right. That\342\200\231s a benefit of traveling in less affluent circles, I suppose."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521eabf9366236941a000279"
+  }
+  index: 10
+  text: "You think you can buy me?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521eac01366236941a00027c"
+  }
+  index: 11
+  text: "\342\200\246 well, fine. I\342\200\231m not too proud to take a little something."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Remove Nuyen"
+      args {
+        int_value: 50
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "521eac3c366236941a000280"
+  }
+  index: 12
+  text: "That\342\200\231s low. Fine. I\342\200\231ll do it for her, not for you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

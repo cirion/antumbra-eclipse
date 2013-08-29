@@ -216,6 +216,14 @@ nodes {
     }
     nextNodeIndex: 6
   }
+  branches {
+    responseText: "Goodbye."
+    nextNodeIndex: 11
+  }
+  branches {
+    responseText: "{{GM}}Leave.{{/GM}}"
+    nextNodeIndex: -1
+  }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
@@ -275,9 +283,9 @@ nodes {
     id: "521e8cc26434315d02b50e53"
   }
   index: 6
-  text: "That is most gratifying to hear. For a charge of \302\245600, you will have unlimited access to my services for the remainder of the day."
+  text: "That is most gratifying to hear. For a charge of \302\245650, you will have unlimited access to my services for the remainder of the day."
   branches {
-    responseText: "{{CC}}\302\245600{{/CC}} Here you go."
+    responseText: "{{CC}}\302\245650{{/CC}} Here you go."
     conditions {
       ops {
         functionName: "Evaluate Nuyen"
@@ -308,16 +316,151 @@ nodes {
     nextNodeIndex: 7
   }
   branches {
-    responseText: ""
-    nextNodeIndex: -1
+    responseText: "{{CC}}\302\245450{{/CC}} {{CC}}Gang{{/CC}} I\342\200\231ll give you \302\245450, and a guarantee that you\342\200\231ll get to hunt some mundane humans."
+    conditions {
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 450
+        }
+      }
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 15
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    actions {
+      ops {
+        functionName: "Remove Nuyen"
+        args {
+          int_value: 450
+        }
+      }
+    }
+    nextNodeIndex: 8
   }
   branches {
-    responseText: ""
-    nextNodeIndex: -1
+    responseText: "{{CC}}\302\245450{{/CC}} {{CC}}Ork{{/CC}} Come on, can you cut a break for a fellow ork?"
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 450
+        }
+      }
+    }
+    actions {
+      ops {
+        functionName: "Add Nuyen"
+        args {
+          int_value: -450
+        }
+      }
+    }
+    nextNodeIndex: 9
+    hideIfUnavailable: true
   }
   branches {
-    responseText: ""
-    nextNodeIndex: -1
+    responseText: "No, thanks."
+    nextNodeIndex: 10
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -471,9 +614,56 @@ nodes {
 }
 nodes {
   idRef {
-    id: "521e8bba6434315d02b50e35"
+    id: "521ea2d5366236941a000148"
   }
   index: 8
+  text: "{{GM}}Orion looks at you, startled, and then slowly begins to smile.{{/GM}}\n\nI assure you that I am not the bloodthirsty type. Still, the small actions we take today may well serve the greater good. Very well. You have your discount."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521ea359366236941a00014e"
+  }
+  index: 9
+  text: "{{GM}}Orion\342\200\231s face breaks into a toothy grin.{{/GM}}\n\nIndeed I can, comrade. We face enough troubles in this world as it is. We need to stick up for one another. Very well, you will have your discount."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521ea373366236941a000152"
+  }
+  index: 10
+  text: "I understand. Not everyone will need or desire my company. Should you change your mind, I will be here."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521ea396366236941a000186"
+  }
+  index: 11
+  text: "Fare you well."
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e8bba6434315d02b50e35"
+  }
+  index: 12
   text: "{{GM}}Orion nods gravely as you approach.{{/GM}}"
   branches {
     responseText: ""
@@ -558,5 +748,5 @@ roots {
       }
     }
   }
-  nextNodeIndex: 8
+  nextNodeIndex: 12
 }

@@ -18922,3 +18922,22 @@ props {
   }
   lod: 0
 }
+props {
+  name: "secretLab_clutter_wallConsole02"
+  gridPoint {
+    x: -137
+    y: 0.5
+    z: 178
+  }
+  orientation: ORIENTATION_E
+  displayName: "Terminal Third Floor"
+  idRef {
+    id: "521ea517366236941a0001b8"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+}

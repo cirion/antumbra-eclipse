@@ -1448,8 +1448,8 @@ regions {
 regions {
   name: "Second Floor Elevator"
   position {
-    x: -77
-    y: 90
+    x: -79
+    y: 89
     width: 2
     height: 2
   }
@@ -1984,6 +1984,128 @@ characters {
       filename: "pc_dwarfmale_03c_eastasian"
     }
     portrait_code_override: "s5h5c4b8"
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -67
+    y: 0
+    z: 90
+  }
+  orientation: ORIENTATION_S
+  displayName: "Clubber"
+  idRef {
+    id: "521ea3b3366236941a0001b6"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: ""
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/OrkMale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      skills {
+      }
+      specializations {
+      }
+    }
+    equipment {
+      prefab_name: "DeckerStreet"
+    }
+    team_id: "Shadowrunners"
+    char_name: "Clubber"
+    pc_spawn_number: -1
+    portrait {
+      filename: "backer_orkmale_bradleymiller_kiluminatialabrad"
+    }
+    portrait_code_override: "s3h3c14"
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -44
+    y: 0
+    z: 68
+  }
+  orientation: ORIENTATION_N
+  displayName: "Voire"
+  idRef {
+    id: "521ea5ed366236941a0001b9"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "521ea730366236941a0001ba"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/ElfMale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      skills {
+      }
+      specializations {
+      }
+    }
+    equipment {
+      prefab_name: "RiggerGolden"
+    }
+    team_id: "Shadowrunners"
+    char_name: "Voire"
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_elfmale_05_platpunk"
+    }
+    portrait_code_override: "s6h5c2"
     karma: 6
   }
 }

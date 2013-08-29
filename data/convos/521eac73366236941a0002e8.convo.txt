@@ -1,0 +1,92 @@
+idRef {
+  id: "521eac73366236941a0002e8"
+}
+ui_name: "A2S02-Clubber"
+nodes {
+  idRef {
+    id: "521eac81366236941a0002ee"
+  }
+  index: 0
+  text: "Yeah? What do you want?"
+  branches {
+    responseText: "I\342\200\231m looking for someone named Tarne."
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "{{GM}}Walk away.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521eac9a366236941a0002f2"
+  }
+  index: 1
+  text: "Try talking to Voire. He\342\200\231s the surly-looking elf over there in the corner."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521ea5ed366236941a0001b9"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521ea3b3366236941a0001b6"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "TarneQuestStage"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}
