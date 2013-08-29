@@ -2,8 +2,9 @@ project_id: "5215664d3662365c180018bf"
 project_name: "Antumbra 2 - Eclipse"
 project_version: "0.5.0"
 author_name: "Cirion"
-synopsis: "Megacorps battle for supremacy in San Francisco "
+synopsis: "Antumbra 2 - Eclipse"
 has_story: true
+read_only: false
 preview_image: "preview"
 content_pack_dependencies {
   package_id: "518d7671643431b03f0041a8"
@@ -18,14 +19,14 @@ content_pack_dependencies {
   package_description: "Seattle Area Environments and Tilesets"
 }
 content_pack_dependencies {
+  package_id: "51f7429764343188990041a8"
+  package_version: "0.9.0"
+  package_name: "Antumbra"
+  package_description: "Antumbra"
+}
+content_pack_dependencies {
   package_id: "518d7674643431b03f0041ab"
   package_version: "1"
   package_name: "DeadMansSwitch"
   package_description: "The Dead Man\'s Switch"
-}
-content_pack_dependencies {
-  package_id: "51f7429764343188990041a8"
-  package_version: "0.9.1"
-  package_name: "Antumbra"
-  package_description: "Antumbra"
 }

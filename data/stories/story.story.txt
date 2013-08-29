@@ -1,8 +1,175 @@
-id: "Megacorps battle for supremacy in San Francisco "
+id: "Antumbra 2 - Eclipse"
+variables {
+  name: "A2_HiredHailey"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredHailey"
+    }
+  }
+}
+variables {
+  name: "A2_HaileyDied"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HaileyDied"
+    }
+  }
+}
+variables {
+  name: "A2_HiredDalmin"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredDalmin"
+    }
+  }
+}
+variables {
+  name: "A2_DalminDied"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_DalminDied"
+    }
+  }
+}
+variables {
+  name: "A2_HiredOrion"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredOrion"
+    }
+  }
+}
+variables {
+  name: "A2_OrionDied"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_OrionDied"
+    }
+  }
+}
+variables {
+  name: "A2_HiredHailey_Part1"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredHailey_Part1"
+    }
+  }
+}
+variables {
+  name: "A2_HiredDalmin_Part1"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredDalmin_Part1"
+    }
+  }
+}
+variables {
+  name: "A2_HiredOrion_Part1"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredOrion_Part1"
+    }
+  }
+}
+variables {
+  name: "A2_HiredHailey_Part2"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredHailey_Part2"
+    }
+  }
+}
+variables {
+  name: "A2_HiredDalmin_Part2"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredDalmin_Part2"
+    }
+  }
+}
+variables {
+  name: "A2_HiredOrion_Part2"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredOrion_Part2"
+    }
+  }
+}
+variables {
+  name: "A2_HiredHailey_Part3"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredHailey_Part3"
+    }
+  }
+}
+variables {
+  name: "A2_HiredDalmin_Part3"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredDalmin_Part3"
+    }
+  }
+}
+variables {
+  name: "A2_HiredOrion_Part3"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredOrion_Part3"
+    }
+  }
+}
+description: "Megacorps battle for supremacy in San Francisco, but broader tensions simmering in the city threaten to boil over into a full-out war."
 startScene: "Embarcadero Arrival"
 allowCharacterImport: true
 allowImportedEquipment: true
 allowCharacterGen: true
+storyKarmaLevel: 54
 character_roster {
   roster_entries {
     reference_id: "lvl1_dwarf_rigger"

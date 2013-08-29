@@ -1,0 +1,787 @@
+idRef {
+  id: "521e7d5e64343108ffb50f6d"
+}
+ui_name: "A2S02-Dalmin"
+nodes {
+  idRef {
+    id: "521e7db264343108ffb50f77"
+  }
+  index: 0
+  text: "Well, well, well! Hello, $(l.name)! I didn\342\200\231t expect to see you down here!"
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Get Dependent Story Variable (bool)"
+        args {
+          call_value {
+            functionName: "Get Previous Story Variable (bool)"
+            args {
+              string_value: "51f7429764343188990041a8"
+            }
+            args {
+              string_value: "DalminJoined"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Dependent Story Variable (bool)"
+            args {
+              call_value {
+                functionName: "Get Previous Story Variable (bool)"
+                args {
+                  string_value: "51f7429764343188990041a8"
+                }
+                args {
+                  string_value: "A1_Bool_DalminDied"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "bool"
+                }
+                args {
+                  int_value: 0
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToDalmin"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "521e7dde64343108ffb50f7b"
+  }
+  index: 1
+  text: "It\'s nice to see you again."
+  branches {
+    responseText: "I thought you were dead!"
+    conditions {
+      ops {
+        functionName: "Get Dependent Story Variable (bool)"
+        args {
+          call_value {
+            functionName: "Get Previous Story Variable (bool)"
+            args {
+              string_value: "51f7429764343188990041a8"
+            }
+            args {
+              string_value: "DalminJoined"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Dependent Story Variable (bool)"
+            args {
+              call_value {
+                functionName: "Get Previous Story Variable (bool)"
+                args {
+                  string_value: "51f7429764343188990041a8"
+                }
+                args {
+                  string_value: "A1_Bool_DalminDied"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "bool"
+                }
+                args {
+                  int_value: 0
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "521e7f166434315d02b50c3c"
+    }
+  }
+  branches {
+    responseText: "What do you think of Eclipse?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "521e7f846434315d02b50c53"
+    }
+  }
+  branches {
+    responseText: "What\342\200\231s your impression of San Francisco so far?"
+    nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "521e7f816434315d02b50c52"
+    }
+  }
+  branches {
+    responseText: "What skills are you offering?"
+    nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "521e7f7d6434315d02b50c51"
+    }
+  }
+  branches {
+    responseText: "What do I need to hire you?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Evaluate If Actor Has Item"
+            args {
+              call_value {
+                functionName: "Specific Actor"
+                args {
+                  call_value {
+                    functionName: "Get Map Item (Player)"
+                    args {
+                      int_value: 0
+                    }
+                  }
+                }
+                args {
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "HasOrHasNot"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Map Item (Item)"
+                args {
+                  string_value: "Expensive SINs"
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Get Map Item (Player)"
+                args {
+                  int_value: 0
+                }
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "Cheap SINs"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 6
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "521e811d6434315d02b50ca6"
+    }
+  }
+  branches {
+    responseText: "{{CC}}Fake SINs{{/CC}} Interested in a run?"
+    conditions {
+      ops {
+        functionName: "OR"
+        args {
+          call_value {
+            functionName: "Evaluate If Actor Has Item"
+            args {
+              call_value {
+                functionName: "Specific Actor"
+                args {
+                  call_value {
+                    functionName: "Get Map Item (Player)"
+                    args {
+                      int_value: 0
+                    }
+                  }
+                }
+                args {
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "HasOrHasNot"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Map Item (Item)"
+                args {
+                  string_value: "Cheap SINs"
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Evaluate If Actor Has Item"
+            args {
+              call_value {
+                functionName: "Specific Actor"
+                args {
+                  call_value {
+                    functionName: "Get Map Item (Player)"
+                    args {
+                      int_value: 0
+                    }
+                  }
+                }
+                args {
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "HasOrHasNot"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Map Item (Item)"
+                args {
+                  string_value: "Expensive SINs"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 7
+  }
+  branches {
+    responseText: "Catch you later."
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "{{GM}}Walk away.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e7f086434315d02b50c3b"
+  }
+  index: 2
+  text: "Doc wagon, my good $(l.man)! Never leave home without it! Particularly not when accepting a job from a green runner, no offense intended.\n\nIt took the medevac chopper a while to find me in there, but all\342\200\231s well that ends well. That little card paid for itself many times over, and now I\342\200\231m free to gift my presence to the world for years to come."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e7f306434315d02b50c48"
+  }
+  index: 3
+  text: "It\342\200\231s pretty great! Maybe a little less uncomfortable than Antumbra, but certainly more impressive, don\342\200\231t you think?\n\nIt\342\200\231s interesting to see Kali combine work and pleasure so brazenly. How many places are there where you can pick up a prostitute, install a cyberarm, and hire an incredibly handsome and talented shaman, all without leaving the building? By my count there are five such places, but this is the only one outside of Tokyo."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e7f496434315d02b50c4c"
+  }
+  index: 4
+  text: "Not entirely what I expected, to be honest. You hear all those stories of free love and peace, then show up to discover that love costs \302\245800 an hour, and peace is enforced by jackbooted thugs. Still, it\342\200\231s a lovely city, and hopefully will be more hospitable to dwarves like me in the future."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e7f6b6434315d02b50c50"
+  }
+  index: 5
+  text: "You may be pleased to hear that, since I left Seattle, I\342\200\231ve been hard at work improving my talents. In fact, I have recently added healing to my repertoire!\n\nMy clients have noticed a marked increase in my effectiveness. Of course, they have to pay for the privilege. A dwarf has to eat, right? And, personally, I\342\200\231ve developed quite a taste for kaiseki."
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e81606434315d02b50ca8"
+  }
+  index: 6
+  text: "Nuyen, obviously. Also, I\342\200\231ll need you to scrounge up a fake SIN for me to use. Saito\342\200\231s goons are always looking for any excuse to lock up a dwarf like me. I have my own fakes, but we\342\200\231ll need one that establishes me as a local."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e81c86434315d02b50d04"
+  }
+  index: 7
+  text: "Just like old times, eh? And, just like the old times, you\342\200\231ll have to pay for the pleasure of my company. \302\245750 will get you a solid day of my services."
+  branches {
+    responseText: "{{CC}}\302\245750{{/CC}} Here you go."
+    conditions {
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 750
+        }
+      }
+    }
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "Maybe later."
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e821a6434315d02b50d08"
+  }
+  index: 8
+  text: "{{GM}}Dalmin bows theatrically.{{/GM}} Where you lead, I shall follow."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Remove Nuyen"
+      args {
+        int_value: 750
+      }
+    }
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521d69df366236f012002d29"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Control"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521d69df366236f012002d29"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PlayerOrAI"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "HiredSomeone"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_HiredDalmin"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_HiredDalmin_Part1"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "521e7db064343108ffb50f75"
+  }
+  index: 9
+  text: "The view is pretty good, isn\342\200\231t it?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToDalmin"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToDalmin"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 9
+}

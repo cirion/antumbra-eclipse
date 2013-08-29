@@ -2075,6 +2075,22 @@ variables {
     typeName: "bool"
   }
 }
+variables {
+  int_value: 0
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "TarneQuestStage"
+    typeName: "int"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "HiredSomeone"
+    typeName: "bool"
+  }
+}
 mapEvents: "Start Johnson Chat"
 mapEvents: "Kill Carver"
 worldMapLocation {

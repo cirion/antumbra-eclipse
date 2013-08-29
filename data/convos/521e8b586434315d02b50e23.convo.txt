@@ -1,0 +1,562 @@
+idRef {
+  id: "521e8b586434315d02b50e23"
+}
+ui_name: "A2S02-Orion"
+nodes {
+  idRef {
+    id: "521e8b826434315d02b50e2c"
+  }
+  index: 0
+  text: "{{GM}}You spot an ork intensely scribbling in a small notebook, his massive hand surprisingly delicate. He notices your approach and gently closes the notebook as he turns to face you.{{/GM}}\n\nHello. My name is Orion. May I presume that you are here to discuss employment? I\342\200\231m not currently looking for any runners of my own, but if you need a strong ork by your side, I\342\200\231d be happy to assist you for a nominal fee."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e8b9f6434315d02b50e30"
+  }
+  index: 1
+  text: "What can I do for you?"
+  branches {
+    responseText: "What were you writing in that notebook?"
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "521e8bd66434315d02b50e3d"
+    }
+  }
+  branches {
+    responseText: "\"Orion\" is an interesting name for an ork."
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "521e8bf96434315d02b50e42"
+    }
+  }
+  branches {
+    responseText: "How is San Francisco treating you these days?"
+    nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "521e8c376434315d02b50e4c"
+    }
+  }
+  branches {
+    responseText: "Are you interested in joining me for a run?"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Get Map Item (Player)"
+                args {
+                  int_value: 0
+                }
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "Cheap SINs"
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Get Map Item (Player)"
+                args {
+                  int_value: 0
+                }
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "Expensive SINs"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 5
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "521e8c6d6434315d02b50e4d"
+    }
+  }
+  branches {
+    responseText: "{{CC}}Fake SINs{{/CC}} I\342\200\231d like to hire you."
+    conditions {
+      ops {
+        functionName: "OR"
+        args {
+          call_value {
+            functionName: "Evaluate If Actor Has Item"
+            args {
+              call_value {
+                functionName: "Specific Actor"
+                args {
+                  call_value {
+                    functionName: "Get Map Item (Player)"
+                    args {
+                      int_value: 0
+                    }
+                  }
+                }
+                args {
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "HasOrHasNot"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Map Item (Item)"
+                args {
+                  string_value: "Expensive SINs"
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Evaluate If Actor Has Item"
+            args {
+              call_value {
+                functionName: "Specific Actor"
+                args {
+                  call_value {
+                    functionName: "Get Map Item (Player)"
+                    args {
+                      int_value: 0
+                    }
+                  }
+                }
+                args {
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "HasOrHasNot"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Map Item (Item)"
+                args {
+                  string_value: "Cheap SINs"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e8bd76434315d02b50e3f"
+  }
+  index: 2
+  text: "{{GM}}A shadow of a smile flickers across his face.{{/GM}} It is a journal. Do $(l.race_plural) not have those where you\342\200\231re from?\n\nSince you ask, though, I\342\200\231m organizing some thoughts on the long-term social impacts of goblinization. I find it helps me to work with ideas on paper before discussing them with the world at large."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e8bfb6434315d02b50e44"
+  }
+  index: 3
+  text: "Thank you. I chose it myself.\n\nAs you may know, Orion was the hunter in Greek mythology. I consider myself a hunter in many ways. On a very literal level, I pursue my opponents and shoot them until they die. On a more abstract level, though, I aspire to be a hunter of truth, one who finds that which is real in this world, and captures it for others to see."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e8c126434315d02b50e48"
+  }
+  index: 4
+  text: "{{GM}}Orion sighs softly.{{/GM}} I fear that my kind are faring poorly. In the early years after the Goblinization event, this was one of the only cities on the planet to accept orks and trolls as beings of equal worth to mundane humans. More recently, though, we are increasingly reviled, blamed for any act of violence or natural disaster. \n\nLocals have taken to speaking of Orkland in the East Bay, and lately there have even been some serious proposals to forcibly relocate all orks to that city. I have no objection to living there, of course, but the idea of a purge of metahumans is deeply distressing."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e8c706434315d02b50e4f"
+  }
+  index: 5
+  text: "As long as you are not planning on targeting metahumans, I will gladly join your cause for the standard fee. My one other request is that you secure a fresh California Free State SIN for my use. I fear that my current SIN has been flagged by the security forces, which makes my movement in the city very problematic."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e8cc26434315d02b50e53"
+  }
+  index: 6
+  text: "That is most gratifying to hear. For a charge of \302\245600, you will have unlimited access to my services for the remainder of the day."
+  branches {
+    responseText: "{{CC}}\302\245600{{/CC}} Here you go."
+    conditions {
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 600
+        }
+      }
+    }
+    actions {
+      ops {
+        functionName: "Remove Nuyen"
+        args {
+          int_value: 600
+        }
+      }
+    }
+    nextNodeIndex: 7
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e8d076434315d02b50e59"
+  }
+  index: 7
+  text: "Thank you. Lead on, good $(l.sir)."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_HiredOrion"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_HiredOrion_Part1"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "HiredSomeone"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521d65c4366236f012002d26"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Control"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521d65c4366236f012002d26"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PlayerOrAI"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "521e8bba6434315d02b50e35"
+  }
+  index: 8
+  text: "{{GM}}Orion nods gravely as you approach.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToOrion"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToOrion"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 8
+}

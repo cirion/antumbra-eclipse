@@ -404,6 +404,56 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Check New Character"
+  events {
+    ops {
+      functionName: "On Character Creation Confirmed"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Add Nuyen"
+      args {
+        int_value: 1500
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "521e2a98643431a9f264f5ee"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Starting Allowance"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Add Nuyen"
+      args {
+        int_value: 1000
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "521e2c19643431a9f264f5ef"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Camera"
   position {

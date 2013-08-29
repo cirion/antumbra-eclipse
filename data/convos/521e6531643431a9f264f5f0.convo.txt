@@ -1,0 +1,170 @@
+idRef {
+  id: "521e6531643431a9f264f5f0"
+}
+ui_name: "A2S02-Necalli"
+nodes {
+  idRef {
+    id: "521e653b643431a9f264f5f7"
+  }
+  index: 0
+  text: "Greetings! You are $(l.name), correct?\n\nPlease don\342\200\231t look startled. I make it my business to find out everything I can about any new strangers showing up at my doorstep. It\342\200\231s how I\342\200\231ve stayed alive for so long."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e6576643431a9f264f5fa"
+  }
+  index: 1
+  text: "Welcome to Necalli Yaotl\342\200\231s House of Magic. What would you like today?"
+  branches {
+    responseText: "Show me your inventory."
+    actions {
+      ops {
+        functionName: "Open Store Screen From Actor"
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "521d6096366236f012002d13"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "What does your name mean?"
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "How is magic treated in this city?"
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "{{GM}}Leave.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e65a9643431a9f264f607"
+  }
+  index: 2
+  text: "Ah, yes. It\342\200\231s a fairly common name in Aztlan, but less so here. It roughly translates as \342\200\234Warrior,\342\200\235 which seems fitting. I pride myself on being a survivor.\n\nI\342\200\231m proud of my name, but it\342\200\231s a bit of a handicap these days. It identifies me as a likely collaborator with Aztechnology, and that megacorp is in a difficult position these days."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e65c6643431a9f264f60b"
+  }
+  index: 3
+  text: "Fairly positively, I would say. It isn\342\200\231t honored to the degree that you find in NAN or Tir, but the local megacorps clearly understand the economic power of magic, and skilled practitioners are in high demand. That\342\200\231s generally positive, but also means a busy trade in extraction of strategic mages."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "521e65d0643431a9f264f60e"
+  }
+  index: 4
+  text: "Outside of the corporate world, magic is generally seen as another form of expression. I\342\200\231ve seen some very impressive shows of pyro magic, enormous art sculptures constructed by summoned earth spirits, even a comedian who made use of Haste and Slow to create one of the funniest gags I\342\200\231ve ever seen."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToNecalli"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToNecalli"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 1
+  auxiliaryLink: true
+}
