@@ -1,0 +1,51 @@
+idRef {
+  id: "522012d93662367819007163"
+}
+ui_name: "A2S03-Shaverus"
+nodes {
+  idRef {
+    id: "522013153662367819007169"
+  }
+  index: 0
+  text: "Ahh... here we go. Paydata."
+  branches {
+    responseText: "Who are you?"
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "What are you doing here?"
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "{{GM}}Attack.{{/GM}}"
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5220132b366236781900716e"
+  }
+  index: 1
+  text: "Norton lives! Sayonara."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Shaverus Exits"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

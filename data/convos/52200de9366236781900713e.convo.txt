@@ -1,0 +1,29 @@
+idRef {
+  id: "52200de9366236781900713e"
+}
+ui_name: "A2S03-ThirdFloorSecurity"
+nodes {
+  idRef {
+    id: "52200e1b3662367819007144"
+  }
+  index: 0
+  text: "Intruders! Open fire!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Guards Turn Hostile"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

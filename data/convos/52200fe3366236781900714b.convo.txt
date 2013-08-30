@@ -1,0 +1,95 @@
+idRef {
+  id: "52200fe3366236781900714b"
+}
+ui_name: "A2S03-Tooms"
+nodes {
+  idRef {
+    id: "52200ff03662367819007151"
+  }
+  index: 0
+  text: "Ungh!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "No Effect"
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "522010093662367819007154"
+  }
+  index: 1
+  text: "{{GM}}Aztechnology\342\200\231s local chief stares in shock at his abdomen, rapidly growing slicker with blood. He stumbles and collapses to the floor.{{/GM}}"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521fefb6366236441f00307e"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "player"
+          }
+          args {
+            string_value: "MaleDeath"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "No Effect"
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}
