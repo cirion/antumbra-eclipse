@@ -116,7 +116,7 @@ nodes {
     id: "521bfe8d3662362419001be4"
   }
   index: 7
-  text: "That sound you hear is the sound of oppression. Ever since Corporal Saito landed with his Japanese Imperial Marines, the local citizenry has been too cowed to spend much time outdoors. You do get some people wandering around during the day, but at night, everyone stays home to avoid the patrols. Particularly the metahumans. There\342\200\231s no love lost between them and Saito\342\200\231s forces."
+  text: "That sound you hear is the sound of oppression. Ever since Colonel Saito landed with his Japanese Imperial Marines, the local citizenry has been too cowed to spend much time outdoors. You do get some people wandering around during the day, but at night, everyone stays home to avoid the patrols. Particularly the metahumans. There\342\200\231s no love lost between them and Saito\342\200\231s forces."
   branches {
     responseText: ""
     nextNodeIndex: 4
@@ -141,7 +141,7 @@ nodes {
     id: "521bfea73662362419001beb"
   }
   index: 9
-  text: "The particular threat in San Francisco, though, is the collaboration of Corporal Saito with the megacorps. Unofficially, he\342\200\231s just here to keep the peace. However, any time that a Fuchi runner is captured, they\342\200\231re always released for lack of evidence; any time they get their hands on a metahuman or an Aztechnology runner, that person gets sent away permanently."
+  text: "The particular threat in San Francisco, though, is the collaboration of Colonel Saito with the megacorps. Unofficially, he\342\200\231s just here to keep the peace. However, any time that a Fuchi runner is captured, they\342\200\231re always released for lack of evidence; any time they get their hands on a metahuman or an Aztechnology runner, that person gets sent away permanently."
   branches {
     responseText: ""
     nextNodeIndex: 4
@@ -211,6 +211,74 @@ nodes {
           }
           args {
             int_value: 3
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521bfb3f3662362419001add"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "End Current Actor Turn"
+    }
+    ops {
+      functionName: "Enable/Disable Manual Turn Mode"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521bfb3f3662362419001add"
           }
         }
       }

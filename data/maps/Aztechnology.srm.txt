@@ -1131,6 +1131,19 @@ props {
     z: -15
   }
   orientation: ORIENTATION_S
+  idRef {
+    id: "521ff2af366236441f003087"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    doorPoint {
+      doorState: false
+      aiOnlyDoor: false
+      doorSound: ""
+      doorSoundBundle: ""
+    }
+  }
   lod: 0
 }
 props {
@@ -3187,6 +3200,19 @@ props {
     z: -18
   }
   orientation: ORIENTATION_S
+  idRef {
+    id: "521ff2a7366236441f003085"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    doorPoint {
+      doorState: false
+      aiOnlyDoor: false
+      doorSound: ""
+      doorSoundBundle: ""
+    }
+  }
   lod: 0
 }
 props {
@@ -3220,6 +3246,15 @@ props {
     z: -23
   }
   orientation: ORIENTATION_S
+  displayName: "Elevator First to Second"
+  idRef {
+    id: "521ff306366236441f00308a"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Warp
+  }
   lod: 0
 }
 props {
@@ -17512,11 +17547,24 @@ props {
 props {
   name: "telestrianEstate_wall_doorGrand01Mid"
   gridPoint {
-    x: -184
+    x: -186
     y: 0
-    z: 63
+    z: 66
   }
   orientation: ORIENTATION_S
+  idRef {
+    id: "521fea57366236441f00306d"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    doorPoint {
+      doorState: false
+      aiOnlyDoor: false
+      doorSound: "DoorSwing"
+      doorSoundBundle: "props"
+    }
+  }
   lod: 0
 }
 props {
@@ -19302,6 +19350,336 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "521a2cdc3662363819003c64"
+  }
+  lod: 0
+}
+props {
+  name: "office_tech_securityCheckpoint"
+  gridPoint {
+    x: -82
+    y: 0
+    z: 16
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_tech_xray01"
+  gridPoint {
+    x: -18
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "secretLab_tech_wallConsole03"
+  gridPoint {
+    x: -7
+    y: 0
+    z: -13
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_wall_door01Door"
+  gridPoint {
+    x: -81
+    y: 0
+    z: 9
+  }
+  orientation: ORIENTATION_S
+  displayName: "Elevator Second to First"
+  idRef {
+    id: "521ff370366236441f00308e"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Warp
+  }
+  lod: 0
+}
+props {
+  name: "office_wall_door02Door"
+  gridPoint {
+    x: -85
+    y: 0
+    z: 33
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ff5d6366236441f00309c"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    doorPoint {
+      doorState: false
+      aiOnlyDoor: false
+      doorSound: "DoorSlide"
+      doorSoundBundle: "props"
+    }
+  }
+  lod: 0
+}
+props {
+  name: "office_wall_glassDoor01"
+  gridPoint {
+    x: -100
+    y: 0
+    z: 42
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ff5dd366236441f00309e"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    doorPoint {
+      doorState: false
+      aiOnlyDoor: false
+      doorSound: "DoorSlide"
+      doorSoundBundle: "props"
+    }
+  }
+  lod: 0
+}
+props {
+  name: "office_wall_glassDoor01"
+  gridPoint {
+    x: -113
+    y: 0
+    z: 42
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ff606366236441f0030a2"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    doorPoint {
+      doorState: false
+      aiOnlyDoor: false
+      doorSound: "DoorSlide"
+      doorSoundBundle: "props"
+    }
+  }
+  lod: 0
+}
+props {
+  name: "office_wall_greyDoorMid01"
+  gridPoint {
+    x: -124
+    y: 0
+    z: 48
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "521ff616366236441f0030a4"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    doorPoint {
+      doorState: false
+      aiOnlyDoor: false
+      doorSound: "DoorSlide"
+      doorSoundBundle: "props"
+    }
+  }
+  lod: 0
+}
+props {
+  name: "office_wall_door01Door"
+  gridPoint {
+    x: -138
+    y: 0
+    z: 50
+  }
+  orientation: ORIENTATION_E
+  displayName: "Elevator Second to Third"
+  idRef {
+    id: "521ff367366236441f00308c"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Warp
+  }
+  lod: 0
+}
+props {
+  name: "medicalLab_wall_doorWide01Mid"
+  gridPoint {
+    x: -163
+    y: 0
+    z: 76
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "521fea3b366236441f003069"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    doorPoint {
+      doorState: false
+      aiOnlyDoor: false
+      doorSound: "DoorSlide"
+      doorSoundBundle: "props"
+    }
+  }
+  lod: 0
+}
+props {
+  name: "medicalLab_wall_doorWide01Mid"
+  gridPoint {
+    x: -161
+    y: 0
+    z: 92
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "521fe97f366236441f003064"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    doorPoint {
+      doorState: false
+      aiOnlyDoor: false
+      doorSound: "DoorSlide"
+      doorSoundBundle: "props"
+    }
+  }
+  lod: 0
+}
+props {
+  name: "office_wall_door01Door"
+  gridPoint {
+    x: -182
+    y: 0
+    z: 109
+  }
+  orientation: ORIENTATION_E
+  displayName: "Elevator 3rd Floor"
+  idRef {
+    id: "521ff37b366236441f003090"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Warp
+  }
+  lod: 0
+}
+props {
+  name: "office_wall_greyDoorMid02"
+  gridPoint {
+    x: -175
+    y: 0
+    z: 106
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "521fea13366236441f003066"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    doorPoint {
+      doorState: false
+      aiOnlyDoor: false
+      doorSound: "DoorSlide"
+      doorSoundBundle: "props"
+    }
+  }
+  lod: 0
+}
+props {
+  name: "office_wall_glassDoor01"
+  gridPoint {
+    x: -174
+    y: 0
+    z: 65
+  }
+  orientation: ORIENTATION_S
+  displayName: "Door to CEO Corridor"
+  idRef {
+    id: "521fea49366236441f00306b"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "A2S03-Keycard"
+            }
+          }
+        }
+      }
+    }
+    doorPoint {
+      doorState: false
+      aiOnlyDoor: false
+      doorSound: "DoorSlide"
+      doorSoundBundle: "props"
+    }
+  }
+  lod: 0
+}
+props {
+  name: "office_tech_keycardLanyard"
+  gridPoint {
+    x: -167
+    y: 0
+    z: 67
+  }
+  orientation: ORIENTATION_S
+  displayName: "Keycard"
+  idRef {
+    id: "521fef6c366236441f00307b"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "A2S03-Keycard"
+      destroyOnPickup: true
+    }
   }
   lod: 0
 }

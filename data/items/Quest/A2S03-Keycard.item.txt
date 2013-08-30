@@ -1,0 +1,8 @@
+id: "A2S03-Keycard"
+type: ItemType_QuestItem
+uirep {
+  name: "Keycard"
+  description: "This card will allow access to the executive office."
+}
+credentials: 0
+sorting_group: "Quest"

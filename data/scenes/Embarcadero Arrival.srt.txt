@@ -348,32 +348,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Kill Actor"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "DeathMethod"
-          }
-          args {
-            int_value: 3
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Enable/Disable Interactable Object"
       args {
         call_value {
@@ -393,6 +367,31 @@ triggers {
             string_value: "521c03733662360c11001ad9"
           }
         }
+      }
+    }
+    ops {
+      functionName: "Play Animation"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        string_value: "interact"
+      }
+    }
+    ops {
+      functionName: "Send Event After Delay"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Got Into Taxi"
+          }
+        }
+      }
+      args {
+        float_value: 1
       }
     }
   }
@@ -454,6 +453,86 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Got Into Taxi"
+  events {
+    ops {
+      functionName: "Get Map Item (Event)"
+      args {
+        string_value: "Got Into Taxi"
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521bfb3c3662362419001adc"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521bfb3f3662362419001add"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "521f71183662361c1b0079d7"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Camera"
   position {
@@ -493,10 +572,10 @@ regions {
 regions {
   name: "Enter Taxi Zone"
   position {
-    x: -24
+    x: -23
     y: -26
     width: 1
-    height: 2
+    height: 1
   }
   enabledAtStart: true
   is_camera_region: false
@@ -717,6 +796,7 @@ variables {
     typeName: "bool"
   }
 }
+mapEvents: "Got Into Taxi"
 worldMapLocation {
   filename: ""
   location {
