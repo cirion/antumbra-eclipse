@@ -17553,6 +17553,7 @@ props {
     z: 66
   }
   orientation: ORIENTATION_S
+  displayName: "Tooms Office Door"
   idRef {
     id: "521fea57366236441f00306d"
   }

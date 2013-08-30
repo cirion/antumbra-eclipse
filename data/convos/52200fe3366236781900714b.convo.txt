@@ -85,7 +85,15 @@ nodes {
       }
     }
     ops {
-      functionName: "No Effect"
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Tooms Died"
+          }
+        }
+      }
     }
   }
 }

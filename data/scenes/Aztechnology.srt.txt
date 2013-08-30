@@ -1763,6 +1763,47 @@ triggers {
         string_value: "interact"
       }
     }
+    ops {
+      functionName: "Start Conversation Between Actors"
+      args {
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "522012d93662367819007163"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "521feff7366236441f00307f"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "End Current Actor Turn"
+    }
   }
   isActive: true
   idRef {
@@ -1821,6 +1862,9 @@ triggers {
           }
         }
       }
+    }
+    ops {
+      functionName: "End Current Actor Turn"
     }
     ops {
       functionName: "End Current Actor Turn"
@@ -1933,7 +1977,7 @@ triggers {
         }
       }
       args {
-        float_value: 0
+        float_value: 1
       }
       args {
         call_value {
@@ -2031,13 +2075,158 @@ triggers {
         float_value: 3
       }
       args {
-        float_value: 3
+        float_value: 6
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
       }
     }
   }
   isActive: true
   idRef {
     id: "522013c43662367819007180"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Witness Murder"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "522022ff3662361c1300153e"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Start Conversation"
+      args {
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "52200fe3366236781900714b"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "521fefb6366236441f00307e"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "522022933662361c1300153d"
   }
   elseActions {
   }
@@ -2335,7 +2524,7 @@ regions {
   name: "Window"
   position {
     x: -203
-    y: 66
+    y: 65
     width: 1
     height: 1
   }
@@ -2367,12 +2556,48 @@ regions {
   loop_combat_music: true
   loop_default_music: false
 }
+regions {
+  name: "See Tooms Die"
+  position {
+    x: -187
+    y: 62
+    width: 1
+    height: 14
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "522022ff3662361c1300153e"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -4
+    x: -178
     y: 0
-    z: -12
+    z: 67
   }
   orientation: ORIENTATION_N
   idRef {
@@ -3797,7 +4022,7 @@ characters {
         morale: 24
         awareness: 24
         protect_tether_range: 5
-        move_speed: 6
+        move_speed: 42
       }
       skills {
       }
