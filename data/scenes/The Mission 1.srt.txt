@@ -34,23 +34,767 @@ regions {
   loop_combat_music: true
   loop_default_music: false
 }
+regions {
+  name: "Lonestar Flee"
+  position {
+    x: 35
+    y: -2
+    width: 3
+    height: 3
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "52212c83643431523837ef5a"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Gangers Flee"
+  position {
+    x: 35
+    y: -32
+    width: 4
+    height: 4
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "52212c9d643431523837ef5b"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 45
+    x: 15
     y: 0
-    z: -10
+    z: -18
   }
-  orientation: ORIENTATION_N
+  orientation: ORIENTATION_S
   idRef {
-    id: "521a64d93662367c1d006ed8"
+    id: "5221249a643431523837ee63"
   }
   lod: 0
   character_instance {
     team_id: "Shadowrunners"
-    char_name: "New Actor"
+    char_name: "PC0"
     enabled_at_start: true
     pc_spawn_number: 0
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: 15
+    y: 0
+    z: -17
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522124b0643431523837ee64"
+  }
+  lod: 0
+  character_instance {
+    team_id: "Shadowrunners"
+    char_name: "PC1"
+    enabled_at_start: true
+    pc_spawn_number: 1
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 27
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "squad1a"
+  displayName: "Marine Captain"
+  idRef {
+    id: "52212513643431523837ee71"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanMaleTurquoisePonyJacket"
+    character_sheet_id: "Lonestar_Lv2_Captain"
+    equipment_sheet_id: "Lonestar_Captain_Low"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Hunt And Destroy"
+      attitude: AttitudeBoss
+    }
+    team_id: "LoneStar"
+    char_name: "Marine Captain"
+    GeneralTags: "squad1a"
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_humanmale_02_topknot"
+    }
+    karma: 52
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 27
+    y: 0
+    z: -24
+  }
+  orientation: ORIENTATION_E
+  displayName: "Voire"
+  idRef {
+    id: "522126b9643431523837ee73"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/ElfMale"
+    character_sheet_id: "Lvl2_Elf_Mage"
+    equipment_sheet_id: "Lonestar_Mage_Low"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Hunt And Destroy"
+      attitude: AttitudeBoss
+    }
+    equipment {
+      prefab_name: "RiggerGolden"
+    }
+    team_id: "Gangers"
+    char_name: "Voire"
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_elfmale_05_platpunk"
+    }
+    portrait_code_override: "s6h5c2"
+    karma: 57
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 29
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "squad1a"
+  displayName: "Marine Squad 1 Guard 1"
+  idRef {
+    id: "52212aee643431523837ef56"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    equipment_sheet_id: "Lonestar_SMG_Low"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 3
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "LoneStar"
+    char_name: "Marine"
+    GeneralTags: "squad1a"
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h3b4"
+    karma: 39
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 27
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "squad1a"
+  displayName: "Marine Squad 1 Guard 1"
+  idRef {
+    id: "52212b5d643431523837ef57"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv2_Ork_Shotgun"
+    equipment_sheet_id: "Lonestar_Shotgun_Low"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "LoneStar"
+    char_name: "Marine"
+    GeneralTags: "squad1a"
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s5h6b5"
+    karma: 41
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 29
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "squad1a"
+  GeneralTags: "lonestarcoward"
+  displayName: "Marine Squad 1 Guard 3"
+  idRef {
+    id: "52212bdd643431523837ef58"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    equipment_sheet_id: "Lonestar_SMG_Low"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 3
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "LoneStar"
+    char_name: "Marine"
+    GeneralTags: "squad1a"
+    GeneralTags: "lonestarcoward"
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h4b1"
+    karma: 39
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 27
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "squad1a"
+  GeneralTags: "lonestarcoward"
+  displayName: "Marine Squad 1 Guard 4"
+  idRef {
+    id: "52212c02643431523837ef59"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/HumanFemale"
+    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
+    equipment_sheet_id: "Lonestar_Pistol_Low"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "LoneStar"
+    char_name: "Marine"
+    GeneralTags: "squad1a"
+    GeneralTags: "lonestarcoward"
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h3"
+    karma: 37
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 27
+    y: 0
+    z: -27
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "squad1b"
+  displayName: "Ganger"
+  idRef {
+    id: "52212cc5643431523837ef5c"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Gangers/DwarfMaleGangerMohawk_Cutter"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    equipment_sheet_id: "Lonestar_Shotgun_Low"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "Gangers"
+    char_name: "Ganger"
+    GeneralTags: "squad1b"
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h5c2"
+    karma: 33
   }
 }
 worldMapLocation {
@@ -64,7 +808,7 @@ mapName: "The Mission 1"
 parentStory: ""
 scene_title: "The Mission"
 scene_subtitle: ""
-scene_synopsis: ""
+scene_synopsis: "Long hailed as the heart of the \342\200\234real\342\200\235 San Francisco, The Mission is where the city\342\200\231s residents traditionally traveled to escape tourists. A mish-mash of high tech and low poverty, high art and low beats, this district acts as a nexus for all the modern extremes of The City.\n\nLately, though, it has been a district on edge. Gangs of elves, orks, and trolls roam the streets, harassing businesses. The gangs in turn are harassed by Colonel Saito\342\200\231s Imperial Marines. Residents worry that the growing tensions will change this place irrevocably."
 scene_image: ""
 scene_continue_button_skip: false
 scene_restore_runner_health: false
@@ -87,21 +831,21 @@ allow_drawn_weapons: false
 team_affiliations {
   team_name: "Shadowrunners"
   affiliation: 0
-  affiliation: 1
-  affiliation: 1
+  affiliation: 0
+  affiliation: 0
   affiliation: 0
 }
 team_affiliations {
   team_name: "Gangers"
-  affiliation: 1
   affiliation: 0
-  affiliation: 1
+  affiliation: 0
+  affiliation: 0
   affiliation: 0
 }
 team_affiliations {
   team_name: "LoneStar"
-  affiliation: 1
-  affiliation: 1
+  affiliation: 0
+  affiliation: 0
   affiliation: 0
   affiliation: 0
 }
