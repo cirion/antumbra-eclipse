@@ -330,7 +330,7 @@ nodes {
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
-      id: "522129c9643431523837ef32"
+      id: "5221722f3662365c160035af"
     }
   }
   branches {
@@ -397,19 +397,27 @@ nodes {
         }
       }
     }
-    nextNodeIndex: -1
+    nextNodeIndex: 21
     onlyOnce: true
     idRef {
-      id: "52212a99643431523837ef55"
+      id: "52216cda3662365c16003388"
     }
   }
   branches {
-    responseText: ""
-    nextNodeIndex: -1
+    responseText: "{{CC}}Gang{{/CC}} Chill, chummers. This battle isn\342\200\231t worth fighting."
+    nextNodeIndex: 23
+    onlyOnce: true
+    idRef {
+      id: "522172373662365c160035b0"
+    }
   }
   branches {
-    responseText: ""
-    nextNodeIndex: -1
+    responseText: "Do what the marine says: disperse."
+    nextNodeIndex: 25
+  }
+  branches {
+    responseText: "Go away, marines. They\342\200\231re not moving."
+    nextNodeIndex: 26
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -637,7 +645,207 @@ nodes {
     id: "522126b9643431523837ee73"
   }
 }
+nodes {
+  idRef {
+    id: "52216bc63662365c16003328"
+  }
+  index: 21
+  text: "Negative! We hold the line!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 22
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52212513643431523837ee71"
+  }
+}
+nodes {
+  idRef {
+    id: "52216bd73662365c1600332b"
+  }
+  index: 22
+  text: "{{GM}}Despite the captain\342\200\231s commands, you notice that some of the more grizzled marines apparently agree with you. They slip quietly away while he rails against the gang.{{/GM}}"
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52212513643431523837ee71"
+  }
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Security Dispersing"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "52216bfc3662365c16003379"
+  }
+  index: 23
+  text: "If this isn\342\200\231t, than nothing is! Stay strong, chummers! We can do it!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 24
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+}
+nodes {
+  idRef {
+    id: "52216c063662365c1600337c"
+  }
+  index: 24
+  text: "{{GM}}Despite Voire\342\200\231s pleas, some of his followers appear reluctant. They sheepishly walk away, leaving him with a smaller group than before.{{/GM}}"
+  sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Gangers Dispersing"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "52216c2d3662365c16003380"
+  }
+  index: 25
+  text: "Frag you, $(l.guy)! Nobody will push us around any more!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Sided with Security"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "52216c893662365c16003383"
+  }
+  index: 26
+  text: "Negative!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 27
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52212513643431523837ee71"
+  }
+}
+nodes {
+  idRef {
+    id: "52216c953662365c16003386"
+  }
+  index: 27
+  text: "This is it, chummers! CHARGE!"
+  sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Sided with Gangers"
+          }
+        }
+      }
+    }
+  }
+}
 roots {
   responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "ArgumentStarted"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "ArgumentStarted"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
   nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 5
+  auxiliaryLink: true
 }
