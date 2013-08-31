@@ -1,0 +1,158 @@
+idRef {
+  id: "522212a43662365013000fa9"
+}
+ui_name: "A2S04-PostFirstFightMarine"
+nodes {
+  idRef {
+    id: "522212ce3662365013000faf"
+  }
+  index: 0
+  text: "Thank you for your assistance."
+  branches {
+    responseText: "Are you OK?"
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 1
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Are you OK?"
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "{{GM}}Say nothing{{/GM}}"
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522213923662365013000fba"
+  }
+  index: 1
+  text: "Yes, thanks to your timely assistance. With humans like you on our side, we\342\200\231re bound to prevail over the trash."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "522213ad3662365013000fc4"
+  }
+  index: 2
+  text: "\342\200\246 yes, thank you for asking. I must admit that I was not expecting a nonhuman like you to come to our aid. I\342\200\231m glad to know that there are good $(l.race_plural) around."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5222130e3662365013000fb4"
+  }
+  index: 3
+  text: "The elf ringleader ran off. We\342\200\231ll need to find him, and quickly, before he stirs up the residents of this neighborhood. I\342\200\231ll come with you."
+  branches {
+    responseText: "Do you know anyone named Norton?"
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522213413662365013000fb8"
+  }
+  index: 4
+  text: "Norton... now that you mention it, some of those metahumans were talking about Norton when we arrived. I think that their leader was answering questions about him. I\342\200\231ll gladly help you interrogate him if we can track him down."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Post First Fight Sided with Marines"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

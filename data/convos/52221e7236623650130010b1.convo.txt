@@ -1,0 +1,50 @@
+idRef {
+  id: "52221e7236623650130010b1"
+}
+ui_name: "A2S04-BanterOrion"
+nodes {
+  idRef {
+    id: "52221e7836623650130010b7"
+  }
+  index: 0
+  text: "I\342\200\231m curious to hear your opinion on what has just occurred, $(l.name). Do you feel exuberant? Terrified? Pity?"
+  branches {
+    responseText: "The violence was inevitable."
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "I wish we could have stopped it."
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "Not now, Orion."
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52221e9b36623650130010c0"
+  }
+  index: 1
+  text: "I could not agree more, $(l.name). The future is fast approaching. The old order must be swept away before the new order can take its place.\n\nWe may feel sympathy for one side or the other, but the most important thing is the action itself. Inertia delays the inevitable change, and keeps us trapped in this intolerable present. We must pass through the flames that we might be purified."
+}
+nodes {
+  idRef {
+    id: "52221e9936623650130010be"
+  }
+  index: 2
+  text: "Indeed? And do you think that would have solved all their problems? Do you honestly think that this same scene would not play out yet again the next night, at some other corner in some other neighborhood?\n\nHistory is inexorable, $(l.name). We can change the details, we can fiddle with minor facts, but we cannot hope to stand in the way of the vast, sweeping tidal wave of progress."
+}
+nodes {
+  idRef {
+    id: "52221e9736623650130010bc"
+  }
+  index: 3
+  text: "As you wish. We may discuss this later."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

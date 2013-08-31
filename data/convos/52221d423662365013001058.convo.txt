@@ -1,0 +1,74 @@
+idRef {
+  id: "52221d423662365013001058"
+}
+ui_name: "A2S04-BanterDalmin"
+nodes {
+  idRef {
+    id: "52221d52366236501300105e"
+  }
+  index: 0
+  text: "Wow. Just... wow.\n\nI always thought of this as the ultimate city of tolerance, you know? And look at it now. Everyone\342\200\231s killing each other in the street. And they\342\200\231re not even getting paid for it! "
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52221d613662365013001061"
+  }
+  index: 1
+  text: "What a waste."
+  branches {
+    responseText: "I didn\342\200\231t know you have a queasy stomach."
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "Have you seen anything like this before?"
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "Let\342\200\231s keep moving."
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52221d96366236501300106b"
+  }
+  index: 2
+  text: "I don\342\200\231t. I just hate seeing lost potential."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52221dab366236501300106f"
+  }
+  index: 3
+  text: "Not in Seattle, no. I\342\200\231m too young to remember the Night of Rage, though. From what I\342\200\231ve heard, that was so awful it makes this look like a tea party in comparison. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52221dba3662365013001073"
+  }
+  index: 4
+  text: "Indeed. We need to keep ahead of the reaper, eh?"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

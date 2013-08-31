@@ -175,6 +175,50 @@ variables {
     }
   }
 }
+variables {
+  name: "A2_Mission_SidedWithGangers"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_Mission_SidedWithGangers"
+    }
+  }
+}
+variables {
+  name: "A2_Mission_SidedWithMarines"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_Mission_SidedWithMarines"
+    }
+  }
+}
+variables {
+  name: "A2_VoireDied"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_VoireDied"
+    }
+  }
+}
+variables {
+  name: "A2_VoireCaptured"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_VoireCaptured"
+    }
+  }
+}
 description: "Megacorps battle for supremacy in San Francisco, but broader tensions simmering in the city threaten to boil over into a full-out war."
 startScene: "The Mission 1"
 allowCharacterImport: true

@@ -1,0 +1,79 @@
+idRef {
+  id: "52221dce3662365013001085"
+}
+ui_name: "A2S04-BanterHailey"
+nodes {
+  idRef {
+    id: "52221ddc366236501300108b"
+  }
+  index: 0
+  text: "I can\342\200\231t believe Voire was so... so stupid!\n\nHe\342\200\231s hella smart, but he can be so dumb sometimes!"
+  branches {
+    responseText: "Did you like him?"
+    nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "52221e6836623650130010a1"
+    }
+  }
+  branches {
+    responseText: "I admire what he\342\200\231s done."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "He\342\200\231s a moron."
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52221e043662365013001096"
+  }
+  index: 1
+  text: "I mean, it\342\200\231s not because he\342\200\231s an elf. I liked Tarne, after all. It\342\200\231s just... well, you know.\n\nHe was a friend, though. What a waste! Ugh, I hate this stupid city sometimes!"
+  branches {
+    responseText: "I admire what he\342\200\231s done."
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "He\342\200\231s a moron."
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52221e58366236501300109e"
+  }
+  index: 2
+  text: "{{GM}}Hailey arches an eyebrow in amazement.{{/GM}} \n\nSeriously?! Well, you have plenty of company. It feels like half this town is ready to start shooting the other half."
+}
+nodes {
+  idRef {
+    id: "52221e6336623650130010a0"
+  }
+  index: 3
+  text: "{{GM}}Hailey sighs deeply.{{/GM}}}\n\nI know, right? And yet, inside his own head he\342\200\231s so convinced that he\342\200\231s making the world a better place. What a dummy."
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52221e2b366236501300109a"
+  }
+  index: 4
+  text: "{{GM}}Hailey arches an eyebrow in amazement.{{/GM}} \n\nSeriously?! Well, you have plenty of company. It feels like half this town is ready to start shooting the other half."
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52221e41366236501300109c"
+  }
+  index: 5
+  text: "{{GM}}Hailey sighs deeply.{{/GM}}}\n\nI know, right? And yet, inside his own head he\342\200\231s so convinced that he\342\200\231s making the world a better place. What a dummy."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

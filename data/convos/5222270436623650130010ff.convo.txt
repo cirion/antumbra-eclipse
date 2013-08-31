@@ -1,0 +1,217 @@
+idRef {
+  id: "5222270436623650130010ff"
+}
+ui_name: "A2S04-WealthyPatron"
+nodes {
+  idRef {
+    id: "5222272a3662365013001105"
+  }
+  index: 0
+  text: "{{GM}}The man busies himself with a nearby terminal.{{/GM}}"
+  branches {
+    responseText: "Do you have a passcard for the Stuffer Shack?"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "{{GM}}Walk away.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522227753662365013001109"
+  }
+  index: 1
+  text: "Hm? Why do you ask?"
+  branches {
+    responseText: "{{CC}}Socialite{{/CC}} I\'ve had a most dreadful argument with the manager. I simply must pop in to pay him a little chat."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 16
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "{{CC}}\302\245200{{/CC}} I urgently need to open the gate. I\'ll pay you for your troubles."
+    conditions {
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 200
+        }
+      }
+    }
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "I need to open the gate, of course."
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52222804366236501300110e"
+  }
+  index: 2
+  text: "Oh, I know! Isn\'t he so horrid?\n\nHere you go, good $(l.sir). No need to return it to me, I\'ll have my man bring around another."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Stuffer Shack Passcard"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5222297a366236501300111e"
+  }
+  index: 3
+  text: "That is acceptable. A pleasure doing business with you."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Stuffer Shack Passcard"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Remove Nuyen"
+      args {
+        int_value: 200
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "522229f2366236501300112d"
+  }
+  index: 4
+  text: "Sorry, I can\'t help you."
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

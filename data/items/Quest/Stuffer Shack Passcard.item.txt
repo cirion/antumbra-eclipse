@@ -1,0 +1,8 @@
+id: "Stuffer Shack Passcard"
+type: ItemType_QuestItem
+uirep {
+  name: "Stuffer Shack Parking Passcard"
+  description: "Reserved for valued customers, this card allows access to an off-street gated parking area."
+}
+credentials: 0
+sorting_group: "Quest"

@@ -1,0 +1,35 @@
+idRef {
+  id: "5222365036623650130011a0"
+}
+ui_name: "A2S04-EndConvoVoire"
+nodes {
+  idRef {
+    id: "5222366036623650130011a6"
+  }
+  index: 0
+  text: "Thanks for your help, $(l.name)! Here, take this. I know it isn\342\200\231t much, but I want you to know that we metahumans remember our friends."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add Nuyen"
+      args {
+        int_value: 200
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5222368336623650130011a9"
+  }
+  index: 1
+  text: "Remember: Norton is in Colma. I wouldn\342\200\231t go there if I were you, though. Norton is surrounded by some very dangerous creatures.\n\nI have to run. Goodbye, and thanks again."
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

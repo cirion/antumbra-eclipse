@@ -1,0 +1,106 @@
+idRef {
+  id: "5222246f36623650130010d9"
+}
+ui_name: "A2S04-HackGate"
+nodes {
+  idRef {
+    id: "5222247836623650130010df"
+  }
+  index: 0
+  text: "Thank you for visiting Stuffer Shack! We\'re sorry to see you leave. Please enter your passcard to open the security gate."
+  branches {
+    responseText: "{{CC}}Decking 3{{/CC}} {{GM}}Override gate controls.{{/GM}}"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "{{CC}}Stuffer Shack parking passcard.{{/CC}} {{GM}}Enter passcard.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "Stuffer Shack Passcard"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "{{GM}}Leave.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5222251636623650130010ec"
+  }
+  index: 1
+  text: "{{GM}}Bzzzzzt.{{/GM}"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Opened Gate"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5222254f36623650130010ee"
+  }
+  index: 2
+  text: "Have a super stuffer day."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Opened Gate"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

@@ -1,0 +1,77 @@
+idRef {
+  id: "522233be366236501300116d"
+}
+ui_name: "A2S04-EndConvoSidedMarines"
+nodes {
+  idRef {
+    id: "522233d23662365013001173"
+  }
+  index: 0
+  text: "Just look at the carnage you\342\200\231ve caused today!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52223273366236501300116b"
+  }
+}
+nodes {
+  idRef {
+    id: "52223420366236501300117b"
+  }
+  index: 1
+  text: "You\342\200\231re going away for a very long time. I doubt you\342\200\231ll ever see the light of day again, dandelion-eater."
+  branches {
+    responseText: "Where is Norton?"
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52223273366236501300116b"
+  }
+}
+nodes {
+  idRef {
+    id: "52223475366236501300117e"
+  }
+  index: 2
+  text: "Norton? He\342\200\231s... he\342\200\231s in Colma. So far away. There\342\200\231s no way he can help me now.\n\nForgive me, Norton! I tried to follow in your steps, and I failed!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "5222324e366236501300116a"
+  }
+}
+nodes {
+  idRef {
+    id: "522234893662365013001181"
+  }
+  index: 3
+  text: "That\342\200\231s enough out of you! Now, let\342\200\231s get going."
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52223273366236501300116b"
+  }
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Sided with Security"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

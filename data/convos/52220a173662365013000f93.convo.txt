@@ -1,0 +1,52 @@
+idRef {
+  id: "52220a173662365013000f93"
+}
+ui_name: "A2S04-PostFirstFightVoire"
+nodes {
+  idRef {
+    id: "52220a2b3662365013000f99"
+  }
+  index: 0
+  text: "Wow! That was... that was... intense!\n\n{{GM}}You notice that Voire is shaking. A rictus of a grin seems plastered on his face.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52220a383662365013000f9c"
+  }
+  index: 1
+  text: "Of course, they\342\200\231ll be sending every marine they can from the Mission Street substation. That\342\200\231s not good. \n\nWe\342\200\231ve gotta take them down, otherwise they\342\200\231ll start locking up everyone in the district they can get their hands on. You with me?"
+  branches {
+    responseText: "Have you heard of Norton?"
+    nextNodeIndex: 2
+  }
+}
+nodes {
+  idRef {
+    id: "52220a5e3662365013000f9f"
+  }
+  index: 2
+  text: "Norton? Yeah... yeah, I know Norton. He\342\200\231s down in Colma. Now, let\342\200\231s get going!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Post First Fight Sided with Voire"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}
