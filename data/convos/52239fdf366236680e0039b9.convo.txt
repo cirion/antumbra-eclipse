@@ -1,0 +1,173 @@
+idRef {
+  id: "52239fdf366236680e0039b9"
+}
+ui_name: "A2S03-Johnson"
+nodes {
+  idRef {
+    id: "52239fed366236680e0039bf"
+  }
+  index: 0
+  text: "Well? What did you find?"
+  branches {
+    responseText: "A huge ugly troll beat us there."
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "A troll assassinated Tooms and took some paydata."
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223a002366236680e0039c3"
+  }
+  index: 1
+  text: "That is highly unusual. You hardly ever see any trolls moving around the city these days. What on earth would one be doing attacking a megacorp building?\n\nDid it say anything?"
+  branches {
+    responseText: "Just \342\200\234Norton Lives. Sayonara.\342\200\235"
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223a01e366236680e0039c9"
+  }
+  index: 2
+  text: "\"Norton lives\"... why does that ring a bell?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223a02c366236680e0039cc"
+  }
+  index: 3
+  text: "{{GM}}Mr. Johnson snaps his fingers.{{/GM}} \n\nThat\342\200\231s right. Norton graffiti has sprung up in the Mission District lately. I figured it was associated with some new gang. The Mission is one of the few places in the city where humans and metahumans still mix freely, so it could be where your assassin troll is hiding."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+}
+nodes {
+  idRef {
+    id: "5223a03d366236680e0039cf"
+  }
+  index: 4
+  text: "Well, let\342\200\231s get going. We\342\200\231ll need to hurry if we\342\200\231ll catch him before he skips town."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Region Enabled"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5223a0bb366236680e0039d0"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "52239fd9366236680e0039b8"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Move To (Region)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "52239f96366236680e0039b6"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5223a0bb366236680e0039d0"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "52239f96366236680e0039b6"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

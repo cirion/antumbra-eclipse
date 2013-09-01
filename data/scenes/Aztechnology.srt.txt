@@ -2166,6 +2166,17 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "52239f96366236680e0039b6"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -2227,6 +2238,89 @@ triggers {
   isActive: true
   idRef {
     id: "522022933662361c1300153d"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Johnson Exits"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5223a0bb366236680e0039d0"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (Actor)"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "52239f96366236680e0039b6"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "52239f96366236680e0039b6"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5223a0f6366236680e0039d1"
   }
   elseActions {
   }
@@ -2592,12 +2686,48 @@ regions {
   loop_combat_music: true
   loop_default_music: false
 }
+regions {
+  name: "Exit"
+  position {
+    x: -2
+    y: -12
+    width: 2
+    height: 2
+  }
+  enabledAtStart: false
+  is_camera_region: false
+  idRef {
+    id: "5223a0bb366236680e0039d0"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -178
+    x: -4
     y: 0
-    z: 67
+    z: -11
   }
   orientation: ORIENTATION_N
   idRef {
@@ -4046,6 +4176,106 @@ characters {
     }
     portrait_code_override: "s3h0c4b10h8"
     karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -8
+    y: 0
+    z: -12
+  }
+  orientation: ORIENTATION_N
+  displayName: "Ike Dunner"
+  idRef {
+    id: "52239f96366236680e0039b6"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "52239fdf366236680e0039b9"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/ElfMale"
+    character_sheet_id: "Lvl2_Merc_Human_Weaponmaster"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Protect"
+      attitude: AttitudeAggressive
+    }
+    equipment {
+      prefab_name: "Outfit_Corporate Salaryman"
+    }
+    equipment {
+      prefab_name: "AR 1 Semopal vz88v"
+    }
+    team_id: "Shadowrunners"
+    char_name: "Mr. Johnson"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    ai_ignores: false
+    uninjurable: false
+    unkillable: true
+    portrait {
+      filename: "backer_elfmale_rthomasallwin"
+    }
+    portrait_code_override: "s5h2c2"
+    karma: 68
   }
 }
 variables {

@@ -1487,6 +1487,18 @@ props {
     z: -11
   }
   orientation: ORIENTATION_S
+  displayName: "Door Exit to Mission"
+  idRef {
+    id: "52239fd9366236680e0039b8"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    transitionPoint {
+      scene_name: "The Mission 1"
+      confirmation_text: "Are you ready to travel to The Mission?"
+    }
+  }
   lod: 0
 }
 props {

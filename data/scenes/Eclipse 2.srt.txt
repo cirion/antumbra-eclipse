@@ -1,0 +1,1050 @@
+triggers {
+  name: "Hailey Dead"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_HaileyDied"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5223a317366236680e003a02"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5223ad06366236680e003b9d"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Dalmin Dead"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_DalminDied"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5223acc0366236680e003b9b"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5223ad0d366236680e003b9e"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Orion Dead"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_OrionDied"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5223acc0366236680e003b9c"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5223ad12366236680e003b9f"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -138
+    y: 0
+    z: 198
+  }
+  orientation: ORIENTATION_W
+  displayName: "Hailey"
+  idRef {
+    id: "5223a317366236680e003a02"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "521e68c3643431a9f264f6fc"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/HumanFemale"
+    character_sheet_id: "Lvl2_Human_Decker"
+    character_mod {
+      stats {
+        body: 0
+        quickness: -2
+        strength: -3
+        charisma: -1
+        intelligence: 0
+        willpower: -1
+        essence: -3
+        magic: -3
+        hp: 0
+        ap: 0
+        armor: 2
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: -2
+        close_combat: 0
+        throwing_weapons: 1
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 3
+        biotech: 0
+        dodge: 2
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: -1
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 2
+      }
+      archetypeName: "Guard - Protect"
+      attitude: AttitudeAggressive
+    }
+    equipment {
+      prefab_name: "DeckerFab"
+    }
+    equipment {
+      prefab_name: "DroneRepairKit_med"
+    }
+    equipment {
+      prefab_name: "DroneRepairKit_med"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "DroneAttackC_Doberman"
+    }
+    equipment {
+      prefab_name: "CyberdeckVirtuaX"
+    }
+    team_id: "Gangers"
+    char_name: "Hailey"
+    pc_spawn_number: -1
+    cyberware_eyes: "Vision Magnification Eyes"
+    cyberware_jack: "Datajack"
+    portrait {
+      filename: "backer_humanfemale_grahamwilliams_tsilonsiereht"
+    }
+    portrait_code_override: "s6h1c11"
+    karma: 60
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -21
+    y: 0
+    z: 9
+  }
+  orientation: ORIENTATION_N
+  displayName: "Amelia"
+  idRef {
+    id: "5223a317366236680e003a03"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "521d829e366236a415000125"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Story/WeaponsDealer"
+    character_sheet_id: "BaseCivilian"
+    equipment_sheet_id: "Merchant_Weapons_Mid"
+    equipment_sheet_id: "Merchant_Outfit_Med"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Amelia"
+    pc_spawn_number: -1
+    portrait {
+      filename: "npc_humanfemale_weaponstechdealer"
+    }
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 6
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_N
+  displayName: "The Dave"
+  idRef {
+    id: "5223a317366236680e003a04"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "521e6645643431a9f264f66f"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/TrollMale"
+    character_sheet_id: "BaseCivilian"
+    equipment_sheet_id: "Merchant_Tech_Mid"
+    equipment_sheet_id: "Merchant_Doctor_Mid"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Non-Combatant"
+    }
+    equipment {
+      prefab_name: "RiggerTrenchcoat"
+    }
+    equipment {
+      prefab_name: "Vision Magnification Eyes"
+    }
+    equipment {
+      prefab_name: "Obvious Cyberleg"
+    }
+    equipment {
+      prefab_name: "Datajack"
+    }
+    equipment {
+      prefab_name: "Dermal Plating Mk 1"
+    }
+    equipment {
+      prefab_name: "Obvious Cyberarm"
+    }
+    team_id: "Civilians"
+    char_name: "The Dave"
+    pc_spawn_number: -1
+    portrait {
+      filename: "backer_trollmale_chriskluwe_sympathyplan"
+    }
+    portrait_code_override: "s6h4c6b5h10"
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 1
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_W
+  displayName: "Ike Dunner"
+  idRef {
+    id: "5223a317366236680e003a05"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "521c1411366236581b006baf"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/ElfMale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Non-Combatant"
+    }
+    equipment {
+      prefab_name: "Outfit_Corporate Salaryman"
+    }
+    team_id: "Civilians"
+    char_name: "Mr. Johnson"
+    pc_spawn_number: -1
+    ai_ignores: true
+    uninjurable: true
+    unkillable: true
+    portrait {
+      filename: "backer_elfmale_rthomasallwin"
+    }
+    portrait_code_override: "s5h2c2"
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -2
+    y: 0
+    z: 7
+  }
+  orientation: ORIENTATION_W
+  displayName: "Kali"
+  idRef {
+    id: "5223a317366236680e003a06"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/HumanFemale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 42
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Non-Combatant"
+    }
+    equipment {
+      prefab_name: "AdeptCombatvest"
+    }
+    team_id: "Civilians"
+    char_name: "Kali"
+    pc_spawn_number: -1
+    ai_ignores: true
+    uninjurable: true
+    unkillable: true
+    portrait {
+      filename: "pc_humanfemale_04c_whitebob"
+    }
+    portrait_code_override: "s6h5c14"
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -5
+    y: 0
+    z: -15
+  }
+  orientation: ORIENTATION_W
+  displayName: "Necalli Yaotl"
+  idRef {
+    id: "5223a317366236680e003a07"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "521e6531643431a9f264f5f0"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Gangers/ElfMaleGangerDreads"
+    character_sheet_id: "BaseCivilian"
+    equipment_sheet_id: "Merchant_Magic_Mid"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Necalli Yaotl"
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_elfmale_01_shaman"
+    }
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -122
+    y: 0
+    z: 172
+  }
+  orientation: ORIENTATION_E
+  displayName: "Dalmin"
+  idRef {
+    id: "5223acc0366236680e003b9b"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "521e7d5e64343108ffb50f6d"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/DwarfMale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 3
+        quickness: 0
+        strength: 1
+        charisma: 3
+        intelligence: 1
+        willpower: 3
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 2
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      skills {
+        spellcasting: 3
+        conjuring: 3
+        spirit_summoning: 3
+        dodge: 1
+      }
+      specializations {
+        spirit_control: 3
+      }
+    }
+    equipment {
+      prefab_name: "ShamanTotemCoat"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "Air Barrier 3"
+    }
+    equipment {
+      prefab_name: "Bound Fire Spirit 2"
+    }
+    equipment {
+      prefab_name: "Bound Earth Spirit 2"
+    }
+    equipment {
+      prefab_name: "Spell Haste 1"
+    }
+    equipment {
+      prefab_name: "Spell Heal 1"
+    }
+    equipment {
+      prefab_name: "Spell Powerbolt 1"
+    }
+    equipment {
+      prefab_name: "TotemCoyote"
+    }
+    team_id: "Gangers"
+    char_name: "Dalmin"
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_dwarfmale_03c_eastasian"
+    }
+    portrait_code_override: "s5h5c4b8"
+    karma: 62
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -115
+    y: 0
+    z: 199
+  }
+  orientation: ORIENTATION_W
+  displayName: "Orion"
+  idRef {
+    id: "5223acc0366236680e003b9c"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "521e8b586434315d02b50e23"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/OrkMale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 4
+        quickness: 3
+        strength: 1
+        charisma: 1
+        intelligence: 1
+        willpower: 1
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 4
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 3
+        close_combat: 2
+        throwing_weapons: 2
+        dodge: 3
+        etiquette_gang: 0
+        etiquette_academic: 1
+      }
+      specializations {
+        rifle: 3
+      }
+    }
+    equipment {
+      prefab_name: "AdeptStreetMonk"
+    }
+    equipment {
+      prefab_name: "AR 1 Semopal vz88v"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "Grenade 1 (Frag)"
+    }
+    equipment {
+      prefab_name: "Grenade 1 (Flash)"
+    }
+    team_id: "Gangers"
+    char_name: "Orion"
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_orkmale_01c_soldier"
+    }
+    portrait_code_override: "s7h5c4b8"
+    karma: 61
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -65
+    y: 0
+    z: 69
+  }
+  orientation: ORIENTATION_E
+  displayName: "DJ Omphalos"
+  idRef {
+    id: "5223b076366236680e003bec"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/ElfFemale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      skills {
+      }
+      specializations {
+      }
+    }
+    equipment {
+      prefab_name: "ShamanUrban"
+    }
+    team_id: "Shadowrunners"
+    char_name: "DJ Omphalos"
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_elffemale_03a_magebraids"
+    }
+    portrait_code_override: "s1h1c4"
+    karma: 6
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "TalkedToJohnson"
+    typeName: "bool"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "Slept"
+    typeName: "bool"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "TalkedToJohnson2"
+    typeName: "bool"
+  }
+}
+variables {
+  int_value: 0
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "RecordingQuestStage"
+    typeName: "int"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "RecordingLyrics"
+    typeName: "bool"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "RecordingBeats"
+    typeName: "bool"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "RecordingRemix"
+    typeName: "bool"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "TalkedToNecalli"
+    typeName: "bool"
+  }
+}
+worldMapLocation {
+  filename: ""
+  location {
+    x: 0
+    y: 0
+  }
+}
+mapName: "Eclipse 1"
+parentStory: ""
+scene_title: "Eclipse"
+scene_subtitle: ""
+scene_synopsis: "The ride back to Eclipse feels tense. You hear gunfire and see pursuers on your trail. Badly outnumbered, you race through the steep streets as quickly as possible, finally leaving them behind before you reach your safehouse.\n\nInside, Mr. Johnson grimly listens as you recount your discovery in the Mission. This job just grew more complicated..."
+scene_image: ""
+scene_continue_button_skip: false
+scene_restore_runner_health: true
+directional_light_dir {
+  x: -0.5
+  y: -1
+  z: -0.75
+}
+directional_light_color {
+  r: 0.50196081
+  g: 0.50196081
+  b: 0.50196081
+}
+ambient_light_color {
+  r: 0.50196081
+  g: 0.50196081
+  b: 0.50196081
+}
+allow_drawn_weapons: false
+team_affiliations {
+  team_name: "Shadowrunners"
+  affiliation: 0
+  affiliation: 1
+  affiliation: 1
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Gangers"
+  affiliation: 1
+  affiliation: 0
+  affiliation: 1
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "LoneStar"
+  affiliation: 1
+  affiliation: 1
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Civilians"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+scene_dimensions {
+  dimension_name: "Default"
+}
+character_roster {
+}
+show_hiring_screen_on_scene_load: false
+scene_hiring_prerequisites {
+  prereq_description: ""
+  prereq_conditions {
+  }
+}
+hiring_slot_count: 0
+hiring_minimum_karma: 0
+hiring_maximum_karma: 0
+roster_overrides {
+}
+use_hiring_cost_warning: true
+hiring_average_cost: 99999
+override_hiring_average_cost: true
+show_equip_screen_on_scene_load: false

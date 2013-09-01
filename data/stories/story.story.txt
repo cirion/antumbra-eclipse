@@ -219,6 +219,17 @@ variables {
     }
   }
 }
+variables {
+  name: "A2_DemoQuality"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_DemoQuality"
+    }
+  }
+}
 description: "Megacorps battle for supremacy in San Francisco, but broader tensions simmering in the city threaten to boil over into a full-out war."
 startScene: "The Mission 1"
 allowCharacterImport: true

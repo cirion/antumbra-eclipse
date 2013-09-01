@@ -1,0 +1,180 @@
+idRef {
+  id: "5223add8366236680e003ba0"
+}
+ui_name: "A2S05-Necalli"
+nodes {
+  idRef {
+    id: "5223ade1366236680e003ba6"
+  }
+  index: 0
+  text: "Welcome back."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223ae50366236680e003ba9"
+  }
+  index: 1
+  text: "I heard that you paid a little visit to Aztechnology. How is it looking?"
+  branches {
+    responseText: "It\'s seen better days."
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "It\'s in shambles."
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "That place looks far worse now that I\'ve happened to it."
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223ae8b366236680e003bae"
+  }
+  index: 2
+  text: "I\'d thought as much. Had I mentioned that I used to work in that building? Probably not. It\'s not a fact I advertise often."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223aeac366236680e003bb1"
+  }
+  index: 3
+  text: "I saw the writing on the wall long ago, even before Saito-san landed in the city. When Aztlan first declared war on CalFree, I knew any association with Aztechnology would be poison, and started making plans to disassociate myself from that corporation.\n\nI do feel some regret for former colleagues who have lost their lives, but frankly, the fewer connections I have to that place, the safer I will be. But enough of that."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+}
+nodes {
+  idRef {
+    id: "5223af3a366236680e003bbb"
+  }
+  index: 4
+  text: "What can I do for you?"
+  branches {
+    responseText: "{{GM}}View inventory.{{/GM}}"
+    actions {
+      ops {
+        functionName: "Open Store Screen From Actor"
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "5223a317366236680e003a07"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "What do you know about Colma?"
+    nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "5223afd7366236680e003bcf"
+    }
+  }
+  branches {
+    responseText: "Never mind."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223afd5366236680e003bce"
+  }
+  index: 5
+  text: "Ah, yes, Colma. I\'ve never visited, but I understand there\'s powerful magic there. Millions of dead souls gathered in one place can cause some strange phenomena.\n\nIt\'s off the radar of technocratic elites like the megacorps and Saito, but don\'t get complacent down there. That place is filled with history, and history has a way of manifesting in unexpected ways."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToNecalli"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToNecalli"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 4
+  auxiliaryLink: true
+}
