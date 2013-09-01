@@ -31,7 +31,7 @@ nodes {
     id: "52221e043662365013001096"
   }
   index: 1
-  text: "I mean, it\342\200\231s not because he\342\200\231s an elf. I liked Tarne, after all. It\342\200\231s just... well, you know.\n\nHe was a friend, though. What a waste! Ugh, I hate this stupid city sometimes!"
+  text: "Voire? Ew, no!\n\nI mean, it\342\200\231s not because he\342\200\231s an elf. I liked Tarne, after all. It\342\200\231s just... well, you know.\n\nHe was a friend, though. What a waste! Ugh, I hate this stupid city sometimes!"
   branches {
     responseText: "I admire what he\342\200\231s done."
     nextNodeIndex: 2

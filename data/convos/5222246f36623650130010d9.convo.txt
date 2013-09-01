@@ -10,6 +10,87 @@ nodes {
   text: "Thank you for visiting Stuffer Shack! We\'re sorry to see you leave. Please enter your passcard to open the security gate."
   branches {
     responseText: "{{CC}}Decking 3{{/CC}} {{GM}}Override gate controls.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "OR"
+        args {
+          call_value {
+            functionName: "Compare Hire-able Actor Skill"
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "ActorSkills"
+                }
+                args {
+                  int_value: 5
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "Comparison Ops"
+                }
+                args {
+                  int_value: 3
+                }
+              }
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Compare Actor Skill"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "BaseOrCurrent"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "ActorSkills"
+                }
+                args {
+                  int_value: 5
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "Comparison Ops"
+                }
+                args {
+                  int_value: 3
+                }
+              }
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 1
   }
   branches {
@@ -63,7 +144,7 @@ nodes {
     id: "5222251636623650130010ec"
   }
   index: 1
-  text: "{{GM}}Bzzzzzt.{{/GM}"
+  text: "{{GM}}Bzzzzzt.{{/GM}}"
   nodeType: ConversationNodeType_Simple
   actions {
     ops {

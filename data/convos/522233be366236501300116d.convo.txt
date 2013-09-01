@@ -64,7 +64,18 @@ nodes {
         call_value {
           functionName: "Get Map Item (Event)"
           args {
-            string_value: "Sided with Security"
+            string_value: "Exuent All"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Can End Map"
           }
         }
       }

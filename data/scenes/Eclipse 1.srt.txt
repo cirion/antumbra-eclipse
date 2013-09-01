@@ -2487,9 +2487,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -126
+    x: -16
     y: 0
-    z: 199
+    z: -2
   }
   orientation: ORIENTATION_W
   displayName: "Hailey"
@@ -2531,7 +2531,7 @@ characters {
         move_speed: 0
       }
       skills {
-        ranged_combat: 0
+        ranged_combat: -2
         close_combat: 0
         throwing_weapons: 1
         spellcasting: 0
@@ -2540,7 +2540,7 @@ characters {
         spirit_summoning: 0
         drone_control: 3
         biotech: 0
-        dodge: 1
+        dodge: 2
         etiquette_corporate: 0
         etiquette_security: 0
         etiquette_gang: 0
@@ -2554,7 +2554,7 @@ characters {
         pistol: 0
         rifle: 0
         shotgun: 0
-        smg: 0
+        smg: -1
         edged: 0
         unarmed: 0
         spirit_control: 0
@@ -2580,10 +2580,7 @@ characters {
       prefab_name: "DroneAttackC_Doberman"
     }
     equipment {
-      prefab_name: "SMG 1 Uzi III (Smartlink)"
-    }
-    equipment {
-      prefab_name: "DroneSupportC_Smoker"
+      prefab_name: "CyberdeckVirtuaX"
     }
     team_id: "Gangers"
     char_name: "Hailey"
@@ -2594,7 +2591,7 @@ characters {
       filename: "backer_humanfemale_grahamwilliams_tsilonsiereht"
     }
     portrait_code_override: "s6h1c11"
-    karma: 61
+    karma: 60
   }
 }
 characters {
@@ -3113,6 +3110,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

@@ -4819,7 +4819,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     transitionPoint {
-      scene_name: "Aztechnology"
+      scene_name: "The Mission 1"
       confirmation_text: "Are you ready to travel to the Aztechnology Pyramid?"
     }
   }

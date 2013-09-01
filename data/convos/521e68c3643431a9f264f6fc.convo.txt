@@ -525,7 +525,7 @@ nodes {
     id: "521e6981643431a9f264f71b"
   }
   index: 5
-  text: "I\342\200\231m really good with computers! Always have been. I love building robots, and poking around the Matrix, and stuff like that.\n\nI heard that people sometimes shoot at runners, though, so I\342\200\231ve been practicing shooting and running lately. Mostly running. It\342\200\231s fun!"
+  text: "I\342\200\231m really good with computers! Always have been. I love building robots, and poking around the Matrix, and stuff like that.\n\nI heard that people sometimes shoot at runners, though, so I\342\200\231ve been practicing dodging and running lately. Mostly running. It\342\200\231s fun!"
   branches {
     responseText: ""
     nextNodeIndex: 4

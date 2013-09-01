@@ -28,6 +28,19 @@ nodes {
   }
   index: 1
   text: "Remember: Norton is in Colma. I wouldn\342\200\231t go there if I were you, though. Norton is surrounded by some very dangerous creatures.\n\nI have to run. Goodbye, and thanks again."
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Exuent All"
+          }
+        }
+      }
+    }
+  }
 }
 roots {
   responseText: ""
