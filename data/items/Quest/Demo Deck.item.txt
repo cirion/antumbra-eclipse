@@ -2,7 +2,7 @@ id: "Demo Deck"
 type: ItemType_QuestItem
 uirep {
   name: "Demo Deck"
-  description: "A small deck holding the current version of your recorded single."
+  description: "A small deck for your single."
 }
 credentials: 0
 sorting_group: "Quest"

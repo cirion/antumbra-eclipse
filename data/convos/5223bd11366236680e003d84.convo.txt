@@ -1,0 +1,705 @@
+idRef {
+  id: "5223bd11366236680e003d84"
+}
+ui_name: "A2S05-Kali"
+nodes {
+  idRef {
+    id: "5223bd16366236680e003d8a"
+  }
+  index: 0
+  text: "I\'m a bit busy. What do you need?"
+  branches {
+    responseText: "How is business?"
+    nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "5223be42366236680e003dac"
+    }
+  }
+  branches {
+    responseText: "Can I record a demo with you?"
+    conditions {
+      ops {
+        functionName: "Get Dependent Story Variable (bool)"
+        args {
+          call_value {
+            functionName: "Get Previous Story Variable (bool)"
+            args {
+              string_value: "51f7429764343188990041a8"
+            }
+            args {
+              string_value: "A1_Bool_SidedWithKali"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "RecordingQuestStage"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "Demo Deck"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Can I record a demo with you?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Dependent Story Variable (bool)"
+            args {
+              call_value {
+                functionName: "Get Previous Story Variable (bool)"
+                args {
+                  string_value: "51f7429764343188990041a8"
+                }
+                args {
+                  string_value: "A1_Bool_SidedWithKali"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "bool"
+                }
+                args {
+                  int_value: 0
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "RecordingQuestStage"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "Demo Deck"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 5
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "I\342\200\231m done working on my track."
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "RecordingQuestStage"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 6
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "That\'s all."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223bd46366236680e003d93"
+  }
+  index: 1
+  text: "Getting better every day, but it\'s a constant struggle. As our resources grow bigger, so do the demands of Saito. Fortunately, now that most of the local megacorps have gotten a taste of Eclipse, they won\'t tolerate Saito getting rid of us. I\'m looking forward to the day when I\'ll be free of his grasp and can run my business without looking over my shoulder."
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223be19366236680e003da0"
+  }
+  index: 2
+  text: "Hm, I suppose I do still owe you a favor from before."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223be21366236680e003da3"
+  }
+  index: 3
+  text: "Before we can start recording, I\342\200\231ll need to know where we\342\200\231re going with this. What kind of music do you want to perform?"
+  branches {
+    responseText: "Chromatic Metal."
+    actions {
+      ops {
+        functionName: "Set Variable (string)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (string)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_RecordingGenre"
+            }
+          }
+        }
+        args {
+          string_value: "chromatic metal"
+        }
+      }
+    }
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Coruscat."
+    actions {
+      ops {
+        functionName: "No Effect"
+      }
+      ops {
+        functionName: "Set Variable (string)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (string)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_RecordingGenre"
+            }
+          }
+        }
+        args {
+          string_value: "coruscat"
+        }
+      }
+    }
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Glitch Punk."
+    actions {
+      ops {
+        functionName: "No Effect"
+      }
+      ops {
+        functionName: "Set Variable (string)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (string)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_RecordingGenre"
+            }
+          }
+        }
+        args {
+          string_value: "glitch punk"
+        }
+      }
+    }
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Thrumming."
+    actions {
+      ops {
+        functionName: "No Effect"
+      }
+      ops {
+        functionName: "Set Variable (string)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (string)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_RecordingGenre"
+            }
+          }
+        }
+        args {
+          string_value: "thrumming"
+        }
+      }
+    }
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Toxic House."
+    actions {
+      ops {
+        functionName: "No Effect"
+      }
+      ops {
+        functionName: "Set Variable (string)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (string)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_RecordingGenre"
+            }
+          }
+        }
+        args {
+          string_value: "toxic house"
+        }
+      }
+    }
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223bf07366236680e003db4"
+  }
+  index: 4
+  text: "Cool. Let\342\200\231s step into the studio."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "StartRecording"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5223be3f366236680e003da8"
+  }
+  index: 5
+  text: "Really? Well, I suppose I don\342\200\231t have much choice. I\342\200\231d promised to help with whatever you need. I hadn\342\200\231t expected you to need my recording expertise, though."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223c1f9366236680e003e07"
+  }
+  index: 6
+  text: "All right, I\342\200\231ll take over from here. We\342\200\231ll release to local markets first, and if it does well, Antumbra Global will start promoting it across UCAS, NAN, Aztlan, and other regions.\n\nGood luck to us both. I hope this earns a lot of nuyen!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "RecordingQuestStage"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+    ops {
+      functionName: "Remove Item from Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Demo Deck"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_FinishedDemo"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5223c15e366236680e003ddc"
+  }
+  index: 7
+  text: "Not too bad for a newbie. Here\342\200\231s the deck back with your track on it. I can take it now if you\342\200\231re ready to release it, or you can take some more time to polish it. You might want to check in with some other people here if you\342\200\231d like help finishing it up."
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "RecordingQuestStage"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_DemoQuality"
+          }
+        }
+      }
+      args {
+        int_value: 1000
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "StartRecording"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "StartRecording"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "StartRecording"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 7
+}

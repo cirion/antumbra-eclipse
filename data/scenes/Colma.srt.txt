@@ -17,6 +17,25 @@ characters {
     pc_spawn_number: 0
   }
 }
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -38
+    y: 0
+    z: -36
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "5223e420366236680e0044f3"
+  }
+  lod: 0
+  character_instance {
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 1
+  }
+}
 worldMapLocation {
   filename: ""
   location {
@@ -78,6 +97,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

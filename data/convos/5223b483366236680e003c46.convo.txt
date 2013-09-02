@@ -1,0 +1,453 @@
+idRef {
+  id: "5223b483366236680e003c46"
+}
+ui_name: "A2S05-TheDave"
+nodes {
+  idRef {
+    id: "5223b7e0366236680e003c4c"
+  }
+  index: 0
+  text: "How\'s it going?"
+  branches {
+    responseText: "Good, you?"
+    nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "5223b9c0366236680e003cb1"
+    }
+  }
+  branches {
+    responseText: "{{CC}}Research paydata.{{/CC}} What will you pay for this file?"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Get Map Item (Player)"
+                args {
+                  int_value: 0
+                }
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "Research Paydata"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Can I check out your supplies?"
+    actions {
+      ops {
+        functionName: "Open Store Screen From Actor"
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "5223a317366236680e003a04"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "What cyberware do you have available?"
+    actions {
+      ops {
+        functionName: "Open Cyberware Screen From Actor"
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "5223a317366236680e003a04"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Can you help me with my demo?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "RecordingBeats"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "RecordingQuestStage"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 6
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "{{GM}}Leave.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223b954366236680e003cb0"
+  }
+  index: 1
+  text: "Groovy, $(l.man)! There\'s a serious fire sale on used electronic equipment now that Aztechnology is biting the dust. I\'m sure they\'ll try to bring in some ringers to shore up their so-called \"Pyramid Operations\" or whatever, but until then, there\'s a once-in-a-lifetime opportunity to grab some megacorp-quality tech for a bargain price."
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223bc0a366236680e003d23"
+  }
+  index: 2
+  text: "Oooh, that\342\200\231s a sparkly one. Lots of little nuggets in there. Unfortunately, Aztechnology is quickly exiting the scene here, so there won\342\200\231t be a lot of interest in the file. Still, I can offer you \302\245750 for it."
+  branches {
+    responseText: "It\342\200\231s a deal."
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "{{CC}}Corporate{{/CC}} Aztechnology still dominates outside CalFree. You should be able to find plenty of buyers."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "No deal."
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223bc50366236680e003d28"
+  }
+  index: 3
+  text: "Pleasure doing business with you!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add Nuyen"
+      args {
+        int_value: 750
+      }
+    }
+    ops {
+      functionName: "Remove Item from Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Research Paydata"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5223bc85366236680e003d2a"
+  }
+  index: 4
+  text: "Yeah, I guess you\342\200\231re right. My usual contacts won\342\200\231t be too interested, but I can stir the pot and see what turns up. Okay, here\342\200\231s \302\2451000."
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Remove Item from Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Research Paydata"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Nuyen"
+      args {
+        int_value: 1000
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5223bcd5366236680e003d2c"
+  }
+  index: 5
+  text: "Suit yourself. I gotta warn you, though, just holding onto paydata doesn\342\200\231t traditionally do a runner any good."
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223b87d366236680e003c72"
+  }
+  index: 6
+  text: "You\342\200\231re hopping on the Kali gravy train? I cut a demo of my own right after I opened this shop. I had high hopes, but it didn\342\200\231t go anywhere. Kali tells me that there isn\342\200\231t a market any more for filk music about open-source software. Such a shame, I was hoping to open peoples\342\200\231 minds.\n\nKali did say that she really liked the beats I synthesized, though. Do you want them? They\342\200\231re just gathering dust on my deck at the moment."
+  branches {
+    responseText: "Sure, I\342\200\231ll take them."
+    nextNodeIndex: 7
+  }
+  branches {
+    responseText: "No thanks, the ones I have now are good."
+    actions {
+      ops {
+        functionName: "Set Variable (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "RecordingBeats"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223b893366236680e003c76"
+  }
+  index: 7
+  text: "Let\342\200\231s do this!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223b89a366236680e003c79"
+  }
+  index: 8
+  text: "{{GM}}The Dave cables your two decks together, then rapidly runs through a series of mixing programs. He adjusts the tempo of his beats to match your existing track, adds a few breaks at appropriate moments, and makes other adjustments too quickly for you to follow. After less than a minute, he disconnects the deck and hands it back to you.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+}
+nodes {
+  idRef {
+    id: "5223b8a7366236680e003c7c"
+  }
+  index: 9
+  text: "There you go! May my beats serve you better than they did me!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "RecordingBeats"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_DemoQuality"
+          }
+        }
+      }
+      args {
+        int_value: 500
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

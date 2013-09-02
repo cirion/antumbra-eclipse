@@ -18735,8 +18735,14 @@ props {
     z: 171
   }
   orientation: ORIENTATION_S
+  displayName: "Bedroom"
   idRef {
     id: "521942bd3662365808004d23"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
   }
   lod: 0
 }

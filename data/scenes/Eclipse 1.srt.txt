@@ -2512,7 +2512,7 @@ characters {
       stats {
         body: 0
         quickness: -2
-        strength: -3
+        strength: -2
         charisma: -1
         intelligence: 0
         willpower: -1
@@ -2580,7 +2580,22 @@ characters {
       prefab_name: "DroneAttackC_Doberman"
     }
     equipment {
-      prefab_name: "CyberdeckVirtuaX"
+      prefab_name: "CyberdeckSony"
+    }
+    equipment {
+      prefab_name: "PR NPC Decker Killer 2"
+    }
+    equipment {
+      prefab_name: "PR NPC Decker Blaster 1"
+    }
+    equipment {
+      prefab_name: "PR NPC Decker Medic 1"
+    }
+    equipment {
+      prefab_name: "ESP Assassin"
+    }
+    equipment {
+      prefab_name: "Grenade (Smoke)"
     }
     team_id: "Gangers"
     char_name: "Hailey"
@@ -2591,7 +2606,7 @@ characters {
       filename: "backer_humanfemale_grahamwilliams_tsilonsiereht"
     }
     portrait_code_override: "s6h1c11"
-    karma: 60
+    karma: 61
   }
 }
 characters {
@@ -2733,9 +2748,6 @@ characters {
       prefab_name: "ShamanTotemCoat"
     }
     equipment {
-      prefab_name: "HealthPack_med"
-    }
-    equipment {
       prefab_name: "Air Barrier 3"
     }
     equipment {
@@ -2755,6 +2767,9 @@ characters {
     }
     equipment {
       prefab_name: "TotemCoyote"
+    }
+    equipment {
+      prefab_name: "HealthPack"
     }
     team_id: "Gangers"
     char_name: "Dalmin"
@@ -3111,8 +3126,6 @@ team_affiliations {
 scene_dimensions {
   dimension_name: "Default"
 }
-character_roster {
-}
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
   prereq_description: ""
@@ -3125,6 +3138,6 @@ hiring_maximum_karma: 0
 roster_overrides {
 }
 use_hiring_cost_warning: true
-hiring_average_cost: 99999
+hiring_average_cost: 600
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false

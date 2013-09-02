@@ -1,0 +1,8 @@
+id: "Research Paydata"
+type: ItemType_QuestItem
+uirep {
+  name: "Research Paydata"
+  description: "This lightly-encrypted file describes an Aztechnology research project  taking place in Tenochtitlan."
+}
+credentials: 0
+sorting_group: "Quest"

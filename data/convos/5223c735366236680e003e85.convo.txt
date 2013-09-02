@@ -1,0 +1,215 @@
+idRef {
+  id: "5223c735366236680e003e85"
+}
+ui_name: "A2S05-Orion"
+nodes {
+  idRef {
+    id: "5223c73d366236680e003e8b"
+  }
+  index: 0
+  text: "Yes?"
+  branches {
+    responseText: "How are your studies progressing?"
+    nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "5223de22366236680e004385"
+    }
+  }
+  branches {
+    responseText: "Have you heard of Colma?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "5223de25366236680e004386"
+    }
+  }
+  branches {
+    responseText: "May I hire your services?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "HiredSomeone"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Farewell."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223c748366236680e003e90"
+  }
+  index: 1
+  text: "Quite well. I feel that my central thesis has achieved sufficient clarity, and anticipate that all my supporting arguments will fall into place shortly. From then on, it should be a relatively straightforward process of revision, as I try to anticipate objections to my platform and work to preemptively resolve them."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223c7cd366236680e003e94"
+  }
+  index: 2
+  text: "That isn\'t to say that it will be easy. I fully anticipate great resistance, due to the knee-jerk reactions people tend to have when confronted with terms like \"xenocide.\" Nonetheless, I remain optimistic that this thesis will provide a stable basis of work upon which future scholars can build their own theories."
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "5223c853366236680e003ea4"
+  }
+  index: 3
+  text: "Yes, I have heard of this place. I have not visited it myself. From what I understand, it used to be sparingly populated. In recent years, as my fellow metahumans have increasingly been forced from the city, it has become a haven of sorts. Few humans would willingly live among the tombstones, so it has grown into a most unlikely refuge for the outcast, the violent, the dangerous, the insane."
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223c8cb366236680e003ea8"
+  }
+  index: 4
+  text: "I gladly make my resources available to anyone in need who is willing to pay. More specifically, I requite a sum of \302\245750."
+  branches {
+    responseText: "{{CC}}\302\245750{{/CC}} Here you are."
+    conditions {
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 750
+        }
+      }
+    }
+    nextNodeIndex: 5
+  }
+  branches {
+    responseText: "Maybe some other time."
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223c914366236680e003ead"
+  }
+  index: 5
+  text: "Excellent. Shall we be off?"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Remove Nuyen"
+      args {
+        int_value: 750
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_HiredOrion"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_HiredOrion_Part2"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

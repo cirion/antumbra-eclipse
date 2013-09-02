@@ -1,0 +1,280 @@
+idRef {
+  id: "5223c2ae366236680e003e45"
+}
+ui_name: "A2S05-Dalmin"
+nodes {
+  idRef {
+    id: "5223c2c8366236680e003e4b"
+  }
+  index: 0
+  text: "If I didn\'t know better, I\'d think that you had a thing for dwarfs!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223c376366236680e003e4f"
+  }
+  index: 1
+  text: "{{GM}}Dalmin looks at you expectantly.{{/GM}}"
+  branches {
+    responseText: "Anything new happening here?"
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "5223de5b366236680e0043b5"
+    }
+  }
+  branches {
+    responseText: "Heard any news from Seattle?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "5223de5d366236680e0043b6"
+    }
+  }
+  branches {
+    responseText: "Care to go on a run?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "HiredSomeone"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "{{GM}}Walk away.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223c3c7366236680e003e57"
+  }
+  index: 2
+  text: "Yes and no. Many new faces, but they\'re always playing out the same old story. Boy meets girl. Boy buys expensive drinks for girl. Girl leaves with boy. Why mess with the classics?\n\nIf I ever open up my own bar, I\'ll try to shake things up a little. Maybe have the drinks buy a boy for the girl? "
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223c4b5366236680e003e63"
+  }
+  index: 3
+  text: "Hm. There\'s a rumor going around that Dunkelzahn will apply for UCAS citizenship. I don\'t believe it, though. There are much better countries in the world.\n\nOh, and the old Antumbra site is still bubbling with activity. Lots of mages are applying to visit and figure out how that phenomenon could have appeared. It appears localized for now, though, so the rest of the city shouldn\'t be affected."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223c616366236680e003e67"
+  }
+  index: 4
+  text: "You know what? I would. It\'s good to stretch my legs occasionally. And, if you don\'t mind me saying so, you certainly seem like you could use the extra protection. You can have my services for the low, low price of \302\2451000."
+  branches {
+    responseText: "{{CC}}\302\2451000{{/CC}} Yes."
+    conditions {
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 1000
+        }
+      }
+    }
+    nextNodeIndex: 5
+  }
+  branches {
+    responseText: "No."
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223c69b366236680e003e6c"
+  }
+  index: 5
+  text: "You are as generous as you are wise. Let us venture forth!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_HiredDalmin"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_HiredDalmin_Part2"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Remove Nuyen"
+      args {
+        int_value: 750
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToDalmin"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToDalmin"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 1
+  auxiliaryLink: true
+}

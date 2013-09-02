@@ -7,7 +7,7 @@ nodes {
     id: "5223a384366236680e003a0e"
   }
   index: 0
-  text: "So, let me get this straight. The Aztechnology job was interrupted by some giant troll, who nobody saw enter or leave the building but you. He said something about Norton before disappearing.\n\nAccording to the metahumans in this city, Norton is in Colma. Hm, that\342\200\231s a complication. Colma is a ways south of the city. It\342\200\231s part of the Bay Area Sprawl, but there\342\200\231s very little corp presence there."
+  text: "So, let me get this straight. The Aztechnology job was interrupted by some giant troll, who nobody saw enter or leave the building but you. He said something about Norton before disappearing.\n\nAccording to the metahumans in this city, Norton is in Colma. Hm, that\342\200\231s a complication. Colma is a ways south of San Francisco. It\342\200\231s part of the Bay Area Sprawl, but there\342\200\231s very little corp presence there."
   branches {
     responseText: ""
     nextNodeIndex: 1

@@ -120,18 +120,122 @@ nodes {
           }
         }
       }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "HiredSomeone"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
     }
     nextNodeIndex: 9
     hideIfUnavailable: true
   }
   branches {
     responseText: "Do you want to come along on a run?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "HiredSomeone"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_HiredHailey"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 13
     hideIfUnavailable: true
-    onlyOnce: true
-    idRef {
-      id: "5223ac64366236680e003b6d"
-    }
+  }
+  branches {
+    responseText: "Bye."
+    nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -152,7 +256,7 @@ nodes {
     id: "5223a897366236680e003a8a"
   }
   index: 2
-  text: "I guess it\342\200\231s pretty well known. A hundred and fifty years ago, San Francisco dug up all of their graves and moved the bodies down to Colma, so they could make room for more houses or whatever. Lots of famous people are buried there. William Randolph Hearst, Joe DiMaggio, Wyatt Earp, Levi Strauss, lots of folks. Why, are you going there? Maybe you can meet some of them!"
+  text: "I guess it\342\200\231s pretty famous. A hundred and fifty years ago, San Francisco dug up all of their graves and moved the bodies down to Colma, so they could make room for more houses or whatever. Lots of famous people are buried there. William Randolph Hearst, Joe DiMaggio, Wyatt Earp, Levi Strauss, lots of folks. Why, are you going there? Maybe you can meet some of them!"
   branches {
     responseText: ""
     nextNodeIndex: 0
@@ -295,9 +399,9 @@ nodes {
     id: "5223a8e4366236680e003a9b"
   }
   index: 10
-  text: "I gotta warn you: if you\342\200\231re heading out of the city, my wiz decking skills might not be all that helpful to you. There aren\342\200\231t a whole lot of computers in the country, y\342\200\231know?\n\nStill, I\342\200\231m not totally useless at other stuff. I\342\200\231ll tag along for \302\245800, how does that sound?"
+  text: "I gotta warn you: if you\342\200\231re heading out of the city, my wiz decking skills might not be all that helpful to you. There aren\342\200\231t a whole lot of computers in the country, y\342\200\231know?\n\nStill, I\342\200\231m not totally useless at other stuff. I\342\200\231ll tag along for \302\245750, how does that sound?"
   branches {
-    responseText: "{CC}}\302\245800{{/CC}} Sounds good."
+    responseText: "{{CC}}\302\245750{{/CC}} Sounds good."
     conditions {
       ops {
         functionName: "Evaluate Nuyen"
@@ -313,7 +417,7 @@ nodes {
           }
         }
         args {
-          int_value: 800
+          int_value: 750
         }
       }
     }
@@ -384,40 +488,9 @@ nodes {
       }
     }
     ops {
-      functionName: "Change Actor Team"
+      functionName: "Remove Nuyen"
       args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "5223a317366236680e003a02"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
+        int_value: 750
       }
     }
   }
@@ -433,6 +506,7 @@ nodes {
     nextNodeIndex: 0
     auxiliaryLink: true
   }
+  nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
