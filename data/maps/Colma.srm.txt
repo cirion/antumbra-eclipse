@@ -6905,6 +6905,16 @@ props {
   idRef {
     id: "521a812f3662367c1d0072c5"
   }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 0
+      inspectText: "A TREE IN THE DESERT\nNAME HIM OR BE HURT"
+      disableAfterInteracting: false
+    }
+  }
   lod: 0
 }
 props {
@@ -7281,6 +7291,16 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "521a81ad3662367c1d0072e5"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 2
+      inspectText: "WITH A BLOW OF HIS HORN\nTHE WALLS WERE TORN"
+      disableAfterInteracting: false
+    }
   }
   lod: 0
 }
@@ -7841,6 +7861,16 @@ props {
   idRef {
     id: "521a81c93662367c1d007310"
   }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 2
+      inspectText: "FROM THE MOUNTAIN CHEYENNE\nHE FIRED MISSILES AGAIN"
+      disableAfterInteracting: false
+    }
+  }
   lod: 0
 }
 props {
@@ -8126,6 +8156,16 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "521a81c93662367c1d007326"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 2
+      inspectText: "THE PRESIDENT\'S ADVISOR\nFROM FICTION IN DAYS OF YORE"
+      disableAfterInteracting: false
+    }
   }
   lod: 0
 }
@@ -8552,13 +8592,19 @@ props {
 props {
   name: "cemetery_wall_gate01"
   gridPoint {
-    x: -35
+    x: -37
     y: 0
-    z: -83
+    z: -84
   }
   orientation: ORIENTATION_S
   idRef {
     id: "521a82b43662367c1d007347"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
   }
   lod: 0
 }
@@ -12001,6 +12047,16 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "521a858a3662367c1d007464"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 4
+      inspectText: "NORTON I\nEMPEROR\nOF THE UNITED STATES\nAND\nPROTECTOR OF MEXICO\n\nJOSHUA A. NORTON\n1819-1880"
+      disableAfterInteracting: false
+    }
   }
   lod: 0
 }
@@ -22812,7 +22868,7 @@ props {
   gridPoint {
     x: -50
     y: 0
-    z: -135
+    z: -134
   }
   orientation: ORIENTATION_E
   idRef {
@@ -23696,7 +23752,7 @@ props {
   gridPoint {
     x: -56
     y: 0
-    z: -179
+    z: -171
   }
   orientation: ORIENTATION_E
   idRef {
@@ -24000,6 +24056,37 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "521a8f853662367c1d00796b"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_decor_mummy01"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -82
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5223f7303662366c10007e8a"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Inspect
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_building_tomb01"
+  gridPoint {
+    x: -56
+    y: 0
+    z: -181
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5224123e3662366c10008094"
   }
   lod: 0
 }

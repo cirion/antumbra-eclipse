@@ -1,0 +1,1036 @@
+idRef {
+  id: "52240b843662366c10007f0c"
+}
+ui_name: "A2S06-NortonI"
+nodes {
+  idRef {
+    id: "52240bd13662366c10007f14"
+  }
+  index: 0
+  text: "Please! In the name of the Emperor, we order you to stop this senseless slaughter!\n\nNone of our subjects have laid a hand upon you. Why must you spread your curse of death among them?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52240c143662366c10007f17"
+  }
+  index: 1
+  text: "You stand in the presence of Emperor Joshua Norton III, Emperor of this California State and the Protector of UCAS. You may bow."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52240c333662366c10007f20"
+  }
+  index: 2
+  text: "You come here from San Francisco, do you not? We have longed to return to her most beauteous streets, her seven hills of luscious green, our fair subjects who cry out in their hour of need. \n\nOur head hangs heavy, burdened with the responsibilities of state. But, enough of that. Please tell us, why have you come to our court?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+}
+nodes {
+  idRef {
+    id: "52240c3e3662366c10007f23"
+  }
+  index: 3
+  text: "I believe they are looking for me, your Imperial Majesty. I encountered them while carrying out your work in the Pyramid yesterday."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "52240c4b3662366c10007f26"
+  }
+  index: 4
+  text: "My... work? We do not remember asking you to visit the pyramid, loyal Shavarus, merely to assure our subjects of our imminent return."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+}
+nodes {
+  idRef {
+    id: "52240c583662366c10007f29"
+  }
+  index: 5
+  text: "Indeed, your majesty. And what better way to assure them of your imminent return than to strike a blow against one of the powerful corporations that hold them in oppression?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "52240c643662366c10007f2c"
+  }
+  index: 6
+  text: "{{GM}}Norton\342\200\231s commanding gaze grows unfocused. For a brief moment he seems troubled and confused.{{/GM}} \nBut... surely it is Saito who holds them in oppression, is it not? \n{{GM}}His gaze snaps back to you.{{/GM}} \nBut enough of these affairs of court. You say that you wish to question our subject. Very well."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+}
+nodes {
+  idRef {
+    id: "52240c873662366c10007f2f"
+  }
+  index: 7
+  text: "What would you know?"
+  branches {
+    responseText: "{{CC}}Socialite{{/CC}} I am ever your servant, your Imperial Majesty."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 16
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 8
+    onlyOnce: true
+    idRef {
+      id: "52240ccf3662366c10007f47"
+    }
+  }
+  branches {
+    responseText: "How long have you been Emperor?"
+    nextNodeIndex: 10
+    onlyOnce: true
+    idRef {
+      id: "52240cd13662366c10007f48"
+    }
+  }
+  branches {
+    responseText: "What are you doing in Colma?"
+    nextNodeIndex: 18
+    onlyOnce: true
+    idRef {
+      id: "52240d533662366c10007f62"
+    }
+  }
+  branches {
+    responseText: "Are you going to attack Saito?"
+    nextNodeIndex: 24
+    onlyOnce: true
+    idRef {
+      id: "52240dcd3662366c10007fbb"
+    }
+  }
+  branches {
+    responseText: "I need that information Shavarus took."
+    nextNodeIndex: 26
+    onlyOnce: true
+    idRef {
+      id: "52240dfb3662366c10007fc5"
+    }
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52240caf3662366c10007f37"
+  }
+  index: 8
+  text: "{{GM}}He brightens visibly at your formal, respectful address.{{/GM}}\n\nWell! Good! We mean to say: of course you are! All $(l.race_plural) within our realm are our servants. We must admit, however, that too many seek to shirk their duties. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+}
+nodes {
+  idRef {
+    id: "52240cc13662366c10007f44"
+  }
+  index: 9
+  text: "In recognition of your loyalty to our person, we hereby delegate you as our official $(l.race) representative to the City of San Francisco, until such time as we shall make our triumphant return."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "52240cdb3662366c10007f4a"
+  }
+  index: 10
+  text: "We have held that honor for over a decade. At the peremtory request of a large majority of citizens, we did declare and proclaim ourself Emperor of the California Free State. Since that time, we have labored ceaselessly to ameliorate the evils under which the country is laboring."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52240ce43662366c10007f4d"
+  }
+  index: 11
+  text: "{{GM}}Shavarus coughs politely.{{/GM}} \n\nOf course, some ignorant persons will claim that Norton here has never sat on a throne, and never wielded any actual influence over this nation or its governance. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "52240cf23662366c10007f50"
+  }
+  index: 12
+  text: "Yes, quite right you are, Shavarus. Ignorance abounds, sadly. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 13
+  }
+}
+nodes {
+  idRef {
+    id: "52240cfb3662366c10007f53"
+  }
+  index: 13
+  text: "Some enemies of the state even go so far as to name you mad."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "52240d063662366c10007f56"
+  }
+  index: 14
+  text: "Indeed! We have ordered them executed, of course. We cannot tolerate such threats against our Imperial self."
+  branches {
+    responseText: ""
+    nextNodeIndex: 15
+  }
+}
+nodes {
+  idRef {
+    id: "52240d143662366c10007f59"
+  }
+  index: 15
+  text: "Regardless, Emperor Norton is beloved by many, and he has proven a surprisingly valuable ally in the struggle against Saito."
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "52240d243662366c10007f5c"
+  }
+  index: 16
+  text: "\342\200\246 We believe you meant to say \342\200\234commander,\342\200\235 good Shavarus."
+  branches {
+    responseText: ""
+    nextNodeIndex: 17
+  }
+}
+nodes {
+  idRef {
+    id: "52240d3f3662366c10007f5f"
+  }
+  index: 17
+  text: "Indeed, it is as you say, your majesty."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "52240d5d3662366c10007f64"
+  }
+  index: 18
+  text: "Why? Does this strike you as an odd place to strike one\342\200\231s court?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 19
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52240d683662366c10007f67"
+  }
+  index: 19
+  text: "You must not forget that we hold dominion over all the great expanse of California, from the forests of Redding to the outskirts of Los Angeles, from the Pacific Ocean to the Sierra Nevada. Any place the emperor sits immediately becomes the center of government. Merely because we are surrounded by thousands of gravestones, does not make this place any less worthy of our presence!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 20
+  }
+}
+nodes {
+  idRef {
+    id: "52240d733662366c10007f6a"
+  }
+  index: 20
+  text: "Which is not to say that His Imperial Majesty would not prefer to return to San Francisco."
+  branches {
+    responseText: ""
+    nextNodeIndex: 21
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "52240d7e3662366c10007f6d"
+  }
+  index: 21
+  text: "No, you are correct as always, good Shavarus. When last we visited the city, we found the condition of its inhabitants most intolerable indeed. We have dispatched numerous imperial proclamations to leaders of city government and military, ordering them to show proper benevolence towards all citizens."
+  branches {
+    responseText: "And how did they respond?"
+    nextNodeIndex: 22
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "I assume they didn\342\200\231t obey."
+    nextNodeIndex: 22
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52240da43662366c10007f73"
+  }
+  index: 22
+  text: "Sadly, we received no reply to our orders. Therefore, we ordered Colonel Saito and all other persons in authority into exile! They... have not left yet, but surely will."
+  branches {
+    responseText: ""
+    nextNodeIndex: 23
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52240db23662366c10007f79"
+  }
+  index: 23
+  text: "As you say."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "52240dce3662366c10007fbd"
+  }
+  index: 24
+  text: "You see, your majesty? It is as I have been telling you. Your loyal subjects cry out for you to take action and overthrow the usurper."
+  branches {
+    responseText: ""
+    nextNodeIndex: 25
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "52240ddb3662366c10007fc0"
+  }
+  index: 25
+  text: "{{GM}}Norton stares unhappily at his boots.{{/GM}} \n\nIt would be uncouth for the Emperor to invade his own city. Our role is to elevate the lives of our citizens, not to cut down the wayward."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "52240dfd3662366c10007fc7"
+  }
+  index: 26
+  text: "Yes... what exactly were you doing, Shavarus? Why did you disobey our decree and enter the pyramid?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 27
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52240e053662366c10007fca"
+  }
+  index: 27
+  text: "Your majesty, surely you must understand by now that your enemies will not leave simply by wishing so. We must strike against them. We must strike so brutally and effectively that they fear to spend another day in your city."
+  branches {
+    responseText: ""
+    nextNodeIndex: 28
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "52240e113662366c10007fcd"
+  }
+  index: 28
+  text: "While many dispossessed metahumans have flocked to your presence, they will never stand a chance against the might of the Marines coupled with the bottomless resources of the megacorps. We must hit them where they are weakest, cutting off their will to remain."
+  branches {
+    responseText: ""
+    nextNodeIndex: 29
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "52240e1e3662366c10007fd0"
+  }
+  index: 29
+  text: "But how will you ensure that only our enemies are affected? "
+  branches {
+    responseText: ""
+    nextNodeIndex: 30
+  }
+}
+nodes {
+  idRef {
+    id: "52240e263662366c10007fd3"
+  }
+  index: 30
+  text: " I wish I could assure your majesty that there would be no civilian casualties, but I cannot. They must pay the necessary price for freedom, whether they wish it or not."
+  branches {
+    responseText: ""
+    nextNodeIndex: 31
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "52240e313662366c10007fd6"
+  }
+  index: 31
+  text: "Consider, however, that these same victims would otherwise live the rest of their years in despair. Is it not better that their lives mean something, even in death? Is it not better that their sacrifice, unwilling though it might be, improve the world for their children and all metahumankind?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 32
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "52240e413662366c10007fd9"
+  }
+  index: 32
+  text: "No! We will not allow it! This goes entirely too far, Shavarus."
+  branches {
+    responseText: ""
+    nextNodeIndex: 33
+  }
+}
+nodes {
+  idRef {
+    id: "52240e5a3662366c10007fdc"
+  }
+  index: 33
+  text: "What shall I do, $(l.race)?"
+  branches {
+    responseText: "What do you think, Orion?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_OrionDied"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_HiredOrion_Part2"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 34
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "52240e9d3662366c10007fe4"
+    }
+  }
+  branches {
+    responseText: "What do you think, Dalmin?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_DalminDied"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_HiredDalmin_Part2"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 35
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "52240eb73662366c10007fe9"
+    }
+  }
+  branches {
+    responseText: "What do you think, Hailey?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_HaileyDied"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_HiredHailey_Part2"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 36
+  }
+  branches {
+    responseText: "Listen to Shavarus. Scorched earth is the only way to win this war."
+    nextNodeIndex: 37
+  }
+  branches {
+    responseText: "Shavarus is a danger. You need to get rid of him."
+    nextNodeIndex: 40
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52240ea53662366c10007fe6"
+  }
+  index: 34
+  text: "I feel as though Shavarus and I have studied at the feet of the same guru. He has the right of it: as hard as it may be to stomach, total war is the only answer. They will probably lose in their assault, but that hardly matters. They will become martyrs, and hasten the day when all metahumanity will rise up and overthrow the old order of humankind."
+  branches {
+    responseText: ""
+    nextNodeIndex: 33
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52240ed83662366c10007feb"
+  }
+  index: 35
+  text: "I think we\'re witnessing a crazy-off, and I can\'t tell who\'s winning. The homeless guy who\'s convinced that he\'s the emperor of CalFree? Or the sociopathic troll who thinks he needs to destroy a city in order to save it?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 33
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52240f033662366c10007fef"
+  }
+  index: 36
+  text: "Do you even need to ask?! That troll is talking about destroying a city! MY city! You know that I\'m no fan of Saito, but for all the rotten stuff he\'s done, he\'s kept the city largely intact and safe. Sure, humans like I have it easier than the rest, but Shavarus sounds like he\'d harm far more metas than marines!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 33
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52240f503662366c10007ff3"
+  }
+  index: 37
+  text: "{{GM}}Norton lowers his head. For a moment it looks as though he might weep.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 38
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_ShavarusAgree"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "52240f803662366c10007ff6"
+  }
+  index: 38
+  text: "We do not care for these times we were born into. Why could we not be like our glorious predecessor, who faced only an indifferent Congress and recalcitrant merchants? We were not made for conflict with a foreign emperor and megacorporations."
+  branches {
+    responseText: ""
+    nextNodeIndex: 39
+  }
+}
+nodes {
+  idRef {
+    id: "52240f8a3662366c10007ff9"
+  }
+  index: 39
+  text: "Very well. It grieves us, but we shall do as you say, Shavarus. We shall take the battle to the enemy, using any weapon at our disposal."
+}
+nodes {
+  idRef {
+    id: "52240fa53662366c10007ffb"
+  }
+  index: 40
+  text: "Yes! Yes, quite right."
+  branches {
+    responseText: ""
+    nextNodeIndex: 41
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52240fad3662366c10007ffe"
+  }
+  index: 41
+  text: "Shavarus, we thank you for your term of loyal service, but sadly we can no longer countenance your presence in our imperial court. Your dangerous initiatives impugn the integrity of our office and damage our beloved persona. Therefore, we hereby banish you from the California Free State, and order you never to return."
+  branches {
+    responseText: ""
+    nextNodeIndex: 42
+  }
+}
+nodes {
+  idRef {
+    id: "52240fc83662366c10008001"
+  }
+  index: 42
+  text: "Ha! You do, do you? Just like you banished Saito? How well did that turn out, anyways?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 43
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "52240fd43662366c10008004"
+  }
+  index: 43
+  text: "You\342\200\231re a fool, Norton. You were a useful fool for a time, a fool who made us laugh and inspired many to join us, but your time has passed. We don\342\200\231t need any more dreamers. We need soldiers. Anyone who isn\342\200\231t willing to bloody their hands in our great war has no place in our ranks. They don\342\200\231t even deserve to live."
+  branches {
+    responseText: ""
+    nextNodeIndex: 44
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "52240fdf3662366c10008007"
+  }
+  index: 44
+  text: "Treason! Seize him!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 45
+  }
+}
+nodes {
+  idRef {
+    id: "52240fed3662366c1000800a"
+  }
+  index: 45
+  text: "You think you have loyal friends here? Every word of yours reveals you as a greater fool. I\342\200\231ve long moved my most trusted followers here to Colma, and dispersed your own harmlessly around the region. This is a coup, Norton. A coup that ends in your death."
+  branches {
+    responseText: ""
+    nextNodeIndex: 46
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "522410003662366c1000800d"
+  }
+  index: 46
+  text: "I must be off, I have an appointment to keep. Finish the job, friends."
+}
+nodes {
+  idRef {
+    id: "52240c213662366c10007f19"
+  }
+  index: 47
+  text: "In the name of the Emperor, we welcome you here, to our court in exile!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "KilledSomeone"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "KilledSomeone"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 47
+}

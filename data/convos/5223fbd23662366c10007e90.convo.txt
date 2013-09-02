@@ -1,0 +1,161 @@
+idRef {
+  id: "5223fbd23662366c10007e90"
+}
+ui_name: "A2S06-Gate"
+nodes {
+  idRef {
+    id: "5223fbdf3662366c10007e96"
+  }
+  index: 0
+  text: "WHO LIES HERE?"
+  branches {
+    responseText: "Adam."
+    nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "5223fc493662366c10007ea2"
+    }
+  }
+  branches {
+    responseText: "Charles."
+    nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "5223fc9d3662366c10007eb0"
+    }
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Franklin."
+    nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "5223fc4d3662366c10007ea4"
+    }
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Henry."
+    nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "5223fc503662366c10007ea5"
+    }
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Joshua."
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "5223fc543662366c10007ea6"
+    }
+  }
+  branches {
+    responseText: "Larry."
+    nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "5223fc563662366c10007ea7"
+    }
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Peter."
+    nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "5223fc593662366c10007ea8"
+    }
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Richard."
+    nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "5223fc5c3662366c10007ea9"
+    }
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Samuel."
+    nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "5223fc5e3662366c10007eaa"
+    }
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "William."
+    nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "5223fcae3662366c10007eb8"
+    }
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "{{GM}}Do not answer.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223fc633662366c10007ead"
+  }
+  index: 1
+  text: "ALL NAMES ARE FOUND WITHIN, BUT ONE ABOVE ALL.\nHONOR THE NAME BEFORE YOU FALL."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Spawn Corpse"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5223fcb73662366c10007ebb"
+  }
+  index: 2
+  text: "EVEN SO."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5223fcbd3662366c10007ebe"
+  }
+  index: 3
+  text: "GO FORTH AND HEED HIS CALL."
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Opened Gate"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

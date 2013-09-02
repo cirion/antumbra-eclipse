@@ -1,0 +1,27 @@
+idRef {
+  id: "522412063662366c10008083"
+}
+ui_name: "A2S06-NortonII"
+nodes {
+  idRef {
+    id: "5224120f3662366c10008089"
+  }
+  index: 0
+  text: "Gloriously fought! We thank our subjects for their most valiant efforts in battle.  "
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522412193662366c1000808c"
+  }
+  index: 1
+  text: "Now, you must find Shavarus. Before you arrived, he mentioned that he would be traveling to the Embarcadero. I know not what he intends, but you must find him quickly!"
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}
