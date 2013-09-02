@@ -81,7 +81,7 @@ nodes {
     id: "52240c643662366c10007f2c"
   }
   index: 6
-  text: "{{GM}}Norton\342\200\231s commanding gaze grows unfocused. For a brief moment he seems troubled and confused.{{/GM}} \nBut... surely it is Saito who holds them in oppression, is it not? \n{{GM}}His gaze snaps back to you.{{/GM}} \nBut enough of these affairs of court. You say that you wish to question our subject. Very well."
+  text: "{{GM}}Norton\342\200\231s commanding gaze grows unfocused. For a brief moment he seems troubled and confused.{{/GM}} \n\nBut... surely it is Saito who holds them in oppression, is it not? \n\n{{GM}}His gaze snaps back to you.{{/GM}} \n\nBut enough of these affairs of court. You say that you wish to question our subject. Very well."
   branches {
     responseText: ""
     nextNodeIndex: 7
@@ -190,6 +190,10 @@ nodes {
   branches {
     responseText: ""
     nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
   }
 }
 nodes {
@@ -590,7 +594,7 @@ nodes {
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
-      id: "52240e9d3662366c10007fe4"
+      id: "5224b3fe366236a409007fb8"
     }
   }
   branches {
@@ -753,6 +757,11 @@ nodes {
       }
     }
     nextNodeIndex: 36
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "5224b404366236a409007fb9"
+    }
   }
   branches {
     responseText: "Listen to Shavarus. Scorched earth is the only way to win this war."
@@ -859,6 +868,33 @@ nodes {
   }
   index: 39
   text: "Very well. It grieves us, but we shall do as you say, Shavarus. We shall take the battle to the enemy, using any weapon at our disposal."
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_ShavarusAgree"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -942,6 +978,37 @@ nodes {
   }
   index: 46
   text: "I must be off, I have an appointment to keep. Finish the job, friends."
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_ShavarusDisagree"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {

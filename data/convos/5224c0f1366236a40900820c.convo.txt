@@ -1,0 +1,56 @@
+idRef {
+  id: "5224c0f1366236a40900820c"
+}
+ui_name: "A2S06-Mushi"
+nodes {
+  idRef {
+    id: "5224c0ff366236a409008212"
+  }
+  index: 0
+  text: "Stay right where you are!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5224c10a366236a409008215"
+  }
+  index: 1
+  text: "I hereby declare every person within this zone a traitor and an enemy of state, and order you all to summary execution!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+}
+nodes {
+  idRef {
+    id: "5224c114366236a409008218"
+  }
+  index: 2
+  text: "You fool! You were followed!\n\nFollow me, my loyal servants! Norton, stay here and defend your court!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "5224c12c366236a40900821b"
+  }
+  index: 3
+  text: "It shall be as you say. Come, friends! To battle!"
+  sourceInSceneRef {
+    id: "522406f73662366c10007f07"
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

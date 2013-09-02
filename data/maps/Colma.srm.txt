@@ -1,6 +1,6 @@
 minX: -109
 minZ: -211
-numX: 161
+numX: 160
 numZ: 280
 props {
   name: "cemetery_building_tomb01"
@@ -11587,7 +11587,7 @@ props {
   gridPoint {
     x: -55
     y: 0
-    z: -104
+    z: -103
   }
   orientation: ORIENTATION_S
   idRef {
@@ -11611,7 +11611,7 @@ props {
 props {
   name: "cemetery_decor_headstone06"
   gridPoint {
-    x: -55
+    x: -57
     y: 0
     z: -106
   }
@@ -12206,11 +12206,11 @@ props {
 props {
   name: "cemetery_building_tomb05"
   gridPoint {
-    x: -51
+    x: -52
     y: 0
-    z: -103
+    z: -105
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_S
   idRef {
     id: "521a85c53662367c1d007471"
   }
@@ -13896,9 +13896,9 @@ props {
 props {
   name: "cemetery_ground_dirt09"
   gridPoint {
-    x: 48
+    x: -83
     y: 0
-    z: -88
+    z: -175
   }
   orientation: ORIENTATION_S
   idRef {
@@ -13909,9 +13909,9 @@ props {
 props {
   name: "cemetery_ground_dirt03"
   gridPoint {
-    x: 48
+    x: -98
     y: 0
-    z: -85
+    z: -153
   }
   orientation: ORIENTATION_S
   idRef {
@@ -13922,9 +13922,9 @@ props {
 props {
   name: "cemetery_ground_dirt11"
   gridPoint {
-    x: 45
+    x: -91
     y: 0
-    z: -85
+    z: -152
   }
   orientation: ORIENTATION_S
   idRef {
@@ -13935,9 +13935,9 @@ props {
 props {
   name: "cemetery_ground_dirt12"
   gridPoint {
-    x: 42
+    x: -84
     y: 0
-    z: -88
+    z: -151
   }
   orientation: ORIENTATION_S
   idRef {
@@ -13948,9 +13948,9 @@ props {
 props {
   name: "cemetery_ground_dirt05"
   gridPoint {
-    x: 45
+    x: -99
     y: 0
-    z: -88
+    z: -166
   }
   orientation: ORIENTATION_S
   idRef {
@@ -13961,9 +13961,9 @@ props {
 props {
   name: "cemetery_ground_dirt11"
   gridPoint {
-    x: 42
+    x: -78
     y: 0
-    z: -85
+    z: -150
   }
   orientation: ORIENTATION_S
   idRef {
@@ -13974,9 +13974,9 @@ props {
 props {
   name: "cemetery_ground_dirt02"
   gridPoint {
-    x: 42
+    x: -102
     y: 0
-    z: -91
+    z: -175
   }
   orientation: ORIENTATION_S
   idRef {
@@ -13987,9 +13987,9 @@ props {
 props {
   name: "cemetery_ground_dirt08"
   gridPoint {
-    x: 48
+    x: -90
     y: 0
-    z: -91
+    z: -175
   }
   orientation: ORIENTATION_S
   idRef {
@@ -14000,9 +14000,9 @@ props {
 props {
   name: "cemetery_ground_dirt04"
   gridPoint {
-    x: 45
+    x: -77
     y: 0
-    z: -91
+    z: -175
   }
   orientation: ORIENTATION_S
   idRef {
@@ -24087,6 +24087,41 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "5224123e3662366c10008094"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_building_tomb05"
+  gridPoint {
+    x: -23
+    y: 0
+    z: -181
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5224a6da366236a409007eb3"
+  }
+  lod: 0
+}
+props {
+  name: "custom_vehicles_taxi"
+  gridPoint {
+    x: 25
+    y: 0
+    z: -64
+  }
+  orientation: ORIENTATION_W
+  displayName: "Taxi"
+  idRef {
+    id: "5224aed8366236a409007ecb"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    transitionPoint {
+      scene_name: "Embarcadero 2"
+      confirmation_text: ""
+    }
   }
   lod: 0
 }

@@ -274,6 +274,28 @@ variables {
     }
   }
 }
+variables {
+  name: "A2_BummerDead"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_BummerDead"
+    }
+  }
+}
+variables {
+  name: "A2_LazarusDead"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_LazarusDead"
+    }
+  }
+}
 description: "Megacorps battle for supremacy in San Francisco, but broader tensions simmering in the city threaten to boil over into a full-out war."
 startScene: "The Mission 1"
 allowCharacterImport: true
