@@ -2022,9 +2022,9 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Player)"
+          functionName: "Get Map Item (Actor)"
           args {
-            int_value: 0
+            string_value: "5224eea73662367010002279"
           }
         }
       }
@@ -2172,7 +2172,7 @@ triggers {
       functionName: "Comparison (Actor)"
       args {
         call_value {
-          functionName: "Triggering Target Actor"
+          functionName: "Triggering Actor"
         }
       }
       args {
@@ -2224,54 +2224,6 @@ triggers {
             int_value: 3
           }
         }
-      }
-    }
-    ops {
-      functionName: "Display Text over Point"
-      args {
-        call_value {
-          functionName: "Current Location of Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TextPopupStyle"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        string_value: "You hear the splashing of water as Shavarus quickly makes his escape from the pier."
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 3
-      }
-      args {
-        float_value: 3
-      }
-      args {
-        float_value: 0
       }
     }
     ops {
@@ -2327,6 +2279,50 @@ triggers {
             int_value: 1
           }
         }
+      }
+    }
+    ops {
+      functionName: "Display Text at Screen Position"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        string_value: "You hear the splashing of water as Shavarus quickly makes his escape from the pier."
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
       }
     }
   }
@@ -2404,17 +2400,7 @@ triggers {
       }
     }
     ops {
-      functionName: "Display Text over Point"
-      args {
-        call_value {
-          functionName: "Current Location of Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-        }
-      }
+      functionName: "Display Text at Screen Position"
       args {
         call_value {
           functionName: "Get Preset Value (int)"
@@ -2422,12 +2408,18 @@ triggers {
             string_value: "TextPopupStyle"
           }
           args {
-            int_value: 0
+            int_value: 1
           }
         }
       }
       args {
         string_value: "All is quiet now on the pier. It\'s time to return to Eclipse and plan your next steps."
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
       }
       args {
         float_value: 0
@@ -2772,9 +2764,9 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -42
+    x: 32
     y: 0
-    z: 67
+    z: -20
   }
   orientation: ORIENTATION_W
   idRef {
@@ -3844,7 +3836,7 @@ characters {
     portrait {
       filename: "pc_trollmale_04a_shaman"
     }
-    portrait_code_override: "s3h0c4b10h8"
+    portrait_code_override: "s3h0c4b10c4h8"
     karma: 72
   }
 }

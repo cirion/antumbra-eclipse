@@ -130,6 +130,52 @@ nodes {
   }
   branches {
     responseText: "{{CC}}Academic{{/CC}} {{GM}}Guess the override code.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 19
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
     nextNodeIndex: 1
   }
   branches {
@@ -197,20 +243,24 @@ nodes {
   }
   index: 1
   text: "{{GM}}A recent paper you\'ve read on the psychology of random code selection proves to have hit the mark. You deduce the proper combination for the manual override before its heightened security system kicks in.{{/GM}}"
-  nodeType: ConversationNodeType_Simple
-  actions {
-    ops {
-      functionName: "Send Event"
-      args {
-        call_value {
-          functionName: "Get Map Item (Event)"
-          args {
-            string_value: "Opened Gate"
+  branches {
+    responseText: ""
+    actions {
+      ops {
+        functionName: "Send Event"
+        args {
+          call_value {
+            functionName: "Get Map Item (Event)"
+            args {
+              string_value: "Opened Gate"
+            }
           }
         }
       }
     }
+    nextNodeIndex: -1
   }
+  nodeType: ConversationNodeType_Simple
 }
 roots {
   responseText: ""

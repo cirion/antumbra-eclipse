@@ -9,12 +9,58 @@ nodes {
   index: 0
   text: "Yes?"
   branches {
-    responseText: "{{CC}}Security{{/CC}} I need urgent access to Pier 23 to carry out an interdiction against smuggled goods."
-    nextNodeIndex: 1
-  }
-  branches {
     responseText: "Never mind."
     nextNodeIndex: -1
+  }
+  branches {
+    responseText: "{{CC}}Security{{/CC}} I need urgent access to Pier 23 to carry out an interdiction against smuggled goods."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 14
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 1
   }
   nodeType: ConversationNodeType_Simple
 }
