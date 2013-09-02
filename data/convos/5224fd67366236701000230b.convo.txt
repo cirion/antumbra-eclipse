@@ -1,0 +1,93 @@
+idRef {
+  id: "5224fd67366236701000230b"
+}
+ui_name: "A2S07-Lonestar"
+nodes {
+  idRef {
+    id: "5224fd703662367010002311"
+  }
+  index: 0
+  text: "Yes?"
+  branches {
+    responseText: "{{CC}}Security{{/CC}} I need urgent access to Pier 23 to carry out an interdiction against smuggled goods."
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "Never mind."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5224fde13662367010002315"
+  }
+  index: 1
+  text: "It\'s outside of my beat, so... sure, why not. Here you go."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Pier Security Card"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "5224fcb6366236701000230a"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

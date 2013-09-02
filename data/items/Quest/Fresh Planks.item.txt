@@ -1,0 +1,8 @@
+id: "Fresh Planks"
+type: ItemType_QuestItem
+uirep {
+  name: "New Planks"
+  description: "This fresh wood can repair a hole in a nearby rowboat."
+}
+credentials: 0
+sorting_group: "Quest"

@@ -1,0 +1,323 @@
+idRef {
+  id: "5224eca33662367010002214"
+}
+ui_name: "A2S07-ShaverusStartFight"
+nodes {
+  idRef {
+    id: "5224ecb0366236701000221a"
+  }
+  index: 0
+  text: "Ah, $(l.name). How good of you to join us. I trust that your trip here was not\342\200\246 too unpleasant."
+  branches {
+    responseText: "So, what\342\200\231s the job?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_ShavarusAgree"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 1
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "What are you up to?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_ShavarusDisagree"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_ShavarusAgree"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_ShavarusDisagree"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5224ed193662367010002225"
+  }
+  index: 1
+  text: "I fear that you are laboring under a misapprehension, namely that you will participate in the job. You are nothing but a nuisance, a worthless $(l.race) who had no role to play in our great project."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5224ecf6366236701000221e"
+  }
+  index: 2
+  text: "Did that fool Norton send you here? Of course he did. He\342\200\231s always ordering people to go here or there. I\342\200\231m just surprised that someone listened to him for once."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5224ed0d3662367010002221"
+  }
+  index: 3
+  text: "You still don\342\200\231t see, do you? You\342\200\231re still stuck in your narrow mindset, seeing only one run at a time, one job, one villain. Not like our friends here from Tir Tairngire. They see what Saito is doing, and feel fear. They also feel hope. The elven nation wishes to extend its benevolent reach to encompass all elvenkind. Even so, we will see Orkland become a haven for all orks, Halferville a home for dwarves."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5224ed2d366236701000222a"
+  }
+  index: 4
+  text: "There will be no home for humans, or for those who collaborate with them. That includes you, $(l.name). I know all about your corporate paymasters. You will perish, along with Saito, the megacorps, their wageslaves, and every metahuman who remains in this city."
+  branches {
+    responseText: "How will you kill them?"
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "What is your plan?"
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "{{GM}}Remain silent.{{/GM}}"
+    nextNodeIndex: 5
+  }
+}
+nodes {
+  idRef {
+    id: "5224ed4d366236701000222f"
+  }
+  index: 5
+  text: "Saito\342\200\231s paranoia is entirely focused on preventing threats from entering this city. He\342\200\231s too short-sighted to realize that the true danger is the cessation of the city\342\200\231s lifeblood."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5224ed5f3662367010002236"
+  }
+  index: 6
+  text: "Did you know that this city used to be mostly desert? Mankind spent a century building artificial rivers, sucking dry nature\342\200\231s teat in a bid to prolong their unnatural existence on this peninsula. Every drop of water drunk in this city has traveled hundreds of miles, pulled from the great mountains to the east. And, starting tomorrow, that water will cease to flow. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+}
+nodes {
+  idRef {
+    id: "5224ed663662367010002239"
+  }
+  index: 7
+  text: "That data I pulled from Aztechnology reveals every detail of the Hetch Hetchy water system: its pipelines, its defenses, its schedules. We will slice the artery and see the city bleed. San Francisco will no longer support life. "
+  branches {
+    responseText: "But the corps will just leave! Only the poor metahumans will die!"
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "A brilliant plan!"
+    nextNodeIndex: 10
+  }
+}
+nodes {
+  idRef {
+    id: "5224ed89366236701000223d"
+  }
+  index: 8
+  text: "Do not underestimate the impact of fear. The next would-be tyrant will think long before persecuting metahumans. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5224eda63662367010002240"
+  }
+  index: 9
+  text: "My Tir allies will enjoy practicing their talents on you, in preparation for the great work to come. I congratulate you, $(l.name). You will play a small part in history, though the future will never learn of your end."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Shavarus Fight Starts"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5224edd73662367010002244"
+  }
+  index: 10
+  text: "Do you mock me, or are you serious? It hardly matters. I have only told you because your life is at an end."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

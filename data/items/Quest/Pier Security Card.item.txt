@@ -1,0 +1,8 @@
+id: "Pier Security Card"
+type: ItemType_QuestItem
+uirep {
+  name: "Pier Security Card"
+  description: "Allows access to Pier 23."
+}
+credentials: 0
+sorting_group: "Quest"

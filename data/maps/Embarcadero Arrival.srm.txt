@@ -1,6 +1,6 @@
 minX: -179
 minZ: -165
-numX: 309
+numX: 313
 numZ: 426
 props {
   name: "barrens_ground_multiLaneNoStrip01Mid"
@@ -7341,6 +7341,15 @@ props {
     z: -83
   }
   orientation: ORIENTATION_S
+  displayName: "Broken Rowboat"
+  idRef {
+    id: "5224f46c36623670100022b0"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
   lod: 0
 }
 props {
@@ -47004,19 +47013,6 @@ props {
 props {
   name: "docks_floor_docksEdge01"
   gridPoint {
-    x: 126
-    y: 0
-    z: -17
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "52191380366236e41f008034"
-  }
-  lod: 0
-}
-props {
-  name: "docks_floor_docksEdge01"
-  gridPoint {
     x: 66
     y: 0
     z: -17
@@ -77901,6 +77897,15 @@ props {
     z: -2
   }
   orientation: ORIENTATION_S
+  displayName: "Lumber Crate"
+  idRef {
+    id: "5224f71436623670100022d3"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
   lod: 0
 }
 props {
@@ -78358,9 +78363,9 @@ props {
 props {
   name: "docks_vehicle_tugboat01"
   gridPoint {
-    x: 8
+    x: 7
     y: 0
-    z: -97
+    z: -95
   }
   orientation: ORIENTATION_E
   idRef {
@@ -78379,5 +78384,102 @@ props {
   idRef {
     id: "5224e112366236a4090082a2"
   }
+  lod: 0
+}
+props {
+  name: "docks_building_Kalakala"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -50
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5224ef7f366236701000227b"
+  }
+  lod: 0
+}
+props {
+  name: "docks_vehicle_rowboat"
+  gridPoint {
+    x: 54
+    y: 0
+    z: -35
+  }
+  orientation: ORIENTATION_E
+  displayName: "Shavarus Escape Boat"
+  idRef {
+    id: "5224ef9f366236701000227c"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "docks_vehicle_rowboat"
+  gridPoint {
+    x: 13
+    y: 0
+    z: -71
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5224efc9366236701000227e"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "docks_vehicle_rowboat"
+  gridPoint {
+    x: 47
+    y: 0
+    z: -103
+  }
+  orientation: ORIENTATION_S
+  displayName: "Boat Exit"
+  idRef {
+    id: "5224f0323662367010002282"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 3
+    transitionPoint {
+      scene_name: "downtownseattle"
+      confirmation_text: ""
+    }
+  }
+  lod: 0
+}
+props {
+  name: "docks_floor_3x3panel"
+  gridPoint {
+    x: 130
+    y: 0
+    z: -15
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5224f2053662367010002289"
+  }
+  lod: 0
+}
+props {
+  name: "docks_wall_securityFenceGateClosed01"
+  gridPoint {
+    x: 15
+    y: 0
+    z: 9
+  }
+  orientation: ORIENTATION_E
   lod: 0
 }
