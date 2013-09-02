@@ -1,0 +1,413 @@
+idRef {
+  id: "5224d3fe366236a40900822d"
+}
+ui_name: "A2S07-Turm"
+nodes {
+  idRef {
+    id: "5224d406366236a409008233"
+  }
+  index: 0
+  text: "Hoi! Halt there, chummer!"
+  branches {
+    responseText: "Turm? I thought you were dead!"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Dependent Story Variable (bool)"
+            args {
+              call_value {
+                functionName: "Get Previous Story Variable (bool)"
+                args {
+                  string_value: "51f7429764343188990041a8"
+                }
+                args {
+                  string_value: "TurmJoined"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "bool"
+                }
+                args {
+                  int_value: 0
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 1
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "All right, I\'m halting."
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Dependent Story Variable (bool)"
+            args {
+              call_value {
+                functionName: "Get Previous Story Variable (bool)"
+                args {
+                  string_value: "51f7429764343188990041a8"
+                }
+                args {
+                  string_value: "TurmJoined"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "bool"
+                }
+                args {
+                  int_value: 0
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5224d44d366236a409008237"
+  }
+  index: 1
+  text: "$(l.name)! Ha, there\342\200\231s a face I didn\342\200\231t expect to see!\n\nI could ask you the same thing. With the cred we made on the Antumbra run, I\342\200\231ve been slagging jobs all over. Seattle got slow, but them Tir elves have a habit of paying high and in advance, so I run security for them now. Our boat just pulled in a few minutes ago."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5224d4ac366236a409008239"
+  }
+  index: 2
+  text: "Nothing personal, but I\342\200\231ve been paid good nuyen to make sure that nobody comes near these boats. If that means I have to shoot you, I will."
+  branches {
+    responseText: "I just need to talk with Shavarus."
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "5224d501366236a409008246"
+    }
+  }
+  branches {
+    responseText: "{{CC}}\302\245400{{/CC}} We had a good run before, didn\342\200\231t we? How about I hire you again for old time\342\200\231s sake?"
+    conditions {
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 400
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Dependent Story Variable (bool)"
+            args {
+              call_value {
+                functionName: "Get Previous Story Variable (bool)"
+                args {
+                  string_value: "51f7429764343188990041a8"
+                }
+                args {
+                  string_value: "TurmJoined"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "bool"
+                }
+                args {
+                  int_value: 0
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "{{CC}}Shadowrunner{{/CC}} {{CC}}\302\245400{{/CC}} We\342\200\231re both runners. Come join the good guys, and get paid for it too."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 17
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 400
+        }
+      }
+    }
+    nextNodeIndex: 5
+  }
+  branches {
+    responseText: "I\342\200\231m coming through."
+    nextNodeIndex: 7
+  }
+  branches {
+    responseText: "{{GM}}Attack.{{/GM}}"
+    actions {
+      ops {
+        functionName: "Send Event"
+        args {
+          call_value {
+            functionName: "Get Map Item (Event)"
+            args {
+              string_value: "Turm Attacks"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5224d4f2366236a409008243"
+  }
+  index: 3
+  text: "Ain\342\200\231t my problem."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5224d549366236a409008248"
+  }
+  index: 4
+  text: "Yeah\342\200\246 we did have a good time, didn\342\200\231t we?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5224d5ac366236a40900824a"
+  }
+  index: 5
+  text: "You sure know the way to this girl\342\200\231s heart."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5224d5cb366236a40900824e"
+  }
+  index: 6
+  text: "Frag it! This city is drek anyways. Who cares if I break a contract to a bunch of Tir keebs? Let\342\200\231s dust them!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Remove Nuyen"
+      args {
+        int_value: 400
+      }
+    }
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Turm Joins"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5224d5fb366236a409008254"
+  }
+  index: 7
+  text: "Looks like I\342\200\231m earning my pay tonight!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Turm Attacks"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}
