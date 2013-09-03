@@ -6012,8 +6012,17 @@ props {
     z: -19
   }
   orientation: ORIENTATION_E
+  displayName: "Armory Entrance"
   idRef {
     id: "521a43793662360001000907"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    transitionPoint {
+      scene_name: "Armory"
+      confirmation_text: "Are you ready to enter the armory? There\'s no turning back from here."
+    }
   }
   lod: 0
 }
