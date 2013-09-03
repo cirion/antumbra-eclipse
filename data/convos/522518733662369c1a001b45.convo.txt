@@ -1,0 +1,186 @@
+idRef {
+  id: "522518733662369c1a001b45"
+}
+ui_name: "A2S08-TheDave"
+nodes {
+  idRef {
+    id: "5225187b3662369c1a001b4b"
+  }
+  index: 0
+  text: "Hey, I know you!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522518bc3662369c1a001b4e"
+  }
+  index: 1
+  text: "What\'s up?"
+  branches {
+    responseText: "The city is doomed!"
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "522519523662369c1a001b60"
+    }
+  }
+  branches {
+    responseText: "Do you still have any medical or tech supplies?"
+    actions {
+      ops {
+        functionName: "Open Store Screen From Actor"
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "522514833662369c1a001b12"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Do you have any cyberware in stock?"
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "I have to go."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522518e83662369c1a001b59"
+  }
+  index: 2
+  text: "Whoa, that sounds heavy! You\'re going to save us, right?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522518f73662369c1a001b5c"
+  }
+  index: 3
+  text: "Nothing against your skills, but I\'m sure you could use some help. I think there are still a couple of runners around who could pitch in. Also, if you\'ve made any friends, you might want to put out a call for assistance. It takes a village to kill a villain, right?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToTheDave"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToTheDave"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToTheDave"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 1
+}

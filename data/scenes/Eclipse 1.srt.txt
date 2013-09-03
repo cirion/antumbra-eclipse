@@ -2487,9 +2487,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -16
+    x: -129
     y: 0
-    z: -2
+    z: 199
   }
   orientation: ORIENTATION_W
   displayName: "Hailey"
@@ -2732,7 +2732,7 @@ characters {
         perception: 0
         authority: 0
         protect_tether_range: 5
-        move_speed: 6
+        move_speed: 0
       }
       skills {
         spellcasting: 3
@@ -3125,6 +3125,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

@@ -1,0 +1,278 @@
+idRef {
+  id: "52251d073662369c1a001bd1"
+}
+ui_name: "A2S08-Amelia"
+nodes {
+  idRef {
+    id: "52251d393662369c1a001bd8"
+  }
+  index: 0
+  text: "You made it back!\n\nI just heard from one of my... supplies, who was offloading some gear on Pier 25. He saw quite a firefight on the shore, and from the description it sounded like you were involved. Good on you for making it out in one piece."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52251d843662369c1a001bdb"
+  }
+  index: 1
+  text: "If you ever need to visit the Embarcadero again, and want some more assistance, just contact me. I know a lot of guards in that area who will look the other way for a small fee, or watch your back for a larger charge."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "52251dcd3662369c1a001bde"
+  }
+  index: 2
+  text: "Can I get you anything?"
+  branches {
+    responseText: "Any advice for invading the Mission District?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "52251ece3662369c1a001bfd"
+    }
+  }
+  branches {
+    responseText: "I need help capturing or killing a troll named Shavarus."
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_ShavarusDisagree"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "52251eca3662369c1a001bfc"
+    }
+  }
+  branches {
+    responseText: "Sure, let\'s see your weapons and armor."
+    actions {
+      ops {
+        functionName: "Open Store Screen From Actor"
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "522514833662369c1a001b13"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "Not right now."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52251e023662369c1a001bea"
+  }
+  index: 3
+  text: "Wow. Well, if your quarry knows the territory, he\'s probably holed up inside The Armory. You can\'t miss it, it\'s the huge brick fortress at the corner of 14th and Mission. It\'s probably the most defensible spot in the city, and because it\'s in the middle of a metahuman slum, Saito and the megacorps never bothered occupying it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "52251e843662369c1a001bf6"
+  }
+  index: 4
+  text: "Well, I certainly know a lot of people who would be happy to help kill a troll. Some official people, even."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52251e983662369c1a001bf9"
+  }
+  index: 5
+  text: "Tell you what: I\'ll make a few calls and describe what you\'re up to. No guarantees that you\'ll get any takers, but don\'t be surprised if some backup arrives before whatever showdown you have planned."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_Finale_HelpFromSaito"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToAmelia"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToAmelia"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToAmelia"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 2
+}

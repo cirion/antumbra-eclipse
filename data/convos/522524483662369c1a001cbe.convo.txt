@@ -1,0 +1,375 @@
+idRef {
+  id: "522524483662369c1a001cbe"
+}
+ui_name: "A2S08-Orion"
+nodes {
+  idRef {
+    id: "522525243662369c1a001cc4"
+  }
+  index: 0
+  text: "Greetings, $(l.name)."
+  branches {
+    responseText: "What do you think about everything that\'s been happening recently?"
+    nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "522529033662369c1a001d2e"
+    }
+  }
+  branches {
+    responseText: "What\'s the word on the street?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "522529003662369c1a001d2d"
+    }
+  }
+  branches {
+    responseText: "Would you like to join me for another run?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "SomeoneJoined"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_HiredOrion"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "How about that run?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "SomeoneJoined"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_HiredOrion"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 6
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Goodbye, Orion."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522525513662369c1a001cca"
+  }
+  index: 1
+  text: "I will not claim a perfect understanding of all events that have transpired, and certainly not the motivations of the individuals who have promulgated this particular strain of violent rebellion. However, the broad strokes are instantly recognizable to any student of history. Any time when a small and powerful minority holds dominion over a large and poor majority, revolution inevitably follows. The degree of suffering may vary, but cannot be avoided."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5225260f3662369c1a001ccd"
+  }
+  index: 2
+  text: "Were I in Shavarus\'s position, I would undoubtedly have followed a different course. Cloaking oneself in schemes and conspiracies merely complicates operations, and makes it more difficult to spread the message about your aims. And make no mistake: the ultimate purpose will be to convince all metahumans to follow in his path."
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522526c93662369c1a001cdc"
+  }
+  index: 3
+  text: "General distress. Very few people know the details of Shavarus and his operations, but news of a schism in Emperor Norton\'s organization are spreading rapidly. Metahumans are rightfully fearful that any violence, regardless of the instigator, will prompt a widespread crackdown even more severe than what they have already experienced. A day of general expulsion may not be too far off."
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522527713662369c1a001ce1"
+  }
+  index: 4
+  text: "Yes, we have made quite a team, have we not? I offer the brute strength of a trained orc, and you have... your own special talents. I have grown to value your companionship. I will gladly join you once more for \302\245750."
+  branches {
+    responseText: "{{CC}}\302\245750{{/CC}} You are worth it."
+    conditions {
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 750
+        }
+      }
+    }
+    actions {
+      ops {
+        functionName: "Remove Nuyen"
+        args {
+          int_value: 750
+        }
+      }
+    }
+    nextNodeIndex: 5
+  }
+  branches {
+    responseText: "No, thanks."
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522527ff3662369c1a001ce6"
+  }
+  index: 5
+  text: "You are kind to say so. We shall fear no obstacle with our force united together!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_HiredOrion_Part3"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_HiredOrion"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5225284d3662369c1a001ce8"
+  }
+  index: 6
+  text: "I have heard impressive rumors of your prowess on the battlefield, and must admit some curiosity to witness it for myself. Very well. I will accompany you on this great task for \302\245900."
+  branches {
+    responseText: "{{CC}}\302\245900{{/CC}} You are worth it."
+    conditions {
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 900
+        }
+      }
+    }
+    actions {
+      ops {
+        functionName: "Remove Nuyen"
+        args {
+          int_value: 900
+        }
+      }
+    }
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "No, thanks."
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

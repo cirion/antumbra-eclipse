@@ -1,0 +1,181 @@
+idRef {
+  id: "522520473662369c1a001c5b"
+}
+ui_name: "A2S08-Kali"
+nodes {
+  idRef {
+    id: "522520803662369c1a001c62"
+  }
+  index: 0
+  text: "I have some good news for you, $(l.name)! That $(story.A2_RecordingGenre) single you put out is doing pretty well. Based on the way it\'s currently trending, I think it\'ll crack the Top Ten by the end of the week."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522520d73662369c1a001c65"
+  }
+  index: 1
+  text: "Typically we\'d wait until the end of the month to pay out royalties. However, since I didn\'t pay you an advance to start, and, frankly, there\'s a good chance you\'ll be dead by tomorrow, I wanted to pay you now."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  actions {
+    ops {
+      functionName: "Add Nuyen"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_DemoQuality"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5225215c3662369c1a001c68"
+  }
+  index: 2
+  text: "In the unlikely event that you make it out of this alive, come look me up. We have a great shot at putting together an entire album."
+  branches {
+    responseText: "That sounds fun!"
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "We\'ll see."
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "I have far better things to do with my time."
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "522521d23662369c1a001c6d"
+  }
+  index: 3
+  text: "I\'m shutting down Antumbra until this all blows over. Our mission is to provide distractions, and I won\'t want to distract anyone from fighting the threat this city faces."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5225221b3662369c1a001c70"
+  }
+  index: 4
+  text: "Ganbatte kudasai. We\'re all counting on you."
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Kali Walks Away"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_FinishedDemo"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_FinishedDemo"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 3
+}

@@ -1,0 +1,179 @@
+idRef {
+  id: "522519903662369c1a001b76"
+}
+ui_name: "A2S08-Necalli"
+nodes {
+  idRef {
+    id: "5225199a3662369c1a001b7c"
+  }
+  index: 0
+  text: "May I assist you?"
+  branches {
+    responseText: "I met a man named Emperor Norton in Colma."
+    nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "52251fa33662369c1a001c2c"
+    }
+  }
+  branches {
+    responseText: "I need help taking down a rogue metahuman named Shavarus."
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_ShavarusAgree"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "52251fd43662369c1a001c44"
+    }
+  }
+  branches {
+    responseText: "I\'d like to see your magical supplies."
+    actions {
+      ops {
+        functionName: "Open Store Screen From Actor"
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "522514833662369c1a001b10"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "That\'s all."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52251a6c3662369c1a001b84"
+  }
+  index: 1
+  text: "{{GM}}Necalli listens intently, never blinking while you describe your strange experiences in the Colma cemetery.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52251a983662369c1a001b87"
+  }
+  index: 2
+  text: "How utterly fascinating. The original Emperor Norton was a madman, but a madman who was beloved by this city and left a lasting mark on culture around the world. I wonder if this new Norton is seeking to imitate his predecessor, or if some spirit was responsible for both of their missions? Such intervention was not unheard of during the fifth world."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+}
+nodes {
+  idRef {
+    id: "52251b683662369c1a001b8a"
+  }
+  index: 3
+  text: "We should keep a careful eye on your friend. I sense he has a larger role to play in all of this than we can see yet."
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "52251be33662369c1a001ba0"
+  }
+  index: 4
+  text: "I believe I can help with that. Don\'t look shocked; I wouldn\'t have survived as long as I have without acquiring a vast network of contacts from all walks of life."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52251c0d3662369c1a001ba3"
+  }
+  index: 5
+  text: "I\'ll immediately run through my channels to find others who have been wronged by Shavarus. It will take some time, but with luck they will arrive before you confront Shavarus."
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_Finale_HelpFromNorton"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

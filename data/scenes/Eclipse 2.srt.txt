@@ -2828,7 +2828,7 @@ characters {
         perception: 0
         authority: 0
         protect_tether_range: 5
-        move_speed: 6
+        move_speed: 0
       }
       skills {
         ranged_combat: 0

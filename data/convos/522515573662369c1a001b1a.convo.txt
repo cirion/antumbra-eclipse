@@ -1,0 +1,207 @@
+idRef {
+  id: "522515573662369c1a001b1a"
+}
+ui_name: "A2S08-Johnson"
+nodes {
+  idRef {
+    id: "522515733662369c1a001b20"
+  }
+  index: 0
+  text: "We don\'t have much time. I\'m trying to contact megacorp executives, Colonel Saito, anyone who could help. We can\'t wait for them to decide that the threat is real and marshal their forces, so you\'ll need to pursue Shavarus and keep the pressure on him. With any luck, he\'ll be too busy keeping you off his tail to put his plan into action."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add Actor Karma"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        int_value: 8
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "522516593662369c1a001b23"
+  }
+  index: 1
+  text: "Here\'s all the discretionary cash I have left. Hire a runner, equip yourself, and get out of here!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add Nuyen"
+      args {
+        int_value: 1500
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "522517073662369c1a001b26"
+  }
+  index: 2
+  text: "Are you ready to go?"
+  branches {
+    responseText: "Have you had any luck finding more help?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "5225174d3662369c1a001b30"
+    }
+  }
+  branches {
+    responseText: "Let\'s head out."
+    actions {
+      ops {
+        functionName: "Open Scene"
+        args {
+          call_value {
+            functionName: "Get Map Item (Scene)"
+            args {
+              string_value: "The Mission 2"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "Not yet."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5225174e3662369c1a001b32"
+  }
+  index: 3
+  text: "I\'m still working my way up the chain of command. No corp will want to make the first move, in case it turns out to be a trap. It will take time to convince them that they face a true city-wide threat, and I\'m not sure how much time we have."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToJohnson"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToJohnson"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToJohnson"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 2
+}
