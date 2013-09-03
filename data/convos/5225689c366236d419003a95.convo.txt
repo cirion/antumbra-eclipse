@@ -1,0 +1,144 @@
+idRef {
+  id: "5225689c366236d419003a95"
+}
+ui_name: "A2S10-Orion"
+nodes {
+  idRef {
+    id: "522568a2366236d419003a9b"
+  }
+  index: 0
+  text: "Hm\342\200\246 nobody appears to be shooting at us right now. I wanted to ask you something.\n\nDo you hate metas? Does it give you a thrill to put one in the ground? "
+  branches {
+    responseText: "I never thought about it like that before\342\200\246 but yes. Especially when they\342\200\231re shooting at me."
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 1
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "What? Of course not! Why would I enjoy killing my own?"
+    nextNodeIndex: 3
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "How about you, Orion? You\342\200\231ve killed plenty of metas yourself."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "I don\342\200\231t enjoy killing anyone."
+    nextNodeIndex: 5
+  }
+  branches {
+    responseText: "Metas, humans\342\200\246 anyone who shoots at me deserves to die."
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522568e6366236d419003aa2"
+  }
+  index: 1
+  text: "Just as I thought. If I were a human like you, I have no doubt that I would feel exactly the same way. It\342\200\231s nothing to feel ashamed of. We have always feared those who are unlike us."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522568ee366236d419003aa5"
+  }
+  index: 2
+  text: "I appreciate your insight. Now, the time for conversation is at an end. Let us turn to action!"
+}
+nodes {
+  idRef {
+    id: "522568ff366236d419003aa9"
+  }
+  index: 3
+  text: "Some scholars believe that metas have a deep-seated hatred of themselves. They cannot acknowledge it, but when they strike at the ugliness of others, they are really seeking to destroy the perceived ugliness inside themselves.\n\nI personally do not subscribe to this theory, but I do find it intriguing. Thank you for providing additional evidence against it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5225694b366236d419003ab5"
+  }
+  index: 4
+  text: "Given the choice, I prefer killing humans, but it hardly matters in the big scheme of things. A hundred years from now, there will be no more humans, and only metas left to kill. We need to get used to it now because it will be the way of the future."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52256920366236d419003aad"
+  }
+  index: 5
+  text: "Indeed? In that case, you chose a most peculiar line of work. Did you not anticipate needing to kill other creatures when you became a shadowrunner?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5225693b366236d419003ab1"
+  }
+  index: 6
+  text: "A most pragmatic sensibility. That is Darwin\342\200\231s theory at its most pure, is it not? The will to survival triumphs over all, and any threat you encounter must be neutralized if you wish to propagate your legacy."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

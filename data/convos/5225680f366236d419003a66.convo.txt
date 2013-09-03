@@ -1,0 +1,84 @@
+idRef {
+  id: "5225680f366236d419003a66"
+}
+ui_name: "A2S10-Hailey"
+nodes {
+  idRef {
+    id: "5225681f366236d419003a6c"
+  }
+  index: 0
+  text: "Umm, do you have a minute, $(l.name)? Listen: I don\342\200\231t know if we\342\200\231re both gonna walk out of here alive or not, so I\342\200\246 I just wanted to tell you something while I still can."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52256827366236d419003a6f"
+  }
+  index: 1
+  text: "I\342\200\231m really grateful to you for bringing me along. That sounds like a stupid thing to say, when you\342\200\231re probably going to get me killed, but I mean it. All my life I\342\200\231ve wanted to do something wiz and exciting, and now: wow! Just the two of us, saving the city? It\342\200\231s more than I ever could have dreamed of."
+  branches {
+    responseText: "You\342\200\231ve pulled your own weight, Hailey. I couldn\342\200\231t have done this without you."
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "It\342\200\231s been nice having you around, but it\342\200\231s too dangerous. You should find another line of work."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "Bringing you here was a mistake."
+    nextNodeIndex: 5
+  }
+}
+nodes {
+  idRef {
+    id: "52256842366236d419003a74"
+  }
+  index: 2
+  text: "That\342\200\231s the nicest thing you could have said! Thanks!\n\nI feel like I\342\200\231m living the dream, you know? I\342\200\231m finally a for-real runner, and I\342\200\231m gonna keep on runnin\342\200\231. Things will keep on getting better and better!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5225684f366236d419003a77"
+  }
+  index: 3
+  text: "Now, let\342\200\231s get going. Just imagine the stories we\342\200\231ll be able to tell the others when this is all over!"
+}
+nodes {
+  idRef {
+    id: "52256861366236d419003a7b"
+  }
+  index: 4
+  text: "Aw, really? That\342\200\231s hella lame. What should I do instead? Become a slot jockey for Renraku? Give tours of our scenic city?\n\nI like the danger. That\342\200\231s one thing I\342\200\231ve learned in this time. The adrenaline rush, the thrill of escape, the bloodlust when I squeeze the trigger. I\342\200\231d rather live fast and flame out than live dull and sputter out."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52256883366236d419003a7f"
+  }
+  index: 5
+  text: "Oh, c\342\200\231mon! It hasn\342\200\231t been so bad. We\342\200\231re both here and in one piece, aren\342\200\231t we?\n\nYou need to develop a more positive attitude, $(l.sir). We make a great team!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

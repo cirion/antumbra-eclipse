@@ -1,0 +1,50 @@
+idRef {
+  id: "522565a1366236d419003a19"
+}
+ui_name: "A2S10-Arai"
+nodes {
+  idRef {
+    id: "522565ad366236d419003a1f"
+  }
+  index: 0
+  text: "Greetings!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522565bd366236d419003a22"
+  }
+  index: 1
+  text: "I have been instructed to assist you in the apprehension and termination of a wanted criminal known as Shavarus. My men and I stand ready to do whatever it takes to prevent his reign of terror and to keep this city safe."
+  branches {
+    responseText: "Welcome to the good side."
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "I hope this means Saito\'s finally seen the light."
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Any enemy of my enemy is my friend."
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522565fa366236d419003a27"
+  }
+  index: 2
+  text: "Lead on!"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

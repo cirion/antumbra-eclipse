@@ -1,0 +1,61 @@
+idRef {
+  id: "522564f6366236d4190039f4"
+}
+ui_name: "A2S10-Brackhurst"
+nodes {
+  idRef {
+    id: "5225650d366236d4190039fa"
+  }
+  index: 0
+  text: "Hoi! The Emperor sent word that you could use a bit of help."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5225651a366236d4190039fd"
+  }
+  index: 1
+  text: "Not everyone in the Mission is under Shavarus\342\200\231s thumb, you know. Plenty of us remain loyal to Emperor Norton."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+}
+nodes {
+  idRef {
+    id: "52256525366236d419003a00"
+  }
+  index: 2
+  text: "Shavarus has it all wrong. We metas need to show the breeders that we\342\200\231ve better than them, not that we\342\200\231ll stoop to their level. We\342\200\231re building a better society, in Orkland and in Halferville and all around their privileged little city. "
+  branches {
+    responseText: "I am glad to have your help."
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "At least some of you can see reason."
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "I won\'t turn down fodder for the meat grinder in there."
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "52256578366236d419003a05"
+  }
+  index: 3
+  text: "Now, let\342\200\231s go save their skins! Ha, won\342\200\231t that embarrass the corps!"
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

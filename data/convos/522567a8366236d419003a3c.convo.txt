@@ -1,0 +1,74 @@
+idRef {
+  id: "522567a8366236d419003a3c"
+}
+ui_name: "A2S10-Dalmin"
+nodes {
+  idRef {
+    id: "522567b0366236d419003a42"
+  }
+  index: 0
+  text: "I have to ask, $(l.name): Why are you here? I mean, really?\n\nIf it was me, I would have taken that partial payment and left town long ago. No sense in kicking the hornet\342\200\231s nest, you know? What keeps you going?"
+  branches {
+    responseText: "I need to protect my rep. A runner who doesn\342\200\231t finish a job - completely - stops getting work."
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "That tusker crossed me. I mean to get even."
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: "This is bigger than me. I need to protect the people of this city."
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522567c6366236d419003a47"
+  }
+  index: 1
+  text: "Thinking big, eh? Are you hoping to graduate to more prestigious payers? Maybe work for a dragon one day?\n\nEh, I\342\200\231m just giving you a hard time. Good for you. I like running with a $(l.man) with a solid work ethic."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522567d5366236d419003a4a"
+  }
+  index: 2
+  text: "Well, thanks for chatting. I\342\200\231m always curious what makes people tick. Now, I believe we have a troll to kill!"
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522567e8366236d419003a4e"
+  }
+  index: 3
+  text: "Ah, so it\342\200\231s just revenge, then? I should have known. Hate and love are the only emotions that really matter, aren\342\200\231t they?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "522567fa366236d419003a52"
+  }
+  index: 4
+  text: "But it\342\200\231s not even your city, is it? You\342\200\231ve only been here a couple of days. \n\nYou\342\200\231ve got a good heart, $(l.name). I just wonder if you\342\200\231re in the right line of work."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}
