@@ -7,7 +7,7 @@ nodes {
     id: "522520803662369c1a001c62"
   }
   index: 0
-  text: "I have some good news for you, $(l.name)! That $(story.A2_RecordingGenre) single you put out is doing pretty well. Based on the way it\'s currently trending, I think it\'ll crack the Top Ten by the end of the week."
+  text: "I have some good news for you, $(l.name)! That $(story.A2_RecordingGenre) single you put out is doing rather well. Based on current trending data, I think it\'ll crack the Top Ten by the end of the week."
   branches {
     responseText: ""
     nextNodeIndex: 1

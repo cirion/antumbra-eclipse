@@ -139,12 +139,13 @@ nodes {
     id: "52251c0d3662369c1a001ba3"
   }
   index: 5
-  text: "I\'ll immediately run through my channels to find others who have been wronged by Shavarus. It will take some time, but with luck they will arrive before you confront Shavarus."
+  text: "I\'ll use my channels to find others who have been wronged by Shavarus. It will take some time, but with luck allies will arrive before you confront Shavarus."
   branches {
     responseText: ""
     nextNodeIndex: 0
     auxiliaryLink: true
   }
+  nodeType: ConversationNodeType_Simple
   actions {
     ops {
       functionName: "Set Variable (bool)"

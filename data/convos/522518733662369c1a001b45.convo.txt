@@ -49,6 +49,19 @@ nodes {
   }
   branches {
     responseText: "Do you have any cyberware in stock?"
+    actions {
+      ops {
+        functionName: "Open Cyberware Screen From Actor"
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "522514833662369c1a001b12"
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 1
     auxiliaryLink: true
   }

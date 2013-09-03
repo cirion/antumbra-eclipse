@@ -624,7 +624,7 @@ triggers {
             string_value: "5215664d3662365c180018bf"
           }
           args {
-            string_value: "A2_HiredDalmin_Part3"
+            string_value: "A2_HiredHailey_Part3"
           }
         }
       }
@@ -818,7 +818,7 @@ triggers {
             string_value: "5215664d3662365c180018bf"
           }
           args {
-            string_value: "A2_HiredOrion_Part2"
+            string_value: "A2_HiredOrion_Part3"
           }
         }
       }
@@ -1145,7 +1145,7 @@ triggers {
             string_value: "DeathMethod"
           }
           args {
-            int_value: 0
+            int_value: 3
           }
         }
       }
@@ -1477,7 +1477,7 @@ characters {
     isEnabled: true
     interactionRadius: 1
     conversationPoint {
-      conversationID: "5223b483366236680e003c46"
+      conversationID: "522518733662369c1a001b45"
       turnToFace: true
     }
   }

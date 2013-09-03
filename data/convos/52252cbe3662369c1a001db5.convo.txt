@@ -7,7 +7,7 @@ nodes {
     id: "52252cc73662369c1a001dbb"
   }
   index: 0
-  text: "Ah, here comes another chapter in the story of $(l.name) and $(l.his_her) dwarf! Or should that be the dwarf and his companion? Hm, I should settle on a title before contacting my editor."
+  text: "Ah, here comes another chapter in the story of $(l.name) and $(scene.his_her) dwarf! Or should that be the dwarf and his companion? Hm, I should settle on a title before contacting my editor."
   branches {
     responseText: ""
     nextNodeIndex: 1

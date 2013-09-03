@@ -95,7 +95,7 @@ nodes {
     id: "5225174e3662369c1a001b32"
   }
   index: 3
-  text: "I\'m still working my way up the chain of command. No corp will want to make the first move, in case it turns out to be a trap. It will take time to convince them that they face a true city-wide threat, and I\'m not sure how much time we have."
+  text: "I\'m still working my way up the chains of command. No corp wants to make the first move, in case this turns out to be a trap. It will take time to convince them that they face a true city-wide threat, and I\'m not sure how much time we have."
   branches {
     responseText: ""
     nextNodeIndex: 2
