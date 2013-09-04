@@ -1275,6 +1275,342 @@ characters {
     karma: 39
   }
 }
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -15
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "squad1"
+  displayName: "Tir Squad 1 Guard 2"
+  idRef {
+    id: "52268fa93662368419001542"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Story/GreenLucifer"
+    character_sheet_id: "Lonestar_Lv2_Captain"
+    equipment_sheet_id: "Lonestar_Captain_Low"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "Civilians"
+    char_name: "Tir Captain"
+    GeneralTags: "squad1"
+    pc_spawn_number: -1
+    karma: 52
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -7
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "squad1"
+  displayName: "Squad 1 Healer"
+  idRef {
+    id: "52268fa93662368419001543"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Story/Quoth"
+    character_sheet_id: "Lonestar_Lv2_Human_Mage"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    equipment {
+      prefab_name: "Spell Heal 1"
+    }
+    equipment {
+      prefab_name: "Spell Aim 1"
+    }
+    equipment {
+      prefab_name: "Spell Weaken Armor 1"
+    }
+    equipment {
+      prefab_name: "Spell Slow 1"
+    }
+    team_id: "Civilians"
+    char_name: "Tir Medic"
+    GeneralTags: "squad1"
+    pc_spawn_number: -1
+    karma: 43
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -12
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "squad1"
+  displayName: "Tir Squad 1Guard 1"
+  idRef {
+    id: "52268fa93662368419001544"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    equipment_sheet_id: "Lonestar_SMG_Low"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "Civilians"
+    char_name: "Tir Guard"
+    GeneralTags: "squad1"
+    pc_spawn_number: -1
+    karma: 39
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -17
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "squad4"
+  displayName: "Tir Squad 1 Mage"
+  idRef {
+    id: "52268fa93662368419001545"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Gangers/ElfMaleGangerEyepatch"
+    character_sheet_id: "Lonestar_Lv2_Human_Mage"
+    equipment_sheet_id: "Lonestar_Mage_Low"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "Gangers"
+    char_name: "Tir Mage"
+    GeneralTags: "squad4"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    karma: 43
+  }
+}
 worldMapLocation {
   filename: ""
   location {

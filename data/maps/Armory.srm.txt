@@ -5790,9 +5790,9 @@ props {
 props {
   name: "tenements_wall_door02Mid"
   gridPoint {
-    x: -20
+    x: -23
     y: 0
-    z: -21
+    z: -7
   }
   orientation: ORIENTATION_S
   displayName: "Door to Torture"
@@ -17430,5 +17430,1892 @@ props {
       doorSoundBundle: "props"
     }
   }
+  lod: 0
+}
+props {
+  name: "asylum_appliance_autoclave"
+  gridPoint {
+    x: -15
+    y: 0
+    z: -24
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_appliance_electricBath"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_appliance_mobileIVUnit"
+  gridPoint {
+    x: -8
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_appliance_vendingMachine01"
+  gridPoint {
+    x: -12
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_bathroom_concreteToilet"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -30
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_bathroom_mirrorlessSink"
+  gridPoint {
+    x: -36
+    y: 0
+    z: -35
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_bathroom_urinal01"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -31
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_clutter_bloodySheet"
+  gridPoint {
+    x: -41
+    y: 0
+    z: -31
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52268d2e366236841900153d"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_clutter_bloodySheet"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -32
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52268d2f366236841900153e"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_clutter_drillingSet01"
+  gridPoint {
+    x: -11
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_clutter_embalmingJars01"
+  gridPoint {
+    x: -10
+    y: 0
+    z: -24
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_clutter_paintBuckets01"
+  gridPoint {
+    x: -11
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_decor_doctorBag"
+  gridPoint {
+    x: -9
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_furniture_bedsideTable01"
+  gridPoint {
+    x: -12
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_furniture_bodybag01"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_furniture_bodybag01"
+  gridPoint {
+    x: -41
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52268d55366236841900153f"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_furniture_diningCart01"
+  gridPoint {
+    x: -18
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_furniture_ivBed01"
+  gridPoint {
+    x: -12
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_furniture_ivBed02"
+  gridPoint {
+    x: -15
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_furniture_lobotomyCart"
+  gridPoint {
+    x: -13
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_furniture_plainChair"
+  gridPoint {
+    x: -41
+    y: 0
+    z: -28
+  }
+  orientation: ORIENTATION_N
+  lod: 0
+}
+props {
+  name: "asylum_furniture_plainDesk"
+  gridPoint {
+    x: -40
+    y: 0
+    z: -33
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_furniture_plasticCartPlain"
+  gridPoint {
+    x: -9
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_furniture_sittingRoomChair01"
+  gridPoint {
+    x: -9
+    y: 0
+    z: -19
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_furniture_plasticChair"
+  gridPoint {
+    x: -12
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_furniture_sittingRoomChair01"
+  gridPoint {
+    x: -19
+    y: 0
+    z: -15
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_furniture_steelBed01"
+  gridPoint {
+    x: -9
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_furniture_steelBedStraps"
+  gridPoint {
+    x: -30
+    y: 0
+    z: -33
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_furniture_steelCabinet"
+  gridPoint {
+    x: -13
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_furniture_wheelchair01"
+  gridPoint {
+    x: -13
+    y: 0
+    z: -17
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_storage_bloodSampleCrate"
+  gridPoint {
+    x: -15
+    y: 0
+    z: -15
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_storage_medicineCabinet"
+  gridPoint {
+    x: -9
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_tech_bioVat01"
+  gridPoint {
+    x: -42
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_tech_cryoBed02"
+  gridPoint {
+    x: -43
+    y: 0
+    z: -34
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_tech_futuristicESTMachine"
+  gridPoint {
+    x: -16
+    y: 0
+    z: -13
+  }
+  orientation: ORIENTATION_W
+  lod: 0
+}
+props {
+  name: "asylum_trash_biohazardousBin"
+  gridPoint {
+    x: -7
+    y: 0
+    z: -15
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_wall_bar01"
+  gridPoint {
+    x: -20
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_S
+  displayName: "Door to Torture Version 2"
+  idRef {
+    id: "52268e573662368419001541"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    doorPoint {
+      doorState: false
+      aiOnlyDoor: false
+      doorSound: "DoorSwing"
+      doorSoundBundle: "props"
+    }
+  }
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_biohazardSign01"
+  gridPoint {
+    x: -11
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_biohazardSign02"
+  gridPoint {
+    x: -15
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_brokenMirror"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -30
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_paintSheet01"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -35
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_paintSheet02"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -34
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_paintSheet03"
+  gridPoint {
+    x: -27
+    y: 0
+    z: -35
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_paintSheet04"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -35
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_paintSheet05"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -28
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_statusFlags"
+  gridPoint {
+    x: -19
+    y: 0
+    z: -17
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_straitJacket"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -35
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_wallClock"
+  gridPoint {
+    x: -19
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_welcomePoster02"
+  gridPoint {
+    x: -19
+    y: 0
+    z: -12
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522690843662368419001546"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226908a3662368419001547"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226908c3662368419001548"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickCorner01"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -43
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5226908e3662368419001549"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -42
+    y: 0
+    z: -43
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "52269090366236841900154a"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -41
+    y: 0
+    z: -47
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "52269094366236841900154b"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -40
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52269096366236841900154c"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickDiagonalCorner01"
+  gridPoint {
+    x: -40
+    y: 0
+    z: -42
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "52269098366236841900154d"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -38
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226909a366236841900154e"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226909b366236841900154f"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_ground_dirt10"
+  gridPoint {
+    x: -43
+    y: 0
+    z: -38
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522690a93662368419001550"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_ground_dirt10"
+  gridPoint {
+    x: -43
+    y: 0
+    z: -42
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522690b03662368419001551"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_ground_dirt10"
+  gridPoint {
+    x: -43
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522690b23662368419001552"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_storage_medicineCabinet"
+  gridPoint {
+    x: -41
+    y: 0
+    z: -42
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522690cc3662368419001553"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_trash_biohazardousBin"
+  gridPoint {
+    x: -42
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522690d93662368419001554"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -31
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522690e93662368419001555"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -31
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522690e93662368419001556"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -31
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522690e93662368419001557"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickCorner01"
+  gridPoint {
+    x: -31
+    y: 0
+    z: -43
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522690e93662368419001558"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -29
+    y: 0
+    z: -43
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522690e93662368419001559"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickDiagonalCorner01"
+  gridPoint {
+    x: -27
+    y: 0
+    z: -42
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "522690e9366236841900155a"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: -26
+    y: 0
+    z: -40
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522690e9366236841900155b"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: -26
+    y: 0
+    z: -38
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522690e9366236841900155c"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: -26
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522690e9366236841900155d"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_ground_dirt10"
+  gridPoint {
+    x: -30
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522690e9366236841900155e"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_ground_dirt10"
+  gridPoint {
+    x: -30
+    y: 0
+    z: -42
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522690e9366236841900155f"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_decor_mummy01"
+  gridPoint {
+    x: -30
+    y: 0
+    z: -38
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "cemetery_decor_mummy01"
+  gridPoint {
+    x: -30
+    y: 0
+    z: -40
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522691083662368419001560"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_decor_mummy01"
+  gridPoint {
+    x: -29
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5226910a3662368419001561"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_decor_mummy01"
+  gridPoint {
+    x: -28
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5226910d3662368419001562"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_decor_mummy01"
+  gridPoint {
+    x: -27
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522691103662368419001563"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_decor_mummy01"
+  gridPoint {
+    x: -28
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522691133662368419001564"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_decor_mummy01"
+  gridPoint {
+    x: -29
+    y: 0
+    z: -38
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522691153662368419001565"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_clutter_bloodySheet"
+  gridPoint {
+    x: -29
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522691203662368419001566"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_clutter_bloodySheet"
+  gridPoint {
+    x: -30
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522691223662368419001567"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_biohazardSign01"
+  gridPoint {
+    x: -29
+    y: 0
+    z: -42
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5226912a3662368419001568"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_clutter_embalmingJars01"
+  gridPoint {
+    x: -29
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522691323662368419001569"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_biohazardSign01"
+  gridPoint {
+    x: -42
+    y: 0
+    z: -42
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5226913e366236841900156a"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_wallDecor_slimDoor01"
+  gridPoint {
+    x: -38
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_wallDecor_slimDoor01"
+  gridPoint {
+    x: -25
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5226915d366236841900156b"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_furniture_sittingRoomChair01"
+  gridPoint {
+    x: -15
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226917d366236841900156c"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_furniture_sittingRoomChair01"
+  gridPoint {
+    x: -17
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52269183366236841900156d"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_furniture_steelCabinet"
+  gridPoint {
+    x: -5
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226919b366236841900156e"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_paintSheet01"
+  gridPoint {
+    x: -48
+    y: 0
+    z: -26
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522691a8366236841900156f"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_clutter_bloodySheet"
+  gridPoint {
+    x: -26
+    y: 0
+    z: -32
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522691b63662368419001571"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_clutter_bloodySheet"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522691b83662368419001572"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_clutter_bloodySheet"
+  gridPoint {
+    x: -58
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522691ba3662368419001573"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -63
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522691bf3662368419001574"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -65
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522691c63662368419001575"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickCorner01"
+  gridPoint {
+    x: -67
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522691c93662368419001576"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -67
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522691ce3662368419001577"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEnd01"
+  gridPoint {
+    x: -67
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522691ed3662368419001579"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickThicktoThin01"
+  gridPoint {
+    x: -66
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522691ed366236841900157a"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: -65
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522691ef366236841900157b"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: -63
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522691f0366236841900157c"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_ground_dirt11"
+  gridPoint {
+    x: -66
+    y: 0
+    z: -24
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522691f3366236841900157d"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_furniture_steelBedStraps"
+  gridPoint {
+    x: -65
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522691fb366236841900157e"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_wallDecor_slimDoor01"
+  gridPoint {
+    x: -64
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52269205366236841900157f"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_straitJacket"
+  gridPoint {
+    x: -43
+    y: 0
+    z: -38
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226923a3662368419001580"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226928c3662368419001581"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522692af3662368419001582"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge06"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522692b93662368419001583"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge05"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522692c73662368419001584"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_furniture_plainDesk"
+  gridPoint {
+    x: -29
+    y: 0
+    z: -19
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522692da3662368419001586"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_furniture_plainChair"
+  gridPoint {
+    x: -29
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "522692dd3662368419001587"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_furniture_steelBed01"
+  gridPoint {
+    x: -30
+    y: 0
+    z: -30
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_furniture_bodybag01"
+  gridPoint {
+    x: -27
+    y: 0
+    z: -30
+  }
+  orientation: ORIENTATION_S
+  displayName: "Body Bag"
+  idRef {
+    id: "5226930e3662368419001589"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_furniture_plainChair"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -32
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "5226931c366236841900158a"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -23
+    y: 0
+    z: -27
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "52269323366236841900158b"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -25
+    y: 0
+    z: -27
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5226932f366236841900158c"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge06"
+  gridPoint {
+    x: -27
+    y: 0
+    z: -27
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "52269337366236841900158d"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_furniture_steelBedStraps"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -30
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "52269342366236841900158e"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_furniture_steelBedStraps"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -33
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "52269344366236841900158f"
+  }
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter01"
+  gridPoint {
+    x: -33
+    y: 1
+    z: -18.8
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter04"
+  gridPoint {
+    x: -29
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter05"
+  gridPoint {
+    x: -31
+    y: 0
+    z: -32
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter06"
+  gridPoint {
+    x: -40
+    y: 0
+    z: -27
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter07"
+  gridPoint {
+    x: -42
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter04"
+  gridPoint {
+    x: -45
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522693883662368419001590"
+  }
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter05"
+  gridPoint {
+    x: -55
+    y: 0
+    z: -24
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5226938e3662368419001591"
+  }
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter05"
+  gridPoint {
+    x: -29
+    y: 0
+    z: -40
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522693933662368419001592"
+  }
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter06"
+  gridPoint {
+    x: -42
+    y: 0
+    z: -33
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226939b3662368419001593"
+  }
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter07"
+  gridPoint {
+    x: -32
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522693a23662368419001594"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_furniture_gurney01"
+  gridPoint {
+    x: -41
+    y: 0
+    z: -19
+  }
+  orientation: ORIENTATION_W
+  lod: 0
+}
+props {
+  name: "morgue_furniture_gurney02"
+  gridPoint {
+    x: -41
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_N
+  lod: 0
+}
+props {
+  name: "hive_clutter_operatingTable"
+  gridPoint {
+    x: -32
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "warehouse_furniture_boxTable"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -28
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_furniture_bodybag01"
+  gridPoint {
+    x: -43
+    y: 1
+    z: -27
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226943e3662368419001597"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_appliance_dissectionBedMonitor"
+  gridPoint {
+    x: -11
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "morgue_appliance_embalmingFluidTank"
+  gridPoint {
+    x: -61
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "morgue_clutter_burntRemains"
+  gridPoint {
+    x: -43
+    y: 0
+    z: -30
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "morgue_clutter_severedArm"
+  gridPoint {
+    x: -42.8
+    y: 0
+    z: -39.3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "morgue_clutter_severedArm"
+  gridPoint {
+    x: -30
+    y: 0
+    z: -31
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "morgue_clutter_sharpsContainer"
+  gridPoint {
+    x: -43
+    y: 0
+    z: -31
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "morgue_decor_bodyPartPoster"
+  gridPoint {
+    x: -42.3
+    y: 0
+    z: -35
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "morgue_decor_bodyPartPoster"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -17.3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "morgue_decor_floorGrate01"
+  gridPoint {
+    x: -15
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "morgue_decor_floorGrate01"
+  gridPoint {
+    x: -9
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522694ee3662368419001598"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_decor_floorGrate02"
+  gridPoint {
+    x: -42
+    y: 0
+    z: -34
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "morgue_decor_floorGrate02"
+  gridPoint {
+    x: -40
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522694ff3662368419001599"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_decor_floorGrate02"
+  gridPoint {
+    x: -53
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5226950a366236841900159a"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_furniture_organBin"
+  gridPoint {
+    x: -38
+    y: 0
+    z: -35
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "asylum_furniture_sittingRoomChair01"
+  gridPoint {
+    x: -9
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226955f366236841900159b"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_lighting_surgicalLight01"
+  gridPoint {
+    x: -11
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "morgue_wallDecor_bodyHooks"
+  gridPoint {
+    x: -31
+    y: 0
+    z: -35
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter06"
+  gridPoint {
+    x: -31
+    y: 0
+    z: -35
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522695a1366236841900159c"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wallDecor_bodyHooks02"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -26
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "morgue_decor_Sam"
+  gridPoint {
+    x: -27
+    y: 0
+    z: -33
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter01"
+  gridPoint {
+    x: -30.1
+    y: 0.9
+    z: -35
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter02"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -34
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter02"
+  gridPoint {
+    x: -44
+    y: 0.9
+    z: -24.8
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter03"
+  gridPoint {
+    x: -30
+    y: 1
+    z: -39
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter01"
+  gridPoint {
+    x: -28
+    y: 1
+    z: -42
+  }
+  orientation: ORIENTATION_E
   lod: 0
 }
