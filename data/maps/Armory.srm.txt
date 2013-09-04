@@ -17424,7 +17424,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     doorPoint {
-      doorState: false
+      doorState: true
       aiOnlyDoor: false
       doorSound: "MetalScrape1"
       doorSoundBundle: "props"
@@ -18555,7 +18555,7 @@ props {
   gridPoint {
     x: -63
     y: 0
-    z: -25
+    z: -27
   }
   orientation: ORIENTATION_E
   idRef {
@@ -18568,7 +18568,7 @@ props {
   gridPoint {
     x: -65
     y: 0
-    z: -25
+    z: -27
   }
   orientation: ORIENTATION_E
   idRef {
@@ -18581,7 +18581,7 @@ props {
   gridPoint {
     x: -67
     y: 0
-    z: -25
+    z: -27
   }
   orientation: ORIENTATION_E
   idRef {
@@ -18672,7 +18672,7 @@ props {
   gridPoint {
     x: -65
     y: 0
-    z: -23
+    z: -25
   }
   orientation: ORIENTATION_E
   idRef {
@@ -19317,5 +19317,464 @@ props {
     z: -42
   }
   orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "secretLab_magic_bookPedestal"
+  gridPoint {
+    x: -60
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_W
+  lod: 0
+}
+props {
+  name: "secretLab_magic_ceremonialBrazier01"
+  gridPoint {
+    x: -63
+    y: 0
+    z: -59
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "secretLab_magic_ceremonialBrazier01"
+  gridPoint {
+    x: -64
+    y: 0
+    z: -31
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52269f1e366236d0160012dc"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_magic_ceremonialBrazier01"
+  gridPoint {
+    x: -54
+    y: 0
+    z: -30
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52269f20366236d0160012dd"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_magic_ceremonialBrazier01"
+  gridPoint {
+    x: -53
+    y: 0
+    z: -59
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52269f22366236d0160012de"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_magic_largeAstrolabe"
+  gridPoint {
+    x: -65
+    y: 0
+    z: -48
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "secretLab_magic_sacrificialTable01"
+  gridPoint {
+    x: -61
+    y: 0
+    z: -60
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter05"
+  gridPoint {
+    x: -60
+    y: 0
+    z: -58
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52269f48366236d0160012df"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_magic_scryingStation01"
+  gridPoint {
+    x: -56
+    y: 0
+    z: -56
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "secretLab_magic_skullPile"
+  gridPoint {
+    x: -59
+    y: 0
+    z: -58
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "secretLab_magic_skullPile"
+  gridPoint {
+    x: -58
+    y: 0
+    z: -60
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "52269f5a366236d0160012e0"
+  }
+  lod: 0
+}
+props {
+  name: "hive_magic_summoningPlatformFront"
+  gridPoint {
+    x: -64
+    y: 0
+    z: -60
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "hive_magic_summoningPlatformFront"
+  gridPoint {
+    x: -54
+    y: 0
+    z: -60
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52269f87366236d0160012e1"
+  }
+  lod: 0
+}
+props {
+  name: "hive_magic_summoningPlatformFront"
+  gridPoint {
+    x: -65
+    y: 0
+    z: -32
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52269f8b366236d0160012e2"
+  }
+  lod: 0
+}
+props {
+  name: "hive_magic_summoningPlatformFront"
+  gridPoint {
+    x: -55
+    y: 0
+    z: -31
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52269f90366236d0160012e3"
+  }
+  lod: 0
+}
+props {
+  name: "hive_magic_summoningCircle01"
+  gridPoint {
+    x: -62
+    y: 0
+    z: -45
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "hive_magic_summoningCircle01Light"
+  gridPoint {
+    x: -61.4
+    y: 0
+    z: -44.8
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "telestrianEstate_furniture_baroqueEndTable01"
+  gridPoint {
+    x: -59
+    y: 0
+    z: -55
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "hive_decor_hexagonSummoningPillar02"
+  gridPoint {
+    x: -60
+    y: 0
+    z: -61
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226a11d366236d0160012e5"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_magic_sacrificialTable01"
+  gridPoint {
+    x: -65
+    y: 0
+    z: -40
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226a12c366236d0160012e6"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_magic_skullPile"
+  gridPoint {
+    x: -63
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226a136366236d0160012e7"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_magic_skullPile"
+  gridPoint {
+    x: -63
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "5226a140366236d0160012e8"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_clutter_severedArm"
+  gridPoint {
+    x: -64.3
+    y: 1
+    z: -37.7
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter06"
+  gridPoint {
+    x: -64
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226a160366236d0160012e9"
+  }
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter04"
+  gridPoint {
+    x: -64
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226a16c366236d0160012ea"
+  }
+  lod: 0
+}
+props {
+  name: "hive_decor_hexagonSummoningPillar02"
+  gridPoint {
+    x: -54
+    y: 0
+    z: -35
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226a184366236d0160012ec"
+  }
+  lod: 0
+}
+props {
+  name: "hive_decor_hexagonSummoningPillar02"
+  gridPoint {
+    x: -25
+    y: 0
+    z: -34
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226a18e366236d0160012ed"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_magic_crystalBall"
+  gridPoint {
+    x: -25
+    y: 0
+    z: -34
+  }
+  orientation: ORIENTATION_S
+  displayName: "Crystal Ball 4"
+  idRef {
+    id: "5226a18e366236d0160012ee"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+}
+props {
+  name: "hive_decor_hexagonSummoningPillar02"
+  gridPoint {
+    x: -38
+    y: 0
+    z: -17
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226a19f366236d0160012ef"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_magic_crystalBall"
+  gridPoint {
+    x: -60
+    y: 0
+    z: -61
+  }
+  orientation: ORIENTATION_S
+  displayName: "Crystal Ball 1"
+  idRef {
+    id: "5226a1e2366236d0160012f2"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_magic_crystalBall"
+  gridPoint {
+    x: -54
+    y: 0
+    z: -35
+  }
+  orientation: ORIENTATION_S
+  displayName: "Crystal Ball 2"
+  idRef {
+    id: "5226a1e4366236d0160012f3"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_magic_crystalBall"
+  gridPoint {
+    x: -38
+    y: 0
+    z: -17
+  }
+  orientation: ORIENTATION_S
+  displayName: "Crystal Ball 3"
+  idRef {
+    id: "5226a1e7366236d0160012f4"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -67
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226a8ca366236d016001303"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_ground_dirt11"
+  gridPoint {
+    x: -66
+    y: 0
+    z: -27
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226a8cd366236d016001304"
+  }
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter06"
+  gridPoint {
+    x: -65
+    y: 0
+    z: -24
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226a8d5366236d016001305"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wallDecor_bodyHooks"
+  gridPoint {
+    x: -66
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5226a8e3366236d016001306"
+  }
   lod: 0
 }
