@@ -1,0 +1,359 @@
+idRef {
+  id: "5226b8ee366236d01600137d"
+}
+ui_name: "A2S10a-Shavarus1"
+nodes {
+  idRef {
+    id: "5226b8f7366236d016001383"
+  }
+  index: 0
+  text: "... unless you want to risk our own lives as well!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "5226b935366236d016001391"
+  }
+}
+nodes {
+  idRef {
+    id: "5226b916366236d016001386"
+  }
+  index: 1
+  text: "Of COURSE I do! Do you think your lives have any meaning compared to the thousands, the millions, that will be lost should Saito decide to march north? Are you really so petty, so selfish, as to think that living a few measly more years would be worth dooming your entire nation?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+}
+nodes {
+  idRef {
+    id: "5226bb4b366236d0160013a2"
+  }
+  index: 2
+  text: "Certainly not, but the waste..."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  sourceInSceneRef {
+    id: "5226b935366236d016001391"
+  }
+}
+nodes {
+  idRef {
+    id: "5226bb57366236d0160013a5"
+  }
+  index: 3
+  text: "Silence! I see we have visitors."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+}
+nodes {
+  idRef {
+    id: "5226bb60366236d0160013a8"
+  }
+  index: 4
+  text: "Ah, $(l.name). I thought I heard a rat scurrying through these tunnels. I\'ve been planning how to best dispose of you for some time now. As soon as our work here is done, perhaps we can retire to the facilities together. I could learn a great deal from your innards."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5226bba5366236d0160013ab"
+  }
+  index: 5
+  text: "Well, hero? Any valiant last words?"
+  branches {
+    responseText: "Why are you doing this?"
+    nextNodeIndex: 6
+    onlyOnce: true
+    idRef {
+      id: "5226c9f0366236d016001544"
+    }
+  }
+  branches {
+    responseText: "What exactly are you doing?"
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 19
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 9
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "5226bcd8366236d0160013c0"
+    }
+  }
+  branches {
+    responseText: "{{CC}}Academic{{/CC}} Are you trying to turn water elementals against this city?"
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 19
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 12
+    onlyOnce: true
+    idRef {
+      id: "5226bd5e366236d0160013c4"
+    }
+  }
+  branches {
+    responseText: "We could have been friends, Shavarus."
+    nextNodeIndex: 13
+  }
+  branches {
+    responseText: "I\'ll take pleasure in gutting you."
+    nextNodeIndex: 15
+  }
+  branches {
+    responseText: "I\'ll make sure you never trouble this city again."
+    nextNodeIndex: 16
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5226bbc0366236d0160013b3"
+  }
+  index: 6
+  text: "Must you really ask? Are you blind? Have you noticed nothing during your time here in this city?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5226bbd1366236d0160013b6"
+  }
+  index: 7
+  text: "This place is poison. Mankind has proven themselves to be intolerable. We must cleanse the poison, by removing humanity from this wound of a city."
+  branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5226bc65366236d0160013b9"
+  }
+  index: 8
+  text: "Yes, many more will die. So be it. All will learn to respect the metas, and so we will come into our own power, free from fear."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5226bccb366236d0160013bf"
+  }
+  index: 9
+  text: "Your continued ignorance astounds me."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5226bceb366236d0160013c3"
+  }
+  index: 10
+  text: "Mission Creek is the oldest waterway still flowing in the city. It\'s long been buried and forgotten, but here in this place, near the graves of Mission Dolores and under the extreme agonies and ecstacies of the Armory, it is imbued with a most potent power."
+  branches {
+    responseText: ""
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5226bde7366236d0160013cd"
+  }
+  index: 11
+  text: "From this spot, and with the help of my allies, we will be able to reach a limitless number of water elementals. We merely need describe the contours of the Hetch Hetchy water system to them, and they will gladly wreak havoc upon it. No more water will be unnaturally conveyed to San Francisco ever again. This city will die of thirst, or be abandoned. Regardless, it will serve as an eternal rebuke and warning: those who cross us will lose all they treasure, even the most basic gifts of life itself."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "5226bd74366236d0160013c6"
+  }
+  index: 12
+  text: "Not trying. Succeeding."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5226be89366236d0160013ef"
+  }
+  index: 13
+  text: "I find that hard to believe. Trolls like me have no friends. Only allies and enemies, and I don\'t think you have the stomach to do what needs to be done."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5226beaa366236d0160013f2"
+  }
+  index: 14
+  text: "Enough talk! You will witness our triumph, or you will die. "
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Fight Starts"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5226bef2366236d0160013f7"
+  }
+  index: 15
+  text: "Ah. So perhaps you do understand how it feels, then. To be filled with hatred, and filled with the righteous fury of action."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5226bf3c366236d0160013fc"
+  }
+  index: 16
+  text: "Oh, it\'s been no trouble at all. The pleasure has been all mine."
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

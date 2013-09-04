@@ -1,0 +1,126 @@
+idRef {
+  id: "5226c3ba366236d01600143d"
+}
+ui_name: "A2S10a-Shavarus2"
+nodes {
+  idRef {
+    id: "5226c3c4366236d016001443"
+  }
+  index: 0
+  text: "Stop!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5226c3ca366236d016001446"
+  }
+  index: 1
+  text: "Just... stop. I beg of you. Do not kill me."
+  branches {
+    responseText: "I\'m listening."
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Don\'t think you can trick me."
+    nextNodeIndex: 2
+  }
+}
+nodes {
+  idRef {
+    id: "5226c3ed366236d01600144a"
+  }
+  index: 2
+  text: "The summoning is in motion. Even as we speak, the elementals are gathering their power to strike."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5226c416366236d016001450"
+  }
+  index: 3
+  text: "If you kill me now, they will finish their appointed task. Spare me, and I swear to you in the name of all metahumans, I will call them off."
+  branches {
+    responseText: "I don\'t trust you."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "Very well. Leave, and stop them."
+    nextNodeIndex: 5
+  }
+  branches {
+    responseText: "This ends here. Time to die, Shavarus."
+    actions {
+      ops {
+        functionName: "Send Event"
+        args {
+          call_value {
+            functionName: "Get Map Item (Event)"
+            args {
+              string_value: "Shavarus Sentenced to Death"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5226c456366236d01600145a"
+  }
+  index: 4
+  text: "Were our roles reversed, I would feel mistrustful as well. I know not how I can prove my fidelity. Simply ask yourself: is the life of one troll, even one you hate, worth the lives of everyone in this city?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5226c54c366236d01600145e"
+  }
+  index: 5
+  text: "I... I must admit to feeling surprise. You have shown such tenacity to pursue me here, I did not think that you would give up at the last moment."
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5226c57c366236d016001461"
+  }
+  index: 6
+  text: "I am good to my word, and will call off the elementals. Do not mistake this for an act of alliance, however. If we meet again, I swear, I will kill you."
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Shavarus Escapes"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}
