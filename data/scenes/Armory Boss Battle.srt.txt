@@ -1201,6 +1201,17 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Teleport Camera To Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -1287,7 +1298,7 @@ triggers {
             string_value: "WithOrWithout"
           }
           args {
-            int_value: 0
+            int_value: 1
           }
         }
       }
@@ -1490,7 +1501,7 @@ regions {
 regions {
   name: "Shavarus Chat"
   position {
-    x: -107
+    x: -106
     y: -130
     width: 1
     height: 4
