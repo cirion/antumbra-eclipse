@@ -1960,7 +1960,7 @@ characters {
     portrait {
       filename: "pc_trollmale_04a_shaman"
     }
-    portrait_code_override: "s3h0c4b10c4h8"
+    portrait_code_override: "s3h0c4b10c4t8"
     karma: 87
   }
 }
