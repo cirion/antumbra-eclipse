@@ -1,0 +1,242 @@
+idRef {
+  id: "5227e3da366236a01800680e"
+}
+ui_name: "A2S11-Johnson"
+nodes {
+  idRef {
+    id: "5227e409366236a018006815"
+  }
+  index: 0
+  text: "You have the data?"
+  branches {
+    responseText: "Here you go."
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "This job ended up being more than I\342\200\231d bargained for."
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e455366236a018006822"
+  }
+  index: 1
+  text: "Thank you. As efficient as always, I see. Your reputation does you justice."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e442366236a018006819"
+  }
+  index: 2
+  text: "It turned out bigger than any of us had thought."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e44b366236a01800681c"
+  }
+  index: 3
+  text: "I\342\200\231m wearing two hats today, $(l.name). First, let me put on my Mr. Johnson hat and congratulate you on a job well done. We pay for results, not for efforts, and your efforts in pursuit of this result were truly extraordinary. Any corp would be lucky to have your services, and I imagine you\342\200\231ll be seeing a lot more work in the future."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Remove Item from Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Aztechnology Files"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5227e466366236a018006827"
+  }
+  index: 4
+  text: "But I\342\200\231d also like to speak to you as a San Franciscan. While this city is all about money and power, it\342\200\231s made out of people and dreams. Saito and the corps don\342\200\231t understand that, but they would have found out very quickly if you hadn\342\200\231t managed to interrupt Shavarus when you did."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+}
+nodes {
+  idRef {
+    id: "5227e47e366236a01800682a"
+  }
+  index: 5
+  text: "This has always been a city for the free, the wild, the crazy, the ambitious, the creators. That energy still pulses now, even under the heel of Saito\342\200\231s boot. One day, that boot will be removed, and decades\342\200\231 worth of pent-up spirit will pour out. I hope you like creative acclaims, because I think you\342\200\231ll receive many once the citizens realize what you\342\200\231ve done.\n\nSo, from the bottom of my heart, and from the bottom of my employer\342\200\231s bank accounts: thank you. We are in your debt."
+}
+nodes {
+  idRef {
+    id: "5227e4b0366236a01800682c"
+  }
+  index: 6
+  text: "I\342\200\231d like to take you to meet a benefactor who would like to speak with you personally. Are you ready to leave this place?"
+  branches {
+    responseText: "Yes."
+    actions {
+      ops {
+        functionName: "Send Event"
+        args {
+          call_value {
+            functionName: "Get Map Item (Event)"
+            args {
+              string_value: "End Game"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "I need to talk to some other people first."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToJohnson"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToJohnson"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToJohnson"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  nextNodeIndex: 6
+}

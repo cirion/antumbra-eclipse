@@ -5605,9 +5605,9 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -36
+    x: -32
     y: 0
-    z: -35
+    z: -169
   }
   orientation: ORIENTATION_W
   idRef {
@@ -5961,7 +5961,7 @@ characters {
       filename: "EmperorNorton"
     }
     description_bio: "Emperor of California and Protector of UCAS"
-    portrait_code_override: "s5h5c6b1"
+    portrait_code_override: "s5h5c6b1c6"
     karma: 55
   }
 }
@@ -6213,8 +6213,8 @@ characters {
     portrait {
       filename: "pc_trollmale_04a_shaman"
     }
-    portrait_code_override: "s3h0c4b10h8"
-    karma: 79
+    portrait_code_override: "s3h0c4b10c4t8"
+    karma: 72
   }
 }
 characters {
@@ -9546,6 +9546,25 @@ characters {
     }
     portrait_code_override: "s6h2c4"
     karma: 42
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -32
+    y: 0
+    z: -169
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "5227eb87366236b412000db3"
+  }
+  lod: 0
+  character_instance {
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 0
   }
 }
 variables {

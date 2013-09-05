@@ -1,0 +1,180 @@
+idRef {
+  id: "5227e0f1366236a018006735"
+}
+ui_name: "A2S11-Dalmin"
+nodes {
+  idRef {
+    id: "5227e0f8366236a01800673b"
+  }
+  index: 0
+  text: "So, let me see if I\342\200\231ve got this straight. You infiltrated a top-security Aztechnology building, fought in a brutal gang war, discovered the so-called Emperor of California hiding in a cemetery, killed an entire squadron of Tir Tairngire mages, and single-handedly saved the population of an entire city?"
+  branches {
+    responseText: "All in a day\342\200\231s work."
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "Jealous?"
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "Anyone would have done the same."
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e132366236a018006740"
+  }
+  index: 1
+  text: "Well, two days, technically, but I understand what you mean. "
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e13a366236a018006743"
+  }
+  index: 2
+  text: "I\342\200\231m amazed that you survived all of that. Hey, if you ever need a shaman, don\342\200\231t hesitate to give me a buzz. I like runners who know how to stay alive. It greatly increases my own chances of living, and I\342\200\231ve discovered that I quite enjoy this life."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e189366236a018006750"
+  }
+  index: 3
+  text: "Any last words?"
+  branches {
+    responseText: "That sounds morbid, Dalmin."
+    nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "5227ed4f366236b412000e4a"
+    }
+  }
+  branches {
+    responseText: "Are you going somewhere?"
+    nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "5227ed52366236b412000e4b"
+    }
+  }
+  branches {
+    responseText: "It\'s been a pleasure, Dalmin."
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "Well, so long."
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e1a0366236a018006756"
+  }
+  index: 4
+  text: "You\'re right, it does. Then again, we\'re in a morbid line of work, are we not? I hope you live to a ripe old age, $(l.name), and I suggest you develop a healthy paranoia if you want to reach it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+}
+nodes {
+  idRef {
+    id: "5227e1b4366236a018006762"
+  }
+  index: 5
+  text: "Indeed I am. Back to Seattle I go! This has been quite an adventure, and the pay is nothing to sneeze at, but oddly enough I find myself missing the rain.\n\nAnd, I never would have thought I\'d be saying this, but after spending so much time under the boot of the Imperial Marines, I\'m finding our old-fashioned Lone Star police positively friendly."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e1de366236a018006769"
+  }
+  index: 6
+  text: "I assure you, the feeling is entirely mutual."
+  branches {
+    responseText: ""
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e1e5366236a01800676c"
+  }
+  index: 7
+  text: "{{GM}}Dalmin embraces you in a brief hug.{{/GM}}\n\nTake care of yourself, $(l.name). I have a feeling that life is only going to grow more interesting for you."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "52256a5f366236d419003ade"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5227e14f366236a018006747"
+  }
+  index: 8
+  text: "Exhausted, more like. Just the thought of all that activity makes my head spin."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e15f366236a01800674b"
+  }
+  index: 9
+  text: "False. I know for a fact that I wouldn\342\200\231t. At least, not for the paltry sum that you\342\200\231re earning."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

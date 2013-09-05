@@ -1,0 +1,395 @@
+idRef {
+  id: "5227dbe6366236a0180066d7"
+}
+ui_name: "A2S11-Kali"
+nodes {
+  idRef {
+    id: "5227dc0d366236a0180066dd"
+  }
+  index: 0
+  text: "Hey, look! It\342\200\231s our hero $(l.name)!"
+  branches {
+    responseText: "Looks like I saved the day again."
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Dependent Story Variable (bool)"
+            args {
+              call_value {
+                functionName: "Get Previous Story Variable (bool)"
+                args {
+                  string_value: "51f7429764343188990041a8"
+                }
+                args {
+                  string_value: "A1_Bool_SidedWithKali"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "bool"
+                }
+                args {
+                  int_value: 0
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 1
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "I didn\342\200\231t expect you to sound so upbeat."
+    nextNodeIndex: 12
+    hideIfUnavailable: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227dc3d366236a0180066e1"
+  }
+  index: 1
+  text: "And made me even richer than before."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227dc45366236a0180066e4"
+  }
+  index: 2
+  text: "I understand that I have you to thank for Eclipse\342\200\231s newfound independence."
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_Finale_ShavarusDies"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 3
+  }
+  branches {
+    responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_Finale_ShavarusDies"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227dc9d366236a0180066ee"
+  }
+  index: 3
+  text: "Saito is incensed by Shavarus\342\200\231s escape. He\342\200\231s marshaled every marine under his command and ordered them to drop everything until they apprehend him. Saito wants to capture Shavarus for a public execution, to demonstrate the price of rebellion."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227dd6d366236a01800671a"
+  }
+  index: 4
+  text: "With all of that activity, he is far too busy to worry about my little operation here. That means a freer hand for me to expand Eclipse, and, incidentally, my benefactor\342\200\231s operations."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "52256a5f366236d419003add"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5227eaea366236b412000d7c"
+  }
+  index: 5
+  text: "So! What can I do for the $(l.man) of the hour?"
+  branches {
+    responseText: "How are the corps reacting?"
+    nextNodeIndex: 6
+    onlyOnce: true
+    idRef {
+      id: "5227ed08366236b412000e02"
+    }
+  }
+  branches {
+    responseText: "How is my $(story.A2_RecordingGenre) track doing?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_FinishedDemo"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 7
+    onlyOnce: true
+    idRef {
+      id: "5227ed0a366236b412000e03"
+    }
+  }
+  branches {
+    responseText: "How about a song?"
+    nextNodeIndex: 8
+  }
+  branches {
+    responseText: "Cash would be nice."
+    nextNodeIndex: 9
+  }
+  branches {
+    responseText: "Just leave me out of your plans from now on."
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227eaff366236b412000d8a"
+  }
+  index: 6
+  text: "They\342\200\231re trying to hide their embarrassment. Combined, Mitsuhama, Renraku, Fuchi and Shiawase control an absolute majority of the planet\342\200\231s wealth and power. Despite that, their crown jewel of a city was nearly destroyed from underneath them.\n\nAs you might expect, they\'re busily trying to shift the blame onto one another or to Saito. There will probably be some major turnover on the corporate boards before this all blows over. And, of course, turnover always creates opportunities for the ambitious."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227eb50366236b412000d8e"
+  }
+  index: 7
+  text: "It was doing well before. Now that you have a front-page story to attach to it\342\200\246 well, the sky\342\200\231s the limit. You\342\200\231ll need to hire a manager just to handle all the endorsement deals. \n\nStick with me, $(l.name), and you might become more famous as a musician than a shadowrunner. That is, if that\342\200\231s the life you want."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227ec80366236b412000dd8"
+  }
+  index: 8
+  text: "You got it! It feels good to be back on stage again. I\342\200\231m looking forward to sharing it with a friend."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Kali Sings"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5227ec9f366236b412000dda"
+  }
+  index: 9
+  text: "Isn\342\200\231t it always? I\342\200\231ll get my assistant to cut you a check. You\342\200\231ve earned it, and more."
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227ecad366236b412000ddc"
+  }
+  index: 10
+  text: "I\342\200\231ll try, but I must warn you, I have very big plans. Few people can escape them entirely."
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227dca0366236a0180066f0"
+  }
+  index: 11
+  text: "Saito has scrambled every marine under his command to deal with the fallout from Shavarus\342\200\231s sabotage. They were able to save Crystal Springs Reservoir, but the rest of the system lies in shambles. It will take years to rebuild, and work from every man who Saito can spare."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227dc5e366236a0180066e6"
+  }
+  index: 12
+  text: "You may have done some awful stuff in the past, but you\342\200\231re a runner. It would be foolish of me to stay mad at the tool, instead of at the hand that wielded it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

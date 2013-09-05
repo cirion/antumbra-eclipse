@@ -1,0 +1,135 @@
+idRef {
+  id: "5227e222366236a018006791"
+}
+ui_name: "A2S11-Orion"
+nodes {
+  idRef {
+    id: "5227e230366236a018006797"
+  }
+  index: 0
+  text: "{{GM}}Orion extends his hand.{{/GM}}\n\nAnd so it is done. May I congratulate you on a successful run?"
+  branches {
+    responseText: "{{GM}}Shake his hand{{/GM}}"
+    nextNodeIndex: 1
+  }
+  branches {
+    responseText: "{{GM}}Leave him hanging{{/GM}}"
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e26e366236a0180067a2"
+  }
+  index: 1
+  text: "{{GM}}Unsurprisingly, Orion\'s grasp is firm and unhesitating.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e253366236a01800679b"
+  }
+  index: 2
+  text: "{{GM}}Unperturbed, he retracts his proffered palm.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e262366236a01800679e"
+  }
+  index: 3
+  text: "And so the time has come to part ways."
+  branches {
+    responseText: "Where are you going?"
+    nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "5227ea1f366236b412000d09"
+    }
+  }
+  branches {
+    responseText: "What will you do next?"
+    nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "5227ea32366236b412000d38"
+    }
+  }
+  branches {
+    responseText: "Goodbye, Orion."
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e2ea366236a0180067b4"
+  }
+  index: 4
+  text: "My monograph is complete, backed by primary sources from the recent conflict here in San Francisco. I plan to embark on a grand tour of the Bay Area metahuman communities: Orkland, Halferville, any place where my brothers and sisters are gathering to escape the oppression of their human overseers."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e2f4366236a0180067b8"
+  }
+  index: 5
+  text: "Witnessing Shavarus\'s quest has proven most instructive. One cannot simply embark on such an ambitious venture with nothing but passion and powerful allies. No: it will take an entire movement, with not just the fighters and the mages, but fathers and daughters, shopkeepers and scholars, all rising up in unison to overthrow their oppressors."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e2b8366236a0180067aa"
+  }
+  index: 6
+  text: "Even so. Knowing you has proven most instructive. I wish you good fortune in your future ventures."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "52256a5f366236d419003adc"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

@@ -1,0 +1,8 @@
+id: "Aztechnology Files"
+type: ItemType_QuestItem
+uirep {
+  name: "Aztechnology Files"
+  description: "These were the files stolen by Shavarus from the Aztechnology Pyramid. They contain a wealth of data in addition to their comprehensive description of the Hetch Hetchy water system."
+}
+credentials: 0
+sorting_group: "Quest"

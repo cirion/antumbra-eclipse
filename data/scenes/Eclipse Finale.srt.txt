@@ -61,12 +61,40 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Game Over"
+  events {
+    ops {
+      functionName: "Get Map Item (Event)"
+      args {
+        string_value: "End Game"
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "End Story With Epilogue"
+      args {
+        string_value: ""
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5227ec63366236b412000dd6"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -44
+    x: -50
     y: 0
-    z: 76
+    z: 73
   }
   orientation: ORIENTATION_N
   idRef {
@@ -92,6 +120,14 @@ characters {
   displayName: "Norton"
   idRef {
     id: "52256a40366236d419003ad8"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "5227e579366236a01800690a"
+      turnToFace: true
+    }
   }
   lod: 0
   character_instance {
@@ -186,18 +222,18 @@ characters {
       filename: "EmperorNorton"
     }
     description_bio: "Emperor of California and Protector of UCAS"
-    portrait_code_override: "s5h5c6b1"
+    portrait_code_override: "s5h5c6b1c6"
     karma: 55
   }
 }
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -52
+    x: -71
     y: 0
-    z: 73
+    z: 78
   }
-  orientation: ORIENTATION_W
+  orientation: ORIENTATION_E
   displayName: "Carver Wells"
   idRef {
     id: "52256a5f366236d419003ad9"
@@ -246,11 +282,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -56
+    x: -52
     y: 0
-    z: 70
+    z: 73
   }
-  orientation: ORIENTATION_N
+  orientation: ORIENTATION_S
   displayName: "Ike Dunner"
   idRef {
     id: "52256a5f366236d419003ada"
@@ -259,7 +295,7 @@ characters {
     isEnabled: true
     interactionRadius: 1
     conversationPoint {
-      conversationID: "522515573662369c1a001b1a"
+      conversationID: "5227e3da366236a01800680e"
       turnToFace: true
     }
   }
@@ -311,11 +347,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -52
+    x: -60
     y: 0
-    z: 77
+    z: 69
   }
-  orientation: ORIENTATION_N
+  orientation: ORIENTATION_E
   displayName: "Hailey"
   idRef {
     id: "52256a5f366236d419003adb"
@@ -324,7 +360,7 @@ characters {
     isEnabled: true
     interactionRadius: 1
     conversationPoint {
-      conversationID: "522529093662369c1a001d4b"
+      conversationID: "5227e324366236a0180067d2"
       turnToFace: true
     }
   }
@@ -443,9 +479,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -67
+    x: -58
     y: 0
-    z: 93
+    z: 77
   }
   orientation: ORIENTATION_W
   displayName: "Orion"
@@ -456,7 +492,7 @@ characters {
     isEnabled: true
     interactionRadius: 1
     conversationPoint {
-      conversationID: "522524483662369c1a001cbe"
+      conversationID: "5227e222366236a018006791"
       turnToFace: true
     }
   }
@@ -535,9 +571,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -72
+    x: -61
     y: 0
-    z: 85
+    z: 74
   }
   orientation: ORIENTATION_S
   displayName: "Kali"
@@ -548,7 +584,7 @@ characters {
     isEnabled: true
     interactionRadius: 1
     conversationPoint {
-      conversationID: "522520473662369c1a001c5b"
+      conversationID: "5227dbe6366236a0180066d7"
       turnToFace: true
     }
   }
@@ -597,9 +633,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -78
+    x: -63
     y: 0
-    z: 80
+    z: 73
   }
   orientation: ORIENTATION_E
   displayName: "Dalmin"
@@ -610,7 +646,7 @@ characters {
     isEnabled: true
     interactionRadius: 1
     conversationPoint {
-      conversationID: "52252cbe3662369c1a001db5"
+      conversationID: "5227e0f1366236a018006735"
       turnToFace: true
     }
   }
@@ -689,6 +725,16 @@ characters {
     karma: 80
   }
 }
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "TalkedToJohnson"
+    typeName: "bool"
+  }
+}
+mapEvents: "End Game"
+mapEvents: "Kali Sings"
 worldMapLocation {
   filename: ""
   location {
@@ -700,7 +746,7 @@ mapName: "Eclipse 1"
 parentStory: ""
 scene_title: "Eclipse"
 scene_subtitle: ""
-scene_synopsis: "This has been a busy night for Saito\342\200\231s security forces. Numerous uprisings throughout the city have stretched the marines thin, forcing the authorities to call in corporate security and even some freelance shadowrunners to protect vital interests.\n\nFirefights erupt numerous times as you escape back to Eclipse, but you manage to avoid any serious harm. The paydata tucked securely away, you are ready for this job to finally end\342\200\246."
+scene_synopsis: "You float down Mission Creek for several blocks before locating a convenient manhole and quietly emerging onto the chaotic surface streets.\n\nThis has been a busy night for Saito\342\200\231s security forces. Numerous uprisings throughout the city have stretched the marines thin, forcing the authorities to call in corporate security and even some freelance shadowrunners to protect vital interests.\n\nFirefights erupt numerous times as you make your way back to Eclipse, but you manage to avoid any serious harm. The paydata tucked securely away, you are ready for this job to finally end\342\200\246."
 scene_image: ""
 scene_continue_button_skip: false
 scene_restore_runner_health: true

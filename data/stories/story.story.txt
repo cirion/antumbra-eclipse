@@ -318,6 +318,28 @@ variables {
     }
   }
 }
+variables {
+  name: "A2_Finale_ShavarusLives"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_Finale_ShavarusLives"
+    }
+  }
+}
+variables {
+  name: "A2_Finale_ShavarusDies"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_Finale_ShavarusDies"
+    }
+  }
+}
 description: "Megacorps battle for supremacy in San Francisco, but broader tensions simmering in the city threaten to boil over into a full-out war."
 startScene: "The Mission 1"
 allowCharacterImport: true

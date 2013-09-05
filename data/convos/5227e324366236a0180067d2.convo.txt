@@ -1,0 +1,165 @@
+idRef {
+  id: "5227e324366236a0180067d2"
+}
+ui_name: "A2S11-Hailey"
+nodes {
+  idRef {
+    id: "5227e32a366236a0180067d8"
+  }
+  index: 0
+  text: "{{GM}}Hailey surprises you with a quick peck on your cheek.{{/GM}}\n\nYou did it! For a few scary hours, it seemed like all of San Francisco was going to turn on itself. Now, at least we have some time to try and fix our problems."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e336366236a0180067db"
+  }
+  index: 1
+  text: "I\342\200\231m proud of you!"
+  branches {
+    responseText: "What will you do now?"
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "5227e39b366236a0180067f6"
+    }
+  }
+  branches {
+    responseText: "Any more plans for decking?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "5227e398366236a0180067f5"
+    }
+  }
+  branches {
+    responseText: "Have you heard from Tarne?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_FoundTarne"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "5227e396366236a0180067f4"
+    }
+  }
+  branches {
+    responseText: "Goodbye, Hailey."
+    nextNodeIndex: 5
+  }
+}
+nodes {
+  idRef {
+    id: "5227e344366236a0180067e1"
+  }
+  index: 2
+  text: "I\342\200\231m going to visit my family. I haven\342\200\231t seen them in a while, and after all that\342\200\231s happened, I think we have a lot to catch up on. Mom and Dad have never really accepted the emergence of metahumans, and I\342\200\231ve realized that if we want to make real changes in the city, we\342\200\231ll need to win over the quiet people like them, not just oppose the loud bullies like Saito."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e367366236a0180067ed"
+  }
+  index: 3
+  text: "It\342\200\231s funny you would ask\342\200\246 I just found a node for the Sacramento government. Most matrix security focuses on keeping data from leaving, so I\342\200\231m going to shove as much data in there as I can. More specifically, I want to upload every detail I can about how Saito and Shavarus came close to destroying San Francisco. With any luck, that will shame the Governor into revoking his invitation, and we can properly rejoin CalFree again."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e38a366236a0180067f1"
+  }
+  index: 4
+  text: "Yes! Thanks again for your help with that. We had a long chat and\342\200\246 well, I\342\200\231m not going to travel to Tir Tairngire, you know? But we\342\200\231re staying friends. Everything\342\200\231s fine."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e3a3366236a0180067f8"
+  }
+  index: 5
+  text: "Oh, don\'t worry, $(l.name). I\'m not going too far. This place is my home, and I intend to stay and make it an even better place."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "52256a5f366236d419003adb"
+          }
+        }
+      }
+    }
+  }
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

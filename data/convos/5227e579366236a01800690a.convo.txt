@@ -1,0 +1,163 @@
+idRef {
+  id: "5227e579366236a01800690a"
+}
+ui_name: "A2S11-Norton"
+nodes {
+  idRef {
+    id: "5227e592366236a018006910"
+  }
+  index: 0
+  text: "Ah, Ambassador $(l.name)! We welcome you back to our court in triumph!\n\nThese surroundings please us. Much more enjoyable than the dour conditions under which you first encountered us. Furthermore, we have spread word of Shavarus\342\200\231s treachery, and so our loyal subjects have come to repay us homage."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e598366236a018006913"
+  }
+  index: 1
+  text: "You have earned yourself a boon, good $(l.race). What would you have of us?"
+  branches {
+    responseText: "What does the Emperor plan next?"
+    nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "5227e995366236b412000c48"
+    }
+  }
+  branches {
+    responseText: "What will you do about Saito?"
+    nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "5227e998366236b412000c49"
+    }
+  }
+  branches {
+    responseText: "I wish a reward of money, your majesty."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "I wish a title, your majesty."
+    nextNodeIndex: 6
+  }
+  branches {
+    responseText: "I don\342\200\231t want anything, you crazy old man."
+    nextNodeIndex: 8
+  }
+}
+nodes {
+  idRef {
+    id: "5227e5b1366236a01800691c"
+  }
+  index: 2
+  text: "Why, to consolidate our empire, of course! We have already dispatched twenty imperial decrees since returning to San Francisco, and have been pleased to note that the local merchants and functionaries have immediately honored them.\n\nMost of all, we intend to improve the lives of all our subjects. The naked oppression shown to metahumans is simply disgraceful, and we shall remedy their condition with all tools at our disposal. Fortunately, more and more loyal subjects stand ready to do our bidding every day."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e5bf366236a018006920"
+  }
+  index: 3
+  text: "Saito himself shall be banished. As for his marines, we intend to display our gracious nature. Should any individual renounce their allegiance to Saito and pledge him or herself to the betterment of California, we shall welcome them as one of our own. In time, we shall integrate them with the rest of our people, building a stronger empire for all."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e5d6366236a018006924"
+  }
+  index: 4
+  text: "Fear not! As a sovereign of this state, I can produce currency in any denomination you desire.\n\n{{GM}}Emperor Norton grabs a blank sheet of paper and quickly scribbles a likeness of his face, along with the mark TEN THOUSAND IMPERIAL DOLLARS.{{/GM}}\n\nThere you go, my good $(l.man)! Spend this any place where my scrip is honored."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e5f1366236a018006929"
+  }
+  index: 5
+  text: "Fare thee well!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "52256a40366236d419003ad8"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5227e66a366236a01800692b"
+  }
+  index: 6
+  text: "You well deserve it! Very well. You may kneel."
+  branches {
+    responseText: "{{GM}}You kneel.{{/GM}}"
+    nextNodeIndex: 7
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e679366236a01800692e"
+  }
+  index: 7
+  text: "By the power invested in us by\342\200\246 ourself, we hereby grant $(l.name) the title Lord of the Mission, with all rights and responsibilities thereunto. From this day forth you shall hold responsibility for her people, and shall share in their triumphs. Now rise, lord $(l.name)! Your subjects await!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5227e68b366236a018006930"
+  }
+  index: 8
+  text: "You must be truly blessed, to already have everything you desire. Very well! We give you only our heartiest congratulations, and our best wishes for a fruitful future."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}
