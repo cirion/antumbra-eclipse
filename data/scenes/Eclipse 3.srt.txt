@@ -2046,8 +2046,6 @@ team_affiliations {
 scene_dimensions {
   dimension_name: "Default"
 }
-character_roster {
-}
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
   prereq_description: ""
@@ -2060,6 +2058,6 @@ hiring_maximum_karma: 0
 roster_overrides {
 }
 use_hiring_cost_warning: true
-hiring_average_cost: 99999
+hiring_average_cost: 900
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false

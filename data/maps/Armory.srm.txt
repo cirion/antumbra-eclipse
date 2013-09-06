@@ -18890,6 +18890,19 @@ props {
     z: -20
   }
   orientation: ORIENTATION_S
+  idRef {
+    id: "5228d166643431a1029ef861"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 0
+      inspectText: "BREAK GLASS IN EVENT OF EMERGENCY"
+      disableAfterInteracting: false
+    }
+  }
   lod: 0
 }
 props {
@@ -21256,5 +21269,34 @@ props {
       destroyOnPickup: true
     }
   }
+  lod: 0
+}
+props {
+  name: "diveBar_wallDecor_PlainnewsTicker01"
+  gridPoint {
+    x: -12
+    y: 1
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "vfx_fx_newsTicker"
+  gridPoint {
+    x: -12
+    y: 1
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "NewsTicker"
+  }
+  properties {
+    property_id: "NewsTickerText"
+    string_value: "THE WAY IS PURITY. MIXTURE LEADS TO DEATH."
+  }
+  displayName: "Clue Ticker"
   lod: 0
 }
