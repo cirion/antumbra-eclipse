@@ -25578,3 +25578,617 @@ props {
   orientation: ORIENTATION_S
   lod: 0
 }
+props {
+  name: "barrens_street_crushedCar01"
+  gridPoint {
+    x: 49
+    y: 0
+    z: -66
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_street_bikeCart01"
+  gridPoint {
+    x: 51
+    y: 0
+    z: -57
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_appliance_simsenseVendor"
+  gridPoint {
+    x: 20
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_appliance_simsenseVendor"
+  gridPoint {
+    x: 25
+    y: 0
+    z: -29
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52296db8366236e41e004933"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_appliance_simsenseVendor"
+  gridPoint {
+    x: 25
+    y: 0
+    z: -45
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52296dbd366236e41e004934"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_appliance_popMachine"
+  gridPoint {
+    x: 53
+    y: 0
+    z: -42
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_appliance_popMachine"
+  gridPoint {
+    x: 111
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52296dcf366236e41e004935"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_appliance_noodleMachine"
+  gridPoint {
+    x: 50
+    y: 0
+    z: -42
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_appliance_noodleMachine"
+  gridPoint {
+    x: 49
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "52296de3366236e41e004936"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_buildingOrnament_ladder"
+  gridPoint {
+    x: 79
+    y: 10
+    z: -54
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_buildingOrnament_pipe"
+  gridPoint {
+    x: 50
+    y: 14
+    z: -51
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_buildingOrnament_power"
+  gridPoint {
+    x: 54
+    y: 0
+    z: -53
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_buildingOrnament_power"
+  gridPoint {
+    x: 43
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "52296e4a366236e41e004937"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_buildingOrnament_roofShack"
+  gridPoint {
+    x: 107
+    y: 18
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_buildingOrnament_satDish01"
+  gridPoint {
+    x: 50
+    y: 14
+    z: -21
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_clutter_woodPalette01"
+  gridPoint {
+    x: 33
+    y: 0
+    z: -47
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_clutter_woodPalette02"
+  gridPoint {
+    x: 112
+    y: 0
+    z: -30
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_clutter_woodPalette03"
+  gridPoint {
+    x: 112
+    y: 0
+    z: -32
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_clutter_woodPalette04"
+  gridPoint {
+    x: 111
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_decor_totem02"
+  gridPoint {
+    x: 43
+    y: 0
+    z: -42
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_market_foodCart"
+  gridPoint {
+    x: 65
+    y: 0
+    z: -15
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_market_foodCartBike"
+  gridPoint {
+    x: 49
+    y: 0
+    z: -15
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_market_foodCartOnly"
+  gridPoint {
+    x: 57
+    y: 0
+    z: -55
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_market_noodleKing"
+  gridPoint {
+    x: 96
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_market_stall02"
+  gridPoint {
+    x: 106
+    y: 0
+    z: -59
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_bench02"
+  gridPoint {
+    x: 86
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_bench02"
+  gridPoint {
+    x: 71
+    y: 0
+    z: -17
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "52296f93366236e41e004938"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_bench01"
+  gridPoint {
+    x: 109
+    y: 0
+    z: -54
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_boxes01"
+  gridPoint {
+    x: 88
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_busMart01"
+  gridPoint {
+    x: 67
+    y: 0
+    z: -84
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_street_busStop01"
+  gridPoint {
+    x: 115
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_busStop01"
+  gridPoint {
+    x: 33
+    y: 0
+    z: -17
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "52296fe3366236e41e004939"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_candyMachines"
+  gridPoint {
+    x: 54
+    y: 0
+    z: -47
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_dumpster02"
+  gridPoint {
+    x: 40
+    y: 0
+    z: -42
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_street_fireHydrant"
+  gridPoint {
+    x: 24
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_fireHydrant"
+  gridPoint {
+    x: 74
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52297051366236e41e00493a"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_fireHydrant"
+  gridPoint {
+    x: 47
+    y: 0
+    z: -63
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52297066366236e41e00493b"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_fireHydrant"
+  gridPoint {
+    x: 81
+    y: 0
+    z: -63
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5229706f366236e41e00493c"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_fireHydrantSiphon"
+  gridPoint {
+    x: 46
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_street_junkPile02"
+  gridPoint {
+    x: 51
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_lightpole01"
+  gridPoint {
+    x: 54
+    y: 0
+    z: -34
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_lightpoleTop01"
+  gridPoint {
+    x: 54
+    y: 6
+    z: -34
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: 6
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: 42
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52297107366236e41e00493f"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: 66
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52297112366236e41e004940"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: 105
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52297118366236e41e004941"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: 51
+    y: 0
+    z: -63
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5229712b366236e41e004942"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_signDoNotEnter"
+  gridPoint {
+    x: 56
+    y: 0
+    z: -58
+  }
+  orientation: ORIENTATION_W
+  lod: 0
+}
+props {
+  name: "barrens_street_signDoNotEnter"
+  gridPoint {
+    x: -21
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "52297169366236e41e004943"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_trafficLight"
+  gridPoint {
+    x: 54
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_N
+  lod: 0
+}
+props {
+  name: "barrens_street_trafficLight"
+  gridPoint {
+    x: 54
+    y: 0
+    z: -61
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "522971b1366236e41e004944"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_trafficLight"
+  gridPoint {
+    x: 114
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522971b9366236e41e004945"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_trafficLight"
+  gridPoint {
+    x: 114
+    y: 0
+    z: -61
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522971cc366236e41e004946"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_bikeCart02"
+  gridPoint {
+    x: 21
+    y: 0
+    z: -14
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_market_stall03"
+  gridPoint {
+    x: 91
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_titusMotorcycle01"
+  gridPoint {
+    x: 101
+    y: 0
+    z: -46
+  }
+  orientation: ORIENTATION_N
+  lod: 0
+}
