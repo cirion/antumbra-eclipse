@@ -5481,7 +5481,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_EntryToBridge_ESP"
@@ -5697,7 +5697,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Initial Heat Teleport Baddies"
@@ -6461,7 +6461,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_EntryToLocker_ESP"
@@ -6677,7 +6677,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_EntryToCamera_PC"
@@ -6904,7 +6904,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_EntryToCamera_ESP"
@@ -7120,7 +7120,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_EntryToDoor_PC"
@@ -7347,7 +7347,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_EntryToDoor_ESP"
@@ -7563,7 +7563,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_BridgeToEntry_PC"
@@ -7790,7 +7790,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_BridgeToEntry_ESP"
@@ -8006,7 +8006,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_CameraToEntry_PC"
@@ -8233,7 +8233,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_CameraToEntry_ESP"
@@ -8449,7 +8449,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_DoorToEntry_PC"
@@ -8676,7 +8676,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_DoorToEntry_ESP"
@@ -8892,7 +8892,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_LockerToEntry_PC"
@@ -9119,7 +9119,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_LockerToEntry_ESP"
@@ -9335,7 +9335,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "SurpriseBridge"
