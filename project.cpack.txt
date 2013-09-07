@@ -4,7 +4,7 @@ project_version: "0.5.0"
 author_name: "Cirion"
 synopsis: "Antumbra 2 - Eclipse"
 has_story: true
-read_only: false
+read_only: true
 preview_image: "preview"
 content_pack_dependencies {
   package_id: "518d7671643431b03f0041a8"

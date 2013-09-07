@@ -23898,10 +23898,85 @@ props {
     z: -180
   }
   orientation: ORIENTATION_S
+  displayName: "Summon Strong Abomination"
   idRef {
     id: "521a8f423662367c1d00795c"
   }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    summonPoint {
+      hasCharacter: true
+      summon_icon: ""
+      max_summon_force: 3
+    }
+  }
   lod: 0
+  character_instance {
+    prefab_name: "Spirit/SpiritAbomination"
+    character_sheet_id: "Spirit Abomination"
+    equipment_sheet_id: "Spirit Abomination F6 Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Player"
+      attitude: AttitudeAggressive
+    }
+    portrait {
+      filename: "Generic_Spirit_Abomination"
+    }
+    karma: 261
+  }
 }
 props {
   name: "cemetery_ground_grave01"
@@ -23945,15 +24020,58 @@ props {
 props {
   name: "cemetery_ground_grave02"
   gridPoint {
-    x: -53
+    x: -40
     y: 0
-    z: -152
+    z: -101
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_S
+  displayName: "Summon Weak Abomination"
   idRef {
     id: "521a8f503662367c1d007960"
   }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 7
+    summonPoint {
+      hasCharacter: true
+      summon_icon: ""
+      max_summon_force: 2
+    }
+  }
   lod: 0
+  character_instance {
+    prefab_name: "Spirit/SpiritAbomination"
+    character_sheet_id: "BaseCivilian"
+    equipment_sheet_id: "Spirit Abomination F6 Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      skills {
+      }
+      specializations {
+      }
+    }
+    portrait {
+      filename: "generic_spirit_abomination"
+    }
+    karma: 6
+  }
 }
 props {
   name: "cemetery_ground_grave03"
@@ -24122,6 +24240,19 @@ props {
       scene_name: "Embarcadero 2"
       confirmation_text: ""
     }
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_ground_grave02"
+  gridPoint {
+    x: -49
+    y: 0
+    z: -154
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522a9fd736623668120035c3"
   }
   lod: 0
 }

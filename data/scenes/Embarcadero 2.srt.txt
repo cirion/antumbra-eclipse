@@ -4900,7 +4900,7 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -42
+    x: -41
     y: 0
     z: 67
   }

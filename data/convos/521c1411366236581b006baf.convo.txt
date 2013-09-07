@@ -48,6 +48,14 @@ nodes {
     responseText: ""
     nextNodeIndex: 2
   }
+  actions {
+    ops {
+      functionName: "Add Nuyen"
+      args {
+        int_value: 1000
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -132,7 +140,7 @@ nodes {
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
-      id: "521c23ef366236581b006d96"
+      id: "522aadb03662366812003634"
     }
   }
   branches {

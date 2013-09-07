@@ -20874,9 +20874,9 @@ props {
 props {
   name: "vfx_fx_water4x4"
   gridPoint {
-    x: -60
+    x: -56
     y: -2
-    z: 22
+    z: 19
   }
   orientation: ORIENTATION_S
   properties {
@@ -20885,23 +20885,6 @@ props {
   }
   idRef {
     id: "52181de33662364c0f006c80"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_water4x4"
-  gridPoint {
-    x: -56
-    y: -2
-    z: 18
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "WaterTile4x4Environment"
-  }
-  idRef {
-    id: "52181de33662364c0f006c81"
   }
   lod: 0
 }
@@ -77961,12 +77944,90 @@ props {
 props {
   name: "docks_appliance_fuelContainer02"
   gridPoint {
-    x: -93
+    x: -59
     y: 0
-    z: 16
+    z: -15
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522aa21f36623668120035d7"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 7
+    summonPoint {
+      hasCharacter: true
+      summon_icon: ""
+      max_summon_force: 3
+    }
+  }
   lod: 0
+  character_instance {
+    prefab_name: "Spirit/SpiritWater"
+    character_sheet_id: "Spirit Water"
+    equipment_sheet_id: "Spirit Water F6 Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Player"
+      attitude: AttitudeAggressive
+    }
+    char_name: "Water Elemental"
+    portrait {
+      filename: "Generic_Spirit_Water"
+    }
+    karma: 268
+  }
 }
 props {
   name: "docks_appliance_powerSupply"
@@ -78372,6 +78433,71 @@ props {
     id: "5224e103366236a4090082a1"
   }
   lod: 0
+  character_instance {
+    character_sheet_id: "Spirit Water"
+    equipment_sheet_id: "Spirit Water F6 Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Player"
+      attitude: AttitudeAggressive
+    }
+    char_name: "Water Elemental"
+    portrait {
+      filename: "Generic_Spirit_Water"
+    }
+    karma: 268
+  }
 }
 props {
   name: "docks_clutter_anchorChain"
@@ -78482,4 +78608,363 @@ props {
   }
   orientation: ORIENTATION_E
   lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 64
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 74
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522aa01d36623668120035c4"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 45
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522aa01e36623668120035c5"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 35
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522aa02036623668120035c6"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 26
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522aa02336623668120035c7"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 15
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522aa02636623668120035c8"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522aa02a36623668120035c9"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: -14
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522aa03636623668120035ca"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: -1
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522aa04136623668120035cb"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: 13
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522aa04536623668120035cc"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: 28
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522aa04a36623668120035cd"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_parkingMeter"
+  gridPoint {
+    x: 50
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522aa04c36623668120035ce"
+  }
+  lod: 0
+}
+props {
+  name: "pikePlace_lighting_lampPost02"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 59
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "pikePlace_lighting_lampPost02"
+  gridPoint {
+    x: -41
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522aa06f36623668120035cf"
+  }
+  lod: 0
+}
+props {
+  name: "pikePlace_lighting_lampPost02"
+  gridPoint {
+    x: -21
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522aa07836623668120035d0"
+  }
+  lod: 0
+}
+props {
+  name: "pikePlace_lighting_lampPost02"
+  gridPoint {
+    x: 32
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522aa07c36623668120035d1"
+  }
+  lod: 0
+}
+props {
+  name: "pikePlace_lighting_lampPost02"
+  gridPoint {
+    x: 80
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522aa08236623668120035d2"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_motorcycle01"
+  gridPoint {
+    x: -44
+    y: 0
+    z: 47
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_headTurnerMotorcycle01"
+  gridPoint {
+    x: -39
+    y: 0
+    z: 14
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_brunerMotorcycle02"
+  gridPoint {
+    x: -16
+    y: 0
+    z: -7
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_wingoMotorcycle01"
+  gridPoint {
+    x: 25
+    y: 0
+    z: -7
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "vfx_fx_water4x4"
+  gridPoint {
+    x: -60
+    y: -2
+    z: 22
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "WaterTile4x4Environment"
+  }
+  idRef {
+    id: "522aa1e936623668120035d5"
+  }
+  lod: 0
+}
+props {
+  name: "docks_decor_displayAnchor"
+  gridPoint {
+    x: 16
+    y: 0
+    z: -89
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522aa38d36623668120035e0"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 7
+    summonPoint {
+      hasCharacter: true
+      summon_icon: ""
+      max_summon_force: 3
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Spirit/SpiritWater"
+    character_sheet_id: "Spirit Water"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Player"
+      attitude: AttitudeAggressive
+    }
+    char_name: "Water Elemental"
+    portrait {
+      filename: "Generic_Spirit_Water"
+    }
+    karma: 268
+  }
 }

@@ -397,7 +397,7 @@ triggers {
         }
       }
       args {
-        string_value: "We\'re sick of you stirring up trouble! Leave our neighborhood alone!"
+        string_value: "For Shavarus! For metahumanity!"
       }
       args {
         float_value: 0
@@ -3909,6 +3909,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

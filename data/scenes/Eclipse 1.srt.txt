@@ -477,17 +477,6 @@ triggers {
       functionName: "Clear Camera Points of Interest"
     }
     ops {
-      functionName: "Teleport Camera To Actor"
-      args {
-        call_value {
-          functionName: "Get Map Item (Player)"
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Fade Camera In"
       args {
         float_value: 1
@@ -563,6 +552,17 @@ triggers {
           args {
             string_value: "TeleportMethod"
           }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Teleport Camera To Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
           args {
             int_value: 0
           }
@@ -3125,6 +3125,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

@@ -341,7 +341,7 @@ variables {
   }
 }
 description: "Megacorps battle for supremacy in San Francisco, but broader tensions simmering in the city threaten to boil over into a full-out war."
-startScene: "The Mission 1"
+startScene: "Embarcadero Arrival"
 allowCharacterImport: true
 allowImportedEquipment: true
 allowCharacterGen: true

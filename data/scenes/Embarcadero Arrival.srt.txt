@@ -64,37 +64,12 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Evaluate If Actor Has Item"
+          functionName: "Get Preset Value (int)"
           args {
-            call_value {
-              functionName: "Specific Actor"
-              args {
-                call_value {
-                  functionName: "Triggering Actor"
-                }
-              }
-              args {
-              }
-            }
+            string_value: "bool"
           }
           args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "HasOrHasNot"
-              }
-              args {
-                int_value: 1
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Map Item (Item)"
-              args {
-                string_value: "Lightning Barrier 5"
-              }
-            }
+            int_value: 1
           }
         }
       }
@@ -808,7 +783,7 @@ mapName: "Embarcadero Arrival"
 parentStory: ""
 scene_title: "Embarcadero"
 scene_subtitle: ""
-scene_synopsis: "Business in Seattle has grown slow lately. A shadowrunner needs to go where the jobs are, so you head south to San Francisco, following rumors of a large and secretive struggle between Mitsuhama and Aztechnology.\n\nMoney\342\200\231s gotten a little tight, so you skimped on airfare and hitched a ride on a cargo ship headed from Seattle to the Port of Oakland. Once in the Bay, you bribe the operator of a smaller vessel and make your way to the old piers of San Francisco.\n\nThe city is foggy today, and far quieter than you would have thought. Not what you expected from a notoriously lively place. You are surprised to see a familiar face waiting when you disembark..."
+scene_synopsis: "Business in Seattle has grown slow lately. A shadowrunner needs to go where the jobs are, so you head south to San Francisco, following rumors of a broad and covert struggle between Mitsuhama and Aztechnology.\n\nMoney\342\200\231s gotten a little tight, so you skimped on airfare and hitched a ride on a cargo ship headed from Seattle to the Port of Oakland. Once in the Bay, you bribe the operator of a smaller vessel and make your way to the old piers of San Francisco.\n\nThe city is foggy today, and far quieter than you would have thought. Not what you expected from a notoriously lively place. You are surprised to see a familiar face waiting when you disembark..."
 scene_image: ""
 scene_continue_button_skip: false
 scene_restore_runner_health: true
