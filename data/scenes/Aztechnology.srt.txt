@@ -11970,12 +11970,48 @@ regions {
   loop_combat_music: true
   loop_default_music: false
 }
+regions {
+  name: "Matrix Camera Bravo"
+  position {
+    x: -52
+    y: 119
+    width: 127
+    height: 64
+  }
+  enabledAtStart: true
+  is_camera_region: true
+  idRef {
+    id: "522a7a58366236681200323c"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -68
+    x: -39
     y: 0
-    z: -11
+    z: 0
   }
   orientation: ORIENTATION_N
   GeneralTags: "pc"
@@ -13647,7 +13683,7 @@ characters {
   gridPoint {
     x: -20
     y: 0
-    z: 60
+    z: 61
   }
   orientation: ORIENTATION_E
   displayName: "Turret Magic"
@@ -13691,7 +13727,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -28
+    x: -27
     y: 0
     z: 37
   }
@@ -13727,7 +13763,7 @@ characters {
       }
     }
     team_id: "LoneStar"
-    char_name: "Auto Turret Omega"
+    char_name: "Auto Turret Bravo"
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -14205,7 +14241,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Aztechnology Local Network"
   }
 }
 characters {
@@ -14241,7 +14277,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Aztechnology Local Network"
   }
 }
 characters {
@@ -14274,12 +14310,13 @@ characters {
     char_name: "White Sentry IC"
     GeneralTags: "matrix"
     GeneralTags: "matrix5"
+    enabled_at_start: false
     pc_spawn_number: -1
     spawn_type: SpawnType_Matrix
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Aztechnology Local Network"
   }
 }
 characters {
@@ -14312,12 +14349,13 @@ characters {
     char_name: "White Sparky IC"
     GeneralTags: "matrix"
     GeneralTags: "matrix5"
+    enabled_at_start: false
     pc_spawn_number: -1
     spawn_type: SpawnType_Matrix
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Aztechnology Local Network"
   }
 }
 characters {
@@ -14348,12 +14386,13 @@ characters {
     char_name: "White IC"
     GeneralTags: "matrix"
     GeneralTags: "matrix6"
+    enabled_at_start: false
     pc_spawn_number: -1
     spawn_type: SpawnType_Matrix
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Aztechnology Local Network"
   }
 }
 characters {
@@ -14386,13 +14425,13 @@ characters {
     char_name: "White IC"
     GeneralTags: "matrix"
     GeneralTags: "matrix6"
-    enabled_at_start: false
+    enabled_at_start: true
     pc_spawn_number: -1
     spawn_type: SpawnType_Matrix
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Aztechnology Local Network"
   }
 }
 characters {
@@ -14440,7 +14479,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Aztechnology Local Network"
   }
 }
 variables {

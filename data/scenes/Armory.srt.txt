@@ -500,50 +500,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Enable/Disable Interactable Object"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (InteractableObject)"
-          args {
-            string_value: "52256b82366236d419003ae1"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Enable/Disable Interactable Object"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (InteractableObject)"
-          args {
-            string_value: "52255f04366236d4190039de"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Display Text over Actor"
       args {
         call_value {
@@ -1351,50 +1307,6 @@ triggers {
       }
       args {
         float_value: 0
-      }
-    }
-    ops {
-      functionName: "Enable/Disable Interactable Object"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (InteractableObject)"
-          args {
-            string_value: "52256b82366236d419003ae1"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Enable/Disable Interactable Object"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (InteractableObject)"
-          args {
-            string_value: "52255f04366236d4190039de"
-          }
-        }
       }
     }
     ops {
@@ -10609,97 +10521,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Item to Stash"
-      args {
-        call_value {
-          functionName: "Get Map Item (Item)"
-          args {
-            string_value: "HealthPack_med"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Add Item to Stash"
-      args {
-        call_value {
-          functionName: "Get Map Item (Item)"
-          args {
-            string_value: "HealthPack_med"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Add Item to Stash"
-      args {
-        call_value {
-          functionName: "Get Map Item (Item)"
-          args {
-            string_value: "Grenade 2 (Frag)"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Add Item to Stash"
-      args {
-        call_value {
-          functionName: "Get Map Item (Item)"
-          args {
-            string_value: "Bound Fire Spirit 3"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Open Equip Screen"
-    }
-    ops {
       functionName: "Enable/Disable Interactable Object"
       args {
         call_value {
@@ -10717,6 +10538,142 @@ triggers {
           functionName: "Get Map Item (InteractableObject)"
           args {
             string_value: "522a356c643431e91364f659"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "HealthPack_med"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "HealthPack_med"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Grenade 1 (Frag)"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Grenade 2 (Flash)"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -10749,119 +10706,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Item to Stash"
-      args {
-        call_value {
-          functionName: "Get Map Item (Item)"
-          args {
-            string_value: "HealthPack_med"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Add Item to Stash"
-      args {
-        call_value {
-          functionName: "Get Map Item (Item)"
-          args {
-            string_value: "HealthPack_med"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Add Item to Stash"
-      args {
-        call_value {
-          functionName: "Get Map Item (Item)"
-          args {
-            string_value: "Jazz"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Add Item to Stash"
-      args {
-        call_value {
-          functionName: "Get Map Item (Item)"
-          args {
-            string_value: "Nitro"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Add Item to Stash"
-      args {
-        call_value {
-          functionName: "Get Map Item (Item)"
-          args {
-            string_value: "Kamikaze"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Open Equip Screen"
-    }
-    ops {
       functionName: "Enable/Disable Interactable Object"
       args {
         call_value {
@@ -10879,6 +10723,183 @@ triggers {
           functionName: "Get Map Item (InteractableObject)"
           args {
             string_value: "522a3557643431e91364f657"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "HealthPack_med"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "HealthPack_med"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Jazz"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Item to Team"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Nitro"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Kamikaze"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -11565,34 +11586,23 @@ triggers {
       }
     }
     ops {
-      functionName: "Delete Prop"
+      functionName: "Set Variable (bool)"
       args {
         call_value {
-          functionName: "Get Map Item (Prop)"
+          functionName: "Get Variable (bool)"
           args {
-            string_value: "52256b82366236d419003ae1"
+            string_value: "DoorSecurityOverridden"
           }
         }
       }
-    }
-    ops {
-      functionName: "Delete Prop"
       args {
         call_value {
-          functionName: "Get Map Item (Prop)"
+          functionName: "Get Preset Value (int)"
           args {
-            string_value: "52268e573662368419001541"
+            string_value: "bool"
           }
-        }
-      }
-    }
-    ops {
-      functionName: "Delete Prop"
-      args {
-        call_value {
-          functionName: "Get Map Item (Prop)"
           args {
-            string_value: "52255f04366236d4190039de"
+            int_value: 1
           }
         }
       }
@@ -12168,9 +12178,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -89
+    x: -9
     y: 0
-    z: -77
+    z: -1
   }
   orientation: ORIENTATION_W
   idRef {
@@ -12259,9 +12269,12 @@ characters {
     team_id: "Shadowrunners"
     char_name: "Lazarus"
     GeneralTags: "norton"
-    enabled_at_start: false
+    enabled_at_start: true
     pc_spawn_number: -1
     hiring_type: HiringType_None
+    portrait {
+      filename: "generic_spirit_fire"
+    }
     karma: 45
     hiring_cost_override: 1000
   }
@@ -12347,7 +12360,7 @@ characters {
     team_id: "Shadowrunners"
     char_name: "Brackhurst"
     GeneralTags: "norton"
-    enabled_at_start: false
+    enabled_at_start: true
     pc_spawn_number: -1
     hiring_type: HiringType_None
     portrait {
@@ -12433,9 +12446,12 @@ characters {
     team_id: "Shadowrunners"
     char_name: "Bummer"
     GeneralTags: "norton"
-    enabled_at_start: false
+    enabled_at_start: true
     pc_spawn_number: -1
     hiring_type: HiringType_None
+    portrait {
+      filename: "generic_spirit_fire"
+    }
     karma: 45
     hiring_cost_override: 1000
   }
@@ -12625,7 +12641,7 @@ characters {
     pc_spawn_number: -1
     hiring_type: HiringType_None
     portrait {
-      filename: ""
+      filename: "pc_humanmale_02_topknot"
     }
     portrait_code_override: "s6h6c4"
     karma: 61
@@ -13696,7 +13712,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Shavarus Covert Network"
   }
 }
 characters {
@@ -13739,7 +13755,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Shavarus Covert Network"
   }
 }
 characters {
@@ -13775,7 +13791,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Shavarus Covert Network"
   }
 }
 characters {
@@ -13812,7 +13828,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Shavarus Covert Network"
   }
 }
 characters {
@@ -13849,7 +13865,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Shavarus Covert Network"
   }
 }
 characters {
@@ -13886,13 +13902,13 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Shavarus Covert Network"
   }
 }
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -143
+    x: -147
     y: 0
     z: 63
   }
@@ -13923,13 +13939,13 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Shavarus Covert Network"
   }
 }
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -143
+    x: -147
     y: 0
     z: 75
   }
@@ -13960,7 +13976,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Shavarus Covert Network"
   }
 }
 characters {
@@ -13996,7 +14012,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Shavarus Covert Network"
   }
 }
 characters {
@@ -14040,7 +14056,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Shavarus Covert Network"
   }
 }
 characters {
@@ -14084,7 +14100,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Shavarus Covert Network"
   }
 }
 characters {
@@ -14121,7 +14137,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Shavarus Covert Network"
   }
 }
 characters {
@@ -14157,7 +14173,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Shavarus Covert Network"
   }
 }
 characters {
@@ -14194,7 +14210,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Shavarus Covert Network"
   }
 }
 characters {
@@ -14294,9 +14310,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -36
+    x: -35
     y: 0
-    z: -20
+    z: -19
   }
   orientation: ORIENTATION_N
   GeneralTags: "camera"
@@ -14341,7 +14357,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -30
+    x: -32
     y: 0
     z: -35
   }
@@ -14449,12 +14465,20 @@ variables {
     typeName: "int"
   }
 }
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "DoorSecurityOverridden"
+    typeName: "bool"
+  }
+}
 mapEvents: "Check for Baddies Teleport"
 goals {
   name: "You died."
   type: GoalType_Primary
   status: GoalStatus_Hidden
-  description: "You died."
+  description: ""
 }
 worldMapLocation {
   filename: ""
@@ -14490,13 +14514,13 @@ allow_drawn_weapons: false
 team_affiliations {
   team_name: "Shadowrunners"
   affiliation: 0
-  affiliation: 1
+  affiliation: 0
   affiliation: 1
   affiliation: 0
 }
 team_affiliations {
   team_name: "Gangers"
-  affiliation: 1
+  affiliation: 0
   affiliation: 0
   affiliation: 1
   affiliation: 0
@@ -14520,10 +14544,8 @@ scene_dimensions {
 }
 scene_dimensions {
   dimension_name: "Shavarus Covert Network"
-  initial_alarm_state: 25
+  initial_alarm_state: 20
   turns_per_round: 3
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
