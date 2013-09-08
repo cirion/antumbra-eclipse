@@ -3509,6 +3509,17 @@ triggers {
         float_value: 0
       }
     }
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Can Open Gate"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -4425,6 +4436,65 @@ triggers {
   }
   actions {
     ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Nearest Tagged Actor to Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad1b"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "We showed them, chummers!"
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
       functionName: "Send Event"
       args {
         call_value {
@@ -4433,6 +4503,40 @@ triggers {
             string_value: "Stop All Combat"
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Nearest Tagged Actor to Actor"
+              args {
+                call_value {
+                  functionName: "Get Map Item (SenseTagList)"
+                  args {
+                    string_value: "squad1b"
+                  }
+                }
+              }
+              args {
+                call_value {
+                  functionName: "Get Map Item (Player)"
+                  args {
+                    int_value: 0
+                  }
+                }
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
   }
@@ -4527,6 +4631,65 @@ triggers {
   }
   actions {
     ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Nearest Tagged Actor to Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad1a"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "This zone is secure. We\'ll hold here until reinforcements arrive."
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
       functionName: "Send Event"
       args {
         call_value {
@@ -4535,6 +4698,40 @@ triggers {
             string_value: "Stop All Combat"
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Nearest Tagged Actor to Actor"
+              args {
+                call_value {
+                  functionName: "Get Map Item (SenseTagList)"
+                  args {
+                    string_value: "squad1a"
+                  }
+                }
+              }
+              args {
+                call_value {
+                  functionName: "Get Map Item (Player)"
+                  args {
+                    int_value: 0
+                  }
+                }
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
   }
@@ -4788,7 +4985,18 @@ triggers {
       functionName: "Set Actor In Passive Mode"
       args {
         call_value {
-          functionName: "All Actors"
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 1
+              }
+            }
+          }
           args {
             call_value {
               functionName: "Get Preset Value (int)"
@@ -4797,6 +5005,14 @@ triggers {
               }
               args {
                 int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
               }
             }
           }
@@ -5078,6 +5294,270 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Clear Actor Orders"
+      args {
+        call_value {
+          functionName: "All Actors"
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to become a Non-Combatant"
+      args {
+        call_value {
+          functionName: "All Actors"
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 2
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 3
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "522126b9643431523837ee73"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "522126b9643431523837ee73"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Move To (Prop)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "522126b9643431523837ee73"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "5222234136623650130010d5"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Suspend Team\'s Turn"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -5096,7 +5576,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Region)"
           args {
-            string_value: "521a455a366236000100090d"
+            string_value: "5222339a366236501300116c"
           }
         }
       }
@@ -7288,6 +7768,147 @@ triggers {
   }
   is_oneshot: false
 }
+triggers {
+  name: "Debug Kill Start"
+  events {
+    ops {
+      functionName: "On Item Interaction"
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "522ca60d3662368414003b28"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad1b"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "522ca60f3662368414003b29"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Debug Kill All"
+  events {
+    ops {
+      functionName: "On Item Interaction"
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "52296db8366236e41e004933"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 1
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "522ca6653662368414003b2b"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Camera"
   position {
@@ -7680,6 +8301,7 @@ characters {
   }
   orientation: ORIENTATION_E
   GeneralTags: "squad1b"
+  GeneralTags: "exiter"
   displayName: "Voire 1"
   idRef {
     id: "522126b9643431523837ee73"
@@ -7757,6 +8379,7 @@ characters {
     team_id: "Gangers"
     char_name: "Voire"
     GeneralTags: "squad1b"
+    GeneralTags: "exiter"
     pc_spawn_number: -1
     unkillable: false
     portrait {
@@ -7858,7 +8481,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h3c4b4"
+    portrait_code_override: "s6h3c4b4c4"
     karma: 39
   }
 }
@@ -7954,7 +8577,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s5h7c4b5"
+    portrait_code_override: "s5h7c4b5c4"
     karma: 41
   }
 }
@@ -8052,7 +8675,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h6c4b1"
+    portrait_code_override: "s6h6c4b1c4"
     karma: 39
   }
 }
@@ -8164,6 +8787,7 @@ characters {
   orientation: ORIENTATION_E
   GeneralTags: "squad1b"
   GeneralTags: "gangercoward"
+  GeneralTags: "exiter"
   displayName: "Ganger Squad 1 Unit 2"
   idRef {
     id: "52212cc5643431523837ef5c"
@@ -8239,6 +8863,7 @@ characters {
     char_name: "Ganger"
     GeneralTags: "squad1b"
     GeneralTags: "gangercoward"
+    GeneralTags: "exiter"
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -8256,6 +8881,7 @@ characters {
   }
   orientation: ORIENTATION_E
   GeneralTags: "squad1b"
+  GeneralTags: "exiter"
   displayName: "Ganger Squad 1 Unit 3"
   idRef {
     id: "52216a8a3662365c160032e7"
@@ -8338,6 +8964,7 @@ characters {
     team_id: "Gangers"
     char_name: "Ganger Mage"
     GeneralTags: "squad1b"
+    GeneralTags: "exiter"
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -8355,6 +8982,7 @@ characters {
   }
   orientation: ORIENTATION_E
   GeneralTags: "squad1b"
+  GeneralTags: "exiter"
   displayName: "Ganger Squad 1 Unit 1"
   idRef {
     id: "52216af13662365c160032e8"
@@ -8429,6 +9057,7 @@ characters {
     team_id: "Gangers"
     char_name: "Ganger"
     GeneralTags: "squad1b"
+    GeneralTags: "exiter"
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -8447,6 +9076,7 @@ characters {
   orientation: ORIENTATION_E
   GeneralTags: "squad1b"
   GeneralTags: "gangercoward"
+  GeneralTags: "exiter"
   displayName: "Ganger Squad 1 Unit 4"
   idRef {
     id: "52216b3f3662365c160032e9"
@@ -8522,6 +9152,7 @@ characters {
     char_name: "Ganger"
     GeneralTags: "squad1b"
     GeneralTags: "gangercoward"
+    GeneralTags: "exiter"
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -8619,7 +9250,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h6c4b1"
+    portrait_code_override: "s6h6c4b1c4"
     karma: 39
   }
 }
@@ -8712,7 +9343,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s5h7c4b2"
+    portrait_code_override: "s5h7c4b2c4"
     karma: 39
   }
 }
@@ -8805,7 +9436,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h1c4b2"
+    portrait_code_override: "s6h1c4b2c4"
     karma: 36
   }
 }
@@ -9279,7 +9910,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h6c4b1"
+    portrait_code_override: "s6h6c4b1c4"
     karma: 39
   }
 }
@@ -9372,7 +10003,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h7c4b2"
+    portrait_code_override: "s6h7c4b2c4"
     karma: 33
   }
 }
@@ -9465,7 +10096,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h1c4b3"
+    portrait_code_override: "s6h1c4b3c4"
     karma: 37
   }
 }
@@ -9866,7 +10497,7 @@ characters {
     portrait {
       filename: "backer_humanmale_chrisvangraas"
     }
-    portrait_code_override: "s6h6c6b4"
+    portrait_code_override: "s6h6c6b4c6"
     karma: 6
   }
 }
@@ -10019,7 +10650,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h2c4b9"
+    portrait_code_override: "s6h2c4b9c4"
     karma: 37
   }
 }
@@ -10298,7 +10929,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h5c4b6"
+    portrait_code_override: "s6h5c4b6c4"
     karma: 33
   }
 }
@@ -10391,7 +11022,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h5c4b6"
+    portrait_code_override: "s6h5c4b6c4"
     karma: 44
   }
 }

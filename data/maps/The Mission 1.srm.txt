@@ -25606,6 +25606,15 @@ props {
     z: -18
   }
   orientation: ORIENTATION_E
+  displayName: "Debug Kill Start"
+  idRef {
+    id: "522ca60d3662368414003b28"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
   lod: 0
 }
 props {
@@ -25616,8 +25625,14 @@ props {
     z: -29
   }
   orientation: ORIENTATION_S
+  displayName: "Debug Kill All"
   idRef {
     id: "52296db8366236e41e004933"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
   }
   lod: 0
 }
@@ -25831,16 +25846,6 @@ props {
     z: -21
   }
   orientation: ORIENTATION_E
-  lod: 0
-}
-props {
-  name: "barrens_market_stall02"
-  gridPoint {
-    x: 106
-    y: 0
-    z: -59
-  }
-  orientation: ORIENTATION_S
   lod: 0
 }
 props {
