@@ -9,6 +9,106 @@ nodes {
   index: 0
   text: "Thank you for visiting Stuffer Shack! We\'re sorry to see you leave. Please enter your passcard to open the security gate."
   branches {
+    responseText: "{{CC}}Stuffer Shack parking passcard.{{/CC}} {{GM}}Enter passcard.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "OR"
+        args {
+          call_value {
+            functionName: "Evaluate If Actor Has Item"
+            args {
+              call_value {
+                functionName: "Specific Actor"
+                args {
+                  call_value {
+                    functionName: "Get Map Item (Player)"
+                    args {
+                      int_value: 0
+                    }
+                  }
+                }
+                args {
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "HasOrHasNot"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Map Item (Item)"
+                args {
+                  string_value: "Stuffer Shack Passcard"
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Evaluate If Actor Has Item"
+            args {
+              call_value {
+                functionName: "Specific Actor"
+                args {
+                  call_value {
+                    functionName: "Get Map Item (Player)"
+                    args {
+                      int_value: 1
+                    }
+                  }
+                }
+                args {
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "HasOrHasNot"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Map Item (Item)"
+                args {
+                  string_value: "Stuffer Shack Passcard"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    actions {
+      ops {
+        functionName: "Send Event"
+        args {
+          call_value {
+            functionName: "Get Map Item (Event)"
+            args {
+              string_value: "Opened Gate"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 1
+  }
+  branches {
     responseText: "{{CC}}Decking 3{{/CC}} {{GM}}Override gate controls.{{/GM}}"
     conditions {
       ops {
@@ -91,41 +191,14 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 1
-  }
-  branches {
-    responseText: "{{CC}}Stuffer Shack parking passcard.{{/CC}} {{GM}}Enter passcard.{{/GM}}"
-    conditions {
+    actions {
       ops {
-        functionName: "Evaluate If Actor Has Item"
+        functionName: "Send Event"
         args {
           call_value {
-            functionName: "Specific Actor"
+            functionName: "Get Map Item (Event)"
             args {
-              call_value {
-                functionName: "Triggering Actor"
-              }
-            }
-            args {
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "HasOrHasNot"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Map Item (Item)"
-            args {
-              string_value: "Stuffer Shack Passcard"
+              string_value: "Opened Gate"
             }
           }
         }
@@ -141,10 +214,10 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5222251636623650130010ec"
+    id: "5222254f36623650130010ee"
   }
   index: 1
-  text: "{{GM}}Bzzzzzt.{{/GM}}"
+  text: "Have a super stuffer day."
   nodeType: ConversationNodeType_Simple
   actions {
     ops {
@@ -162,10 +235,10 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5222254f36623650130010ee"
+    id: "5222251636623650130010ec"
   }
   index: 2
-  text: "Have a super stuffer day."
+  text: "{{GM}}Bzzzzzt.{{/GM}}"
   nodeType: ConversationNodeType_Simple
   actions {
     ops {

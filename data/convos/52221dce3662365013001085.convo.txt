@@ -54,7 +54,7 @@ nodes {
     id: "52221e6336623650130010a0"
   }
   index: 3
-  text: "{{GM}}Hailey sighs deeply.{{/GM}}}\n\nI know, right? And yet, inside his own head he\342\200\231s so convinced that he\342\200\231s making the world a better place. What a dummy."
+  text: "{{GM}}Hailey sighs deeply.{{/GM}}\n\nI know, right? And yet, inside his own head he\342\200\231s so convinced that he\342\200\231s making the world a better place. What a dummy."
   nodeType: ConversationNodeType_Simple
 }
 nodes {

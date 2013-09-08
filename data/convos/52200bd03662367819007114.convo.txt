@@ -52,9 +52,12 @@ nodes {
         functionName: "Comparison (bool)"
         args {
           call_value {
-            functionName: "Get Variable (bool)"
+            functionName: "Get Story Variable (bool)"
             args {
-              string_value: "UploadedIDs"
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_UploadedCredentials"
             }
           }
         }
@@ -92,9 +95,12 @@ nodes {
         functionName: "Comparison (bool)"
         args {
           call_value {
-            functionName: "Get Variable (bool)"
+            functionName: "Get Story Variable (bool)"
             args {
-              string_value: "UploadedIDs"
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_UploadedCredentials"
             }
           }
         }
@@ -163,7 +169,7 @@ nodes {
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
-      id: "52200c6c3662367819007127"
+      id: "522bb87c366236c410004e08"
     }
   }
   branches {
@@ -173,9 +179,12 @@ nodes {
         functionName: "Comparison (bool)"
         args {
           call_value {
-            functionName: "Get Variable (bool)"
+            functionName: "Get Story Variable (bool)"
             args {
-              string_value: "UploadedIDs"
+              string_value: "5215664d3662365c180018bf"
+            }
+            args {
+              string_value: "A2_UploadedCredentials"
             }
           }
         }
@@ -287,28 +296,6 @@ nodes {
             string_value: "EnableOrDisable"
           }
           args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (InteractableObject)"
-          args {
-            string_value: "521ff5d6366236441f00309c"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Enable/Disable Interactable Object"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
             int_value: 1
           }
         }
@@ -317,7 +304,29 @@ nodes {
         call_value {
           functionName: "Get Map Item (InteractableObject)"
           args {
-            string_value: "521fe5b7366236441f00305f"
+            string_value: "522b925c366236ec1f002c4e"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "CanOpenDoor"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
           }
         }
       }

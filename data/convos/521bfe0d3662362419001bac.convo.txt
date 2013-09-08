@@ -67,14 +67,26 @@ nodes {
   branches {
     responseText: "Why me?"
     nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "522c28183662361c1b000e06"
+    }
   }
   branches {
     responseText: "Why is it so quiet here?"
     nextNodeIndex: 7
+    onlyOnce: true
+    idRef {
+      id: "522c281b3662361c1b000e07"
+    }
   }
   branches {
     responseText: "Who is threatening you?"
     nextNodeIndex: 8
+    onlyOnce: true
+    idRef {
+      id: "522c281e3662361c1b000e08"
+    }
   }
   branches {
     responseText: "No."

@@ -24146,7 +24146,7 @@ props {
   gridPoint {
     x: 110
     y: 8
-    z: -45
+    z: -46
   }
   orientation: ORIENTATION_E
   lod: 0
@@ -24383,7 +24383,7 @@ props {
     isEnabled: false
     interactionRadius: 1
     transitionPoint {
-      scene_name: "Eclipse 1"
+      scene_name: "Eclipse 2"
       confirmation_text: "Are you ready to report back to Mr. Johnson in Eclipse?"
     }
   }

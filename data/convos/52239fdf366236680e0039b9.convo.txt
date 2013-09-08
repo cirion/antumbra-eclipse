@@ -7,7 +7,7 @@ nodes {
     id: "52239fed366236680e0039bf"
   }
   index: 0
-  text: "Well? What did you find?"
+  text: "The local scanners are going crazy. What happened in here?"
   branches {
     responseText: "A huge ugly troll beat us there."
     nextNodeIndex: 1
@@ -59,7 +59,7 @@ nodes {
     id: "5223a03d366236680e0039cf"
   }
   index: 4
-  text: "Well, let\342\200\231s get going. We\342\200\231ll need to hurry if we\342\200\231ll catch him before he skips town."
+  text: "Well, let\342\200\231s get going. You\'ll need to hurry if you\'re going to catch him before he skips town."
   nodeType: ConversationNodeType_Simple
   actions {
     ops {
@@ -79,29 +79,7 @@ nodes {
         call_value {
           functionName: "Get Map Item (Region)"
           args {
-            string_value: "5223a0bb366236680e0039d0"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Enable/Disable Interactable Object"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (InteractableObject)"
-          args {
-            string_value: "52239fd9366236680e0039b8"
+            string_value: "522b9afd366236ec1f002cde"
           }
         }
       }
@@ -115,7 +93,7 @@ nodes {
             call_value {
               functionName: "Get Map Item (Actor)"
               args {
-                string_value: "52239f96366236680e0039b6"
+                string_value: "522b92f5366236ec1f002c55"
               }
             }
           }
@@ -127,7 +105,7 @@ nodes {
         call_value {
           functionName: "Get Map Item (Region)"
           args {
-            string_value: "5223a0bb366236680e0039d0"
+            string_value: "522b9afd366236ec1f002cde"
           }
         }
       }
@@ -138,7 +116,7 @@ nodes {
             string_value: "FacingDirection"
           }
           args {
-            int_value: 5
+            int_value: 1
           }
         }
       }
@@ -160,7 +138,29 @@ nodes {
         call_value {
           functionName: "Get Map Item (InteractableObject)"
           args {
-            string_value: "52239f96366236680e0039b6"
+            string_value: "522b92f5366236ec1f002c55"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "CanExit"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
           }
         }
       }

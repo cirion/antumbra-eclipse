@@ -36,7 +36,7 @@ nodes {
             call_value {
               functionName: "Get Map Item (Actor)"
               args {
-                string_value: "521fefb6366236441f00307e"
+                string_value: "522b92f5366236ec1f002c56"
               }
             }
           }

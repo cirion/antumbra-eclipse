@@ -18044,8 +18044,43 @@ props {
     id: "521ff5d6366236441f00309c"
   }
   interactionRoot {
-    isEnabled: false
+    isEnabled: true
     interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "CanOpenDoor"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
     doorPoint {
       doorState: false
       aiOnlyDoor: false
@@ -18207,7 +18242,45 @@ props {
   interactionRoot {
     isEnabled: true
     interactionRadius: 1
-    interactionIcon: InteractionIcon_Warp
+    prerequisites {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "CanExit"
+            }
+          }
+        }
+      }
+    }
+    transitionPoint {
+      scene_name: "The Mission 1"
+      confirmation_text: "Are you ready to leave the Aztechnology Pyramid?"
+    }
   }
   lod: 0
 }
@@ -28616,19 +28689,6 @@ props {
   lod: 0
 }
 props {
-  name: "matrix_floor_4x4blueedge"
-  gridPoint {
-    x: 27
-    y: 0
-    z: 76
-  }
-  orientation: ORIENTATION_W
-  idRef {
-    id: "522931ea366236f019000f96"
-  }
-  lod: 0
-}
-props {
   name: "matrix_wall_door01Far"
   gridPoint {
     x: 30
@@ -36954,7 +37014,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     matrixSpawnPoint {
-      dimension: "Aztechnology Local Network"
+      dimension: "Aztechnology Secure Network"
     }
   }
   lod: 0
@@ -38209,7 +38269,7 @@ props {
     z: 140
   }
   orientation: ORIENTATION_S
-  displayName: "Matrix Magic Turret Control"
+  displayName: "Turret Control Alpha"
   idRef {
     id: "5229e158366236fc09008042"
   }
@@ -38244,7 +38304,7 @@ props {
       }
     }
     matrixNode {
-      hackingObjectID: "52292d59366236f019000f41"
+      hackingObjectID: "522b92f5366236ec1f002c5f"
     }
   }
   lod: 0
@@ -38280,7 +38340,7 @@ props {
     z: 147
   }
   orientation: ORIENTATION_S
-  displayName: "Matrix Tech Turret Control"
+  displayName: "Turret Control Bravo"
   idRef {
     id: "5229e17f366236fc09008044"
   }
@@ -38315,7 +38375,7 @@ props {
       }
     }
     matrixNode {
-      hackingObjectID: "52292dc8366236f019000f42"
+      hackingObjectID: "522b92f5366236ec1f002c5b"
     }
   }
   lod: 0
@@ -44601,6 +44661,19 @@ props {
       itemName: "HealthPack_hi"
       destroyOnPickup: true
     }
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: 27
+    y: 0
+    z: 76
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "522bb671366236c410004dc9"
   }
   lod: 0
 }

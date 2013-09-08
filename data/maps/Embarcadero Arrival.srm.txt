@@ -78580,7 +78580,7 @@ props {
     isEnabled: true
     interactionRadius: 3
     transitionPoint {
-      scene_name: "downtownseattle"
+      scene_name: "Eclipse 3"
       confirmation_text: ""
     }
   }
