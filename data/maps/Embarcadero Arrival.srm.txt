@@ -77944,9 +77944,9 @@ props {
 props {
   name: "docks_appliance_fuelContainer02"
   gridPoint {
-    x: -59
+    x: -64
     y: 0
-    z: -15
+    z: 12
   }
   orientation: ORIENTATION_E
   idRef {
@@ -78342,7 +78342,7 @@ props {
   gridPoint {
     x: -62
     y: 0
-    z: 13
+    z: -11
   }
   orientation: ORIENTATION_E
   idRef {
@@ -78581,7 +78581,7 @@ props {
     interactionRadius: 3
     transitionPoint {
       scene_name: "Eclipse 3"
-      confirmation_text: ""
+      confirmation_text: "There\'s no sign of Shavarus in the bay. Do you want to regroup in Eclipse?"
     }
   }
   lod: 0
@@ -78886,7 +78886,7 @@ props {
   gridPoint {
     x: 16
     y: 0
-    z: -89
+    z: -63
   }
   orientation: ORIENTATION_S
   idRef {
@@ -78967,4 +78967,30 @@ props {
     }
     karma: 268
   }
+}
+props {
+  name: "docks_clutter_anchorChain"
+  gridPoint {
+    x: 16
+    y: 0
+    z: -61
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522cd2d9366236a413008033"
+  }
+  lod: 0
+}
+props {
+  name: "docks_building_Kalakala"
+  gridPoint {
+    x: 7
+    y: 0
+    z: -65
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522cd2dd366236a413008034"
+  }
+  lod: 0
 }

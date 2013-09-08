@@ -12635,7 +12635,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanFemale"
+    prefab_name: "Core/HumanMale"
     character_sheet_id: "Lonestar_Lv3_Human_Mage"
     character_mod {
       stats {
@@ -12715,7 +12715,7 @@ characters {
     portrait {
       filename: "pc_humanmale_02_topknot"
     }
-    portrait_code_override: "s6h6c4"
+    portrait_code_override: "s6h7c4"
     karma: 61
     hiring_cost_override: 1000
   }
@@ -13448,7 +13448,7 @@ characters {
         perception: 0
         authority: 0
         protect_tether_range: 0
-        move_speed: -3
+        move_speed: -2
       }
       skills {
         ranged_combat: 0
@@ -13531,7 +13531,7 @@ characters {
         perception: 0
         authority: 0
         protect_tether_range: 0
-        move_speed: -3
+        move_speed: -2
       }
       skills {
         ranged_combat: 0
@@ -13614,7 +13614,7 @@ characters {
         perception: 0
         authority: 0
         protect_tether_range: 0
-        move_speed: -3
+        move_speed: -2
       }
       skills {
         ranged_combat: 0
@@ -13697,7 +13697,7 @@ characters {
         perception: 0
         authority: 0
         protect_tether_range: 0
-        move_speed: -3
+        move_speed: -2
       }
       skills {
         ranged_combat: 0
@@ -14586,13 +14586,13 @@ allow_drawn_weapons: false
 team_affiliations {
   team_name: "Shadowrunners"
   affiliation: 0
-  affiliation: 0
+  affiliation: 1
   affiliation: 1
   affiliation: 0
 }
 team_affiliations {
   team_name: "Gangers"
-  affiliation: 0
+  affiliation: 1
   affiliation: 0
   affiliation: 1
   affiliation: 0

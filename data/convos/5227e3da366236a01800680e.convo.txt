@@ -107,7 +107,7 @@ nodes {
     id: "5227e47e366236a01800682a"
   }
   index: 5
-  text: "This has always been a city for the free, the wild, the crazy, the ambitious, the creators. That energy still pulses now, even under the heel of Saito\342\200\231s boot. One day, that boot will be removed, and decades\342\200\231 worth of pent-up spirit will pour out. I hope you like creative acclaims, because I think you\342\200\231ll receive many once the citizens realize what you\342\200\231ve done.\n\nSo, from the bottom of my heart, and from the bottom of my employer\342\200\231s bank accounts: thank you. We are in your debt."
+  text: "This has always been a city for the free, the wild, the crazy, the ambitious, the creators. That energy still pulses now, even under the heel of Saito\342\200\231s boot. One day, that boot will be removed, and decades\342\200\231 worth of pent-up spirit will pour out. I hope you like creative accolades, because I think you\342\200\231ll receive many once the citizens realize what you\342\200\231ve done.\n\nSo, from the bottom of my heart, and from the bottom of my employer\342\200\231s bank accounts: thank you. We are in your debt."
 }
 nodes {
   idRef {

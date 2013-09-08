@@ -51,6 +51,10 @@ nodes {
   branches {
     responseText: "I don\'t trust you."
     nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "522cf538366236c01f000ce7"
+    }
   }
   branches {
     responseText: "Very well. Leave, and stop them."

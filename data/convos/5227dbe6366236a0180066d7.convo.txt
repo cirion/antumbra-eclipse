@@ -241,7 +241,7 @@ nodes {
     }
   }
   branches {
-    responseText: "How is my $(story.A2_RecordingGenre) track doing?"
+    responseText: "How is my $(scene.genre) track doing?"
     conditions {
       ops {
         functionName: "Comparison (bool)"
@@ -281,9 +281,10 @@ nodes {
       }
     }
     nextNodeIndex: 7
+    hideIfUnavailable: true
     onlyOnce: true
     idRef {
-      id: "5227ed0a366236b412000e03"
+      id: "522cf6c1366236c01f000d88"
     }
   }
   branches {

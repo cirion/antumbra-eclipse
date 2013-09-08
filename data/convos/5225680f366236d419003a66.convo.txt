@@ -19,7 +19,7 @@ nodes {
     id: "52256827366236d419003a6f"
   }
   index: 1
-  text: "I\342\200\231m really grateful to you for bringing me along. That sounds like a stupid thing to say, when you\342\200\231re probably going to get me killed, but I mean it. All my life I\342\200\231ve wanted to do something wiz and exciting, and now: wow! Just the two of us, saving the city? It\342\200\231s more than I ever could have dreamed of."
+  text: "I\342\200\231m really grateful to you for bringing me along. That sounds like a stupid thing to say, when you\342\200\231re probably going to get me killed, but I mean it. All my life I\342\200\231ve wanted to do something wiz and exciting, and now: wow! The two of us, saving the city? It\342\200\231s more than I ever could have dreamed of."
   branches {
     responseText: "You\342\200\231ve pulled your own weight, Hailey. I couldn\342\200\231t have done this without you."
     nextNodeIndex: 2

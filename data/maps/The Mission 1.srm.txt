@@ -25761,9 +25761,9 @@ props {
 props {
   name: "barrens_clutter_woodPalette01"
   gridPoint {
-    x: 33
+    x: 26
     y: 0
-    z: -47
+    z: -50
   }
   orientation: ORIENTATION_S
   lod: 0

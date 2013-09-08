@@ -2811,6 +2811,7 @@ characters {
   character_instance {
     prefab_name: "Gangers/ElfMaleGangerDreads"
     character_sheet_id: "BaseCivilian"
+    equipment_sheet_id: "Merchant_Magic_Mid"
     character_mod {
       stats {
         body: 0
@@ -3237,7 +3238,7 @@ mapName: "Eclipse 1"
 parentStory: ""
 scene_title: "Eclipse"
 scene_subtitle: ""
-scene_synopsis: "The ride back to Eclipse feels tense. You hear gunfire and see pursuers on your trail. Badly outnumbered, you race through the steep streets as quickly as possible, finally leaving them behind before you reach your safehouse.\n\nInside, Mr. Johnson grimly listens as you recount your discovery in the Mission. This job just grew more complicated..."
+scene_synopsis: "The ride back to Eclipse feels tense. You hear gunfire and see pursuers on your trail. Badly outnumbered, you race through the steep streets as quickly as possible, finally leaving them behind before you reach your safehouse.\n\nInside, Mr. Johnson grimly listens as you recount your discovery in the Mission. This job just grew trickier..."
 scene_image: ""
 scene_continue_button_skip: false
 scene_restore_runner_health: true

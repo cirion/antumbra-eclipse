@@ -19,7 +19,7 @@ nodes {
     id: "52240c143662366c10007f17"
   }
   index: 1
-  text: "You stand in the presence of Emperor Joshua Norton III, Emperor of this California State and the Protector of UCAS. You may bow."
+  text: "You stand in the presence of Emperor Joshua Norton IX, Emperor of this California State and the Protector of UCAS. You may bow."
   branches {
     responseText: ""
     nextNodeIndex: 2
@@ -81,7 +81,7 @@ nodes {
     id: "52240c643662366c10007f2c"
   }
   index: 6
-  text: "{{GM}}Norton\342\200\231s commanding gaze grows unfocused. For a brief moment he seems troubled and confused.{{/GM}} \n\nBut... surely it is Saito who holds them in oppression, is it not? \n\n{{GM}}His gaze snaps back to you.{{/GM}} \n\nBut enough of these affairs of court. You say that you wish to question our subject. Very well."
+  text: "{{GM}}Norton\342\200\231s commanding gaze grows unfocused. For a brief moment he seems troubled and confused.{{/GM}} \n\nBut... surely it is Saito who holds them in oppression, is it not? \n\n{{GM}}His eyes snap back to you.{{/GM}} \n\nBut enough of these affairs of court. You say that you wish to question our subject. Very well."
   branches {
     responseText: ""
     nextNodeIndex: 7
@@ -144,7 +144,7 @@ nodes {
     nextNodeIndex: 8
     onlyOnce: true
     idRef {
-      id: "52240ccf3662366c10007f47"
+      id: "522cc5d83662368414003e92"
     }
   }
   branches {
@@ -760,7 +760,7 @@ nodes {
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
-      id: "5224b404366236a409007fb9"
+      id: "522cc5e63662368414003e93"
     }
   }
   branches {
@@ -785,6 +785,9 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "5223e420366236680e0044f3"
+  }
 }
 nodes {
   idRef {
@@ -798,6 +801,9 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "5223e420366236680e0044f3"
+  }
 }
 nodes {
   idRef {
@@ -811,6 +817,9 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "5223e420366236680e0044f3"
+  }
 }
 nodes {
   idRef {

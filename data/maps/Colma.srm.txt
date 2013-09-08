@@ -9934,11 +9934,11 @@ props {
 props {
   name: "cemetery_misc_bush01"
   gridPoint {
-    x: -27
+    x: -9
     y: 0
-    z: -101
+    z: -95
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
   idRef {
     id: "521a83e03662367c1d0073ae"
   }
@@ -11260,9 +11260,9 @@ props {
 props {
   name: "cemetery_misc_bush01"
   gridPoint {
-    x: -29
+    x: -25
     y: 0
-    z: -104
+    z: -100
   }
   orientation: ORIENTATION_S
   idRef {
@@ -24238,7 +24238,7 @@ props {
     interactionRadius: 1
     transitionPoint {
       scene_name: "Embarcadero 2"
-      confirmation_text: ""
+      confirmation_text: "Are you ready to pursue Shavarus?"
     }
   }
   lod: 0

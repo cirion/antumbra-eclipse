@@ -733,6 +733,47 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Copy genre name"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (string)"
+      args {
+        call_value {
+          functionName: "Get Variable (string)"
+          args {
+            string_value: "genre"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Story Variable (string)"
+          args {
+            string_value: ""
+          }
+          args {
+            string_value: "A2_RecordingGenre"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "522cd4bf366236a413008036"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
@@ -1383,6 +1424,14 @@ variables {
     scope: TsVariableScope_Scene
     name: "SaitoScore"
     typeName: "int"
+  }
+}
+variables {
+  string_value: ""
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "genre"
+    typeName: "string"
   }
 }
 mapEvents: "End Game"

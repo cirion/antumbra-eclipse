@@ -189,9 +189,10 @@ nodes {
       }
     }
     nextNodeIndex: 12
+    hideIfUnavailable: true
     onlyOnce: true
     idRef {
-      id: "5226bd5e366236d0160013c4"
+      id: "522cf309366236c01f000ca1"
     }
   }
   branches {

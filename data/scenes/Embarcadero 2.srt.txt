@@ -5093,7 +5093,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h5c4b6"
+    portrait_code_override: "s6h5c4b6c4"
     karma: 33
   }
 }
@@ -5182,7 +5182,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h2c4b9"
+    portrait_code_override: "s6h2c4b9c4"
     karma: 37
   }
 }
@@ -5360,7 +5360,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h5c4b6"
+    portrait_code_override: "s6h5c4b6c4"
     karma: 44
   }
 }
@@ -5449,7 +5449,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h5c4b6"
+    portrait_code_override: "s6h5c4b6c4"
     karma: 39
   }
 }
@@ -5538,7 +5538,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h5c4b6"
+    portrait_code_override: "s6h5c4b6c4"
     karma: 33
   }
 }

@@ -115,7 +115,26 @@ nodes {
         functionName: "OR"
         args {
           call_value {
-            functionName: "Compare Hire-able Actor Skill"
+            functionName: "Compare Actor Skill"
+            args {
+              call_value {
+                functionName: "Get Map Item (Player)"
+                args {
+                  int_value: 0
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "BaseOrCurrent"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
             args {
               call_value {
                 functionName: "Get Preset Value (int)"
@@ -148,7 +167,10 @@ nodes {
             functionName: "Compare Actor Skill"
             args {
               call_value {
-                functionName: "Triggering Actor"
+                functionName: "Get Map Item (Player)"
+                args {
+                  int_value: 1
+                }
               }
             }
             args {

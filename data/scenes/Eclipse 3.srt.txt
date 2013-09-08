@@ -17,7 +17,7 @@ triggers {
             string_value: "EnableOrDisable"
           }
           args {
-            int_value: 0
+            int_value: 1
           }
         }
       }
@@ -1269,6 +1269,47 @@ triggers {
   }
   is_oneshot: false
 }
+triggers {
+  name: "Copy genre name"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (string)"
+      args {
+        call_value {
+          functionName: "Get Variable (string)"
+          args {
+            string_value: "genre"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Story Variable (string)"
+          args {
+            string_value: ""
+          }
+          args {
+            string_value: "A2_RecordingGenre"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "522cd4bf366236a413008036"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Kali Exit"
   position {
@@ -1933,6 +1974,12 @@ characters {
     equipment {
       prefab_name: "DroneSupportB_RoboDoc"
     }
+    equipment {
+      prefab_name: "PR NPC Decker Erosion 2"
+    }
+    equipment {
+      prefab_name: "ESP Shield"
+    }
     team_id: "Civilians"
     char_name: "Hailey"
     pc_spawn_number: -1
@@ -2010,6 +2057,14 @@ variables {
   variableref_value {
     scope: TsVariableScope_Scene
     name: "his_her"
+    typeName: "string"
+  }
+}
+variables {
+  string_value: ""
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "genre"
     typeName: "string"
   }
 }

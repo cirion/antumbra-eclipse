@@ -9,7 +9,7 @@ nodes {
   index: 0
   text: "Hoi! Halt there, chummer!"
   branches {
-    responseText: "Turm? I thought you were dead!"
+    responseText: "Turm?! What are you doing here?"
     conditions {
       ops {
         functionName: "Comparison (bool)"

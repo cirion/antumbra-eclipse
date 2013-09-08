@@ -421,6 +421,27 @@ triggers {
         float_value: 0
       }
     }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5225584d366236d4190039bc"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 4
+      }
+    }
   }
   isActive: true
   idRef {
@@ -2746,7 +2767,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s5h7c4b5"
+    portrait_code_override: "s5h7c4b5c4"
     karma: 41
   }
 }
@@ -2865,7 +2886,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/ElfFemale"
+    prefab_name: "Core/HumanFemale"
     character_sheet_id: "Lonestar_Lv1_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
@@ -3035,7 +3056,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h6c4b1"
+    portrait_code_override: "s6h6c4b1c4"
     karma: 39
   }
 }
@@ -3131,7 +3152,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h3c4b4"
+    portrait_code_override: "s6h3c4b4c4"
     karma: 39
   }
 }
@@ -3859,7 +3880,7 @@ mapName: "The Mission 1"
 parentStory: ""
 scene_title: "The Mission District"
 scene_subtitle: ""
-scene_synopsis: "The district feels radically different tonight. With Saito\342\200\231s curfew in full effect, no innocents walk the streets, only gangers and marines. Families huddle in their hovels, listening to bullets clatter off the walls outside. \n\nTensions have boiled over. Marines and Shavarus\342\200\231s gang fill the streets, and there\342\200\231s no way you\342\200\231re getting through without a fight. The way will be difficult, and even if you succeed, more violence waits on the other side\342\200\246"
+scene_synopsis: "The district feels radically different tonight. With Saito\342\200\231s curfew in full effect, no innocents walk the streets, only gangers and marines. Families huddle in their hovels, listening to bullets ricochet off the walls outside. \n\nTensions have boiled over. Marines and Shavarus\342\200\231s gang fill the streets, and there\342\200\231s no way you\342\200\231re getting through without a fight. The way will be difficult, and even if you succeed, more violence waits on the other side\342\200\246"
 scene_image: ""
 scene_continue_button_skip: false
 scene_restore_runner_health: true
@@ -3909,8 +3930,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
