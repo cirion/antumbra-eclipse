@@ -12723,9 +12723,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -130
+    x: -125
     y: 0
-    z: -134
+    z: -135
   }
   orientation: ORIENTATION_E
   GeneralTags: "squad3"
@@ -12815,9 +12815,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -128
+    x: -132
     y: 0
-    z: -134
+    z: -136
   }
   orientation: ORIENTATION_E
   GeneralTags: "squad3"

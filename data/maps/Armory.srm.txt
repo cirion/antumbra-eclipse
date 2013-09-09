@@ -17919,9 +17919,9 @@ props {
 props {
   name: "morgue_wall_brickEdge01"
   gridPoint {
-    x: -41
+    x: -40
     y: 0
-    z: -47
+    z: -43
   }
   orientation: ORIENTATION_E
   idRef {
@@ -17945,9 +17945,9 @@ props {
 props {
   name: "morgue_wall_brickDiagonalCorner01"
   gridPoint {
-    x: -40
+    x: -37
     y: 0
-    z: -42
+    z: -50
   }
   orientation: ORIENTATION_W
   idRef {
@@ -18114,9 +18114,9 @@ props {
 props {
   name: "morgue_wall_brickDiagonalCorner01"
   gridPoint {
-    x: -27
+    x: -29
     y: 0
-    z: -42
+    z: -49
   }
   orientation: ORIENTATION_W
   idRef {
@@ -19028,7 +19028,7 @@ props {
   gridPoint {
     x: -43
     y: 0
-    z: -31
+    z: -27
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -20934,7 +20934,7 @@ props {
 props {
   name: "secretLab_tech_watermelonVice"
   gridPoint {
-    x: -125
+    x: -123
     y: 0
     z: -122
   }
@@ -21122,7 +21122,7 @@ props {
 props {
   name: "tenements_appliance_furnaceUnit"
   gridPoint {
-    x: -125
+    x: -124
     y: 0
     z: -124
   }
@@ -21132,7 +21132,7 @@ props {
 props {
   name: "asylum_appliance_boiler01"
   gridPoint {
-    x: -126
+    x: -125
     y: 0
     z: -124
   }
@@ -21145,7 +21145,7 @@ props {
 props {
   name: "secretLab_tech_watermelonVice"
   gridPoint {
-    x: -124
+    x: -122
     y: 0
     z: -132
   }
@@ -21158,7 +21158,7 @@ props {
 props {
   name: "secretLab_tech_chemicalTank"
   gridPoint {
-    x: -124
+    x: -122
     y: 0
     z: -137
   }
@@ -21181,7 +21181,7 @@ props {
 props {
   name: "warehouse_tech_tanks"
   gridPoint {
-    x: -130
+    x: -129
     y: 0
     z: -121
   }
@@ -21201,7 +21201,7 @@ props {
 props {
   name: "secretLab_magic_summoningCircle02"
   gridPoint {
-    x: -132
+    x: -130
     y: 0
     z: -135
   }
@@ -21211,7 +21211,7 @@ props {
 props {
   name: "diveBar_furniture_boothTable01"
   gridPoint {
-    x: -127
+    x: -125
     y: 0
     z: -133
   }
@@ -21221,7 +21221,7 @@ props {
 props {
   name: "tenements_appliance_trividPortableDesktop01"
   gridPoint {
-    x: -130
+    x: -128
     y: 0
     z: -126
   }
@@ -35389,6 +35389,84 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "522aa911366236681200360d"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -40
+    y: 0
+    z: -48
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522d069e366236241a005d04"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -42
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522d06a1366236241a005d05"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -44
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522d06a4366236241a005d06"
+  }
+  lod: 0
+}
+props {
+  name: "morgue_wall_brickEdge01"
+  gridPoint {
+    x: -27
+    y: 0
+    z: -43
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522d06ac366236241a005d07"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: -26
+    y: 0
+    z: -42
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522d06af366236241a005d08"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: -26
+    y: 0
+    z: -44
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522d06b1366236241a005d09"
   }
   lod: 0
 }

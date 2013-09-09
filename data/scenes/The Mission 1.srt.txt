@@ -7981,10 +7981,10 @@ triggers {
 regions {
   name: "Camera"
   position {
-    x: -4
-    y: -64
-    width: 121
-    height: 49
+    x: -9
+    y: -70
+    width: 132
+    height: 55
   }
   enabledAtStart: true
   is_camera_region: true
@@ -8017,7 +8017,7 @@ regions {
 regions {
   name: "Lonestar Flee"
   position {
-    x: 35
+    x: 30
     y: -2
     width: 3
     height: 3
@@ -8053,10 +8053,10 @@ regions {
 regions {
   name: "Gangers Flee"
   position {
-    x: 35
-    y: -32
-    width: 4
-    height: 4
+    x: 27
+    y: -45
+    width: 3
+    height: 3
   }
   enabledAtStart: true
   is_camera_region: false
@@ -8089,7 +8089,7 @@ regions {
 regions {
   name: "Confrontation Starts"
   position {
-    x: 26
+    x: 20
     y: -23
     width: 1
     height: 24
@@ -8125,7 +8125,7 @@ regions {
 regions {
   name: "Companion Banter"
   position {
-    x: 47
+    x: 53
     y: -27
     width: 27
     height: 1
@@ -8161,7 +8161,7 @@ regions {
 regions {
   name: "Final Convo"
   position {
-    x: 108
+    x: 114
     y: -49
     width: 26
     height: 1
@@ -8197,7 +8197,7 @@ regions {
 regions {
   name: "Voire and Guards Disappear"
   position {
-    x: 95
+    x: 102
     y: -63
     width: 3
     height: 3
@@ -8233,9 +8233,9 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 15
+    x: -8
     y: 0
-    z: -16
+    z: -17
   }
   orientation: ORIENTATION_S
   idRef {
@@ -8252,7 +8252,7 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 15
+    x: 2
     y: 0
     z: -17
   }
@@ -8271,7 +8271,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 27
+    x: 22
     y: 0
     z: -21
   }
@@ -8364,7 +8364,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 27
+    x: 22
     y: 0
     z: -23
   }
@@ -8461,7 +8461,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 29
+    x: 24
     y: 0
     z: -19
   }
@@ -8557,7 +8557,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 27
+    x: 22
     y: 0
     z: -18
   }
@@ -8653,7 +8653,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 29
+    x: 23
     y: 0
     z: -17
   }
@@ -8751,7 +8751,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 27
+    x: 25
     y: 0
     z: -16
   }
@@ -8849,7 +8849,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 29
+    x: 24
     y: 0
     z: -26
   }
@@ -8944,7 +8944,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 27
+    x: 22
     y: 0
     z: -25
   }
@@ -9045,9 +9045,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 29
+    x: 24
     y: 0
-    z: -23
+    z: -22
   }
   orientation: ORIENTATION_E
   GeneralTags: "squad1b"
@@ -9138,7 +9138,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 27
+    x: 22
     y: 0
     z: -26
   }
@@ -9235,7 +9235,7 @@ characters {
   gridPoint {
     x: 56
     y: 0
-    z: -61
+    z: -67
   }
   orientation: ORIENTATION_N
   GeneralTags: "squad2a"
@@ -9514,7 +9514,7 @@ characters {
   gridPoint {
     x: 56
     y: 0
-    z: -60
+    z: -66
   }
   orientation: ORIENTATION_N
   GeneralTags: "squad2b"
@@ -9801,7 +9801,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 33
+    x: 20
     y: 0
     z: -26
   }
@@ -9893,7 +9893,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 87
+    x: 93
     y: 0
     z: -19
   }
@@ -9986,7 +9986,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 84
+    x: 90
     y: 0
     z: -16
   }
@@ -10079,7 +10079,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 75
+    x: 81
     y: 0
     z: -17
   }
@@ -10172,7 +10172,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 87
+    x: 93
     y: 0
     z: -18
   }
@@ -10265,7 +10265,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 84
+    x: 90
     y: 0
     z: -17
   }
@@ -10366,7 +10366,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 75
+    x: 81
     y: 0
     z: -16
   }
@@ -10459,9 +10459,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 107
+    x: 113
     y: 0
-    z: -88
+    z: -94
   }
   orientation: ORIENTATION_S
   displayName: "Parking Controls"
@@ -10508,7 +10508,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 86
+    x: 92
     y: 0
     z: -23
   }
@@ -10633,7 +10633,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 95
+    x: 101
     y: 0
     z: -51
   }
@@ -10726,7 +10726,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 92
+    x: 98
     y: 0
     z: -54
   }
@@ -10819,7 +10819,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 93
+    x: 99
     y: 0
     z: -54
   }
@@ -10912,7 +10912,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 93
+    x: 99
     y: 0
     z: -51
   }
@@ -11005,7 +11005,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 97
+    x: 103
     y: 0
     z: -50
   }
@@ -11098,7 +11098,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 94
+    x: 100
     y: 0
     z: -51
   }
@@ -11191,7 +11191,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 96
+    x: 102
     y: 0
     z: -51
   }
@@ -11284,7 +11284,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 97
+    x: 103
     y: 0
     z: -51
   }
@@ -11377,7 +11377,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 110
+    x: 116
     y: 0
     z: -57
   }
@@ -11472,7 +11472,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 110
+    x: 116
     y: 0
     z: -55
   }
@@ -11598,9 +11598,9 @@ worldMapLocation {
 }
 mapName: "The Mission 1"
 parentStory: ""
-scene_title: "The Mission"
+scene_title: "The Mission District"
 scene_subtitle: ""
-scene_synopsis: "Arguably the heart of the \342\200\234real\342\200\235 San Francisco, The Mission is where the city\342\200\231s residents historically traveled to escape tourists. A mish-mash of high tech and low poverty, high art and low beats, this district acts as a nexus for all the modern extremes of The City.\n\nLately, though, it has been a district on edge. Gangs of elves, orks, and trolls roam the streets, harassing businesses. The gangs in turn are harassed by Colonel Saito\342\200\231s imperial marines. Residents worry that the growing tensions will change this place irrevocably."
+scene_synopsis: "The beating heart of San Francisco, The Mission is where the city\342\200\231s residents historically traveled to escape tourists. A mish-mash of high tech and low poverty, high art and low beats, this district acts as a nexus for all the modern extremes of The City.\n\nLately, though, it has been a district on edge. Gangs of elves, orks, and trolls roam the streets, harassing businesses. The gangs in turn are harassed by Colonel Saito\342\200\231s imperial marines. Residents worry that the growing tensions will change this place irrevocably."
 scene_image: ""
 scene_continue_button_skip: false
 scene_restore_runner_health: false
@@ -11650,8 +11650,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
