@@ -8233,9 +8233,9 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -8
+    x: 121
     y: 0
-    z: -17
+    z: -69
   }
   orientation: ORIENTATION_S
   idRef {
@@ -10459,9 +10459,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 113
+    x: 160
     y: 0
-    z: -94
+    z: -127
   }
   orientation: ORIENTATION_S
   displayName: "Parking Controls"
@@ -11650,6 +11650,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
