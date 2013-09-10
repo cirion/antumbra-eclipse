@@ -8233,9 +8233,9 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 121
+    x: 2
     y: 0
-    z: -69
+    z: -16
   }
   orientation: ORIENTATION_S
   idRef {
@@ -10461,7 +10461,7 @@ characters {
   gridPoint {
     x: 160
     y: 0
-    z: -127
+    z: -128
   }
   orientation: ORIENTATION_S
   displayName: "Parking Controls"
