@@ -8125,9 +8125,9 @@ regions {
 regions {
   name: "Companion Banter"
   position {
-    x: 53
+    x: 51
     y: -27
-    width: 27
+    width: 18
     height: 1
   }
   enabledAtStart: true

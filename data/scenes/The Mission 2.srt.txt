@@ -2568,7 +2568,7 @@ triggers {
 regions {
   name: "Curfew Shout"
   position {
-    x: 109
+    x: 115
     y: -46
     width: 1
     height: 14
@@ -2606,7 +2606,7 @@ regions {
   position {
     x: 51
     y: -24
-    width: 22
+    width: 21
     height: 1
   }
   enabledAtStart: true
@@ -2678,7 +2678,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 97
+    x: 103
     y: 0
     z: -48
   }
@@ -2774,9 +2774,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 88
+    x: 95
     y: 0
-    z: -51
+    z: -49
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1a"
@@ -2872,9 +2872,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 93
+    x: 100
     y: 0
-    z: -51
+    z: -49
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1a"
@@ -2965,9 +2965,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 94
+    x: 101
     y: 0
-    z: -54
+    z: -52
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1a"
@@ -3063,9 +3063,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 90
+    x: 97
     y: 0
-    z: -56
+    z: -54
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1a"
@@ -3535,7 +3535,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 23
+    x: 16
     y: 0
     z: -16
   }
@@ -3616,7 +3616,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 23
+    x: 16
     y: 0
     z: -17
   }
@@ -3697,7 +3697,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 18
+    x: 11
     y: 0
     z: -16
   }
@@ -3786,7 +3786,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 18
+    x: 11
     y: 0
     z: -17
   }
@@ -3930,6 +3930,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
