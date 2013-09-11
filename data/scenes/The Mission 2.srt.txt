@@ -442,6 +442,52 @@ triggers {
         float_value: 4
       }
     }
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad2"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -2565,6 +2611,159 @@ triggers {
   }
   is_oneshot: false
 }
+triggers {
+  name: "Aggro Squad 1"
+  events {
+    ops {
+      functionName: "On Actor Damage"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HPOrAP"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "squad1a"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad1a"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Triggering Target Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "For the Colonel!"
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "522eabbe366236000b00704d"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Curfew Shout"
   position {
@@ -2637,14 +2836,50 @@ regions {
   loop_combat_music: true
   loop_default_music: false
 }
+regions {
+  name: "Camera"
+  position {
+    x: -19
+    y: -68
+    width: 137
+    height: 54
+  }
+  enabledAtStart: true
+  is_camera_region: true
+  idRef {
+    id: "522e8a44366236000b006f75"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 116
+    x: 117
     y: 0
-    z: -56
+    z: -55
   }
-  orientation: ORIENTATION_N
+  orientation: ORIENTATION_E
   idRef {
     id: "522532783662369c1a001e2e"
   }
@@ -2663,7 +2898,7 @@ characters {
     y: 0
     z: -55
   }
-  orientation: ORIENTATION_N
+  orientation: ORIENTATION_E
   idRef {
     id: "5225327d3662369c1a001e2f"
   }
@@ -2684,7 +2919,6 @@ characters {
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1a"
-  GeneralTags: "exiter"
   displayName: "Marine Squad 1 Guard 1 Hollerer"
   idRef {
     id: "52255776366236d4190039b5"
@@ -2762,7 +2996,6 @@ characters {
     team_id: "LoneStar"
     char_name: "Marine"
     GeneralTags: "squad1a"
-    GeneralTags: "exiter"
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -2780,8 +3013,6 @@ characters {
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1a"
-  GeneralTags: "lonestarcoward"
-  GeneralTags: "exiter"
   displayName: "Marine Squad 1 Guard 4"
   idRef {
     id: "52255776366236d4190039b6"
@@ -2859,8 +3090,6 @@ characters {
     team_id: "LoneStar"
     char_name: "Marine"
     GeneralTags: "squad1a"
-    GeneralTags: "lonestarcoward"
-    GeneralTags: "exiter"
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -2878,8 +3107,7 @@ characters {
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1a"
-  GeneralTags: "spawner"
-  GeneralTags: "latemarine"
+  GeneralTags: ""
   displayName: "Marine Squad 1 Guard 6"
   idRef {
     id: "52255776366236d4190039b7"
@@ -2951,8 +3179,7 @@ characters {
     team_id: "LoneStar"
     char_name: "Marine Mage"
     GeneralTags: "squad1a"
-    GeneralTags: "spawner"
-    GeneralTags: "latemarine"
+    GeneralTags: ""
     enabled_at_start: true
     pc_spawn_number: -1
     portrait {
@@ -2971,8 +3198,6 @@ characters {
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1a"
-  GeneralTags: "lonestarcoward"
-  GeneralTags: "exiter"
   displayName: "Marine Squad 1 Guard 3"
   idRef {
     id: "52255776366236d4190039b8"
@@ -3050,8 +3275,6 @@ characters {
     team_id: "LoneStar"
     char_name: "Marine"
     GeneralTags: "squad1a"
-    GeneralTags: "lonestarcoward"
-    GeneralTags: "exiter"
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -3069,7 +3292,6 @@ characters {
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1a"
-  GeneralTags: "exiter"
   displayName: "Marine Squad 1 Guard 1"
   idRef {
     id: "52255776366236d4190039b9"
@@ -3147,7 +3369,6 @@ characters {
     team_id: "LoneStar"
     char_name: "Marine"
     GeneralTags: "squad1a"
-    GeneralTags: "exiter"
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -3520,7 +3741,7 @@ characters {
       archetypeName: "Guard - Hunt And Destroy"
       attitude: AttitudeAggressive
     }
-    team_id: "LoneStar"
+    team_id: "Gangers"
     char_name: "Ganger"
     GeneralTags: "squad2"
     enabled_at_start: false
