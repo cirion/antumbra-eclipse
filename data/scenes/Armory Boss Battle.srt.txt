@@ -12,6 +12,52 @@ triggers {
   }
   actions {
     ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "minion"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
       functionName: "Order Actor to Hunt And Destroy (Team)"
       args {
         call_value {
@@ -67,6 +113,9 @@ triggers {
           }
         }
       }
+    }
+    ops {
+      functionName: "No Effect"
     }
   }
   isActive: true
@@ -3752,7 +3801,7 @@ regions {
 regions {
   name: "Shavarus Chat"
   position {
-    x: -106
+    x: -115
     y: -130
     width: 1
     height: 4
@@ -3870,6 +3919,7 @@ characters {
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad2"
+  GeneralTags: "minion"
   displayName: "Tir Guard 2a"
   idRef {
     id: "5226b935366236d01600138e"
@@ -3935,9 +3985,10 @@ characters {
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
     }
-    team_id: "Gangers"
+    team_id: "Civilians"
     char_name: "Tir Soldier"
     GeneralTags: "squad2"
+    GeneralTags: "minion"
     pc_spawn_number: -1
     karma: 39
   }
@@ -3951,6 +4002,7 @@ characters {
   }
   orientation: ORIENTATION_W
   GeneralTags: "healer"
+  GeneralTags: "minion"
   displayName: "Healer 1"
   idRef {
     id: "5226b935366236d01600138f"
@@ -4027,9 +4079,10 @@ characters {
     equipment {
       prefab_name: "Spell Slow 1"
     }
-    team_id: "Gangers"
+    team_id: "Civilians"
     char_name: "Tir Mage"
     GeneralTags: "healer"
+    GeneralTags: "minion"
     pc_spawn_number: -1
     uninjurable: true
     portrait {
@@ -4150,6 +4203,7 @@ characters {
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1"
+  GeneralTags: "minion"
   displayName: "Tir Guard 1a (Face)"
   idRef {
     id: "5226b935366236d016001391"
@@ -4215,9 +4269,10 @@ characters {
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
     }
-    team_id: "Gangers"
+    team_id: "Civilians"
     char_name: "Tir Lookout"
     GeneralTags: "squad1"
+    GeneralTags: "minion"
     pc_spawn_number: -1
     portrait {
       filename: "generic_elfmale_tirghost"
@@ -4234,6 +4289,7 @@ characters {
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1"
+  GeneralTags: "minion"
   displayName: "Tir Guard 1b"
   idRef {
     id: "5226c07c366236d016001433"
@@ -4299,9 +4355,10 @@ characters {
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
     }
-    team_id: "Gangers"
+    team_id: "Civilians"
     char_name: "Tir Soldier"
     GeneralTags: "squad1"
+    GeneralTags: "minion"
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -4318,6 +4375,7 @@ characters {
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad2"
+  GeneralTags: "minion"
   displayName: "Tir Guard 2b"
   idRef {
     id: "5226c0a2366236d016001434"
@@ -4383,9 +4441,10 @@ characters {
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
     }
-    team_id: "Gangers"
+    team_id: "Civilians"
     char_name: "Tir Captain"
     GeneralTags: "squad2"
+    GeneralTags: "minion"
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -4402,13 +4461,14 @@ characters {
   }
   orientation: ORIENTATION_E
   GeneralTags: "healer"
+  GeneralTags: "minion"
   displayName: "Healer 2"
   idRef {
     id: "5226c105366236d016001435"
   }
   lod: 0
   character_instance {
-    prefab_name: "Gangers/OrkMaleGanger_Halloweener"
+    prefab_name: "Gangers/ElfMaleGangerEyepatch"
     character_sheet_id: "Lonestar_Lv2_Human_Mage"
     character_mod {
       stats {
@@ -4478,9 +4538,10 @@ characters {
     equipment {
       prefab_name: "Spell Lightning Bolt 1"
     }
-    team_id: "Gangers"
+    team_id: "Civilians"
     char_name: "Tir Mage"
     GeneralTags: "healer"
+    GeneralTags: "minion"
     pc_spawn_number: -1
     uninjurable: true
     portrait {
@@ -4590,6 +4651,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
