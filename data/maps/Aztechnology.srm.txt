@@ -2329,26 +2329,6 @@ props {
   lod: 0
 }
 props {
-  name: "office_floor_2x2panel03"
-  gridPoint {
-    x: -75
-    y: 0
-    z: -21
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "office_floor_2x2panel02"
-  gridPoint {
-    x: -71
-    y: 0
-    z: -21
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "office_floor_2x2panel01"
   gridPoint {
     x: -63
@@ -2615,19 +2595,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "521973b53662365808004def"
-  }
-  lod: 0
-}
-props {
-  name: "office_floor_2x2panel03"
-  gridPoint {
-    x: -79
-    y: 0
-    z: -21
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521973bb3662365808004df0"
   }
   lod: 0
 }
@@ -44675,5 +44642,167 @@ props {
   idRef {
     id: "522bb671366236c410004dc9"
   }
+  lod: 0
+}
+props {
+  name: "office_wall_pillar01"
+  gridPoint {
+    x: -64
+    y: 0
+    z: -14
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522f4df9643431895b794ca2"
+  }
+  lod: 0
+}
+props {
+  name: "office_wall_pillar01"
+  gridPoint {
+    x: -64
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522f4e00643431895b794ca3"
+  }
+  lod: 0
+}
+props {
+  name: "office_wallDecoration_harvestersPainting"
+  gridPoint {
+    x: -54
+    y: 1.25
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_wallDecoration_lightHousePainting"
+  gridPoint {
+    x: -48.3
+    y: 1.25
+    z: -5
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_wallDecoration_mountainPainting"
+  gridPoint {
+    x: -54
+    y: 1.25
+    z: 5
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_clutter_bookStacks01"
+  gridPoint {
+    x: -47
+    y: 1
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_clutter_bookStacks02"
+  gridPoint {
+    x: -47
+    y: 0.5
+    z: -3.1
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "telestrianEstate_decor_pottedPalm"
+  gridPoint {
+    x: -49
+    y: 0
+    z: 6
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "tenements_tech_cyberTerminal01"
+  gridPoint {
+    x: -46
+    y: 0
+    z: 4.2
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_wallDecoration_wallProjection01"
+  gridPoint {
+    x: -69
+    y: 0
+    z: -3.2
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_wallDecoration_framedModernArt04"
+  gridPoint {
+    x: -58.2
+    y: 1
+    z: -5
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_wallDecoration_framedModernArt04"
+  gridPoint {
+    x: -67.2
+    y: 1
+    z: -5
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "522f726e643431895b794ca8"
+  }
+  lod: 0
+}
+props {
+  name: "office_wallDecoration_wallProjection02"
+  gridPoint {
+    x: -78
+    y: -0.1
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_clutter_trashCan02"
+  gridPoint {
+    x: -78
+    y: 0
+    z: -12
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "522f7340643431895b794ca9"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_wallDecoration_biohazardSign02"
+  gridPoint {
+    x: -83
+    y: 0
+    z: 13.8
+  }
+  orientation: ORIENTATION_S
   lod: 0
 }
