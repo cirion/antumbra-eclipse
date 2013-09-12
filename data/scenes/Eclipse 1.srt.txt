@@ -1816,6 +1816,52 @@ triggers {
   }
   is_oneshot: false
 }
+triggers {
+  name: "Start Animations"
+  events {
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Animation State Of Actor To Animation Modifier"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "AnimationState"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (AnimationModifiers)"
+          args {
+            string_value: "combat"
+          }
+          args {
+            string_value: "alert"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5231e7e0643431118e9434ea"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "First Floor Stairs"
   position {
@@ -2842,6 +2888,2167 @@ characters {
       filename: "generic_drone_hover"
     }
     karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -6
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_S
+  displayName: "Window Shopper 4"
+  idRef {
+    id: "5231e6b2643431118e9434db"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -6
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_S
+  displayName: "Patron"
+  idRef {
+    id: "5231e6f2643431118e9434dc"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/HumanFemale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    equipment {
+      prefab_name: "Outfit_Cult Follower"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    pc_spawn_number: -1
+    portrait_code_override: "s6h2c4"
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -7
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_S
+  displayName: "Window Shopper 1"
+  idRef {
+    id: "5231e6f9643431118e9434dd"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanMaleTurquoise"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    pc_spawn_number: -1
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -6
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_S
+  displayName: "Window Shopper 3"
+  idRef {
+    id: "5231e6fb643431118e9434de"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/HumanMale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    equipment {
+      prefab_name: "Outfit_Corporate Salaryman"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    pc_spawn_number: -1
+    portrait_code_override: "s6h7c4b5c4"
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -7
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_S
+  displayName: "Window Shopper 2"
+  idRef {
+    id: "5231e6fc643431118e9434df"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemaleTuscan"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    pc_spawn_number: -1
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -11
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer 2"
+  idRef {
+    id: "5231e6fe643431118e9434e0"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemaleProfessionalCoat"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -11
+    y: 0
+    z: -5
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer 1"
+  idRef {
+    id: "5231e700643431118e9434e1"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -10
+    y: 0
+    z: -5
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer 3"
+  idRef {
+    id: "5231e702643431118e9434e2"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/HumanMale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    equipment {
+      prefab_name: "Outfit_Cult Follower"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    portrait_code_override: "s6h6c4b1c4"
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -10
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer 4"
+  idRef {
+    id: "5231e704643431118e9434e3"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/HumanMale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    equipment {
+      prefab_name: "Outfit_Corporate Salaryman"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    portrait_code_override: "s6h1c4b9c4"
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -1
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_S
+  displayName: "Talker 1a"
+  idRef {
+    id: "5231e706643431118e9434e4"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Story/HumanFemaleFixer"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    pc_spawn_number: -1
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -1
+    y: 0
+    z: -5
+  }
+  orientation: ORIENTATION_S
+  displayName: "Talker 2a"
+  idRef {
+    id: "5231e708643431118e9434e5"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Story/DianeSilverstar"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    pc_spawn_number: -1
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 0
+    y: 0
+    z: -5
+  }
+  orientation: ORIENTATION_N
+  displayName: "Talker 2b"
+  idRef {
+    id: "5231e70b643431118e9434e6"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/HumanMale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    equipment {
+      prefab_name: "Outfit_Corporate Salaryman"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    pc_spawn_number: -1
+    portrait_code_override: "s6h5c4b3c4"
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 0
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_N
+  displayName: "Talker 1b"
+  idRef {
+    id: "5231e70c643431118e9434e7"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Story/MrJohnson"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    pc_spawn_number: -1
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -11
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer 5"
+  idRef {
+    id: "5231e7d4643431118e9434e8"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanMaleAutumn"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -10
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer 6"
+  idRef {
+    id: "5231e7d9643431118e9434e9"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/HumanFemale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    equipment {
+      prefab_name: "Outfit_Corporate Salaryman"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    portrait_code_override: "s6h4c4"
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -21
+    y: 0
+    z: -5
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "security"
+  displayName: "Security 1"
+  idRef {
+    id: "5231e81b643431118e9434eb"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Lonestar/HumanFemaleLonestarCaptain"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "security"
+    pc_spawn_number: -1
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 10
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "security"
+  displayName: "Security 2"
+  idRef {
+    id: "5231e823643431118e9434ec"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Lonestar/OrkLonestarGuard"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "security"
+    pc_spawn_number: -1
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -61
+    y: 0
+    z: 73
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer B1"
+  idRef {
+    id: "5231e9d4643431118e9434ed"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Punk/HumanFemaleLonghairGrayPunk"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -61
+    y: 0
+    z: 74
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer B2"
+  idRef {
+    id: "5231ea0c643431118e9434ee"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Punk/HumanMalePonyPunk"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -60
+    y: 0
+    z: 74
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer B4"
+  idRef {
+    id: "5231ea0d643431118e9434ef"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -60
+    y: 0
+    z: 73
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer B3"
+  idRef {
+    id: "5231ea0e643431118e9434f0"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -59
+    y: 0
+    z: 73
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer B5"
+  idRef {
+    id: "5231ea0f643431118e9434f1"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -59
+    y: 0
+    z: 74
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer B1"
+  idRef {
+    id: "5231ea10643431118e9434f2"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -59
+    y: 0
+    z: 74
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer B6"
+  idRef {
+    id: "5231ea11643431118e9434f3"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -58
+    y: 0
+    z: 74
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer B8"
+  idRef {
+    id: "5231ea1e643431118e9434f4"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -58
+    y: 0
+    z: 73
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer B1"
+  idRef {
+    id: "5231ea1f643431118e9434f5"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -58
+    y: 0
+    z: 73
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer B7"
+  idRef {
+    id: "5231ea20643431118e9434f6"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -65
+    y: 0
+    z: 76
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "dancer"
+  displayName: "Dancer 1"
+  idRef {
+    id: "5231ea54643431118e9434f7"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Punk/HumanFemaleLonghairPunk"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "dancer"
+    pc_spawn_number: -1
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -65
+    y: 0
+    z: 77
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "dancer"
+  displayName: "Dancer 2"
+  idRef {
+    id: "5231ea5f643431118e9434f8"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "dancer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -64
+    y: 0
+    z: 77
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "dancer"
+  displayName: "Dancer 4"
+  idRef {
+    id: "5231ea61643431118e9434f9"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "dancer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -64
+    y: 0
+    z: 76
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "dancer"
+  displayName: "Dancer 3"
+  idRef {
+    id: "5231ea67643431118e9434fa"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "dancer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -63
+    y: 0
+    z: 76
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "dancer"
+  displayName: "Dancer 5"
+  idRef {
+    id: "5231ea68643431118e9434fb"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "dancer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -63
+    y: 0
+    z: 77
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "dancer"
+  displayName: "Dancer 6"
+  idRef {
+    id: "5231ea6a643431118e9434fc"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "dancer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -62
+    y: 0
+    z: 77
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "dancer"
+  displayName: "Dancer 8"
+  idRef {
+    id: "5231ea6b643431118e9434fd"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "dancer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -62
+    y: 0
+    z: 76
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "dancer"
+  displayName: "Dancer 7"
+  idRef {
+    id: "5231ea6e643431118e9434fe"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "dancer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -70
+    y: 0
+    z: 79
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "flirter"
+  displayName: "Flirting 1a"
+  idRef {
+    id: "5231ea8d643431118e9434ff"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "flirter"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -70
+    y: 0
+    z: 80
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "flirter"
+  displayName: "Flirting 1b"
+  idRef {
+    id: "5231ea9a643431118e943500"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "flirter"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -70
+    y: 0
+    z: 81
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "flirter"
+  displayName: "Flirting 2a"
+  idRef {
+    id: "5231ea9d643431118e943501"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "flirter"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -70
+    y: 0
+    z: 82
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "flirter"
+  displayName: "Flirting 2b"
+  idRef {
+    id: "5231ea9f643431118e943502"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "flirter"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -70
+    y: 0
+    z: 83
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "flirter"
+  displayName: "Flirting 3a"
+  idRef {
+    id: "5231eaa0643431118e943503"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "flirter"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -70
+    y: 0
+    z: 84
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "flirter"
+  displayName: "Flirting 3b"
+  idRef {
+    id: "5231eaa1643431118e943504"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "flirter"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -73
+    y: 0
+    z: 83
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "talker"
+  displayName: "Talking 1a"
+  idRef {
+    id: "5231eaf6643431118e943505"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "talker"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -73
+    y: 0
+    z: 84
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "talker"
+  displayName: "Talking 1b"
+  idRef {
+    id: "5231eaff643431118e943506"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "talker"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -73
+    y: 0
+    z: 85
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "talker"
+  displayName: "Talking 1c"
+  idRef {
+    id: "5231eb06643431118e943507"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "talker"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -73
+    y: 0
+    z: 87
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "talker"
+  displayName: "Talking 2a"
+  idRef {
+    id: "5231eb08643431118e943508"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "talker"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -73
+    y: 0
+    z: 88
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "talker"
+  displayName: "Talking 2b"
+  idRef {
+    id: "5231eb0a643431118e943509"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "talker"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -130
+    y: 0
+    z: 176
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer C1"
+  idRef {
+    id: "5231eb2f643431118e94350a"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -130
+    y: 0
+    z: 177
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer C2"
+  idRef {
+    id: "5231eb4d643431118e94350b"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -130
+    y: 0
+    z: 178
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer C3"
+  idRef {
+    id: "5231eb4e643431118e94350c"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -129
+    y: 0
+    z: 178
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer C4"
+  idRef {
+    id: "5231eb4f643431118e94350d"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -129
+    y: 0
+    z: 177
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer C5"
+  idRef {
+    id: "5231eb54643431118e94350f"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -129
+    y: 0
+    z: 176
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wanderer"
+  displayName: "Wanderer C6"
+  idRef {
+    id: "5231eb56643431118e943510"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "wanderer"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -139
+    y: 0
+    z: 183
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "flirter"
+  displayName: "Flirting C1a"
+  idRef {
+    id: "5231eb7f643431118e943511"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "flirter"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -139
+    y: 0
+    z: 184
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "flirter"
+  displayName: "Flirting C1b"
+  idRef {
+    id: "5231ebc9643431118e943512"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "flirter"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -139
+    y: 0
+    z: 186
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "flirter"
+  displayName: "Flirting C2b"
+  idRef {
+    id: "5231ebd1643431118e943513"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "flirter"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -139
+    y: 0
+    z: 187
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "flirter"
+  displayName: "Flirting C2a"
+  idRef {
+    id: "5231ebd3643431118e943514"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "flirter"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -131
+    y: 0
+    z: 185
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bunraku"
+  displayName: "Bunraku 1"
+  idRef {
+    id: "5231ebe3643431118e943515"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Extras/ElfFemaleBunraku"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "bunraku"
+    pc_spawn_number: -1
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -131
+    y: 0
+    z: 186
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bunraku"
+  displayName: "Bunraku 2"
+  idRef {
+    id: "5231ebf2643431118e943516"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Extras/HumanFemaleBunraku"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "bunraku"
+    pc_spawn_number: -1
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -131
+    y: 0
+    z: 187
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bunraku"
+  displayName: "Bunraku 3"
+  idRef {
+    id: "5231ebf6643431118e943517"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Extras/ElfMaleBunraku"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "bunraku"
+    pc_spawn_number: -1
+    karma: 6
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -135
+    y: 0
+    z: 186
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "client"
+  displayName: "Client 1"
+  idRef {
+    id: "5231ebfd643431118e943518"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "client"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -135
+    y: 0
+    z: 187
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "client"
+  displayName: "Client 2"
+  idRef {
+    id: "5231ec0b643431118e943519"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "client"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -135
+    y: 0
+    z: 188
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "client"
+  displayName: "Client 3"
+  idRef {
+    id: "5231ec0f643431118e94351a"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "client"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -125
+    y: 0
+    z: 178
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "talker"
+  displayName: "Talker C1a"
+  idRef {
+    id: "5231ec7d643431118e94351b"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "talker"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -125
+    y: 0
+    z: 179
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "talker"
+  displayName: "Talker C1b"
+  idRef {
+    id: "5231ec8f643431118e94351c"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "talker"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -125
+    y: 0
+    z: 180
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "talker"
+  displayName: "Talker C1c"
+  idRef {
+    id: "5231ec96643431118e94351d"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "talker"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -123
+    y: 0
+    z: 179
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "talker"
+  displayName: "Talker C2a"
+  idRef {
+    id: "5231ec9b643431118e94351e"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "talker"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -123
+    y: 0
+    z: 180
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "talker"
+  displayName: "Talker C2b"
+  idRef {
+    id: "5231eca3643431118e94351f"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "talker"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -123
+    y: 0
+    z: 183
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "talker"
+  displayName: "Talker C3a"
+  idRef {
+    id: "5231eca8643431118e943520"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "talker"
+    pc_spawn_number: -1
+    is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -123
+    y: 0
+    z: 184
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "talker"
+  displayName: "Talker C3b"
+  idRef {
+    id: "5231ecb0643431118e943521"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Wealthy/HumanFemalePeacock"
+    character_mod {
+      archetypeName: "Non-Combatant"
+    }
+    team_id: "Civilians"
+    char_name: "Patron"
+    GeneralTags: "talker"
+    pc_spawn_number: -1
+    is_prop_character: true
   }
 }
 variables {

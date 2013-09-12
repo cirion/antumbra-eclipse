@@ -19121,81 +19121,31 @@ props {
   lod: 0
 }
 props {
-  name: "diveBar_furniture_barBack03"
-  gridPoint {
-    x: -58
-    y: 0
-    z: 68
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "diveBar_furniture_barBack02"
-  gridPoint {
-    x: -53
-    y: 0
-    z: 68
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "diveBar_furniture_barFront01"
   gridPoint {
-    x: -55
+    x: -76
     y: 0
-    z: 71
+    z: 83
   }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "diveBar_furniture_barFront02"
-  gridPoint {
-    x: -58
-    y: 0
-    z: 71
-  }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
   lod: 0
 }
 props {
   name: "diveBar_furniture_barFront03"
   gridPoint {
-    x: -61
+    x: -76
     y: 0
-    z: 71
+    z: 79
   }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "diveBar_furniture_barFront04"
-  gridPoint {
-    x: -52
-    y: 0
-    z: 71
-  }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
   lod: 0
 }
 props {
   name: "diveBar_furniture_barFront05"
   gridPoint {
-    x: -49
-    y: 0
-    z: 71
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "diveBar_furniture_barStool01"
-  gridPoint {
     x: -51
     y: 0
-    z: 76
+    z: 70
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -19203,9 +19153,9 @@ props {
 props {
   name: "diveBar_furniture_keg01"
   gridPoint {
-    x: -56
+    x: -55
     y: 0
-    z: 72
+    z: 67
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -19213,9 +19163,9 @@ props {
 props {
   name: "diveBar_furniture_miniBarBack01"
   gridPoint {
-    x: -50
+    x: -54
     y: 0
-    z: 68
+    z: 67
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -19223,9 +19173,9 @@ props {
 props {
   name: "diveBar_furniture_singleKeg01"
   gridPoint {
-    x: -50
+    x: -78
     y: 0
-    z: 72
+    z: 78
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -19789,7 +19739,7 @@ props {
   gridPoint {
     x: -115
     y: 0
-    z: 194
+    z: 197
   }
   orientation: ORIENTATION_S
   idRef {
@@ -19963,6 +19913,71 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "52314e6f366236ac11001aae"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_furniture_barFront03"
+  gridPoint {
+    x: -55
+    y: 0
+    z: 70
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5231e5f5643431118e9434cb"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_furniture_barFront04"
+  gridPoint {
+    x: -76
+    y: 0
+    z: 81
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5231e62f643431118e9434cc"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_furniture_barFront01"
+  gridPoint {
+    x: -53
+    y: 0
+    z: 70
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5231e635643431118e9434cd"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_furniture_singleKeg01"
+  gridPoint {
+    x: -77
+    y: 0
+    z: 83
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5231e651643431118e9434ce"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_furniture_boothTable02"
+  gridPoint {
+    x: -115
+    y: 0
+    z: 192
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5231e67e643431118e9434cf"
   }
   lod: 0
 }
