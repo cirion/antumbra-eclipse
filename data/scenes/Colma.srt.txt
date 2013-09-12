@@ -7757,8 +7757,8 @@ regions {
 regions {
   name: "Wave 4"
   position {
-    x: -55
-    y: -107
+    x: -53
+    y: -106
     width: 4
     height: 4
   }
@@ -7830,7 +7830,7 @@ regions {
   name: "Taxi Region"
   position {
     x: -30
-    y: -31
+    y: -36
     width: -2
     height: 4
   }
@@ -7838,6 +7838,42 @@ regions {
   is_camera_region: false
   idRef {
     id: "5224ae3f366236a409007ec6"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Camera"
+  position {
+    x: -11
+    y: -183
+    width: -45
+    height: 152
+  }
+  enabledAtStart: true
+  is_camera_region: true
+  idRef {
+    id: "5230c05d643431b67a980f8e"
   }
   directional_light_dir {
     x: -0.5
@@ -7968,9 +8004,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -52
+    x: -47
     y: 0
-    z: -101
+    z: -102
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1b"
@@ -8049,9 +8085,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -79
+    x: -98
     y: 0
-    z: -86
+    z: -165
   }
   orientation: ORIENTATION_S
   displayName: "Gatekeeper"
