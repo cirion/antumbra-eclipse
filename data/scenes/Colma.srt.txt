@@ -2788,6 +2788,25 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Clear Actor Orders"
+      args {
+        call_value {
+          functionName: "All Actors"
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -7649,7 +7668,7 @@ regions {
 regions {
   name: "Wave 2"
   position {
-    x: -59
+    x: -56
     y: -141
     width: 4
     height: 4
@@ -8758,7 +8777,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h7c4b2"
+    portrait_code_override: "s6h7c4b2c4"
     karma: 33
   }
 }
@@ -8851,7 +8870,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h6c4b1"
+    portrait_code_override: "s6h6c4b1c4"
     karma: 39
   }
 }
@@ -9138,7 +9157,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h1c4b3"
+    portrait_code_override: "s6h1c4b3c4"
     karma: 37
   }
 }
@@ -9231,7 +9250,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h5c4b6"
+    portrait_code_override: "s6h5c4b6c4"
     karma: 44
   }
 }
@@ -9510,7 +9529,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h2c4b9"
+    portrait_code_override: "s6h2c4b9c4"
     karma: 37
   }
 }
@@ -9696,7 +9715,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h5c4b6"
+    portrait_code_override: "s6h5c4b6c4"
     karma: 33
   }
 }
@@ -9980,7 +9999,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h6c4b1"
+    portrait_code_override: "s6h6c4b1c4"
     karma: 39
   }
 }
@@ -10174,7 +10193,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h3c4b4"
+    portrait_code_override: "s6h3c4b4c4"
     karma: 39
   }
 }
@@ -10270,7 +10289,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s5h7c4b5"
+    portrait_code_override: "s5h7c4b5c4"
     karma: 41
   }
 }
@@ -10821,7 +10840,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h1c4b2"
+    portrait_code_override: "s6h1c4b2c4"
     karma: 36
   }
 }
@@ -11199,7 +11218,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s5h7c4b2"
+    portrait_code_override: "s5h7c4b2c4"
     karma: 39
   }
 }
@@ -11385,7 +11404,7 @@ characters {
     portrait {
       filename: ""
     }
-    portrait_code_override: "s6h6c4b1"
+    portrait_code_override: "s6h6c4b1c4"
     karma: 39
   }
 }
@@ -11834,9 +11853,8 @@ characters {
     z: -36
   }
   orientation: ORIENTATION_W
-  displayName: "PC0"
   idRef {
-    id: "5227eb87366236b412000db3"
+    id: "5231198e366236e81f0061f5"
   }
   lod: 0
   character_instance {
