@@ -2373,9 +2373,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -129
+    x: -133
     y: 0
-    z: 199
+    z: 197
   }
   orientation: ORIENTATION_W
   displayName: "Hailey"
@@ -2498,9 +2498,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -122
+    x: -123
     y: 0
-    z: 171
+    z: 173
   }
   orientation: ORIENTATION_E
   displayName: "Orion"
@@ -2579,9 +2579,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -112
+    x: -114
     y: 0
-    z: 186
+    z: 191
   }
   orientation: ORIENTATION_N
   displayName: "Dalmin"
