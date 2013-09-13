@@ -1,6 +1,6 @@
-minX: -145
+minX: -154
 minZ: -24
-numX: 163
+numX: 172
 numZ: 233
 props {
   name: "diveBar_floor_wood05"
@@ -10008,19 +10008,6 @@ props {
 props {
   name: "office_floor_cement01"
   gridPoint {
-    x: -59
-    y: 0
-    z: 93
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "52193b9d3662365808004abc"
-  }
-  lod: 0
-}
-props {
-  name: "office_floor_cement01"
-  gridPoint {
     x: -51
     y: 0
     z: 85
@@ -13577,21 +13564,41 @@ props {
 props {
   name: "diveBar_door_bedroomDoor02"
   gridPoint {
-    x: -114
+    x: -117
     y: 0
-    z: 168
+    z: 162
   }
   orientation: ORIENTATION_E
+  displayName: "Door Occupied 1"
+  idRef {
+    id: "52328826366236840900159c"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
   lod: 0
 }
 props {
   name: "diveBar_door_bedroomDoor01"
   gridPoint {
-    x: -120
+    x: -132
     y: 0
     z: 168
   }
   orientation: ORIENTATION_E
+  displayName: "Door Unoccupied 2"
+  idRef {
+    id: "523288053662368409001597"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
   lod: 0
 }
 props {
@@ -14104,24 +14111,32 @@ props {
 props {
   name: "diveBar_door_bedroomDoor02"
   gridPoint {
-    x: -126
+    x: -129
     y: 0
-    z: 168
+    z: 160
   }
   orientation: ORIENTATION_E
+  displayName: "Door Occupied 3"
   idRef {
     id: "5219408b3662365808004bf5"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
   }
   lod: 0
 }
 props {
   name: "diveBar_door_bedroomDoor02"
   gridPoint {
-    x: -132
+    x: -120
     y: 0
     z: 168
   }
   orientation: ORIENTATION_E
+  displayName: "Door Occupied 4"
   idRef {
     id: "521940943662365808004bf6"
   }
@@ -19390,7 +19405,7 @@ props {
 props {
   name: "diveBar_furniture_singleKeg01"
   gridPoint {
-    x: -118
+    x: -117
     y: 0
     z: 184
   }
@@ -20964,6 +20979,693 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "52327051366236b81200641f"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_wallDecoration_ares"
+  gridPoint {
+    x: -23
+    y: 0
+    z: 5.9
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "vfx_fx_dancingWoman"
+  gridPoint {
+    x: -57
+    y: 0
+    z: 87
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "DancingWomanBar"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_tableSet01"
+  gridPoint {
+    x: -126
+    y: 0.2
+    z: 174
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_wineGlass01"
+  gridPoint {
+    x: -126.1
+    y: 0
+    z: 182.5
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_wineGlass01"
+  gridPoint {
+    x: -115.1
+    y: -0.3
+    z: 197.2
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_bottle01"
+  gridPoint {
+    x: -114
+    y: 1
+    z: 186
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_bottle01"
+  gridPoint {
+    x: -115
+    y: 0.8
+    z: 192.1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328039366236840900156b"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_bottle01"
+  gridPoint {
+    x: -121
+    y: 0.8
+    z: 192.5
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328043366236840900156c"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_bottle01"
+  gridPoint {
+    x: -132
+    y: 1
+    z: 195.3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_bottle02"
+  gridPoint {
+    x: -122
+    y: 1
+    z: 176.4
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_cocktail01"
+  gridPoint {
+    x: -126
+    y: 0
+    z: 183
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_cocktail02"
+  gridPoint {
+    x: -137
+    y: 0
+    z: 195.4
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_cocktail03"
+  gridPoint {
+    x: -116.9
+    y: 0
+    z: 168.2
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_cocktail04"
+  gridPoint {
+    x: -122.2
+    y: 0
+    z: 170.3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_cocktail05"
+  gridPoint {
+    x: -128.9
+    y: 0
+    z: 168.3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_cocktail06"
+  gridPoint {
+    x: -114.9
+    y: 0
+    z: 197.2
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_cocktail06"
+  gridPoint {
+    x: -128.1
+    y: 0.3
+    z: 191.8
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "523280ad366236840900156d"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_bottle01"
+  gridPoint {
+    x: -126.6
+    y: 1
+    z: 183
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "523280b9366236840900156e"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_cocktail02"
+  gridPoint {
+    x: -126.4
+    y: 0
+    z: 182.7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "523280c3366236840900156f"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_cocktail03"
+  gridPoint {
+    x: -121.9
+    y: 0
+    z: 176.2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "523280ce3662368409001570"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_bottle02"
+  gridPoint {
+    x: -129
+    y: 1
+    z: 168.4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "523280d23662368409001571"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_bottle01"
+  gridPoint {
+    x: -122
+    y: 0.8
+    z: 170.1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "523280da3662368409001572"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_cocktail06"
+  gridPoint {
+    x: -121.9
+    y: 0
+    z: 170.5
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "523280de3662368409001573"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_bottle01"
+  gridPoint {
+    x: -116.9
+    y: 1
+    z: 168.5
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "523280ed3662368409001574"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_cocktail06"
+  gridPoint {
+    x: -136.90001
+    y: -0.099999987
+    z: 195.2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "523280f93662368409001575"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_wineGlass01"
+  gridPoint {
+    x: -132.1
+    y: -0.3
+    z: 195.2
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "523281093662368409001576"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_clutter_wineGlass01"
+  gridPoint {
+    x: -128.59999
+    y: -0.10000001
+    z: 191.9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "523281103662368409001577"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_barstoolMan"
+  gridPoint {
+    x: -120
+    y: 0
+    z: 195
+  }
+  orientation: ORIENTATION_E
+  properties {
+    property_id: "fxScript"
+    string_value: "BarStoolManEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_misc_balconyTileWalkable"
+  gridPoint {
+    x: -152
+    y: 0
+    z: 172
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328361366236840900157e"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_misc_balconyTileWalkable"
+  gridPoint {
+    x: -152
+    y: 0
+    z: 170
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328362366236840900157f"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_misc_balconyTileWalkable"
+  gridPoint {
+    x: -154
+    y: 0
+    z: 170
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "523283633662368409001580"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_misc_balconyTileWalkable"
+  gridPoint {
+    x: -154
+    y: 0
+    z: 172
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "523283653662368409001581"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_door_bedroomDoor01"
+  gridPoint {
+    x: -126
+    y: 0
+    z: 168
+  }
+  orientation: ORIENTATION_E
+  displayName: "Door Unoccupied 3"
+  idRef {
+    id: "523283c43662368409001585"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_door_bedroomDoor01"
+  gridPoint {
+    x: -123
+    y: 0
+    z: 163
+  }
+  orientation: ORIENTATION_E
+  displayName: "Door Unoccupied 4"
+  idRef {
+    id: "523283c63662368409001586"
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_door_bedroomDoor01"
+  gridPoint {
+    x: -114
+    y: 0
+    z: 168
+  }
+  orientation: ORIENTATION_E
+  displayName: "Door Unoccupied 1"
+  idRef {
+    id: "523283c83662368409001587"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "diveBar_door_bedroomDoor02"
+  gridPoint {
+    x: -134
+    y: 0
+    z: 165
+  }
+  orientation: ORIENTATION_E
+  displayName: "Door Occupied 2"
+  idRef {
+    id: "523283cb3662368409001588"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -50
+    y: 0
+    z: 85
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f09366236840900159e"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -50
+    y: 0
+    z: 86
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f09366236840900159f"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -50
+    y: 0
+    z: 87
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f0936623684090015a0"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -50
+    y: 0
+    z: 88
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f0936623684090015a1"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -50
+    y: 0
+    z: 89
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f0936623684090015a2"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -50
+    y: 0
+    z: 90
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f0936623684090015a3"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -50
+    y: 0
+    z: 91
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f0936623684090015a4"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -50
+    y: 0
+    z: 92
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f0936623684090015a5"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -50
+    y: 0
+    z: 93
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f0936623684090015a6"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -50
+    y: 0
+    z: 94
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f2736623684090015a7"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -51
+    y: 0
+    z: 94
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f2736623684090015a8"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -52
+    y: 0
+    z: 94
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f2736623684090015a9"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -53
+    y: 0
+    z: 94
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f2736623684090015aa"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -54
+    y: 0
+    z: 94
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f2736623684090015ab"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -55
+    y: 0
+    z: 94
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f2736623684090015ac"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -56
+    y: 0
+    z: 94
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f2736623684090015ad"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -57
+    y: 0
+    z: 94
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f2736623684090015ae"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -58
+    y: 0
+    z: 94
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52328f2736623684090015af"
   }
   lod: 0
 }
