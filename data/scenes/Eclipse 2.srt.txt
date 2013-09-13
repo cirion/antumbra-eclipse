@@ -2635,21 +2635,6 @@ characters {
     equipment {
       prefab_name: "RiggerTrenchcoat"
     }
-    equipment {
-      prefab_name: "Vision Magnification Eyes"
-    }
-    equipment {
-      prefab_name: "Obvious Cyberleg"
-    }
-    equipment {
-      prefab_name: "Datajack"
-    }
-    equipment {
-      prefab_name: "Dermal Plating Mk 1"
-    }
-    equipment {
-      prefab_name: "Obvious Cyberarm"
-    }
     team_id: "Civilians"
     char_name: "The Dave"
     pc_spawn_number: -1
