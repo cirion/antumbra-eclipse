@@ -4659,6 +4659,35 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5231ebfd643431118e943518"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -6117,6 +6146,35 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5231ec0b643431118e943519"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -6752,7 +6810,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (Actor)"
               args {
-                string_value: "5231ec0b643431118e943519"
+                string_value: "5231ebf2643431118e943516"
               }
             }
           }
@@ -6805,7 +6863,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (Actor)"
               args {
-                string_value: "5231ebf2643431118e943516"
+                string_value: "5231ec0b643431118e943519"
               }
             }
           }
@@ -7326,6 +7384,35 @@ triggers {
           }
           args {
             int_value: 3
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5231ec0f643431118e94351a"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -8033,7 +8120,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (Region)"
               args {
-                string_value: "52328429366236840900158b"
+                string_value: "5233b4c7366236e004007020"
               }
             }
           }
@@ -9030,6 +9117,42 @@ regions {
   is_camera_region: true
   idRef {
     id: "5233646e64343148a3e8392c"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Door 3b"
+  position {
+    x: -124
+    y: 169
+    width: 1
+    height: 1
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "5233b4c7366236e004007020"
   }
   directional_light_dir {
     x: -0.5
@@ -12235,6 +12358,10 @@ characters {
         protect_tether_range: 5
         move_speed: 6
       }
+      skills {
+      }
+      specializations {
+      }
       archetypeName: "Non-Combatant"
     }
     team_id: "Civilians"
@@ -12324,6 +12451,10 @@ characters {
         awareness: 24
         protect_tether_range: 5
         move_speed: 6
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Non-Combatant"
     }
@@ -12444,7 +12575,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanFemale"
+    prefab_name: "Extras/HumanFemaleWorkingclassJacket"
     character_sheet_id: "BaseCivilian"
     character_mod {
       stats {
@@ -12461,6 +12592,10 @@ characters {
         awareness: 24
         protect_tether_range: 5
         move_speed: 6
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Non-Combatant"
     }
@@ -12507,7 +12642,7 @@ characters {
         morale: 24
         awareness: 24
         protect_tether_range: 5
-        move_speed: 6
+        move_speed: 0
       }
       archetypeName: "Non-Combatant"
     }
@@ -12821,6 +12956,10 @@ characters {
         awareness: 24
         protect_tether_range: 5
         move_speed: 6
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Non-Combatant"
     }
@@ -13227,7 +13366,7 @@ characters {
     team_id: "Civilians"
     char_name: "Bartender"
     pc_spawn_number: -1
-    portrait_code_override: "s4h2c5b6"
+    portrait_code_override: "s4h2c5b6c5"
     karma: 6
   }
 }
