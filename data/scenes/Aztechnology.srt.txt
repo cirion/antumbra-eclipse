@@ -5832,6 +5832,9 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "On Actor Death"
+    }
   }
   conditions {
     ops {
@@ -5982,6 +5985,9 @@ triggers {
           }
         }
       }
+    }
+    ops {
+      functionName: "On Actor Death"
     }
   }
   conditions {
@@ -6943,7 +6949,7 @@ characters {
   gridPoint {
     x: -39
     y: 0
-    z: 0
+    z: 1
   }
   orientation: ORIENTATION_N
   GeneralTags: "pc"

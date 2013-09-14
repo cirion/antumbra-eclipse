@@ -17419,7 +17419,7 @@ props {
   gridPoint {
     x: -18
     y: 0
-    z: -16
+    z: -13
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -17509,7 +17509,7 @@ props {
   gridPoint {
     x: -19
     y: 0
-    z: -15
+    z: -17
   }
   orientation: ORIENTATION_E
   lod: 0
@@ -17619,6 +17619,7 @@ props {
     z: -13
   }
   orientation: ORIENTATION_W
+  displayName: "Jack Point"
   idRef {
     id: "522a904d366236681200359c"
   }
@@ -18373,8 +18374,14 @@ props {
     z: -25
   }
   orientation: ORIENTATION_S
+  displayName: "Supply Cabinet 2"
   idRef {
     id: "5226919b366236841900156e"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_ItemPickup
   }
   lod: 0
 }
@@ -18946,7 +18953,7 @@ props {
     id: "5228d166643431a1029ef861"
   }
   interactionRoot {
-    isEnabled: true
+    isEnabled: false
     interactionRadius: 1
     inspectInteraction {
       dispalyTime: 0
@@ -36457,6 +36464,29 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "522ffd2e3662362c14006bca"
+  }
+  lod: 0
+}
+props {
+  name: "apartments_furniture_futuristicBookshelf"
+  gridPoint {
+    x: -19
+    y: 0
+    z: -15
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5233ba49366236e004007029"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 0
+      inspectText: "BREAK GLASS IN EVENT OF EMERGENCY"
+      disableAfterInteracting: false
+    }
   }
   lod: 0
 }

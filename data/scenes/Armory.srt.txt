@@ -1717,17 +1717,24 @@ triggers {
   }
   conditions {
     ops {
-      functionName: "Compare Actor Race"
+      functionName: "Evaluate Tag for Actor"
       args {
         call_value {
-          functionName: "Triggering Target Actor"
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+          args {
+          }
         }
       }
       args {
         call_value {
           functionName: "Get Preset Value (int)"
           args {
-            string_value: "IsOrIsNot"
+            string_value: "HasOrHasNot"
           }
           args {
             int_value: 1
@@ -1736,12 +1743,9 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Preset Value (int)"
+          functionName: "Get Map Item (SenseTagList)"
           args {
-            string_value: "Race"
-          }
-          args {
-            int_value: 6
+            string_value: "ghoul"
           }
         }
       }
@@ -10582,6 +10586,89 @@ triggers {
         call_value {
           functionName: "Get Map Item (Item)"
           args {
+            string_value: "Grenade 2 (Flash)"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "522a3570643431e91364f65a"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Loot Supply Cabinet 2"
+  events {
+    ops {
+      functionName: "On Item Interaction"
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "5226919b366236841900156e"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "5226919b366236841900156e"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
             string_value: "HealthPack_med"
           }
         }
@@ -10644,44 +10731,10 @@ triggers {
         }
       }
     }
-    ops {
-      functionName: "Add Item to Actor"
-      args {
-        call_value {
-          functionName: "Get Map Item (Item)"
-          args {
-            string_value: "Grenade 2 (Flash)"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Triggering Actor"
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
   }
   isActive: true
   idRef {
-    id: "522a3570643431e91364f65a"
+    id: "5233b8b5366236e004007024"
   }
   elseActions {
   }
@@ -11616,6 +11669,139 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Notice Terminal"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5233b80d366236e004007021"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Compare Actor Skill"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "BaseOrCurrent"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "ActorSkills"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Add Camera Point of Interest (Point)"
+      args {
+        call_value {
+          functionName: "Current Location of Prop"
+          args {
+            call_value {
+              functionName: "Get Map Item (Prop)"
+              args {
+                string_value: "522a904d366236681200359c"
+              }
+            }
+          }
+        }
+      }
+      args {
+        float_value: 3
+      }
+    }
+    ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "I think that medical terminal is connected to the network."
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5233b824366236e004007022"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "The Ghoul Zone"
   position {
@@ -12204,6 +12390,42 @@ regions {
   is_camera_region: true
   idRef {
     id: "522aa924366236681200360e"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Notice Terminal"
+  position {
+    x: -18
+    y: -12
+    width: 14
+    height: 1
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "5233b80d366236e004007021"
   }
   directional_light_dir {
     x: -0.5
@@ -13420,6 +13642,7 @@ characters {
     z: -58
   }
   orientation: ORIENTATION_E
+  GeneralTags: "ghoul"
   displayName: "Ghoul 1"
   idRef {
     id: "5226a212366236d0160012f5"
@@ -13490,6 +13713,7 @@ characters {
     }
     team_id: "Gangers"
     char_name: "Ghoul"
+    GeneralTags: "ghoul"
     enabled_at_start: false
     pc_spawn_number: -1
     karma: 37
@@ -13503,6 +13727,7 @@ characters {
     z: -38
   }
   orientation: ORIENTATION_S
+  GeneralTags: "ghoul"
   displayName: "Ghoul 2"
   idRef {
     id: "5226a299366236d0160012f6"
@@ -13573,6 +13798,7 @@ characters {
     }
     team_id: "Gangers"
     char_name: "Ghoul"
+    GeneralTags: "ghoul"
     enabled_at_start: false
     pc_spawn_number: -1
     karma: 37
@@ -13586,6 +13812,7 @@ characters {
     z: -19
   }
   orientation: ORIENTATION_W
+  GeneralTags: "ghoul"
   displayName: "Ghoul 3"
   idRef {
     id: "5226a29d366236d0160012f7"
@@ -13656,6 +13883,7 @@ characters {
     }
     team_id: "Gangers"
     char_name: "Ghoul"
+    GeneralTags: "ghoul"
     enabled_at_start: false
     pc_spawn_number: -1
     karma: 37
@@ -13669,6 +13897,7 @@ characters {
     z: -32
   }
   orientation: ORIENTATION_N
+  GeneralTags: "ghoul"
   displayName: "Ghoul 4"
   idRef {
     id: "5226a2a4366236d0160012f8"
@@ -13739,6 +13968,7 @@ characters {
     }
     team_id: "Gangers"
     char_name: "Ghoul"
+    GeneralTags: "ghoul"
     enabled_at_start: false
     pc_spawn_number: -1
     karma: 37
@@ -14327,6 +14557,8 @@ characters {
     char_name: "Security Camera"
     GeneralTags: "camera"
     pc_spawn_number: -1
+    ai_ignores: true
+    uninjurable: true
     portrait {
       filename: ""
     }
@@ -14374,6 +14606,8 @@ characters {
     char_name: "Surveillance Cameras"
     GeneralTags: "camera"
     pc_spawn_number: -1
+    ai_ignores: true
+    uninjurable: true
     portrait {
       filename: ""
     }
@@ -14421,6 +14655,8 @@ characters {
     char_name: "Security Camera"
     GeneralTags: "camera"
     pc_spawn_number: -1
+    ai_ignores: true
+    uninjurable: true
     portrait {
       filename: ""
     }
@@ -14468,6 +14704,8 @@ characters {
     char_name: "Security Camera"
     GeneralTags: "camera"
     pc_spawn_number: -1
+    ai_ignores: true
+    uninjurable: true
     portrait {
       filename: ""
     }
@@ -14618,6 +14856,8 @@ scene_dimensions {
   dimension_name: "Shavarus Covert Network"
   initial_alarm_state: 20
   turns_per_round: 3
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
