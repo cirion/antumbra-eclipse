@@ -367,7 +367,7 @@ startScene: "Embarcadero Arrival"
 allowCharacterImport: true
 allowImportedEquipment: true
 allowCharacterGen: true
-storyKarmaLevel: 54
+storyKarmaLevel: 51
 character_roster {
   roster_entries {
     reference_id: "lvl1_dwarf_rigger"

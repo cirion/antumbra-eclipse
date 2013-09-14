@@ -108,28 +108,6 @@ triggers {
             string_value: "EnableOrDisable"
           }
           args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (InteractableObject)"
-          args {
-            string_value: "521f76233662361c1b007c9a"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Enable/Disable Interactable Object"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
             int_value: 0
           }
         }
@@ -139,28 +117,6 @@ triggers {
           functionName: "Get Map Item (InteractableObject)"
           args {
             string_value: "521ff5d6366236441f00309c"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Enable/Disable Trigger"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Trigger)"
-          args {
-            string_value: "52200db2366236781900713d"
           }
         }
       }
@@ -2745,6 +2701,80 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Check Starting Hostile 2"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5233fa8c366236e81a00264c"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_AztechnologyHostile"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Guards Turn Hostile"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5233faa3366236e81a00264d"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Second Security Checkpoint"
   position {
@@ -2757,6 +2787,42 @@ regions {
   is_camera_region: false
   idRef {
     id: "522b925c366236ec1f002c4d"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Map Load Replacement"
+  position {
+    x: -84
+    y: 12
+    width: 12
+    height: 1
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "5233fa8c366236e81a00264c"
   }
   directional_light_dir {
     x: -0.5
@@ -3197,7 +3263,7 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -79
+    x: -80
     y: 0
     z: 11
   }
@@ -3222,6 +3288,11 @@ variables {
   }
 }
 mapEvents: "Guards Turn Hostile"
+goals {
+  name: "You died."
+  type: GoalType_Primary
+  status: GoalStatus_Hidden
+}
 worldMapLocation {
   filename: ""
   location {

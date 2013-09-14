@@ -1,0 +1,109 @@
+idRef {
+  id: "5233fd41366236e81a00264f"
+}
+ui_name: "A2S11-CarverWells"
+nodes {
+  idRef {
+    id: "5233fd48366236e81a002655"
+  }
+  index: 0
+  text: "I\'ll be brief: well done. I took quite a risk bringing you on for this job, and I\'ve been very pleased with the reports I\'ve heard from my subordinate regarding the initiative you\'ve taken in defending our interests."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5233fd77366236e81a002658"
+  }
+  index: 1
+  text: "This city is obviously a mess, and getting worse by the day. We\'ll be pulling back our local operations for the immediate future, leaving behind a skeleton shell corp to hold ground for our eventual return. There\'s an entire world of opportunity out there, and we have far better ways to spend our resources than butting heads with Saito."
+  branches {
+    responseText: "Where do I fit into these future plans?"
+    nextNodeIndex: 2
+  }
+  branches {
+    responseText: "I feel like I\'ve earned a larger role with your organization."
+    nextNodeIndex: 4
+  }
+  branches {
+    responseText: "I think I\'ll go my own way from now on."
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5233fe10366236e81a00265d"
+  }
+  index: 2
+  text: "We have no commitments to make at this time. Don\'t bother contacting us; we\'ll reach out to you if you can be of further use in the future."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5233fe42366236e81a002660"
+  }
+  index: 3
+  text: "So long, $(l.name). You are a credit to your profession."
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "52256a5f366236d419003ad9"
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5233fe6a366236e81a002662"
+  }
+  index: 4
+  text: "You do, do you? Don\'t get me wrong: you\'ve shown admirable skills over the last few days. I don\'t think you begin to understand the scope of our resources, however. You have a long way to climb if you ever want to reach our elite levels."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5233febd366236e81a002668"
+  }
+  index: 5
+  text: "I can\'t say I blame you. Your next employer will be lucky to have you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 0
+}

@@ -7,7 +7,7 @@ nodes {
     id: "521bfc393662362419001ae4"
   }
   index: 0
-  text: "Hello there!\n\nI couldn\342\200\231t help but noticing that you seem to have imported a character without finishing the original Antumbra mission."
+  text: "Hello there!\n\nThanks for playing Eclipse! I noticed that you\'re starting with a character who hasn\'t completed the original Antumbra module."
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -19,11 +19,12 @@ nodes {
     id: "521bfc443662362419001ae7"
   }
   index: 1
-  text: "Just so you know, the content of this mission is tuned for either a new character, or an imported character from the first Antumbra. You\342\200\231re free to play it how you like, of course, but it probably won\342\200\231t be as much fun if you continue with this character."
+  text: "The stories of the two games aren\'t too tightly linked, so you should be able to figure out what\'s going on. There are a few call-backs to earlier events that you can safely ignore. Oh, and if you import a character, the contents of this game will change to reflect the choices you made in the first game.\n\nJust so you know, the combat in this module is tuned for either a new character, or an imported character from the first Antumbra. If you import a high-level character with lots of karma, the fights will probably be really boring."
   branches {
     responseText: ""
     nextNodeIndex: 2
   }
+  nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
@@ -37,7 +38,7 @@ nodes {
   }
   branches {
     responseText: "Slag off and die, frag-face! Let me play my game!"
-    nextNodeIndex: 5
+    nextNodeIndex: 4
   }
 }
 nodes {
@@ -47,34 +48,33 @@ nodes {
   index: 3
   text: "Great! Have fun!"
   branches {
-    responseText: ""
-    nextNodeIndex: 4
-  }
-}
-nodes {
-  idRef {
-    id: "521bfc903662362419001af6"
-  }
-  index: 4
-  text: ""
-  actions {
-    ops {
-      functionName: "End Story With Epilogue"
-      args {
-        string_value: ""
+    responseText: "{{GM}}End game!{{/GM}}"
+    actions {
+      ops {
+        functionName: "Send Event"
+        args {
+          call_value {
+            functionName: "Get Map Item (Event)"
+            args {
+              string_value: "End Game"
+            }
+          }
+        }
       }
     }
+    nextNodeIndex: -1
   }
+  nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
     id: "521bfc683662362419001af0"
   }
-  index: 5
+  index: 4
   text: "Yes, $(l.sir)!"
   branches {
     responseText: ""
-    nextNodeIndex: 6
+    nextNodeIndex: 5
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -82,7 +82,7 @@ nodes {
   idRef {
     id: "521bfc743662362419001af3"
   }
-  index: 6
+  index: 5
   text: ""
   actions {
     ops {

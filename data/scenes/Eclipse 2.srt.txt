@@ -2073,9 +2073,6 @@ triggers {
         }
       }
     }
-    ops {
-      functionName: "End Current Actor Turn"
-    }
   }
   isActive: true
   idRef {
@@ -2215,6 +2212,62 @@ triggers {
   elseActions {
   }
   is_oneshot: false
+}
+triggers {
+  name: "Remove old quest item"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Remove Item from Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Stuffer Shack Passcard"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5233e678366236181b003815"
+  }
+  elseActions {
+  }
+  is_oneshot: true
 }
 regions {
   name: "Second Floor Stairs"

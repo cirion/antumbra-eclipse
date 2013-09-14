@@ -1,7 +1,7 @@
 minX: -72
-minZ: -173
+minZ: -190
 numX: 265
-numZ: 327
+numZ: 344
 props {
   name: "barrens_ground_doublestrip01"
   gridPoint {
@@ -19603,9 +19603,9 @@ props {
 props {
   name: "docks_floor_3x3panel"
   gridPoint {
-    x: 159
+    x: 59
     y: 0
-    z: -129
+    z: -190
   }
   orientation: ORIENTATION_E
   idRef {
@@ -66642,9 +66642,9 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: 159
+    x: 59
     y: 0
-    z: -129
+    z: -190
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -66652,9 +66652,9 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: 159
+    x: 59
     y: 0
-    z: -128
+    z: -189
   }
   orientation: ORIENTATION_S
   idRef {
@@ -66665,9 +66665,9 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: 159
+    x: 59
     y: 0
-    z: -127
+    z: -188
   }
   orientation: ORIENTATION_S
   idRef {
@@ -66678,9 +66678,9 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: 161
+    x: 61
     y: 0
-    z: -127
+    z: -188
   }
   orientation: ORIENTATION_S
   idRef {
@@ -66691,9 +66691,9 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: 160
+    x: 60
     y: 0
-    z: -127
+    z: -188
   }
   orientation: ORIENTATION_S
   idRef {

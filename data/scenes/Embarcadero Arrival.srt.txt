@@ -69,7 +69,7 @@ triggers {
             string_value: "bool"
           }
           args {
-            int_value: 1
+            int_value: 0
           }
         }
       }
@@ -105,12 +105,103 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Region Enabled"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5233d5dd366236181b003732"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
     id: "521bfd093662362419001b20"
   }
   elseActions {
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521bf9c23662362419001ad7"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Move To (Actor)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "521bf9c23662362419001ad7"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "End Current Actor Turn"
+    }
   }
   is_oneshot: true
 }
@@ -560,6 +651,91 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Cirion Chat Start"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5233d5dd366236181b003732"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Start Conversation"
+      args {
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "521bfc123662362419001ade"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "521bf9c23662362419001ad7"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5233d638366236181b003733"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "End Game"
+  events {
+    ops {
+      functionName: "Get Map Item (Event)"
+      args {
+        string_value: "End Game"
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "End Story With Epilogue"
+      args {
+        string_value: "epilogue_1"
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5233e2e5366236181b0037f3"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Camera"
   position {
@@ -608,6 +784,42 @@ regions {
   is_camera_region: false
   idRef {
     id: "521c02f63662360c11001ad6"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Cirion Chat"
+  position {
+    x: 1
+    y: -17
+    width: 1
+    height: 27
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "5233d5dd366236181b003732"
   }
   directional_light_dir {
     x: -0.5
@@ -699,6 +911,7 @@ characters {
       filename: "generic_esp_shield"
     }
     karma: 6
+    is_prop_character: true
   }
 }
 characters {
@@ -758,12 +971,13 @@ characters {
     }
     portrait_code_override: "s6h5c14"
     karma: 6
+    is_prop_character: true
   }
 }
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -27
+    x: -24
     y: 0
     z: -42
   }
@@ -813,6 +1027,7 @@ characters {
       filename: "backer_humanmale_levieranburks"
     }
     karma: 6
+    is_prop_character: true
   }
 }
 variables {
@@ -824,6 +1039,7 @@ variables {
   }
 }
 mapEvents: "Got Into Taxi"
+mapEvents: "End Game"
 worldMapLocation {
   filename: ""
   location {

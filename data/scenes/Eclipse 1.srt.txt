@@ -3221,10 +3221,10 @@ triggers {
         call_value {
           functionName: "Get Map Item (AnimationModifiers)"
           args {
-            string_value: "talking"
+            string_value: "preen"
           }
           args {
-            string_value: "talking"
+            string_value: "preen"
           }
         }
       }
@@ -8457,6 +8457,248 @@ triggers {
   }
   is_oneshot: false
 }
+triggers {
+  name: "Seed Stash"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Add Item to Stash"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "DocWagonBasic"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Item to Stash"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "HealthPack_med"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Item to Stash"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "Grenade 1 (Frag)"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5233cc49366236181b00366c"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Directional Light Cycles"
+  events {
+    ops {
+      functionName: "Get Map Item (Event)"
+      args {
+        string_value: "Directional Light Cycles"
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Directional Light Color"
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.75
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        float_value: 0.75
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (CameraRegion)"
+          args {
+            string_value: "5233644a64343148a3e8392b"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Send Event After Delay"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Directional Light Cycles"
+          }
+        }
+      }
+      args {
+        float_value: 2.5
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "52340201366236e81a00268b"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Start Cycling Lights"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Directional Light Cycles"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "523402b7366236e81a00268c"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "First Floor Stairs"
   position {
@@ -9094,9 +9336,9 @@ regions {
     a: 1
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.082352944
+    g: 0.19607843
+    b: 0.36470589
     a: 1
   }
   ambience_template: ""
@@ -9177,12 +9419,48 @@ regions {
   loop_combat_music: true
   loop_default_music: false
 }
+regions {
+  name: "Lights Holder"
+  position {
+    x: -71
+    y: 33
+    width: 12
+    height: 13
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "52340600366236e81a002690"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 2
+    x: -47
     y: 0
-    z: -22
+    z: 71
   }
   orientation: ORIENTATION_E
   idRef {
@@ -11251,7 +11529,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Story/LynneTelestrian"
+    prefab_name: "Punk/HumanMaleSpikyPunk"
     character_sheet_id: "BaseCivilian"
     character_mod {
       stats {
@@ -11771,7 +12049,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Punk/HumanMaleSpikyPunk"
+    prefab_name: "Story/LynneTelestrian"
     character_sheet_id: "BaseCivilian"
     character_mod {
       stats {
@@ -13489,6 +13767,7 @@ mapEvents: "Client 2 Finish Talking"
 mapEvents: "Client 3 Arrives"
 mapEvents: "Client 3 Reappears"
 mapEvents: "Client 3 Finish Talking"
+mapEvents: "Directional Light Cycles"
 worldMapLocation {
   filename: ""
   location {

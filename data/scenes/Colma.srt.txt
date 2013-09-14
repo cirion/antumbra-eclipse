@@ -94,6 +94,28 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "5223f7303662366c10007e8a"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -5470,6 +5492,25 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Clear Actor Orders"
+      args {
+        call_value {
+          functionName: "All Actors"
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -8195,7 +8236,7 @@ characters {
         ranged_combat: -2
         close_combat: 0
         throwing_weapons: 0
-        spellcasting: 0
+        spellcasting: 4
         decking: 0
         conjuring: 0
         spirit_summoning: 0
@@ -8244,10 +8285,10 @@ characters {
       prefab_name: "HealthPack_med"
     }
     equipment {
-      prefab_name: "Lightning Barrier 4"
+      prefab_name: "Air Barrier 4"
     }
     equipment {
-      prefab_name: "Air Barrier 4"
+      prefab_name: "Spell Aim 2"
     }
     team_id: "Civilians"
     char_name: "Emperor Norton"
@@ -8259,7 +8300,7 @@ characters {
     }
     description_bio: "Emperor of California and Protector of UCAS"
     portrait_code_override: "s5h5c6b1c6"
-    karma: 55
+    karma: 65
   }
 }
 characters {
