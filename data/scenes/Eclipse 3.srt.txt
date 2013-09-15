@@ -598,6 +598,28 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Hire another runner"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -792,6 +814,28 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Hire another runner"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -982,6 +1026,28 @@ triggers {
           }
           args {
             int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Hire another runner"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
           }
         }
       }
@@ -2229,6 +2295,16 @@ variables {
   }
 }
 mapEvents: "Kali Walks Away"
+goals {
+  name: "Recruit allies"
+  type: GoalType_Primary
+  status: GoalStatus_Started
+}
+goals {
+  name: "Hire another runner"
+  type: GoalType_Primary
+  status: GoalStatus_Started
+}
 worldMapLocation {
   filename: ""
   location {

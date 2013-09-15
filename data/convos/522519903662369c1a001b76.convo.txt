@@ -60,7 +60,7 @@ nodes {
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
-      id: "52251fd43662369c1a001c44"
+      id: "5235028c3662364c1d0027e6"
     }
   }
   branches {
@@ -121,6 +121,7 @@ nodes {
     nextNodeIndex: 0
     auxiliaryLink: true
   }
+  nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
@@ -168,6 +169,28 @@ nodes {
           }
           args {
             int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Recruit allies"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
           }
         }
       }

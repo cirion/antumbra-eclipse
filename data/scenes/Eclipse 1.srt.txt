@@ -9347,7 +9347,7 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "52349bce643431ebb9fc412a"
   }
@@ -9412,7 +9412,7 @@ triggers {
         }
       }
       args {
-        float_value: 0.25
+        float_value: 10
       }
     }
   }
@@ -9481,7 +9481,7 @@ triggers {
         }
       }
       args {
-        float_value: 0.25
+        float_value: 10
       }
     }
   }
@@ -10252,9 +10252,9 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -47
+    x: 2
     y: 0
-    z: 71
+    z: -22
   }
   orientation: ORIENTATION_E
   idRef {
@@ -14577,6 +14577,11 @@ goals {
 goals {
   name: "Report back to Johnson"
   type: GoalType_Primary
+  status: GoalStatus_Hidden
+}
+goals {
+  name: "Discover Tarne\'s status"
+  type: GoalType_Secondary
   status: GoalStatus_Hidden
 }
 worldMapLocation {

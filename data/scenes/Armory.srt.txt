@@ -11903,6 +11903,47 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Set waypoint"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Waypoint on Actor"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "52256bd9366236d419003ae4"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "523503363662364c1d00282d"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "The Ghoul Zone"
   position {
@@ -15138,6 +15179,11 @@ goals {
   type: GoalType_Primary
   status: GoalStatus_Hidden
   description: ""
+}
+goals {
+  name: "Find Shavarus"
+  type: GoalType_Primary
+  status: GoalStatus_Started
 }
 worldMapLocation {
   filename: ""

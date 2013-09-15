@@ -1152,6 +1152,28 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Find a way onto the pier"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -1664,6 +1686,28 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Find a way onto the pier"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -1743,6 +1787,28 @@ triggers {
           }
           args {
             int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Find Shavarus"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
           }
         }
       }
@@ -2389,6 +2455,28 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Waypoint on Prop"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "5224f0323662367010002282"
           }
         }
       }
@@ -4844,6 +4932,83 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Start pier quest"
+  events {
+    ops {
+      functionName: "On Combat Exited"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Team Survival Percentage"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        int_value: 100
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Find a way onto the pier"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "523501423662364c1d0027ce"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Turm Chat"
   position {
@@ -4919,8 +5084,8 @@ regions {
 regions {
   name: "Tir Hostility"
   position {
-    x: -12
-    y: -17
+    x: -16
+    y: -18
     width: 3
     height: 27
   }
@@ -7205,6 +7370,16 @@ mapEvents: "Crossed to Pier"
 goals {
   name: "You died."
   type: GoalType_Primary
+  status: GoalStatus_Hidden
+}
+goals {
+  name: "Find Shavarus"
+  type: GoalType_Primary
+  status: GoalStatus_Started
+}
+goals {
+  name: "Find a way onto the pier"
+  type: GoalType_Secondary
   status: GoalStatus_Hidden
 }
 worldMapLocation {
