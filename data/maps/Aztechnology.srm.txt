@@ -47783,3 +47783,31 @@ props {
     intensity: 4
   }
 }
+props {
+  name: "vfx_fx_flicker"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 19
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "FlickeringLightEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_roach"
+  gridPoint {
+    x: -96
+    y: 0
+    z: 37
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopRoachScurry"
+  }
+  lod: 0
+}
