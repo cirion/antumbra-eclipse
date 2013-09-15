@@ -332,18 +332,21 @@ nodes {
     id: "5227ec80366236b412000dd8"
   }
   index: 8
-  text: "You got it! It feels good to be back on stage again. I\342\200\231m looking forward to sharing it with a friend."
+  text: "You got it! It feels good to perform again. I\342\200\231m looking forward to sharing this with a friend."
   nodeType: ConversationNodeType_Simple
   actions {
     ops {
-      functionName: "Send Event"
+      functionName: "Send Event After Delay"
       args {
         call_value {
           functionName: "Get Map Item (Event)"
           args {
-            string_value: "Kali Sings"
+            string_value: "Kali Sings Start"
           }
         }
+      }
+      args {
+        float_value: 1
       }
     }
   }

@@ -20637,7 +20637,7 @@ props {
 props {
   name: "system_invisible_blockMove"
   gridPoint {
-    x: -52
+    x: -53
     y: 0
     z: 87
   }
@@ -23709,5 +23709,34 @@ props {
       b: 1
     }
     intensity: 5
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -45
+    y: 0
+    z: 38
+  }
+  orientation: ORIENTATION_S
+  displayName: "Big Red Light"
+  idRef {
+    id: "52363b50366236601e00273d"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 4
+    color {
+      r: 1
+      g: 0.66666669
+      b: 1
+    }
+    intensity: 8
   }
 }
