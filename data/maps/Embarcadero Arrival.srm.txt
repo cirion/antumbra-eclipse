@@ -81438,26 +81438,6 @@ props {
   lod: 0
 }
 props {
-  name: "system_invisible_nonsolidProp"
-  gridPoint {
-    x: -23
-    y: 0
-    z: -42
-  }
-  orientation: ORIENTATION_S
-  displayName: "Get a Job Waypoint"
-  idRef {
-    id: "5234c87c64343160c868da3b"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    dummyInteraciton {
-    }
-  }
-  lod: 0
-}
-props {
   name: "system_gizmo_lightbulb"
   gridPoint {
     x: -27

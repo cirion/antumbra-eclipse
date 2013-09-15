@@ -413,7 +413,7 @@ nodes {
         call_value {
           functionName: "Get Map Item (Prop)"
           args {
-            string_value: "5234c87c64343160c868da3b"
+            string_value: "521bfb3c3662362419001adc"
           }
         }
       }
@@ -436,6 +436,50 @@ nodes {
           functionName: "Get Map Item (Prop)"
           args {
             string_value: "521c03733662360c11001ad9"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Animation State Of Actor To Animation Modifier"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "AnimationState"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5235eda8366236881d001126"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (AnimationModifiers)"
+          args {
+            string_value: "relaxed"
+          }
+          args {
+            string_value: "calm"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Done with Chat"
           }
         }
       }

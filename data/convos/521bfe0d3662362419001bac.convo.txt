@@ -301,7 +301,7 @@ nodes {
         call_value {
           functionName: "Get Map Item (Prop)"
           args {
-            string_value: "5234c87c64343160c868da3b"
+            string_value: "521bfb3f3662362419001add"
           }
         }
       }
@@ -346,6 +346,17 @@ nodes {
           }
           args {
             int_value: 2
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Done with Chat"
           }
         }
       }
