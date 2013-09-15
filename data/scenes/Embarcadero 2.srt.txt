@@ -5009,6 +5009,42 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Stupid Dumb Fog Does Not Work"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Environmental Effect Amount"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "EnvironmentalEffects"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        int_value: 100
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5235e297366236881d001066"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Turm Chat"
   position {
@@ -5053,7 +5089,7 @@ regions {
     width: 35
     height: 1
   }
-  enabledAtStart: false
+  enabledAtStart: true
   is_camera_region: false
   idRef {
     id: "5224da0a366236a40900828a"
@@ -5089,7 +5125,7 @@ regions {
     width: 3
     height: 27
   }
-  enabledAtStart: false
+  enabledAtStart: true
   is_camera_region: false
   idRef {
     id: "5224de2e366236a409008295"
@@ -5300,9 +5336,9 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -32
+    x: -45
     y: 0
-    z: 13
+    z: 67
   }
   orientation: ORIENTATION_W
   idRef {
@@ -7452,21 +7488,21 @@ allow_drawn_weapons: false
 team_affiliations {
   team_name: "Shadowrunners"
   affiliation: 0
-  affiliation: 0
-  affiliation: 0
+  affiliation: 1
+  affiliation: 1
   affiliation: 0
 }
 team_affiliations {
   team_name: "Gangers"
+  affiliation: 1
   affiliation: 0
-  affiliation: 0
-  affiliation: 0
+  affiliation: 1
   affiliation: 0
 }
 team_affiliations {
   team_name: "LoneStar"
-  affiliation: 0
-  affiliation: 0
+  affiliation: 1
+  affiliation: 1
   affiliation: 0
   affiliation: 0
 }
@@ -7479,8 +7515,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
