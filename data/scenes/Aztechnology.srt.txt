@@ -6147,6 +6147,28 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Waypoint on Prop"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "521ff306366236441f00308a"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -8167,6 +8189,11 @@ goals {
   name: "You died."
   type: GoalType_Primary
   status: GoalStatus_Hidden
+}
+goals {
+  name: "Infiltrate the office"
+  type: GoalType_Primary
+  status: GoalStatus_Started
 }
 worldMapLocation {
   filename: ""

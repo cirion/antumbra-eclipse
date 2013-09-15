@@ -36490,3 +36490,75 @@ props {
   }
   lod: 0
 }
+props {
+  name: "hive_clutter_rock02"
+  gridPoint {
+    x: -87
+    y: 0
+    z: -68
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "hive_clutter_rock02"
+  gridPoint {
+    x: -90
+    y: 0
+    z: -66
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5234a274643431ebb9fc413b"
+  }
+  lod: 0
+}
+props {
+  name: "hive_clutter_rock01"
+  gridPoint {
+    x: -88
+    y: 0
+    z: -73
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "hive_clutter_hugeRock01"
+  gridPoint {
+    x: -87
+    y: 0
+    z: -62
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5234a284643431ebb9fc413c"
+  }
+  lod: 0
+}
+props {
+  name: "hive_clutter_rock01"
+  gridPoint {
+    x: -78
+    y: 0
+    z: -55
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5234ac1064343189c57266f6"
+  }
+  lod: 0
+}
+props {
+  name: "hive_clutter_rubble03"
+  gridPoint {
+    x: -87
+    y: 0
+    z: -55
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5234ac1964343189c57266f8"
+  }
+  lod: 0
+}

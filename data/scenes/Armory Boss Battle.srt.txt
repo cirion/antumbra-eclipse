@@ -4109,12 +4109,12 @@ characters {
     character_sheet_id: "Lvl3_Elf_Mage"
     character_mod {
       stats {
-        body: 1
+        body: 3
         quickness: 0
         strength: 0
         charisma: 0
         intelligence: 0
-        willpower: 0
+        willpower: -1
         essence: 0
         magic: 0
         hp: 0
@@ -4128,10 +4128,10 @@ characters {
         move_speed: 0
       }
       skills {
-        ranged_combat: 0
+        ranged_combat: -1
         close_combat: 0
         throwing_weapons: 0
-        spellcasting: 0
+        spellcasting: -1
         decking: 0
         conjuring: 0
         spirit_summoning: 3
@@ -4150,7 +4150,7 @@ characters {
       specializations {
         pistol: 0
         rifle: 0
-        shotgun: 2
+        shotgun: 1
         smg: 0
         edged: 0
         unarmed: 0

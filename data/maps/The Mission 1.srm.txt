@@ -69239,3 +69239,49 @@ props {
   }
   lod: 0
 }
+props {
+  name: "barrens_street_bench02"
+  gridPoint {
+    x: 23
+    y: 0
+    z: -48
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52349fb8643431ebb9fc4135"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_bench02"
+  gridPoint {
+    x: 24
+    y: 0
+    z: -45
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "52349fbc643431ebb9fc4136"
+  }
+  lod: 0
+}
+props {
+  name: "pikePlace_street_waterFountain"
+  gridPoint {
+    x: 25
+    y: 0
+    z: -48
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_dumpster02"
+  gridPoint {
+    x: 29
+    y: 0
+    z: -50
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}

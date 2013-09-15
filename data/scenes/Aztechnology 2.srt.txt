@@ -2626,6 +2626,28 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Waypoint on Prop"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "521ff367366236441f00308c"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -2762,6 +2784,28 @@ triggers {
           functionName: "Get Map Item (Event)"
           args {
             string_value: "Guards Turn Hostile"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Waypoint on Prop"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "521ff367366236441f00308c"
           }
         }
       }
@@ -3292,6 +3336,11 @@ goals {
   name: "You died."
   type: GoalType_Primary
   status: GoalStatus_Hidden
+}
+goals {
+  name: "Reach the top floor"
+  type: GoalType_Primary
+  status: GoalStatus_Started
 }
 worldMapLocation {
   filename: ""

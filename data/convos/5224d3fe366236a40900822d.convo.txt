@@ -146,13 +146,13 @@ nodes {
     id: "5224d4ac366236a409008239"
   }
   index: 2
-  text: "Nothing personal, but I\342\200\231ve been paid good nuyen to make sure that nobody comes near these boats. If that means I have to shoot you, I will."
+  text: "Nothing personal, but I\342\200\231ve been paid good nuyen to keep people far away from these boats. If that means I have to shoot you, I will."
   branches {
     responseText: "I just need to talk with Shavarus."
     nextNodeIndex: 3
     onlyOnce: true
     idRef {
-      id: "5224d501366236a409008246"
+      id: "5234ae7c64343189c572675b"
     }
   }
   branches {
@@ -326,7 +326,7 @@ nodes {
     id: "5224d4f2366236a409008243"
   }
   index: 3
-  text: "Ain\342\200\231t my problem."
+  text: "Ain\342\200\231t my problem.\n\nI\'ve got enough trouble already keeping the marines off Shavarus\'s back. Letting people through to see him is the opposite of what I was hired to do."
   branches {
     responseText: ""
     nextNodeIndex: 2

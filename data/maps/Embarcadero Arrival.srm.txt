@@ -78356,7 +78356,7 @@ props {
 props {
   name: "tenements_clutter_woodenCrates"
   gridPoint {
-    x: -50
+    x: -51
     y: 0
     z: 0
   }
@@ -78878,7 +78878,7 @@ props {
   name: "pikePlace_wallDecoration_genericGrafitti03"
   gridPoint {
     x: -4
-    y: -1.3877788e-016
+    y: -1.3877788e-16
     z: 18.9
   }
   orientation: ORIENTATION_S
@@ -81399,6 +81399,104 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "522fef183662364409001b93"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_container01"
+  gridPoint {
+    x: -49
+    y: 0
+    z: 23
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5234b02464343189c5726776"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_container05"
+  gridPoint {
+    x: -45
+    y: 0
+    z: 29
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5234b02a64343189c5726777"
+  }
+  lod: 0
+}
+props {
+  name: "tenements_clutter_woodenCrates"
+  gridPoint {
+    x: -50
+    y: 0
+    z: 32
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5234b04064343189c5726778"
+  }
+  lod: 0
+}
+props {
+  name: "docks_decor_shippingCrates"
+  gridPoint {
+    x: -45
+    y: 0
+    z: 38
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5234b04964343189c5726779"
+  }
+  lod: 0
+}
+props {
+  name: "docks_appliance_powerSupply"
+  gridPoint {
+    x: -55
+    y: 0
+    z: 45
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5234b06d64343189c572677b"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_salvageCrate"
+  gridPoint {
+    x: -55
+    y: 0
+    z: -12
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5234b79f64343189c5726781"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -23
+    y: 0
+    z: -42
+  }
+  orientation: ORIENTATION_S
+  displayName: "Get a Job Waypoint"
+  idRef {
+    id: "5234c87c64343160c868da3b"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
   }
   lod: 0
 }

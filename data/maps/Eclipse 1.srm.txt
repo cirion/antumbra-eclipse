@@ -21738,7 +21738,7 @@ props {
     z: 71
   }
   orientation: ORIENTATION_S
-  displayName: "Light 3a"
+  displayName: "Light 3A"
   idRef {
     id: "5234011b366236e81a002684"
   }
@@ -21907,9 +21907,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -53
+    x: -52
     y: 0
-    z: 98
+    z: 99
   }
   orientation: ORIENTATION_S
   displayName: "Light 2D"
@@ -22514,6 +22514,225 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "5234088f366236e81a0026ba"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -47
+    y: 0
+    z: 74
+  }
+  orientation: ORIENTATION_S
+  displayName: "Slot 1A"
+  idRef {
+    id: "52349adf643431ebb9fc4123"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -55
+    y: 0
+    z: 76
+  }
+  orientation: ORIENTATION_S
+  displayName: "Slot 2A"
+  idRef {
+    id: "523498a4643431ebb9fc4112"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -61
+    y: 0
+    z: 72
+  }
+  orientation: ORIENTATION_S
+  displayName: "Slot 3A"
+  idRef {
+    id: "523498ae643431ebb9fc4113"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -48
+    y: 0
+    z: 82
+  }
+  orientation: ORIENTATION_S
+  displayName: "Slot 1B"
+  idRef {
+    id: "523498b6643431ebb9fc4114"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -62
+    y: 0
+    z: 82
+  }
+  orientation: ORIENTATION_S
+  displayName: "Slot 3B"
+  idRef {
+    id: "523498c2643431ebb9fc4115"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -71
+    y: 0
+    z: 82
+  }
+  orientation: ORIENTATION_S
+  displayName: "Slot 4B"
+  idRef {
+    id: "523498c8643431ebb9fc4116"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -45
+    y: 0
+    z: 91
+  }
+  orientation: ORIENTATION_S
+  displayName: "Slot 1C"
+  idRef {
+    id: "523498d0643431ebb9fc4117"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -67
+    y: 0
+    z: 88
+  }
+  orientation: ORIENTATION_S
+  displayName: "Slot 4C"
+  idRef {
+    id: "523498db643431ebb9fc4118"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -52
+    y: 0
+    z: 100
+  }
+  orientation: ORIENTATION_S
+  displayName: "Slot 2D"
+  idRef {
+    id: "52349905643431ebb9fc4119"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -62
+    y: 0
+    z: 95
+  }
+  orientation: ORIENTATION_S
+  displayName: "Slot 3D"
+  idRef {
+    id: "52349921643431ebb9fc411a"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -68
+    y: 0
+    z: 98
+  }
+  orientation: ORIENTATION_S
+  displayName: "Slot 4D"
+  idRef {
+    id: "52349927643431ebb9fc411b"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
   }
   lod: 0
 }

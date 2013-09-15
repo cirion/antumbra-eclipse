@@ -637,52 +637,6 @@ triggers {
         }
       }
     }
-    ops {
-      functionName: "Order Actor to Hunt And Destroy (Team)"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "squad1"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
   }
   isActive: true
   idRef {
@@ -4737,6 +4691,159 @@ triggers {
   }
   is_oneshot: false
 }
+triggers {
+  name: "Squad 1B Aggro"
+  events {
+    ops {
+      functionName: "On Actor Damage"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HPOrAP"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "squad 1b"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Triggering Target Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "Keep them from the pier!"
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad 1b"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5234b7d464343189c5726783"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Turm Chat"
   position {
@@ -5116,8 +5223,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Core/HumanMale"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
-    equipment_sheet_id: "Lonestar_Shotgun_Low"
+    character_sheet_id: "Lonestar_Lv2_Captain"
     character_mod {
       stats {
         body: 0
@@ -5171,11 +5277,14 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "Guard - Protect"
       attitude: AttitudeAggressive
     }
     equipment {
       prefab_name: "Outfit_Security"
+    }
+    equipment {
+      prefab_name: "AR 1 Semopal vz88v"
     }
     team_id: "LoneStar"
     char_name: "Marine"
@@ -5186,7 +5295,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h5c4b6c4"
-    karma: 33
+    karma: 52
   }
 }
 characters {
@@ -5260,7 +5369,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "Guard - Protect"
       attitude: AttitudeAggressive
     }
     equipment {
@@ -5283,7 +5392,7 @@ characters {
   gridPoint {
     x: -86
     y: 0
-    z: -3
+    z: 0
   }
   orientation: ORIENTATION_E
   GeneralTags: "squad1"
@@ -5349,7 +5458,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "Guard - Protect"
       attitude: AttitudeAggressive
     }
     equipment {
@@ -5459,9 +5568,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -86
+    x: -87
     y: 0
-    z: 0
+    z: 1
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1"
@@ -5527,7 +5636,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Seek And Destroy"
+      archetypeName: "Guard - Protect"
       attitude: AttitudeAggressive
     }
     equipment {
@@ -5731,7 +5840,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Story/TirTairngireGuard"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    character_sheet_id: "Lonestar_Lv2_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Shotgun_Low"
     character_mod {
       stats {
@@ -5793,7 +5902,7 @@ characters {
     char_name: "Tir Guard"
     GeneralTags: "squad2"
     pc_spawn_number: -1
-    karma: 33
+    karma: 41
   }
 }
 characters {
@@ -5812,7 +5921,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Gangers/ElfMaleGangerEyepatch"
-    character_sheet_id: "Lonestar_Lv2_Human_Mage"
+    character_sheet_id: "Lonestar_Lv3_Human_Mage"
     equipment_sheet_id: "Lonestar_Mage_Low"
     character_mod {
       stats {
@@ -5874,7 +5983,7 @@ characters {
     char_name: "Tir Mage"
     GeneralTags: "squad2"
     pc_spawn_number: -1
-    karma: 43
+    karma: 61
   }
 }
 characters {
@@ -6338,11 +6447,10 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Story/TirTairngireGuard"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
-    equipment_sheet_id: "Lonestar_SMG_Low"
+    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
     character_mod {
       stats {
-        body: 0
+        body: 1
         quickness: 0
         strength: 0
         charisma: 0
@@ -6396,12 +6504,15 @@ characters {
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
     }
+    equipment {
+      prefab_name: "Pi 1 Fichetti Security 500"
+    }
     team_id: "Gangers"
     char_name: "Tir Guard"
     GeneralTags: "squad4"
     enabled_at_start: false
     pc_spawn_number: -1
-    karma: 39
+    karma: 40
   }
 }
 characters {
@@ -6502,11 +6613,10 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Story/TirTairngireGuard"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
-    equipment_sheet_id: "Lonestar_SMG_Low"
+    character_sheet_id: "Lonestar_Lv1_Captain"
     character_mod {
       stats {
-        body: 0
+        body: 1
         quickness: 0
         strength: 0
         charisma: 0
@@ -6560,12 +6670,15 @@ characters {
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
     }
+    equipment {
+      prefab_name: "AR 1 Semopal vz88v"
+    }
     team_id: "Gangers"
     char_name: "Tir Guard"
     GeneralTags: "squad5"
     enabled_at_start: false
     pc_spawn_number: -1
-    karma: 39
+    karma: 47
   }
 }
 characters {
@@ -6731,6 +6844,346 @@ characters {
     }
     karma: 78
     is_prop_character: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -36
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "squad 1b"
+  displayName: "Tir Squad 1B Guard 3"
+  idRef {
+    id: "5234b74a64343189c572677d"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Standard/ElfMaleGanger"
+    character_sheet_id: "Lonestar_Lv2_Human_Mage"
+    equipment_sheet_id: "Lonestar_Mage_Low"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "Gangers"
+    char_name: "Tir Mage"
+    GeneralTags: "squad 1b"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    karma: 43
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -45
+    y: 0
+    z: -10
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "squad 1b"
+  displayName: "Tir Squad 1B Guard 4"
+  idRef {
+    id: "5234b74a64343189c572677e"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
+    character_mod {
+      stats {
+        body: 1
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    equipment {
+      prefab_name: "Pi 1 Fichetti Security 500"
+    }
+    team_id: "Gangers"
+    char_name: "Tir Guard"
+    GeneralTags: "squad 1b"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    karma: 40
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -47
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "squad 1b"
+  displayName: "Tir Squad 1B Guard 1"
+  idRef {
+    id: "5234b74a64343189c572677f"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Gangers/ElfFemaleGangerMohawk"
+    character_sheet_id: "Lonestar_Lv2_Human_Mage"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    equipment {
+      prefab_name: "Spell Weaken Armor 1"
+    }
+    equipment {
+      prefab_name: "Spell Manabolt 1"
+    }
+    equipment {
+      prefab_name: "Spell Lightning Bolt 1"
+    }
+    team_id: "Gangers"
+    char_name: "Tir Mage"
+    GeneralTags: "squad 1b"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    karma: 43
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -37
+    y: 0
+    z: -13
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "squad 1b"
+  displayName: "Tir Squad 1B Guard 2"
+  idRef {
+    id: "5234b74a64343189c5726780"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv1_Captain"
+    character_mod {
+      stats {
+        body: 1
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    equipment {
+      prefab_name: "AR 1 Semopal vz88v"
+    }
+    team_id: "Gangers"
+    char_name: "Tir Guard"
+    GeneralTags: "squad 1b"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    karma: 47
   }
 }
 variables {

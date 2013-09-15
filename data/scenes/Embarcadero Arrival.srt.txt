@@ -736,6 +736,47 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Load Map"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Waypoint on Prop"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "5234c87c64343160c868da3b"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5234c86764343160c868da39"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Camera"
   position {
@@ -1040,6 +1081,11 @@ variables {
 }
 mapEvents: "Got Into Taxi"
 mapEvents: "End Game"
+goals {
+  name: "Get a job"
+  type: GoalType_Primary
+  status: GoalStatus_Started
+}
 worldMapLocation {
   filename: ""
   location {

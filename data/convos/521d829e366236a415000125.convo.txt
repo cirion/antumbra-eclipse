@@ -257,7 +257,7 @@ nodes {
     id: "521d83c1366236a41500015a"
   }
   index: 8
-  text: "You\342\200\231ll have to pay for it, though: \302\245500 for a pair. What do you say?"
+  text: "You\342\200\231ll have to pay for it, though: \302\245500 for a pair. You might find cheaper SINs elsewhere in Eclipse, but none with higher quality. What do you say?"
   branches {
     responseText: "{{CC}}\302\245500{{/CC}} Let\342\200\231s do it."
     conditions {
@@ -342,6 +342,72 @@ nodes {
           }
           args {
             int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Acquire fake SINs"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Report back to Johnson"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Waypoint on Actor"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "521c1806366236581b006c63"
           }
         }
       }

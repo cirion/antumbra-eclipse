@@ -7,7 +7,7 @@ nodes {
     id: "522565ad366236d419003a1f"
   }
   index: 0
-  text: "Greetings!"
+  text: "Greetings!\n\nI have been instructed to assist you in the apprehension and termination of a wanted criminal known as Shavarus. My men and I stand ready to do whatever it takes to prevent his reign of terror and to keep this city safe."
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -19,7 +19,7 @@ nodes {
     id: "522565bd366236d419003a22"
   }
   index: 1
-  text: "I have been instructed to assist you in the apprehension and termination of a wanted criminal known as Shavarus. My men and I stand ready to do whatever it takes to prevent his reign of terror and to keep this city safe."
+  text: "Stay alert as we proceed through here. This is an armory, after all, and we may be able to locate some healing supplies or munitions along the way.\n\nNow, let\'s get moving. We\'ve got a troll to kill."
   branches {
     responseText: "Welcome to the good side."
     nextNodeIndex: 2

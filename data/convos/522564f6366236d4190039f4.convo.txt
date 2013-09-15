@@ -19,7 +19,7 @@ nodes {
     id: "5225651a366236d4190039fd"
   }
   index: 1
-  text: "Not everyone in the Mission is under Shavarus\342\200\231s thumb, you know. Plenty of us remain loyal to Emperor Norton."
+  text: "Not everyone in the Mission is under Shavarus\342\200\231s thumb, you know. Plenty of us remain loyal to Emperor Norton.\n\nShavarus has it all wrong. We metas need to show the breeders that we\342\200\231ve better than them, not that we\342\200\231ll stoop to their level. We\342\200\231re building a better society, in Orkland and in Halferville and all around their privileged little city. "
   branches {
     responseText: ""
     nextNodeIndex: 2
@@ -30,7 +30,7 @@ nodes {
     id: "52256525366236d419003a00"
   }
   index: 2
-  text: "Shavarus has it all wrong. We metas need to show the breeders that we\342\200\231ve better than them, not that we\342\200\231ll stoop to their level. We\342\200\231re building a better society, in Orkland and in Halferville and all around their privileged little city. "
+  text: "Heh, it feels good to be launching a raid on this place. And, who knows, we might be able to find some supplies or munitions along the way. All the better to prepare for a hopeless battle, eh?"
   branches {
     responseText: "I am glad to have your help."
     nextNodeIndex: 3
@@ -52,7 +52,7 @@ nodes {
     id: "52256578366236d419003a05"
   }
   index: 3
-  text: "Now, let\342\200\231s go save their skins! Ha, won\342\200\231t that embarrass the corps!"
+  text: "Now, let\342\200\231s go save their sorry skins! Ha, won\342\200\231t that embarrass the corps!"
   nodeType: ConversationNodeType_Simple
 }
 roots {
