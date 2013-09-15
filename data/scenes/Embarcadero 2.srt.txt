@@ -5053,7 +5053,7 @@ regions {
     width: 35
     height: 1
   }
-  enabledAtStart: true
+  enabledAtStart: false
   is_camera_region: false
   idRef {
     id: "5224da0a366236a40900828a"
@@ -5089,7 +5089,7 @@ regions {
     width: 3
     height: 27
   }
-  enabledAtStart: true
+  enabledAtStart: false
   is_camera_region: false
   idRef {
     id: "5224de2e366236a409008295"
@@ -5261,12 +5261,48 @@ regions {
   loop_combat_music: true
   loop_default_music: false
 }
+regions {
+  name: "New Region"
+  position {
+    x: -87
+    y: -96
+    width: 142
+    height: 166
+  }
+  enabledAtStart: true
+  is_camera_region: true
+  idRef {
+    id: "5235ce5b366236881d000679"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.40784314
+    g: 0.50588238
+    b: 0.44705883
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.16470589
+    g: 0.14509805
+    b: 0.38431373
+    a: 0.88235295
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -45
+    x: -32
     y: 0
-    z: 67
+    z: 13
   }
   orientation: ORIENTATION_W
   idRef {
@@ -5822,9 +5858,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -97
+    x: -85
     y: 0
-    z: 9
+    z: 10
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1"
@@ -7416,21 +7452,21 @@ allow_drawn_weapons: false
 team_affiliations {
   team_name: "Shadowrunners"
   affiliation: 0
-  affiliation: 1
-  affiliation: 1
+  affiliation: 0
+  affiliation: 0
   affiliation: 0
 }
 team_affiliations {
   team_name: "Gangers"
-  affiliation: 1
   affiliation: 0
-  affiliation: 1
+  affiliation: 0
+  affiliation: 0
   affiliation: 0
 }
 team_affiliations {
   team_name: "LoneStar"
-  affiliation: 1
-  affiliation: 1
+  affiliation: 0
+  affiliation: 0
   affiliation: 0
   affiliation: 0
 }
