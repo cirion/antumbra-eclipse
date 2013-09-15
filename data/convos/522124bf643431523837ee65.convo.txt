@@ -63,7 +63,7 @@ nodes {
     id: "522127e2643431523837ee86"
   }
   index: 4
-  text: "Curfew? Are you mental? It\342\200\231s four in the fragging afternoon!"
+  text: "Curfew? Are you mental? The fragging sun has barely gone down!"
   branches {
     responseText: ""
     nextNodeIndex: 5

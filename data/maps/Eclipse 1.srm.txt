@@ -13890,9 +13890,9 @@ props {
 props {
   name: "telestrianEstate_wall_wallpaperConnector"
   gridPoint {
-    x: -134
+    x: -135
     y: 0
-    z: 177
+    z: 174
   }
   orientation: ORIENTATION_S
   idRef {
@@ -21648,7 +21648,7 @@ props {
   gridPoint {
     x: -56
     y: 0
-    z: 75
+    z: 78
   }
   orientation: ORIENTATION_S
   displayName: "Light 2A"
@@ -21704,9 +21704,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -49
+    x: -47
     y: 0
-    z: 81
+    z: 83
   }
   orientation: ORIENTATION_S
   displayName: "Light 1B"
@@ -21762,9 +21762,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -62
+    x: -65
     y: 0
-    z: 95
+    z: 96
   }
   orientation: ORIENTATION_S
   displayName: "Light 3D"
@@ -21791,7 +21791,7 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -63
+    x: -65
     y: 0
     z: 81
   }
@@ -21820,9 +21820,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -68
+    x: -70
     y: 0
-    z: 88
+    z: 89
   }
   orientation: ORIENTATION_S
   displayName: "Light 4C"
@@ -21849,9 +21849,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -72
+    x: -74
     y: 0
-    z: 81
+    z: 82
   }
   orientation: ORIENTATION_S
   displayName: "Light 4B"
@@ -21878,9 +21878,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -69
+    x: -75
     y: 0
-    z: 97
+    z: 96
   }
   orientation: ORIENTATION_S
   displayName: "Light 4D"
@@ -21907,9 +21907,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -52
+    x: -55
     y: 0
-    z: 99
+    z: 98
   }
   orientation: ORIENTATION_S
   displayName: "Light 2D"
@@ -21938,7 +21938,7 @@ props {
   gridPoint {
     x: -46
     y: 0
-    z: 91
+    z: 96
   }
   orientation: ORIENTATION_S
   displayName: "Light 1C"
@@ -22640,25 +22640,6 @@ props {
 props {
   name: "system_invisible_nonsolidProp"
   gridPoint {
-    x: -45
-    y: 0
-    z: 91
-  }
-  orientation: ORIENTATION_S
-  displayName: "Slot 1C"
-  idRef {
-    id: "523498d0643431ebb9fc4117"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    interactionIcon: InteractionIcon_Generic
-  }
-  lod: 0
-}
-props {
-  name: "system_invisible_nonsolidProp"
-  gridPoint {
     x: -67
     y: 0
     z: 88
@@ -22733,6 +22714,892 @@ props {
     interactionRadius: 1
     dummyInteraciton {
     }
+  }
+  lod: 0
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -6
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_S
+  displayName: "Light"
+  idRef {
+    id: "5235198a366236401e00153d"
+  }
+  lod: 0
+  light {
+    range: 5
+    color {
+      r: 1
+      g: 1
+      b: 1
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 7
+    y: 0
+    z: 6
+  }
+  orientation: ORIENTATION_S
+  displayName: "Light"
+  idRef {
+    id: "523519ad366236401e00153f"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.16470589
+      g: 0.73725492
+      b: 1
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -21
+    y: -1
+    z: 10
+  }
+  orientation: ORIENTATION_S
+  displayName: "Light"
+  idRef {
+    id: "523519b8366236401e001540"
+  }
+  lod: 0
+  light {
+    range: 5
+    color {
+      r: 1
+      g: 0.89803922
+      b: 0.30588236
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 12
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  displayName: "Light"
+  idRef {
+    id: "523519ed366236401e001541"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.16470589
+      g: 0.73725492
+      b: 1
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 6
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  displayName: "Light"
+  idRef {
+    id: "523519f0366236401e001542"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.16470589
+      g: 0.73725492
+      b: 1
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -119
+    y: -1.5
+    z: 169
+  }
+  orientation: ORIENTATION_S
+  displayName: "Light 4D"
+  idRef {
+    id: "52351a70366236401e001544"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 2
+    color {
+      r: 0.81960785
+      g: 0.16862746
+      b: 1
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -123
+    y: 0
+    z: 193
+  }
+  orientation: ORIENTATION_S
+  displayName: "Light 4D"
+  idRef {
+    id: "52351a9f366236401e001545"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 4
+    color {
+      r: 1
+      g: 0.89019608
+      b: 0.05882353
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -117
+    y: 0
+    z: 185
+  }
+  orientation: ORIENTATION_S
+  displayName: "Light 4D"
+  idRef {
+    id: "52351ab9366236401e001546"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 1
+      g: 0.89019608
+      b: 0.05882353
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -131
+    y: 0
+    z: 176
+  }
+  orientation: ORIENTATION_S
+  displayName: "Light 4D"
+  idRef {
+    id: "52351ac2366236401e001547"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 2
+    color {
+      r: 1
+      g: 0.89019608
+      b: 0.05882353
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -137
+    y: 0
+    z: 179
+  }
+  orientation: ORIENTATION_S
+  displayName: "Light 4D"
+  idRef {
+    id: "52351acb366236401e001548"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 2
+    color {
+      r: 0.14509805
+      g: 0.7019608
+      b: 1
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -141
+    y: -1.5
+    z: 179
+  }
+  orientation: ORIENTATION_S
+  displayName: "Light 4D"
+  idRef {
+    id: "52351ad1366236401e001549"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 2
+    color {
+      r: 0.81960785
+      g: 0.16862746
+      b: 1
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "office_lighting_circleLamp"
+  gridPoint {
+    x: -133
+    y: 0
+    z: 191
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -133
+    y: 0
+    z: 191
+  }
+  orientation: ORIENTATION_S
+  displayName: "Light 4D"
+  idRef {
+    id: "52351b20366236401e00154a"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 5
+    color {
+      r: 1
+      g: 1
+      b: 1
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "office_lighting_circleLamp"
+  gridPoint {
+    x: -124
+    y: 0
+    z: 179
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52351b49366236401e00154b"
+  }
+  lod: 0
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -125
+    y: 0
+    z: 178
+  }
+  orientation: ORIENTATION_S
+  displayName: "Light 4D"
+  idRef {
+    id: "52351b52366236401e00154c"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 5
+    color {
+      r: 1
+      g: 1
+      b: 1
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "office_lighting_circleLamp"
+  gridPoint {
+    x: -118
+    y: 0
+    z: 191
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52351b55366236401e00154d"
+  }
+  lod: 0
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -119
+    y: 0
+    z: 190
+  }
+  orientation: ORIENTATION_S
+  displayName: "Light 4D"
+  idRef {
+    id: "52351b64366236401e00154e"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 5
+    color {
+      r: 1
+      g: 1
+      b: 1
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "telestrianEstate_wall_wallpaperEdge02"
+  gridPoint {
+    x: -134
+    y: 0
+    z: 176
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52351d0c366236401e00154f"
+  }
+  lod: 0
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -115
+    y: 0
+    z: 185
+  }
+  orientation: ORIENTATION_S
+  displayName: "Light 4D"
+  idRef {
+    id: "52351db1366236401e001550"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 1
+      g: 0.89019608
+      b: 0.05882353
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "warehouse_floorDecoration_grate01"
+  gridPoint {
+    x: -59
+    y: 0
+    z: 73
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "warehouse_floorDecoration_grate01"
+  gridPoint {
+    x: -71
+    y: 0
+    z: 94
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52351fbb366236401e001551"
+  }
+  lod: 0
+}
+props {
+  name: "warehouse_floorDecoration_grate01"
+  gridPoint {
+    x: -46
+    y: 0
+    z: 88
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52351fc2366236401e001552"
+  }
+  lod: 0
+}
+props {
+  name: "warehouse_floorDecoration_grate01"
+  gridPoint {
+    x: -59
+    y: 0
+    z: 98
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "52351fcb366236401e001553"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_steam"
+  gridPoint {
+    x: -59
+    y: 0
+    z: 73
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SteamEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_steam"
+  gridPoint {
+    x: -71
+    y: 0
+    z: 94
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SteamEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_steam"
+  gridPoint {
+    x: -46
+    y: 0
+    z: 88
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SteamEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_steam"
+  gridPoint {
+    x: -59
+    y: 0
+    z: 98
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SteamEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_ambientMagic"
+  gridPoint {
+    x: -5
+    y: 1
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "LeyLineMedium"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_dancingMan"
+  gridPoint {
+    x: -119
+    y: 0
+    z: 169
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "DancingManBar"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_fallingsparks"
+  gridPoint {
+    x: -58
+    y: 0
+    z: 93
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SparksEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_fallingsparks"
+  gridPoint {
+    x: -52
+    y: 0
+    z: 86
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SparksEnvironment"
+  }
+  idRef {
+    id: "5235206c366236401e001555"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_matrixdatalines"
+  gridPoint {
+    x: -56
+    y: 0
+    z: 87
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "MatrixDataLinesEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_matrixcontrolnode"
+  gridPoint {
+    x: -57
+    y: 0
+    z: 87
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "matrixcontrolnode"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_poisongasvent"
+  gridPoint {
+    x: -58
+    y: 0
+    z: 92
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasVentEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_poisongasYellowvent"
+  gridPoint {
+    x: -54
+    y: 0
+    z: 87
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasYellowVentEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_policeSiren"
+  gridPoint {
+    x: -66
+    y: 0
+    z: 68
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SirenLightsEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_policeSiren"
+  gridPoint {
+    x: -78
+    y: 0
+    z: 78
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SirenLightsEnvironment"
+  }
+  idRef {
+    id: "523520e5366236401e00155b"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_policeSiren"
+  gridPoint {
+    x: -78
+    y: 0
+    z: 99
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SirenLightsEnvironment"
+  }
+  idRef {
+    id: "523520e9366236401e00155c"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_policeSiren"
+  gridPoint {
+    x: -45
+    y: 0
+    z: 68
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SirenLightsEnvironment"
+  }
+  idRef {
+    id: "523520f0366236401e00155d"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_trivid"
+  gridPoint {
+    x: -111
+    y: 0
+    z: 169
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopTriVid"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flicker"
+  gridPoint {
+    x: -53
+    y: 0
+    z: 70
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "FlickeringLightEnvironment"
+  }
+  idRef {
+    id: "52352425366236401e00155e"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flicker"
+  gridPoint {
+    x: -64
+    y: 0
+    z: 78
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "FlickeringLightEnvironment"
+  }
+  idRef {
+    id: "52352435366236401e00155f"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flicker"
+  gridPoint {
+    x: -76
+    y: 0
+    z: 90
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "FlickeringLightEnvironment"
+  }
+  idRef {
+    id: "5235243a366236401e001560"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flicker"
+  gridPoint {
+    x: -67
+    y: 0
+    z: 102
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "FlickeringLightEnvironment"
+  }
+  idRef {
+    id: "5235243f366236401e001561"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flicker"
+  gridPoint {
+    x: -57
+    y: 0
+    z: 102
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "FlickeringLightEnvironment"
+  }
+  idRef {
+    id: "52352443366236401e001562"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flicker"
+  gridPoint {
+    x: -43
+    y: 0
+    z: 102
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "FlickeringLightEnvironment"
+  }
+  idRef {
+    id: "52352446366236401e001563"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flicker"
+  gridPoint {
+    x: -42
+    y: 0
+    z: 90
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "FlickeringLightEnvironment"
+  }
+  idRef {
+    id: "5235244a366236401e001564"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_fallingsparks"
+  gridPoint {
+    x: 13
+    y: 0
+    z: 5
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SparksEnvironment"
   }
   lod: 0
 }

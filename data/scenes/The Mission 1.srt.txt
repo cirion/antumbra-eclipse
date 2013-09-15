@@ -3063,6 +3063,17 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Clear Waypoint from Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "522ea78d366236000b007044"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -9259,16 +9270,16 @@ regions {
     z: -0.75
   }
   directional_light_color {
-    r: 0.98039216
-    g: 1
-    b: 0.68627453
+    r: 0.67843139
+    g: 0.8392157
+    b: 0.74509805
     a: 1
   }
   ambient_light_color {
-    r: 0.30980393
-    g: 0.3764706
-    b: 0.56470591
-    a: 0.50196081
+    r: 0.16470589
+    g: 0.14509805
+    b: 0.38431373
+    a: 0.88235295
   }
   ambience_template: ""
   combat_music: ""
@@ -9351,10 +9362,10 @@ regions {
 regions {
   name: "Confrontation Starts"
   position {
-    x: 20
+    x: 19
     y: -23
-    width: 1
-    height: 24
+    width: 2
+    height: 27
   }
   enabledAtStart: true
   is_camera_region: false
@@ -11835,9 +11846,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 50
+    x: 54
     y: 0
-    z: -39
+    z: -37
   }
   orientation: ORIENTATION_E
   displayName: "Stuffer Dwarf"
