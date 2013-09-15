@@ -6548,21 +6548,21 @@ regions {
     id: "52280585366236741f0009de"
   }
   directional_light_dir {
-    x: -0.5
-    y: -1
+    x: -0.9
+    y: -0.75
     z: -0.75
   }
   directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.0627451
+    g: 0.019607844
+    b: 0.38431373
     a: 1
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
-    a: 1
+    r: 0.54509807
+    g: 0.48235294
+    b: 0.47058824
+    a: 0.88235295
   }
   ambience_template: ""
   combat_music: ""
@@ -6589,15 +6589,15 @@ regions {
     z: -0.75
   }
   directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0
+    g: 0
+    b: 0
     a: 1
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.019607844
+    g: 0.13725491
+    b: 0.19607843
     a: 1
   }
   ambience_template: ""
