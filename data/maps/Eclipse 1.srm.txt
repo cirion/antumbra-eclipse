@@ -20548,7 +20548,7 @@ props {
   gridPoint {
     x: -58
     y: 0
-    z: 92
+    z: 93
   }
   orientation: ORIENTATION_S
   idRef {
@@ -20922,7 +20922,7 @@ props {
   gridPoint {
     x: -58
     y: 0
-    z: 93
+    z: 94
   }
   orientation: ORIENTATION_S
   idRef {
@@ -20977,6 +20977,16 @@ props {
   properties {
     property_id: "fxScript"
     string_value: "DancingWomanBar"
+  }
+  GeneralTags: "stage 1"
+  idRef {
+    id: "52361d90366236601e002675"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
   }
   lod: 0
 }
@@ -21281,6 +21291,7 @@ props {
     property_id: "fxScript"
     string_value: "BarStoolManEnvironment"
   }
+  GeneralTags: "stage 1"
   lod: 0
 }
 props {
@@ -21622,7 +21633,7 @@ props {
   gridPoint {
     x: -57
     y: 0
-    z: 94
+    z: 93
   }
   orientation: ORIENTATION_S
   idRef {
@@ -21635,7 +21646,7 @@ props {
   gridPoint {
     x: -58
     y: 0
-    z: 94
+    z: 93
   }
   orientation: ORIENTATION_S
   idRef {
@@ -21970,8 +21981,15 @@ props {
     z: 88
   }
   orientation: ORIENTATION_S
+  displayName: "Red Light"
   idRef {
     id: "523404de366236e81a00268f"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
   }
   lod: 0
   light {
@@ -23302,6 +23320,15 @@ props {
     property_id: "fxScript"
     string_value: "DancingManBar"
   }
+  idRef {
+    id: "5236210e366236601e00267c"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
   lod: 0
 }
 props {
@@ -23361,6 +23388,17 @@ props {
     property_id: "fxScript"
     string_value: "matrixcontrolnode"
   }
+  GeneralTags: "stage 1"
+  displayName: "Matrix Cage"
+  idRef {
+    id: "52361d9a366236601e002677"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
   lod: 0
 }
 props {
@@ -23375,6 +23413,17 @@ props {
     property_id: "fxScript"
     string_value: "PoisonGasVentEnvironment"
   }
+  GeneralTags: "stage 1"
+  displayName: "Green Fog"
+  idRef {
+    id: "52361d67366236601e002671"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
   lod: 0
 }
 props {
@@ -23388,6 +23437,17 @@ props {
   properties {
     property_id: "fxScript"
     string_value: "PoisonGasYellowVentEnvironment"
+  }
+  GeneralTags: "stage 1"
+  displayName: "Yellow Fog"
+  idRef {
+    id: "52361d80366236601e002673"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
   }
   lod: 0
 }
@@ -23602,4 +23662,52 @@ props {
     string_value: "SparksEnvironment"
   }
   lod: 0
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -58
+    y: 0
+    z: 32
+  }
+  orientation: ORIENTATION_S
+  displayName: "Violet Light"
+  idRef {
+    id: "523624f1366236601e00267f"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 4
+    color {
+      r: 1
+      g: 0.33333334
+      b: 1
+    }
+    intensity: 8
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -112
+    y: 0
+    z: 169
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+  light {
+    range: 5
+    color {
+      r: 0.66666669
+      g: 1
+      b: 1
+    }
+    intensity: 5
+  }
 }

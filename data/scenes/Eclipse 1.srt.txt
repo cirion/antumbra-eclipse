@@ -4585,7 +4585,7 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "5232845e366236840900158e"
   }
@@ -6072,7 +6072,7 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "523361ba64343148a3e8391a"
   }
@@ -7314,7 +7314,7 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "523361bc64343148a3e83922"
   }
@@ -14595,7 +14595,7 @@ mapName: "Eclipse 1"
 parentStory: ""
 scene_title: "Eclipse"
 scene_subtitle: ""
-scene_synopsis: "Kali has come to CalFree, and brought her signature brand of entertainment along. Eclipse is her newest venture, bursting onto the fearful San Franciscan social scene with a cacophany of music, dancing, drinks, exotic goods, and any kind of service one could ask for.\n\nPatrolling marines stare coldly as you approach the building, but make no move to stop you. They appear reluctant to interfere with the hordes of salarymen and patrons making their way into the building..."
+scene_synopsis: "Kali has arrived in CalFree, bringing her signature brand of entertainment along. Eclipse is her newest venture, bursting onto the fearful San Franciscan social scene with a cacophany of music, dancing, drinks, exotic goods, and any kind of service one could ask for.\n\nPatrolling marines stare coldly as you approach the building, but make no move to stop you. They appear reluctant to interfere with the crowd of salarymen and patrons making their way into the building..."
 scene_image: ""
 scene_continue_button_skip: false
 scene_restore_runner_health: true
@@ -14645,8 +14645,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
