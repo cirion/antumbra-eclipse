@@ -36632,20 +36632,6 @@ props {
 props {
   name: "vfx_fx_ambientMagic"
   gridPoint {
-    x: -64
-    y: 1
-    z: -38
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "LeyLineMedium"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_ambientMagic"
-  gridPoint {
     x: -59
     y: 1
     z: -59
@@ -36702,7 +36688,7 @@ props {
   name: "vfx_fx_candleflicker"
   gridPoint {
     x: -60
-    y: 1
+    y: 2
     z: -59.3
   }
   orientation: ORIENTATION_S
@@ -36715,9 +36701,9 @@ props {
 props {
   name: "vfx_fx_smallfire"
   gridPoint {
-    x: -63
-    y: 1.5
-    z: -59
+    x: -62
+    y: 2.3
+    z: -58
   }
   orientation: ORIENTATION_S
   properties {
@@ -36729,9 +36715,9 @@ props {
 props {
   name: "vfx_fx_smallfire"
   gridPoint {
-    x: -53
-    y: 1.5
-    z: -59
+    x: -52
+    y: 2.3
+    z: -58
   }
   orientation: ORIENTATION_S
   properties {
@@ -36746,9 +36732,9 @@ props {
 props {
   name: "vfx_fx_smallfire"
   gridPoint {
-    x: -64
-    y: 1.5
-    z: -31
+    x: -63
+    y: 2.3
+    z: -30
   }
   orientation: ORIENTATION_S
   properties {
@@ -36763,9 +36749,9 @@ props {
 props {
   name: "vfx_fx_smallfire"
   gridPoint {
-    x: -54
-    y: 1.5
-    z: -30
+    x: -53
+    y: 2.3
+    z: -29
   }
   orientation: ORIENTATION_S
   properties {
@@ -36782,7 +36768,7 @@ props {
   gridPoint {
     x: -93.2
     y: 0
-    z: -68.6
+    z: -69
   }
   orientation: ORIENTATION_S
   properties {
@@ -36796,7 +36782,7 @@ props {
   gridPoint {
     x: -93.2
     y: 0
-    z: -105.6
+    z: -105.3
   }
   orientation: ORIENTATION_S
   properties {
@@ -36969,7 +36955,7 @@ props {
 props {
   name: "vfx_fx_lowmist"
   gridPoint {
-    x: -51
+    x: -48
     y: 0
     z: -23
   }
@@ -37200,7 +37186,7 @@ props {
   gridPoint {
     x: -89
     y: 1
-    z: -56
+    z: -55.8
   }
   orientation: ORIENTATION_S
   properties {
@@ -37215,9 +37201,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -42
+    x: -41
     y: -1
-    z: -39
+    z: -38
   }
   orientation: ORIENTATION_S
   idRef {

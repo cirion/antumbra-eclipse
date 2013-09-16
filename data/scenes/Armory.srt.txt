@@ -2192,6 +2192,14 @@ triggers {
     ops {
       functionName: "End Current Actor Turn"
     }
+    ops {
+      functionName: "Teleport Camera To Actor"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -2354,6 +2362,14 @@ triggers {
     }
     ops {
       functionName: "End Current Actor Turn"
+    }
+    ops {
+      functionName: "Teleport Camera To Actor"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
     }
   }
   isActive: true
@@ -15251,6 +15267,8 @@ scene_dimensions {
   dimension_name: "Shavarus Covert Network"
   initial_alarm_state: 20
   turns_per_round: 3
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

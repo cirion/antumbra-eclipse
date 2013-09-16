@@ -23714,9 +23714,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -45
+    x: -44
     y: 0
-    z: 38
+    z: 36
   }
   orientation: ORIENTATION_S
   displayName: "Big Red Light"
