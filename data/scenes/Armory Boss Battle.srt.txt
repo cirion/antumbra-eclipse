@@ -3889,16 +3889,16 @@ regions {
     z: -0.75
   }
   directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
-    a: 1
+    r: 0.33333334
+    g: 0.21568628
+    b: 0.11372549
+    a: 0.50196081
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
-    a: 1
+    r: 0.29803923
+    g: 0
+    b: 0
+    a: 0.50196081
   }
   ambience_template: ""
   combat_music: ""
@@ -4328,6 +4328,7 @@ characters {
     }
     team_id: "Gangers"
     char_name: "Shavarus"
+    enabled_at_start: true
     pc_spawn_number: -1
     uninjurable: true
     unkillable: true
@@ -4513,9 +4514,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -133
+    x: -132
     y: 0
-    z: -123
+    z: -124
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad2"
