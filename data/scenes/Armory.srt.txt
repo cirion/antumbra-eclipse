@@ -11952,7 +11952,7 @@ regions {
     width: 16
     height: 1
   }
-  enabledAtStart: true
+  enabledAtStart: false
   is_camera_region: false
   idRef {
     id: "5226a312366236d0160012f9"
@@ -15219,21 +15219,21 @@ allow_drawn_weapons: false
 team_affiliations {
   team_name: "Shadowrunners"
   affiliation: 0
-  affiliation: 1
-  affiliation: 1
+  affiliation: 0
+  affiliation: 0
   affiliation: 0
 }
 team_affiliations {
   team_name: "Gangers"
-  affiliation: 1
   affiliation: 0
-  affiliation: 1
+  affiliation: 0
+  affiliation: 0
   affiliation: 0
 }
 team_affiliations {
   team_name: "LoneStar"
-  affiliation: 1
-  affiliation: 1
+  affiliation: 0
+  affiliation: 0
   affiliation: 0
   affiliation: 0
 }
@@ -15251,8 +15251,6 @@ scene_dimensions {
   dimension_name: "Shavarus Covert Network"
   initial_alarm_state: 20
   turns_per_round: 3
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
