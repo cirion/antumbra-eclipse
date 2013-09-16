@@ -8152,9 +8152,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -47
+    x: -46
     y: 0
-    z: -102
+    z: -103
   }
   orientation: ORIENTATION_S
   GeneralTags: "squad1b"
