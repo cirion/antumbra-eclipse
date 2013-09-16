@@ -5327,11 +5327,11 @@ regions {
     b: 0.38431373
     a: 0.88235295
   }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
+  ambience_template: "docks-night"
+  combat_music: "Seattle-Set3-Stealth"
+  default_music: "Seattle-Bar22"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 characters {
   name: "system_spawner_playerSpawner"
@@ -7515,6 +7515,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

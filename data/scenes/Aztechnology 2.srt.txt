@@ -2921,11 +2921,11 @@ regions {
     b: 0.47058824
     a: 0.88235295
   }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
+  ambience_template: "office-quiet"
+  combat_music: "Seattle-Set8-Stealth"
+  default_music: "Seattle-Set5-Legwork"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 characters {
   name: "chars_icon_playerIcon"

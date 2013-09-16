@@ -7632,11 +7632,11 @@ regions {
     b: 0.47058824
     a: 0.88235295
   }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
+  ambience_template: "secretlab-quiet"
+  combat_music: "Seattle-Set3-Combat"
+  default_music: "Seattle-Set8-Legwork"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 regions {
   name: "Matrix Camera"
@@ -7669,10 +7669,10 @@ regions {
     a: 1
   }
   ambience_template: ""
-  combat_music: ""
-  default_music: ""
+  combat_music: "Seattle-Set9-Legwork"
+  default_music: "Seattle-Set9-Legwork"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 regions {
   name: "Carver Wells Aggro"

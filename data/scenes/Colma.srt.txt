@@ -8040,11 +8040,11 @@ regions {
     b: 0.3019608
     a: 1
   }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
+  ambience_template: "graveyard-night"
+  combat_music: "Seattle-Set6-Ominous"
+  default_music: "Seattle-Set3-Legwork"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 characters {
   name: "system_spawner_playerSpawner"

@@ -9281,11 +9281,11 @@ regions {
     b: 0.38431373
     a: 0.88235295
   }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
+  ambience_template: "barrens-night"
+  combat_music: "Seattle-Set9-Combat"
+  default_music: "Seattle-Bar13"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 regions {
   name: "Lonestar Flee"

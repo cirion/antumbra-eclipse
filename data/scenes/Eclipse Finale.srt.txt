@@ -2848,11 +2848,11 @@ regions {
     b: 0.36470589
     a: 1
   }
-  ambience_template: ""
+  ambience_template: "bar-busy"
   combat_music: ""
-  default_music: ""
+  default_music: "Seattle-Bar03"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 characters {
   name: "system_spawner_playerSpawner"

@@ -3109,11 +3109,11 @@ regions {
     b: 0.13725491
     a: 1
   }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
+  ambience_template: "barrens-night"
+  combat_music: "Seattle-Set9-Stealth"
+  default_music: "Seattle-Bar19"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 regions {
   name: "Ambush 2"
@@ -4901,6 +4901,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

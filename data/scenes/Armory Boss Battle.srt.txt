@@ -3901,10 +3901,10 @@ regions {
     a: 0.50196081
   }
   ambience_template: ""
-  combat_music: ""
-  default_music: ""
+  combat_music: "Seattle-Set5-Combat"
+  default_music: "Seattle-TitleTheme"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 regions {
   name: "Shavarus Exit"
