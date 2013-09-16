@@ -1,4 +1,4 @@
-id: "Antumbra 2 - Eclipse"
+id: "Antumbra 2: Eclipse"
 variables {
   name: "A2_HiredHailey"
   typeName: "bool"

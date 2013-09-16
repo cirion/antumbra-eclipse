@@ -12503,16 +12503,16 @@ regions {
     z: -0.75
   }
   directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
-    a: 1
+    r: 0.33333334
+    g: 0.21568628
+    b: 0.11372549
+    a: 0.50196081
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
-    a: 1
+    r: 0.29803923
+    g: 0
+    b: 0
+    a: 0.50196081
   }
   ambience_template: ""
   combat_music: ""
