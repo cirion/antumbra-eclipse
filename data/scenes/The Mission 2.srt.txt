@@ -4040,7 +4040,7 @@ characters {
     z: -16
   }
   orientation: ORIENTATION_S
-  GeneralTags: "squad3"
+  GeneralTags: "squad4"
   displayName: "Tir Guard"
   idRef {
     id: "52255a02366236d4190039c1"
@@ -4108,7 +4108,7 @@ characters {
     }
     team_id: "Gangers"
     char_name: "Tir Guard"
-    GeneralTags: "squad3"
+    GeneralTags: "squad4"
     pc_spawn_number: -1
     karma: 41
   }
@@ -4121,7 +4121,7 @@ characters {
     z: -17
   }
   orientation: ORIENTATION_S
-  GeneralTags: "squad3"
+  GeneralTags: "squad4"
   displayName: "Tir Squad 2 Guard 3"
   idRef {
     id: "52255a02366236d4190039c2"
@@ -4189,7 +4189,7 @@ characters {
     }
     team_id: "Gangers"
     char_name: "Tir Mage"
-    GeneralTags: "squad3"
+    GeneralTags: "squad4"
     pc_spawn_number: -1
     karma: 43
   }
@@ -4202,7 +4202,7 @@ characters {
     z: -16
   }
   orientation: ORIENTATION_S
-  GeneralTags: "squad3"
+  GeneralTags: "squad4"
   displayName: "Tir Squad 2 Guard 4"
   idRef {
     id: "52255a02366236d4190039c3"
@@ -4278,7 +4278,7 @@ characters {
     }
     team_id: "Gangers"
     char_name: "Tir Mage"
-    GeneralTags: "squad3"
+    GeneralTags: "squad4"
     pc_spawn_number: -1
     karma: 61
   }
@@ -4291,7 +4291,7 @@ characters {
     z: -17
   }
   orientation: ORIENTATION_S
-  GeneralTags: "squad3"
+  GeneralTags: "squad4"
   displayName: "Tir Squad 2 Guard 1"
   idRef {
     id: "52255a02366236d4190039c4"
@@ -4359,7 +4359,7 @@ characters {
     }
     team_id: "Gangers"
     char_name: "Tir Guard"
-    GeneralTags: "squad3"
+    GeneralTags: "squad4"
     pc_spawn_number: -1
     karma: 39
   }
@@ -4901,6 +4901,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

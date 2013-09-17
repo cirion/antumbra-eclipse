@@ -19921,8 +19921,14 @@ props {
     z: -157
   }
   orientation: ORIENTATION_S
+  displayName: "Kill All Marines"
   idRef {
     id: "521a8ee43662367c1d007953"
+  }
+  interactionRoot {
+    isEnabled: false
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
   }
   lod: 0
 }

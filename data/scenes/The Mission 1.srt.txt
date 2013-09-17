@@ -5994,6 +5994,26 @@ triggers {
     ops {
       functionName: "End Current Team Round"
     }
+    ops {
+      functionName: "Trigger: Wait for Rounds"
+      args {
+        int_value: 2
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "End Current Actor Turn"
+    }
+    ops {
+      functionName: "End Current Team Round"
+    }
   }
   isActive: true
   idRef {

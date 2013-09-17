@@ -11887,6 +11887,15 @@ triggers {
             }
           }
           args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
           }
         }
       }
@@ -13108,7 +13117,7 @@ characters {
     z: -136
   }
   orientation: ORIENTATION_E
-  GeneralTags: "squad3"
+  GeneralTags: "squad4"
   displayName: "Shavarus"
   idRef {
     id: "52256bd9366236d419003ae4"
@@ -13191,7 +13200,7 @@ characters {
     }
     team_id: "Gangers"
     char_name: "Shavarus"
-    GeneralTags: "squad3"
+    GeneralTags: "squad4"
     pc_spawn_number: -1
     uninjurable: true
     unkillable: true
@@ -14959,7 +14968,7 @@ parentStory: ""
 scene_title: "The Armory"
 scene_subtitle: ""
 scene_synopsis: "A fortress incongruously plopped in the center of a modern city, the Armory has played many roles throughout San Francisco\342\200\231s history. It has held weapons, the National Guard, a porn studio, a dungeon, the world\342\200\231s first BTL facility\342\200\246. and now, it houses Shavarus and his elite squad of demolishers.\n\nAngry shouts echo through the rooms. Your entrance into this structure has not gone unnoticed. Shavarus waits for you, and he does not sound happy."
-scene_image: "loadingimage_default"
+scene_image: "scene12_armory"
 scene_continue_button_skip: false
 scene_restore_runner_health: false
 directional_light_dir {
@@ -15013,6 +15022,8 @@ scene_dimensions {
   dimension_name: "Shavarus Covert Network"
   initial_alarm_state: 20
   turns_per_round: 3
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
