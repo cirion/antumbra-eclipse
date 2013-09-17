@@ -91,6 +91,10 @@ nodes {
   branches {
     responseText: "What do you think of Eclipse?"
     nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "52377f79643431971694e11a"
+    }
   }
   branches {
     responseText: "I\342\200\231m looking for an elf named Tarne."
