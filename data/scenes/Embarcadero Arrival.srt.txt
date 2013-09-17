@@ -1734,7 +1734,7 @@ parentStory: ""
 scene_title: "Embarcadero"
 scene_subtitle: ""
 scene_synopsis: "Business in Seattle has grown slow lately. A shadowrunner needs to go where the jobs are, so you head south to San Francisco, following rumors of a broad and covert struggle between Mitsuhama and Aztechnology.\n\nMoney\342\200\231s gotten a little tight, so you skimped on airfare and hitched a ride on a cargo ship headed from Seattle to the Port of Oakland. Once in the Bay, you bribe the operator of a smaller vessel and make your way to the old piers of San Francisco.\n\nThe city is foggy today, and far quieter than you would have thought. Not what you expected from a notoriously lively place. You are surprised to see a familiar face waiting when you disembark..."
-scene_image: ""
+scene_image: "scene1_embarcadero"
 scene_continue_button_skip: false
 scene_restore_runner_health: true
 directional_light_dir {
@@ -1783,8 +1783,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
