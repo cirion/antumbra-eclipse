@@ -12874,7 +12874,7 @@ goals {
 }
 goals {
   name: "Open the gate"
-  type: GoalType_Secondary
+  type: GoalType_Primary
   status: GoalStatus_Hidden
 }
 goals {
@@ -12899,7 +12899,7 @@ parentStory: ""
 scene_title: "The Mission District"
 scene_subtitle: ""
 scene_synopsis: "The beating heart of San Francisco, The Mission is where the city\342\200\231s residents historically traveled to escape tourists. A mish-mash of high tech and low poverty, high art and low beats, this district acts as a nexus for all the modern extremes of The City.\n\nLately, though, it has been a district on edge. Gangs of elves, orks, and trolls roam the streets, harassing businesses. The gangs in turn are harassed by Colonel Saito\342\200\231s imperial marines. Residents worry that the growing tensions will change this place irrevocably."
-scene_image: ""
+scene_image: "scene6_mission1"
 scene_continue_button_skip: false
 scene_restore_runner_health: false
 directional_light_dir {

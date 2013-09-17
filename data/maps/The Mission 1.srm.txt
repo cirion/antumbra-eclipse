@@ -24382,28 +24382,6 @@ props {
   lod: 0
 }
 props {
-  name: "tempbad_leyline_light"
-  gridPoint {
-    x: 44
-    y: 0
-    z: -41
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "leyline_fx_on_tile"
-    string_value: "LeyLineLow"
-  }
-  properties {
-    property_id: "leyline_sfx_on_tile"
-    string_value: "StandOnLeylineFar"
-  }
-  properties {
-    property_id: "leyline_fx_on_visible"
-    string_value: "LeyLineTileLow"
-  }
-  lod: 0
-}
-props {
   name: "barrens_ground_sidewalkslab02"
   gridPoint {
     x: 27
@@ -71554,4 +71532,95 @@ props {
     }
     intensity: 4
   }
+}
+props {
+  name: "barrens_ground_sidewalkslab02"
+  gridPoint {
+    x: 30
+    y: 0
+    z: -30
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5237f2bb3662368c1a00123f"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_ground_sidewalkslab01"
+  gridPoint {
+    x: 27
+    y: 0
+    z: -33
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5237f2bd3662368c1a001240"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_ground_sidewalkslab03"
+  gridPoint {
+    x: 36
+    y: 0
+    z: -24
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5237f2c03662368c1a001241"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_ground_sidewalkslab02"
+  gridPoint {
+    x: 27
+    y: 0
+    z: -57
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5237f2c83662368c1a001242"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_ground_sidewalkdarkgrey05"
+  gridPoint {
+    x: 30
+    y: 0
+    z: -54
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5237f2ca3662368c1a001243"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_ground_sidewalkslab03"
+  gridPoint {
+    x: 33
+    y: 0
+    z: -51
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5237f2cc3662368c1a001244"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_ground_sidewalkslab03"
+  gridPoint {
+    x: 36
+    y: 0
+    z: -48
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5237f2ce3662368c1a001245"
+  }
+  lod: 0
 }

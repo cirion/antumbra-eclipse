@@ -23,10 +23,18 @@ nodes {
   branches {
     responseText: "I didn\342\200\231t know you have a queasy stomach."
     nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "5237f2f03662368c1a00126f"
+    }
   }
   branches {
     responseText: "Have you seen anything like this before?"
     nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "5237f2f33662368c1a001270"
+    }
   }
   branches {
     responseText: "Let\342\200\231s keep moving."

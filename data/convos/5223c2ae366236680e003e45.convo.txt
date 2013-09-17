@@ -205,7 +205,7 @@ nodes {
     ops {
       functionName: "Remove Nuyen"
       args {
-        int_value: 750
+        int_value: 1000
       }
     }
   }

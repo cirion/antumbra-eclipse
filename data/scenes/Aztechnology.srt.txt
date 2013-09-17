@@ -1,4 +1,59 @@
 triggers {
+  name: "Map Load"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Enable/Disable Manual Turn Mode"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Waypoint on Prop"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "521ff306366236441f00308a"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "52296608366236e41e00491d"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
   name: "Guards Turn Hostile"
   events {
     ops {
@@ -6124,61 +6179,6 @@ triggers {
   is_oneshot: true
 }
 triggers {
-  name: "Map Load"
-  events {
-    ops {
-      functionName: "On Map Start"
-    }
-  }
-  conditions {
-  }
-  actions {
-    ops {
-      functionName: "Enable/Disable Manual Turn Mode"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Set Waypoint on Prop"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "PrimaryOrSecondary"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Prop)"
-          args {
-            string_value: "521ff306366236441f00308a"
-          }
-        }
-      }
-    }
-  }
-  isActive: true
-  idRef {
-    id: "52296608366236e41e00491d"
-  }
-  elseActions {
-  }
-  is_oneshot: true
-}
-triggers {
   name: "Notice Cyberterminal"
   events {
     ops {
@@ -6313,6 +6313,55 @@ triggers {
   isActive: true
   idRef {
     id: "522f4ec4643431895b794ca5"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Map Load Replacement"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5237f0193662368c1a00123d"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Waypoint on Prop"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "521ff306366236441f00308a"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5237f02b3662368c1a00123e"
   }
   elseActions {
   }
@@ -6942,6 +6991,42 @@ regions {
   is_camera_region: false
   idRef {
     id: "522f4ea6643431895b794ca4"
+  }
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Map Load Replacement"
+  position {
+    x: -41
+    y: 0
+    width: 1
+    height: 5
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "5237f0193662368c1a00123d"
   }
   directional_light_dir {
     x: -0.5
@@ -8207,7 +8292,7 @@ parentStory: ""
 scene_title: "Aztechnology Pyramid"
 scene_subtitle: ""
 scene_synopsis: "Your fake SIN allows you to pass through the marines\' checkpoints without incident. Mr. Johnson drives in silence as you approach the old Aztechnology Pyramid.\n\nThis is a building under siege. Figuratively and, starting now, literally as well. Aztechnology\342\200\231s position in San Francisco has never been weaker, and a little push could send them over the edge.\n\nThe lobby looks eerily quiet. Mr. Johnson drops you off, then drives down to the corner, ready for a quick getaway. It\342\200\231s up to you now\342\200\246"
-scene_image: ""
+scene_image: "loadingimage_default"
 scene_continue_button_skip: false
 scene_restore_runner_health: true
 directional_light_dir {
@@ -8274,8 +8359,6 @@ scene_dimensions {
   dimension_name: "Aztechnology Local Network"
   initial_alarm_state: 10
   turns_per_round: 3
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

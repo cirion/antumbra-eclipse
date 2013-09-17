@@ -4852,7 +4852,7 @@ parentStory: ""
 scene_title: "The Mission District"
 scene_subtitle: ""
 scene_synopsis: "The district feels radically different tonight. With Saito\342\200\231s curfew in full effect, no innocents walk the streets, only gangers and marines. Families huddle in their hovels, listening to bullets ricochet off the walls outside. \n\nTensions have boiled over. Marines and Shavarus\342\200\231s gang fill the streets, and there\342\200\231s no way you\342\200\231re getting through without a fight. The way will be difficult, and even if you succeed, more violence waits on the other side\342\200\246"
-scene_image: ""
+scene_image: "scene11_mission2"
 scene_continue_button_skip: false
 scene_restore_runner_health: true
 directional_light_dir {
@@ -4901,8 +4901,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

@@ -9230,7 +9230,7 @@ parentStory: ""
 scene_title: "Aztechnology: The Executive Suite"
 scene_subtitle: ""
 scene_synopsis: "Alarms blare as you approach the topmost floor of the Aztechnology Pyramid. This zone holds the embattled corp\'s greatest jewels: secret research projects, magical artifacts, data about their long-term plans. Securing them will prove no easy task."
-scene_image: ""
+scene_image: "scene5_aztech3"
 scene_continue_button_skip: false
 scene_restore_runner_health: false
 directional_light_dir {
@@ -9296,8 +9296,6 @@ scene_dimensions {
   dimension_name: "Aztechnology Secure Network"
   initial_alarm_state: 15
   turns_per_round: 3
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

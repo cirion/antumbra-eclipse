@@ -5529,7 +5529,7 @@ parentStory: ""
 scene_title: "Eclipse Afterparty"
 scene_subtitle: ""
 scene_synopsis: "You float down Mission Creek for several blocks before locating a convenient manhole and quietly emerging onto the chaotic surface streets.\n\nThis has been a busy night for Saito\342\200\231s security forces. Numerous uprisings throughout the city have stretched the marines thin, forcing the authorities to call in corporate security and even some freelance shadowrunners to protect vital interests.\n\nFirefights erupt numerous times as you make your way back to Eclipse, but you manage to avoid any serious harm. The paydata tucked securely away, you are ready for this job to finally end\342\200\246."
-scene_image: ""
+scene_image: "scene14_finale"
 scene_continue_button_skip: false
 scene_restore_runner_health: true
 directional_light_dir {
@@ -5578,8 +5578,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

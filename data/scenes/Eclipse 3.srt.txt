@@ -2327,7 +2327,7 @@ characters {
   gridPoint {
     x: 11
     y: 0
-    z: -8
+    z: -12
   }
   orientation: ORIENTATION_N
   displayName: "Hailey"
@@ -2832,7 +2832,7 @@ parentStory: ""
 scene_title: "Eclipse"
 scene_subtitle: ""
 scene_synopsis: "Shavarus has escaped, but you now know his plans and his location. It is time to prepare for a final attack to take him out, saving the city and, incidentally, finishing the job you were originally hired to do.\n\nImperial marines swarm the Embarcadero, but you have already slipped past their cordon, and so return to Eclipse peacefully. You are sure this is the last peace you will experience for some time\342\200\246."
-scene_image: ""
+scene_image: "scene10_eclipse3"
 scene_continue_button_skip: false
 scene_restore_runner_health: true
 directional_light_dir {

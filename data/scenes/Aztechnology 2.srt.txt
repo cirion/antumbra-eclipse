@@ -2621,7 +2621,7 @@ triggers {
             string_value: "EnableOrDisable"
           }
           args {
-            int_value: 0
+            int_value: 1
           }
         }
       }
@@ -3390,7 +3390,7 @@ parentStory: ""
 scene_title: "Aztechnology: Inner Offices"
 scene_subtitle: ""
 scene_synopsis: "You ride up in silence to the secure floors. Passing the lobby was relatively simple, but as you penetrate deeper into the building, you can expect the defenses to tighten. This place of business has transformed into a field of battle, and everyone present has become a combatant, willingly or not."
-scene_image: ""
+scene_image: "scene4_aztech2"
 scene_continue_button_skip: false
 scene_restore_runner_health: false
 directional_light_dir {

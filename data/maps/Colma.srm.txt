@@ -19721,9 +19721,9 @@ props {
 props {
   name: "cemetery_misc_tree04"
   gridPoint {
-    x: -53
+    x: -51
     y: 0
-    z: -172
+    z: -166
   }
   orientation: ORIENTATION_E
   idRef {
@@ -19851,9 +19851,9 @@ props {
 props {
   name: "cemetery_misc_tree01"
   gridPoint {
-    x: -49
+    x: -47
     y: 0
-    z: -164
+    z: -178
   }
   orientation: ORIENTATION_S
   idRef {
@@ -20033,9 +20033,9 @@ props {
 props {
   name: "cemetery_ground_grave02"
   gridPoint {
-    x: -49
+    x: -52
     y: 0
-    z: -178
+    z: -172
   }
   orientation: ORIENTATION_S
   displayName: "Summon Strong Abomination"
@@ -20142,7 +20142,7 @@ props {
   lod: 0
   character_instance {
     prefab_name: "Spirit/SpiritAbomination"
-    character_sheet_id: "BaseCivilian"
+    character_sheet_id: "Spirit Abomination"
     equipment_sheet_id: "Spirit Abomination F6 Gear"
     character_mod {
       stats {
@@ -20153,25 +20153,58 @@ props {
         intelligence: 0
         willpower: 0
         essence: 0
+        magic: 0
         hp: 0
         ap: 0
-        morale: 24
+        armor: 0
+        force: 0
+        morale: 0
         discipline: 0
-        awareness: 24
+        awareness: 0
         perception: 0
         authority: 0
-        protect_tether_range: 5
-        move_speed: 6
+        protect_tether_range: 0
+        move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Player"
+      attitude: AttitudeAggressive
     }
+    char_name: "Abomination Spirit"
     portrait {
-      filename: "generic_spirit_abomination"
+      filename: "Generic_Spirit_Abomination"
     }
-    karma: 6
+    karma: 261
   }
 }
 props {
@@ -71110,9 +71143,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -48
+    x: -51
     y: 0
-    z: -177
+    z: -171
   }
   orientation: ORIENTATION_S
   idRef {
@@ -71303,4 +71336,167 @@ props {
     }
     intensity: 5
   }
+}
+props {
+  name: "tempbad_leyline_medium"
+  gridPoint {
+    x: -37
+    y: 0
+    z: -172
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineMedium"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineMed"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileMed"
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_light"
+  gridPoint {
+    x: -36
+    y: 0
+    z: -164
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineLow"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineFar"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileLow"
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_light"
+  gridPoint {
+    x: -36
+    y: 0
+    z: -139
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineLow"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineFar"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileLow"
+  }
+  idRef {
+    id: "5237f4533662368c1a0013b9"
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_light"
+  gridPoint {
+    x: -25
+    y: 0
+    z: -113
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineLow"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineFar"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileLow"
+  }
+  idRef {
+    id: "5237f4623662368c1a0013ba"
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_light"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -93
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineLow"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineFar"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileLow"
+  }
+  idRef {
+    id: "5237f4673662368c1a0013bb"
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_light"
+  gridPoint {
+    x: -17
+    y: 0
+    z: -170
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineLow"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineFar"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileLow"
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_light"
+  gridPoint {
+    x: -45
+    y: 0
+    z: -150
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineLow"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineFar"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileLow"
+  }
+  lod: 0
 }

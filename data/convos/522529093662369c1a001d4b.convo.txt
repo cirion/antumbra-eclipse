@@ -224,7 +224,7 @@ nodes {
     id: "52252a913662369c1a001d63"
   }
   index: 4
-  text: "You\'ll probably need to enter in around 16th street, where the old BART station used to be. Make your way north from there. Shavarus must be hiding out in the old Armory; that place was literally built as a fortress, and it\'s the only reason I can think of why they would be meeting in the district. "
+  text: "You\'ll probably need to enter in around 16th street, where the old BART station used to be. Make your way north from there. Shavarus must be hiding out in the abandoned Armory; that place was literally built as a fortress, and it\'s the only reason I can think of why they would be meeting in the district. "
   branches {
     responseText: ""
     nextNodeIndex: 5

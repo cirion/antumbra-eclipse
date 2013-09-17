@@ -77814,7 +77814,7 @@ props {
   gridPoint {
     x: 13
     y: 0
-    z: -71
+    z: -56
   }
   orientation: ORIENTATION_E
   idRef {
@@ -78150,7 +78150,7 @@ props {
   gridPoint {
     x: 16
     y: 0
-    z: -63
+    z: -71
   }
   orientation: ORIENTATION_S
   idRef {
@@ -78169,6 +78169,7 @@ props {
   character_instance {
     prefab_name: "Spirit/SpiritWater"
     character_sheet_id: "Spirit Water"
+    equipment_sheet_id: "Spirit Water F6 Gear"
     character_mod {
       stats {
         body: 0
@@ -78237,7 +78238,7 @@ props {
   gridPoint {
     x: 16
     y: 0
-    z: -61
+    z: -72
   }
   orientation: ORIENTATION_S
   idRef {
@@ -78248,9 +78249,9 @@ props {
 props {
   name: "docks_building_Kalakala"
   gridPoint {
-    x: 7
+    x: 6
     y: 0
-    z: -65
+    z: -75
   }
   orientation: ORIENTATION_E
   idRef {
@@ -111060,20 +111061,6 @@ props {
   properties {
     property_id: "fxScript"
     string_value: "PoisonGasYellowVentEnvironment"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_slimeDrip"
-  gridPoint {
-    x: 13
-    y: 3
-    z: -62
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "EnvironmentLoopSlimeDrip"
   }
   lod: 0
 }

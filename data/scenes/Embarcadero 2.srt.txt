@@ -5193,7 +5193,7 @@ regions {
   name: "Rowed Over"
   position {
     x: 16
-    y: -70
+    y: -55
     width: 3
     height: 3
   }
@@ -7466,7 +7466,7 @@ parentStory: ""
 scene_title: "The Embarcadero"
 scene_subtitle: ""
 scene_synopsis: "You race back north, the eerie graveyards of Colma fading behind you into the mist. Saito\342\200\231s forces appear unusually busy at the borders, allowing you to slip onto surface streets and bypass their checkpoints.\n\nYou head back to the Embarcadero, where you first set foot on this fractured city. Piers that were first built during the gold rush are busy once more as the megacorps seek to cut off Oakland\342\200\231s trade and manage shipping within the city limits. Numerous smaller vessels also ply their trade here, ferrying sightseers, divers, smugglers, and corpses in and out of the city. Shavarus is about to rendezvous with one of those boats, and you intend to find him first\342\200\246"
-scene_image: ""
+scene_image: "scene9_embarcadero2"
 scene_continue_button_skip: false
 scene_restore_runner_health: false
 directional_light_dir {

@@ -12505,7 +12505,7 @@ regions {
   position {
     x: -115
     y: -158
-    width: 116
+    width: 115
     height: 163
   }
   enabledAtStart: true
@@ -12531,10 +12531,10 @@ regions {
     a: 0.50196081
   }
   ambience_template: "underground-quiet"
-  combat_music: "Seattle-Set6-Legwork"
-  default_music: ""
+  combat_music: "Seattle-Set8-Stealth"
+  default_music: "Seattle-Set6-Legwork"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 regions {
   name: "Camera Matrix"
@@ -12676,7 +12676,7 @@ characters {
         magic: 0
         hp: 0
         ap: 0
-        armor: 0
+        armor: 1
         force: 0
         morale: -1
         awareness: 0
@@ -12686,7 +12686,7 @@ characters {
       }
       skills {
         ranged_combat: 0
-        close_combat: -2
+        close_combat: -1
         throwing_weapons: 0
         spellcasting: -3
         decking: 0
@@ -12694,7 +12694,7 @@ characters {
         spirit_summoning: 0
         drone_control: 0
         biotech: 0
-        dodge: 0
+        dodge: 3
         etiquette_corporate: 0
         etiquette_security: 0
         etiquette_gang: 0
@@ -12727,7 +12727,7 @@ characters {
     portrait {
       filename: "generic_spirit_fire"
     }
-    karma: 45
+    karma: 58
     hiring_cost_override: 1000
   }
 }
@@ -12843,7 +12843,7 @@ characters {
     equipment_sheet_id: "Hellhound Critter Powers"
     character_mod {
       stats {
-        body: -1
+        body: 0
         quickness: -1
         strength: -2
         charisma: 0
@@ -12853,7 +12853,7 @@ characters {
         magic: 0
         hp: 0
         ap: 0
-        armor: 0
+        armor: 1
         force: 0
         morale: -1
         awareness: 0
@@ -12865,13 +12865,13 @@ characters {
         ranged_combat: 0
         close_combat: -2
         throwing_weapons: 0
-        spellcasting: -3
+        spellcasting: -2
         decking: 0
         conjuring: 0
         spirit_summoning: 0
         drone_control: 0
         biotech: 0
-        dodge: 0
+        dodge: 3
         etiquette_corporate: 0
         etiquette_security: 0
         etiquette_gang: 0
@@ -12904,7 +12904,7 @@ characters {
     portrait {
       filename: "generic_spirit_fire"
     }
-    karma: 45
+    karma: 62
     hiring_cost_override: 1000
   }
 }
@@ -13103,98 +13103,6 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -125
-    y: 0
-    z: -135
-  }
-  orientation: ORIENTATION_E
-  GeneralTags: "squad3"
-  displayName: "Squad 3 Mage/Healer"
-  idRef {
-    id: "52256bd9366236d419003ae3"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Gangers/ElfFemaleGangerMohawk_Halloweener"
-    character_sheet_id: "Lonestar_Lv2_Human_Mage"
-    character_mod {
-      stats {
-        body: 0
-        quickness: 0
-        strength: 0
-        charisma: 0
-        intelligence: 0
-        willpower: 0
-        essence: 0
-        magic: 0
-        hp: 0
-        ap: 0
-        armor: 0
-        force: 0
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-        ranged_combat: 0
-        close_combat: 0
-        throwing_weapons: 0
-        spellcasting: 0
-        decking: 0
-        conjuring: 0
-        spirit_summoning: 0
-        drone_control: 0
-        biotech: 0
-        dodge: 0
-        etiquette_corporate: 0
-        etiquette_security: 0
-        etiquette_gang: 0
-        etiquette_socialite: 0
-        chi_casting: 0
-        etiquette_shadowrunner: 0
-        etiquette_street: 0
-        etiquette_academic: 0
-      }
-      specializations {
-        pistol: 0
-        rifle: 0
-        shotgun: 0
-        smg: 0
-        edged: 0
-        unarmed: 0
-        spirit_control: 0
-        esp_control: 0
-        drone_combat: 0
-      }
-      archetypeName: "Guard - Seek And Destroy"
-      attitude: AttitudeAggressive
-    }
-    equipment {
-      prefab_name: "Spell Heal 1"
-    }
-    equipment {
-      prefab_name: "Spell Aim 1"
-    }
-    equipment {
-      prefab_name: "Spell Weaken Armor 1"
-    }
-    equipment {
-      prefab_name: "Spell Slow 1"
-    }
-    team_id: "Gangers"
-    char_name: "Tir Mage"
-    GeneralTags: "squad3"
-    pc_spawn_number: -1
-    karma: 43
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
     x: -132
     y: 0
     z: -136
@@ -13220,7 +13128,7 @@ characters {
         essence: 0
         magic: 0
         hp: 0
-        ap: 0
+        ap: -2
         armor: 0
         force: 0
         morale: 0
@@ -13291,169 +13199,7 @@ characters {
       filename: "pc_trollmale_04a_shaman"
     }
     portrait_code_override: "s3h0c4b10c4h8"
-    karma: 72
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -123
-    y: 0
-    z: -127
-  }
-  orientation: ORIENTATION_E
-  GeneralTags: "squad3"
-  displayName: "Tir Squad 2 Guard 1"
-  idRef {
-    id: "52256bd9366236d419003ae5"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Story/TirTairngireGuard"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
-    equipment_sheet_id: "Lonestar_SMG_Low"
-    character_mod {
-      stats {
-        body: 0
-        quickness: 0
-        strength: 0
-        charisma: 0
-        intelligence: 0
-        willpower: 0
-        essence: 0
-        magic: 0
-        hp: 0
-        ap: 0
-        armor: 0
-        force: 0
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-        ranged_combat: 0
-        close_combat: 0
-        throwing_weapons: 0
-        spellcasting: 0
-        decking: 0
-        conjuring: 0
-        spirit_summoning: 0
-        drone_control: 0
-        biotech: 0
-        dodge: 0
-        etiquette_corporate: 0
-        etiquette_security: 0
-        etiquette_gang: 0
-        etiquette_socialite: 0
-        chi_casting: 0
-        etiquette_shadowrunner: 0
-        etiquette_street: 0
-        etiquette_academic: 0
-      }
-      specializations {
-        pistol: 0
-        rifle: 0
-        shotgun: 0
-        smg: 0
-        edged: 0
-        unarmed: 0
-        spirit_control: 0
-        esp_control: 0
-        drone_combat: 0
-      }
-      archetypeName: "Guard - Seek And Destroy"
-      attitude: AttitudeAggressive
-    }
-    team_id: "Gangers"
-    char_name: "Tir Guard"
-    GeneralTags: "squad3"
-    pc_spawn_number: -1
-    karma: 39
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -132
-    y: 0
-    z: -131
-  }
-  orientation: ORIENTATION_N
-  GeneralTags: "squad3"
-  displayName: "Tir Squad 2 Guard 1"
-  idRef {
-    id: "52256bd9366236d419003ae6"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Story/TirTairngireGuard"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
-    equipment_sheet_id: "Lonestar_SMG_Low"
-    character_mod {
-      stats {
-        body: 0
-        quickness: 0
-        strength: 0
-        charisma: 0
-        intelligence: 0
-        willpower: 0
-        essence: 0
-        magic: 0
-        hp: 0
-        ap: 0
-        armor: 0
-        force: 0
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-        ranged_combat: 0
-        close_combat: 0
-        throwing_weapons: 0
-        spellcasting: 0
-        decking: 0
-        conjuring: 0
-        spirit_summoning: 0
-        drone_control: 0
-        biotech: 0
-        dodge: 0
-        etiquette_corporate: 0
-        etiquette_security: 0
-        etiquette_gang: 0
-        etiquette_socialite: 0
-        chi_casting: 0
-        etiquette_shadowrunner: 0
-        etiquette_street: 0
-        etiquette_academic: 0
-      }
-      specializations {
-        pistol: 0
-        rifle: 0
-        shotgun: 0
-        smg: 0
-        edged: 0
-        unarmed: 0
-        spirit_control: 0
-        esp_control: 0
-        drone_combat: 0
-      }
-      archetypeName: "Guard - Seek And Destroy"
-      attitude: AttitudeAggressive
-    }
-    team_id: "Gangers"
-    char_name: "Tir Guard"
-    GeneralTags: "squad3"
-    pc_spawn_number: -1
-    karma: 39
+    karma: 73
   }
 }
 characters {
@@ -15213,7 +14959,7 @@ parentStory: ""
 scene_title: "The Armory"
 scene_subtitle: ""
 scene_synopsis: "A fortress incongruously plopped in the center of a modern city, the Armory has played many roles throughout San Francisco\342\200\231s history. It has held weapons, the National Guard, a porn studio, a dungeon, the world\342\200\231s first BTL facility\342\200\246. and now, it houses Shavarus and his elite squad of demolishers.\n\nAngry shouts echo through the rooms. Your entrance into this structure has not gone unnoticed. Shavarus waits for you, and he does not sound happy."
-scene_image: ""
+scene_image: "loadingimage_default"
 scene_continue_button_skip: false
 scene_restore_runner_health: false
 directional_light_dir {
@@ -15267,8 +15013,6 @@ scene_dimensions {
   dimension_name: "Shavarus Covert Network"
   initial_alarm_state: 20
   turns_per_round: 3
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

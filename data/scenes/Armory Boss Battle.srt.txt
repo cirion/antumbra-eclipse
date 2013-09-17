@@ -4762,7 +4762,7 @@ parentStory: ""
 scene_title: "Shavarus\' Lair"
 scene_subtitle: ""
 scene_synopsis: "A dull roaring fills your ears. At first you think it is the sound of rushing water, but it continues to grow louder, an otherworldly bellow adding to the cacophony of distant chanting.\n\nSteeling yourself, you press forward into the gloom. Something ahead lies in wait for you, and you will need to exploit every resource at your disposal in order to triumph\342\200\246"
-scene_image: ""
+scene_image: "scene13_boss"
 scene_continue_button_skip: false
 scene_restore_runner_health: false
 directional_light_dir {
@@ -4811,8 +4811,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

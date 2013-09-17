@@ -12055,7 +12055,7 @@ parentStory: ""
 scene_title: "The Graves of Colma"
 scene_subtitle: ""
 scene_synopsis: "Even before the Awakening, Colma was renowned as a necropolis, a city where the dead outnumbered the living by more than a thousand to one. Now that magic has returned to Earth, people tend to show great caution around graveyards. A city where practically every square foot contains a corpse does not receive many visitors.\n\nClouds grow thicker as you travel south of the city, and a thick haze envelops you by the time you reach the outskirts of Woodlawn Cemetery. Vague shapes lumber in the distance, heading deeper inward. Perhaps here is where you will finally find Norton..."
-scene_image: ""
+scene_image: "scene8_colma"
 scene_continue_button_skip: false
 scene_restore_runner_health: true
 directional_light_dir {

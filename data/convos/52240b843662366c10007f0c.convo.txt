@@ -168,7 +168,7 @@ nodes {
     nextNodeIndex: 8
     onlyOnce: true
     idRef {
-      id: "522cc5d83662368414003e92"
+      id: "5237f4083662368c1a001343"
     }
   }
   branches {
@@ -304,6 +304,7 @@ nodes {
     responseText: ""
     nextNodeIndex: 16
   }
+  nodeType: ConversationNodeType_Simple
   sourceInSceneRef {
     id: "52240ad43662366c10007f0a"
   }
@@ -313,7 +314,7 @@ nodes {
     id: "52240d243662366c10007f5c"
   }
   index: 16
-  text: "\342\200\246 We believe you meant to say \342\200\234commander,\342\200\235 good Shavarus."
+  text: "\342\200\246 We believe you meant to say \342\200\234valuable commander,\342\200\235 good Shavarus."
   branches {
     responseText: ""
     nextNodeIndex: 17

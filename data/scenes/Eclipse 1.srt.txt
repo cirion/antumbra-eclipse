@@ -10099,7 +10099,7 @@ regions {
     b: 0.50196081
     a: 1
   }
-  ambience_template: ""
+  ambience_template: "bar-busy"
   combat_music: ""
   default_music: ""
   loop_combat_music: true
@@ -10135,7 +10135,7 @@ regions {
     b: 0.36470589
     a: 1
   }
-  ambience_template: ""
+  ambience_template: "bar-busy"
   combat_music: ""
   default_music: ""
   loop_combat_music: true
@@ -14596,7 +14596,7 @@ parentStory: ""
 scene_title: "Eclipse"
 scene_subtitle: ""
 scene_synopsis: "Kali has arrived in CalFree, bringing her signature brand of entertainment along. Eclipse is her newest venture, bursting onto the fearful San Franciscan social scene with a cacophany of music, dancing, drinks, exotic goods, and any kind of service one could ask for.\n\nPatrolling marines stare coldly as you approach the building, but make no move to stop you. They appear reluctant to interfere with the crowd of salarymen and patrons making their way into the building..."
-scene_image: ""
+scene_image: "scene2_eclipse_resave"
 scene_continue_button_skip: false
 scene_restore_runner_health: true
 directional_light_dir {
@@ -14645,8 +14645,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

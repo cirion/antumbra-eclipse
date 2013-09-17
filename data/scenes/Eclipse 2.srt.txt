@@ -477,10 +477,10 @@ triggers {
         call_value {
           functionName: "Get Map Item (Music)"
           args {
-            string_value: ""
+            string_value: "Seattle_Set8"
           }
           args {
-            string_value: "Silence"
+            string_value: "Seattle-Set8-Combat"
           }
         }
       }
@@ -1912,6 +1912,34 @@ triggers {
         float_value: 9
       }
     }
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: ""
+          }
+          args {
+            string_value: "Silence"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -2211,7 +2239,35 @@ triggers {
         call_value {
           functionName: "Get Map Item (Actor)"
           args {
-            string_value: "5223a317366236680e003a05"
+            string_value: "523612e7366236601e00261b"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Seattle_Bar"
+          }
+          args {
+            string_value: "Seattle-Bar07"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -9349,7 +9405,7 @@ regions {
     b: 0.3882353
     a: 1
   }
-  ambience_template: ""
+  ambience_template: "bar-busy"
   combat_music: ""
   default_music: ""
   loop_combat_music: true
@@ -9385,7 +9441,7 @@ regions {
     b: 0.3882353
     a: 1
   }
-  ambience_template: ""
+  ambience_template: "bar-busy"
   combat_music: ""
   default_music: ""
   loop_combat_music: true
@@ -13583,7 +13639,7 @@ parentStory: ""
 scene_title: "Eclipse"
 scene_subtitle: ""
 scene_synopsis: "The ride back to Eclipse feels tense. You hear gunfire and see pursuers on your trail. Badly outnumbered, you race through the steep streets as quickly as possible, finally leaving them behind before you reach your safehouse.\n\nInside, Mr. Johnson grimly listens as you recount what you learned in the Mission District. This job just grew trickier..."
-scene_image: ""
+scene_image: "scene7_eclipse2"
 scene_continue_button_skip: false
 scene_restore_runner_health: true
 directional_light_dir {
