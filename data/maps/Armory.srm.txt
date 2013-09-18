@@ -37707,7 +37707,7 @@ props {
   name: "vfx_fx_flicker"
   gridPoint {
     x: -60
-    y: -2
+    y: -2.4
     z: -61
   }
   orientation: ORIENTATION_S
@@ -37721,7 +37721,7 @@ props {
   name: "vfx_fx_flicker"
   gridPoint {
     x: -54
-    y: -2
+    y: -2.4
     z: -35
   }
   orientation: ORIENTATION_S
@@ -37738,7 +37738,7 @@ props {
   name: "vfx_fx_flicker"
   gridPoint {
     x: -38
-    y: -2
+    y: -2.4
     z: -17
   }
   orientation: ORIENTATION_S
@@ -37755,7 +37755,7 @@ props {
   name: "vfx_fx_flicker"
   gridPoint {
     x: -25
-    y: -2
+    y: -2.4
     z: -34
   }
   orientation: ORIENTATION_S
