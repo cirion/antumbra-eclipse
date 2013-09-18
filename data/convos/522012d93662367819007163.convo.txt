@@ -10,19 +10,39 @@ nodes {
   text: "Ahh... here we go. Paydata."
   branches {
     responseText: "Who are you?"
+    actions {
+      ops {
+        functionName: "End Current Actor Turn"
+      }
+    }
     nextNodeIndex: 1
     auxiliaryLink: true
   }
   branches {
     responseText: "What are you doing here?"
+    actions {
+      ops {
+        functionName: "End Current Actor Turn"
+      }
+    }
     nextNodeIndex: 1
     auxiliaryLink: true
   }
   branches {
     responseText: "{{GM}}Attack.{{/GM}}"
+    actions {
+      ops {
+        functionName: "End Current Actor Turn"
+      }
+    }
     nextNodeIndex: 1
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "End Current Actor Turn"
+    }
+  }
 }
 nodes {
   idRef {

@@ -5431,7 +5431,7 @@ triggers {
             string_value: "EnableOrDisable"
           }
           args {
-            int_value: 1
+            int_value: 0
           }
         }
       }
@@ -5986,6 +5986,17 @@ triggers {
   events {
     ops {
       functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "522b92f5366236ec1f002c58"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "On Region Exit"
       args {
         call_value {
           functionName: "Get Map Item (Region)"
@@ -7245,9 +7256,9 @@ triggers {
 regions {
   name: "Window"
   position {
-    x: -58
-    y: 33
-    width: 1
+    x: -59
+    y: 34
+    width: 3
     height: -1
   }
   enabledAtStart: true
@@ -9067,7 +9078,7 @@ characters {
   gridPoint {
     x: -35
     y: 0
-    z: 78
+    z: 76
   }
   orientation: ORIENTATION_S
   idRef {
