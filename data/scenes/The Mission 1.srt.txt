@@ -6308,7 +6308,7 @@ triggers {
             int_value: 0
           }
           args {
-            int_value: 9
+            int_value: 4
           }
         }
       }
@@ -6497,7 +6497,7 @@ triggers {
             int_value: 0
           }
           args {
-            int_value: 9
+            int_value: 4
           }
         }
       }

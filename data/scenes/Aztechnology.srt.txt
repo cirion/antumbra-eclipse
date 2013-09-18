@@ -980,7 +980,7 @@ triggers {
             int_value: 0
           }
           args {
-            int_value: 9
+            int_value: 4
           }
         }
       }
@@ -1169,7 +1169,7 @@ triggers {
             int_value: 0
           }
           args {
-            int_value: 9
+            int_value: 4
           }
         }
       }
@@ -8359,6 +8359,8 @@ scene_dimensions {
   dimension_name: "Aztechnology Local Network"
   initial_alarm_state: 10
   turns_per_round: 3
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

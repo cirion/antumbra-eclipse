@@ -362,7 +362,7 @@ variables {
     }
   }
 }
-description: "Megacorps battle for supremacy in San Francisco, but broader tensions simmering in the city threaten to boil over into a full-out war."
+description: "Megacorps battle for supremacy in San Francisco, but broader tensions simmering in the city threaten to boil over into total war. You\342\200\231ll contend with megacorp security invasions, Colonel Saito\342\200\231s thuggish Imperial Marines, ghettoized metahumans, and more exotic forces standing in the way of your contract. Choose your enemies wisely, gather reliable allies, and do whatever it takes to finish the run. \n\nNOTE: You will need to install Antumbra in order to run this module. You can either import your character from Antumbra or create a new character in Eclipse. If you choose to import your character, the events of Eclipse will be updated to reflect the choices you made in Antumbra."
 startScene: "Embarcadero Arrival"
 allowCharacterImport: true
 allowImportedEquipment: true
