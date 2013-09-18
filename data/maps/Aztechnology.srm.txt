@@ -14810,19 +14810,6 @@ props {
   lod: 0
 }
 props {
-  name: "medicalLab_wall_edgeWide02"
-  gridPoint {
-    x: -31
-    y: 0
-    z: 59
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521a21723662363819003b5d"
-  }
-  lod: 0
-}
-props {
   name: "medicalLab_wall_edgeWide01"
   gridPoint {
     x: -25
@@ -15713,32 +15700,6 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "521a230b3662363819003ba5"
-  }
-  lod: 0
-}
-props {
-  name: "medicalLab_wall_edge06"
-  gridPoint {
-    x: -29
-    y: 0
-    z: 29
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "521a23183662363819003ba6"
-  }
-  lod: 0
-}
-props {
-  name: "medicalLab_wall_edgeWide02"
-  gridPoint {
-    x: -29
-    y: 0
-    z: 35
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "521a23203662363819003ba7"
   }
   lod: 0
 }
@@ -48257,109 +48218,55 @@ props {
   lod: 0
 }
 props {
-  name: "system_gizmo_lightbulb"
-  gridPoint {
-    x: -28
-    y: -1
-    z: 35
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-  light {
-    range: 2
-    color {
-      r: 0.015686275
-      g: 0.17051958
-      b: 0.76614022
-    }
-    intensity: 5
-  }
-}
-props {
-  name: "system_gizmo_lightbulb"
-  gridPoint {
-    x: -28
-    y: -1
-    z: 37
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5238f39f643431c4452bfc28"
-  }
-  lod: 0
-  light {
-    range: 2
-    color {
-      r: 0.015686275
-      g: 0.17051958
-      b: 0.76614022
-    }
-    intensity: 5
-  }
-}
-props {
-  name: "system_gizmo_lightbulb"
-  gridPoint {
-    x: -28
-    y: -1
-    z: 29
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5238f3a4643431c4452bfc29"
-  }
-  lod: 0
-  light {
-    range: 2
-    color {
-      r: 0.015686275
-      g: 0.17051958
-      b: 0.76614022
-    }
-    intensity: 5
-  }
-}
-props {
-  name: "system_gizmo_lightbulb"
+  name: "medicalLab_wall_edgeWide01"
   gridPoint {
     x: -29
-    y: -1
-    z: 60
+    y: 0
+    z: 35
   }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5238f3af643431c4452bfc2a"
-  }
+  orientation: ORIENTATION_E
   lod: 0
-  light {
-    range: 2
-    color {
-      r: 0.7647059
-      g: 0.27058825
-      b: 0.058060579
-    }
-    intensity: 5
-  }
 }
 props {
-  name: "system_gizmo_lightbulb"
+  name: "medicalLab_wall_edgeWide03"
   gridPoint {
-    x: -32
-    y: -1
-    z: 60
+    x: -31
+    y: 0
+    z: 59
   }
   orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "medicalLab_wall_edge05"
+  gridPoint {
+    x: -29
+    y: 0
+    z: 29
+  }
+  orientation: ORIENTATION_E
   idRef {
-    id: "5238f3cf643431c4452bfc2b"
+    id: "523909a03662365814000fc3"
   }
   lod: 0
-  light {
-    range: 2
-    color {
-      r: 0.7647059
-      g: 0.27058825
-      b: 0.058060579
-    }
-    intensity: 5
+}
+props {
+  name: "secretLab_tech_largeWallMonitor03"
+  gridPoint {
+    x: -28.7
+    y: -0.3
+    z: 35.4
   }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "secretLab_tech_largeWallMonitor03_lights"
+  gridPoint {
+    x: -27.6
+    y: 0.9
+    z: 35.4
+  }
+  orientation: ORIENTATION_S
+  lod: 0
 }
