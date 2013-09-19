@@ -12639,7 +12639,7 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -8
+    x: -9
     y: 0
     z: -1
   }
