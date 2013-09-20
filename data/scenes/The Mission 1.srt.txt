@@ -8317,7 +8317,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (SenseTagList)"
               args {
-                string_value: "squad1a"
+                string_value: "squad1b"
               }
             }
           }
@@ -8385,7 +8385,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 2
+                int_value: 1
               }
             }
           }
