@@ -3906,6 +3906,39 @@ triggers {
             string_value: "FactionList"
           }
           args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Team\'s Turn"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
             int_value: 0
           }
         }
@@ -4905,7 +4938,7 @@ triggers {
         }
       }
       args {
-        float_value: 0
+        float_value: 3
       }
     }
     ops {
@@ -5122,7 +5155,7 @@ triggers {
         }
       }
       args {
-        float_value: 0
+        float_value: 3
       }
     }
     ops {
@@ -5967,6 +6000,39 @@ triggers {
           }
           args {
             int_value: 5
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Team\'s Turn"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
           }
         }
       }
@@ -8251,7 +8317,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (SenseTagList)"
               args {
-                string_value: "squad1b"
+                string_value: "squad1a"
               }
             }
           }
@@ -8319,7 +8385,7 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 1
+                int_value: 2
               }
             }
           }
