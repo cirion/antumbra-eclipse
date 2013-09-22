@@ -17338,6 +17338,7 @@ props {
   character_instance {
     prefab_name: "Spirit/SpiritAbomination"
     character_sheet_id: "Spirit Abomination"
+    equipment_sheet_id: "Spirit Abomination F6 Gear"
     character_mod {
       stats {
         body: 0
