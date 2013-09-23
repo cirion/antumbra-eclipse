@@ -7852,6 +7852,7 @@ props {
   }
   lod: 0
   character_instance {
+    prefab_name: "Spirit/SpiritEarth"
     character_sheet_id: "Spirit Earth"
     equipment_sheet_id: "Spirit Earth F6 Gear"
     character_mod {
