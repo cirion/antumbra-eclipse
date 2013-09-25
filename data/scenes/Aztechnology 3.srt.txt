@@ -3319,7 +3319,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_Entry2ToMagic_ESP"
@@ -3535,7 +3535,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_MagicToEntry2_ESP"
@@ -3751,7 +3751,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_MagicToEntry2_PC"
@@ -3978,7 +3978,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_MagicToTech_PC"
@@ -4205,7 +4205,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_MagicToTech_ESP"
@@ -4421,7 +4421,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_TechToMagic_PC"
@@ -4648,7 +4648,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_TechToMagic_ESP"
@@ -4864,7 +4864,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "AddHackableEffectToMagicTurret"
