@@ -104,7 +104,7 @@ nodes {
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
-      id: "522007c2366236781900705a"
+      id: "52432ae5643431e80cb50cf5"
     }
   }
   branches {
@@ -307,6 +307,9 @@ nodes {
           }
         }
       }
+    }
+    ops {
+      functionName: "End Current Team Round"
     }
   }
 }

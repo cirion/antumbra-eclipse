@@ -35741,11 +35741,11 @@ props {
 props {
   name: "matrix_wall_Firewall2"
   gridPoint {
-    x: 33
+    x: 24
     y: 0
-    z: 2
+    z: -3
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
   idRef {
     id: "522935b5366236f0190011df"
   }
@@ -35793,11 +35793,11 @@ props {
 props {
   name: "matrix_wall_Firewall2"
   gridPoint {
-    x: 30
+    x: 42
     y: 0
-    z: -7
+    z: -5
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
   idRef {
     id: "522935c4366236f0190011e3"
   }
@@ -35806,9 +35806,9 @@ props {
 props {
   name: "matrix_wall_Firewall2"
   gridPoint {
-    x: 31
+    x: 24
     y: 0
-    z: -9
+    z: -10
   }
   orientation: ORIENTATION_E
   idRef {
@@ -35847,7 +35847,7 @@ props {
   gridPoint {
     x: 27
     y: 0
-    z: 92
+    z: 95
   }
   orientation: ORIENTATION_S
   idRef {
@@ -35858,35 +35858,9 @@ props {
 props {
   name: "matrix_wall_Firewall2"
   gridPoint {
-    x: 29
-    y: 0
-    z: 92
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "522935f0366236f0190011e9"
-  }
-  lod: 0
-}
-props {
-  name: "matrix_wall_Firewall2"
-  gridPoint {
-    x: 31
-    y: 0
-    z: 92
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "522935f2366236f0190011ea"
-  }
-  lod: 0
-}
-props {
-  name: "matrix_wall_Firewall2"
-  gridPoint {
     x: 33
     y: 0
-    z: 92
+    z: 95
   }
   orientation: ORIENTATION_S
   idRef {
@@ -48268,5 +48242,57 @@ props {
     z: 35.4
   }
   orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x2cover"
+  gridPoint {
+    x: 31
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "524329f6643431e80cb50cb3"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x2cover"
+  gridPoint {
+    x: 25
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "524329fc643431e80cb50cb4"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x2cover"
+  gridPoint {
+    x: 31
+    y: 0
+    z: 92
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "52432a39643431e80cb50cb5"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x2cover"
+  gridPoint {
+    x: 29
+    y: 0
+    z: 92
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "52432a4d643431e80cb50cb6"
+  }
   lod: 0
 }
