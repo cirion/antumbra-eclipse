@@ -1,6 +1,6 @@
 project_id: "5215664d3662365c180018bf"
 project_name: "Antumbra 2 - Eclipse"
-project_version: "0.6.8"
+project_version: "0.6.9"
 author_name: "Cirion"
 synopsis: "Antumbra 2 - Eclipse"
 has_story: true

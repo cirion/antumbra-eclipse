@@ -23,11 +23,6 @@ nodes {
     nextNodeIndex: 1
   }
   nodeType: ConversationNodeType_Simple
-  actions {
-    ops {
-      functionName: "End Current Actor Turn"
-    }
-  }
 }
 nodes {
   idRef {
