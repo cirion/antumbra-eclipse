@@ -20050,7 +20050,7 @@ props {
   }
   interactionRoot {
     isEnabled: true
-    interactionRadius: 1
+    interactionRadius: 5
     summonPoint {
       hasCharacter: true
       summon_icon: ""
