@@ -2209,6 +2209,35 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Enforce Actor Current Orders"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5224eea73662367010002279"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
