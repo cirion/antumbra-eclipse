@@ -8190,6 +8190,7 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
@@ -8229,7 +8230,7 @@ characters {
     equipment {
       prefab_name: "GhoulFist"
     }
-    team_id: "LoneStar"
+    team_id: "Undead"
     char_name: "Corpse"
     enabled_at_start: false
     pc_spawn_number: -1
@@ -12167,6 +12168,7 @@ team_affiliations {
   affiliation: 0
   affiliation: 1
   affiliation: 0
+  affiliation: 1
 }
 team_affiliations {
   team_name: "Gangers"
@@ -12174,6 +12176,7 @@ team_affiliations {
   affiliation: 0
   affiliation: 1
   affiliation: 0
+  affiliation: 1
 }
 team_affiliations {
   team_name: "LoneStar"
@@ -12181,11 +12184,21 @@ team_affiliations {
   affiliation: 1
   affiliation: 0
   affiliation: 0
+  affiliation: 1
 }
 team_affiliations {
   team_name: "Civilians"
   affiliation: 0
   affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Undead"
+  affiliation: 1
+  affiliation: 1
+  affiliation: 1
   affiliation: 0
   affiliation: 0
 }
