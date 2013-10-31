@@ -1,11 +1,12 @@
 project_id: "5215664d3662365c180018bf"
 project_name: "Antumbra 2 - Eclipse"
-project_version: "0.7.2"
+project_version: "0.8.0"
 author_name: "Cirion"
 synopsis: "Antumbra 2 - Eclipse"
 has_story: true
 read_only: false
 preview_image: "preview"
+game_version_required: 1.1
 content_pack_dependencies {
   package_id: "518d7671643431b03f0041a8"
   package_version: "1"
