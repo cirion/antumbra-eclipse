@@ -622,6 +622,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -838,6 +849,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -1051,6 +1073,17 @@ triggers {
           }
           args {
             int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -1862,6 +1895,13 @@ regions {
   idRef {
     id: "5225228d3662369c1a001c8c"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -1898,6 +1938,13 @@ regions {
   idRef {
     id: "52362b20366236601e002685"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -2566,6 +2613,9 @@ characters {
   }
   lod: 0
   character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
     team_id: "Shadowrunners"
     char_name: "New Actor"
     enabled_at_start: true
@@ -2620,7 +2670,7 @@ characters {
     pc_spawn_number: -1
     portrait_code_override: "s6h2c4"
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -2671,7 +2721,7 @@ characters {
     pc_spawn_number: -1
     portrait_code_override: "s4b2c11"
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {

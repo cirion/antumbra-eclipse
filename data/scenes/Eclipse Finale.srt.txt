@@ -3074,6 +3074,13 @@ regions {
   idRef {
     id: "523633b5366236601e0026cc"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -3778,7 +3785,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -3821,7 +3828,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -4032,7 +4039,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -4118,7 +4125,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -4496,7 +4503,7 @@ characters {
     char_name: "Patron"
     GeneralTags: "wanderer"
     pc_spawn_number: -1
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -4539,7 +4546,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -4668,7 +4675,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -4798,7 +4805,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -4841,7 +4848,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -5064,7 +5071,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -5283,7 +5290,7 @@ characters {
     pc_spawn_number: -1
     portrait_code_override: "s6h2c4b6c4"
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -5330,7 +5337,7 @@ characters {
     pc_spawn_number: -1
     portrait_code_override: "s6h6c4"
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -5376,7 +5383,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {

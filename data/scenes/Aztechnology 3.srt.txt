@@ -232,6 +232,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -5856,15 +5867,7 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Play Animation"
-      args {
-        call_value {
-          functionName: "Triggering Actor"
-        }
-      }
-      args {
-        string_value: "interact"
-      }
+      functionName: "No Effect"
     }
     ops {
       functionName: "Display Text over Actor"
@@ -6151,15 +6154,7 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Play Animation"
-      args {
-        call_value {
-          functionName: "Triggering Actor"
-        }
-      }
-      args {
-        string_value: "throw"
-      }
+      functionName: "No Effect"
     }
     ops {
       functionName: "Kill Actor"
@@ -6571,6 +6566,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
     ops {
       functionName: "Set Goal Status"
@@ -6587,6 +6593,17 @@ triggers {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 1
@@ -6706,15 +6723,7 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Play Animation"
-      args {
-        call_value {
-          functionName: "Triggering Actor"
-        }
-      }
-      args {
-        string_value: "interact"
-      }
+      functionName: "No Effect"
     }
     ops {
       functionName: "Kill Actor"
@@ -7379,6 +7388,13 @@ regions {
   idRef {
     id: "522b92f5366236ec1f002c58"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7415,6 +7431,13 @@ regions {
   idRef {
     id: "522b92f5366236ec1f002c59"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7451,6 +7474,13 @@ regions {
   idRef {
     id: "522b92f5366236ec1f002c5a"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7487,6 +7517,13 @@ regions {
   idRef {
     id: "522b92f5366236ec1f002c64"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7523,6 +7560,13 @@ regions {
   idRef {
     id: "522b93e3366236ec1f002c67"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7559,6 +7603,13 @@ regions {
   idRef {
     id: "522b93e3366236ec1f002c6b"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7595,6 +7646,13 @@ regions {
   idRef {
     id: "522b93e3366236ec1f002c6f"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7631,6 +7689,13 @@ regions {
   idRef {
     id: "522b93e3366236ec1f002c70"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7667,6 +7732,13 @@ regions {
   idRef {
     id: "522b9ad3366236ec1f002cdd"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7703,6 +7775,13 @@ regions {
   idRef {
     id: "522b9afd366236ec1f002cde"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7739,6 +7818,13 @@ regions {
   idRef {
     id: "522bca81366236c410004e23"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.9
     y: -0.75
@@ -7775,6 +7861,13 @@ regions {
   idRef {
     id: "522bca9a366236c410004e24"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7811,6 +7904,13 @@ regions {
   idRef {
     id: "5233f654366236e81a002622"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -8767,6 +8867,9 @@ characters {
   }
   lod: 0
   character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
     team_id: "Shadowrunners"
     char_name: "New Actor"
     enabled_at_start: true
@@ -9199,6 +9302,9 @@ characters {
   }
   lod: 0
   character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
     team_id: "Shadowrunners"
     char_name: "New Actor"
     enabled_at_start: true

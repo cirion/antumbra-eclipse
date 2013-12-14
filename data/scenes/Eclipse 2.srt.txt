@@ -714,6 +714,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -930,6 +941,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -1143,6 +1165,17 @@ triggers {
           }
           args {
             int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -2188,6 +2221,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
     ops {
       functionName: "Set Goal Status"
@@ -2204,6 +2248,17 @@ triggers {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 1
@@ -5466,15 +5521,7 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Play Animation"
-      args {
-        call_value {
-          functionName: "Triggering Actor"
-        }
-      }
-      args {
-        string_value: "interact"
-      }
+      functionName: "No Effect"
     }
     ops {
       functionName: "Teleport Actor"
@@ -5688,15 +5735,7 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Play Animation"
-      args {
-        call_value {
-          functionName: "Triggering Actor"
-        }
-      }
-      args {
-        string_value: "interact"
-      }
+      functionName: "No Effect"
     }
     ops {
       functionName: "Teleport Actor"
@@ -6090,15 +6129,7 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Play Animation"
-      args {
-        call_value {
-          functionName: "Triggering Actor"
-        }
-      }
-      args {
-        string_value: "interact"
-      }
+      functionName: "No Effect"
     }
     ops {
       functionName: "Teleport Actor"
@@ -6953,15 +6984,7 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Play Animation"
-      args {
-        call_value {
-          functionName: "Triggering Actor"
-        }
-      }
-      args {
-        string_value: "interact"
-      }
+      functionName: "No Effect"
     }
     ops {
       functionName: "Teleport Actor"
@@ -7175,15 +7198,7 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Play Animation"
-      args {
-        call_value {
-          functionName: "Triggering Actor"
-        }
-      }
-      args {
-        string_value: "interact"
-      }
+      functionName: "No Effect"
     }
     ops {
       functionName: "Teleport Actor"
@@ -7577,15 +7592,7 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Play Animation"
-      args {
-        call_value {
-          functionName: "Triggering Actor"
-        }
-      }
-      args {
-        string_value: "interact"
-      }
+      functionName: "No Effect"
     }
     ops {
       functionName: "Teleport Actor"
@@ -8195,15 +8202,7 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Play Animation"
-      args {
-        call_value {
-          functionName: "Triggering Actor"
-        }
-      }
-      args {
-        string_value: "interact"
-      }
+      functionName: "No Effect"
     }
     ops {
       functionName: "Teleport Actor"
@@ -8417,15 +8416,7 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Play Animation"
-      args {
-        call_value {
-          functionName: "Triggering Actor"
-        }
-      }
-      args {
-        string_value: "interact"
-      }
+      functionName: "No Effect"
     }
     ops {
       functionName: "Teleport Actor"
@@ -8819,15 +8810,7 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Play Animation"
-      args {
-        call_value {
-          functionName: "Triggering Actor"
-        }
-      }
-      args {
-        string_value: "interact"
-      }
+      functionName: "No Effect"
     }
     ops {
       functionName: "Teleport Actor"
@@ -9124,6 +9107,14 @@ triggers {
           args {
             string_value: "stage 1"
           }
+        }
+      }
+      args {
+        float_value: -1
+      }
+      args {
+        call_value {
+          functionName: "Everywhere"
         }
       }
     }
@@ -9491,6 +9482,13 @@ regions {
   idRef {
     id: "5223cada366236680e003ec4"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9527,6 +9525,13 @@ regions {
   idRef {
     id: "5223cada366236680e003ec5"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9563,6 +9568,13 @@ regions {
   idRef {
     id: "5223cada366236680e003ec6"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9599,6 +9611,13 @@ regions {
   idRef {
     id: "5223cada366236680e003ec7"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9635,6 +9654,13 @@ regions {
   idRef {
     id: "5223ce19366236680e00402c"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9671,6 +9697,13 @@ regions {
   idRef {
     id: "52361e98366236601e002678"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9707,6 +9740,13 @@ regions {
   idRef {
     id: "52361ed4366236601e002679"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9743,6 +9783,13 @@ regions {
   idRef {
     id: "52361ee6366236601e00267a"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10393,6 +10440,9 @@ characters {
   }
   lod: 0
   character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
     team_id: "Shadowrunners"
     char_name: "New Actor"
     enabled_at_start: true
@@ -10428,7 +10478,7 @@ characters {
     char_name: "Patron"
     GeneralTags: "wanderer"
     pc_spawn_number: -1
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -10606,7 +10656,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -10653,7 +10703,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -10700,7 +10750,7 @@ characters {
     pc_spawn_number: -1
     portrait_code_override: "s6h4c4"
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -10747,7 +10797,7 @@ characters {
     pc_spawn_number: -1
     portrait_code_override: "s6h6c4b1c4"
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -11078,7 +11128,7 @@ characters {
     pc_spawn_number: -1
     portrait_code_override: "s6h2c4"
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -11170,7 +11220,7 @@ characters {
     pc_spawn_number: -1
     portrait_code_override: "s6h1c4b9c4"
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -11299,7 +11349,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -11342,7 +11392,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -11596,7 +11646,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -11912,7 +11962,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -12002,7 +12052,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -12028,7 +12078,7 @@ characters {
     char_name: "Patron"
     GeneralTags: "wanderer"
     pc_spawn_number: -1
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -12200,7 +12250,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -12459,7 +12509,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -12502,7 +12552,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -12687,7 +12737,7 @@ characters {
     pc_spawn_number: -1
     portrait_code_override: "s6h2c4b6c4"
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -12956,9 +13006,10 @@ characters {
     team_id: "Civilians"
     char_name: "Patron"
     GeneralTags: "wanderer"
+    enabled_at_start: true
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -12984,7 +13035,7 @@ characters {
     char_name: "Patron"
     GeneralTags: "wanderer"
     pc_spawn_number: -1
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -13114,7 +13165,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -13251,7 +13302,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -13474,7 +13525,7 @@ characters {
     pc_spawn_number: -1
     portrait_code_override: "s6h6c4"
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {

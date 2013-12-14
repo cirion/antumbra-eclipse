@@ -465,15 +465,7 @@ triggers {
       }
     }
     ops {
-      functionName: "Play Animation"
-      args {
-        call_value {
-          functionName: "Triggering Actor"
-        }
-      }
-      args {
-        string_value: "interact"
-      }
+      functionName: "No Effect"
     }
     ops {
       functionName: "Send Event After Delay"
@@ -1355,6 +1347,13 @@ regions {
   idRef {
     id: "52181efb3662364c0f006e16"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.45
     y: -0.65
@@ -1391,6 +1390,13 @@ regions {
   idRef {
     id: "521c02f63662360c11001ad6"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -1427,6 +1433,13 @@ regions {
   idRef {
     id: "5233d5dd366236181b003732"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -1463,6 +1476,13 @@ regions {
   idRef {
     id: "5235f1cb366236881d001247"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -1499,6 +1519,13 @@ regions {
   idRef {
     id: "523dd221366236bc1400138b"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -1535,6 +1562,9 @@ characters {
   }
   lod: 0
   character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
     team_id: "Shadowrunners"
     char_name: "New Actor"
     enabled_at_start: true
@@ -1589,7 +1619,7 @@ characters {
       filename: "generic_esp_shield"
     }
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -1649,7 +1679,7 @@ characters {
     }
     portrait_code_override: "s6h5c14"
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -1705,7 +1735,7 @@ characters {
       filename: "backer_humanmale_levieranburks"
     }
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -1889,6 +1919,7 @@ characters {
       filename: "generic_esp_assassin"
     }
     karma: 6
+    is_prop_character: true
   }
 }
 variables {
