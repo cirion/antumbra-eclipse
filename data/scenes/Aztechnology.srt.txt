@@ -7113,49 +7113,6 @@ regions {
   loop_default_music: false
 }
 regions {
-  name: "Matrix Camera Bravo"
-  position {
-    x: -52
-    y: 119
-    width: 127
-    height: 64
-  }
-  enabledAtStart: true
-  is_camera_region: true
-  idRef {
-    id: "522a7a58366236681200323c"
-  }
-  highlight_color {
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  }
-  visible_at_start: false
-  directional_light_dir {
-    x: -0.5
-    y: -1
-    z: -0.75
-  }
-  directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
-    a: 1
-  }
-  ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
-    a: 1
-  }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
-  loop_combat_music: true
-  loop_default_music: false
-}
-regions {
   name: "Notice Cyberterminal"
   position {
     x: -60
@@ -8083,6 +8040,8 @@ characters {
         morale: 24
         discipline: 24
         awareness: 24
+        perception: 0
+        authority: 0
         protect_tether_range: 5
         move_speed: 6
       }
@@ -8092,6 +8051,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "IC"
     char_name: "Black IC"
@@ -8555,6 +8516,8 @@ scene_dimensions {
   dimension_name: "Aztechnology Local Network"
   initial_alarm_state: 10
   turns_per_round: 3
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
