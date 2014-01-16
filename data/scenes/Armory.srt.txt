@@ -2894,7 +2894,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Conversation)"
           args {
-            string_value: "5227e0f1366236a018006735"
+            string_value: "522567a8366236d419003a3c"
           }
         }
       }
@@ -3217,6 +3217,17 @@ triggers {
           }
           args {
             int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -9623,12 +9634,12 @@ triggers {
             string_value: "Comparison Ops"
           }
           args {
-            int_value: 0
+            int_value: 3
           }
         }
       }
       args {
-        int_value: 3
+        int_value: 2
       }
     }
   }
@@ -9966,12 +9977,12 @@ triggers {
             string_value: "Comparison Ops"
           }
           args {
-            int_value: 0
+            int_value: 3
           }
         }
       }
       args {
-        int_value: 4
+        int_value: 3
       }
     }
   }
@@ -10124,12 +10135,12 @@ triggers {
             string_value: "Comparison Ops"
           }
           args {
-            int_value: 0
+            int_value: 3
           }
         }
       }
       args {
-        int_value: 2
+        int_value: 1
       }
     }
   }
@@ -10456,12 +10467,12 @@ triggers {
             string_value: "Comparison Ops"
           }
           args {
-            int_value: 0
+            int_value: 3
           }
         }
       }
       args {
-        int_value: 4
+        int_value: 3
       }
     }
   }
@@ -11982,6 +11993,13 @@ regions {
   idRef {
     id: "5226a312366236d0160012f9"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12018,6 +12036,13 @@ regions {
   idRef {
     id: "5226ae30366236d016001330"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12054,6 +12079,13 @@ regions {
   idRef {
     id: "5226ae44366236d016001331"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12090,6 +12122,13 @@ regions {
   idRef {
     id: "5226b17d366236d01600136b"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12126,6 +12165,13 @@ regions {
   idRef {
     id: "5226b1e9366236d01600136c"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12162,6 +12208,13 @@ regions {
   idRef {
     id: "5226b72c366236d016001372"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12198,6 +12251,13 @@ regions {
   idRef {
     id: "5226b8ab366236d01600137b"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12234,6 +12294,13 @@ regions {
   idRef {
     id: "522a0d19643431e91364f609"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12270,6 +12337,13 @@ regions {
   idRef {
     id: "522a0d1e643431e91364f60a"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12306,6 +12380,13 @@ regions {
   idRef {
     id: "522a0d23643431e91364f60b"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12342,6 +12423,13 @@ regions {
   idRef {
     id: "522a0d28643431e91364f60c"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12378,6 +12466,13 @@ regions {
   idRef {
     id: "522a0d31643431e91364f60d"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12414,6 +12509,13 @@ regions {
   idRef {
     id: "522a0d36643431e91364f60e"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12450,6 +12552,13 @@ regions {
   idRef {
     id: "522a0d3c643431e91364f60f"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12486,6 +12595,13 @@ regions {
   idRef {
     id: "522a0d40643431e91364f610"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12522,6 +12638,13 @@ regions {
   idRef {
     id: "522aa80b36623668120035e7"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12558,6 +12681,13 @@ regions {
   idRef {
     id: "522aa924366236681200360e"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12594,6 +12724,13 @@ regions {
   idRef {
     id: "5233b80d366236e004007021"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12630,6 +12767,9 @@ characters {
   }
   lod: 0
   character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
     team_id: "Shadowrunners"
     char_name: "New Actor"
     enabled_at_start: true
@@ -12649,6 +12789,9 @@ characters {
   }
   lod: 0
   character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
     team_id: "Shadowrunners"
     char_name: "New Actor"
     enabled_at_start: true
@@ -15022,8 +15165,6 @@ scene_dimensions {
   dimension_name: "Shavarus Covert Network"
   initial_alarm_state: 20
   turns_per_round: 3
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
