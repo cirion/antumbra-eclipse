@@ -1521,6 +1521,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -1988,6 +1999,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -1999,7 +2021,7 @@ triggers {
   is_oneshot: true
 }
 triggers {
-  name: "After Fight"
+  name: "After Fight Sided Gangers"
   events {
     ops {
       functionName: "On Combat Exited"
@@ -2110,6 +2132,55 @@ triggers {
     id: "522209103662365013000f49"
   }
   elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "After Fight Sided Security"
+  events {
+    ops {
+      functionName: "On Combat Exited"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "5215664d3662365c180018bf"
+          }
+          args {
+            string_value: "A2_Mission_SidedWithMarines"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
     ops {
       functionName: "Start Conversation Between Actors"
       args {
@@ -2152,9 +2223,16 @@ triggers {
       functionName: "Set Actor Unkillable"
       args {
         call_value {
-          functionName: "Get Map Item (Actor)"
+          functionName: "Specific Actor"
           args {
-            string_value: "52212513643431523837ee71"
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "52212513643431523837ee71"
+              }
+            }
+          }
+          args {
           }
         }
       }
@@ -2192,6 +2270,12 @@ triggers {
         }
       }
     }
+  }
+  isActive: true
+  idRef {
+    id: "52d76639366236c40f007ff6"
+  }
+  elseActions {
   }
   is_oneshot: true
 }
@@ -2332,6 +2416,17 @@ triggers {
           }
           args {
             int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -3062,6 +3157,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
     ops {
       functionName: "Clear Waypoint from Prop"
@@ -3182,6 +3288,17 @@ triggers {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 1
@@ -4329,6 +4446,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
     ops {
       functionName: "Set Waypoint on Prop"
@@ -4367,6 +4495,17 @@ triggers {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 1
@@ -4962,6 +5101,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
   isActive: false
@@ -5176,6 +5326,17 @@ triggers {
           }
           args {
             int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -6231,6 +6392,17 @@ triggers {
           }
           args {
             int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -9373,6 +9545,14 @@ regions {
   idRef {
     id: "521a455a366236000100090d"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9409,6 +9589,14 @@ regions {
   idRef {
     id: "52212c83643431523837ef5a"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9445,6 +9633,14 @@ regions {
   idRef {
     id: "52212c9d643431523837ef5b"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9481,6 +9677,14 @@ regions {
   idRef {
     id: "52216eb23662365c160033d5"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9517,6 +9721,14 @@ regions {
   idRef {
     id: "52221d1e3662365013001057"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9553,6 +9765,14 @@ regions {
   idRef {
     id: "522232323662365013001169"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9589,6 +9809,14 @@ regions {
   idRef {
     id: "5222339a366236501300116c"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9625,6 +9853,9 @@ characters {
   }
   lod: 0
   character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
     team_id: "Shadowrunners"
     char_name: "PC0"
     enabled_at_start: true
@@ -9644,6 +9875,9 @@ characters {
   }
   lod: 0
   character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
     team_id: "Shadowrunners"
     char_name: "PC1"
     enabled_at_start: true
@@ -9832,7 +10066,7 @@ characters {
     GeneralTags: "squad1b"
     GeneralTags: "exiter"
     pc_spawn_number: -1
-    unkillable: false
+    unkillable: true
     portrait {
       filename: "pc_elfmale_05_platpunk"
     }
