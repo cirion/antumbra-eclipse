@@ -208,7 +208,7 @@ nodes {
     id: "521d837d366236a415000140"
   }
   index: 4
-  text: "So, to answer your query: I connect with like-minded wholesalers from all over. We\342\200\231ve got boats coming in a Pillar Point, at Tomales Bay, even Baker Beach sometimes. We cut out the taxes, and pass the savings on to you!"
+  text: "So, to answer your query: I connect with like-minded wholesalers from all over. We\342\200\231ve got boats coming in at Pillar Point, at Tomales Bay, even Baker Beach sometimes. We cut out the taxes, and pass the savings on to you!"
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -367,6 +367,17 @@ nodes {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
     ops {
       functionName: "Set Goal Status"
@@ -383,6 +394,17 @@ nodes {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 1
