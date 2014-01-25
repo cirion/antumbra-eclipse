@@ -577,7 +577,7 @@ nodes {
     id: "521e6ae7643431a9f264f770"
   }
   index: 9
-  text: "Yeah! I used to make fake SINs for my pals when we were teenagers so we could buy booze and adult simsense. \n\nI\342\200\231ll upload two fake identities for you into a bank database, and then they\342\200\231ll propagate to the other systems in the city. If anyone really wants to check, they\342\200\231ll see that there\342\200\231s no history associated with them, so it isn\342\200\231t like super-secure. But it should be totally fine if you just need to pass checkpoints."
+  text: "Yeah! I used to make fake SINs for my pals when we were teenagers so we could buy booze and adult simsense. \n\nI\342\200\231ll upload two fake identities for you into a bank database, and then they\342\200\231ll propagate to the other systems in the city. If anyone really wants to check, they\342\200\231ll see that there\342\200\231s no history associated with them, so it isn\342\200\231t, like, super-secure? But it should be totally fine if you just need to pass checkpoints."
   branches {
     responseText: ""
     nextNodeIndex: 10
@@ -812,6 +812,17 @@ nodes {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
     ops {
       functionName: "Set Goal Status"
@@ -828,6 +839,17 @@ nodes {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 1
@@ -964,6 +986,17 @@ nodes {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
 }
@@ -1037,6 +1070,17 @@ nodes {
           }
           args {
             int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }

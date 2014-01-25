@@ -9489,6 +9489,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9532,6 +9533,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9575,6 +9577,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9618,6 +9621,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9661,6 +9665,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9704,6 +9709,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9747,6 +9753,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -9790,6 +9797,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -14008,7 +14016,7 @@ mapName: "Eclipse 1"
 parentStory: ""
 scene_title: "Eclipse"
 scene_subtitle: ""
-scene_synopsis: "The ride back to Eclipse feels tense. You hear gunfire and see pursuers on your trail. Badly outnumbered, you race through the steep streets as quickly as possible, finally leaving them behind before you reach your safehouse.\n\nInside, Mr. Johnson grimly listens as you recount what you learned in the Mission District. This job just grew trickier..."
+scene_synopsis: "The ride back to Eclipse feels tense. You hear gunfire and see pursuers on your trail. Badly outnumbered, you race through the steep streets as quickly as possible, shaking off your followers just before you reach your safehouse.\n\nInside, Mr. Johnson grimly listens as you recount what you learned in the Mission District. This job just grew trickier..."
 scene_image: "scene7_eclipse2"
 scene_continue_button_skip: false
 scene_restore_runner_health: true
@@ -14058,8 +14066,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

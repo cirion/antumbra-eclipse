@@ -6244,7 +6244,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Region)"
           args {
-            string_value: "521ff238366236441f003080"
+            string_value: "522f4ea6643431895b794ca4"
           }
         }
       }
@@ -6444,6 +6444,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -6487,6 +6488,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -6530,6 +6532,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -6573,6 +6576,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -6616,6 +6620,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -6659,6 +6664,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -6702,6 +6708,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.9
     y: -0.75
@@ -6745,6 +6752,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -6788,6 +6796,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -6831,6 +6840,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -6874,6 +6884,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -6917,6 +6928,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -6960,6 +6972,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7003,6 +7016,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7046,6 +7060,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7089,6 +7104,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7132,6 +7148,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7175,6 +7192,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
