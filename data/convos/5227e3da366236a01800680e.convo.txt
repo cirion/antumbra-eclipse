@@ -114,7 +114,7 @@ nodes {
     id: "5227e4b0366236a01800682c"
   }
   index: 6
-  text: "I\342\200\231d like to take you to meet a benefactor who would like to speak with you personally. Are you ready to leave this place?"
+  text: "I\342\200\231d like to take you to meet a benefactor who wishes to speak with you personally. Are you ready to leave this place?"
   branches {
     responseText: "Yes."
     actions {
