@@ -77089,7 +77089,7 @@ props {
 props {
   name: "docks_clutter_salvageCrate"
   gridPoint {
-    x: -60
+    x: -59
     y: 0
     z: -1
   }
