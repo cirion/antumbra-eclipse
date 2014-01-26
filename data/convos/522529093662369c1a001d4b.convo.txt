@@ -187,7 +187,7 @@ nodes {
     id: "5225293c3662369c1a001d57"
   }
   index: 1
-  text: "I\'m... fine. Mostly. I\'m worried about my friends, my family, my city.\n\nI don\'t know what\'s going to happen, but this whole place feels like a Mount Diablo in the middle of summer. All it would take is a single spark to set the whole thing up in flames."
+  text: "I\'m... fine. Mostly. I\'m worried about my friends, my family, my city.\n\nI don\'t know what\'s going to happen, but this whole place feels like Mount Diablo in the middle of summer. All it would take is a single spark to set the whole thing up in flames."
   branches {
     responseText: ""
     nextNodeIndex: 2

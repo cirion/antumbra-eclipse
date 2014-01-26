@@ -1902,6 +1902,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -1945,6 +1946,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -2764,7 +2766,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -2807,7 +2809,7 @@ characters {
     GeneralTags: "wanderer"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -2850,7 +2852,7 @@ characters {
     GeneralTags: "security"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 characters {
@@ -2893,7 +2895,7 @@ characters {
     GeneralTags: "security"
     pc_spawn_number: -1
     karma: 6
-    is_prop_character: true
+    is_prop_character: false
   }
 }
 variables {

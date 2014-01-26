@@ -204,7 +204,7 @@ nodes {
     id: "52252f4d3662369c1a001dcc"
   }
   index: 3
-  text: "Until then, though, I need to keep in shape and keep my skills sharp. It helps to keep on warm terms with good old Coyote, and I like to let the elements know that they\'re appreciated. Nothing\'s worse than summoning a being of pure fire in the heat of battle, only to have it turn around and burn all your friends. I don\'t want to make that mistake again!"
+  text: "Until then, though, I need to keep in shape and keep my skills sharp. It helps to keep on warm terms with good old Coyote, and I like to let the elementals know that they\'re appreciated. Nothing\'s worse than summoning a being of pure fire in the heat of battle, only to have it turn around and burn all your friends. I don\'t want to make that mistake again!"
   branches {
     responseText: ""
     nextNodeIndex: 1
