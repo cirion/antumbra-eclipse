@@ -17629,7 +17629,7 @@ props {
   gridPoint {
     x: -37.5
     y: 0
-    z: 28
+    z: 28.3
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -44159,7 +44159,7 @@ props {
 props {
   name: "matrix_tech_1x1cover"
   gridPoint {
-    x: 8
+    x: 11
     y: 0
     z: 158
   }
@@ -44169,7 +44169,7 @@ props {
 props {
   name: "matrix_tech_1x1cover"
   gridPoint {
-    x: 8
+    x: 11
     y: 0
     z: 147
   }
@@ -48286,13 +48286,104 @@ props {
 props {
   name: "matrix_tech_1x2cover"
   gridPoint {
-    x: 29
+    x: 30
     y: 0
     z: 92
   }
   orientation: ORIENTATION_E
   idRef {
     id: "52432a4d643431e80cb50cb6"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x2cover"
+  gridPoint {
+    x: 25
+    y: 0
+    z: 87
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52e54c99366236b00d00235e"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x2cover"
+  gridPoint {
+    x: 23
+    y: 0
+    z: 89
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52e54c9c366236b00d00235f"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x2cover"
+  gridPoint {
+    x: 23
+    y: 0
+    z: 84
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52e54cad366236b00d002360"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x2cover"
+  gridPoint {
+    x: -20
+    y: 0
+    z: 147
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "52e54cf3366236b00d002361"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_4x4fill"
+  gridPoint {
+    x: -33.5
+    y: 0
+    z: 28.3
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52e54d20366236b00d002362"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_4x4fill"
+  gridPoint {
+    x: -30.5
+    y: 0
+    z: 28.3
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52e54d21366236b00d002363"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_4x4fill"
+  gridPoint {
+    x: -37.5
+    y: 0
+    z: 26.3
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "52e54d23366236b00d002364"
   }
   lod: 0
 }
