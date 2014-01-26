@@ -577,6 +577,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -3020,6 +3031,14 @@ regions {
   idRef {
     id: "522557ae366236d4190039ba"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -3056,6 +3075,14 @@ regions {
   idRef {
     id: "522558d7366236d4190039c0"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -3084,14 +3111,22 @@ regions {
   position {
     x: -19
     y: -68
-    width: 137
-    height: 54
+    width: 139
+    height: 59
   }
   enabledAtStart: true
   is_camera_region: true
   idRef {
     id: "522e8a44366236000b006f75"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -3128,6 +3163,14 @@ regions {
   idRef {
     id: "52349ed1643431ebb9fc4132"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -3164,6 +3207,9 @@ characters {
   }
   lod: 0
   character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
     team_id: "Shadowrunners"
     char_name: "New Actor"
     enabled_at_start: true
@@ -3183,6 +3229,9 @@ characters {
   }
   lod: 0
   character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
     team_id: "Shadowrunners"
     char_name: "New Actor"
     enabled_at_start: true
