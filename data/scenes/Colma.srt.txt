@@ -1390,6 +1390,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -1511,6 +1522,17 @@ triggers {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 0
@@ -1897,6 +1919,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -2271,6 +2304,17 @@ triggers {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 0
@@ -2891,6 +2935,17 @@ triggers {
           }
           args {
             int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -3703,6 +3758,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -3824,6 +3890,17 @@ triggers {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 0
@@ -4210,6 +4287,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -4584,6 +4672,17 @@ triggers {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 0
@@ -5680,6 +5779,17 @@ triggers {
           }
           args {
             int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -7822,6 +7932,14 @@ regions {
   idRef {
     id: "52240b603662366c10007f0b"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7858,6 +7976,14 @@ regions {
   idRef {
     id: "5224124b3662366c10008095"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7894,6 +8020,14 @@ regions {
   idRef {
     id: "5224a2ac366236a409007eac"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7930,6 +8064,14 @@ regions {
   idRef {
     id: "5224a6d6366236a409007eb2"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -7966,6 +8108,14 @@ regions {
   idRef {
     id: "5224a6f1366236a409007eb4"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -8002,6 +8152,14 @@ regions {
   idRef {
     id: "5224a705366236a409007eb5"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -8038,6 +8196,14 @@ regions {
   idRef {
     id: "5224a73e366236a409007eb6"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -8074,6 +8240,14 @@ regions {
   idRef {
     id: "5224ae3f366236a409007ec6"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -8110,6 +8284,14 @@ regions {
   idRef {
     id: "5230c05d643431b67a980f8e"
   }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -8147,6 +8329,9 @@ characters {
   }
   lod: 0
   character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
     team_id: "Shadowrunners"
     char_name: "PC1"
     enabled_at_start: true
@@ -12075,6 +12260,9 @@ characters {
   }
   lod: 0
   character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
     team_id: "Shadowrunners"
     char_name: "PC0"
     enabled_at_start: true

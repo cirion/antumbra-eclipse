@@ -9568,6 +9568,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
     ops {
       functionName: "Send Event After Delay"
@@ -9631,6 +9642,17 @@ triggers {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 0
@@ -9964,6 +9986,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10007,6 +10030,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10050,6 +10074,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10093,6 +10118,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10136,6 +10162,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10179,6 +10206,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10222,6 +10250,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10265,6 +10294,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10308,6 +10338,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10351,6 +10382,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10394,6 +10426,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10437,6 +10470,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10480,6 +10514,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10523,6 +10558,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10566,6 +10602,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10609,6 +10646,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10652,6 +10690,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10695,6 +10734,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10738,6 +10778,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10781,6 +10822,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -10824,6 +10866,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1

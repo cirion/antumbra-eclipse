@@ -8726,19 +8726,6 @@ props {
 props {
   name: "cemetery_decor_headstone01"
   gridPoint {
-    x: -37
-    y: 0
-    z: -98
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521a84233662367c1d0073e7"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_decor_headstone01"
-  gridPoint {
     x: -35
     y: 0
     z: -100
@@ -8798,32 +8785,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "521a84233662367c1d0073ec"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_decor_headstone06"
-  gridPoint {
-    x: -39
-    y: 0
-    z: -98
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521a84233662367c1d0073ed"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_decor_headstone06"
-  gridPoint {
-    x: -37
-    y: 0
-    z: -100
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521a84233662367c1d0073ee"
   }
   lod: 0
 }
@@ -8908,19 +8869,6 @@ props {
 props {
   name: "cemetery_decor_headstone06"
   gridPoint {
-    x: -37
-    y: 0
-    z: -102
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521a84233662367c1d0073f7"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_decor_headstone06"
-  gridPoint {
     x: -33
     y: 0
     z: -106
@@ -8941,19 +8889,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "521a84233662367c1d0073f9"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_decor_headstone06"
-  gridPoint {
-    x: -41
-    y: 0
-    z: -98
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521a84233662367c1d0073fa"
   }
   lod: 0
 }
@@ -9025,19 +8960,6 @@ props {
 props {
   name: "cemetery_decor_headstone06"
   gridPoint {
-    x: -39
-    y: 0
-    z: -102
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521a84233662367c1d007400"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_decor_headstone06"
-  gridPoint {
     x: -49
     y: 0
     z: -92
@@ -9058,19 +8980,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "521a84233662367c1d007402"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_decor_headstone06"
-  gridPoint {
-    x: -41
-    y: 0
-    z: -100
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521a84233662367c1d007403"
   }
   lod: 0
 }
@@ -9097,19 +9006,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "521a84233662367c1d007405"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_decor_headstone01"
-  gridPoint {
-    x: -41
-    y: 0
-    z: -102
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521a84233662367c1d007406"
   }
   lod: 0
 }
