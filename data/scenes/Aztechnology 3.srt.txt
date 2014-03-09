@@ -9343,7 +9343,7 @@ characters {
   gridPoint {
     x: -35
     y: 0
-    z: 76
+    z: 75
   }
   orientation: ORIENTATION_S
   idRef {
@@ -9593,3 +9593,5 @@ use_hiring_cost_warning: true
 hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
+can_move_outside_camera_regions: true
+can_start_before_triggers: true
