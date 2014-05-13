@@ -78849,7 +78849,7 @@ props {
   name: "pikePlace_wallDecoration_genericGrafitti03"
   gridPoint {
     x: -4
-    y: -1.3877788e-016
+    y: -1.3877788e-16
     z: 18.9
   }
   orientation: ORIENTATION_S
