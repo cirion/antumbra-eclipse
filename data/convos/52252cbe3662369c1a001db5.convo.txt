@@ -22,8 +22,20 @@ nodes {
   index: 1
   text: "What can Dalmin do for you today?"
   branches {
-    responseText: "How is the shaman life treating you?"
+    responseText: ""
     nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372510d6434311639fc5a73"
+  }
+  index: 2
+  text: ""
+  branches {
+    responseText: "How is the shaman life treating you?"
+    nextNodeIndex: 3
     onlyOnce: true
     idRef {
       id: "522531fb3662369c1a001df3"
@@ -102,7 +114,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     hideIfUnavailable: true
   }
   branches {
@@ -178,7 +190,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 6
+    nextNodeIndex: 7
     hideIfUnavailable: true
   }
   branches {
@@ -189,33 +201,33 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52252f113662369c1a001dc9"
+    id: "537251126434311639fc5a7f"
   }
-  index: 2
+  index: 3
   text: "Not too shabbily. Supporting shamans are all the rage these days, so I find I\'ve been able to command a higher premium. Which, in turn, helps fund what I hope will one day be my opulent lifestyle."
   branches {
     responseText: ""
-    nextNodeIndex: 3
+    nextNodeIndex: 4
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "52252f4d3662369c1a001dcc"
+    id: "537251126434311639fc5a82"
   }
-  index: 3
-  text: "Until then, though, I need to keep in shape and keep my skills sharp. It helps to keep on warm terms with good old Coyote, and I like to let the elementals know that they\'re appreciated. Nothing\'s worse than summoning a being of pure fire in the heat of battle, only to have it turn around and burn all your friends. I don\'t want to make that mistake again!"
+  index: 4
+  text: "Until then, though, I need to keep in shape and keep my skills sharp. It helps to keep on warm terms with good old Coyote, and I like to let the elements know that they\'re appreciated. Nothing\'s worse than summoning a being of pure fire in the heat of battle, only to have it turn around and burn all your friends. I don\'t want to make that mistake again!"
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
 }
 nodes {
   idRef {
-    id: "52252fea3662369c1a001dd0"
+    id: "537251176434311639fc5a91"
   }
-  index: 4
+  index: 5
   text: "\"Last?\" Is there something you aren\'t telling me, $(l.name)? I sure hope you aren\'t recruiting me for a suicide mission.\n\nI\'m a mercenary dwarf, but I value people who value my safety, and you\'ve shown that you can bring me back alive. So, I\'ll cut a special deal for you and only charge \302\2451000 for the pleasure of my company."
   branches {
     responseText: "{{CC}}\302\2451000{{/CC}} It\'s a deal, Dalmin."
@@ -246,20 +258,20 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 5
+    nextNodeIndex: 6
   }
   branches {
     responseText: "Too pricey for me."
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5225307a3662369c1a001dd4"
+    id: "537251176434311639fc5a94"
   }
-  index: 5
+  index: 6
   text: "Let\'s show San Francisco how we Seattleites take care of business!"
   nodeType: ConversationNodeType_Simple
   actions {
@@ -317,9 +329,9 @@ nodes {
 }
 nodes {
   idRef {
-    id: "522531743662369c1a001dd6"
+    id: "5372511b6434311639fc5aa3"
   }
-  index: 6
+  index: 7
   text: "I\'m sure that you could! Fortunately, I specialize in lending aid to seemingly-hopeless causes. You can shelter under my protective spells for a mere \302\2451200."
   branches {
     responseText: "{{CC}}\302\2451200{{/CC}} It\'s a deal."
@@ -350,12 +362,12 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     auxiliaryLink: true
   }
   branches {
     responseText: "Too pricey for me."
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple

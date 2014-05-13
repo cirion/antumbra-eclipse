@@ -45,8 +45,20 @@ nodes {
   index: 1
   text: "Shall we exchange goods and currency?"
   branches {
-    responseText: "What do you sell here?"
+    responseText: ""
     nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537245e86434311639fc48f5"
+  }
+  index: 2
+  text: ""
+  branches {
+    responseText: "What do you sell here?"
+    nextNodeIndex: 3
     onlyOnce: true
     idRef {
       id: "521e66ba643431a9f264f68a"
@@ -67,8 +79,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 1
-    auxiliaryLink: true
+    nextNodeIndex: 6
   }
   branches {
     responseText: "Do you have any cyberwear available?"
@@ -85,12 +96,11 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 1
-    auxiliaryLink: true
+    nextNodeIndex: 7
   }
   branches {
     responseText: "What do you think of Eclipse?"
-    nextNodeIndex: 5
+    nextNodeIndex: 8
     onlyOnce: true
     idRef {
       id: "52377f79643431971694e11a"
@@ -150,7 +160,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 6
+    nextNodeIndex: 9
     hideIfUnavailable: true
   }
   branches {
@@ -161,58 +171,84 @@ nodes {
 }
 nodes {
   idRef {
-    id: "521e66b6643431a9f264f689"
-  }
-  index: 2
-  text: "Oh, did I not say before? Sorry about that. I get distracted sometimes."
-  branches {
-    responseText: ""
-    nextNodeIndex: 3
-  }
-  nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "521e66ca643431a9f264f68d"
+    id: "537245f16434311639fc4904"
   }
   index: 3
-  text: "I mostly sell parts. Robot parts, people parts... robot-people parts... things like that.\n\nLots of the megacorps around here will toss out perfectly good electronics with their trash. Can you believe that?! I found a Fairlight Excalibur just the other day, and it was perfectly fine, someone had just spilled coffee on it. Unbelievable."
+  text: "Oh, did I not say before? Sorry about that. I get distracted sometimes."
   branches {
     responseText: ""
     nextNodeIndex: 4
   }
+  nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e66d6643431a9f264f690"
+    id: "537245f16434311639fc4907"
   }
   index: 4
+  text: "I mostly sell parts. Robot parts, people parts... robot-people parts... things like that.\n\nLots of the megacorps around here will toss out perfectly good electronics with their trash. Can you believe that?! I found a Fairlight Excalibur just the other day, and it was perfectly fine, someone had just spilled coffee on it. Unbelievable."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+}
+nodes {
+  idRef {
+    id: "537245f16434311639fc490a"
+  }
+  index: 5
   text: "Anyways. I find or buy stuff like that, then repair anything that needs fixing, then sell it to shadowrunners who need high-quality gear with no questions asked."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e671d643431a9f264f6a4"
+    id: "537246246434311639fc4972"
   }
-  index: 5
+  index: 6
+  text: "Pretty good, huh?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537246346434311639fc4976"
+  }
+  index: 7
+  text: "You\'d look good in chrome."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372460f6434311639fc4922"
+  }
+  index: 8
   text: "It\342\200\231s a pretty happenin\342\200\231 place, for sure! I remember the store that used to be here. It was a real dive. Cheap rent, but nobody would ever come.\n\nWhen Kali swept into town, she snapped up this property first thing, and has thrown her heart and soul into turning it into something gorgeous. It\342\200\231s like she feels she has something to prove."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e67a8643431a9f264f6a9"
+    id: "537246156434311639fc4937"
   }
-  index: 6
+  index: 9
   text: "{{GM}}The Dave turns to a nearby terminal and runs a search, muttering as he does so.{{/GM}}\n\nHm, Tarne\342\200\246 all the records I can find are at least a week old. I can try to broaden the search, but I\342\200\231ll need some extra parameters. Do you have any other information that may be helpful?"
   branches {
     responseText: "Try \"Norton\342\200\231s Army\"."
@@ -243,24 +279,24 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 7
+    nextNodeIndex: 10
     hideIfUnavailable: true
   }
   branches {
     responseText: "Not yet."
-    nextNodeIndex: 8
+    nextNodeIndex: 11
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e6858643431a9f264f6b1"
+    id: "537246156434311639fc493a"
   }
-  index: 7
+  index: 10
   text: "Ah, that did it. It looks like Tarne may have picked up a new alias. I\342\200\231m seeing some new records for \342\200\234Atta\342\200\235 appear at the same time that \342\200\234Tarne\342\200\235 disappeared, and \342\200\234Atta\342\200\235 is associated with the term Norton. \n\nThat\342\200\231s all I can find out from my rig here. I think there\342\200\231s a public terminal somewhere around here that you should be able to use to dig up more information."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -283,13 +319,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "521e67de643431a9f264f6ad"
+    id: "537246156434311639fc4940"
   }
-  index: 8
+  index: 11
   text: "Sorry I can\342\200\231t be of more help. Come back if you find out anything more, okay?"
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -298,7 +334,7 @@ nodes {
   idRef {
     id: "521e669d643431a9f264f685"
   }
-  index: 9
+  index: 12
   text: "Wow, you\342\200\231re back! Groovy."
   branches {
     responseText: ""
@@ -383,5 +419,5 @@ roots {
       }
     }
   }
-  nextNodeIndex: 9
+  nextNodeIndex: 12
 }

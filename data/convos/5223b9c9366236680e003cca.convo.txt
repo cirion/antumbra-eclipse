@@ -9,6 +9,18 @@ nodes {
   index: 0
   text: "Guns and ammo! Get your guns and ammo right here!"
   branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724ce16434311639fc4f50"
+  }
+  index: 1
+  text: ""
+  branches {
     responseText: "I\'d like to see your guns and ammo, please."
     actions {
       ops {
@@ -45,8 +57,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 0
-    auxiliaryLink: true
+    nextNodeIndex: 2
   }
   branches {
     responseText: "You seem better-stocked than before."
@@ -85,7 +96,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 1
+    nextNodeIndex: 3
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -100,25 +111,38 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5223ba82366236680e003cf6"
+    id: "53724cfd6434311639fc4f7c"
   }
-  index: 1
-  text: "You are absolutely correct! My, ah, network of acquisitions experts have been busily combing over the former offices of Aztechnology, and finding some terrific equipment. The marines are mostly concerned about hunting down any Aztlan agents, and the megacorps are focusing on taking over Aztechnology\'s contracts, so nobody cares very much if a few guns and fetishes go missing."
+  index: 2
+  text: "Another satisfied customer!"
   branches {
     responseText: ""
-    nextNodeIndex: 2
+    nextNodeIndex: 1
+    auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223bb02366236680e003cf9"
+    id: "53724cea6434311639fc4f62"
   }
-  index: 2
+  index: 3
+  text: "You are absolutely correct! My, ah, network of acquisitions experts have been busily combing over the former offices of Aztechnology, and finding some terrific equipment. The marines are mostly concerned about hunting down any Aztlan agents, and the megacorps are focusing on taking over Aztechnology\'s contracts, so nobody cares very much if a few guns and fetishes go missing."
+  branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724cea6434311639fc4f65"
+  }
+  index: 4
   text: "I\'ve spread the wealth around and helped restock the other Eclipse merchants with some new gear. For a modest fee, of course. Well, not too modest. Nobody\'s complaining, though. This stuff is still a steal compared to the wholesale prices we were paying last week!"
   branches {
     responseText: ""
-    nextNodeIndex: 0
+    nextNodeIndex: 1
     auxiliaryLink: true
   }
 }

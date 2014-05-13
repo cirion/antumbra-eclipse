@@ -60,8 +60,20 @@ nodes {
   index: 2
   text: "Are you ready to go?"
   branches {
-    responseText: "Have you had any luck finding more help?"
+    responseText: ""
     nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537251886434311639fc5c0f"
+  }
+  index: 3
+  text: ""
+  branches {
+    responseText: "Have you had any luck finding more help?"
+    nextNodeIndex: 4
     onlyOnce: true
     idRef {
       id: "5225174d3662369c1a001b30"
@@ -85,20 +97,20 @@ nodes {
     nextNodeIndex: -1
   }
   branches {
-    responseText: "Not yet."
+    responseText: "Give me a bit more time to prepare."
     nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5225174e3662369c1a001b32"
+    id: "5372518d6434311639fc5c18"
   }
-  index: 3
+  index: 4
   text: "I\'m still working my way up the chains of command. No corp wants to make the first move, in case this turns out to be a trap. It will take time to convince them that they face a true city-wide threat, and I\'m not sure how much time we have."
   branches {
     responseText: ""
-    nextNodeIndex: 2
+    nextNodeIndex: 3
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple

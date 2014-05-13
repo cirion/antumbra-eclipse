@@ -80,7 +80,19 @@ nodes {
   index: 5
   text: "{{GM}}The mood between the gangers and the marines is growing more heated every moment.{{/GM}}"
   branches {
-    responseText: "{{GM}}Allow Hailey to speak.{{/GM}}"
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724c126434311639fc4da3"
+  }
+  index: 6
+  text: ""
+  branches {
+    responseText: ""
     conditions {
       ops {
         functionName: "Comparison (bool)"
@@ -155,7 +167,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 6
+    nextNodeIndex: 7
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -163,7 +175,7 @@ nodes {
     }
   }
   branches {
-    responseText: "{{GM}}Allow Orion to speak{{/GM}}"
+    responseText: ""
     conditions {
       ops {
         functionName: "Comparison (bool)"
@@ -238,7 +250,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 11
+    nextNodeIndex: 12
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -282,7 +294,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 12
+    nextNodeIndex: 13
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -326,7 +338,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 14
+    nextNodeIndex: 15
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -335,7 +347,7 @@ nodes {
   }
   branches {
     responseText: "Where do you expect them to go?"
-    nextNodeIndex: 16
+    nextNodeIndex: 17
     onlyOnce: true
     idRef {
       id: "52212a0b643431523837ef3a"
@@ -343,7 +355,7 @@ nodes {
   }
   branches {
     responseText: "What will happen if they don\342\200\231t disperse?"
-    nextNodeIndex: 18
+    nextNodeIndex: 19
     onlyOnce: true
     idRef {
       id: "52212a43643431523837ef46"
@@ -397,7 +409,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 22
+    nextNodeIndex: 23
     onlyOnce: true
     idRef {
       id: "522c2edb3662361c1b000ea7"
@@ -451,7 +463,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 24
+    nextNodeIndex: 25
     onlyOnce: true
     idRef {
       id: "522172373662365c160035b0"
@@ -459,23 +471,23 @@ nodes {
   }
   branches {
     responseText: "Do what the marine says: disperse."
-    nextNodeIndex: 26
+    nextNodeIndex: 27
   }
   branches {
     responseText: "Go away, marines. They\342\200\231re not moving."
-    nextNodeIndex: 27
+    nextNodeIndex: 28
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "522128c8643431523837ef02"
+    id: "53724c1a6434311639fc4db8"
   }
-  index: 6
+  index: 7
   text: "Voire? What\'s going on?"
   branches {
     responseText: ""
-    nextNodeIndex: 7
+    nextNodeIndex: 8
   }
   nodeType: ConversationNodeType_Simple
   sourceInSceneRef {
@@ -484,41 +496,41 @@ nodes {
 }
 nodes {
   idRef {
-    id: "522128c8643431523837ef05"
-  }
-  index: 7
-  text: "Hai... Hailey? What are you doing here?"
-  branches {
-    responseText: ""
-    nextNodeIndex: 8
-  }
-  sourceInSceneRef {
-    id: "522126b9643431523837ee73"
-  }
-}
-nodes {
-  idRef {
-    id: "522128c8643431523837ef08"
+    id: "53724c1a6434311639fc4dbb"
   }
   index: 8
-  text: "Watching my friend commit suicide by cop, from the looks of it."
+  text: "Hai... Hailey? What are you doing here?"
   branches {
     responseText: ""
     nextNodeIndex: 9
   }
   sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c1a6434311639fc4dbe"
+  }
+  index: 9
+  text: "Watching my friend commit suicide by cop, from the looks of it."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  sourceInSceneRef {
     id: "522124b0643431523837ee64"
   }
 }
 nodes {
   idRef {
-    id: "522128c8643431523837ef0b"
+    id: "53724c1a6434311639fc4dc1"
   }
-  index: 9
+  index: 10
   text: "It isn\342\200\231t like that! We\342\200\231re sick of getting pushed around, Hailey. We need to make a stand! Otherwise, they\342\200\231ll just keep shuffling us along, until one day they sweep us out of the city altogether!\n\nYou\342\200\231re human. You don\342\200\231t know what it\342\200\231s like to live with this every day."
   branches {
     responseText: ""
-    nextNodeIndex: 10
+    nextNodeIndex: 11
   }
   sourceInSceneRef {
     id: "522126b9643431523837ee73"
@@ -526,13 +538,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "522128fc643431523837ef25"
+    id: "53724c1a6434311639fc4dc4"
   }
-  index: 10
+  index: 11
   text: "You\342\200\231re right, I don\342\200\231t know what it\342\200\231s like. But I know what it\342\200\231s like to live, and I want you to keep living, Voire."
   branches {
     responseText: ""
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -542,13 +554,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5221293c643431523837ef2a"
+    id: "53724c206434311639fc4dd0"
   }
-  index: 11
+  index: 12
   text: "{{GM}}Orion addresses you quietly.{{/GM}} \n\nLook at them, $(l.name). They\342\200\231re frightened. All of them. Everyone knows that the cataclysm is coming, but nobody is prepared for it. We may be witnessing the first stones shaking loose the avalanche that is to come."
   branches {
     responseText: ""
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -558,13 +570,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52212981643431523837ef2f"
+    id: "53724c596434311639fc4dfb"
   }
-  index: 12
+  index: 13
   text: "To keep proper citizens like yourself safe! I can\342\200\231t believe how ungrateful you lot are for the protection of Saito-san. If he didn\342\200\231t keep the metahumans in line, Frisco would be another disaster like Seattle."
   branches {
     responseText: ""
-    nextNodeIndex: 13
+    nextNodeIndex: 14
   }
   nodeType: ConversationNodeType_Simple
   sourceInSceneRef {
@@ -573,13 +585,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "522259683662365807003a00"
+    id: "53724c596434311639fc4dfe"
   }
-  index: 13
+  index: 14
   text: "Geez! You moron, nobody calls it Frisco! You\342\200\231ll never be a part of this city, stop trying to pretend like you own it!"
   branches {
     responseText: ""
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     auxiliaryLink: true
   }
   sourceInSceneRef {
@@ -588,13 +600,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "522129d0643431523837ef34"
+    id: "53724c636434311639fc4e0d"
   }
-  index: 14
+  index: 15
   text: "Because $(l.race_plural) like you are endangering this city! Everybody knows that when groups of metahumans congregate, violence always results. Saito-san needs to keep you lot under control, otherwise Frisco will turn into another disaster like Seattle."
   branches {
     responseText: ""
-    nextNodeIndex: 15
+    nextNodeIndex: 16
   }
   nodeType: ConversationNodeType_Simple
   sourceInSceneRef {
@@ -603,13 +615,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "522129f1643431523837ef37"
+    id: "53724c636434311639fc4e10"
   }
-  index: 15
+  index: 16
   text: "Geez! You moron, nobody calls it Frisco! You\342\200\231ll never be a part of this city, stop trying to pretend like you own it!"
   branches {
     responseText: ""
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -619,13 +631,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52212a0d643431523837ef3c"
+    id: "53724c736434311639fc4e1f"
   }
-  index: 16
+  index: 17
   text: "The gutter, probably? Or the cemetery? "
   branches {
     responseText: ""
-    nextNodeIndex: 17
+    nextNodeIndex: 18
   }
   nodeType: ConversationNodeType_Simple
   sourceInSceneRef {
@@ -634,13 +646,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52212a1f643431523837ef3f"
+    id: "53724c736434311639fc4e22"
   }
-  index: 17
+  index: 18
   text: "{{GM}}The marine wearily rubs his eyes.{{/GM}} \n\nGo back to those awful squats you vermin occupy. "
   branches {
     responseText: ""
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     auxiliaryLink: true
   }
   sourceInSceneRef {
@@ -649,56 +661,56 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52212a59643431523837ef49"
-  }
-  index: 18
-  text: "I am authorized to use any and every force at my disposal to ensure that the streets are safe. "
-  branches {
-    responseText: ""
-    nextNodeIndex: 19
-  }
-  nodeType: ConversationNodeType_Simple
-  sourceInSceneRef {
-    id: "52212513643431523837ee71"
-  }
-}
-nodes {
-  idRef {
-    id: "52212a66643431523837ef4c"
+    id: "53724c796434311639fc4e37"
   }
   index: 19
-  text: "So, you\342\200\231ll shoot us, then?"
+  text: "I am authorized to use any and every force at my disposal to ensure that the streets are safe. "
   branches {
     responseText: ""
     nextNodeIndex: 20
   }
+  nodeType: ConversationNodeType_Simple
   sourceInSceneRef {
-    id: "522126b9643431523837ee73"
+    id: "52212513643431523837ee71"
   }
 }
 nodes {
   idRef {
-    id: "52212a75643431523837ef4f"
+    id: "53724c796434311639fc4e3a"
   }
   index: 20
-  text: "If you threaten the lives of my men, then yes, I will be forced to shoot you."
+  text: "So, you\342\200\231ll shoot us, then?"
   branches {
     responseText: ""
     nextNodeIndex: 21
   }
   sourceInSceneRef {
+    id: "522126b9643431523837ee73"
+  }
+}
+nodes {
+  idRef {
+    id: "53724c796434311639fc4e3d"
+  }
+  index: 21
+  text: "If you threaten the lives of my men, then yes, I will be forced to shoot you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 22
+  }
+  sourceInSceneRef {
     id: "52212513643431523837ee71"
   }
 }
 nodes {
   idRef {
-    id: "52212a88643431523837ef52"
+    id: "53724c796434311639fc4e40"
   }
-  index: 21
+  index: 22
   text: "For every ork or troll you slay, I\342\200\231ll kill two of your men. For every elf you murder, I\342\200\231ll kill four marines."
   branches {
     responseText: ""
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     auxiliaryLink: true
   }
   sourceInSceneRef {
@@ -707,13 +719,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52216bc63662365c16003328"
+    id: "53724c826434311639fc4e4c"
   }
-  index: 22
+  index: 23
   text: "Negative! We hold the line!"
   branches {
     responseText: ""
-    nextNodeIndex: 23
+    nextNodeIndex: 24
   }
   nodeType: ConversationNodeType_Simple
   sourceInSceneRef {
@@ -722,9 +734,9 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52216bd73662365c1600332b"
+    id: "53724c826434311639fc4e4f"
   }
-  index: 23
+  index: 24
   text: "{{GM}}Despite the captain\342\200\231s commands, you notice that some of the more grizzled marines apparently agree with you. They slip quietly away while he rails against the gang.{{/GM}}"
   nodeType: ConversationNodeType_Simple
   sourceInSceneRef {
@@ -746,13 +758,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52216bfc3662365c16003379"
+    id: "53724c896434311639fc4e58"
   }
-  index: 24
+  index: 25
   text: "If this isn\342\200\231t, than nothing is! Stay strong, chummers! We can do it!"
   branches {
     responseText: ""
-    nextNodeIndex: 25
+    nextNodeIndex: 26
   }
   nodeType: ConversationNodeType_Simple
   sourceInSceneRef {
@@ -761,9 +773,9 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52216c063662365c1600337c"
+    id: "53724c896434311639fc4e5b"
   }
-  index: 25
+  index: 26
   text: "{{GM}}Despite Voire\342\200\231s pleas, some of his followers appear reluctant. They sheepishly walk away, leaving him with a smaller group than before.{{/GM}}"
   sourceInSceneRef {
     id: "522126b9643431523837ee73"
@@ -784,9 +796,9 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52216c2d3662365c16003380"
+    id: "53724c8c6434311639fc4e61"
   }
-  index: 26
+  index: 27
   text: "Frag you, $(l.guy)! Nobody will push us around any more!"
   nodeType: ConversationNodeType_Simple
   actions {
@@ -805,13 +817,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52216c893662365c16003383"
+    id: "53724c906434311639fc4e6a"
   }
-  index: 27
+  index: 28
   text: "Negative!"
   branches {
     responseText: ""
-    nextNodeIndex: 28
+    nextNodeIndex: 29
   }
   nodeType: ConversationNodeType_Simple
   sourceInSceneRef {
@@ -820,9 +832,9 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52216c953662365c16003386"
+    id: "53724c906434311639fc4e6d"
   }
-  index: 28
+  index: 29
   text: "This is it, chummers! CHARGE!"
   sourceInSceneRef {
     id: "522126b9643431523837ee73"

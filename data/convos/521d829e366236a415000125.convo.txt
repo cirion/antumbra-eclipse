@@ -45,8 +45,20 @@ nodes {
   index: 1
   text: "What quality item would you like today?"
   branches {
-    responseText: "Why is that locker open?"
+    responseText: ""
     nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372408f6434311639fc4332"
+  }
+  index: 2
+  text: ""
+  branches {
+    responseText: "Why is that locker open?"
+    nextNodeIndex: 3
     onlyOnce: true
     idRef {
       id: "5233cce3366236181b003697"
@@ -54,7 +66,7 @@ nodes {
   }
   branches {
     responseText: "Where do you get your supply from?"
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     onlyOnce: true
     idRef {
       id: "521d84a4366236a41500015f"
@@ -62,7 +74,7 @@ nodes {
   }
   branches {
     responseText: "Do you have any other locations?"
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     onlyOnce: true
     idRef {
       id: "521d84a1366236a41500015e"
@@ -83,7 +95,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: -1
+    nextNodeIndex: 7
   }
   branches {
     responseText: "Do you know where I could find a fake SIN?"
@@ -170,7 +182,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 6
+    nextNodeIndex: 8
     hideIfUnavailable: true
   }
   branches {
@@ -181,82 +193,95 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5233cceb366236181b003699"
+    id: "537240966434311639fc433b"
   }
-  index: 2
+  index: 3
   text: "Oh! You\'re $(l.name), right? Your employer rented that locker for your use. It\'s occasionally useful to have gear stashed away someplace where the imperial marines won\'t be able to easily seize it. I\'ll keep an eye on it and make sure nobody else messes with your stuf."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
 }
 nodes {
   idRef {
-    id: "521d8354366236a41500013c"
+    id: "5372409c6434311639fc434a"
   }
-  index: 3
+  index: 4
   text: "A most excellent question! Most retail outlets in our fair city are dependent upon the consortium of Japanese megacorps for supply. That means tight controls over the more exotic goods, and dealing with rampant price-fixing.\n\nPersonally, I\342\200\231m a firm believer in a free market. Free of borders, of tariffs, of safety regulations. Live free and kill, that\342\200\231s my motto!"
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521d837d366236a415000140"
+    id: "5372409c6434311639fc434d"
   }
-  index: 4
-  text: "So, to answer your query: I connect with like-minded wholesalers from all over. We\342\200\231ve got boats coming in at Pillar Point, at Tomales Bay, even Baker Beach sometimes. We cut out the taxes, and pass the savings on to you!"
+  index: 5
+  text: "So, to answer your query: I connect with like-minded wholesalers from all over. We\342\200\231ve got boats coming in a Pillar Point, at Tomales Bay, even Baker Beach sometimes. We cut out the taxes, and pass the savings on to you!"
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
 }
 nodes {
   idRef {
-    id: "521d8393366236a415000150"
+    id: "537240a16434311639fc4359"
   }
-  index: 5
+  index: 6
   text: "Not just yet, I\342\200\231m afraid. I\342\200\231ve been able to operate under Saito\342\200\231s radar so far, and expanding my customer base too recklessly could earn me a visit from his marines.\n\nStill, I pride myself in offering quality goods at a reasonable price. A better class of customer means more to me than a second storefront would."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521d83b1366236a415000154"
+    id: "537240e56434311639fc43d2"
   }
-  index: 6
+  index: 7
+  text: "Will that be all for you today, $(l.sir)?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537240ae6434311639fc437c"
+  }
+  index: 8
   text: "Yes. I even know where you could find a good one: right here."
   branches {
     responseText: ""
-    nextNodeIndex: 7
+    nextNodeIndex: 9
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521d83b9366236a415000157"
+    id: "537240ae6434311639fc437f"
   }
-  index: 7
+  index: 9
   text: "Any bedroom decker can slap together a fake, Matrix-only identity. That will help if you\342\200\231re dealing with a bored checkpoint guard, but when you have actual corporate security scrutinizing your records, you\342\200\231ll need the real thing.\n\nI\342\200\231ve gotten really good at supplying my smugglers with everything they need to evade discovery. That includes a SIN appropriated from a real, actual Californian. It will hold up to any scrutiny short of biometric verification."
   branches {
     responseText: ""
-    nextNodeIndex: 8
+    nextNodeIndex: 10
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521d83c1366236a41500015a"
+    id: "537240ae6434311639fc4382"
   }
-  index: 8
+  index: 10
   text: "You\342\200\231ll have to pay for it, though: \302\245500 for a pair. You might find cheaper SINs elsewhere in Eclipse, but none with higher quality. What do you say?"
   branches {
     responseText: "{{CC}}\302\245500{{/CC}} Let\342\200\231s do it."
@@ -279,26 +304,26 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 9
+    nextNodeIndex: 11
   }
   branches {
     responseText: "Too expensive."
-    nextNodeIndex: 10
+    nextNodeIndex: 12
   }
   branches {
     responseText: "No."
-    nextNodeIndex: 11
+    nextNodeIndex: 13
   }
 }
 nodes {
   idRef {
-    id: "521d84ab366236a415000161"
+    id: "537240ae6434311639fc4385"
   }
-  index: 9
+  index: 11
   text: "An excellent choice! You won\342\200\231t regret it."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -438,26 +463,26 @@ nodes {
 }
 nodes {
   idRef {
-    id: "521d8502366236a4150001ae"
+    id: "537240ae6434311639fc438b"
   }
-  index: 10
+  index: 12
   text: "Worth more than your life, huh? Whatever you say."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521d84f8366236a4150001aa"
+    id: "537240ae6434311639fc4391"
   }
-  index: 11
+  index: 13
   text: "Shame. Well, I have a fresh pair ready if you change your mind."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -466,7 +491,7 @@ nodes {
   idRef {
     id: "521d82e1366236a415000133"
   }
-  index: 12
+  index: 14
   text: "A customer returns!"
   branches {
     responseText: ""
@@ -551,5 +576,5 @@ roots {
       }
     }
   }
-  nextNodeIndex: 12
+  nextNodeIndex: 14
 }

@@ -47,6 +47,17 @@ nodes {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
 }
@@ -118,6 +129,18 @@ nodes {
   index: 7
   text: "What would you know?"
   branches {
+    responseText: ""
+    nextNodeIndex: 8
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724f596434311639fc5539"
+  }
+  index: 8
+  text: ""
+  branches {
     responseText: "{{CC}}Socialite{{/CC}} I am ever your servant, your Imperial Majesty."
     conditions {
       ops {
@@ -165,7 +188,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 8
+    nextNodeIndex: 9
     onlyOnce: true
     idRef {
       id: "5237f4083662368c1a001343"
@@ -173,7 +196,7 @@ nodes {
   }
   branches {
     responseText: "How long have you been Emperor?"
-    nextNodeIndex: 10
+    nextNodeIndex: 11
     onlyOnce: true
     idRef {
       id: "52240cd13662366c10007f48"
@@ -181,7 +204,7 @@ nodes {
   }
   branches {
     responseText: "What are you doing in Colma?"
-    nextNodeIndex: 18
+    nextNodeIndex: 19
     onlyOnce: true
     idRef {
       id: "52240d533662366c10007f62"
@@ -189,7 +212,7 @@ nodes {
   }
   branches {
     responseText: "Are you going to attack Saito?"
-    nextNodeIndex: 24
+    nextNodeIndex: 25
     onlyOnce: true
     idRef {
       id: "52240dcd3662366c10007fbb"
@@ -197,7 +220,7 @@ nodes {
   }
   branches {
     responseText: "I need that information Shavarus took."
-    nextNodeIndex: 26
+    nextNodeIndex: 27
     onlyOnce: true
     idRef {
       id: "52240dfb3662366c10007fc5"
@@ -207,13 +230,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52240caf3662366c10007f37"
+    id: "53724f686434311639fc5545"
   }
-  index: 8
+  index: 9
   text: "{{GM}}He brightens visibly at your formal, respectful address.{{/GM}}\n\nWell! Good! We mean to say: of course you are! All $(l.race_plural) within our realm are our servants. We must admit, however, that too many seek to shirk their duties. "
   branches {
     responseText: ""
-    nextNodeIndex: 9
+    nextNodeIndex: 10
   }
   nodeType: ConversationNodeType_Simple
   sourceInSceneRef {
@@ -222,113 +245,113 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52240cc13662366c10007f44"
+    id: "53724f686434311639fc5548"
   }
-  index: 9
+  index: 10
   text: "In recognition of your loyalty to our person, we hereby delegate you as our official $(l.race) representative to the City of San Francisco, until such time as we shall make our triumphant return."
   branches {
     responseText: ""
-    nextNodeIndex: 7
+    nextNodeIndex: 8
     auxiliaryLink: true
   }
 }
 nodes {
   idRef {
-    id: "52240cdb3662366c10007f4a"
-  }
-  index: 10
-  text: "We have held that honor for over a decade. At the peremtory request of a large majority of citizens, we did declare and proclaim ourself Emperor of the California Free State. Since that time, we have labored ceaselessly to ameliorate the evils under which the country is laboring."
-  branches {
-    responseText: ""
-    nextNodeIndex: 11
-  }
-  nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "52240ce43662366c10007f4d"
+    id: "53724f706434311639fc5569"
   }
   index: 11
-  text: "{{GM}}Shavarus coughs politely.{{/GM}} \n\nOf course, some ignorant persons will claim that Norton here has never sat on a throne, and never wielded any actual influence over this nation or its governance. "
+  text: "We have held that honor for over a decade. At the peremtory request of a large majority of citizens, we did declare and proclaim ourself Emperor of the California Free State. Since that time, we have labored ceaselessly to ameliorate the evils under which the country is laboring."
   branches {
     responseText: ""
     nextNodeIndex: 12
   }
-  sourceInSceneRef {
-    id: "52240ad43662366c10007f0a"
-  }
+  nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "52240cf23662366c10007f50"
+    id: "53724f706434311639fc556c"
   }
   index: 12
-  text: "Yes, quite right you are, Shavarus. Ignorance abounds, sadly. "
+  text: "{{GM}}Shavarus coughs politely.{{/GM}} \n\nOf course, some ignorant persons will claim that Norton here has never sat on a throne, and never wielded any actual influence over this nation or its governance. "
   branches {
     responseText: ""
     nextNodeIndex: 13
   }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
 }
 nodes {
   idRef {
-    id: "52240cfb3662366c10007f53"
+    id: "53724f706434311639fc556f"
   }
   index: 13
-  text: "Some enemies of the state even go so far as to name you mad."
+  text: "Yes, quite right you are, Shavarus. Ignorance abounds, sadly. "
   branches {
     responseText: ""
     nextNodeIndex: 14
   }
-  sourceInSceneRef {
-    id: "52240ad43662366c10007f0a"
-  }
 }
 nodes {
   idRef {
-    id: "52240d063662366c10007f56"
+    id: "53724f706434311639fc5572"
   }
   index: 14
-  text: "Indeed! We have ordered them executed, of course. We cannot tolerate such threats against our Imperial self."
+  text: "Some enemies of the state even go so far as to name you mad."
   branches {
     responseText: ""
     nextNodeIndex: 15
   }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
 }
 nodes {
   idRef {
-    id: "52240d143662366c10007f59"
+    id: "53724f706434311639fc5575"
   }
   index: 15
-  text: "Regardless, Emperor Norton is beloved by many, and he has proven a surprisingly valuable ally in the struggle against Saito."
+  text: "Indeed! We have ordered them executed, of course. We cannot tolerate such threats against our Imperial self."
   branches {
     responseText: ""
     nextNodeIndex: 16
   }
-  nodeType: ConversationNodeType_Simple
-  sourceInSceneRef {
-    id: "52240ad43662366c10007f0a"
-  }
 }
 nodes {
   idRef {
-    id: "52240d243662366c10007f5c"
+    id: "53724f706434311639fc5578"
   }
   index: 16
-  text: "\342\200\246 We believe you meant to say \342\200\234valuable commander,\342\200\235 good Shavarus."
+  text: "Regardless, Emperor Norton is beloved by many, and he has proven a surprisingly valuable ally in the struggle against Saito."
   branches {
     responseText: ""
     nextNodeIndex: 17
   }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
 }
 nodes {
   idRef {
-    id: "52240d3f3662366c10007f5f"
+    id: "53724f706434311639fc557b"
   }
   index: 17
+  text: "\342\200\246 We believe you meant to say \342\200\234valuable commander,\342\200\235 good Shavarus."
+  branches {
+    responseText: ""
+    nextNodeIndex: 18
+  }
+}
+nodes {
+  idRef {
+    id: "53724f706434311639fc557e"
+  }
+  index: 18
   text: "Indeed, it is as you say, your majesty."
   branches {
     responseText: ""
-    nextNodeIndex: 7
+    nextNodeIndex: 8
     auxiliaryLink: true
   }
   sourceInSceneRef {
@@ -337,36 +360,36 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52240d5d3662366c10007f64"
-  }
-  index: 18
-  text: "Why? Does this strike you as an odd place to strike one\342\200\231s court?"
-  branches {
-    responseText: ""
-    nextNodeIndex: 19
-  }
-  nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "52240d683662366c10007f67"
+    id: "53724f776434311639fc559c"
   }
   index: 19
-  text: "You must not forget that we hold dominion over all the great expanse of California, from the forests of Redding to the outskirts of Los Angeles, from the Pacific Ocean to the Sierra Nevada. Any place the emperor sits immediately becomes the center of government. Merely because we are surrounded by thousands of gravestones, does not make this place any less worthy of our presence!"
+  text: "Why? Does this strike you as an odd place to strike one\342\200\231s court?"
   branches {
     responseText: ""
     nextNodeIndex: 20
   }
+  nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "52240d733662366c10007f6a"
+    id: "53724f776434311639fc559f"
   }
   index: 20
-  text: "Which is not to say that His Imperial Majesty would not prefer to return to San Francisco."
+  text: "You must not forget that we hold dominion over all the great expanse of California, from the forests of Redding to the outskirts of Los Angeles, from the Pacific Ocean to the Sierra Nevada. Any place the emperor sits immediately becomes the center of government. Merely because we are surrounded by thousands of gravestones, does not make this place any less worthy of our presence!"
   branches {
     responseText: ""
     nextNodeIndex: 21
+  }
+}
+nodes {
+  idRef {
+    id: "53724f776434311639fc55a2"
+  }
+  index: 21
+  text: "Which is not to say that His Imperial Majesty would not prefer to return to San Francisco."
+  branches {
+    responseText: ""
+    nextNodeIndex: 22
   }
   sourceInSceneRef {
     id: "52240ad43662366c10007f0a"
@@ -374,42 +397,42 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52240d7e3662366c10007f6d"
+    id: "53724f776434311639fc55a5"
   }
-  index: 21
+  index: 22
   text: "No, you are correct as always, good Shavarus. When last we visited the city, we found the condition of its inhabitants most intolerable indeed. We have dispatched numerous imperial proclamations to leaders of city government and military, ordering them to show proper benevolence towards all citizens."
   branches {
     responseText: "And how did they respond?"
-    nextNodeIndex: 22
+    nextNodeIndex: 23
     auxiliaryLink: true
   }
   branches {
     responseText: "I assume they didn\342\200\231t obey."
-    nextNodeIndex: 22
-  }
-  nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "52240da43662366c10007f73"
-  }
-  index: 22
-  text: "Sadly, we received no reply to our orders. Therefore, we ordered Colonel Saito and all other persons in authority into exile! They... have not left yet, but surely will."
-  branches {
-    responseText: ""
     nextNodeIndex: 23
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "52240db23662366c10007f79"
+    id: "53724f776434311639fc55ab"
   }
   index: 23
+  text: "Sadly, we received no reply to our orders. Therefore, we ordered Colonel Saito and all other persons in authority into exile! They... have not left yet, but surely will."
+  branches {
+    responseText: ""
+    nextNodeIndex: 24
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724f776434311639fc55ae"
+  }
+  index: 24
   text: "As you say."
   branches {
     responseText: ""
-    nextNodeIndex: 7
+    nextNodeIndex: 8
     auxiliaryLink: true
   }
   sourceInSceneRef {
@@ -418,13 +441,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52240dce3662366c10007fbd"
+    id: "53724f7d6434311639fc55bd"
   }
-  index: 24
+  index: 25
   text: "You see, your majesty? It is as I have been telling you. Your loyal subjects cry out for you to take action and overthrow the usurper."
   branches {
     responseText: ""
-    nextNodeIndex: 25
+    nextNodeIndex: 26
   }
   nodeType: ConversationNodeType_Simple
   sourceInSceneRef {
@@ -433,48 +456,34 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52240ddb3662366c10007fc0"
+    id: "53724f7d6434311639fc55c0"
   }
-  index: 25
+  index: 26
   text: "{{GM}}Norton stares unhappily at his boots.{{/GM}} \n\nIt would be uncouth for the Emperor to invade his own city. Our role is to elevate the lives of our citizens, not to cut down the wayward."
   branches {
     responseText: ""
-    nextNodeIndex: 7
+    nextNodeIndex: 8
     auxiliaryLink: true
   }
 }
 nodes {
   idRef {
-    id: "52240dfd3662366c10007fc7"
-  }
-  index: 26
-  text: "Yes... what exactly were you doing, Shavarus? Why did you disobey our decree and enter the pyramid?"
-  branches {
-    responseText: ""
-    nextNodeIndex: 27
-  }
-  nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "52240e053662366c10007fca"
+    id: "53724f846434311639fc560e"
   }
   index: 27
-  text: "Your majesty, surely you must understand by now that your enemies will not leave simply by wishing so. We must strike against them. We must strike so brutally and effectively that they fear to spend another day in your city."
+  text: "Yes... what exactly were you doing, Shavarus? Why did you disobey our decree and enter the pyramid?"
   branches {
     responseText: ""
     nextNodeIndex: 28
   }
-  sourceInSceneRef {
-    id: "52240ad43662366c10007f0a"
-  }
+  nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "52240e113662366c10007fcd"
+    id: "53724f846434311639fc5611"
   }
   index: 28
-  text: "While many dispossessed metahumans have flocked to your presence, they will never stand a chance against the might of the Marines coupled with the bottomless resources of the megacorps. We must hit them where they are weakest, cutting off their will to remain."
+  text: "Your majesty, surely you must understand by now that your enemies will not leave simply by wishing so. We must strike against them. We must strike so brutally and effectively that they fear to spend another day in your city."
   branches {
     responseText: ""
     nextNodeIndex: 29
@@ -485,24 +494,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52240e1e3662366c10007fd0"
+    id: "53724f846434311639fc5614"
   }
   index: 29
-  text: "But how will you ensure that only our enemies are affected? "
+  text: "While many dispossessed metahumans have flocked to your presence, they will never stand a chance against the might of the Marines coupled with the bottomless resources of the megacorps. We must hit them where they are weakest, cutting off their will to remain."
   branches {
     responseText: ""
     nextNodeIndex: 30
-  }
-}
-nodes {
-  idRef {
-    id: "52240e263662366c10007fd3"
-  }
-  index: 30
-  text: " I wish I could assure your majesty that there would be no civilian casualties, but I cannot. They must pay the necessary price for freedom, whether they wish it or not."
-  branches {
-    responseText: ""
-    nextNodeIndex: 31
   }
   sourceInSceneRef {
     id: "52240ad43662366c10007f0a"
@@ -510,10 +508,21 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52240e313662366c10007fd6"
+    id: "53724f846434311639fc5617"
+  }
+  index: 30
+  text: "But how will you ensure that only our enemies are affected? "
+  branches {
+    responseText: ""
+    nextNodeIndex: 31
+  }
+}
+nodes {
+  idRef {
+    id: "53724f846434311639fc561a"
   }
   index: 31
-  text: "Consider, however, that these same victims would otherwise live the rest of their years in despair. Is it not better that their lives mean something, even in death? Is it not better that their sacrifice, unwilling though it might be, improve the world for their children and all metahumankind?"
+  text: " I wish I could assure your majesty that there would be no civilian casualties, but I cannot. They must pay the necessary price for freedom, whether they wish it or not."
   branches {
     responseText: ""
     nextNodeIndex: 32
@@ -524,23 +533,49 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52240e413662366c10007fd9"
+    id: "53724f846434311639fc561d"
   }
   index: 32
-  text: "No! We will not allow it! This goes entirely too far, Shavarus."
+  text: "Consider, however, that these same victims would otherwise live the rest of their years in despair. Is it not better that their lives mean something, even in death? Is it not better that their sacrifice, unwilling though it might be, improve the world for their children and all metahumankind?"
   branches {
     responseText: ""
     nextNodeIndex: 33
   }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
 }
 nodes {
   idRef {
-    id: "52240e5a3662366c10007fdc"
+    id: "53724f846434311639fc5620"
   }
   index: 33
+  text: "No! We will not allow it! This goes entirely too far, Shavarus."
+  branches {
+    responseText: ""
+    nextNodeIndex: 34
+  }
+}
+nodes {
+  idRef {
+    id: "53724f846434311639fc5623"
+  }
+  index: 34
   text: "What shall I do, $(l.race)?"
   branches {
-    responseText: "What do you think, Orion?"
+    responseText: ""
+    nextNodeIndex: 35
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724fe46434311639fc57f0"
+  }
+  index: 35
+  text: ""
+  branches {
+    responseText: ""
     conditions {
       ops {
         functionName: "Comparison (bool)"
@@ -615,7 +650,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 34
+    nextNodeIndex: 36
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -623,7 +658,7 @@ nodes {
     }
   }
   branches {
-    responseText: "What do you think, Dalmin?"
+    responseText: ""
     conditions {
       ops {
         functionName: "Comparison (bool)"
@@ -698,7 +733,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 35
+    nextNodeIndex: 37
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -706,7 +741,7 @@ nodes {
     }
   }
   branches {
-    responseText: "What do you think, Hailey?"
+    responseText: ""
     conditions {
       ops {
         functionName: "Comparison (bool)"
@@ -781,7 +816,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 36
+    nextNodeIndex: 38
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -790,23 +825,23 @@ nodes {
   }
   branches {
     responseText: "Listen to Shavarus. Scorched earth is the only way to win this war."
-    nextNodeIndex: 37
+    nextNodeIndex: 39
   }
   branches {
     responseText: "Shavarus is a danger. You need to get rid of him."
-    nextNodeIndex: 40
+    nextNodeIndex: 42
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "52240ea53662366c10007fe6"
+    id: "53724fec6434311639fc57f9"
   }
-  index: 34
-  text: "I feel as though Shavarus and I have studied at the feet of the same guru. He has the right of it: as hard as it may be to stomach, total war is the only answer. They will probably lose in their assault, but that hardly matters. They will become martyrs, and hasten the day when all metahumanity will rise up and overthrow the old order of humankind."
+  index: 36
+  text: "I feel as though Shavarus and I have studied at the feet of the same guru. He has the right of it: as hard as it may be to stomach, total war is the only answer. They will probably lose in their assault, but that hardly matters. \n\nThey will become martyrs, and hasten the day when all metahumanity will rise up and overthrow the old order of humankind."
   branches {
     responseText: ""
-    nextNodeIndex: 33
+    nextNodeIndex: 35
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -816,13 +851,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52240ed83662366c10007feb"
+    id: "53724ff26434311639fc5805"
   }
-  index: 35
+  index: 37
   text: "I think we\'re witnessing a crazy-off, and I can\'t tell who\'s winning. The homeless guy who\'s convinced that he\'s the emperor of CalFree? Or the sociopathic troll who thinks he needs to destroy a city in order to save it?"
   branches {
     responseText: ""
-    nextNodeIndex: 33
+    nextNodeIndex: 35
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -832,13 +867,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52240f033662366c10007fef"
+    id: "53724ff86434311639fc5811"
   }
-  index: 36
-  text: "Do you even need to ask?! That troll is talking about destroying a city! MY city! You know that I\'m no fan of Saito, but for all the rotten stuff he\'s done, he\'s kept the city largely intact and safe. Sure, humans like I have it easier than the rest, but Shavarus sounds like he\'d harm far more metas than marines!"
+  index: 38
+  text: "Are you even considering this?! That troll is talking about destroying a city! MY city! \n\nYou know that I\'m no fan of Saito, but for all the rotten stuff he\'s done, he\'s kept the city largely intact and safe. \n\nSure, humans like I have it easier than the rest, but Shavarus sounds like he\'d harm far more metas than marines!"
   branches {
     responseText: ""
-    nextNodeIndex: 33
+    nextNodeIndex: 35
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -848,13 +883,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52240f503662366c10007ff3"
+    id: "53724fff6434311639fc5820"
   }
-  index: 37
+  index: 39
   text: "{{GM}}Norton lowers his head. For a moment it looks as though he might weep.{{/GM}}"
   branches {
     responseText: ""
-    nextNodeIndex: 38
+    nextNodeIndex: 40
   }
   nodeType: ConversationNodeType_Simple
   actions {
@@ -887,20 +922,20 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52240f803662366c10007ff6"
+    id: "53724fff6434311639fc5823"
   }
-  index: 38
+  index: 40
   text: "We do not care for these times we were born into. Why could we not be like our glorious predecessor, who faced only an indifferent Congress and recalcitrant merchants? We were not made for conflict with a foreign emperor and megacorporations."
   branches {
     responseText: ""
-    nextNodeIndex: 39
+    nextNodeIndex: 41
   }
 }
 nodes {
   idRef {
-    id: "52240f8a3662366c10007ff9"
+    id: "53724fff6434311639fc5826"
   }
-  index: 39
+  index: 41
   text: "Very well. It grieves us, but we shall do as you say, Shavarus. We shall take the battle to the enemy, using any weapon at our disposal."
   actions {
     ops {
@@ -932,72 +967,47 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52240fa53662366c10007ffb"
+    id: "537250056434311639fc583e"
   }
-  index: 40
+  index: 42
   text: "Yes! Yes, quite right."
   branches {
     responseText: ""
-    nextNodeIndex: 41
+    nextNodeIndex: 43
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "52240fad3662366c10007ffe"
-  }
-  index: 41
-  text: "Shavarus, we thank you for your term of loyal service, but sadly we can no longer countenance your presence in our imperial court. Your dangerous initiatives impugn the integrity of our office and damage our beloved persona. Therefore, we hereby banish you from the California Free State, and order you never to return."
-  branches {
-    responseText: ""
-    nextNodeIndex: 42
-  }
-}
-nodes {
-  idRef {
-    id: "52240fc83662366c10008001"
-  }
-  index: 42
-  text: "Ha! You do, do you? Just like you banished Saito? How well did that turn out, anyways?"
-  branches {
-    responseText: ""
-    nextNodeIndex: 43
-  }
-  sourceInSceneRef {
-    id: "52240ad43662366c10007f0a"
-  }
-}
-nodes {
-  idRef {
-    id: "52240fd43662366c10008004"
+    id: "537250056434311639fc5841"
   }
   index: 43
-  text: "You\342\200\231re a fool, Norton. You were a useful fool for a time, a fool who made us laugh and inspired many to join us, but your time has passed. We don\342\200\231t need any more dreamers. We need soldiers. Anyone who isn\342\200\231t willing to bloody their hands in our great war has no place in our ranks. They don\342\200\231t even deserve to live."
+  text: "Shavarus, we thank you for your term of loyal service, but sadly we can no longer countenance your presence in our imperial court. Your dangerous initiatives impugn the integrity of our office and damage our beloved persona. Therefore, we hereby banish you from the California Free State, and order you never to return."
   branches {
     responseText: ""
     nextNodeIndex: 44
   }
+}
+nodes {
+  idRef {
+    id: "537250056434311639fc5844"
+  }
+  index: 44
+  text: "Ha! You do, do you? Just like you banished Saito? How well did that turn out, anyways?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 45
+  }
   sourceInSceneRef {
     id: "52240ad43662366c10007f0a"
   }
 }
 nodes {
   idRef {
-    id: "52240fdf3662366c10008007"
-  }
-  index: 44
-  text: "Treason! Seize him!"
-  branches {
-    responseText: ""
-    nextNodeIndex: 45
-  }
-}
-nodes {
-  idRef {
-    id: "52240fed3662366c1000800a"
+    id: "537250056434311639fc5847"
   }
   index: 45
-  text: "You think you have loyal friends here? Every word of yours reveals you as a greater fool. I\342\200\231ve long moved my most trusted followers here to Colma, and dispersed your own harmlessly around the region. This is a coup, Norton. A coup that ends in your death."
+  text: "You\342\200\231re a fool, Norton. You were a useful fool for a time, a fool who made us laugh and inspired many to join us, but your time has passed. We don\342\200\231t need any more dreamers. We need soldiers. Anyone who isn\342\200\231t willing to bloody their hands in our great war has no place in our ranks. They don\342\200\231t even deserve to live."
   branches {
     responseText: ""
     nextNodeIndex: 46
@@ -1008,9 +1018,34 @@ nodes {
 }
 nodes {
   idRef {
-    id: "522410003662366c1000800d"
+    id: "537250056434311639fc584a"
   }
   index: 46
+  text: "Treason! Seize him!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 47
+  }
+}
+nodes {
+  idRef {
+    id: "537250056434311639fc584d"
+  }
+  index: 47
+  text: "You think you have loyal friends here? Every word of yours reveals you as a greater fool. I\342\200\231ve long moved my most trusted followers here to Colma, and dispersed your own harmlessly around the region. This is a coup, Norton. A coup that ends in your death."
+  branches {
+    responseText: ""
+    nextNodeIndex: 48
+  }
+  sourceInSceneRef {
+    id: "52240ad43662366c10007f0a"
+  }
+}
+nodes {
+  idRef {
+    id: "537250056434311639fc5850"
+  }
+  index: 48
   text: "I must be off, I have an appointment to keep. Finish the job, friends."
   nodeType: ConversationNodeType_Simple
   sourceInSceneRef {
@@ -1048,7 +1083,7 @@ nodes {
   idRef {
     id: "52240c213662366c10007f19"
   }
-  index: 47
+  index: 49
   text: "In the name of the Emperor, we welcome you here, to our court in exile!"
   branches {
     responseText: ""
@@ -1133,5 +1168,5 @@ roots {
       }
     }
   }
-  nextNodeIndex: 47
+  nextNodeIndex: 49
 }

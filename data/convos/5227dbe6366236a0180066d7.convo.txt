@@ -69,7 +69,7 @@ nodes {
   }
   branches {
     responseText: "I didn\342\200\231t expect you to sound so upbeat."
-    nextNodeIndex: 12
+    nextNodeIndex: 13
     hideIfUnavailable: true
   }
   nodeType: ConversationNodeType_Simple
@@ -174,7 +174,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 11
+    nextNodeIndex: 12
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -233,8 +233,20 @@ nodes {
   index: 5
   text: "So! What can I do for the $(l.man) of the hour?"
   branches {
-    responseText: "How are the corps reacting?"
+    responseText: ""
     nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537253856434311639fc609c"
+  }
+  index: 6
+  text: ""
+  branches {
+    responseText: "How are the corps reacting?"
+    nextNodeIndex: 7
     onlyOnce: true
     idRef {
       id: "5233ebc1366236181b003879"
@@ -280,7 +292,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 7
+    nextNodeIndex: 8
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -289,49 +301,49 @@ nodes {
   }
   branches {
     responseText: "How about a song?"
-    nextNodeIndex: 8
-  }
-  branches {
-    responseText: "Cash would be nice."
     nextNodeIndex: 9
   }
   branches {
-    responseText: "Just leave me out of your plans from now on."
+    responseText: "Cash would be nice."
     nextNodeIndex: 10
+  }
+  branches {
+    responseText: "Just leave me out of your plans from now on."
+    nextNodeIndex: 11
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5227eaff366236b412000d8a"
+    id: "5372538a6434311639fc60a5"
   }
-  index: 6
+  index: 7
   text: "They\342\200\231re trying to hide their embarrassment. Combined, Mitsuhama, Renraku, Fuchi and Shiawase control an absolute majority of the planet\342\200\231s wealth and power. Despite that, their crown jewel of a city was nearly destroyed from underneath them.\n\nAs you might expect, they\'re busily trying to shift the blame onto one another or to Saito. There will probably be some major turnover on the corporate boards before this all blows over. And, of course, turnover always creates opportunities for the ambitious."
   branches {
     responseText: ""
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5227eb50366236b412000d8e"
+    id: "5372538f6434311639fc60b1"
   }
-  index: 7
+  index: 8
   text: "It was doing well before. Now that you have a front-page story to attach to it\342\200\246 well, the sky\342\200\231s the limit. You\342\200\231ll need to hire a manager just to handle all the endorsement deals. \n\nStick with me, $(l.name), and you might become more famous as a musician than a shadowrunner. That is, if that\342\200\231s the life you want."
   branches {
     responseText: ""
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5227ec80366236b412000dd8"
+    id: "537253936434311639fc60ba"
   }
-  index: 8
+  index: 9
   text: "You got it! It feels good to perform again. I\342\200\231m looking forward to sharing this with a friend."
   nodeType: ConversationNodeType_Simple
   actions {
@@ -353,17 +365,17 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5227ec9f366236b412000dda"
+    id: "537253976434311639fc60c0"
   }
-  index: 9
+  index: 10
   text: "Isn\342\200\231t it always? I\342\200\231ll get my assistant to cut you a check. You\342\200\231ve earned it, and more."
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5227ecad366236b412000ddc"
+    id: "5372539b6434311639fc60c6"
   }
-  index: 10
+  index: 11
   text: "I\342\200\231ll try, but I must warn you, I have very big plans. Few people can escape them entirely."
   nodeType: ConversationNodeType_Simple
 }
@@ -371,7 +383,7 @@ nodes {
   idRef {
     id: "5227dca0366236a0180066f0"
   }
-  index: 11
+  index: 12
   text: "Saito has scrambled every marine under his command to deal with the fallout from Shavarus\342\200\231s sabotage. They were able to save Crystal Springs Reservoir, but the rest of the system lies in shambles. It will take years to rebuild, and work from every man who Saito can spare."
   branches {
     responseText: ""
@@ -384,7 +396,7 @@ nodes {
   idRef {
     id: "5227dc5e366236a0180066e6"
   }
-  index: 12
+  index: 13
   text: "You may have done some awful stuff in the past, but you\342\200\231re a runner. It would be foolish of me to stay mad at the tool, instead of at the hand that wielded it."
   branches {
     responseText: ""

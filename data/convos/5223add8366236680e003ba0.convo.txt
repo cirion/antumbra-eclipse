@@ -66,6 +66,18 @@ nodes {
   index: 4
   text: "What can I do for you?"
   branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724df56434311639fc51fb"
+  }
+  index: 5
+  text: ""
+  branches {
     responseText: "{{GM}}View inventory.{{/GM}}"
     actions {
       ops {
@@ -80,12 +92,11 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 4
-    auxiliaryLink: true
+    nextNodeIndex: 6
   }
   branches {
     responseText: "What do you know about Colma?"
-    nextNodeIndex: 5
+    nextNodeIndex: 7
     onlyOnce: true
     idRef {
       id: "5223afd7366236680e003bcf"
@@ -99,13 +110,26 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5223afd5366236680e003bce"
+    id: "53724e0c6434311639fc521e"
   }
-  index: 5
+  index: 6
+  text: "Would you like anything more?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724dfc6434311639fc520a"
+  }
+  index: 7
   text: "Ah, yes, Colma. I\'ve never visited, but I understand there\'s powerful magic there. Millions of dead souls gathered in one place can cause some strange phenomena.\n\nIt\'s off the radar of technocratic elites like the megacorps and Saito, but don\'t get complacent down there. That place is filled with history, and history has a way of manifesting in unexpected ways."
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple

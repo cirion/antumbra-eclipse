@@ -9,8 +9,20 @@ nodes {
   index: 0
   text: "Hiya!"
   branches {
-    responseText: "What do you know about Colma?"
+    responseText: ""
     nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724d566434311639fc5039"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "What do you know about Colma?"
+    nextNodeIndex: 2
     onlyOnce: true
     idRef {
       id: "5223ac5a366236680e003b5f"
@@ -78,7 +90,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     hideIfUnavailable: true
   }
   branches {
@@ -154,7 +166,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 9
+    nextNodeIndex: 10
     hideIfUnavailable: true
   }
   branches {
@@ -230,7 +242,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 13
+    nextNodeIndex: 14
     hideIfUnavailable: true
   }
   branches {
@@ -241,46 +253,34 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5223a88a366236680e003a87"
+    id: "53724d5d6434311639fc5045"
   }
-  index: 1
+  index: 2
   text: "What a creepy place! My friends and I used to go there at night, hoping to see some ghosts. We spotted a couple, but nobody we recognized."
   branches {
     responseText: ""
-    nextNodeIndex: 2
+    nextNodeIndex: 3
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223a897366236680e003a8a"
+    id: "53724d5d6434311639fc5048"
   }
-  index: 2
+  index: 3
   text: "I guess it\342\200\231s pretty famous. A hundred and fifty years ago, San Francisco dug up all of their graves and moved the bodies down to Colma, so they could make room for more houses or whatever. Lots of famous people are buried there. William Randolph Hearst, Joe DiMaggio, Wyatt Earp, Levi Strauss, lots of folks. Why, are you going there? Maybe you can meet some of them!"
   branches {
     responseText: ""
-    nextNodeIndex: 0
+    nextNodeIndex: 1
     auxiliaryLink: true
   }
 }
 nodes {
   idRef {
-    id: "5223ab0b366236680e003aff"
-  }
-  index: 3
-  text: "Wiz, you\342\200\231re a recording star? That\342\200\231s hella cool! I\342\200\231ve been dreaming for ages of having a go at Kali\342\200\231s boards. Let\342\200\231s give it a listen!"
-  branches {
-    responseText: ""
-    nextNodeIndex: 4
-  }
-  nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "5223ab16366236680e003b02"
+    id: "53724d646434311639fc5066"
   }
   index: 4
-  text: "{{GM}}Hailey jacks into your deck and listens for a while, nodding enthusiastically and tapping out the rhythms on her knee.{{/GM}}"
+  text: "Wiz, you\342\200\231re a recording star? That\342\200\231s hella cool! I\342\200\231ve been dreaming for ages of having a go at Kali\342\200\231s boards. Let\342\200\231s give it a listen!"
   branches {
     responseText: ""
     nextNodeIndex: 5
@@ -289,41 +289,53 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5223ab1f366236680e003b05"
+    id: "53724d646434311639fc5069"
   }
   index: 5
+  text: "{{GM}}Hailey jacks into your deck and listens for a while, nodding enthusiastically and tapping out the rhythms on her knee.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724d646434311639fc506c"
+  }
+  index: 6
   text: "I won\342\200\231t lie to you: this could be a ginormous hit. Right now, though, it\342\200\231s a little\342\200\246 generic, y\342\200\231know? Kali will release this in the CalFree market first, so you might want to connect the lyrics more to local culture. Otherwise folks might think you\342\200\231re just some carpetbagger from Seattle, right? You want some help?"
   branches {
     responseText: "That would be great."
-    nextNodeIndex: 6
+    nextNodeIndex: 7
   }
   branches {
     responseText: "No, thanks."
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724d646434311639fc506f"
+  }
+  index: 7
+  text: "{{GM}}Hailey jots down a few lyrical edits, incorporating local slang and some contemporary references. The meter is unaltered, so you\342\200\231ll be able to easily dub your new vocals back in.{{/GM}}"
+  branches {
+    responseText: ""
     nextNodeIndex: 8
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223ab6b366236680e003b34"
+    id: "53724d646434311639fc5072"
   }
-  index: 6
-  text: "{{GM}}Hailey jots down a few lyrical edits, incorporating local slang and some contemporary references. The meter is unaltered, so you\342\200\231ll be able to easily dub your new vocals back in.{{/GM}}"
-  branches {
-    responseText: ""
-    nextNodeIndex: 7
-  }
-  nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "5223ab76366236680e003b37"
-  }
-  index: 7
+  index: 8
   text: "There ya go! Hey, when you make it big, give me a call, okay? I want to help produce your next track!"
   branches {
     responseText: ""
-    nextNodeIndex: 0
+    nextNodeIndex: 1
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -371,34 +383,34 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5223ab36366236680e003b09"
+    id: "53724d646434311639fc5078"
   }
-  index: 8
+  index: 9
   text: "Suit yourself!"
   branches {
     responseText: ""
-    nextNodeIndex: 0
+    nextNodeIndex: 1
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223a8d6366236680e003a98"
+    id: "53724d686434311639fc508d"
   }
-  index: 9
+  index: 10
   text: "Wow, I guess I did good, huh? You got me back in one piece, so I\342\200\231m pretty happy about that!"
   branches {
     responseText: ""
-    nextNodeIndex: 10
+    nextNodeIndex: 11
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223a8e4366236680e003a9b"
+    id: "53724d686434311639fc5090"
   }
-  index: 10
+  index: 11
   text: "I gotta warn you: if you\342\200\231re heading out of the city, my wiz decking skills might not be all that helpful to you. There aren\342\200\231t a whole lot of computers in the country, y\342\200\231know?\n\nStill, I\342\200\231m not totally useless at other stuff. I\342\200\231ll tag along for \302\245750, how does that sound?"
   branches {
     responseText: "{{CC}}\302\245750{{/CC}} Sounds good."
@@ -421,19 +433,19 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 11
+    nextNodeIndex: 12
   }
   branches {
     responseText: "Maybe some other time."
-    nextNodeIndex: 12
+    nextNodeIndex: 13
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223a967366236680e003a9f"
+    id: "53724d686434311639fc5093"
   }
-  index: 11
+  index: 12
   text: "Awesome! Lead on, $(l.name)!"
   nodeType: ConversationNodeType_Simple
   actions {
@@ -497,26 +509,26 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5223a9df366236680e003ae3"
+    id: "53724d686434311639fc5096"
   }
-  index: 12
+  index: 13
   text: "Okay, I\'ll be here if you need me!"
   branches {
     responseText: ""
-    nextNodeIndex: 0
+    nextNodeIndex: 1
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223ac82366236680e003b6f"
+    id: "53724d6b6434311639fc50a2"
   }
-  index: 13
+  index: 14
   text: "I was hoping you\342\200\231d ask!"
   branches {
     responseText: ""
-    nextNodeIndex: 10
+    nextNodeIndex: 11
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple

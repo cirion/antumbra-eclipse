@@ -14,11 +14,11 @@ nodes {
   }
   branches {
     responseText: "Jealous?"
-    nextNodeIndex: 8
+    nextNodeIndex: 9
   }
   branches {
     responseText: "Anyone would have done the same."
-    nextNodeIndex: 9
+    nextNodeIndex: 10
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -53,8 +53,20 @@ nodes {
   index: 3
   text: "Any last words?"
   branches {
-    responseText: "That sounds morbid, Dalmin."
+    responseText: ""
     nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372530c6434311639fc5f86"
+  }
+  index: 4
+  text: ""
+  branches {
+    responseText: "That sounds morbid, Dalmin."
+    nextNodeIndex: 5
     onlyOnce: true
     idRef {
       id: "5227ed4f366236b412000e4a"
@@ -62,7 +74,7 @@ nodes {
   }
   branches {
     responseText: "Are you going somewhere?"
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     onlyOnce: true
     idRef {
       id: "5227ed52366236b412000e4b"
@@ -70,57 +82,57 @@ nodes {
   }
   branches {
     responseText: "It\'s been a pleasure, Dalmin."
-    nextNodeIndex: 6
+    nextNodeIndex: 7
   }
   branches {
     responseText: "Well, so long."
-    nextNodeIndex: 7
+    nextNodeIndex: 8
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5227e1a0366236a018006756"
+    id: "537253166434311639fc5f8f"
   }
-  index: 4
+  index: 5
   text: "You\'re right, it does. Then again, we\'re in a morbid line of work, are we not? I hope you live to a ripe old age, $(l.name), and I suggest you develop a healthy paranoia if you want to reach it."
   branches {
     responseText: ""
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     auxiliaryLink: true
   }
 }
 nodes {
   idRef {
-    id: "5227e1b4366236a018006762"
+    id: "5372531d6434311639fc5f9b"
   }
-  index: 5
+  index: 6
   text: "Indeed I am. Back to Seattle I go! This has been quite an adventure, and the pay is nothing to sneeze at, but oddly enough I find myself missing the rain.\n\nAnd, I never would have thought I\'d be saying this, but after spending so much time under the boot of the Imperial Marines, I\'m finding our old-fashioned Lone Star police positively friendly."
   branches {
     responseText: ""
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5227e1de366236a018006769"
+    id: "537253236434311639fc5fa7"
   }
-  index: 6
+  index: 7
   text: "I assure you, the feeling is entirely mutual."
   branches {
     responseText: ""
-    nextNodeIndex: 7
+    nextNodeIndex: 8
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5227e1e5366236a01800676c"
+    id: "537253236434311639fc5faa"
   }
-  index: 7
+  index: 8
   text: "{{GM}}Dalmin embraces you in a brief hug.{{/GM}}\n\nTake care of yourself, $(l.name). I have a feeling that life is only going to grow more interesting for you."
   nodeType: ConversationNodeType_Simple
   actions {
@@ -152,7 +164,7 @@ nodes {
   idRef {
     id: "5227e14f366236a018006747"
   }
-  index: 8
+  index: 9
   text: "Exhausted, more like. Just the thought of all that activity makes my head spin."
   branches {
     responseText: ""
@@ -165,7 +177,7 @@ nodes {
   idRef {
     id: "5227e15f366236a01800674b"
   }
-  index: 9
+  index: 10
   text: "False. I know for a fact that I wouldn\342\200\231t. At least, not for the paltry sum that you\342\200\231re earning."
   branches {
     responseText: ""

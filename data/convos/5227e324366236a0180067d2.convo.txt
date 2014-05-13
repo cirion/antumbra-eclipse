@@ -21,8 +21,19 @@ nodes {
   index: 1
   text: "I\342\200\231m proud of you!"
   branches {
-    responseText: "What will you do now?"
+    responseText: ""
     nextNodeIndex: 2
+  }
+}
+nodes {
+  idRef {
+    id: "5372534a6434311639fc6004"
+  }
+  index: 2
+  text: ""
+  branches {
+    responseText: "What will you do now?"
+    nextNodeIndex: 3
     onlyOnce: true
     idRef {
       id: "5227e39b366236a0180067f6"
@@ -30,7 +41,7 @@ nodes {
   }
   branches {
     responseText: "Any more plans for decking?"
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     onlyOnce: true
     idRef {
       id: "5227e398366236a0180067f5"
@@ -76,7 +87,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -85,53 +96,54 @@ nodes {
   }
   branches {
     responseText: "Goodbye, Hailey."
-    nextNodeIndex: 5
+    nextNodeIndex: 6
   }
+  nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5227e344366236a0180067e1"
+    id: "5372534f6434311639fc600d"
   }
-  index: 2
+  index: 3
   text: "I\342\200\231m going to visit my family. I haven\342\200\231t seen them in a while, and after all that\342\200\231s happened, I think we have a lot to catch up on. Mom and Dad have never really accepted the emergence of metahumans, and I\342\200\231ve realized that if we want to make real changes in the city, we\342\200\231ll need to win over the quiet people like them, not just oppose the loud bullies like Saito."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5227e367366236a0180067ed"
+    id: "537253566434311639fc6019"
   }
-  index: 3
+  index: 4
   text: "It\342\200\231s funny you would ask\342\200\246 I just found a node for the Sacramento government. Most matrix security focuses on keeping data from leaving, so I\342\200\231m going to shove as much data in there as I can. More specifically, I want to upload every detail I can about how Saito and Shavarus came close to destroying San Francisco. With any luck, that will shame the Governor into revoking his invitation, and we can properly rejoin CalFree again."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5227e38a366236a0180067f1"
+    id: "5372535a6434311639fc6025"
   }
-  index: 4
+  index: 5
   text: "Yes! Thanks again for your help with that. We had a long chat and\342\200\246 well, I\342\200\231m not going to travel to Tir Tairngire, you know? But we\342\200\231re staying friends. Everything\342\200\231s fine."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5227e3a3366236a0180067f8"
+    id: "5372535d6434311639fc602e"
   }
-  index: 5
+  index: 6
   text: "Oh, don\'t worry, $(l.name). I\'m not going too far. This place is my home, and I intend to stay and make it an even better place."
   nodeType: ConversationNodeType_Simple
   actions {

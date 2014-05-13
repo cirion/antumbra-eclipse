@@ -22,8 +22,20 @@ nodes {
   index: 1
   text: "What\'s up?"
   branches {
-    responseText: "The city is doomed!"
+    responseText: ""
     nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537252436434311639fc5d94"
+  }
+  index: 2
+  text: ""
+  branches {
+    responseText: "The city is doomed!"
+    nextNodeIndex: 3
     onlyOnce: true
     idRef {
       id: "522519523662369c1a001b60"
@@ -44,8 +56,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 1
-    auxiliaryLink: true
+    nextNodeIndex: 5
   }
   branches {
     responseText: "Do you have any cyberware in stock?"
@@ -62,8 +73,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 1
-    auxiliaryLink: true
+    nextNodeIndex: 6
   }
   branches {
     responseText: "I have to go."
@@ -73,27 +83,53 @@ nodes {
 }
 nodes {
   idRef {
-    id: "522518e83662369c1a001b59"
+    id: "537252486434311639fc5da0"
   }
-  index: 2
+  index: 3
   text: "Whoa, that sounds heavy! You\'re going to save us, right?"
   branches {
     responseText: ""
-    nextNodeIndex: 3
+    nextNodeIndex: 4
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "522518f73662369c1a001b5c"
+    id: "537252486434311639fc5da3"
   }
-  index: 3
+  index: 4
   text: "Nothing against your skills, but I\'m sure you could use some help. I think there are still a couple of runners around who could pitch in. Also, if you\'ve made any friends, you might want to put out a call for assistance. It takes a village to kill a villain, right?"
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
+}
+nodes {
+  idRef {
+    id: "537252616434311639fc5dc9"
+  }
+  index: 5
+  text: "I hope you got what you need."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537252716434311639fc5dcd"
+  }
+  index: 6
+  text: "Anything else?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
 }
 roots {
   responseText: ""

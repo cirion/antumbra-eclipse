@@ -21,8 +21,20 @@ nodes {
   index: 1
   text: "{{GM}}Dalmin looks at you expectantly.{{/GM}}"
   branches {
-    responseText: "Anything new happening here?"
+    responseText: ""
     nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724d1a6434311639fc4fab"
+  }
+  index: 2
+  text: ""
+  branches {
+    responseText: "Anything new happening here?"
+    nextNodeIndex: 3
     onlyOnce: true
     idRef {
       id: "5223de5b366236680e0043b5"
@@ -30,7 +42,7 @@ nodes {
   }
   branches {
     responseText: "Heard any news from Seattle?"
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     onlyOnce: true
     idRef {
       id: "5223de5d366236680e0043b6"
@@ -73,7 +85,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     hideIfUnavailable: true
   }
   branches {
@@ -84,35 +96,35 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5223c3c7366236680e003e57"
+    id: "53724d236434311639fc4fb4"
   }
-  index: 2
+  index: 3
   text: "Yes and no. Many new faces, but they\'re always playing out the same old story. Boy meets girl. Boy buys expensive drinks for girl. Girl leaves with boy. Why mess with the classics?\n\nIf I ever open up my own bar, I\'ll try to shake things up a little. Maybe have the drinks buy a boy for the girl? "
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223c4b5366236680e003e63"
+    id: "53724d286434311639fc4fc0"
   }
-  index: 3
+  index: 4
   text: "Hm. There\'s a rumor going around that Dunkelzahn will apply for UCAS citizenship. I don\'t believe it, though. There are much better countries in the world.\n\nOh, and the old Antumbra site is still bubbling with activity. Lots of mages are applying to visit and figure out how that phenomenon could have appeared. It appears localized for now, though, so the rest of the city shouldn\'t be affected."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223c616366236680e003e67"
+    id: "53724d2c6434311639fc4fcf"
   }
-  index: 4
+  index: 5
   text: "You know what? I would. It\'s good to stretch my legs occasionally. And, if you don\'t mind me saying so, you certainly seem like you could use the extra protection. You can have my services for the low, low price of \302\2451000."
   branches {
     responseText: "{{CC}}\302\2451000{{/CC}} Yes."
@@ -135,20 +147,20 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 5
+    nextNodeIndex: 6
   }
   branches {
     responseText: "No."
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223c69b366236680e003e6c"
+    id: "53724d2c6434311639fc4fd2"
   }
-  index: 5
+  index: 6
   text: "You are as generous as you are wise. Let us venture forth!"
   nodeType: ConversationNodeType_Simple
   actions {

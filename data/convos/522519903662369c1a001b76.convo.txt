@@ -9,8 +9,20 @@ nodes {
   index: 0
   text: "May I assist you?"
   branches {
-    responseText: "I met a man named Emperor Norton in Colma."
+    responseText: ""
     nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537251c56434311639fc5c67"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "I met a man named Emperor Norton in Colma."
+    nextNodeIndex: 2
     onlyOnce: true
     idRef {
       id: "52251fa33662369c1a001c2c"
@@ -56,7 +68,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -78,8 +90,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 0
-    auxiliaryLink: true
+    nextNodeIndex: 7
   }
   branches {
     responseText: "That\'s all."
@@ -89,61 +100,61 @@ nodes {
 }
 nodes {
   idRef {
-    id: "52251a6c3662369c1a001b84"
+    id: "537251c96434311639fc5c76"
   }
-  index: 1
+  index: 2
   text: "{{GM}}Necalli listens intently, never blinking while you describe your strange experiences in the Colma cemetery.{{/GM}}"
   branches {
     responseText: ""
-    nextNodeIndex: 2
+    nextNodeIndex: 3
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "52251a983662369c1a001b87"
+    id: "537251c96434311639fc5c79"
   }
-  index: 2
+  index: 3
   text: "How utterly fascinating. The original Emperor Norton was a madman, but a madman who was beloved by this city and left a lasting mark on culture around the world. I wonder if this new Norton is seeking to imitate his predecessor, or if some spirit was responsible for both of their missions? Such intervention was not unheard of during the fifth world."
   branches {
     responseText: ""
-    nextNodeIndex: 3
+    nextNodeIndex: 4
   }
 }
 nodes {
   idRef {
-    id: "52251b683662369c1a001b8a"
+    id: "537251c96434311639fc5c7c"
   }
-  index: 3
+  index: 4
   text: "We should keep a careful eye on your friend. I sense he has a larger role to play in all of this than we can see yet."
   branches {
     responseText: ""
-    nextNodeIndex: 0
+    nextNodeIndex: 1
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "52251be33662369c1a001ba0"
+    id: "537251ce6434311639fc5c8b"
   }
-  index: 4
+  index: 5
   text: "I believe I can help with that. Don\'t look shocked; I wouldn\'t have survived as long as I have without acquiring a vast network of contacts from all walks of life."
   branches {
     responseText: ""
-    nextNodeIndex: 5
+    nextNodeIndex: 6
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "52251c0d3662369c1a001ba3"
+    id: "537251ce6434311639fc5c8e"
   }
-  index: 5
+  index: 6
   text: "I\'ll use my channels to find others who have been wronged by Shavarus. It will take some time, but with luck allies will arrive before you confront Shavarus."
   branches {
     responseText: ""
-    nextNodeIndex: 0
+    nextNodeIndex: 1
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -194,8 +205,32 @@ nodes {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
+}
+nodes {
+  idRef {
+    id: "537251e66434311639fc5cb8"
+  }
+  index: 7
+  text: "I hope that helps."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
 }
 roots {
   responseText: ""
