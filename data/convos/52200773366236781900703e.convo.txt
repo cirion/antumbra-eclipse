@@ -332,7 +332,7 @@ nodes {
   index: 6
   text: "Hm\342\200\246. you are recognized by our system, but I\342\200\231m afraid you don\342\200\231t have any clearance to enter the building."
   branches {
-    responseText: "{{CC}}Security{{/CC}} I\342\200\231ve been placed undercover by your divisional chief."
+    responseText: "{{CC}}Etiquette: Security{{/CC}} I\342\200\231ve been placed undercover by your divisional chief."
     conditions {
       ops {
         functionName: "Compare Actor Skill"
@@ -382,7 +382,7 @@ nodes {
     nextNodeIndex: 7
   }
   branches {
-    responseText: "{{CC}}Corporate{{/CC}} I\342\200\231m on assignment from Renraku, here to discuss Morgan Tooms with the VP of Internal Affairs."
+    responseText: "{{CC}}Etiquette: Corporate{{/CC}} I\342\200\231m on assignment from Renraku, here to discuss Morgan Tooms with the VP of Internal Affairs."
     conditions {
       ops {
         functionName: "Compare Actor Skill"

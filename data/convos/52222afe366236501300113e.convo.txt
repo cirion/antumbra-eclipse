@@ -25,7 +25,7 @@ nodes {
   index: 1
   text: "Yeah, I found one. You can\'t have it! It\'s mine!"
   branches {
-    responseText: "{{CC}}Street{{/CC}} Come on, spare some pity for your fellow $(s.race)."
+    responseText: "{{CC}}Etiquette: Street{{/CC}} Come on, spare some pity for your fellow $(s.race)."
     conditions {
       ops {
         functionName: "Compare Actor Skill"

@@ -634,7 +634,7 @@ nodes {
     nextNodeIndex: 12
   }
   branches {
-    responseText: "{{CC}}\302\245250{{/CC}} {{CC}}Shadowrunner{{/CC}} I\342\200\231ll give you \302\245250. If they work, I\342\200\231ll send more business your way."
+    responseText: "{{CC}}\302\245250{{/CC}} {{CC}}Etiquette: Shadowrunner{{/CC}} I\342\200\231ll give you \302\245250. If they work, I\342\200\231ll send more business your way."
     conditions {
       ops {
         functionName: "Evaluate Nuyen"

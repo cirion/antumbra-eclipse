@@ -361,7 +361,7 @@ nodes {
     nextNodeIndex: 8
   }
   branches {
-    responseText: "{{CC}}\302\245450{{/CC}} {{CC}}Gang{{/CC}} I\342\200\231ll give you \302\245450, and a guarantee that you\342\200\231ll get to hunt some mundane humans."
+    responseText: "{{CC}}\302\245450{{/CC}} {{CC}}Etiquette: Gang{{/CC}} I\342\200\231ll give you \302\245450, and a guarantee that you\342\200\231ll get to hunt some mundane humans."
     conditions {
       ops {
         functionName: "Evaluate Nuyen"

@@ -123,7 +123,7 @@ nodes {
   index: 7
   text: "Yeah? And what makes you think I\342\200\231d know anything about that?"
   branches {
-    responseText: "{{CC}}Street{{/CC}} If he\342\200\231s on the run, he needs help."
+    responseText: "{{CC}}Etiquette: Street{{/CC}} If he\342\200\231s on the run, he needs help."
     conditions {
       ops {
         functionName: "Compare Actor Skill"
@@ -176,7 +176,7 @@ nodes {
     nextNodeIndex: 8
   }
   branches {
-    responseText: "{{CC}}Gang{{/CC}} You look like someone who knows people who might know."
+    responseText: "{{CC}}Etiquette: Gang{{/CC}} You look like someone who knows people who might know."
     conditions {
       ops {
         functionName: "Compare Actor Skill"

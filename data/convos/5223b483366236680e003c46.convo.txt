@@ -201,7 +201,7 @@ nodes {
     nextNodeIndex: 4
   }
   branches {
-    responseText: "{{CC}}Corporate{{/CC}} Aztechnology still dominates outside CalFree. You should be able to find plenty of buyers."
+    responseText: "{{CC}}Etiquette: Corporate{{/CC}} Aztechnology still dominates outside CalFree. You should be able to find plenty of buyers."
     conditions {
       ops {
         functionName: "Compare Actor Skill"

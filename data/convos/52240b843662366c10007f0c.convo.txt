@@ -141,7 +141,7 @@ nodes {
   index: 8
   text: ""
   branches {
-    responseText: "{{CC}}Socialite{{/CC}} I am ever your servant, your Imperial Majesty."
+    responseText: "{{CC}}Etiquette: Socialite{{/CC}} I am ever your servant, your Imperial Majesty."
     conditions {
       ops {
         functionName: "Compare Actor Skill"

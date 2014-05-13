@@ -362,7 +362,7 @@ nodes {
     }
   }
   branches {
-    responseText: "{{CC}}Security{{/CC}} You marines need to take it down a notch. Defuse tensions. Retreat and wait for backup before the shooting starts."
+    responseText: "{{CC}}Etiquette: Security{{/CC}} You marines need to take it down a notch. Defuse tensions. Retreat and wait for backup before the shooting starts."
     conditions {
       ops {
         functionName: "Compare Actor Skill"
@@ -416,7 +416,7 @@ nodes {
     }
   }
   branches {
-    responseText: "{{CC}}Gang{{/CC}} Chill, chummers. This battle isn\342\200\231t worth fighting."
+    responseText: "{{CC}}Etiquette: Gang{{/CC}} Chill, chummers. This battle isn\342\200\231t worth fighting."
     conditions {
       ops {
         functionName: "Compare Actor Skill"
