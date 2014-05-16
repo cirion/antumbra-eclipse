@@ -4,7 +4,7 @@ project_version: "0.9.1"
 author_name: "Cirion"
 synopsis: "Antumbra 2 - Eclipse"
 has_story: true
-read_only: true
+read_only: false
 preview_image: "preview"
 game_version_required: 1.1
 content_pack_dependencies {

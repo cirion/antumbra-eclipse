@@ -619,7 +619,7 @@ nodes {
   text: "Not too bad for a newbie. Here\342\200\231s the deck back with your track on it. I can take it now if you\342\200\231re ready to release it, or you can take some more time to polish it. You might want to check in with some other people here if you\342\200\231d like help finishing it up."
   branches {
     responseText: ""
-    nextNodeIndex: 0
+    nextNodeIndex: 1
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple

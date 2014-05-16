@@ -151,8 +151,7 @@ nodes {
   }
   branches {
     responseText: "No."
-    nextNodeIndex: 2
-    auxiliaryLink: true
+    nextNodeIndex: 7
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -221,6 +220,19 @@ nodes {
       }
     }
   }
+}
+nodes {
+  idRef {
+    id: "5375924c366236dc17003cd0"
+  }
+  index: 7
+  text: "If you change your mind, you know where I\'ll be!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
 }
 roots {
   responseText: ""
