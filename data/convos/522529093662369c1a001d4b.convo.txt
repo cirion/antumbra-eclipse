@@ -185,7 +185,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 9
+    nextNodeIndex: 10
     hideIfUnavailable: true
   }
   branches {
@@ -199,7 +199,7 @@ nodes {
     id: "537251556434311639fc5b69"
   }
   index: 2
-  text: "I\'m... fine. Mostly. I\'m worried about my friends, my family, my city.\n\nI don\'t know what\'s going to happen, but this whole place feels like a Mount Diablo in the middle of summer. All it would take is a single spark to set the whole thing up in flames."
+  text: "I\'m... fine. Mostly. I\'m worried about my friends, my family, my city.\n\nI don\'t know what\'s going to happen, but this whole place feels like Mount Diablo in the middle of summer. All it would take is a single spark to set the whole thing up in flames."
   branches {
     responseText: ""
     nextNodeIndex: 3
@@ -293,8 +293,7 @@ nodes {
   }
   branches {
     responseText: "Not this time."
-    nextNodeIndex: 1
-    auxiliaryLink: true
+    nextNodeIndex: 9
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -360,9 +359,22 @@ nodes {
 }
 nodes {
   idRef {
-    id: "537251626434311639fc5ba5"
+    id: "5376d532366236cc0e001690"
   }
   index: 9
+  text: "Nuts!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537251626434311639fc5ba5"
+  }
+  index: 10
   text: "Sure! I\'m curious if the $(l.man) lives up to the legend. It\'ll cost you \302\245900."
   branches {
     responseText: "{{CC}}\302\245900{{/CC}} You\'ve got it."
@@ -398,6 +410,18 @@ nodes {
   }
   branches {
     responseText: "Not this time."
+    nextNodeIndex: 11
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5376d544366236cc0e0016c4"
+  }
+  index: 11
+  text: "Nuts!"
+  branches {
+    responseText: ""
     nextNodeIndex: 1
     auxiliaryLink: true
   }

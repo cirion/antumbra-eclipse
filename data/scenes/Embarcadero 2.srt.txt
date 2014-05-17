@@ -1796,6 +1796,9 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Autosave Game"
+    }
   }
   isActive: true
   idRef {

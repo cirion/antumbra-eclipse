@@ -185,7 +185,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 7
+    nextNodeIndex: 8
     hideIfUnavailable: true
   }
   branches {
@@ -271,8 +271,7 @@ nodes {
   }
   branches {
     responseText: "No, thanks."
-    nextNodeIndex: 1
-    auxiliaryLink: true
+    nextNodeIndex: 7
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -338,9 +337,22 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5372521e6434311639fc5d2f"
+    id: "5376d4bc366236cc0e001599"
   }
   index: 7
+  text: "Very well."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372521e6434311639fc5d2f"
+  }
+  index: 8
   text: "I have heard impressive rumors of your prowess on the battlefield, and must admit some curiosity to witness it for myself. Very well. I will accompany you on this great task for \302\245900."
   branches {
     responseText: "{{CC}}\302\245900{{/CC}} You are worth it."

@@ -21292,6 +21292,9 @@ props {
     string_value: "BarStoolManEnvironment"
   }
   GeneralTags: "stage 1"
+  idRef {
+    id: "5376f138366236cc0e00173a"
+  }
   lod: 0
 }
 props {

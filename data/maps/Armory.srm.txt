@@ -37219,7 +37219,7 @@ props {
       g: 1
       b: 1
     }
-    intensity: 5
+    intensity: 3
   }
 }
 props {

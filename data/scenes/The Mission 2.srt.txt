@@ -510,6 +510,9 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "End Current Actor Turn"
+    }
   }
   isActive: true
   idRef {
@@ -3054,6 +3057,9 @@ triggers {
           }
         }
       }
+    }
+    ops {
+      functionName: "End Current Actor Turn"
     }
   }
   isActive: true

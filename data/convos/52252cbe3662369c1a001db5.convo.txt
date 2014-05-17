@@ -190,11 +190,11 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 7
+    nextNodeIndex: 8
     hideIfUnavailable: true
   }
   branches {
-    responseText: "Nothing for now."
+    responseText: "So long."
     nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple
@@ -262,8 +262,7 @@ nodes {
   }
   branches {
     responseText: "Too pricey for me."
-    nextNodeIndex: 2
-    auxiliaryLink: true
+    nextNodeIndex: 7
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -329,9 +328,22 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5372511b6434311639fc5aa3"
+    id: "5376d4dc366236cc0e0015ff"
   }
   index: 7
+  text: "Don\'t value your life much, eh? Well, it\'s been nice knowing you!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372511b6434311639fc5aa3"
+  }
+  index: 8
   text: "I\'m sure that you could! Fortunately, I specialize in lending aid to seemingly-hopeless causes. You can shelter under my protective spells for a mere \302\2451200."
   branches {
     responseText: "{{CC}}\302\2451200{{/CC}} It\'s a deal."
@@ -367,6 +379,18 @@ nodes {
   }
   branches {
     responseText: "Too pricey for me."
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5376d525366236cc0e001647"
+  }
+  index: 9
+  text: "Don\'t value your life much, eh? Well, it\'s been nice knowing you!"
+  branches {
+    responseText: ""
     nextNodeIndex: 2
     auxiliaryLink: true
   }

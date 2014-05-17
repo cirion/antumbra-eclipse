@@ -100,7 +100,7 @@ nodes {
     }
   }
   branches {
-    responseText: "Sure, let\'s see your weapons and armor."
+    responseText: "Let\'s see your weapons and armor."
     actions {
       ops {
         functionName: "Open Store Screen From Actor"
@@ -117,8 +117,8 @@ nodes {
     nextNodeIndex: 7
   }
   branches {
-    responseText: "Not right now."
-    nextNodeIndex: -1
+    responseText: "Wish me luck."
+    nextNodeIndex: 8
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -231,6 +231,14 @@ nodes {
     nextNodeIndex: 3
     auxiliaryLink: true
   }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5376d460366236cc0e00155c"
+  }
+  index: 8
+  text: "Of course!"
   nodeType: ConversationNodeType_Simple
 }
 roots {
