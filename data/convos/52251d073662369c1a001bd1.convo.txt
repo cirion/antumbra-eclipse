@@ -33,8 +33,20 @@ nodes {
   index: 2
   text: "Can I get you anything?"
   branches {
-    responseText: "Any advice for invading the Mission District?"
+    responseText: ""
     nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537250cf6434311639fc59f7"
+  }
+  index: 3
+  text: ""
+  branches {
+    responseText: "Any advice for invading the Mission District?"
+    nextNodeIndex: 4
     onlyOnce: true
     idRef {
       id: "52251ece3662369c1a001bfd"
@@ -80,7 +92,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -88,7 +100,7 @@ nodes {
     }
   }
   branches {
-    responseText: "Sure, let\'s see your weapons and armor."
+    responseText: "Let\'s see your weapons and armor."
     actions {
       ops {
         functionName: "Open Store Screen From Actor"
@@ -102,49 +114,48 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 2
-    auxiliaryLink: true
+    nextNodeIndex: 7
   }
   branches {
-    responseText: "Not right now."
-    nextNodeIndex: -1
+    responseText: "Wish me luck."
+    nextNodeIndex: 8
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "52251e023662369c1a001bea"
+    id: "537250d46434311639fc5a00"
   }
-  index: 3
+  index: 4
   text: "Wow. Well, if your quarry knows the territory, he\'s probably holed up inside the Armory. You can\'t miss it, it\'s the huge brick fortress at the corner of 14th and Mission. That place is probably the most defensible spot in the city, and because it\'s in the middle of a metahuman slum, Saito and the megacorps never bothered occupying it."
   branches {
     responseText: ""
-    nextNodeIndex: 2
+    nextNodeIndex: 3
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "52251e843662369c1a001bf6"
+    id: "537250d86434311639fc5a0f"
   }
-  index: 4
+  index: 5
   text: "Well, I certainly know a lot of people who would be happy to help kill a troll. Some official people, even."
   branches {
     responseText: ""
-    nextNodeIndex: 5
+    nextNodeIndex: 6
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "52251e983662369c1a001bf9"
+    id: "537250d86434311639fc5a12"
   }
-  index: 5
+  index: 6
   text: "Tell you what: I\'ll make a few calls and describe what you\'re up to. No guarantees that you\'ll get any takers, but don\'t be surprised if some backup arrives before whatever showdown you have planned."
   branches {
     responseText: ""
-    nextNodeIndex: 2
+    nextNodeIndex: 3
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -195,8 +206,40 @@ nodes {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
+}
+nodes {
+  idRef {
+    id: "537250f16434311639fc5a36"
+  }
+  index: 7
+  text: "That\'s the kind of equipment that could save your life."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5376d460366236cc0e00155c"
+  }
+  index: 8
+  text: "Of course!"
+  nodeType: ConversationNodeType_Simple
 }
 roots {
   responseText: ""

@@ -72,8 +72,20 @@ nodes {
   index: 5
   text: "Well, hero? Any valiant last words?"
   branches {
-    responseText: "Why are you doing this?"
+    responseText: ""
     nextNodeIndex: 6
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372529e6434311639fc5e74"
+  }
+  index: 6
+  text: ""
+  branches {
+    responseText: "Why are you doing this?"
+    nextNodeIndex: 7
     onlyOnce: true
     idRef {
       id: "5226c9f0366236d016001544"
@@ -130,7 +142,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 9
+    nextNodeIndex: 10
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -138,7 +150,7 @@ nodes {
     }
   }
   branches {
-    responseText: "{{CC}}Academic{{/CC}} Are you trying to turn water elementals against this city?"
+    responseText: "{{CC}}Etiquette: Academic{{/CC}} Are you trying to turn water elementals against this city?"
     conditions {
       ops {
         functionName: "Compare Actor Skill"
@@ -188,7 +200,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 12
+    nextNodeIndex: 13
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -197,36 +209,24 @@ nodes {
   }
   branches {
     responseText: "We could have been friends, Shavarus."
-    nextNodeIndex: 13
+    nextNodeIndex: 14
   }
   branches {
     responseText: "I\'ll take pleasure in gutting you."
-    nextNodeIndex: 15
+    nextNodeIndex: 16
   }
   branches {
     responseText: "I\'ll make sure you never trouble this city again."
-    nextNodeIndex: 16
+    nextNodeIndex: 17
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5226bbc0366236d0160013b3"
-  }
-  index: 6
-  text: "Must you really ask? Are you blind? Have you noticed nothing during your time here in this city?"
-  branches {
-    responseText: ""
-    nextNodeIndex: 7
-  }
-  nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "5226bbd1366236d0160013b6"
+    id: "537252a46434311639fc5e83"
   }
   index: 7
-  text: "This place is poison. Mankind has proven themselves to be intolerable. We must cleanse the poison, by removing humanity from this wound of a city."
+  text: "Must you really ask? Are you blind? Have you noticed nothing during your time here in this city?"
   branches {
     responseText: ""
     nextNodeIndex: 8
@@ -235,35 +235,35 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5226bc65366236d0160013b9"
+    id: "537252a46434311639fc5e86"
   }
   index: 8
+  text: "This place is poison. Mankind has proven themselves to be intolerable. We must cleanse the poison, by removing humanity from this wound of a city."
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537252a46434311639fc5e89"
+  }
+  index: 9
   text: "Yes, many more will die. So be it. All will learn to respect the metas, and so we will come into our own power, free from fear."
   branches {
     responseText: ""
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5226bccb366236d0160013bf"
-  }
-  index: 9
-  text: "Your continued ignorance astounds me."
-  branches {
-    responseText: ""
-    nextNodeIndex: 10
-  }
-  nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "5226bceb366236d0160013c3"
+    id: "537252a96434311639fc5e9b"
   }
   index: 10
-  text: "Mission Creek is the oldest waterway still flowing in the city. It\'s long been buried and forgotten, but here in this place, near the graves of Mission Dolores and under the extreme agonies and ecstacies of the Armory, it is imbued with a most potent power."
+  text: "Your continued ignorance astounds me."
   branches {
     responseText: ""
     nextNodeIndex: 11
@@ -272,46 +272,58 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5226bde7366236d0160013cd"
+    id: "537252a96434311639fc5e9e"
   }
   index: 11
+  text: "Mission Creek is the oldest waterway still flowing in the city. It\'s long been buried and forgotten, but here in this place, near the graves of Mission Dolores and under the extreme agonies and ecstacies of the Armory, it is imbued with a most potent power."
+  branches {
+    responseText: ""
+    nextNodeIndex: 12
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537252a96434311639fc5ea1"
+  }
+  index: 12
   text: "From this spot, and with the help of my allies, we will be able to reach a limitless number of water elementals. We merely need describe the contours of the Hetch Hetchy water system to them, and they will gladly wreak havoc upon it. No more water will be unnaturally conveyed to San Francisco ever again. This city will die of thirst, or be abandoned. Regardless, it will serve as an eternal rebuke and warning: those who cross us will lose all they treasure, even the most basic gifts of life itself."
   branches {
     responseText: ""
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     auxiliaryLink: true
   }
 }
 nodes {
   idRef {
-    id: "5226bd74366236d0160013c6"
+    id: "537252af6434311639fc5ead"
   }
-  index: 12
+  index: 13
   text: "Not trying. Succeeding."
   branches {
     responseText: ""
-    nextNodeIndex: 10
+    nextNodeIndex: 11
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5226be89366236d0160013ef"
+    id: "537252c26434311639fc5eb9"
   }
-  index: 13
+  index: 14
   text: "I find that hard to believe. Trolls like me have no friends. Only allies and enemies, and I don\'t think you have the stomach to do what needs to be done."
   branches {
     responseText: ""
-    nextNodeIndex: 14
+    nextNodeIndex: 15
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5226beaa366236d0160013f2"
+    id: "537252c26434311639fc5ebc"
   }
-  index: 14
+  index: 15
   text: "Enough talk! You will witness our triumph, or you will die. "
   nodeType: ConversationNodeType_Simple
   actions {
@@ -330,26 +342,26 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5226bef2366236d0160013f7"
+    id: "537252c86434311639fc5ec5"
   }
-  index: 15
+  index: 16
   text: "Ah. So perhaps you do understand how it feels, then. To be filled with hatred, and filled with the righteous fury of action."
   branches {
     responseText: ""
-    nextNodeIndex: 14
+    nextNodeIndex: 15
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5226bf3c366236d0160013fc"
+    id: "537252ce6434311639fc5ed1"
   }
-  index: 16
+  index: 17
   text: "Oh, it\'s been no trouble at all. The pleasure has been all mine."
   branches {
     responseText: ""
-    nextNodeIndex: 14
+    nextNodeIndex: 15
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple

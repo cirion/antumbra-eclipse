@@ -76,6 +76,18 @@ nodes {
   index: 3
   text: "Any questions?"
   branches {
+    responseText: ""
+    nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537244f06434311639fc46a6"
+  }
+  index: 4
+  text: ""
+  branches {
     responseText: "What exactly will I be doing in the Pyramid?"
     conditions {
       ops {
@@ -136,7 +148,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -204,7 +216,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -213,7 +225,7 @@ nodes {
   }
   branches {
     responseText: "What should I expect in the Pyramid?"
-    nextNodeIndex: 6
+    nextNodeIndex: 7
     onlyOnce: true
     idRef {
       id: "521c16ba366236581b006c2c"
@@ -221,7 +233,7 @@ nodes {
   }
   branches {
     responseText: "How is Eclipse doing?"
-    nextNodeIndex: 7
+    nextNodeIndex: 8
     onlyOnce: true
     idRef {
       id: "521c16dc366236581b006c33"
@@ -229,7 +241,7 @@ nodes {
   }
   branches {
     responseText: "What runner should I hire?"
-    nextNodeIndex: 8
+    nextNodeIndex: 9
     onlyOnce: true
     idRef {
       id: "521c210e366236581b006c8f"
@@ -320,7 +332,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 9
+    nextNodeIndex: 10
   }
   branches {
     responseText: "Not for now."
@@ -334,74 +346,74 @@ nodes {
 }
 nodes {
   idRef {
-    id: "521c163c366236581b006c03"
+    id: "537244f76434311639fc46af"
   }
-  index: 4
+  index: 5
   text: "Your objective is to extract data that thoroughly documents the relationship between Aztechnology and Pyramid Operations. You\342\200\231ll probably need to reach the top floor to obtain it; that\342\200\231s where the most sensitive data is typically kept. It might be in the possession of Morgan Tooms, the director of Pyramid Operations.\n\nI\342\200\231m authorized to inform you that my employer will look fondly upon a scene of great carnage. In other words, you may seek to maximize casualties."
   branches {
     responseText: ""
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521c164b366236581b006c12"
+    id: "537244fe6434311639fc46bb"
   }
-  index: 5
+  index: 6
   text: "The last I heard, a team of runners had started an assault on the Pyramid. Morgan Tooms, the director of operations in this city, has barricaded himself on the top floor with his remaining guards. You\342\200\231ll need to fight your way to the top and rescue him."
   branches {
     responseText: ""
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521c16b8366236581b006c2b"
+    id: "537245046434311639fc46c7"
   }
-  index: 6
+  index: 7
   text: "As with many megacorp buildings, security will grow tighter the higher you ascend. The ground floor will probably just have a few patrolling guards. As you go higher, you\342\200\231ll encounter more security measures like maglocked doors, computer-assisted turret systems, and even mages."
   branches {
     responseText: ""
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521c16cc366236581b006c30"
+    id: "537245096434311639fc46d3"
   }
-  index: 7
+  index: 8
   text: "From the looks of it, quite well. San Franciscans haven\342\200\231t had access to entertainment like this in several years. Management must have bribed Saito quite handsomely to avoid the harassment that other clubs have encountered."
   branches {
     responseText: ""
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521c16e6366236581b006c35"
+    id: "5372450d6434311639fc46df"
   }
-  index: 8
+  index: 9
   text: "I can\342\200\231t say. You\342\200\231ll probably want someone to complement your strengths and weaknesses. Mages and Samurai often go together well, for example.\n\nIf you aren\342\200\231t a skilled decker, it might be smart to find someone who is. Corp buildings often have local Matrix nodes that can be hacked to bypass certain aspects of security. It isn\342\200\231t mandatory, though. Sometimes brute force is more effective than a soft touch."
   branches {
     responseText: ""
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521c1724366236581b006c3b"
+    id: "537245116434311639fc46e8"
   }
-  index: 9
+  index: 10
   text: "All right, I\'ll bring the car around. Meet you outside."
   nodeType: ConversationNodeType_Simple
   actions {

@@ -2427,20 +2427,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Trigger: Wait for Rounds"
-      args {
-        int_value: 1
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Aztechnology Secure Network"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Activate Actor Spawner"
       args {
         call_value {
@@ -2537,20 +2523,6 @@ triggers {
     }
   }
   actions {
-    ops {
-      functionName: "Trigger: Wait for Rounds"
-      args {
-        int_value: 1
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Aztechnology Secure Network"
-          }
-        }
-      }
-    }
     ops {
       functionName: "Activate Actor Spawner"
       args {
@@ -2668,20 +2640,6 @@ triggers {
     }
   }
   actions {
-    ops {
-      functionName: "Trigger: Wait for Rounds"
-      args {
-        int_value: 1
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Aztechnology Secure Network"
-          }
-        }
-      }
-    }
     ops {
       functionName: "Activate Actor Spawner"
       args {
@@ -8999,12 +8957,25 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_melee"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_melee"
     character_sheet_id: "IC_Lv1_White_Melee"
     equipment_sheet_id: "IC White Melee Low"
     character_mod {
       stats {
-        hp: 80
+        hp: 50
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
       }
     }
     team_id: "IC"
@@ -9018,6 +8989,7 @@ characters {
       filename: ""
     }
     dimension_name: "Aztechnology Secure Network"
+    karma: 29
   }
 }
 characters {
@@ -9036,17 +9008,19 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_black_range"
+    prefab_name: "Seattle:Matrix/MatrixICE_black_range"
     character_sheet_id: "IC_Lv1_Black_Ranged"
     equipment_sheet_id: "IC Black Ranged Low"
     character_mod {
       stats {
-        hp: 130
+        hp: 50
         morale: 24
         discipline: 24
         awareness: 24
+        perception: 0
+        authority: 0
         protect_tether_range: 5
-        move_speed: 6
+        move_speed: 0
       }
       skills {
       }
@@ -9054,6 +9028,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "IC"
     char_name: "Black IC"
@@ -9066,6 +9042,7 @@ characters {
       filename: ""
     }
     dimension_name: "Aztechnology Secure Network"
+    karma: 33
   }
 }
 characters {
@@ -9084,12 +9061,19 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_range"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_range"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White Ranged Low"
     character_mod {
       stats {
-        hp: 80
+        hp: 50
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
       }
       skills {
       }
@@ -9097,6 +9081,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "IC"
     char_name: "White IC"
@@ -9109,6 +9095,7 @@ characters {
       filename: ""
     }
     dimension_name: "Aztechnology Secure Network"
+    karma: 29
   }
 }
 characters {
@@ -9127,15 +9114,28 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/SpiritESPShield"
+    prefab_name: "Seattle:Matrix/SpiritESPShield"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White Support Low"
     character_mod {
       stats {
-        hp: 80
+        hp: 50
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "IC"
     char_name: "White Sentry IC"
@@ -9148,6 +9148,7 @@ characters {
       filename: ""
     }
     dimension_name: "Aztechnology Secure Network"
+    karma: 29
   }
 }
 characters {
@@ -9166,12 +9167,25 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_melee"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_melee"
     character_sheet_id: "IC_Lv1_White_Melee"
     equipment_sheet_id: "IC White Melee Low"
     character_mod {
       stats {
-        hp: 80
+        hp: 50
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
       }
     }
     team_id: "IC"
@@ -9184,6 +9198,7 @@ characters {
       filename: ""
     }
     dimension_name: "Aztechnology Secure Network"
+    karma: 29
   }
 }
 characters {
@@ -9202,15 +9217,28 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/SpiritESPAssassin"
+    prefab_name: "Seattle:Matrix/SpiritESPAssassin"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White ChargeLaser Low"
     character_mod {
       stats {
-        hp: 155
+        hp: 100
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "IC"
     char_name: "White Sparky IC"
@@ -9223,6 +9251,7 @@ characters {
       filename: ""
     }
     dimension_name: "Aztechnology Secure Network"
+    karma: 29
   }
 }
 characters {
@@ -9241,15 +9270,28 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/SpiritESPShield"
+    prefab_name: "Seattle:Matrix/SpiritESPShield"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White Support Low"
     character_mod {
       stats {
-        hp: 80
+        hp: 50
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "IC"
     char_name: "White Sentry IC"
@@ -9262,6 +9304,7 @@ characters {
       filename: ""
     }
     dimension_name: "Aztechnology Secure Network"
+    karma: 29
   }
 }
 characters {
@@ -9280,15 +9323,28 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_range"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_range"
     character_sheet_id: "IC_Lv1_White_Ranged"
     equipment_sheet_id: "IC White Ranged Low"
     character_mod {
       stats {
-        hp: 80
+        hp: 50
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "IC"
     char_name: "White IC"
@@ -9300,6 +9356,7 @@ characters {
       filename: ""
     }
     dimension_name: "Aztechnology Secure Network"
+    karma: 29
   }
 }
 characters {

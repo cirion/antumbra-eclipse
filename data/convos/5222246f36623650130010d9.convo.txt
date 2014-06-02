@@ -169,7 +169,7 @@ nodes {
               call_value {
                 functionName: "Get Map Item (Player)"
                 args {
-                  int_value: 1
+                  int_value: 0
                 }
               }
             }

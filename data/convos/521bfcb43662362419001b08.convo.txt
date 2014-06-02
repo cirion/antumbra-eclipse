@@ -65,8 +65,20 @@ nodes {
   index: 4
   text: "Now! Do you have any questions?"
   branches {
-    responseText: "What are you doing here?"
+    responseText: ""
     nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372401a6434311639fc421d"
+  }
+  index: 5
+  text: ""
+  branches {
+    responseText: "What are you doing here?"
+    nextNodeIndex: 6
     onlyOnce: true
     idRef {
       id: "521bfd843662362419001b3e"
@@ -109,7 +121,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 6
+    nextNodeIndex: 7
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -118,7 +130,7 @@ nodes {
   }
   branches {
     responseText: "Why is it so quiet here?"
-    nextNodeIndex: 7
+    nextNodeIndex: 8
     onlyOnce: true
     idRef {
       id: "521bfdaa3662362419001b52"
@@ -126,32 +138,27 @@ nodes {
   }
   branches {
     responseText: "How is business?"
-    nextNodeIndex: 9
+    nextNodeIndex: 10
     onlyOnce: true
     idRef {
       id: "521c09b53662360c11001c00"
     }
   }
   branches {
-    responseText: "That\342\200\231s it."
-    nextNodeIndex: 11
-    auxiliaryLink: true
-  }
-  branches {
-    responseText: "{{GM}}Shake your head.{{/GM}}"
-    nextNodeIndex: 11
+    responseText: "I\'m ready."
+    nextNodeIndex: 12
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521bfd803662362419001b3d"
+    id: "537240216434311639fc4226"
   }
-  index: 5
+  index: 6
   text: "I can manage most of Antumbra Enterprises from anywhere. Still, I like to be on site when a new location is getting off the ground. I\342\200\231m introducing Eclipse to the local movers and shakers, and fine-tuning the entertainment to match the... particular tastes of this city."
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -182,72 +189,72 @@ nodes {
 }
 nodes {
   idRef {
-    id: "521bfda33662362419001b51"
+    id: "537240266434311639fc4232"
   }
-  index: 6
+  index: 7
   text: "Oh, have you not heard about it in Seattle yet? It\342\200\231s our newest vision for a full Antumbra Experience. It has the great music, live shows, and fine dining of our original club, but it adds everything else today\342\200\231s elite need in their lifestyle. The hottest gadgets, cosmetic cybernetic upgrades, personal protection, customized information services, and paid companionship are finally all available in one convenient, indulgent location."
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521bfdac3662362419001b54"
+    id: "5372402d6434311639fc4241"
   }
-  index: 7
+  index: 8
   text: "Ever since the Imperial Japanese marines landed, the street scene has grown far less lively. Metahumans know that they aren\342\200\231t wanted, so they tend to keep their heads down in quieter neighborhoods. Most of the humans are busy working for the Japanese megacorps down in the financial district. "
   branches {
     responseText: ""
-    nextNodeIndex: 8
+    nextNodeIndex: 9
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521bfdb83662362419001b57"
+    id: "5372402d6434311639fc4244"
   }
-  index: 8
+  index: 9
   text: "It\342\200\231s been a bit of a challenge when opening Eclipse. Saito\342\200\231s troops aren\342\200\231t too happy with undocumented movements, which puts a damper on nightlife. Fortunately, the salarymen who do make it out have lots of money to spend."
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521bfdc13662362419001b59"
+    id: "537240326434311639fc4253"
   }
-  index: 9
+  index: 10
   text: "Booming! Ever since that site of power was discovered under my first club, Antumbra Enterprises has been growing in ways I never would have expected. I used to just run a tiny simsense division in a vast megacorp; now, I\342\200\231m in charge of a large portfolio that includes not just entertainment, but some fun corporate espionage as well."
   branches {
     responseText: ""
-    nextNodeIndex: 10
+    nextNodeIndex: 11
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521bfdc83662362419001b5c"
+    id: "537240326434311639fc4256"
   }
-  index: 10
+  index: 11
   text: "I sometimes miss the old days - just me and a microphone, up on the stage, belting my heart out. Still, I\342\200\231m having a much bigger impact on the world now than I ever could through my music alone."
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521bfd693662362419001b38"
+    id: "5372403a6434311639fc4265"
   }
-  index: 11
+  index: 12
   text: "Great! Hop in and let\342\200\231s take you to Eclipse."
   nodeType: ConversationNodeType_Simple
   actions {
@@ -403,6 +410,17 @@ nodes {
           }
           args {
             int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }

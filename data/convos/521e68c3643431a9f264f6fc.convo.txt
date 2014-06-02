@@ -91,8 +91,20 @@ nodes {
   index: 4
   text: "Hey, do you need to hire a runner? Because I totally want to be a runner! "
   branches {
-    responseText: "What are your skills?"
+    responseText: ""
     nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537244516434311639fc4530"
+  }
+  index: 5
+  text: ""
+  branches {
+    responseText: "What are your skills?"
+    nextNodeIndex: 6
     onlyOnce: true
     idRef {
       id: "521ed198366236941a000c6a"
@@ -100,7 +112,7 @@ nodes {
   }
   branches {
     responseText: "How did you end up in Eclipse?"
-    nextNodeIndex: 6
+    nextNodeIndex: 7
     onlyOnce: true
     idRef {
       id: "521e6a22643431a9f264f727"
@@ -108,7 +120,7 @@ nodes {
   }
   branches {
     responseText: "What do you know about Colonel Saito?"
-    nextNodeIndex: 7
+    nextNodeIndex: 8
     onlyOnce: true
     idRef {
       id: "521e6a1f643431a9f264f726"
@@ -199,7 +211,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 8
+    nextNodeIndex: 9
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -285,7 +297,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 9
+    nextNodeIndex: 10
     hideIfUnavailable: true
   }
   branches {
@@ -391,7 +403,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 14
+    nextNodeIndex: 15
     hideIfUnavailable: true
   }
   branches {
@@ -512,7 +524,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 15
+    nextNodeIndex: 16
   }
   branches {
     responseText: "{{GM}}Leave.{{/GM}}"
@@ -522,73 +534,73 @@ nodes {
 }
 nodes {
   idRef {
-    id: "521e6981643431a9f264f71b"
+    id: "537244586434311639fc4539"
   }
-  index: 5
+  index: 6
   text: "I\342\200\231m really good with computers! Always have been. I love building robots, and poking around the Matrix, and stuff like that.\n\nI heard that people sometimes shoot at runners, though, so I\342\200\231ve been practicing dodging and running lately. Mostly running. It\342\200\231s fun!"
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e69e6643431a9f264f71f"
+    id: "537244606434311639fc4545"
   }
-  index: 6
+  index: 7
   text: "Shhh... don\342\200\231t tell anyone, but I totally snuck in! Kali\342\200\231s matrix is hella unsecure. I just uploaded my profile into her artist database, and now everyone thinks I\342\200\231m a star thrumming musician from Denver. If anyone asks, tell them that I\342\200\231m really good, okay?"
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e69ff643431a9f264f723"
+    id: "537244656434311639fc4551"
   }
-  index: 7
+  index: 8
   text: "Blech! Old Keiji No-fun! I dunno. Things were pretty bad here before he showed up, and I guess it\342\200\231s good that people aren\342\200\231t shooting each other so much any more. But this town has gotten so BORING! They\342\200\231re always stopping people to check their SINs and harassing them, so my friends don\342\200\231t even want to go out any more. I have some metahuman buddies, and they\342\200\231re scared that he\342\200\231s gonna ship them all off to some place like Yomi Island. "
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e6a6a643431a9f264f72a"
+    id: "5372446c6434311639fc455d"
   }
-  index: 8
+  index: 9
   text: "Sure do! I\342\200\231m CalFree born and raised, baby. There aren\342\200\231t many like me around.\n\nBut, if I go on a run, I\342\200\231ll definitely be using another identity. I don\342\200\231t want to risk my real life if things turn drekky, you know?"
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e6ae7643431a9f264f770"
+    id: "537244726434311639fc457e"
   }
-  index: 9
-  text: "Yeah! I used to make fake SINs for my pals when we were teenagers so we could buy booze and adult simsense. \n\nI\342\200\231ll upload two fake identities for you into a bank database, and then they\342\200\231ll propagate to the other systems in the city. If anyone really wants to check, they\342\200\231ll see that there\342\200\231s no history associated with them, so it isn\342\200\231t, like, super-secure? But it should be totally fine if you just need to pass checkpoints."
+  index: 10
+  text: "Yeah! I used to make fake SINs for my pals when we were teenagers so we could buy booze and adult simsense. \n\nI\342\200\231ll upload two fake identities for you into a bank database, and then they\342\200\231ll propagate to the other systems in the city. If anyone really wants to check, they\342\200\231ll see that there\342\200\231s no history associated with them, so it isn\342\200\231t like super-secure. But it should be totally fine if you just need to pass checkpoints."
   branches {
     responseText: ""
-    nextNodeIndex: 10
+    nextNodeIndex: 11
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e6b01643431a9f264f774"
+    id: "537244726434311639fc4581"
   }
-  index: 10
+  index: 11
   text: "We\342\200\231d better not try any more than two. That triggers an audit or something. Better stay under the radar, you know?\n\nI can upload two for \302\245400. Or, if you\342\200\231re willing to do me a little favor, I\342\200\231ll do it for free!"
   branches {
     responseText: "{{CC}}\302\245400{{/CC}} Here you go."
@@ -619,10 +631,10 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 11
+    nextNodeIndex: 12
   }
   branches {
-    responseText: "{{CC}}\302\245250{{/CC}} {{CC}}Shadowrunner{{/CC}} I\342\200\231ll give you \302\245250. If they work, I\342\200\231ll send more business your way."
+    responseText: "{{CC}}\302\245250{{/CC}} {{CC}}Etiquette: Shadowrunner{{/CC}} I\342\200\231ll give you \302\245250. If they work, I\342\200\231ll send more business your way."
     conditions {
       ops {
         functionName: "Evaluate Nuyen"
@@ -697,7 +709,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 12
+    nextNodeIndex: 13
   }
   branches {
     responseText: "What\342\200\231s the favor?"
@@ -728,7 +740,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 13
+    nextNodeIndex: 14
     onlyOnce: true
     idRef {
       id: "521e756164343108ffb50de9"
@@ -736,20 +748,20 @@ nodes {
   }
   branches {
     responseText: "Not right now."
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e6b50643431a9f264f779"
+    id: "537244726434311639fc4584"
   }
-  index: 11
+  index: 12
   text: "All right, I\342\200\231ll get to work immediately! They should be in place by the time you leave Eclipse."
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -883,26 +895,26 @@ nodes {
 }
 nodes {
   idRef {
-    id: "521e6c9364343108ffb50ce1"
+    id: "537244726434311639fc458a"
   }
-  index: 12
+  index: 13
   text: "Discreet business, I hope! I sure don\342\200\231t want Saito breathing down my neck."
   branches {
     responseText: ""
-    nextNodeIndex: 11
+    nextNodeIndex: 12
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e74d764343108ffb50d4c"
+    id: "537244726434311639fc4590"
   }
-  index: 13
+  index: 14
   text: "There\342\200\231s an elf who I used to like named Tarne. We broke up a year ago, but I\342\200\231m worried because I haven\342\200\231t heard from them in over a month.\n\nThere was some chatter in the Eclipse Matrix node about Tarne, so I came here to try and figure it out. Nobody will tell me anything, but I think they\342\200\231re hiding it from me. If you can find out what happened, I\342\200\231ll give you the SIN for free."
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -1002,13 +1014,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "521e764a64343108ffb50e25"
+    id: "5372447a6434311639fc459f"
   }
-  index: 14
+  index: 15
   text: "Oh! Well, thanks for letting me know. It could be worse; I was half-afraid that I\342\200\231d need to host a funeral. So many metahumans have been disappearing lately."
   branches {
     responseText: ""
-    nextNodeIndex: 11
+    nextNodeIndex: 12
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -1089,21 +1101,21 @@ nodes {
 }
 nodes {
   idRef {
-    id: "521e77da64343108ffb50ee1"
+    id: "537244836434311639fc45b1"
   }
-  index: 15
+  index: 16
   text: "\302\245600. That\342\200\231s a discount, because I like you, and honestly because I\342\200\231m pretty new to this whole runner thing. Totally new, in fact!"
   branches {
     responseText: ""
-    nextNodeIndex: 16
+    nextNodeIndex: 17
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e782e64343108ffb50ee4"
+    id: "537244836434311639fc45b4"
   }
-  index: 16
+  index: 17
   text: "Cool, you have a spare SIN for me. I\342\200\231ll definitely be using it. Remember, though, we won\342\200\231t be able to take anyone else with us with these IDs.\n\nSound good?"
   branches {
     responseText: "Sounds good."
@@ -1134,20 +1146,20 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 17
+    nextNodeIndex: 18
   }
   branches {
     responseText: "I\'ll think about it."
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e82d86434315d02b50de0"
+    id: "537244836434311639fc45b7"
   }
-  index: 17
+  index: 18
   text: "Wow, we\'re doing it! I\'m really a runner now! I swear you won\'t regret this."
   nodeType: ConversationNodeType_Simple
   actions {

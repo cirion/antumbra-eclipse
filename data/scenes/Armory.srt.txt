@@ -2473,6 +2473,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -6111,163 +6122,6 @@ triggers {
   is_oneshot: true
 }
 triggers {
-  name: "Surprise Matrix Squad 1"
-  events {
-    ops {
-      functionName: "On Actor Damage"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "HPOrAP"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "On Actor Death"
-    }
-  }
-  conditions {
-    ops {
-      functionName: "Comparison (Actor)"
-      args {
-        call_value {
-          functionName: "Triggering Target Actor"
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "IsOrIsNot"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Actor)"
-          args {
-            string_value: "522934da366236f0190011cd"
-          }
-        }
-      }
-    }
-  }
-  actions {
-    ops {
-      functionName: "Display Text over Actor"
-      args {
-        call_value {
-          functionName: "Triggering Target Actor"
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TextPopupStyle"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        string_value: "INTRUSION  DETECTED. ACTIVATING COUNTERMEASURES."
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 3
-      }
-      args {
-        float_value: 3
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
-      functionName: "Trigger: Wait for Rounds"
-      args {
-        int_value: 1
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Aztechnology Local Network"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Activate Actor Spawner"
-      args {
-        call_value {
-          functionName: "Get Map Item (Actor Reference)"
-          args {
-            string_value: "522934d3366236f0190011cc"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Order Actor to Seek And Destroy (ThreatType)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "522934d3366236f0190011cc"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "ThreatType"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-  }
-  isActive: true
-  idRef {
-    id: "5229691b366236e41e004921"
-  }
-  elseActions {
-  }
-  is_oneshot: true
-}
-triggers {
   name: "Portal_EntryToLocker_PC"
   events {
     ops {
@@ -9460,20 +9314,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Trigger: Wait for Rounds"
-      args {
-        int_value: 1
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Shavarus Covert Network"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Activate Actor Spawner"
       args {
         call_value {
@@ -9639,7 +9479,7 @@ triggers {
         }
       }
       args {
-        int_value: 2
+        int_value: 3
       }
     }
   }
@@ -9789,20 +9629,6 @@ triggers {
       }
       args {
         float_value: 0
-      }
-    }
-    ops {
-      functionName: "Trigger: Wait for Rounds"
-      args {
-        int_value: 1
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Shavarus Covert Network"
-          }
-        }
       }
     }
     ops {
@@ -9982,7 +9808,7 @@ triggers {
         }
       }
       args {
-        int_value: 3
+        int_value: 4
       }
     }
   }
@@ -10140,7 +9966,7 @@ triggers {
         }
       }
       args {
-        int_value: 1
+        int_value: 2
       }
     }
   }
@@ -10290,20 +10116,6 @@ triggers {
       }
       args {
         float_value: 0
-      }
-    }
-    ops {
-      functionName: "Trigger: Wait for Rounds"
-      args {
-        int_value: 1
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Shavarus Covert Network"
-          }
-        }
       }
     }
     ops {
@@ -11352,6 +11164,17 @@ triggers {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -12000,6 +11823,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12043,6 +11867,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12086,6 +11911,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12129,6 +11955,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12172,6 +11999,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12215,6 +12043,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12258,6 +12087,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12301,6 +12131,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12344,6 +12175,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12387,6 +12219,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12430,6 +12263,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12473,6 +12307,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12516,6 +12351,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12559,6 +12395,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12602,6 +12439,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12645,6 +12483,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12688,6 +12527,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -12731,6 +12571,7 @@ regions {
     a: 1
   }
   visible_at_start: false
+  is_teleporter_region: false
   directional_light_dir {
     x: -0.5
     y: -1
@@ -14048,17 +13889,19 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_black_melee"
+    prefab_name: "Seattle:Matrix/MatrixICE_black_melee"
     character_sheet_id: "IC_Lv3_Black_Ranged"
     equipment_sheet_id: "IC Black Melee Mid"
     character_mod {
       stats {
-        hp: 175
+        hp: 0
         morale: 24
         discipline: 24
         awareness: 24
+        perception: 0
+        authority: 0
         protect_tether_range: 5
-        move_speed: 6
+        move_speed: 0
       }
       skills {
       }
@@ -14066,6 +13909,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "Black IC"
@@ -14075,6 +13920,7 @@ characters {
       filename: ""
     }
     dimension_name: "Shavarus Covert Network"
+    karma: 39
   }
 }
 characters {
@@ -14091,17 +13937,19 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_black_range"
+    prefab_name: "Seattle:Matrix/MatrixICE_black_range"
     character_sheet_id: "IC_Lv3_Black_Ranged"
     equipment_sheet_id: "IC Black Ranged Mid"
     character_mod {
       stats {
-        hp: 175
+        hp: 50
         morale: 24
         discipline: 24
         awareness: 24
+        perception: 0
+        authority: 0
         protect_tether_range: 5
-        move_speed: 6
+        move_speed: 0
       }
       skills {
       }
@@ -14109,6 +13957,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "Black IC"
@@ -14118,6 +13968,7 @@ characters {
       filename: ""
     }
     dimension_name: "Shavarus Covert Network"
+    karma: 39
   }
 }
 characters {
@@ -14135,15 +13986,28 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_melee"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_melee"
     character_sheet_id: "IC_Lv2_White_Ranged"
     equipment_sheet_id: "IC White Melee Low"
     character_mod {
       stats {
-        hp: 80
+        hp: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "White IC"
@@ -14154,6 +14018,7 @@ characters {
       filename: ""
     }
     dimension_name: "Shavarus Covert Network"
+    karma: 31
   }
 }
 characters {
@@ -14171,15 +14036,28 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_range"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_range"
     character_sheet_id: "IC_Lv2_White_Ranged"
     equipment_sheet_id: "IC White Ranged Low"
     character_mod {
       stats {
-        hp: 80
+        hp: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "White IC"
@@ -14191,6 +14069,7 @@ characters {
       filename: ""
     }
     dimension_name: "Shavarus Covert Network"
+    karma: 31
   }
 }
 characters {
@@ -14208,15 +14087,28 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/SpiritESPShield"
+    prefab_name: "Seattle:Matrix/SpiritESPShield"
     character_sheet_id: "IC_Lv2_White_Ranged"
     equipment_sheet_id: "IC White Support Low"
     character_mod {
       stats {
-        hp: 80
+        hp: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "White Sentry IC"
@@ -14228,6 +14120,7 @@ characters {
       filename: ""
     }
     dimension_name: "Shavarus Covert Network"
+    karma: 31
   }
 }
 characters {
@@ -14245,15 +14138,28 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_melee"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_melee"
     character_sheet_id: "IC_Lv2_White_Ranged"
     equipment_sheet_id: "IC White Melee Low"
     character_mod {
       stats {
-        hp: 80
+        hp: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "White IC"
@@ -14265,6 +14171,7 @@ characters {
       filename: ""
     }
     dimension_name: "Shavarus Covert Network"
+    karma: 31
   }
 }
 characters {
@@ -14282,15 +14189,28 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/SpiritESPAssassin"
+    prefab_name: "Seattle:Matrix/SpiritESPAssassin"
     character_sheet_id: "IC_Lv2_White_Ranged"
     equipment_sheet_id: "IC White ChargeLaser Low"
     character_mod {
       stats {
-        hp: 155
+        hp: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "White Sparky IC"
@@ -14302,6 +14222,7 @@ characters {
       filename: ""
     }
     dimension_name: "Shavarus Covert Network"
+    karma: 31
   }
 }
 characters {
@@ -14319,15 +14240,28 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_range"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_range"
     character_sheet_id: "IC_Lv2_White_Ranged"
     equipment_sheet_id: "IC White Ranged Low"
     character_mod {
       stats {
-        hp: 80
+        hp: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "White IC"
@@ -14339,6 +14273,7 @@ characters {
       filename: ""
     }
     dimension_name: "Shavarus Covert Network"
+    karma: 31
   }
 }
 characters {
@@ -14356,15 +14291,28 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/SpiritESPShield"
+    prefab_name: "Seattle:Matrix/SpiritESPShield"
     character_sheet_id: "IC_Lv2_White_Ranged"
     equipment_sheet_id: "IC White Support Low"
     character_mod {
       stats {
-        hp: 80
+        hp: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "White Sentry IC"
@@ -14375,6 +14323,7 @@ characters {
       filename: ""
     }
     dimension_name: "Shavarus Covert Network"
+    karma: 31
   }
 }
 characters {
@@ -14391,17 +14340,19 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_black_melee"
+    prefab_name: "Seattle:Matrix/MatrixICE_black_melee"
     character_sheet_id: "IC_Lv2_Black_Ranged"
     equipment_sheet_id: "IC Black Melee Low"
     character_mod {
       stats {
-        hp: 150
+        hp: 0
         morale: 24
         discipline: 24
         awareness: 24
+        perception: 0
+        authority: 0
         protect_tether_range: 5
-        move_speed: 6
+        move_speed: 0
       }
       skills {
       }
@@ -14409,6 +14360,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "Black IC"
@@ -14419,6 +14372,7 @@ characters {
       filename: ""
     }
     dimension_name: "Shavarus Covert Network"
+    karma: 36
   }
 }
 characters {
@@ -14430,22 +14384,25 @@ characters {
   }
   orientation: ORIENTATION_S
   GeneralTags: "matrix_camera"
+  displayName: "Camera Black IC"
   idRef {
     id: "522a2392643431e91364f640"
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_black_range"
+    prefab_name: "Seattle:Matrix/MatrixICE_black_range"
     character_sheet_id: "IC_Lv2_Black_Ranged"
     equipment_sheet_id: "IC Black Ranged Low"
     character_mod {
       stats {
-        hp: 150
+        hp: 0
         morale: 24
         discipline: 24
         awareness: 24
+        perception: 0
+        authority: 0
         protect_tether_range: 5
-        move_speed: 6
+        move_speed: 0
       }
       skills {
       }
@@ -14453,6 +14410,8 @@ characters {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "Black IC"
@@ -14463,6 +14422,7 @@ characters {
       filename: ""
     }
     dimension_name: "Shavarus Covert Network"
+    karma: 36
   }
 }
 characters {
@@ -14480,15 +14440,28 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_range"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_range"
     character_sheet_id: "IC_Lv2_White_Ranged"
     equipment_sheet_id: "IC White Ranged Low"
     character_mod {
       stats {
-        hp: 80
+        hp: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "White IC"
@@ -14500,6 +14473,7 @@ characters {
       filename: ""
     }
     dimension_name: "Shavarus Covert Network"
+    karma: 31
   }
 }
 characters {
@@ -14517,15 +14491,28 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_range"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_range"
     character_sheet_id: "IC_Lv2_White_Ranged"
     equipment_sheet_id: "IC White Ranged Low"
     character_mod {
       stats {
-        hp: 80
+        hp: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "White IC"
@@ -14536,6 +14523,7 @@ characters {
       filename: ""
     }
     dimension_name: "Shavarus Covert Network"
+    karma: 31
   }
 }
 characters {
@@ -14553,15 +14541,28 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Matrix/MatrixICE_white_melee"
+    prefab_name: "Seattle:Matrix/MatrixICE_white_melee"
     character_sheet_id: "IC_Lv2_White_Ranged"
     equipment_sheet_id: "IC White Melee Low"
     character_mod {
       stats {
-        hp: 80
+        hp: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
       }
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     team_id: "LoneStar"
     char_name: "White IC"
@@ -14573,6 +14574,7 @@ characters {
       filename: ""
     }
     dimension_name: "Shavarus Covert Network"
+    karma: 31
   }
 }
 characters {
@@ -14613,7 +14615,7 @@ characters {
       specializations {
       }
     }
-    team_id: "LoneStar"
+    team_id: "Civilians"
     char_name: "Security Camera"
     GeneralTags: "camera"
     pc_spawn_number: -1
@@ -14662,7 +14664,7 @@ characters {
       specializations {
       }
     }
-    team_id: "LoneStar"
+    team_id: "Civilians"
     char_name: "Surveillance Cameras"
     GeneralTags: "camera"
     pc_spawn_number: -1
@@ -14711,7 +14713,7 @@ characters {
       specializations {
       }
     }
-    team_id: "LoneStar"
+    team_id: "Civilians"
     char_name: "Security Camera"
     GeneralTags: "camera"
     pc_spawn_number: -1
@@ -14760,7 +14762,7 @@ characters {
       specializations {
       }
     }
-    team_id: "LoneStar"
+    team_id: "Civilians"
     char_name: "Security Camera"
     GeneralTags: "camera"
     pc_spawn_number: -1
@@ -15166,6 +15168,8 @@ scene_dimensions {
   initial_alarm_state: 20
   turns_per_round: 3
 }
+character_roster {
+}
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
   prereq_description: ""
@@ -15181,3 +15185,5 @@ use_hiring_cost_warning: true
 hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
+can_move_outside_camera_regions: true
+can_start_before_triggers: true

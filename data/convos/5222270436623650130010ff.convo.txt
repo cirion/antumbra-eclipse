@@ -25,7 +25,7 @@ nodes {
   index: 1
   text: "Hm? Why do you ask?"
   branches {
-    responseText: "{{CC}}Socialite{{/CC}} I\'ve had a most dreadful argument with the manager. I simply must pop in to pay him a little chat."
+    responseText: "{{CC}}Etiquette: Socialite{{/CC}} I\'ve had a most dreadful argument with the manager. I simply must pop in to pay him a little chat."
     conditions {
       ops {
         functionName: "Compare Actor Skill"

@@ -9,6 +9,18 @@ nodes {
   index: 0
   text: "State your business!"
   branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724b6e6434311639fc4bae"
+  }
+  index: 1
+  text: ""
+  branches {
     responseText: "How are things going here with \342\200\234Pyramid Operations\342\200\235?"
     conditions {
       ops {
@@ -37,7 +49,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -100,7 +112,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 2
+    nextNodeIndex: 3
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -148,7 +160,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     hideIfUnavailable: true
   }
   branches {
@@ -192,7 +204,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     hideIfUnavailable: true
   }
   branches {
@@ -220,47 +232,47 @@ nodes {
 }
 nodes {
   idRef {
-    id: "522007b3366236781900704d"
+    id: "53724b746434311639fc4bb7"
   }
-  index: 1
+  index: 2
   text: "We\342\200\231re doing just fine, and I\342\200\231ll thank you not to insinuate anything about our corporate parentage."
   branches {
     responseText: ""
-    nextNodeIndex: 0
+    nextNodeIndex: 1
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "522007cb366236781900705c"
+    id: "53724b796434311639fc4bc3"
   }
-  index: 2
+  index: 3
   text: "We have the building under control, except for some mop-up work on the top floor. However, I have not received word of any reinforcements. What are you doing here?"
   branches {
     responseText: ""
-    nextNodeIndex: 0
+    nextNodeIndex: 1
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "522009273662367819007071"
+    id: "53724b7d6434311639fc4bcf"
   }
-  index: 3
+  index: 4
   text: "This all checks out."
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "522009d136623678190070c6"
+    id: "53724b7d6434311639fc4bd2"
   }
-  index: 4
+  index: 5
   text: "I hope your visit is uneventful."
   nodeType: ConversationNodeType_Simple
   actions {
@@ -315,12 +327,12 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5220099e36623678190070a7"
+    id: "53724b826434311639fc4be7"
   }
-  index: 5
+  index: 6
   text: "Hm\342\200\246. you are recognized by our system, but I\342\200\231m afraid you don\342\200\231t have any clearance to enter the building."
   branches {
-    responseText: "{{CC}}Security{{/CC}} I\342\200\231ve been placed undercover by your divisional chief."
+    responseText: "{{CC}}Etiquette: Security{{/CC}} I\342\200\231ve been placed undercover by your divisional chief."
     conditions {
       ops {
         functionName: "Compare Actor Skill"
@@ -367,10 +379,10 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 6
+    nextNodeIndex: 7
   }
   branches {
-    responseText: "{{CC}}Corporate{{/CC}} I\342\200\231m on assignment from Renraku, here to discuss Morgan Tooms with the VP of Internal Affairs."
+    responseText: "{{CC}}Etiquette: Corporate{{/CC}} I\342\200\231m on assignment from Renraku, here to discuss Morgan Tooms with the VP of Internal Affairs."
     conditions {
       ops {
         functionName: "Compare Actor Skill"
@@ -417,37 +429,49 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 7
+    nextNodeIndex: 8
   }
   branches {
     responseText: "Never mind."
-    nextNodeIndex: 0
-    auxiliaryLink: true
+    nextNodeIndex: 9
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "522009f136623678190070c8"
+    id: "53724b826434311639fc4bea"
   }
-  index: 6
+  index: 7
   text: "{{GM}}He sighs in irritation.{{/GM}}\n\nWhy do they never fill me in on these operations? Fine. Head on in, they\'re waiting for you."
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "52200a5a36623678190070ce"
+    id: "53724b826434311639fc4bf0"
   }
-  index: 7
+  index: 8
   text: "Really? Why would... never mind. Above my pay grade."
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724bba6434311639fc4c26"
+  }
+  index: 9
+  text: "Move along, $(l.sir)."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple

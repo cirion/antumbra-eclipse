@@ -21,8 +21,20 @@ nodes {
   index: 1
   text: "Do you want anything?"
   branches {
-    responseText: "Who are you?"
+    responseText: ""
     nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724e446434311639fc5267"
+  }
+  index: 2
+  text: ""
+  branches {
+    responseText: "Who are you?"
+    nextNodeIndex: 3
     onlyOnce: true
     idRef {
       id: "5223e279366236680e00440e"
@@ -30,7 +42,7 @@ nodes {
   }
   branches {
     responseText: "What do you think of Kali?"
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     onlyOnce: true
     idRef {
       id: "5223dc00366236680e004201"
@@ -98,7 +110,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -194,7 +206,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 7
+    nextNodeIndex: 8
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -263,7 +275,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 8
+    nextNodeIndex: 9
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -278,13 +290,13 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5223b2cf366236680e003bfd"
+    id: "53724e496434311639fc5270"
   }
-  index: 2
+  index: 3
   text: "I was born Idril Nellas, but I go by DJ Omphalos these days. I specialize in thrumming music, and have played most styles and clubs at some point in my career. I\'ve also helped several people record demo tracks and launch their own careers."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -315,45 +327,45 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5223b2df366236680e003c00"
+    id: "53724e4e6434311639fc527f"
   }
-  index: 3
+  index: 4
   text: "Oh, she\342\200\231s fantastic. I\342\200\231m so glad that she came to San Francisco, her talents were wasted in Seattle. She\342\200\231s not just a terrific performer, but she\342\200\231s one of the few artists who can relate really well to people outside of our culture. That\342\200\231s proven to be extremely useful here in the city."
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223dbd3366236680e0041b2"
+    id: "53724e4e6434311639fc5282"
   }
-  index: 4
+  index: 5
   text: "Ever since martial law was imposed, most clubs have been dying a slow death, but Kali has quickly found the right palms to grease, the right favors to collect, and the right compliments to pay Saito. It\342\200\231s making her very rich, but it\342\200\231s also giving us the first decent venue we\342\200\231ve enjoyed here in years."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
 }
 nodes {
   idRef {
-    id: "5223b32e366236680e003c09"
+    id: "53724e546434311639fc528e"
   }
-  index: 5
+  index: 6
   text: "Sure thing! Kali was mentioning that she owed you a favor from Seattle."
   branches {
     responseText: ""
-    nextNodeIndex: 6
+    nextNodeIndex: 7
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223b338366236680e003c0c"
+    id: "53724e546434311639fc5291"
   }
-  index: 6
+  index: 7
   text: "Here\342\200\231s a blank recording deck. Find Kali below and see if she can free up some studio space for you. Good luck!"
   nodeType: ConversationNodeType_Simple
   actions {
@@ -415,6 +427,17 @@ nodes {
           }
         }
       }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
     ops {
       functionName: "Set Waypoint on Actor"
@@ -442,61 +465,61 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5223b37f366236680e003c0f"
+    id: "53724e596434311639fc529a"
   }
-  index: 7
+  index: 8
   text: "Yeah, I guess so. Apparently the people you\342\200\231re with have told Kali to cooperate with you in all things. This probably wasn\342\200\231t what they were thinking of, though."
   branches {
     responseText: ""
-    nextNodeIndex: 6
+    nextNodeIndex: 7
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223b3f3366236680e003c18"
+    id: "53724e606434311639fc52af"
   }
-  index: 8
+  index: 9
   text: "{{GM}}DJ Omphalos plugs your deck into a nearby sound system and cranks it up, ignoring the annoyed glances from nearby partiers.{{/GM}}"
   branches {
     responseText: ""
-    nextNodeIndex: 9
+    nextNodeIndex: 10
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223b3fc366236680e003c1b"
+    id: "53724e606434311639fc52b2"
   }
-  index: 9
+  index: 10
   text: "Not bad! Have you done this before?\n\nThere\342\200\231s nothing wrong with this, and I think you could release it and do rather well. If you\342\200\231d like, though, I\342\200\231d be happy to remix it for you. It might sound a bit fresher that way, and, frankly, a lot of my fans will buy anything that I remix. What do you say?"
   branches {
     responseText: "Sure, go for it."
-    nextNodeIndex: 10
+    nextNodeIndex: 11
   }
   branches {
     responseText: "No, I\342\200\231ll keep my mix."
-    nextNodeIndex: 12
+    nextNodeIndex: 13
   }
 }
 nodes {
   idRef {
-    id: "5223b413366236680e003c1f"
+    id: "53724e606434311639fc52b5"
   }
-  index: 10
+  index: 11
   text: "{{GM}}DJ Omphalos opens up a mixing program and sets to work. She collects samples, loops them, distorts them, pulls apart your track elements and rearranges them. When she finishes, no new elements have been added, but it sounds like an entirely different song.{{/GM}}"
   branches {
     responseText: ""
-    nextNodeIndex: 11
+    nextNodeIndex: 12
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223b41d366236680e003c22"
+    id: "53724e606434311639fc52b8"
   }
-  index: 11
+  index: 12
   text: "That was fun! I hope it turns out well. No need to worry about royalties, but if this one does well I\342\200\231d like you to collaborate on one of my next tracks, okay?"
   nodeType: ConversationNodeType_Simple
   actions {
@@ -543,9 +566,9 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5223b451366236680e003c24"
+    id: "53724e606434311639fc52bb"
   }
-  index: 12
+  index: 13
   text: "{{GM}}Omphalos shrugs.{{/GM}} \n\nSuit yourself."
   nodeType: ConversationNodeType_Simple
 }

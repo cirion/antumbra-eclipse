@@ -510,6 +510,9 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "End Current Actor Turn"
+    }
   }
   isActive: true
   idRef {
@@ -3009,6 +3012,55 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad4"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "End Current Actor Turn"
+    }
   }
   isActive: true
   idRef {
@@ -3111,8 +3163,8 @@ regions {
   position {
     x: -19
     y: -68
-    width: 139
-    height: 59
+    width: 137
+    height: 54
   }
   enabledAtStart: true
   is_camera_region: true
@@ -4155,7 +4207,7 @@ characters {
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
     }
-    team_id: "Gangers"
+    team_id: "Civilians"
     char_name: "Tir Guard"
     GeneralTags: "squad4"
     pc_spawn_number: -1
@@ -4236,7 +4288,7 @@ characters {
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
     }
-    team_id: "Gangers"
+    team_id: "Civilians"
     char_name: "Tir Mage"
     GeneralTags: "squad4"
     pc_spawn_number: -1
@@ -4325,7 +4377,7 @@ characters {
     equipment {
       prefab_name: "Spell Lightning Bolt 1"
     }
-    team_id: "Gangers"
+    team_id: "Civilians"
     char_name: "Tir Mage"
     GeneralTags: "squad4"
     pc_spawn_number: -1
@@ -4406,7 +4458,7 @@ characters {
       archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeAggressive
     }
-    team_id: "Gangers"
+    team_id: "Civilians"
     char_name: "Tir Guard"
     GeneralTags: "squad4"
     pc_spawn_number: -1

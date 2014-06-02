@@ -21,8 +21,20 @@ nodes {
   index: 1
   text: "What can I do for you?"
   branches {
-    responseText: "What were you writing in that notebook?"
+    responseText: ""
     nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537245856434311639fc47e7"
+  }
+  index: 2
+  text: ""
+  branches {
+    responseText: "What were you writing in that notebook?"
+    nextNodeIndex: 3
     onlyOnce: true
     idRef {
       id: "521e8bd66434315d02b50e3d"
@@ -30,7 +42,7 @@ nodes {
   }
   branches {
     responseText: "\"Orion\" is an interesting name for an ork."
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     onlyOnce: true
     idRef {
       id: "521e8bf96434315d02b50e42"
@@ -38,7 +50,7 @@ nodes {
   }
   branches {
     responseText: "How is San Francisco treating you these days?"
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     onlyOnce: true
     idRef {
       id: "521ec23d366236941a000853"
@@ -122,7 +134,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -247,11 +259,11 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 6
+    nextNodeIndex: 7
   }
   branches {
     responseText: "Goodbye."
-    nextNodeIndex: 11
+    nextNodeIndex: 12
   }
   branches {
     responseText: "{{GM}}Leave.{{/GM}}"
@@ -261,61 +273,61 @@ nodes {
 }
 nodes {
   idRef {
-    id: "521e8bd76434315d02b50e3f"
+    id: "5372458d6434311639fc47f0"
   }
-  index: 2
+  index: 3
   text: "{{GM}}A shadow of a smile flickers across his face.{{/GM}} \n\nIt is a journal. Do $(l.race_plural) not have those where you\342\200\231re from?\n\nSince you ask, though, I\342\200\231m organizing some thoughts on the long-term social impacts of goblinization. I find it helps me to work with ideas on paper before discussing them with the world at large."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e8bfb6434315d02b50e44"
+    id: "537245926434311639fc47fc"
   }
-  index: 3
+  index: 4
   text: "Thank you. I chose it myself.\n\nAs you may know, Orion was the hunter in Greek mythology. I consider myself a hunter in many ways. On a very literal level, I pursue my opponents and shoot them until they die. On a more abstract level, though, I aspire to be a hunter of truth, one who finds that which is real in this world, and captures it for others to see."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e8c126434315d02b50e48"
+    id: "537245976434311639fc4808"
   }
-  index: 4
+  index: 5
   text: "{{GM}}Orion sighs softly.{{/GM}} I fear that my kind are faring poorly. In the early years after the Goblinization event, this was one of the only cities on the planet to accept orks and trolls as beings of equal worth to mundane humans. More recently, though, we are increasingly reviled, blamed for any act of violence or natural disaster. \n\nLocals have taken to speaking of Orkland in the East Bay, and lately there have even been some serious proposals to forcibly relocate all orks to that city. I have no objection to living there, of course, but the idea of a purge of metahumans is deeply distressing."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e8c706434315d02b50e4f"
+    id: "5372459c6434311639fc4814"
   }
-  index: 5
+  index: 6
   text: "As long as you are not planning on targeting metahumans, I will gladly join your cause for the standard fee. My one other request is that you secure a fresh California Free State SIN for my use. I fear that my current SIN has been flagged by the security forces, which makes my movement in the city very problematic."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e8cc26434315d02b50e53"
+    id: "537245a16434311639fc4832"
   }
-  index: 6
+  index: 7
   text: "That is most gratifying to hear. For a charge of \302\245650, you will have unlimited access to my services for the remainder of the day."
   branches {
     responseText: "{{CC}}\302\245650{{/CC}} Here you go."
@@ -346,10 +358,10 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 7
+    nextNodeIndex: 8
   }
   branches {
-    responseText: "{{CC}}\302\245450{{/CC}} {{CC}}Gang{{/CC}} I\342\200\231ll give you \302\245450, and a guarantee that you\342\200\231ll get to hunt some mundane humans."
+    responseText: "{{CC}}\302\245450{{/CC}} {{CC}}Etiquette: Gang{{/CC}} I\342\200\231ll give you \302\245450, and a guarantee that you\342\200\231ll get to hunt some mundane humans."
     conditions {
       ops {
         functionName: "Evaluate Nuyen"
@@ -424,7 +436,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 8
+    nextNodeIndex: 9
   }
   branches {
     responseText: "{{CC}}\302\245450{{/CC}} {{CC}}Ork{{/CC}} Come on, can you cut a break for a fellow ork?"
@@ -488,20 +500,20 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 9
+    nextNodeIndex: 10
     hideIfUnavailable: true
   }
   branches {
     responseText: "No, thanks."
-    nextNodeIndex: 10
+    nextNodeIndex: 11
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e8d076434315d02b50e59"
+    id: "537245a16434311639fc4835"
   }
-  index: 7
+  index: 8
   text: "Thank you. Lead on, good $(l.sir)."
   nodeType: ConversationNodeType_Simple
   actions {
@@ -581,48 +593,48 @@ nodes {
 }
 nodes {
   idRef {
-    id: "521ea2d5366236941a000148"
+    id: "537245a16434311639fc4838"
   }
-  index: 8
+  index: 9
   text: "{{GM}}Orion looks at you, startled, and then slowly begins to smile.{{/GM}}\n\nI assure you that I am not the bloodthirsty type. Still, the small actions we take today may well serve the greater good. Very well. You have your discount."
   branches {
     responseText: ""
-    nextNodeIndex: 7
+    nextNodeIndex: 8
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521ea359366236941a00014e"
+    id: "537245a16434311639fc483e"
   }
-  index: 9
+  index: 10
   text: "{{GM}}Orion\342\200\231s face breaks into a toothy grin.{{/GM}}\n\nIndeed I can, comrade. We face enough troubles in this world as it is. We need to stick up for one another. Very well, you will have your discount."
   branches {
     responseText: ""
-    nextNodeIndex: 7
+    nextNodeIndex: 8
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521ea373366236941a000152"
+    id: "537245a16434311639fc4844"
   }
-  index: 10
+  index: 11
   text: "I understand. Not everyone will need or desire my company. Should you change your mind, I will be here."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521ea396366236941a000186"
+    id: "537245a46434311639fc484d"
   }
-  index: 11
+  index: 12
   text: "Fare you well."
   nodeType: ConversationNodeType_Simple
 }
@@ -630,7 +642,7 @@ nodes {
   idRef {
     id: "521e8bba6434315d02b50e35"
   }
-  index: 12
+  index: 13
   text: "{{GM}}Orion nods gravely as you approach.{{/GM}}"
   branches {
     responseText: ""
@@ -715,5 +727,5 @@ roots {
       }
     }
   }
-  nextNodeIndex: 12
+  nextNodeIndex: 13
 }

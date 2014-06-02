@@ -9,8 +9,20 @@ nodes {
   index: 0
   text: "Yes?"
   branches {
-    responseText: "How are your studies progressing?"
+    responseText: ""
     nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53724e856434311639fc532d"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "How are your studies progressing?"
+    nextNodeIndex: 2
     onlyOnce: true
     idRef {
       id: "5223de22366236680e004385"
@@ -18,7 +30,7 @@ nodes {
   }
   branches {
     responseText: "Have you heard of Colma?"
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     onlyOnce: true
     idRef {
       id: "5223de25366236680e004386"
@@ -61,7 +73,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 4
+    nextNodeIndex: 5
     hideIfUnavailable: true
   }
   branches {
@@ -72,46 +84,46 @@ nodes {
 }
 nodes {
   idRef {
-    id: "5223c748366236680e003e90"
+    id: "53724e8a6434311639fc5339"
   }
-  index: 1
+  index: 2
   text: "Quite well. I feel that my central thesis has achieved sufficient clarity, and anticipate that all my supporting arguments will fall into place shortly. From then on, it should be a relatively straightforward process of revision, as I try to anticipate objections to my platform and work to preemptively resolve them."
   branches {
     responseText: ""
-    nextNodeIndex: 2
+    nextNodeIndex: 3
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223c7cd366236680e003e94"
+    id: "53724e8a6434311639fc533c"
   }
-  index: 2
+  index: 3
   text: "That isn\'t to say that it will be easy. I fully anticipate great resistance, due to the knee-jerk reactions people tend to have when confronted with terms like \"xenocide.\" Nonetheless, I remain optimistic that this thesis will provide a stable basis of work upon which future scholars can build their own theories."
   branches {
     responseText: ""
-    nextNodeIndex: 0
+    nextNodeIndex: 1
     auxiliaryLink: true
   }
 }
 nodes {
   idRef {
-    id: "5223c853366236680e003ea4"
+    id: "53724e8d6434311639fc5348"
   }
-  index: 3
+  index: 4
   text: "Yes, I have heard of this place. I have not visited it myself. From what I understand, it used to be sparingly populated. In recent years, as my fellow metahumans have increasingly been forced from the city, it has become a haven of sorts. Few humans would willingly live among the tombstones, so it has grown into a most unlikely refuge for the outcast, the violent, the dangerous, the insane."
   branches {
     responseText: ""
-    nextNodeIndex: 0
+    nextNodeIndex: 1
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223c8cb366236680e003ea8"
+    id: "53724e916434311639fc5357"
   }
-  index: 4
+  index: 5
   text: "I gladly make my resources available to anyone in need who is willing to pay. More specifically, I requite a sum of \302\245750."
   branches {
     responseText: "{{CC}}\302\245750{{/CC}} Here you are."
@@ -134,20 +146,20 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 5
+    nextNodeIndex: 6
   }
   branches {
     responseText: "Maybe some other time."
-    nextNodeIndex: 0
+    nextNodeIndex: 1
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5223c914366236680e003ead"
+    id: "53724e916434311639fc535a"
   }
-  index: 5
+  index: 6
   text: "Excellent. Shall we be off?"
   nodeType: ConversationNodeType_Simple
   actions {

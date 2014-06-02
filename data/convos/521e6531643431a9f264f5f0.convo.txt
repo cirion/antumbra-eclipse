@@ -45,8 +45,20 @@ nodes {
   index: 1
   text: "Welcome to Necalli Yaotl\342\200\231s House of Magic. What would you like today?"
   branches {
-    responseText: "What does your name mean?"
+    responseText: ""
     nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537245496434311639fc475b"
+  }
+  index: 2
+  text: ""
+  branches {
+    responseText: "What does your name mean?"
+    nextNodeIndex: 3
     onlyOnce: true
     idRef {
       id: "521ebb88366236941a0004c0"
@@ -54,7 +66,7 @@ nodes {
   }
   branches {
     responseText: "How is magic treated in this city?"
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     onlyOnce: true
     idRef {
       id: "521ebb8e366236941a0004c1"
@@ -75,8 +87,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 1
-    auxiliaryLink: true
+    nextNodeIndex: 6
   }
   branches {
     responseText: "{{GM}}Leave.{{/GM}}"
@@ -86,40 +97,53 @@ nodes {
 }
 nodes {
   idRef {
-    id: "521e65a9643431a9f264f607"
+    id: "5372454f6434311639fc4764"
   }
-  index: 2
+  index: 3
   text: "Ah, yes. It\342\200\231s a fairly common name in Aztlan, but less so here. It roughly translates as \342\200\234Warrior,\342\200\235 which seems fitting. I pride myself on being a survivor.\n\nI\342\200\231m proud of my name, but it\342\200\231s been a slight handicap recently. It identifies me as a likely collaborator with Aztechnology, and that megacorp is in a difficult position these days."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e65c6643431a9f264f60b"
+    id: "537245536434311639fc4773"
   }
-  index: 3
+  index: 4
   text: "Fairly positively, I would say. It isn\342\200\231t honored to the degree that you find in NAN or Tir, but the local megacorps clearly understand the economic power of magic, and skilled practitioners are in high demand. That\342\200\231s generally positive, but also means a busy trade in extraction of strategic mages."
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 5
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "521e65d0643431a9f264f60e"
+    id: "537245536434311639fc4776"
   }
-  index: 4
+  index: 5
   text: "Outside of the corporate world, magic is generally seen as another form of expression. I\342\200\231ve seen some very impressive shows of pyro magic, enormous art sculptures constructed by summoned earth spirits, even a comedian who made use of Haste and Slow to create one of the funniest gags I\342\200\231ve ever seen."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 2
     auxiliaryLink: true
   }
+}
+nodes {
+  idRef {
+    id: "5372456a6434311639fc479a"
+  }
+  index: 6
+  text: "Would you like anything else?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
 }
 roots {
   responseText: ""

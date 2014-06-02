@@ -50,8 +50,20 @@ nodes {
   index: 3
   text: "And so the time has come to part ways."
   branches {
-    responseText: "Where are you going?"
+    responseText: ""
     nextNodeIndex: 4
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "537254436434311639fc61c6"
+  }
+  index: 4
+  text: ""
+  branches {
+    responseText: "Where are you going?"
+    nextNodeIndex: 5
     onlyOnce: true
     idRef {
       id: "5227ea1f366236b412000d09"
@@ -59,7 +71,7 @@ nodes {
   }
   branches {
     responseText: "What will you do next?"
-    nextNodeIndex: 5
+    nextNodeIndex: 6
     onlyOnce: true
     idRef {
       id: "5227ea32366236b412000d38"
@@ -67,41 +79,41 @@ nodes {
   }
   branches {
     responseText: "Goodbye, Orion."
-    nextNodeIndex: 6
+    nextNodeIndex: 7
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5227e2ea366236a0180067b4"
+    id: "537254466434311639fc61cf"
   }
-  index: 4
+  index: 5
   text: "My monograph is complete, backed by primary sources from the recent conflict here in San Francisco. I plan to embark on a grand tour of the Bay Area metahuman communities: Orkland, Halferville, any place where my brothers and sisters are gathering to escape the oppression of their human overseers."
   branches {
     responseText: ""
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5227e2f4366236a0180067b8"
+    id: "5372544b6434311639fc61db"
   }
-  index: 5
+  index: 6
   text: "Witnessing Shavarus\'s quest has proven most instructive. One cannot simply embark on such an ambitious venture with nothing but passion and powerful allies. No: it will take an entire movement, with not just the fighters and the mages, but fathers and daughters, shopkeepers and scholars, all rising up in unison to overthrow their oppressors."
   branches {
     responseText: ""
-    nextNodeIndex: 3
+    nextNodeIndex: 4
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "5227e2b8366236a0180067aa"
+    id: "537254506434311639fc61e4"
   }
-  index: 6
+  index: 7
   text: "Even so. Knowing you has proven most instructive. I wish you good fortune in your future ventures."
   nodeType: ConversationNodeType_Simple
   actions {
