@@ -78849,7 +78849,7 @@ props {
   name: "pikePlace_wallDecoration_genericGrafitti03"
   gridPoint {
     x: -4
-    y: -1.3877788e-016
+    y: -1.3877788e-16
     z: 18.9
   }
   orientation: ORIENTATION_S
@@ -111175,4 +111175,24 @@ props {
     }
     intensity: 2
   }
+}
+props {
+  name: "barrens_vehicle_wingoMotorcycle01"
+  gridPoint {
+    x: -43
+    y: 0
+    z: 53
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_headTurnerMotorcycle01"
+  gridPoint {
+    x: -44
+    y: 0
+    z: 56
+  }
+  orientation: ORIENTATION_S
+  lod: 0
 }

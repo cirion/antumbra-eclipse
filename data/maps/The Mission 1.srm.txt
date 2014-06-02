@@ -2278,7 +2278,7 @@ props {
 props {
   name: "barrens_ground_sidewalkdarkgrey10"
   gridPoint {
-    x: 18
+    x: 19
     y: 0
     z: -36
   }
@@ -18817,9 +18817,9 @@ props {
 props {
   name: "barrens_vehicle_jenniferMotorcycle01"
   gridPoint {
-    x: 95.4
+    x: 102.4
     y: 0
-    z: -52.3
+    z: -46.3
   }
   orientation: ORIENTATION_E
   idRef {
@@ -71621,6 +71621,230 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "5237f2ce3662368c1a001245"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_market_foodCartBike"
+  gridPoint {
+    x: 24
+    y: 0
+    z: -14
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "secretLab_clutter_woodCrate"
+  gridPoint {
+    x: 24
+    y: 0
+    z: -27
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "secretLab_clutter_woodCrate"
+  gridPoint {
+    x: 23
+    y: 0
+    z: -29
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538cc3d1643431965539d488"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_market_foodCartBike"
+  gridPoint {
+    x: 49
+    y: 0
+    z: -67
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_dumpster03"
+  gridPoint {
+    x: 55
+    y: 0
+    z: -65
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "pikePlace_vehicle_bikeRickshaw"
+  gridPoint {
+    x: 63
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_jenniferMotorcycle01"
+  gridPoint {
+    x: 56
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_N
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_wingoMotorcycle01"
+  gridPoint {
+    x: 65
+    y: 0
+    z: -14
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_boxes01"
+  gridPoint {
+    x: 53
+    y: 0
+    z: -28
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_brunerMotorcycle04"
+  gridPoint {
+    x: 103.4
+    y: 0
+    z: -37.3
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "538cc4da643431965539d489"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_brunerMotorcycle03"
+  gridPoint {
+    x: 99
+    y: 0
+    z: -42
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538cc4eb643431965539d48a"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_vehicle_kMoneyMotorcycle02"
+  gridPoint {
+    x: 96
+    y: 0
+    z: -51
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538cc4f9643431965539d48b"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_brunerMotorcycle01"
+  gridPoint {
+    x: 103.3
+    y: 0
+    z: -42.5
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "patron"
+  idRef {
+    id: "538cc514643431965539d48c"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_brunerMotorcycle02"
+  gridPoint {
+    x: 121
+    y: 0
+    z: -44
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538cc55c643431965539d48d"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_motorcycle01"
+  gridPoint {
+    x: 120.8
+    y: 0
+    z: -38.2
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "538cc56c643431965539d48e"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_headTurnerMotorcycle01"
+  gridPoint {
+    x: 110.3
+    y: 0
+    z: -44.6
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538cc589643431965539d48f"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_clutter_woodCrate"
+  gridPoint {
+    x: 24
+    y: 0
+    z: -36
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538cc5a5643431965539d490"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_clutter_woodCrate"
+  gridPoint {
+    x: 19
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538cc5a8643431965539d491"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_clutter_woodCrate"
+  gridPoint {
+    x: 21
+    y: 0
+    z: -19
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538cc5cc643431965539d492"
   }
   lod: 0
 }
