@@ -575,7 +575,7 @@ nodes {
   index: 35
   text: ""
   branches {
-    responseText: ""
+    responseText: "Do you have any advice, Orion?"
     conditions {
       ops {
         functionName: "Comparison (bool)"
@@ -658,7 +658,7 @@ nodes {
     }
   }
   branches {
-    responseText: ""
+    responseText: "What do you think, Dalmin?"
     conditions {
       ops {
         functionName: "Comparison (bool)"
@@ -741,7 +741,7 @@ nodes {
     }
   }
   branches {
-    responseText: ""
+    responseText: "What do you make of this, Hailey?"
     conditions {
       ops {
         functionName: "Comparison (bool)"
