@@ -1,276 +1,13 @@
 id: "Antumbra 2 - Eclipse"
 variables {
-  name: "A2_HiredHailey"
+  name: "A2_AztechnologyHostile"
   typeName: "bool"
   defaultValue {
     bool_value: false
     variableref_value {
       scope: TsVariableScope_Story
-      name: "A2_HiredHailey"
-    }
-  }
-}
-variables {
-  name: "A2_HaileyDied"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_HaileyDied"
-    }
-  }
-}
-variables {
-  name: "A2_HiredDalmin"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_HiredDalmin"
-    }
-  }
-}
-variables {
-  name: "A2_DalminDied"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_DalminDied"
-    }
-  }
-}
-variables {
-  name: "A2_HiredOrion"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_HiredOrion"
-    }
-  }
-}
-variables {
-  name: "A2_OrionDied"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_OrionDied"
-    }
-  }
-}
-variables {
-  name: "A2_HiredHailey_Part1"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_HiredHailey_Part1"
-    }
-  }
-}
-variables {
-  name: "A2_HiredDalmin_Part1"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_HiredDalmin_Part1"
-    }
-  }
-}
-variables {
-  name: "A2_HiredOrion_Part1"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_HiredOrion_Part1"
-    }
-  }
-}
-variables {
-  name: "A2_HiredHailey_Part2"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_HiredHailey_Part2"
-    }
-  }
-}
-variables {
-  name: "A2_HiredDalmin_Part2"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_HiredDalmin_Part2"
-    }
-  }
-}
-variables {
-  name: "A2_HiredOrion_Part2"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_HiredOrion_Part2"
-    }
-  }
-}
-variables {
-  name: "A2_HiredHailey_Part3"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_HiredHailey_Part3"
-    }
-  }
-}
-variables {
-  name: "A2_HiredDalmin_Part3"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_HiredDalmin_Part3"
-    }
-  }
-}
-variables {
-  name: "A2_HiredOrion_Part3"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_HiredOrion_Part3"
-    }
-  }
-}
-variables {
-  name: "A2_FoundTarne"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_FoundTarne"
-    }
-  }
-}
-variables {
-  name: "A2_Mission_SidedWithGangers"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_Mission_SidedWithGangers"
-    }
-  }
-}
-variables {
-  name: "A2_Mission_SidedWithMarines"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_Mission_SidedWithMarines"
-    }
-  }
-}
-variables {
-  name: "A2_VoireDied"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_VoireDied"
-    }
-  }
-}
-variables {
-  name: "A2_VoireCaptured"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_VoireCaptured"
-    }
-  }
-}
-variables {
-  name: "A2_DemoQuality"
-  typeName: "int"
-  defaultValue {
-    int_value: 0
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_DemoQuality"
-    }
-  }
-}
-variables {
-  name: "A2_RecordingGenre"
-  typeName: "string"
-  defaultValue {
-    string_value: ""
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_RecordingGenre"
-    }
-  }
-}
-variables {
-  name: "A2_FinishedDemo"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_FinishedDemo"
-    }
-  }
-}
-variables {
-  name: "A2_ShavarusAgree"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_ShavarusAgree"
-    }
-  }
-}
-variables {
-  name: "A2_ShavarusDisagree"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_ShavarusDisagree"
+      name: "A2_AztechnologyHostile"
+      typeName: "bool"
     }
   }
 }
@@ -282,17 +19,31 @@ variables {
     variableref_value {
       scope: TsVariableScope_Story
       name: "A2_BummerDead"
+      typeName: "bool"
     }
   }
 }
 variables {
-  name: "A2_LazarusDead"
+  name: "A2_DalminDied"
   typeName: "bool"
   defaultValue {
     bool_value: false
     variableref_value {
       scope: TsVariableScope_Story
-      name: "A2_LazarusDead"
+      name: "A2_DalminDied"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_DemoQuality"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_DemoQuality"
+      typeName: "int"
     }
   }
 }
@@ -304,6 +55,7 @@ variables {
     variableref_value {
       scope: TsVariableScope_Story
       name: "A2_Finale_HelpFromNorton"
+      typeName: "bool"
     }
   }
 }
@@ -315,17 +67,7 @@ variables {
     variableref_value {
       scope: TsVariableScope_Story
       name: "A2_Finale_HelpFromSaito"
-    }
-  }
-}
-variables {
-  name: "A2_Finale_ShavarusLives"
-  typeName: "bool"
-  defaultValue {
-    bool_value: false
-    variableref_value {
-      scope: TsVariableScope_Story
-      name: "A2_Finale_ShavarusLives"
+      typeName: "bool"
     }
   }
 }
@@ -337,28 +79,283 @@ variables {
     variableref_value {
       scope: TsVariableScope_Story
       name: "A2_Finale_ShavarusDies"
+      typeName: "bool"
     }
   }
 }
 variables {
-  name: "A2_UploadedCredentials"
+  name: "A2_Finale_ShavarusLives"
   typeName: "bool"
   defaultValue {
     bool_value: false
     variableref_value {
       scope: TsVariableScope_Story
-      name: "A2_UploadedCredentials"
+      name: "A2_Finale_ShavarusLives"
+      typeName: "bool"
     }
   }
 }
 variables {
-  name: "A2_AztechnologyHostile"
+  name: "A2_FinishedDemo"
   typeName: "bool"
   defaultValue {
     bool_value: false
     variableref_value {
       scope: TsVariableScope_Story
-      name: "A2_AztechnologyHostile"
+      name: "A2_FinishedDemo"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_FoundTarne"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_FoundTarne"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HaileyDied"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HaileyDied"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredDalmin"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredDalmin"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredDalmin_Part1"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredDalmin_Part1"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredDalmin_Part2"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredDalmin_Part2"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredDalmin_Part3"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredDalmin_Part3"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredHailey"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredHailey"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredHailey_Part1"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredHailey_Part1"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredHailey_Part2"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredHailey_Part2"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredHailey_Part3"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredHailey_Part3"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredOrion"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredOrion"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredOrion_Part1"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredOrion_Part1"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredOrion_Part2"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredOrion_Part2"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_HiredOrion_Part3"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_HiredOrion_Part3"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_LazarusDead"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_LazarusDead"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_Mission_SidedWithGangers"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_Mission_SidedWithGangers"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_Mission_SidedWithMarines"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_Mission_SidedWithMarines"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_OrionDied"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_OrionDied"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_RecordingGenre"
+  typeName: "string"
+  defaultValue {
+    string_value: ""
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_RecordingGenre"
+      typeName: "string"
+    }
+  }
+}
+variables {
+  name: "A2_ShavarusAgree"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_ShavarusAgree"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_ShavarusDisagree"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_ShavarusDisagree"
+      typeName: "bool"
     }
   }
 }
@@ -370,15 +367,54 @@ variables {
     variableref_value {
       scope: TsVariableScope_Story
       name: "A2_SlowComputer"
+      typeName: "bool"
     }
   }
 }
-description: "Megacorps battle for supremacy in San Francisco, but broader tensions simmering in the city threaten to boil over into total war. You\342\200\231ll contend with megacorp security invasions, Colonel Saito\342\200\231s thuggish Imperial Marines, ghettoized metahumans, and more exotic forces standing in the way of your contract. Choose your enemies wisely, gather reliable allies, and do whatever it takes to finish the run. \n\nNOTE: You will need to install Antumbra in order to run this module. You can either import your character from Antumbra or create a new character in Eclipse. If you choose to import your character, the events of Eclipse will be updated to reflect the choices you made in Antumbra."
+variables {
+  name: "A2_UploadedCredentials"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_UploadedCredentials"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_VoireCaptured"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_VoireCaptured"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "A2_VoireDied"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "A2_VoireDied"
+      typeName: "bool"
+    }
+  }
+}
+description: "Megacorps battle for supremacy in San Francisco, but broader tensions simmering in the city threaten to boil over into total war. You\342\200\231ll contend with megacorp security invasions, Colonel Saito\342\200\231s thuggish Imperial Marines, ghettoized metahumans, and more exotic forces standing in the way of your contract. Choose your enemies wisely, gather reliable allies, and do whatever it takes to finish the run. \n\nNOTE: You will need to install Antumbra in order to run this module. You can either import your character from Antumbra or create a new character in Eclipse. If you choose to import your character, the events of Eclipse will be updated to reflect the choices you made in Antumbra. After finishing Eclipse, you can import your character into Corona and see how your story continues!"
 startScene: "Embarcadero Arrival"
 allowCharacterImport: true
 allowImportedEquipment: true
 allowCharacterGen: true
 storyKarmaLevel: 51
+resalePercent: 75
+upgradeToThreeApLevel: 117
 character_roster {
   roster_entries {
     reference_id: "lvl1_dwarf_rigger"

@@ -1817,6 +1817,25 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Actor Is A Controlled Spirit Or Drone"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -1984,6 +2003,25 @@ triggers {
     }
   }
   conditions {
+    ops {
+      functionName: "Actor Is A Controlled Spirit Or Drone"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -2076,6 +2114,25 @@ triggers {
           }
           args {
             int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Actor Is A Controlled Spirit Or Drone"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -2247,6 +2304,25 @@ triggers {
           }
           args {
             int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Actor Is A Controlled Spirit Or Drone"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 0
           }
         }
       }
