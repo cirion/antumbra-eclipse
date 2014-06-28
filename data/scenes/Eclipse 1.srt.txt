@@ -8621,7 +8621,7 @@ triggers {
         call_value {
           functionName: "Random (float)"
           args {
-            float_value: 0
+            float_value: -1
           }
           args {
             float_value: 1
@@ -8632,7 +8632,7 @@ triggers {
         call_value {
           functionName: "Random (float)"
           args {
-            float_value: 0
+            float_value: -1
           }
           args {
             float_value: 1
@@ -8643,7 +8643,7 @@ triggers {
         call_value {
           functionName: "Random (float)"
           args {
-            float_value: 0
+            float_value: -1
           }
           args {
             float_value: 1
@@ -8726,7 +8726,7 @@ triggers {
         call_value {
           functionName: "Random (float)"
           args {
-            float_value: 0
+            float_value: -1
           }
           args {
             float_value: 1
@@ -8737,7 +8737,7 @@ triggers {
         call_value {
           functionName: "Random (float)"
           args {
-            float_value: 0
+            float_value: -1
           }
           args {
             float_value: 1
@@ -8748,7 +8748,7 @@ triggers {
         call_value {
           functionName: "Random (float)"
           args {
-            float_value: 0
+            float_value: -1
           }
           args {
             float_value: 1
@@ -8817,7 +8817,7 @@ triggers {
         call_value {
           functionName: "Random (float)"
           args {
-            float_value: 0
+            float_value: -1
           }
           args {
             float_value: 1
@@ -8828,7 +8828,7 @@ triggers {
         call_value {
           functionName: "Random (float)"
           args {
-            float_value: 0
+            float_value: -1
           }
           args {
             float_value: 1
@@ -8839,7 +8839,7 @@ triggers {
         call_value {
           functionName: "Random (float)"
           args {
-            float_value: 0
+            float_value: -1
           }
           args {
             float_value: 1
@@ -15307,3 +15307,5 @@ use_hiring_cost_warning: true
 hiring_average_cost: 600
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
+can_move_outside_camera_regions: true
+can_start_before_triggers: true

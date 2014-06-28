@@ -8897,133 +8897,6 @@ triggers {
   is_oneshot: false
 }
 triggers {
-  name: "Directional Light Cycles"
-  events {
-    ops {
-      functionName: "Get Map Item (Event)"
-      args {
-        string_value: "Directional Light Cycles"
-      }
-    }
-  }
-  conditions {
-  }
-  actions {
-    ops {
-      functionName: "Set Directional Light Color"
-      args {
-        call_value {
-          functionName: "Random (float)"
-          args {
-            float_value: 0.25
-          }
-          args {
-            float_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Random (float)"
-          args {
-            float_value: 0.25
-          }
-          args {
-            float_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Random (float)"
-          args {
-            float_value: 0.25
-          }
-          args {
-            float_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Random (float)"
-          args {
-            float_value: 0.75
-          }
-          args {
-            float_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Random (float)"
-          args {
-            float_value: 0
-          }
-          args {
-            float_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Random (float)"
-          args {
-            float_value: 0
-          }
-          args {
-            float_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Random (float)"
-          args {
-            float_value: 0
-          }
-          args {
-            float_value: 1
-          }
-        }
-      }
-      args {
-        float_value: 0.75
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (CameraRegion)"
-          args {
-            string_value: "52361ed4366236601e002679"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Send Event After Delay"
-      args {
-        call_value {
-          functionName: "Get Map Item (Event)"
-          args {
-            string_value: "Directional Light Cycles"
-          }
-        }
-      }
-      args {
-        float_value: 2
-      }
-    }
-  }
-  isActive: true
-  idRef {
-    id: "52340201366236e81a00268b"
-  }
-  elseActions {
-  }
-  is_oneshot: false
-}
-triggers {
   name: "Start Cycling Lights"
   events {
     ops {
@@ -9468,6 +9341,315 @@ triggers {
   elseActions {
   }
   is_oneshot: true
+}
+triggers {
+  name: "Directional Light Cycles"
+  events {
+    ops {
+      functionName: "Get Map Item (Event)"
+      args {
+        string_value: "Directional Light Cycles"
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Directional Light Color"
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.75
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: -1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: -1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: -1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        float_value: 0.75
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (CameraRegion)"
+          args {
+            string_value: "52361e98366236601e002678"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Send Event After Delay"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Directional Light Cycles"
+          }
+        }
+      }
+      args {
+        float_value: 2.5
+      }
+    }
+    ops {
+      functionName: "Set Directional Light Color"
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.75
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: -1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: -1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: -1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        float_value: 0.75
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (CameraRegion)"
+          args {
+            string_value: "52361ed4366236601e002679"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Directional Light Color"
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.75
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: -1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: -1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: -1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        float_value: 0.75
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (CameraRegion)"
+          args {
+            string_value: "52361ee6366236601e00267a"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53ae2d203662361014005879"
+  }
+  elseActions {
+  }
+  is_oneshot: false
 }
 regions {
   name: "Second Floor Stairs"
@@ -14067,6 +14249,8 @@ team_affiliations {
 scene_dimensions {
   dimension_name: "Default"
 }
+character_roster {
+}
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
   prereq_description: ""
@@ -14082,3 +14266,5 @@ use_hiring_cost_warning: true
 hiring_average_cost: 750
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
+can_move_outside_camera_regions: true
+can_start_before_triggers: true

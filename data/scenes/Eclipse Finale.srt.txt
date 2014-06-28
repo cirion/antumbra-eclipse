@@ -2713,7 +2713,7 @@ triggers {
         call_value {
           functionName: "Random (float)"
           args {
-            float_value: 0
+            float_value: -1
           }
           args {
             float_value: 1
@@ -2724,7 +2724,7 @@ triggers {
         call_value {
           functionName: "Random (float)"
           args {
-            float_value: 0
+            float_value: -1
           }
           args {
             float_value: 1
@@ -2735,7 +2735,7 @@ triggers {
         call_value {
           functionName: "Random (float)"
           args {
-            float_value: 0
+            float_value: -1
           }
           args {
             float_value: 1

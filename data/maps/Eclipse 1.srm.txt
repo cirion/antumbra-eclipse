@@ -20507,9 +20507,9 @@ props {
 props {
   name: "system_invisible_blockMove"
   gridPoint {
-    x: -59
+    x: -62
     y: 0
-    z: 90
+    z: 87
   }
   orientation: ORIENTATION_S
   idRef {
