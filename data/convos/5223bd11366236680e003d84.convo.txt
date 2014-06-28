@@ -29,6 +29,198 @@ nodes {
     }
   }
   branches {
+    responseText: "Why did you name your business Antumbra Enterprises?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "heardAboutAE"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Dependent Story Variable (bool)"
+            args {
+              call_value {
+                functionName: "Get Previous Story Variable (bool)"
+                args {
+                  string_value: "51f7429764343188990041a8"
+                }
+                args {
+                  string_value: "A1_Bool_SidedWithKali"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "bool"
+                }
+                args {
+                  int_value: 0
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 3
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "53af1eaf366236b81b004e01"
+    }
+  }
+  branches {
+    responseText: "Why did you name your business Antumbra Enterprises?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "heardAboutAE"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Dependent Story Variable (bool)"
+            args {
+              call_value {
+                functionName: "Get Previous Story Variable (bool)"
+                args {
+                  string_value: "51f7429764343188990041a8"
+                }
+                args {
+                  string_value: "A1_Bool_SidedWithKali"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "bool"
+                }
+                args {
+                  int_value: 0
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 4
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "53af1eaf366236b81b004e01"
+    }
+  }
+  branches {
     responseText: "Can I record a demo with you?"
     conditions {
       ops {
@@ -116,7 +308,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 3
+    nextNodeIndex: 6
     hideIfUnavailable: true
   }
   branches {
@@ -234,7 +426,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 6
+    nextNodeIndex: 9
     hideIfUnavailable: true
   }
   branches {
@@ -266,7 +458,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 7
+    nextNodeIndex: 10
     hideIfUnavailable: true
   }
   branches {
@@ -280,7 +472,69 @@ nodes {
     id: "53724da96434311639fc5151"
   }
   index: 2
-  text: "Getting better every day, but it\'s a constant struggle. As our resources grow bigger, so do the demands of Saito. Fortunately, now that most of the local megacorps have gotten a taste of Eclipse, they won\'t tolerate Saito getting rid of us. I\'m looking forward to the day when I\'ll be free of his grasp and can run my business without looking over my shoulder."
+  text: "Getting better every day, but it\'s a constant struggle. As our resources grow bigger, so do the demands of Saito. Fortunately, now that most of the local megacorps have gotten a taste of Eclipse, they won\'t tolerate Saito getting rid of us. I\'m looking forward to the day when I\'ll be free of his grasp and can run Antumbra Enterprises without looking over my shoulder."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "heardAboutAE"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53af1f19366236b81b004e05"
+  }
+  index: 3
+  text: "That nightclub wasn\'t the start of my career, but it marked the start of my climb up the corporate ladder. Up until that Site of Power emerged, Mitsuhama thought I was just another minx in their portfolio, useful for drawing in eyeballs.\n\nAfter you helped me clear the Site and turn it over to them, they started involving me in the decision-making process. Without Antumbra, I\'d just be another singer. With it, I\'m becoming a force to be reckoned with."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53af20cd366236b81b004e34"
+  }
+  index: 4
+  text: "My first nightclub in Seattle was an... unfortunate experience, but a formative one. At the time, I was furious about how events had turned out.\n\nIn retrospect, however, I have come to understand that it was all for the best. If the club had continued, I might still be slumming it in Everett, booking singers and trying to convince artists to sign with my label. Its failure forced me to flee to CalFree, and here I\'ve found opportunities far bigger than those I left behind."
+  branches {
+    responseText: ""
+    nextNodeIndex: 5
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53af214c366236b81b004e37"
+  }
+  index: 5
+  text: "Antumbra is a warning to myself to be paranoid at all times. You never know who is going to stab you in the back.\n\nAt the same time, Antumbra is also a reminder that failure is a part of life. We must embrace our mistakes, learn what we can from them, and rise again."
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -292,11 +546,11 @@ nodes {
   idRef {
     id: "53724db16434311639fc516c"
   }
-  index: 3
+  index: 6
   text: "Hm, I suppose I do still owe you a favor from before."
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 7
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -304,7 +558,7 @@ nodes {
   idRef {
     id: "53724db16434311639fc516f"
   }
-  index: 4
+  index: 7
   text: "Before we can start recording, I\342\200\231ll need to know where we\342\200\231re going with this. What kind of music do you want to perform?"
   branches {
     responseText: "Chromatic Metal."
@@ -327,7 +581,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 5
+    nextNodeIndex: 8
     auxiliaryLink: true
   }
   branches {
@@ -354,7 +608,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 5
+    nextNodeIndex: 8
     auxiliaryLink: true
   }
   branches {
@@ -381,7 +635,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 5
+    nextNodeIndex: 8
     auxiliaryLink: true
   }
   branches {
@@ -408,7 +662,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 5
+    nextNodeIndex: 8
     auxiliaryLink: true
   }
   branches {
@@ -435,7 +689,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 5
+    nextNodeIndex: 8
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -443,7 +697,7 @@ nodes {
   idRef {
     id: "53724db16434311639fc517e"
   }
-  index: 5
+  index: 8
   text: "Cool. Let\342\200\231s step into the studio."
   nodeType: ConversationNodeType_Simple
   actions {
@@ -475,11 +729,11 @@ nodes {
   idRef {
     id: "53724db56434311639fc5187"
   }
-  index: 6
+  index: 9
   text: "Really? Well, I suppose I don\342\200\231t have much choice. I\342\200\231d promised to help with whatever you need. I hadn\342\200\231t expected you to need my recording expertise, though."
   branches {
     responseText: ""
-    nextNodeIndex: 4
+    nextNodeIndex: 7
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -488,7 +742,7 @@ nodes {
   idRef {
     id: "53724db86434311639fc5190"
   }
-  index: 7
+  index: 10
   text: "All right, I\342\200\231ll take over from here. We\342\200\231ll release to local markets first, and if it does well, Antumbra Global will start promoting it across UCAS, NAN, Aztlan, and other regions.\n\nGood luck to us both. I hope this earns a lot of nuyen!"
   nodeType: ConversationNodeType_Simple
   actions {
@@ -615,7 +869,7 @@ nodes {
   idRef {
     id: "5223c15e366236680e003ddc"
   }
-  index: 8
+  index: 11
   text: "Not too bad for a newbie. Here\342\200\231s the deck back with your track on it. I can take it now if you\342\200\231re ready to release it, or you can take some more time to polish it. You might want to check in with some other people here if you\342\200\231d like help finishing it up."
   branches {
     responseText: ""
@@ -757,5 +1011,5 @@ roots {
       }
     }
   }
-  nextNodeIndex: 8
+  nextNodeIndex: 11
 }

@@ -14160,6 +14160,14 @@ variables {
     typeName: "bool"
   }
 }
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "heardAboutAE"
+    typeName: "bool"
+  }
+}
 mapEvents: "Done Recording"
 mapEvents: "Done Sleeping"
 mapEvents: "Done Going Up Stairs"
