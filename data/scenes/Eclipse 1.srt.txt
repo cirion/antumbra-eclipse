@@ -9969,8 +9969,8 @@ triggers {
 regions {
   name: "First Floor Stairs"
   position {
-    x: -20
-    y: -3
+    x: -8
+    y: 90
     width: 1
     height: 3
   }
@@ -10057,8 +10057,8 @@ regions {
 regions {
   name: "Exit Outside"
   position {
-    x: 1
-    y: -23
+    x: 13
+    y: 70
     width: 2
     height: 2
   }
@@ -10101,8 +10101,8 @@ regions {
 regions {
   name: "Third Floor Elevator"
   position {
-    x: -142
-    y: 188
+    x: -135
+    y: 83
     width: 1
     height: 2
   }
@@ -10189,8 +10189,8 @@ regions {
 regions {
   name: "Bunraku 3"
   position {
-    x: -112
-    y: 180
+    x: -105
+    y: 75
     width: 1
     height: 1
   }
@@ -10233,8 +10233,8 @@ regions {
 regions {
   name: "Bunraku 1"
   position {
-    x: -131
-    y: 174
+    x: -124
+    y: 69
     width: 1
     height: 1
   }
@@ -10277,8 +10277,8 @@ regions {
 regions {
   name: "Bunraku 2"
   position {
-    x: -116
-    y: 197
+    x: -109
+    y: 92
     width: 1
     height: 1
   }
@@ -10321,8 +10321,8 @@ regions {
 regions {
   name: "Door 4"
   position {
-    x: -120
-    y: 168
+    x: -113
+    y: 63
     width: 1
     height: 1
   }
@@ -10365,8 +10365,8 @@ regions {
 regions {
   name: "Door 3"
   position {
-    x: -126
-    y: 169
+    x: -119
+    y: 64
     width: 2
     height: 1
   }
@@ -10409,8 +10409,8 @@ regions {
 regions {
   name: "Door 2"
   position {
-    x: -132
-    y: 169
+    x: -125
+    y: 64
     width: 2
     height: 1
   }
@@ -10453,8 +10453,8 @@ regions {
 regions {
   name: "Door 1"
   position {
-    x: -114
-    y: 169
+    x: -107
+    y: 64
     width: 2
     height: 1
   }
@@ -10497,8 +10497,8 @@ regions {
 regions {
   name: "Client Holding Pen"
   position {
-    x: -154
-    y: 170
+    x: -147
+    y: 65
     width: 4
     height: 4
   }
@@ -10541,8 +10541,8 @@ regions {
 regions {
   name: "Client 1"
   position {
-    x: -131
-    y: 175
+    x: -124
+    y: 70
     width: 1
     height: 1
   }
@@ -10585,8 +10585,8 @@ regions {
 regions {
   name: "Client 2"
   position {
-    x: -114
-    y: 197
+    x: -107
+    y: 92
     width: 1
     height: 1
   }
@@ -10629,8 +10629,8 @@ regions {
 regions {
   name: "Client 3"
   position {
-    x: -114
-    y: 180
+    x: -107
+    y: 75
     width: 1
     height: 1
   }
@@ -10673,8 +10673,8 @@ regions {
 regions {
   name: "3rd Floor Camera"
   position {
-    x: -106
-    y: 205
+    x: -99
+    y: 100
     width: -41
     height: -41
   }
@@ -10761,8 +10761,8 @@ regions {
 regions {
   name: "1st Floor Camera"
   position {
-    x: 17
-    y: 14
+    x: 29
+    y: 107
     width: -47
     height: -42
   }
@@ -10805,8 +10805,8 @@ regions {
 regions {
   name: "Door 3b"
   position {
-    x: -124
-    y: 169
+    x: -117
+    y: 64
     width: 1
     height: 1
   }
@@ -10849,8 +10849,8 @@ regions {
 regions {
   name: "Lights Holder"
   position {
-    x: -71
-    y: 33
+    x: -95
+    y: 50
     width: 12
     height: 13
   }
@@ -10893,9 +10893,9 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 2
+    x: 14
     y: 0
-    z: -22
+    z: 71
   }
   orientation: ORIENTATION_E
   idRef {
@@ -10915,9 +10915,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 3
+    x: 15
     y: 0
-    z: -18
+    z: 75
   }
   orientation: ORIENTATION_W
   displayName: "Carver Wells"
@@ -10968,9 +10968,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 4
+    x: 16
     y: 0
-    z: -18
+    z: 75
   }
   orientation: ORIENTATION_W
   displayName: "Kali"
@@ -11028,9 +11028,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 7
+    x: 19
     y: 0
-    z: -21
+    z: 72
   }
   orientation: ORIENTATION_N
   displayName: "Ike Dunner"
@@ -11093,9 +11093,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -8
+    x: 4
     y: 0
-    z: -19
+    z: 74
   }
   orientation: ORIENTATION_S
   displayName: "Necalli Yaotl"
@@ -11152,9 +11152,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -15
+    x: -3
     y: 0
-    z: 8
+    z: 101
   }
   orientation: ORIENTATION_W
   displayName: "Amelia"
@@ -11212,9 +11212,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 8
+    x: 20
     y: 0
-    z: 4
+    z: 97
   }
   orientation: ORIENTATION_W
   displayName: "The Dave"
@@ -11273,9 +11273,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -137
+    x: -130
     y: 0
-    z: 196
+    z: 91
   }
   orientation: ORIENTATION_W
   displayName: "Hailey"
@@ -11398,9 +11398,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -122
+    x: -115
     y: 0
-    z: 175
+    z: 70
   }
   orientation: ORIENTATION_E
   displayName: "Orion"
@@ -11479,9 +11479,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -114
+    x: -107
     y: 0
-    z: 192
+    z: 87
   }
   orientation: ORIENTATION_N
   displayName: "Dalmin"
@@ -11694,9 +11694,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -144
+    x: -137
     y: 0
-    z: 170
+    z: 65
   }
   orientation: ORIENTATION_S
   displayName: "Information Terminal"
@@ -11747,9 +11747,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 7
+    x: 19
     y: 0
-    z: -4
+    z: 89
   }
   orientation: ORIENTATION_W
   displayName: "Window Shopper 4"
@@ -11788,9 +11788,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -9
+    x: 3
     y: 0
-    z: -8
+    z: 85
   }
   orientation: ORIENTATION_S
   GeneralTags: "wanderer"
@@ -11839,9 +11839,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 1
+    x: 13
     y: 0
-    z: 2
+    z: 95
   }
   orientation: ORIENTATION_N
   displayName: "Window Shopper 1"
@@ -11884,9 +11884,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 11
+    x: 23
     y: 0
-    z: -14
+    z: 79
   }
   orientation: ORIENTATION_S
   displayName: "Window Shopper 3"
@@ -11929,9 +11929,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -14
+    x: -2
     y: 0
-    z: -9
+    z: 84
   }
   orientation: ORIENTATION_W
   displayName: "Window Shopper 2"
@@ -11974,9 +11974,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 7
+    x: 19
     y: 0
-    z: -14
+    z: 79
   }
   orientation: ORIENTATION_S
   GeneralTags: "wanderer"
@@ -12021,9 +12021,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 8
+    x: 20
     y: 0
-    z: -3
+    z: 90
   }
   orientation: ORIENTATION_S
   GeneralTags: "wanderer"
@@ -12053,9 +12053,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -1
+    x: 11
     y: 0
-    z: -11
+    z: 82
   }
   orientation: ORIENTATION_W
   GeneralTags: "wanderer"
@@ -12100,9 +12100,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -17
+    x: -5
     y: 0
-    z: -6
+    z: 87
   }
   orientation: ORIENTATION_S
   GeneralTags: "wanderer"
@@ -12147,9 +12147,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -12
+    x: 0
     y: 0
-    z: -2
+    z: 91
   }
   orientation: ORIENTATION_W
   displayName: "Talker 1a"
@@ -12192,9 +12192,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -5
+    x: 7
     y: 0
-    z: -10
+    z: 83
   }
   orientation: ORIENTATION_S
   displayName: "Talker 2a"
@@ -12233,9 +12233,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -3
+    x: 9
     y: 0
-    z: -10
+    z: 83
   }
   orientation: ORIENTATION_N
   displayName: "Talker 2b"
@@ -12278,9 +12278,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -12
+    x: 0
     y: 0
-    z: -4
+    z: 89
   }
   orientation: ORIENTATION_E
   displayName: "Talker 1b"
@@ -12319,9 +12319,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -10
+    x: 2
     y: 0
-    z: 6
+    z: 99
   }
   orientation: ORIENTATION_W
   GeneralTags: "wanderer"
@@ -12366,9 +12366,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -6
+    x: 6
     y: 0
-    z: -5
+    z: 88
   }
   orientation: ORIENTATION_S
   GeneralTags: "wanderer"
@@ -12413,9 +12413,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -21
+    x: -9
     y: 0
-    z: -5
+    z: 88
   }
   orientation: ORIENTATION_S
   GeneralTags: "security"
@@ -12456,9 +12456,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 10
+    x: 22
     y: 0
-    z: -22
+    z: 71
   }
   orientation: ORIENTATION_E
   GeneralTags: "security"
@@ -13655,9 +13655,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -139
+    x: -132
     y: 0
-    z: 184
+    z: 79
   }
   orientation: ORIENTATION_S
   GeneralTags: "wanderer"
@@ -13702,9 +13702,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -117
+    x: -110
     y: 0
-    z: 178
+    z: 73
   }
   orientation: ORIENTATION_S
   GeneralTags: "wanderer"
@@ -13748,9 +13748,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -114
+    x: -107
     y: 0
-    z: 194
+    z: 89
   }
   orientation: ORIENTATION_S
   GeneralTags: "wanderer"
@@ -13795,9 +13795,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -126
+    x: -119
     y: 0
-    z: 185
+    z: 80
   }
   orientation: ORIENTATION_S
   GeneralTags: "wanderer"
@@ -13821,9 +13821,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -135
+    x: -128
     y: 0
-    z: 191
+    z: 86
   }
   orientation: ORIENTATION_N
   GeneralTags: "wanderer"
@@ -13864,9 +13864,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -121
+    x: -114
     y: 0
-    z: 173
+    z: 68
   }
   orientation: ORIENTATION_E
   GeneralTags: "wanderer"
@@ -13911,9 +13911,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -140
+    x: -133
     y: 0
-    z: 179
+    z: 74
   }
   orientation: ORIENTATION_E
   GeneralTags: "flirter"
@@ -13958,9 +13958,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -140
+    x: -133
     y: 0
-    z: 181
+    z: 76
   }
   orientation: ORIENTATION_W
   GeneralTags: "flirter"
@@ -14001,9 +14001,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -123
+    x: -116
     y: 0
-    z: 170
+    z: 65
   }
   orientation: ORIENTATION_S
   GeneralTags: "flirter"
@@ -14044,9 +14044,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -132
+    x: -125
     y: 0
-    z: 194
+    z: 89
   }
   orientation: ORIENTATION_E
   GeneralTags: "flirter"
@@ -14091,9 +14091,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -131
+    x: -124
     y: 0
-    z: 174
+    z: 69
   }
   orientation: ORIENTATION_E
   GeneralTags: "bunraku"
@@ -14138,9 +14138,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -116
+    x: -109
     y: 0
-    z: 197
+    z: 92
   }
   orientation: ORIENTATION_S
   GeneralTags: "bunraku"
@@ -14185,9 +14185,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -112
+    x: -105
     y: 0
-    z: 180
+    z: 75
   }
   orientation: ORIENTATION_N
   GeneralTags: "bunraku"
@@ -14228,9 +14228,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -153
+    x: -146
     y: 0
-    z: 171
+    z: 66
   }
   orientation: ORIENTATION_S
   GeneralTags: "client"
@@ -14279,9 +14279,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -153
+    x: -146
     y: 0
-    z: 172
+    z: 67
   }
   orientation: ORIENTATION_S
   GeneralTags: "client"
@@ -14330,9 +14330,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -153
+    x: -146
     y: 0
-    z: 173
+    z: 68
   }
   orientation: ORIENTATION_S
   GeneralTags: "client"
@@ -14377,9 +14377,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -126
+    x: -119
     y: 0
-    z: 181
+    z: 76
   }
   orientation: ORIENTATION_E
   GeneralTags: "talker"
@@ -14424,9 +14424,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -125
+    x: -118
     y: 0
-    z: 183
+    z: 78
   }
   orientation: ORIENTATION_N
   GeneralTags: "talker"
@@ -14467,9 +14467,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -121
+    x: -114
     y: 0
-    z: 170
+    z: 65
   }
   orientation: ORIENTATION_N
   GeneralTags: "talker"
@@ -14510,9 +14510,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -132
+    x: -125
     y: 0
-    z: 196
+    z: 91
   }
   orientation: ORIENTATION_W
   GeneralTags: "talker"
@@ -14557,9 +14557,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -128
+    x: -121
     y: 0
-    z: 183
+    z: 78
   }
   orientation: ORIENTATION_S
   GeneralTags: "talker"
@@ -14600,9 +14600,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -128
+    x: -121
     y: 0
-    z: 174
+    z: 69
   }
   orientation: ORIENTATION_S
   GeneralTags: "talker"
@@ -14643,9 +14643,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -125
+    x: -118
     y: 0
-    z: 174
+    z: 69
   }
   orientation: ORIENTATION_N
   GeneralTags: "talker"
@@ -14825,9 +14825,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -123
+    x: -116
     y: 0
-    z: 193
+    z: 88
   }
   orientation: ORIENTATION_S
   displayName: "Bartender 1"
@@ -14913,9 +14913,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -116
+    x: -109
     y: 0
-    z: 173
+    z: 68
   }
   orientation: ORIENTATION_E
   displayName: "Bartender 4"
@@ -14957,9 +14957,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -136
+    x: -129
     y: 0
-    z: 180
+    z: 75
   }
   orientation: ORIENTATION_S
   displayName: "Bartender 3"
@@ -15045,9 +15045,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -118
+    x: -111
     y: 0
-    z: 184
+    z: 79
   }
   orientation: ORIENTATION_E
   displayName: "Bartender 1"
@@ -15290,8 +15290,6 @@ team_affiliations {
 scene_dimensions {
   dimension_name: "Default"
 }
-character_roster {
-}
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
   prereq_description: ""
@@ -15307,5 +15305,5 @@ use_hiring_cost_warning: true
 hiring_average_cost: 600
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
-can_move_outside_camera_regions: true
-can_start_before_triggers: true
+can_move_outside_camera_regions: false
+can_start_before_triggers: false

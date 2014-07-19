@@ -10463,6 +10463,7 @@ characters {
     }
     portrait_code_override: "s6h5c2"
     karma: 57
+    ai_never_use_draining_abilities: true
   }
 }
 characters {
