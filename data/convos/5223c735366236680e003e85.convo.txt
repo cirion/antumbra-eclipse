@@ -150,8 +150,7 @@ nodes {
   }
   branches {
     responseText: "Maybe some other time."
-    nextNodeIndex: 1
-    auxiliaryLink: true
+    nextNodeIndex: 7
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -220,6 +219,19 @@ nodes {
       }
     }
   }
+}
+nodes {
+  idRef {
+    id: "53caa45c366236901c005492"
+  }
+  index: 7
+  text: "Very well."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
 }
 roots {
   responseText: ""
