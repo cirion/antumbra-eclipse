@@ -1885,8 +1885,8 @@ triggers {
 regions {
   name: "Kali Exit"
   position {
-    x: -20
-    y: -2
+    x: -8
+    y: 91
     width: 1
     height: 1
   }
@@ -1929,8 +1929,8 @@ regions {
 regions {
   name: "Camera"
   position {
-    x: -26
-    y: -28
+    x: -14
+    y: 65
     width: 44
     height: 44
   }
@@ -1973,9 +1973,9 @@ regions {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 6
+    x: 18
     y: 0
-    z: -20
+    z: 73
   }
   orientation: ORIENTATION_N
   displayName: "Ike Dunner"
@@ -2038,9 +2038,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -9
+    x: 3
     y: 0
-    z: -19
+    z: 74
   }
   orientation: ORIENTATION_E
   displayName: "Necalli Yaotl"
@@ -2097,9 +2097,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -10
+    x: 2
     y: 0
-    z: -5
+    z: 88
   }
   orientation: ORIENTATION_S
   displayName: "Kali"
@@ -2159,9 +2159,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 12
+    x: 24
     y: 0
-    z: 9
+    z: 102
   }
   orientation: ORIENTATION_W
   displayName: "The Dave"
@@ -2220,9 +2220,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -12
+    x: 0
     y: 0
-    z: 7
+    z: 100
   }
   orientation: ORIENTATION_E
   displayName: "Amelia"
@@ -2280,9 +2280,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -16
+    x: -4
     y: 0
-    z: -9
+    z: 84
   }
   orientation: ORIENTATION_E
   displayName: "Dalmin"
@@ -2375,9 +2375,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -5
+    x: 7
     y: 0
-    z: 8
+    z: 101
   }
   orientation: ORIENTATION_W
   displayName: "Orion"
@@ -2467,9 +2467,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 11
+    x: 23
     y: 0
-    z: -12
+    z: 81
   }
   orientation: ORIENTATION_N
   displayName: "Hailey"
@@ -2605,9 +2605,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 2
+    x: 14
     y: 0
-    z: -22
+    z: 71
   }
   orientation: ORIENTATION_E
   idRef {
@@ -2627,9 +2627,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 2
+    x: 14
     y: 0
-    z: -3
+    z: 90
   }
   orientation: ORIENTATION_S
   GeneralTags: "wanderer"
@@ -2678,9 +2678,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -14
+    x: -2
     y: 0
-    z: -5
+    z: 88
   }
   orientation: ORIENTATION_S
   GeneralTags: "wanderer"
@@ -2729,9 +2729,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -6
+    x: 6
     y: 0
-    z: -4
+    z: 89
   }
   orientation: ORIENTATION_S
   GeneralTags: "wanderer"
@@ -2772,9 +2772,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 6
+    x: 18
     y: 0
-    z: -14
+    z: 79
   }
   orientation: ORIENTATION_W
   GeneralTags: "wanderer"
@@ -2815,9 +2815,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 1
+    x: 13
     y: 0
-    z: -19
+    z: 74
   }
   orientation: ORIENTATION_W
   GeneralTags: "security"
@@ -2858,9 +2858,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -20
+    x: -8
     y: 0
-    z: -3
+    z: 90
   }
   orientation: ORIENTATION_S
   GeneralTags: "security"
@@ -3044,3 +3044,5 @@ use_hiring_cost_warning: true
 hiring_average_cost: 900
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
+can_move_outside_camera_regions: true
+can_start_before_triggers: true

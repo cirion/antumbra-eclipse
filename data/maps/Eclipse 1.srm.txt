@@ -4578,9 +4578,9 @@ props {
 props {
   name: "office_floor_woodTile01"
   gridPoint {
-    x: 24
+    x: 10
     y: 0
-    z: 90
+    z: 80
   }
   orientation: ORIENTATION_S
   idRef {
@@ -4591,9 +4591,9 @@ props {
 props {
   name: "office_floor_woodTile01"
   gridPoint {
-    x: 22
+    x: 8
     y: 0
-    z: 90
+    z: 80
   }
   orientation: ORIENTATION_S
   idRef {
@@ -4604,9 +4604,9 @@ props {
 props {
   name: "office_floor_woodTile01"
   gridPoint {
-    x: 20
+    x: 6
     y: 0
-    z: 90
+    z: 80
   }
   orientation: ORIENTATION_S
   idRef {
@@ -4617,9 +4617,9 @@ props {
 props {
   name: "office_floor_woodTile01"
   gridPoint {
-    x: 18
+    x: 4
     y: 0
-    z: 90
+    z: 80
   }
   orientation: ORIENTATION_S
   idRef {
@@ -4630,9 +4630,9 @@ props {
 props {
   name: "office_floor_woodTile01"
   gridPoint {
-    x: 16
+    x: 2
     y: 0
-    z: 90
+    z: 80
   }
   orientation: ORIENTATION_S
   idRef {
@@ -4643,9 +4643,9 @@ props {
 props {
   name: "office_floor_woodTile01"
   gridPoint {
-    x: 14
+    x: -16
     y: 0
-    z: 90
+    z: 73
   }
   orientation: ORIENTATION_S
   idRef {
@@ -4656,9 +4656,9 @@ props {
 props {
   name: "office_floor_woodTile01"
   gridPoint {
-    x: 14
+    x: -19
     y: 0
-    z: 92
+    z: 71
   }
   orientation: ORIENTATION_E
   idRef {
@@ -4669,9 +4669,9 @@ props {
 props {
   name: "office_floor_woodTile01"
   gridPoint {
-    x: 14
+    x: 10
     y: 0
-    z: 94
+    z: 70
   }
   orientation: ORIENTATION_E
   idRef {
@@ -4682,9 +4682,9 @@ props {
 props {
   name: "office_floor_woodTile01"
   gridPoint {
-    x: 14
+    x: 10
     y: 0
-    z: 96
+    z: 72
   }
   orientation: ORIENTATION_E
   idRef {
@@ -4695,9 +4695,9 @@ props {
 props {
   name: "office_floor_woodTile01"
   gridPoint {
-    x: 14
+    x: 10
     y: 0
-    z: 98
+    z: 74
   }
   orientation: ORIENTATION_E
   idRef {
@@ -4708,9 +4708,9 @@ props {
 props {
   name: "office_floor_woodTile01"
   gridPoint {
-    x: 14
+    x: 10
     y: 0
-    z: 100
+    z: 76
   }
   orientation: ORIENTATION_E
   idRef {
@@ -4721,9 +4721,9 @@ props {
 props {
   name: "office_floor_woodTile01"
   gridPoint {
-    x: 14
+    x: 10
     y: 0
-    z: 102
+    z: 78
   }
   orientation: ORIENTATION_E
   idRef {
@@ -5142,9 +5142,9 @@ props {
 props {
   name: "office_floor_lightWood01"
   gridPoint {
-    x: 10
+    x: 14
     y: 0
-    z: 70
+    z: 92
   }
   orientation: ORIENTATION_E
   idRef {
@@ -5155,9 +5155,9 @@ props {
 props {
   name: "office_floor_lightWood01"
   gridPoint {
-    x: 10
+    x: 14
     y: 0
-    z: 72
+    z: 94
   }
   orientation: ORIENTATION_E
   idRef {
@@ -5168,9 +5168,9 @@ props {
 props {
   name: "office_floor_lightWood01"
   gridPoint {
-    x: 10
+    x: 14
     y: 0
-    z: 74
+    z: 96
   }
   orientation: ORIENTATION_E
   idRef {
@@ -5181,9 +5181,9 @@ props {
 props {
   name: "office_floor_lightWood01"
   gridPoint {
-    x: 10
+    x: 14
     y: 0
-    z: 76
+    z: 98
   }
   orientation: ORIENTATION_E
   idRef {
@@ -5194,9 +5194,9 @@ props {
 props {
   name: "office_floor_lightWood01"
   gridPoint {
-    x: 10
+    x: 14
     y: 0
-    z: 78
+    z: 100
   }
   orientation: ORIENTATION_E
   idRef {
@@ -5207,9 +5207,9 @@ props {
 props {
   name: "office_floor_lightWood01"
   gridPoint {
-    x: 10
+    x: 14
     y: 0
-    z: 80
+    z: 102
   }
   orientation: ORIENTATION_E
   idRef {
@@ -5220,9 +5220,9 @@ props {
 props {
   name: "office_floor_lightWood01"
   gridPoint {
-    x: 8
+    x: 20
     y: 0
-    z: 80
+    z: 90
   }
   orientation: ORIENTATION_S
   idRef {
@@ -5233,9 +5233,9 @@ props {
 props {
   name: "office_floor_lightWood01"
   gridPoint {
-    x: 6
+    x: 18
     y: 0
-    z: 80
+    z: 90
   }
   orientation: ORIENTATION_S
   idRef {
@@ -5246,9 +5246,9 @@ props {
 props {
   name: "office_floor_lightWood01"
   gridPoint {
-    x: 4
+    x: 16
     y: 0
-    z: 80
+    z: 90
   }
   orientation: ORIENTATION_S
   idRef {
@@ -5259,9 +5259,9 @@ props {
 props {
   name: "office_floor_lightWood01"
   gridPoint {
-    x: 2
+    x: 14
     y: 0
-    z: 80
+    z: 90
   }
   orientation: ORIENTATION_S
   idRef {
@@ -23919,6 +23919,32 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "52e54b74366236b00d00235d"
+  }
+  lod: 0
+}
+props {
+  name: "office_floor_lightWood01"
+  gridPoint {
+    x: 22
+    y: 0
+    z: 90
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53cc2a433662360c22000174"
+  }
+  lod: 0
+}
+props {
+  name: "office_floor_lightWood01"
+  gridPoint {
+    x: 24
+    y: 0
+    z: 90
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53cc2a473662360c22000175"
   }
   lod: 0
 }

@@ -12610,15 +12610,15 @@ regions {
     z: -0.75
   }
   directional_light_color {
-    r: 0
-    g: 0
-    b: 0
+    r: 0.14901961
+    g: 0.40784314
+    b: 0.40784314
     a: 1
   }
   ambient_light_color {
-    r: 0.019607844
-    g: 0.13725491
-    b: 0.19607843
+    r: 0.12941177
+    g: 0.43921569
+    b: 0.5411765
     a: 1
   }
   ambience_template: ""
