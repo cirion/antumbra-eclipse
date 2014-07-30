@@ -1,6 +1,6 @@
 project_id: "5215664d3662365c180018bf"
 project_name: "Antumbra 2 - Eclipse"
-project_version: "1.0.4"
+project_version: "1.0.5"
 author_name: "Cirion"
 synopsis: "Antumbra 2 - Eclipse"
 has_story: true
@@ -21,7 +21,7 @@ content_pack_dependencies {
 }
 content_pack_dependencies {
   package_id: "51f7429764343188990041a8"
-  package_version: "1.2.4"
+  package_version: "1.2.5"
   package_name: "Antumbra"
   package_description: "Antumbra"
 }
